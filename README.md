@@ -13,3 +13,49 @@ This repository is licensed under [GNU Affero General Public License v3.0 (AGPL-
 (Not yet implemented)
 
 `pip install oep-metadata`
+
+## Usage Examples
+
+```
+from metadata.v140.example import METADATA_V140_EXAMPLE
+
+print(METADATA_V140_EXAMPLE)
+```
+
+```
+from metadata.v140.schema import METADATA_V140_SCHEMA
+
+print(METADATA_V140_SCHEMA)
+```
+
+```
+from metadata.v140.template import METADATA_V140_TEMPLATE
+
+print(METADATA_V140_TEMPLATE)
+```
+
+## Development
+
+### Example for activating virtualenv and install development dependencies:
+
+1. Create virtualenv in root folder of repo
+
+`python -m venv venv`
+
+2. Activate virtualenv
+
+    Linux:
+
+    `. venv/bin/activate`
+
+    Windows:
+
+    `. venv/scripts/activate`
+
+3. Install requirements
+
+`pip install -r requirements.txt`
+
+### Run tests locally (after above steps):
+
+`pytest`
