@@ -1,0 +1,240 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/metadata/master/metadata/v130/schema.json",
+    "description": "Contains general information",
+    "type": "object",
+    "properties": {
+        "title": {
+            "description": "Long title of the table / data. Example: \"title\": \" \"",
+            "type": "string"
+        },
+        "description": {
+            "description": "Additional information and more detailed description. Example: \"description\": \" \"",
+            "type": "string"
+        },
+        "language": {
+            "description": "Languages used (ISO 639-3 code). Example: \"language\": [\"eng\",\"ger\"]",
+            "type": "array",
+            "items": {
+                "language": {
+                    "description": "TBD",
+                    "type": "string"
+                }
+            }
+        },
+        "spatial": {
+            "description": "Contains information about the spatial dimension",
+            "type": "object",
+            "properties": {
+                "location": {
+                    "description": "Data located at a certain location using the global reference system WGS84 in decimal notation. Example: \"location\": \"52.43, 13.55\"",
+                    "type": "string"
+                },
+                "extent": {
+                    "description": "Area covered. Example: \"extent\": \"Europe\"",
+                    "type": "string"
+                },
+                "resolution": {
+                    "description": "Regular raster with a constant value. Example: \"resolution\": \"100 m\"",
+                    "type": "string"
+                }
+            }
+        },
+        "temporal": {
+            "description": "Contains information about the temporal dimension",
+            "type": "object",
+            "properties": {
+                "reference_date": {
+                    "description": "Particular year, month or day to which the data is recorded (ISO 8601). Example: \"reference_date\": \"2017-01-01\"",
+                    "type": "string"
+                },
+                "start": {
+                    "description": "Marks the first entry of a time series. Follows the ISO 8601 format (<date>T<time>±<timezone>). Example: \"start\": \"2017-01-01T00:00:00+01\"",
+                    "type": "string"
+                },
+                "end": {
+                    "description": "Marks the last entry of a time series. Follows the ISO 8601 format (<date>T<time>±<timezone>). Example: \"end\": \"2017-12-31T23:00:00+01\"",
+                    "type": "string"
+                },
+                "resolution": {
+                    "description": "Temporal resolution indicates the time between two time steps in a time series. Example: \"resolution\": \"1 h\"",
+                    "type": "string"
+                }
+            }
+        },
+        "sources": {
+            "description": "Contains information about the sources",
+            "type": "array",
+            "items": {
+                "description": "TBD",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "The name or title of the source. Example: \"name\": \" \"",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "A more detailed description of the source. Example: \"description\": \" \"",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "A link to the description and the download. Example: \"url\": \" \"",
+                        "type": "string"
+                    },
+                    "license": {
+                        "description": "The full name of the license. Example: \"license\": \" \"",
+                        "type": "string"
+                    },
+                    "copyright": {
+                        "description": "The copyright owner can be added. Some open licenses require mention of the copyright holder. Example: \"copyright\": \"© Reiner Lemoine Institut\"",
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "license": {
+            "description": "Contains information about the data license",
+            "type": "object",
+            "properties": {
+                "id": {
+                    "description": "The license ID is a unique identifier published in the Open License Service (http://licenses.opendefinition.org/). Example: \"id\": \"ODbL-1.0\"",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Full name of the license. Example: \"name\": \" \"",
+                    "type": "string"
+                },
+                "version": {
+                    "description": "Specifies the versions of a license. Example: \"version\": \"1.0\"",
+                    "type": "string"
+                },
+                "url": {
+                    "description": "A link to the full text of the license. Example: \"url\": \" \"",
+                    "type": "string"
+                },
+                "instruction": {
+                    "description": "A short summary of the rights and obligations defined by the license (https://tldrlegal.com). Example: \"instruction\": \"Share, Create, Adapt; Attribute\"",
+                    "type": "string"
+                },
+                "copyright": {
+                    "description": "Some open licenses require giving explicit credit to the author or copyright owner. Example: \"copyright\": \" \"",
+                    "type": "string"
+                }
+            }
+        },
+        "contributors": {
+            "description": "Contains significant changes (data set or metadata)",
+            "type": "array",
+            "items": {
+                "description": "TBD",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Full name or a synonym (user name). Example: \"name\": \" \"",
+                        "type": "string"
+                    },
+                    "email": {
+                        "description": "The email address to contact a contributor. Example: \"email\": \" \"",
+                        "type": "string"
+                    },
+                    "date": {
+                        "description": "The date of the contribution in ISO 8601 format (YYYY-MM-TT). Example: \"date\": \"2017-05-01\"",
+                        "type": "string"
+                    },
+                    "comment": {
+                        "description": "A comment field to shortly describe the contribution. Example: \"comment\": \"Add license\"",
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "resources": {
+            "description": "Contains information about the tables or files",
+            "type": "array",
+            "items": {
+                "description": "TBD",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Name or path of the resource. Example: \"name\": \"schema.table\"",
+                        "type": "string"
+                    },
+                    "format": {
+                        "description": "The (file) format of the resource. Example: \"format\": \"PostgreSQL\"",
+                        "type": "string"
+                    },
+                    "fields": {
+                        "description": "Each field (column) of the table is described in detail. There are three sub keys: name, description, and unit for each column.",
+                        "type": "array",
+                        "items": {
+                            "description": "TBD",
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "description": "TBD. Example: \"name\": \"capacity\"",
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "description": "TBD. Example: \"description\": \"Elec.\"",
+                                    "type": "string"
+                                },
+                                "unit": {
+                                    "description": "TBD. Example: \"unit\": \"MW\"",
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "metadata_version": {
+            "description": "The metadata set has its own version number to identify which structure is used. Example: \"metadata_version\": \"1.3\"",
+            "type": "string"
+        },
+        "_comment": {
+            "description": "TBD",
+            "type": "object",
+            "properties": {
+                "_url": {
+                    "description": "TBD",
+                    "type": "string"
+                },
+                "_copyright": {
+                    "description": "TBD",
+                    "type": "string"
+                },
+                "_metadata_license": {
+                    "description": "TBD",
+                    "type": "string"
+                },
+                "_metadata_license_url": {
+                    "description": "TBD",
+                    "type": "string"
+                },
+                "_contains": {
+                    "description": "TBD",
+                    "type": "string"
+                },
+                "_additional_information": {
+                    "description": "TBD",
+                    "type": "object",
+                    "properties": {
+                        "_dates": {
+                            "description": "TBD",
+                            "type": "string"
+                        },
+                        "_units": {
+                            "description": "TBD",
+                            "type": "string"
+                        },
+                        "_none": {
+                            "description": "TBD",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
