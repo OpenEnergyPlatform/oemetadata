@@ -62,19 +62,18 @@ Short:
 
 `pytest`
 
-
 Complete:
 
 `tox -v`
 
 ### If a Python interpreter version is missing:
 
-    Linux (Ubuntu):
+Linux (Ubuntu):
 
-    ```
-    sudo add-apt-repository ppa:deadsnakes/ppa
-    sudo apt-get update
-    # Install only missing interpreters:
-    sudo apt-get install python3.6
-    sudo apt-get install python3.7
-    ```
+```
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get update
+# Install only missing interpreters:
+sudo apt-get install python3.6
+sudo apt-get install python3.7
+```
