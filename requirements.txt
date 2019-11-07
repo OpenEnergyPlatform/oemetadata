@@ -4,3 +4,4 @@ jsonschema
 pytest
 tox
 twine
+wheel
