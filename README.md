@@ -4,6 +4,8 @@
 
 OEP metadata schemata, examples and templates package
 
+[![Build Status](https://travis-ci.org/OpenEnergyPlatform/metadata.svg?branch=develop)](https://travis-ci.org/OpenEnergyPlatform/metadata)
+
 ## License / Copyright
 
 This repository is licensed under [MIT License (MIT)](https://spdx.org/licenses/MIT.html)
