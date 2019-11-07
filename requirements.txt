@@ -3,3 +3,4 @@ isort
 jsonschema
 pytest
 tox
+twine
