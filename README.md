@@ -12,8 +12,6 @@ This repository is licensed under [MIT License (MIT)](https://spdx.org/licenses/
 
 ## Installation
 
-(Not yet implemented)
-
 `pip install oep-metadata`
 
 ## Usage Examples
@@ -78,4 +76,13 @@ sudo apt-get update
 # Install only missing interpreters:
 sudo apt-get install python3.6
 sudo apt-get install python3.7
+```
+
+### Make PyPI release:
+
+First bump version in setup.py, then:
+
+```
+python3 setup.py sdist bdist_wheel
+twine upload dist/*
 ```
