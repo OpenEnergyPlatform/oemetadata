@@ -2,3 +2,6 @@ black
 isort
 jsonschema
 pytest
+tox
+twine
+wheel

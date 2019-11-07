@@ -4,13 +4,13 @@
 
 OEP metadata schemata, examples and templates package
 
+[![Build Status](https://travis-ci.org/OpenEnergyPlatform/metadata.svg?branch=develop)](https://travis-ci.org/OpenEnergyPlatform/metadata)
+
 ## License / Copyright
 
-This repository is licensed under [GNU Affero General Public License v3.0 (AGPL-3.0)](https://www.gnu.org/licenses/agpl-3.0.en.html)
+This repository is licensed under [MIT License (MIT)](https://spdx.org/licenses/MIT.html)
 
 ## Installation
-
-(Not yet implemented)
 
 `pip install oep-metadata`
 
@@ -58,4 +58,31 @@ print(METADATA_V140_TEMPLATE)
 
 ### Run tests locally (after above steps):
 
+Short:
+
 `pytest`
+
+Complete:
+
+`tox -v`
+
+### If a Python interpreter version is missing:
+
+Linux (Ubuntu):
+
+```
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get update
+# Install only missing interpreters:
+sudo apt-get install python3.6
+sudo apt-get install python3.7
+```
+
+### Make PyPI release:
+
+First bump version in setup.py, then:
+
+```
+python3 setup.py sdist bdist_wheel
+twine upload dist/*
+```
