@@ -71,7 +71,7 @@
                     ]
                 },
                 "documentation": {
-                    "description": "URL of project documentation. Example: https://github.com/OpenEnergyPlatform/examples/wiki/Metadata-Description",
+                    "description": "URL of project documentation. Example: https://github.com/OpenEnergyPlatform/metadata/wiki/Metadata-Description",
                     "type": [
                         "string",
                         "null"
