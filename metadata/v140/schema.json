@@ -386,7 +386,9 @@
                         ]
                     }
                 },
-                "required": ["title"]
+                "required": [
+                    "title"
+                ]
             }
         },
         "resources": {
