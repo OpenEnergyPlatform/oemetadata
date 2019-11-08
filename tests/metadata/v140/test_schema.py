@@ -10,3 +10,14 @@ def test_if_schema_json_has_correct_schema_and_id_set():
         METADATA_V140_SCHEMA["$id"]
         == "https://raw.githubusercontent.com/OpenEnergyPlatform/metadata/master/metadata/v140/schema.json"
     )
+
+
+def test_schema_against_metaschema_which_should_succeed():
+    import jsonschema
+    from metadata.v140.schema import METADATA_V140_SCHEMA
+    from metadata.metaschema.draft07.schema import METADATA_METASCHEMA_DRAFT07_SCHEMA
+
+    assert (
+        jsonschema.validate(METADATA_V140_SCHEMA, METADATA_METASCHEMA_DRAFT07_SCHEMA)
+        == None
+    )
