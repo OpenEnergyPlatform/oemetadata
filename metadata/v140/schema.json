@@ -203,7 +203,7 @@
             }
         },
         "sources": {
-            "description": "List of source objects. Each object has all name-value-pairs.",
+            "description": "List of source objects.",
             "type": "array",
             "items": {
                 "description": "Source object in list of source objects. Each object has all name-value-pairs.",
@@ -272,10 +272,23 @@
                                         "null"
                                     ]
                                 }
-                            }
+                            },
+                            "required": [
+                                "name",
+                                "title",
+                                "path",
+                                "instruction",
+                                "attribution"
+                            ]
                         }
                     }
-                }
+                },
+                "required": [
+                    "title",
+                    "description",
+                    "path",
+                    "licenses"
+                ]
             }
         },
         "licenses": {
@@ -320,14 +333,21 @@
                             "null"
                         ]
                     }
-                }
+                },
+                "required": [
+                    "name",
+                    "title",
+                    "path",
+                    "instruction",
+                    "attribution"
+                ]
             }
         },
         "contributors": {
             "description": "The people or organizations who contributed to this data package. List of objects.",
             "type": "array",
             "items": {
-                "description": "A person or organizations who contributed to this data package. Each object refers to one contributor. Every contributor must have a title and property. A path, email, role and organization properties are optional extras.",
+                "description": "A person or organizations who contributed to this data package. Each object refers to one contributor. Every contributor must have a title property. All other properties are optional.",
                 "type": "object",
                 "properties": {
                     "title": {
@@ -365,7 +385,8 @@
                             "null"
                         ]
                     }
-                }
+                },
+                "required": ["title"]
             }
         },
         "resources": {
@@ -645,5 +666,11 @@
                 }
             }
         }
-    }
+    },
+    "required": [
+        "name",
+        "title",
+        "id",
+        "description"
+    ]
 }
