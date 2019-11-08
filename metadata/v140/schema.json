@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/metadata/master/metadata/v140/schema.json",
-    "description": "TBD: maybe \"description\" in properties belongs in here, maybe not?",
+    "description": "Open Energy Plaftorm (OEP) metadata schema v1.4.0",
     "type": "object",
     "properties": {
         "name": {
@@ -36,26 +36,20 @@
             "description": "Language used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47). Example: [en-GB, de-DE, fr-FR]",
             "type": "array",
             "items": {
-                "language": {
-                    "description": "TBD",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                }
+                "type": [
+                    "string",
+                    "null"
+                ]
             }
         },
         "keywords": {
             "description": "An array of string keywords to assist users searching for the package in catalogs. Example: [example, template, test]",
             "type": "array",
             "items": {
-                "keywords": {
-                    "description": "TBD",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                }
+                "type": [
+                    "string",
+                    "null"
+                ]
             }
         },
         "publicationDate": {
@@ -77,14 +71,14 @@
                     ]
                 },
                 "documentation": {
-                    "description": "TBD (description wrong): URL of the projects source code. Example: https://github.com/OpenEnergyPlatform/examples/wiki/Metadata-Description",
+                    "description": "URL of project documentation. Example: https://github.com/OpenEnergyPlatform/examples/wiki/Metadata-Description",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "sourceCode": {
-                    "description": "TBD (description wrong): Url of project. Example: https://github.com/OpenEnergyPlatform",
+                    "description": "Url of project source code. Example: https://github.com/OpenEnergyPlatform",
                     "type": [
                         "string",
                         "null"
@@ -155,7 +149,7 @@
             }
         },
         "temporal": {
-            "description": "Object. Time period covered in the data. Temporal information should either contain a \"referenceDate\" or the keys describing a time series; in rare cases both. Use null for the ones that don't apply.",
+            "description": "Temporal object. Time period covered in the data. Temporal information should either contain a \"referenceDate\" or the keys describing a time series; in rare cases both. Use null for the ones that don't apply.",
             "type": "object",
             "properties": {
                 "referenceDate": {
@@ -166,7 +160,7 @@
                     ]
                 },
                 "timeseries": {
-                    "description": "TBD? Object",
+                    "description": "Times series object in temporal object, contains start, end, resolution, alignment and aggregation type properties.",
                     "type": "object",
                     "properties": {
                         "start": {
@@ -209,10 +203,10 @@
             }
         },
         "sources": {
-            "description": "TBD: maybe description of \"items\" belongs in here, maybe not?",
+            "description": "List of source objects. Each object has all name-value-pairs.",
             "type": "array",
             "items": {
-                "description": "List of Objects. Each object has all name-value-pairs.",
+                "description": "Source object in list of source objects. Each object has all name-value-pairs.",
                 "type": "object",
                 "properties": {
                     "title": {
@@ -237,10 +231,10 @@
                         ]
                     },
                     "licenses": {
-                        "description": "TBD: maybe description of \"items\" belongs in here, maybe not?",
+                        "description": "The license(s) under which the source(s) is/are provided. List of objects.",
                         "type": "array",
                         "items": {
-                            "description": "List of Objects. Each object has all name-value-pairs. The license(s) under which the source is provided.",
+                            "description": "A license object under which the described source is provided. Each object has all name-value-pairs.",
                             "type": "object",
                             "properties": {
                                 "name": {
@@ -285,10 +279,10 @@
             }
         },
         "licenses": {
-            "description": "TBD: maybe description of \"items\" belongs in here, maybe not?",
+            "description": "The license(s) under which the described package is provided. List of objects.",
             "type": "array",
             "items": {
-                "description": "The license(s) under which the described package is provided. List of Objects. Each object has all name-value-pairs.",
+                "description": "A license object under which the described package is provided. Each object has all name-value-pairs.",
                 "type": "object",
                 "properties": {
                     "name": {
@@ -330,10 +324,10 @@
             }
         },
         "contributors": {
-            "description": "TBD: maybe description of \"items\" belongs in here, maybe not?",
+            "description": "The people or organizations who contributed to this data package. List of objects.",
             "type": "array",
             "items": {
-                "description": "The people or organizations who contributed to this Data Package. This has to be a list. Each object refers to one contributor. Every contributor must have a title and property. A path, email, role and organization properties are optional extras.",
+                "description": "A person or organizations who contributed to this data package. Each object refers to one contributor. Every contributor must have a title and property. A path, email, role and organization properties are optional extras.",
                 "type": "object",
                 "properties": {
                     "title": {
@@ -375,10 +369,10 @@
             }
         },
         "resources": {
-            "description": "TBD: maybe description of \"items\" belongs in here, maybe not?",
+            "description": "Resources, described as a list of data resource format objects.",
             "type": "array",
             "items": {
-                "description": "The Data Resource format describes a data resource as an individual file or table.",
+                "description": "The data resource format describes a data resource as an individual file or table.",
                 "type": "object",
                 "properties": {
                     "profile": {
@@ -417,14 +411,14 @@
                         ]
                     },
                     "schema": {
-                        "description": "Object containing fields and primary key. Describes the structure of the present data.",
+                        "description": "Object containing fields, primary key and for foreign keys. Describes the structure of the present data.",
                         "type": "object",
                         "properties": {
                             "fields": {
-                                "description": "List of objects. Every object describes a column and provides name, description, type and unit.",
+                                "description": "List of field objects.",
                                 "type": "array",
                                 "items": {
-                                    "description": "TBD",
+                                    "description": "Field object. Every object describes a column and provides name, description, type and unit.",
                                     "type": "object",
                                     "properties": {
                                         "name": {
@@ -459,36 +453,30 @@
                                 }
                             },
                             "primaryKey": {
-                                "description": "TBD: maybe description of \"items\" belongs in here, maybe not?",
+                                "description": "A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns. Example: id",
                                 "type": "array",
                                 "items": {
-                                    "primaryKey": {
-                                        "description": "A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns. Example: id",
-                                        "type": [
-                                            "string",
-                                            "null"
-                                        ]
-                                    }
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 }
                             },
                             "foreignKeys": {
-                                "description": "TBD: maybe description of \"items\" belongs in here, maybe not?",
+                                "description": "List of foreign keys.",
                                 "type": "array",
                                 "items": {
                                     "description": "A foreign key is a field that refers to a column in another table.",
                                     "type": "object",
                                     "properties": {
                                         "fields": {
-                                            "description": "TBD: maybe description of \"items > fields\" belongs in here, maybe not?",
+                                            "description": "The column (as list of items) in the table that is constrainted by the foreign key. Example: version",
                                             "type": "array",
                                             "items": {
-                                                "fields": {
-                                                    "description": "The column in the table that is constrainted by the foreign key. Example: version",
-                                                    "type": [
-                                                        "string",
-                                                        "null"
-                                                    ]
-                                                }
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
                                             }
                                         },
                                         "reference": {
@@ -503,16 +491,13 @@
                                                     ]
                                                 },
                                                 "fields": {
-                                                    "description": "TBD: maybe description of \"items > fields\" belongs in here, maybe not?",
+                                                    "description": "The foreign resource column. List of fields. Example: version",
                                                     "type": "array",
                                                     "items": {
-                                                        "fields": {
-                                                            "description": "The foreign resource column. Example: version",
-                                                            "type": [
-                                                                "string",
-                                                                "null"
-                                                            ]
-                                                        }
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
                                                     }
                                                 }
                                             }
@@ -606,7 +591,7 @@
             }
         },
         "_comment": {
-            "description": "Array of objects. The “_comment”-section is used as a self-description of the final metadata-file. It is text, intended for humans and can include a link to the metadata documentation(s), required value formats and similar remarks. The comment section has no fix structure or mandatory values, but a useful self-description, similar to the one depicted here, is encouraged.",
+            "description": "Object. The “_comment”-section is used as a self-description of the final metadata-file. It is text, intended for humans and can include a link to the metadata documentation(s), required value formats and similar remarks. The comment section has no fix structure or mandatory values, but a useful self-description, similar to the one depicted here, is encouraged.",
             "type": "object",
             "properties": {
                 "metadata": {
