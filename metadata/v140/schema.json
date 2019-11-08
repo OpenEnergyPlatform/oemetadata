@@ -119,7 +119,8 @@
                         "null"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "spatial": {
             "description": "Object. Contains name-value-pairs describing the spatial context of the contained data.",
@@ -146,7 +147,8 @@
                         "null"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "temporal": {
             "description": "Temporal object. Time period covered in the data. Temporal information should either contain a \"referenceDate\" or the keys describing a time series; in rare cases both. Use null for the ones that don't apply.",
@@ -198,9 +200,11 @@
                                 "null"
                             ]
                         }
-                    }
+                    },
+                    "additionalProperties": false
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "sources": {
             "description": "List of source objects.",
@@ -288,7 +292,8 @@
                     "description",
                     "path",
                     "licenses"
-                ]
+                ],
+                "additionalProperties": false
             }
         },
         "licenses": {
@@ -340,7 +345,8 @@
                     "path",
                     "instruction",
                     "attribution"
-                ]
+                ],
+                "additionalProperties": false
             }
         },
         "contributors": {
@@ -388,7 +394,8 @@
                 },
                 "required": [
                     "title"
-                ]
+                ],
+                "additionalProperties": false
             }
         },
         "resources": {
@@ -472,7 +479,8 @@
                                                 "null"
                                             ]
                                         }
-                                    }
+                                    },
+                                    "additionalProperties": false
                                 }
                             },
                             "primaryKey": {
@@ -523,12 +531,15 @@
                                                         ]
                                                     }
                                                 }
-                                            }
+                                            },
+                                            "additionalProperties": false
                                         }
-                                    }
+                                    },
+                                    "additionalProperties": false
                                 }
                             }
-                        }
+                        },
+                        "additionalProperties": false
                     },
                     "dialect": {
                         "description": "Object. A CSV Dialect defines a simple format to describe the various dialects of CSV files in a language agnostic manner. In case of a database, the values in the containing fields are \"none\".",
@@ -548,9 +559,11 @@
                                     "null"
                                 ]
                             }
-                        }
+                        },
+                        "additionalProperties": false
                     }
-                }
+                },
+                "additionalProperties": false
             }
         },
         "review": {
@@ -571,7 +584,8 @@
                         "null"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "metaMetadata": {
             "description": "Object. Description about the metadata themselves, their format, version and license. These fields should already be provided when you’re filling out your metadata.",
@@ -609,9 +623,11 @@
                                 "null"
                             ]
                         }
-                    }
+                    },
+                    "additionalProperties": false
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "_comment": {
             "description": "Object. The “_comment”-section is used as a self-description of the final metadata-file. It is text, intended for humans and can include a link to the metadata documentation(s), required value formats and similar remarks. The comment section has no fix structure or mandatory values, but a useful self-description, similar to the one depicted here, is encouraged.",
@@ -666,7 +682,8 @@
                         "null"
                     ]
                 }
-            }
+            },
+            "additionalProperties": false
         }
     },
     "required": [
@@ -674,5 +691,6 @@
         "title",
         "id",
         "description"
-    ]
+    ],
+    "additionalProperties": false
 }
