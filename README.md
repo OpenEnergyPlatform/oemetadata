@@ -50,7 +50,7 @@ print(METADATA_V140_TEMPLATE)
 
     Windows:
 
-    `. venv/scripts/activate`
+    `. venv/Scripts/activate`
 
 3. Install requirements
 
