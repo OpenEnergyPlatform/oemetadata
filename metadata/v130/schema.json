@@ -225,7 +225,7 @@
                             "type": "string"
                         },
                         "_units": {
-                            "description": "Description of how units should be used. Example: Use a space between Numbers and units (100 m)",
+                            "description": "Description of how units should be formatted. Example: Use a space between Numbers and units (100 m)",
                             "type": "string"
                         },
                         "_none": {
