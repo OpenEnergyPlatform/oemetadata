@@ -16,10 +16,10 @@
             "description": "Languages used (ISO 639-3 code). Example: \"language\": [\"eng\",\"ger\"]",
             "type": "array",
             "items": {
-                "language": {
-                    "description": "TBD",
-                    "type": "string"
-                }
+                "type": [
+                    "string",
+                    "null"
+                ]
             }
         },
         "spatial": {
@@ -66,7 +66,7 @@
             "description": "Contains information about the sources",
             "type": "array",
             "items": {
-                "description": "TBD",
+                "description": "Source object in list of source objects. Each object has all name-value-pairs.",
                 "type": "object",
                 "properties": {
                     "name": {
@@ -126,7 +126,7 @@
             "description": "Contains significant changes (data set or metadata)",
             "type": "array",
             "items": {
-                "description": "TBD",
+                "description": "A person or organization who contributed to this data package. Each object refers to one contributor. Every contributor must have a title and property. A path, email, role and organization properties are optional extras.",
                 "type": "object",
                 "properties": {
                     "name": {
@@ -152,7 +152,7 @@
             "description": "Contains information about the tables or files",
             "type": "array",
             "items": {
-                "description": "TBD",
+                "description": "The data resource format describes each data resource as an individual file or table.",
                 "type": "object",
                 "properties": {
                     "name": {
@@ -164,22 +164,22 @@
                         "type": "string"
                     },
                     "fields": {
-                        "description": "Each field (column) of the table is described in detail. There are three sub keys: name, description, and unit for each column.",
+                        "description": "Each field (column) of the table is described in detail. Every field is described in an object",
                         "type": "array",
                         "items": {
-                            "description": "TBD",
+                            "description": "Each field object contains all three keys: name, description and unit.",
                             "type": "object",
                             "properties": {
                                 "name": {
-                                    "description": "TBD. Example: \"name\": \"capacity\"",
+                                    "description": "Name string unique within its scope. Example: year",
                                     "type": "string"
                                 },
                                 "description": {
-                                    "description": "TBD. Example: \"description\": \"Elec.\"",
+                                    "description": "Free-text describing the field. Example: Reference year for which the data were collected.",
                                     "type": "string"
                                 },
                                 "unit": {
-                                    "description": "TBD. Example: \"unit\": \"MW\"",
+                                    "description": "Unit, preferably SI-Unit, that values in this field are mapped to. If \"unit\" doesn't apply to a field, use \"none\". Example: MW",
                                     "type": "string"
                                 }
                             }
@@ -193,43 +193,43 @@
             "type": "string"
         },
         "_comment": {
-            "description": "TBD",
+            "description": "Object. The “_comment”-section is used as a self-description of the final metadata-file. It is text, intended for humans and can include a link to the metadata documentation(s), required value formats and similar remarks. The comment section has no fixed structure or mandatory values, but a useful self-description, similar to the one depicted here, is encouraged.",
             "type": "object",
             "properties": {
                 "_url": {
-                    "description": "TBD",
+                    "description": "URL that refers to the description if this metadata standard. Example: https://github.com/OpenEnergyPlatform/metadata/blob/develop/metadata/v130/schema.json",
                     "type": "string"
                 },
                 "_copyright": {
-                    "description": "TBD",
+                    "description": "Copyrightholder of the produced data set. Example: © Reiner Lemoine Institut",
                     "type": "string"
                 },
                 "_metadata_license": {
-                    "description": "TBD",
+                    "description": "license of the provided metadata as SPDX identifier. Example: CC0-1.0",
                     "type": "string"
                 },
                 "_metadata_license_url": {
-                    "description": "TBD",
+                    "description": "Url or path string, that is a fully qualified HTTP address. Example: https://creativecommons.org/publicdomain/zero/1.0/",
                     "type": "string"
                 },
                 "_contains": {
-                    "description": "TBD",
+                    "description": "Metametadata: Link(s) to description of metadata structure. Example: http://www.json.org/; http://stackoverflow.com/questions/383692/what-is-json-and-why-would-i-use-it",
                     "type": "string"
                 },
                 "_additional_information": {
-                    "description": "TBD",
+                    "description": "Object containing additional tips on the metadata format.",
                     "type": "object",
                     "properties": {
                         "_dates": {
-                            "description": "TBD",
+                            "description": "Description of how dates should be formatted. Example: Dates must follow the ISO8601 (JJJJ-MM-TT)",
                             "type": "string"
                         },
                         "_units": {
-                            "description": "TBD",
+                            "description": "Description of how units should be formatted. Example: Use a space between Numbers and units (100 m)",
                             "type": "string"
                         },
                         "_none": {
-                            "description": "TBD",
+                            "description": "Description of how empty values should be formatted. Example: If not applicable use 'none'",
                             "type": "string"
                         }
                     }
