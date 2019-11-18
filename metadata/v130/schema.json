@@ -152,7 +152,7 @@
             "description": "Contains information about the tables or files",
             "type": "array",
             "items": {
-                "description": "TBD",
+                "description": "The data resource format describes each data resource as an individual file or table.",
                 "type": "object",
                 "properties": {
                     "name": {
