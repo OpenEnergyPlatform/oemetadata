@@ -197,7 +197,7 @@
             "type": "object",
             "properties": {
                 "_url": {
-                    "description": "URL to the description if this metadata standard. Example: https://github.com/OpenEnergyPlatform/metadata/blob/develop/metadata/v130/schema.json",
+                    "description": "URL that refers to the description if this metadata standard. Example: https://github.com/OpenEnergyPlatform/metadata/blob/develop/metadata/v130/schema.json",
                     "type": "string"
                 },
                 "_copyright": {
