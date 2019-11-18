@@ -221,7 +221,7 @@
                     "type": "object",
                     "properties": {
                         "_dates": {
-                            "description": "Description of how dates should be used. Example: Dates must follow the ISO8601 (JJJJ-MM-TT)",
+                            "description": "Description of how dates should be formatted. Example: Dates must follow the ISO8601 (JJJJ-MM-TT)",
                             "type": "string"
                         },
                         "_units": {
