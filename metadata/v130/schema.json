@@ -229,7 +229,7 @@
                             "type": "string"
                         },
                         "_none": {
-                            "description": "Description of how empty calues should be used. Example: If not applicable use 'none'",
+                            "description": "Description of how empty values should be formatted. Example: If not applicable use 'none'",
                             "type": "string"
                         }
                     }
