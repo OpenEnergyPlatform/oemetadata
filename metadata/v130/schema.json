@@ -164,22 +164,22 @@
                         "type": "string"
                     },
                     "fields": {
-                        "description": "Each field (column) of the table is described in detail. There are three sub keys: name, description, and unit for each column.",
+                        "description": "Each field (column) of the table is described in detail. Every field is described in an object",
                         "type": "array",
                         "items": {
-                            "description": "TBD",
+                            "description": "Each field object contains all three keys: name, description.",
                             "type": "object",
                             "properties": {
                                 "name": {
-                                    "description": "TBD. Example: \"name\": \"capacity\"",
+                                    "description": "Name string unique within its scope. Example: year",
                                     "type": "string"
                                 },
                                 "description": {
-                                    "description": "TBD. Example: \"description\": \"Elec.\"",
+                                    "description": "Free-text describing the field. Example: Reference year for which the data were collected.",
                                     "type": "string"
                                 },
                                 "unit": {
-                                    "description": "TBD. Example: \"unit\": \"MW\"",
+                                    "description": "Unit, preferably SI-Unit, that values in this field are mapped to. If \"unit\" doesn't apply to a field, use \"none\". Example: MW",
                                     "type": "string"
                                 }
                             }
