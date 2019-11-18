@@ -16,10 +16,10 @@
             "description": "Languages used (ISO 639-3 code). Example: \"language\": [\"eng\",\"ger\"]",
             "type": "array",
             "items": {
-                "language": {
-                    "description": "TBD",
-                    "type": "string"
-                }
+                "type": [
+                    "string",
+                    "null"
+                ]
             }
         },
         "spatial": {
