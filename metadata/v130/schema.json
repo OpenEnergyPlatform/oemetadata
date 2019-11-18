@@ -167,7 +167,7 @@
                         "description": "Each field (column) of the table is described in detail. Every field is described in an object",
                         "type": "array",
                         "items": {
-                            "description": "Each field object contains all three keys: name, description.",
+                            "description": "Each field object contains all three keys: name, description and unit.",
                             "type": "object",
                             "properties": {
                                 "name": {
