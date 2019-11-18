@@ -126,7 +126,7 @@
             "description": "Contains significant changes (data set or metadata)",
             "type": "array",
             "items": {
-                "description": "TBD",
+                "description": "A person or organization who contributed to this data package. Each object refers to one contributor. Every contributor must have a title and property. A path, email, role and organization properties are optional extras.",
                 "type": "object",
                 "properties": {
                     "name": {
