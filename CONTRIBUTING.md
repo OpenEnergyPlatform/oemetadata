@@ -50,12 +50,16 @@ it through first).
 
 To run tests locally, install the dependencies 
 ```bash 
-pip install -r tests/test_requirements.txt 
+pip install -r requirements.txt 
 ```
 
 1. Integration/unit tests 
     ```bash
-    pytest tests
+    pytest
+    ```
+    And for a complete run in different environments:
+    ```bash
+    tox -v
     ```
 2.  Linting tests
     ```bash
