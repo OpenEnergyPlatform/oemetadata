@@ -659,8 +659,7 @@
                         "null"
                     ]
                 }
-            },
-            "additionalProperties": false
+            }
         }
     },
     "additionalProperties": false
