@@ -8,12 +8,12 @@ with open(path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="oep-metadata",
-    version="1.0.1",
+    name="oemetadata",
+    version="1.1.0",
     description="Open Energy Platform (OEP) - metadata schemas, examples and templates package",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/OpenEnergyPlatform/metadata",
+    url="https://github.com/OpenEnergyPlatform/oemetadata",
     author="Alexis Michaltsis",
     author_email="a.michaltsis@rl-institut.de",
     license="MIT",
