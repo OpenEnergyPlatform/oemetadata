@@ -9,6 +9,12 @@ Here is a template for new release sections
 
 ```
 ## Current
+
+### Added
+-
+### Changed
+-
+### Removed
 -
 
 ## [_._._] - 20XX-MM-DD
@@ -21,8 +27,14 @@ Here is a template for new release sections
 -
 ```
 ## Current
+
+### Added
 - Add Current section to Changelog, documenting all changes in current branch and stage for release
 - Extend black options, COMMAND tox -v now shows exactly what code must be reformatted
+
+### Changed
+- Rename repository from "metadata" to "oemetadata"
+
 
 ## [1.0.1] Initial release
 
