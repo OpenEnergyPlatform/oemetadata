@@ -8,6 +8,9 @@ and the versioning aim to respect [Semantic Versioning](http://semver.org/spec/v
 Here is a template for new release sections
 
 ```
+## Current
+-
+
 ## [_._._] - 20XX-MM-DD
 
 ### Added
@@ -17,6 +20,9 @@ Here is a template for new release sections
 ### Removed
 -
 ```
+## Current
+- Add Current section to Changelog, documenting all changes in current branch and stage for release
+- Extend black options, COMMAND tox -v now shows exactly what code must be reformatted
 
 ## [1.0.1] Initial release
 
@@ -27,3 +33,4 @@ Here is a template for new release sections
 - Python implementation and tests for schema, example, template of v130
 - Python implementation and tests for schema, example, template of v140
 - Implementation of metaschema (draft07) and test of metaschema
+
