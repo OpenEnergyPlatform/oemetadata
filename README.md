@@ -4,7 +4,7 @@
 
 OEF metadata schemata, examples and templates package
 
-[![Build Status](https://travis-ci.org/OpenEnergyPlatform/metadata.svg?branch=develop)](https://travis-ci.org/OpenEnergyPlatform/metadata)
+[![Build Status](https://travis-ci.org/OpenEnergyPlatform/oemetadata.svg?branch=develop)](https://travis-ci.org/OpenEnergyPlatform/oemetadata)
 
 ## License / Copyright
 
@@ -12,26 +12,26 @@ This repository is licensed under [MIT License (MIT)](https://spdx.org/licenses/
 
 ## Installation
 
-`pip install oep-metadata`
+`pip install oep-oemetadata`
 
 ## Usage Examples
 
 ```
-from metadata.v140.example import METADATA_V140_EXAMPLE
+from oemetadata.v140.example import OEMETADATA_V140_EXAMPLE
 
-print(METADATA_V140_EXAMPLE)
+print(OEMETADATA_V140_EXAMPLE)
 ```
 
 ```
-from metadata.v140.schema import METADATA_V140_SCHEMA
+from oemetadata.v140.schema import OEMETADATA_V140_SCHEMA
 
-print(METADATA_V140_SCHEMA)
+print(OEMETADATA_V140_SCHEMA)
 ```
 
 ```
-from metadata.v140.template import METADATA_V140_TEMPLATE
+from oemetadata.v140.template import OEMETADATA_V140_TEMPLATE
 
-print(METADATA_V140_TEMPLATE)
+print(OEMETADATA_V140_TEMPLATE)
 ```
 
 ## Development
