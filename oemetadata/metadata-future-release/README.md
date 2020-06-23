@@ -2,8 +2,8 @@
 
 # Open Energy - Metadata Current
 
-This version of the OEM represents the current status of the OEM. This includes all developments that 
-staged for the next release. Note that this version may not be fully integrated into the OEP, we 
+This version of the OEM represents the current version of the OEM. This includes all developments that 
+staged for the next/future release. Note that this version may not be fully integrated into the OEP, we 
 recommend that you use the version presented in the oemetadata-latest-release folder.
 
 For further information see the [Changelog](https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/CHANGELOG.md).
