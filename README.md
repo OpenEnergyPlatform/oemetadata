@@ -34,6 +34,11 @@ from oemetadata.v140.template import OEMETADATA_V140_TEMPLATE
 print(OEMETADATA_V140_TEMPLATE)
 ```
 
+## Open Energy Metadata description
+
+The OEMeta data contains multiple fields/keys in a nested JSON data structure. We [describe](https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/metadata/latest/metadata_key_description.md)
+each field/key and update the description for each release if necessary!
+
 ## Development
 
 ### Example for activating virtualenv and install development dependencies:
