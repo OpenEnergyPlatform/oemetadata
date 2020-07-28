@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-isort -rc ./metadata/ ./tests/
-black *.py metadata/ tests/
+isort -rc ./oemetadata/ ./tests/
+black *.py oemetadata/ tests/

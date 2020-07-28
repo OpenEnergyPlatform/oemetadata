@@ -1,12 +1,27 @@
-import jsonschema
-
-
 def test_if_schema_json_loads_successfully():
-    from metadata.v140.schema import METADATA_V140_SCHEMA
+    try:
+        from metadata.v140.schema import OEMETADATA_V140_SCHEMA
+    except Warning:
+        print("Metadata Schema v1.4.0 cant load. Check if the files are missing!")
 
 
-def test_schema_against_example_which_should_succeed():
-    from metadata.v140.schema import METADATA_V140_SCHEMA
-    from metadata.v140.example import METADATA_V140_EXAMPLE
+def test_if_schema_json_has_correct_schema_and_id_set():
+    from metadata.v140.schema import OEMETADATA_V140_SCHEMA
+    import string
 
-    assert jsonschema.validate(METADATA_V140_EXAMPLE, METADATA_V140_SCHEMA) == None
+    def get_string(s):
+        return string.printable + s + string.printable
+
+    assert get_string(OEMETADATA_V140_SCHEMA["$schema"]) == get_string("http://json-schema.org/draft-07/schema#")
+
+    assert get_string(OEMETADATA_V140_SCHEMA["$id"]) == get_string(
+        "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/oemetadata/v140/schema.json"
+    )
+
+
+def test_schema_against_metaschema_which_should_succeed():
+    import jsonschema
+    from metadata.v140.schema import OEMETADATA_V140_SCHEMA
+    from metadata.metaschema.draft07.schema import OEMETADATA_METASCHEMA_DRAFT07_SCHEMA
+
+    assert jsonschema.validate(OEMETADATA_V140_SCHEMA, OEMETADATA_METASCHEMA_DRAFT07_SCHEMA) is None
