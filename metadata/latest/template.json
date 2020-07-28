@@ -148,12 +148,12 @@
         }
     },
     "_comment": {
-        "metadata": "Metadata documentation and explanation (https://github.com/OpenEnergyPlatform/organisation/wiki/metadata)",
-        "dates": "Dates and time must follow the ISO8601 including time zone (YYYY-MM-DD or YYYY-MM-DDThh:mm:ss±hh)",
+        "metadata": "Metadata development and documentation (https://github.com/OpenEnergyPlatform/oemetadata)",
+        "dates": "Dates and time must follow the ISO 8601 standard including time zone (YYYY-MM-DD or YYYY-MM-DDThh:mm:ss±hh)",
         "units": "Use a space between numbers and units (100 m)",
         "languages": "Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE)",
-        "licenses": "License name must follow the SPDX License List (https://spdx.org/licenses/)",
-        "review": "Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/wiki)",
-        "null": "If not applicable use (null)"
+        "licenses": "License name must be an identifier from SPDX License List (https://spdx.org/licenses/)",
+        "review": "Follow the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md)",
+        "null": "If any value is not applicable use 'null' without any quotation marks."
     }
 }
