@@ -154,6 +154,6 @@
         "languages": "Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE)",
         "licenses": "License name must be an identifier from SPDX License List (https://spdx.org/licenses/)",
         "review": "Follow the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md)",
-        "null": "If any value is not applicable use 'null' without any quotation marks."
+        "null": "If any value is not applicable use 'null' without any quotation marks. However, if there are no foreignKeys, drop the entire structure contained and only leave \"foreignKeys\": []"
     }
 }
