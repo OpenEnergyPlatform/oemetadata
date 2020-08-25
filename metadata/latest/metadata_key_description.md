@@ -23,7 +23,7 @@ This pages describes the OEP Metadata version 1.4.0 You can have a look at an em
 | 8.4 | contact | Reference to the creator or maintainer of the data set | contact@example.com | 
 | 8.5 | grantNo | In a publicly funded Project: the identifying grant number | 01AB2345 | 
 | 8.6 | fundingAgency | In a funded Project: The name of the funding agency | Bundesministerium für Wirtschaft und Energie | 
-| 8.7 | fundingAgencyLogo | In a publicly funded Project: A link to the Logo of the funding agency | https://www.innovation-beratung-foerderung.de/INNO/Redaktion/DE/Bilder/Titelbilder/titel_foerderlogo_bmwi.jpg?__blob=poster&v=2 | 
+| 8.7 | fundingAgencyLogo | In a publicly funded Project: A link to the Logo of the funding agency | https://www.innovation-beratung-foerderung.de/INNO/Redaktion/DE/Bilder/Titelbilder/titel_foerderlogo_bmwi.jpg?__blob=normal&v=3 | 
 | 8.8 | publisherLogo | Link to the logo of the publishing institution | https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png | 
 | 9 | spatial | Object. Contains name-value-pairs describing the spatial context of the contained data. | |
 | 9.1 | location | In the case of data where the location can be described as a point. May come as coordinates, URI or addresses with street, house number and zip code | 52.433509, 13.535855 |
