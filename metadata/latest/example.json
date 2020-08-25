@@ -244,7 +244,7 @@
         }
     ],
     "review": {
-        "path": "https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md",
+        "path": "https://github.com/OpenEnergyPlatform/data-preprocessing/issues/58",
         "badge": "Platinum"
     },
     "metaMetadata": {
