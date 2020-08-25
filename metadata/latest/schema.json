@@ -555,7 +555,7 @@
                     ]
                 },
                 "badge": {
-                    "description": "A badge of either Bronze, Silver, Gold or Platin is used to label the given metadata based on its quality. Example: Platin",
+                    "description": "A badge of either Bronze, Silver, Gold or Platinum is used to label the given metadata based on its quality. Example: Platinum",
                     "type": [
                         "string",
                         "null"

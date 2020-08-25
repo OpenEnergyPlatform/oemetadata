@@ -82,7 +82,7 @@ This pages describes the OEP Metadata version 1.4.0 You can have a look at an em
 | 14.7.2 | decimalSeparator | Symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be "." or ",". | . |
 | 15. | review | Data uploaded through the OEP needs to go through review. The review will cover the areas described here: https://github.com/OpenEnergyPlatform/data-preprocessing/wiki and carried out by a team of the platform. The review itself is documented at the specified path and a badge is rewarded with regards to completeness. |  |
 | 15.1 | path | A URL or path string, that should be a permanent http(s) address directly linking to the documented review. | https://www.example.com |
-| 15.2 | badge | A badge of either Bronze, Silver, Gold or Platin is used to label the given metadata based on its quality. | Platin |
+| 15.2 | badge | A badge of either Bronze, Silver, Gold or Platinum is used to label the given metadata based on its quality. | Platinum |
 | 16 | metaMetadata | Object. Description about the metadata themselves, their format, version and license. These fields should already be provided when you’re filling out your metadata. ||
 | 16.1 | metadataVersion | Type and version number of the metadata | OEP-1.4 |
 | 16.2 | metadataLicense | Object describing the license of the provided metadata ||
