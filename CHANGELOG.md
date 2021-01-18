@@ -29,12 +29,19 @@ Here is a template for new release sections
 ## Current
 
 ### Added
+
+### Changed
+
+## [1.4.1] - Minor release 2021-01-14
+
+### Added
+- New directory for release version 1.4.1
+- Added test for version 1.4.1
 - Add Current section to Changelog, documenting all changes in current branch and stage for release
 - Extend black options, COMMAND tox -v now shows exactly what code must be reformatted
 
 ### Changed
 - Rename repository from "metadata" to "oemetadata"
-
 
 ## [1.0.1] Initial release
 
