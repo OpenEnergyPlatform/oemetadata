@@ -1,143 +1,143 @@
 {
-    "name": "",
-    "title": "",
-    "id": "",
-    "description": "",
+    "name": null,
+    "title": null,
+    "id": null,
+    "description": null,
     "language": [
-        ""
+        null
     ],
     "keywords": [
-        ""
+        null
     ],
-    "publicationDate": "",
+    "publicationDate": null,
     "context": {
-        "homepage": "",
-        "documentation": "",
-        "sourceCode": "",
-        "contact": "",
-        "grantNo": "",
-        "fundingAgency": "",
-        "fundingAgencyLogo": "",
-        "publisherLogo": ""
+        "homepage": null,
+        "documentation": null,
+        "sourceCode": null,
+        "contact": null,
+        "grantNo": null,
+        "fundingAgency": null,
+        "fundingAgencyLogo": null,
+        "publisherLogo": null
     },
     "spatial": {
-        "location": "",
-        "extent": "",
-        "resolution": ""
+        "location": null,
+        "extent": null,
+        "resolution": null
     },
     "temporal": {
-        "referenceDate": "",
+        "referenceDate": null,
         "timeseries": {
-            "start": "",
-            "end": "",
-            "resolution": "",
-            "alignment": "",
-            "aggregationType": ""
+            "start": null,
+            "end": null,
+            "resolution": null,
+            "alignment": null,
+            "aggregationType": null
         }
     },
     "sources": [
         {
-            "title": "",
-            "description": "",
-            "path": "",
+            "title": null,
+            "description": null,
+            "path": null,
             "licenses": [
                 {
-                    "name": "",
-                    "title": "",
-                    "path": "",
-                    "instruction": "",
-                    "attribution": ""
+                    "name": null,
+                    "title": null,
+                    "path": null,
+                    "instruction": null,
+                    "attribution": null
                 }
             ]
         },
         {
-            "title": "",
-            "description": "",
-            "path": "",
+            "title": null,
+            "description": null,
+            "path": null,
             "licenses": [
                 {
-                    "name": "",
-                    "title": "",
-                    "path": "",
-                    "instruction": "",
-                    "attribution": ""
+                    "name": null,
+                    "title": null,
+                    "path": null,
+                    "instruction": null,
+                    "attribution": null
                 }
             ]
         }
     ],
     "licenses": [
         {
-            "name": "",
-            "title": "",
-            "path": "",
-            "instruction": "",
-            "attribution": ""
+            "name": null,
+            "title": null,
+            "path": null,
+            "instruction": null,
+            "attribution": null
         }
     ],
     "contributors": [
         {
-            "title": "",
-            "email": "",
-            "date": "",
-            "object": "",
-            "comment": ""
+            "title": null,
+            "email": null,
+            "date": null,
+            "object": null,
+            "comment": null
         },
         {
-            "title": "",
-            "email": "",
-            "date": "",
-            "object": "",
-            "comment": ""
+            "title": null,
+            "email": null,
+            "date": null,
+            "object": null,
+            "comment": null
         }
     ],
     "resources": [
         {
-            "profile": "",
-            "name": "",
-            "path": "",
-            "format": "",
-            "encoding": "",
+            "profile": null,
+            "name": null,
+            "path": null,
+            "format": null,
+            "encoding": null,
             "schema": {
                 "fields": [
                     {
-                        "name": "",
-                        "description": "",
-                        "type": "",
-                        "unit": ""
+                        "name": null,
+                        "description": null,
+                        "type": null,
+                        "unit": null
                     },
                     {
-                        "name": "",
-                        "description": "",
-                        "type": "",
-                        "unit": ""
+                        "name": null,
+                        "description": null,
+                        "type": null,
+                        "unit": null
                     }
                 ],
                 "primaryKey": [
-                    ""
+                    null
                 ],
                 "foreignKeys": [
                     {
                         "fields": [
-                            ""
+                            null
                         ],
                         "reference": {
-                            "resource": "",
+                            "resource": null,
                             "fields": [
-                                ""
+                                null
                             ]
                         }
                     }
                 ]
             },
             "dialect": {
-                "delimiter": "",
+                "delimiter": null,
                 "decimalSeparator": "."
             }
         }
     ],
     "review": {
-        "path": "",
-        "badge": ""
+        "path": null,
+        "badge": null
     },
     "metaMetadata": {
         "metadataVersion": "OEP-1.4.1",
