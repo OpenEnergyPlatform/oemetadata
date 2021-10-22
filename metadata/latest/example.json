@@ -45,6 +45,7 @@
             "resolution": "15 min",
             "alignment": "right",
             "aggregationType": "sum"
+		}
 		]
     },
     "sources": [
