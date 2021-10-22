@@ -262,6 +262,7 @@
         "languages": "Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE)",
         "licenses": "License name must follow the SPDX License List (https://spdx.org/licenses/)",
         "review": "Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/wiki)",
-        "null": "If not applicable use (null)"
+        "null": "If not applicable use: null"
+		"todo": "If an applicable value is not yet available and will be inserted later on use: "todo" "
     }
 }

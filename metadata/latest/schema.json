@@ -658,6 +658,13 @@
                         "string",
                         "null"
                     ]
+                },
+                "todo": {
+                    "description": "If an applicable value is not yet available and will be inserted later on use: "todo" ",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 }
             }
         }

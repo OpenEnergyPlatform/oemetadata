@@ -96,4 +96,4 @@ This pages describes the OEP Metadata version 1.4.1 You can have a look at an em
 | 17.4 | languages | Comment on language format | Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE) |
 | 17.5 | licenses | Reference to license format | License name must follow the SPDX License List (https://spdx.org/licenses/) |
 | 17.6 | review | Reference to review documentation | Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/wiki) |
-| 17.7 | ... | Feel free to add more descriptive comments. Like null | If a field is not applicable just enter: null |
+| 17.7 | ... | Feel free to add more descriptive comments. Like null <br/> <br/>  "todo" | <br/>  If a field is not applicable just enter: null <br/>  <br/>  If an applicable value is not yet available and will be inserted later on use: "todo" |
