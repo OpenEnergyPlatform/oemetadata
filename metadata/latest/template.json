@@ -27,13 +27,21 @@
     },
     "temporal": {
         "referenceDate": null,
-        "timeseries": {
+        "timeseries": [{
             "start": null,
             "end": null,
             "resolution": null,
             "alignment": null,
             "aggregationType": null
-        }
+        },
+		{
+            "start": null,
+            "end": null,
+            "resolution": null,
+            "alignment": null,
+            "aggregationType": null
+		}
+		]
     },
     "sources": [
         {
