@@ -9,10 +9,11 @@ This pages describes the OEP Metadata version 1.4.1 You can have a look at an em
 
 |#|Key |Description |Example |
 |---|---|---|---|
-|  | @context | Explanation of the metadata keys in ontology terms | https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld |
+|  | @context | Explanation of metadata keys in ontology terms | https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld |
 | 1 | name | File name or database table name | oep_metadata_table_example_v14 |
 | 2 | title | Human readable title | Metadata Example Table |
 | 3 | id | Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI). | https://example.com |
+|  | @id | Uniform Resource Identifier (URI) that links the resource via the databus | |
 | 4 | description | A description of the package. It should be usable as summary information for the entire package that is described by the metadata. | Example table used to illustrate the metadata structure and meaning |
 | 5 | language | Language used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47) | [en-GB, de-DE, fr-FR] |
 | 6 | keywords | An Array of string keywords to assist users searching for the package in catalogs. | [example, template, test] |

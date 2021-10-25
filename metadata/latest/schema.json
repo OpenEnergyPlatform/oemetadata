@@ -5,7 +5,7 @@
     "type": "object",
     "properties": {
         "@context": {
-            "description": "Explanation of the metadata keys in ontology terms. Example: https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld",
+            "description": "Explanation of metadata keys in ontology terms. Example: https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld",
             "type": [
                 "string",
                 "null"
@@ -27,6 +27,13 @@
         },
         "id": {
             "description": "Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI). Example: https://example.com",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "@id": {
+            "description": "Uniform Resource Identifier (URI) that links the resource via the databus",
             "type": [
                 "string",
                 "null"
