@@ -16,6 +16,7 @@ This pages describes the OEP Metadata version 1.4.1 You can have a look at an em
 |  | @id | Uniform Resource Identifier (URI) that links the resource via the databus | |
 | 4 | description | A description of the package. It should be usable as summary information for the entire package that is described by the metadata. | Example table used to illustrate the metadata structure and meaning |
 | 5 | language | Language used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47) | [en-GB, de-DE, fr-FR] |
+|  | subject | Reference the topic of the resource in ontology terms | |
 | 6 | keywords | An Array of string keywords to assist users searching for the package in catalogs. | [example, template, test] |
 | 7 | publicationDate | Date of publishing. Date Format is ISO 8601 (YYYY-MM-DD) | 2019-02-06 |
 | 8 | context | Object. Contains name-value-pairs that describe the general setting, evironment or project leading to the creation or maintenance of this dataset. ||
