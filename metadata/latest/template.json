@@ -114,12 +114,14 @@
                         "name": null,
                         "description": null,
                         "type": null,
+                        "is_about": null,
                         "unit": null
                     },
                     {
                         "name": null,
                         "description": null,
                         "type": null,
+                        "is_about": null,
                         "unit": null
                     }
                 ],

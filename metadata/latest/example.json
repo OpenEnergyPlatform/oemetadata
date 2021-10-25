@@ -210,24 +210,28 @@
                         "name": "id",
                         "description": "Unique identifier",
                         "type": "serial",
+                        "is_about": null,
                         "unit": null
                     },
                     {
                         "name": "year",
                         "description": "Reference year",
                         "type": "integer",
+                        "is_about": null,
                         "unit": null
                     },
                     {
                         "name": "value",
                         "description": "Example value",
                         "type": "double precision",
+                        "is_about": null,
                         "unit": "MW"
                     },
                     {
                         "name": "geom",
                         "description": "Geometry",
                         "type": "geometry(Point, 4326)",
+                        "is_about": null,
                         "unit": null
                     }
                 ],
