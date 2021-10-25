@@ -1,4 +1,5 @@
 {
+    "@context": "",
     "name": "oep_metadata_table_example_v141",
     "title": "Good example title",
     "id": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v141",

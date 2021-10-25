@@ -4,6 +4,13 @@
     "description": "Open Energy Plaftorm (OEP) metadata schema v1.4.1",
     "type": "object",
     "properties": {
+        "@context": {
+            "description": "Explanation of the metadata keys in ontology terms. Example: https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
         "name": {
             "description": "File name or database table name. Example: oep_metadata_table_example_v14",
             "type": [
