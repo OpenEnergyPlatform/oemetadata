@@ -477,6 +477,13 @@
                                                 "null"
                                             ]
                                         },
+                                        "value_reference": {
+                                            "description": "Ontology URI for an extended description of the values in the column",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ]
+                                        },
                                         "unit": {
                                             "description": "Unit, preferably SI-Unit, that values in this field are mapped to. If \"unit\" doesn't apply to a field, use \"null\". Example: MW",
                                             "type": [

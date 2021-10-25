@@ -74,6 +74,7 @@ This pages describes the OEP Metadata version 1.4.1 You can have a look at an em
 | 14.6.1.2 | description | Free-text describing the field. | Reference year for which the data were collected. |
 | 14.6.1.3 | type | Data type of the field. In case of a geom-column in a database, also indicate the shape and  CRS. | geometry(Point, 4326) |
 | | is_about | Ontology URI to describe the column header | |
+| | value_reference | Ontology URI for an extended description of the values in the column | |
 | 14.6.1.4 | unit | Unit, preferably SI-Unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null' | MW |
 | 14.6.2 | primaryKey | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns. | id |
 | 14.6.3 | foreignKeys | A foreign key is a field that refers to a column in another table. | |

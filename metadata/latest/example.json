@@ -211,6 +211,7 @@
                         "description": "Unique identifier",
                         "type": "serial",
                         "is_about": null,
+                        "value_reference": null,
                         "unit": null
                     },
                     {
@@ -218,6 +219,7 @@
                         "description": "Reference year",
                         "type": "integer",
                         "is_about": null,
+                        "value_reference": null,
                         "unit": null
                     },
                     {
@@ -225,6 +227,7 @@
                         "description": "Example value",
                         "type": "double precision",
                         "is_about": null,
+                        "value_reference": null,
                         "unit": "MW"
                     },
                     {
@@ -232,6 +235,7 @@
                         "description": "Geometry",
                         "type": "geometry(Point, 4326)",
                         "is_about": null,
+                        "value_reference": null,
                         "unit": null
                     }
                 ],
