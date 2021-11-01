@@ -1,8 +1,8 @@
 {
     "@context": null,
-    "name": "oep_metadata_table_example_v141",
+    "name": "oep_metadata_table_example_v150",
     "title": "Good example title",
-    "id": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v141",
+    "id": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v150",
     "@id": null,
     "description": "example metadata for example data",
     "subject": null,
@@ -200,8 +200,8 @@
     "resources": [
         {
             "profile": "tabular-data-resource",
-            "name": "model_draft.oep_metadata_table_example_v141",
-            "path": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v141",
+            "name": "model_draft.oep_metadata_table_example_v150",
+            "path": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v150",
             "format": "PostgreSQL",
             "encoding": "UTF-8",
             "schema": {
@@ -267,7 +267,7 @@
         "badge": "platin"
     },
     "metaMetadata": {
-        "metadataVersion": "OEP-1.4.1",
+        "metadataVersion": "OEP-1.5.0",
         "metadataLicense": {
             "name": "CC0-1.0",
             "title": "Creative Commons Zero v1.0 Universal",

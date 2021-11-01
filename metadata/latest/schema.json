@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/oemetadata/v141/schema.json",
-    "description": "Open Energy Plaftorm (OEP) metadata schema v1.4.1",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/oemetadata/v150/schema.json",
+    "description": "Open Energy Plaftorm (OEP) metadata schema v1.5.0",
     "type": "object",
     "properties": {
         "@context": {
@@ -12,7 +12,7 @@
             ]
         },
         "name": {
-            "description": "File name or database table name. Example: oep_metadata_table_example_v14",
+            "description": "File name or database table name. Example: oep_metadata_table_example_v15",
             "type": [
                 "string",
                 "null"
@@ -604,7 +604,7 @@
             "type": "object",
             "properties": {
                 "metadataVersion": {
-                    "description": "Type and version number of the metadata. Example: OEP-1.4",
+                    "description": "Type and version number of the metadata. Example: OEP-1.5",
                     "type": [
                         "string",
                         "null"

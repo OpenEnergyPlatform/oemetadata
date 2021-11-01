@@ -2,7 +2,7 @@
 
 ## Open Energy Metadata Description
 
-This pages describes the OEP Metadata version 1.4.1 You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v141/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v141/example.json) of a metadata string.
+This pages describes the OEP Metadata version 1.5.0 You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v150/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v150/example.json) of a metadata string.
 
 
 ### Table with all Metadata keys and a short description
@@ -10,7 +10,7 @@ This pages describes the OEP Metadata version 1.4.1 You can have a look at an em
 |#|Key |Description |Example |
 |---|---|---|---|
 | 1 | @context | Explanation of metadata keys in ontology terms | https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld |
-| 2 | name | File name or database table name | oep_metadata_table_example_v14 |
+| 2 | name | File name or database table name | oep_metadata_table_example_v15 |
 | 3 | title | Human readable title | Metadata Example Table |
 | 4 | id | Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI). | https://example.com |
 | 5 | @id | Uniform Resource Identifier (URI) that links the resource via the databus | |
@@ -89,7 +89,7 @@ This pages describes the OEP Metadata version 1.4.1 You can have a look at an em
 | 18.1 | path | A URL or path string, that should be a permanent http(s) address directly linking to the documented review. | https://www.example.com |
 | 18.2 | badge | A badge of either Bronze, Silver, Gold or Platin is used to label the given metadata based on its quality. | Platin |
 | 19 | metaMetadata | Object. Description about the metadata themselves, their format, version and license. These fields should already be provided when you’re filling out your metadata. ||
-| 19.1 | metadataVersion | Type and version number of the metadata | OEP-1.4 |
+| 19.1 | metadataVersion | Type and version number of the metadata | OEP-1.5 |
 | 19.2 | metadataLicense | Object describing the license of the provided metadata ||
 | 19.2.1 | name | SPDX identifier | CC0-1.0 |
 | 19.2.2 | title | Official (human readable) license title | Creative Commons Zero v1.0 Universal |
