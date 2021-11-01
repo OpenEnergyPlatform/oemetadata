@@ -39,49 +39,10 @@ print(OEMETADATA_V140_TEMPLATE)
 The OEMeta data contains multiple fields/keys in a nested JSON data structure. We [describe](https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/metadata/latest/metadata_key_description.md)
 each field/key and update the description for each release if necessary!
 
-## Development
 
-### Example for activating virtualenv and install development dependencies:
 
-1. Create virtualenv in root folder of repo
 
-`python -m venv venv`
 
-2. Activate virtualenv
-
-    Linux:
-
-    `. venv/bin/activate`
-
-    Windows:
-
-    `. venv/Scripts/activate`
-
-3. Install requirements
-
-`pip install -r requirements.txt`
-
-### Run tests locally (after above steps):
-
-Short:
-
-`pytest`
-
-Complete:
-
-`tox -v`
-
-### If a Python interpreter version is missing:
-
-Linux (Ubuntu):
-
-```
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt-get update
-# Install only missing interpreters:
-sudo apt-get install python3.6
-sudo apt-get install python3.7
-```
 
 ### Contributing
 
