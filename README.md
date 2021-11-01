@@ -10,6 +10,10 @@ OEF metadata schemata, examples and templates package
 
 This repository is licensed under [MIT License (MIT)](https://spdx.org/licenses/MIT.html)
 
+The oemetadata is licensed under [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
+
+The oemetadata example and oemetadata template are licensed under [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
+
 ## Installation
 
 `pip install oep-oemetadata`
