@@ -16,7 +16,7 @@ The oemetadata example and oemetadata template are licensed under [Creative Comm
 
 ## Installation
 
-`pip install oep-oemetadata`
+`pip install oep-metadata`
 
 ## Usage Examples
 
