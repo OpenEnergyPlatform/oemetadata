@@ -12,7 +12,7 @@ This repository is licensed under [MIT License (MIT)](https://spdx.org/licenses/
 
 ## Installation
 
-`pip install oep-oemetadata`
+`pip install oep-metadata`
 
 ## Usage Examples
 
