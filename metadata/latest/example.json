@@ -1,5 +1,5 @@
 {
-    "@context": null,
+    "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/30887e4cd7dabc316d1ee674791f0cc815277e38/metadata/latest/context.json",
     "name": "oep_metadata_table_example_v150",
     "title": "Good example title",
     "id": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v150",
