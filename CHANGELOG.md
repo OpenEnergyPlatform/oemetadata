@@ -32,6 +32,20 @@ Here is a template for new release sections
 
 ### Changed
 
+## [1.5.0] - Release 
+
+### Added
+- Add keys for linked data compatibility: ``@context``, ``@id``, ``subject``, ``is_about``, ``value_reference``
+- Add context.json file 
+
+### Changed
+- Delete future directory
+- Clarify instructions for dealing with non-applicable keys (null) and missing values ("todo")
+- Make key 13.2 ``timeseries`` a list
+- Relocate development information from README.md to CONTRIBUTING.md 
+- Add licence information to README.md
+- Update all .json files to v1.5.0
+
 ## [1.4.1] - Minor release 2021-01-14
 
 ### Added
