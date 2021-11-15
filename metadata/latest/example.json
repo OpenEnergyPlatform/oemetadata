@@ -42,14 +42,14 @@
             "alignment": "left",
             "aggregationType": "sum"
         },
-		{
+        {
             "start": "2018-01-01T00:00+01",
             "end": "2019-06-01T23:00+01",
             "resolution": "15 min",
             "alignment": "right",
             "aggregationType": "sum"
-		}
-		]
+        }
+        ]
     },
     "sources": [
         {
@@ -282,6 +282,6 @@
         "licenses": "License name must follow the SPDX License List (https://spdx.org/licenses/)",
         "review": "Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/wiki)",
         "null": "If not applicable use: null"
-		"todo": "If an applicable value is not yet available and will be inserted later on use: "todo" "
+        "todo": "If an applicable value is not yet available and will be inserted later on use: "todo" "
     }
 }
