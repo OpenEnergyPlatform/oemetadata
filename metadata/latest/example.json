@@ -20,8 +20,8 @@
     "publicationDate": "2021-11-15",
     "context": {
         "homepage": "https://reiner-lemoine-institut.de/lod-geoss/",
-        "documentation": "https://github.com/OpenEnergyPlatform/organisation/wiki/metadata",
-        "sourceCode": "https://github.com/OpenEnergyPlatform/examples/tree/master/metadata",
+        "documentation": "https://openenergy-platform.org/tutorials/jupyter/OEMetadata/",
+        "sourceCode": "https://github.com/OpenEnergyPlatform/oemetadata/tree/master",
         "contact": "https://github.com/Ludee",
         "grantNo": "03ET4057",
         "fundingAgency": "Bundesministerium für Wirtschaft und Energie",
