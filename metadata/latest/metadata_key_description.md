@@ -101,4 +101,6 @@ This pages describes the OEP Metadata version 1.5.0. You can have a look at an e
 | 20.4 | languages | Comment on language format | Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE) |
 | 20.5 | licenses | Reference to license format | License name must follow the SPDX License List (https://spdx.org/licenses/) |
 | 20.6 | review | Reference to review documentation | Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/wiki) |
-| 20.7 | ... | Feel free to add more descriptive comments. Like null <br/> <br/>  "todo" | <br/>  If a field is not applicable just enter: null <br/>  <br/>  If an applicable value is not yet available and will be inserted later on use: "todo" |
+| 20.7 | null | If a field is not applicable just enter: null | null |
+| 20.8 | todo | If an applicable value is not yet available and will be inserted later on, use: "todo" | "todo" |
+| 20.9 | ... | Feel free to add more descriptive comments. | |
