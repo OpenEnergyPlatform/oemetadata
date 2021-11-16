@@ -17,12 +17,12 @@
     "publicationDate": "2018-06-12",
     "context": {
         "homepage": "https://reiner-lemoine-institut.de/szenariendb/",
-        "documentation": "https://github.com/OpenEnergyPlatform/organisation/wiki/metadata",
-        "sourceCode": "https://github.com/OpenEnergyPlatform/examples/tree/master/metadata",
+        "documentation": "https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/metadata/v141/metadata_key_description.md",
+        "sourceCode": "https://github.com/OpenEnergyPlatform/oemetadata",
         "contact": "https://github.com/Ludee",
         "grantNo": "03ET4057",
         "fundingAgency": "Bundesministerium für Wirtschaft und Energie",
-        "fundingAgencyLogo": "https://www.innovation-beratung-foerderung.de/INNO/Redaktion/DE/Bilder/Titelbilder/titel_foerderlogo_bmwi.jpg?__blob=poster&v=2",
+        "fundingAgencyLogo": "https://www.innovation-beratung-foerderung.de/INNO/Redaktion/DE/Bilder/Titelbilder/titel_foerderlogo_bmwi.jpg?__blob=normal&v=3",
         "publisherLogo": "https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png"
     },
     "spatial": {
@@ -256,12 +256,12 @@
         }
     },
     "_comment": {
-        "metadata": "Metadata documentation and explanation (https://github.com/OpenEnergyPlatform/organisation/wiki/metadata)",
+        "metadata": "Metadata documentation and explanation (https://github.com/OpenEnergyPlatform/oemetadata)",
         "dates": "Dates and time must follow the ISO8601 including time zone (YYYY-MM-DD or YYYY-MM-DDThh:mm:ss±hh)",
         "units": "Use a space between numbers and units (100 m)",
         "languages": "Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE)",
         "licenses": "License name must follow the SPDX License List (https://spdx.org/licenses/)",
-        "review": "Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/wiki)",
+        "review": "Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md)",
         "null": "If not applicable use: null"
     }
 }
