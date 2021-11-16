@@ -1,9 +1,7 @@
 {
-    "@context": null,
     "name": null,
     "title": null,
     "id": null,
-    "@id": null,
     "description": null,
     "subject": null,
     "language": [
@@ -150,6 +148,8 @@
             }
         }
     ],
+    "@id": null,
+    "@context": null,
     "review": {
         "path": null,
         "badge": null
