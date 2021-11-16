@@ -222,6 +222,14 @@
                         "unit": null
                     },
                     {
+                        "name": "name",
+                        "description": "Example name",
+                        "type": "text",
+                        "is_about": null,
+                        "value_reference": null,
+                        "unit": null
+                    },
+                    {
                         "name": "year",
                         "description": "Reference year",
                         "type": "integer",
