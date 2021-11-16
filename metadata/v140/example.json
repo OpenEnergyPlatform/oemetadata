@@ -17,7 +17,7 @@
     "publicationDate": "2018-06-12",
     "context": {
         "homepage": "https://reiner-lemoine-institut.de/szenariendb/",
-        "documentation": "https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/metadata/latest/metadata_key_description.md",
+        "documentation": "https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/metadata/v140/metadata_key_description.md",
         "sourceCode": "https://github.com/OpenEnergyPlatform/oemetadata",
         "contact": "https://github.com/Ludee",
         "grantNo": "03ET4057",
