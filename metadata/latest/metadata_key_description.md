@@ -2,89 +2,89 @@
 
 ## Open Energy Metadata Description
 
-This pages describes the OEP Metadata version 1.5.0 You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v150/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v150/example.json) of a metadata string.
+This pages describes the OEP Metadata version 1.5.0. You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v150/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v150/example.json) of the metadata string.
 
 
 ### Table with all Metadata keys and a short description
 
 |#|Key |Description |Example |
 |---|---|---|---|
-| 1 | @context | Explanation of metadata keys in ontology terms | https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld |
-| 2 | name | File name or database table name | oep_metadata_table_example_v15 |
-| 3 | title | Human readable title | Metadata Example Table |
-| 4 | id | Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI). | https://example.com |
-| 5 | @id | Uniform Resource Identifier (URI) that links the resource via the databus | |
-| 6 | description | A description of the package. It should be usable as summary information for the entire package that is described by the metadata. | Example table used to illustrate the metadata structure and meaning |
-| 7 | language | Language used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47) | [en-GB, de-DE, fr-FR] |
-| 8 | subject | Reference the topic of the resource in ontology terms | |
-| 9 | keywords | An Array of string keywords to assist users searching for the package in catalogs. | [example, template, test] |
-| 10 | publicationDate | Date of publishing. Date Format is ISO 8601 (YYYY-MM-DD) | 2019-02-06 |
-| 11 | context | Object. Contains name-value-pairs that describe the general setting, evironment or project leading to the creation or maintenance of this dataset. ||
-| 11.1 | homepage | URL of Project | https://openenergy-platform.org/ | 
-| 11.2 | documentation | URL of the projects source code | https://github.com/OpenEnergyPlatform/examples/wiki/Metadata-Description | 
-| 11.3 | sourceCode | URL of Project | https://github.com/OpenEnergyPlatform | 
-| 11.4 | contact | Reference to the creator or maintainer of the data set | contact@example.com | 
-| 11.5 | grantNo | In a publicly funded Project: the identifying grant number | 01AB2345 | 
-| 11.6 | fundingAgency | In a funded Project: The name of the funding agency | Bundesministerium für Wirtschaft und Energie | 
-| 11.7 | fundingAgencyLogo | In a publicly funded Project: A link to the Logo of the funding agency | https://www.innovation-beratung-foerderung.de/INNO/Redaktion/DE/Bilder/Titelbilder/titel_foerderlogo_bmwi.jpg?__blob=poster&v=2 | 
-| 11.8 | publisherLogo | Link to the logo of the publishing institution | https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png | 
-| 12 | spatial | Object. Contains name-value-pairs describing the spatial context of the contained data. | |
-| 12.1 | location | In the case of data where the location can be described as a point. May come as coordinates, URI or addresses with street, house number and zip code | 52.433509, 13.535855 |
-| 12.2 | extent | Covered area. May be the name of a region, or the geometry of a bounding box. | Europe |
-| 12.3 | resolution | Pixel size in case of a regular raster image. Reference to administrative level or other spatial division that is present as the smallest spatially distinguished unit size. | 30 m |
-| 13 | temporal | Object. Time period covered in the data. Temporal information should either contain a "referenceDate" or the keys describing a time series; in rare cases both. Use `null` for the ones that don't apply. |  |
-| 13.1 | referenceDate | Base year, month or day. Point in time for which the data is meant to be accurate. A census will generally have a reference year. A satellite image will have a reference date. Date Format is ISO 8601. |  2016-01-01 |
-| 13.2 | timeseries | Object ||
-| 13.2.1 | start | The beginning point in time of a time series. |  2019-02-06T10:12:04+00:00 |
-| 13.2.2 | end | The end point in time of a time series. | 2019-02-07T10:12:04+00:00 |
-| 13.2.3 | resolution | The time span between individual points of information in a time series. | 30 s |
-| 13.2.4 | alignment | Indicator whether stamps in a time series are left, right or middle. `null` if there is no time series. | left |
-| 13.2.5 | aggregationType | Indicates whether the values are a sum, average or current. | sum |
-| 14 | sources | List of Objects. Each object has all name-value-pairs ||
-| 14.1 | title | Human readable title of the source, e.g. document title or organisation name | IPCC Fifth Assessment Report |
-| 14.2 | description | Free text description of the data set. | Scientific climate change report by the UN |
-| 14.3 | path | URL to original source | https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_full.pdf |
-| 14.4 | licenses | List of Objects. Each object has all name-value-pairs. The license(s) under which the source is provided. | |
-| 14.4.1 | name | [SPDX](https://spdx.org/licenses/) identifier | ODbL-1.0 |
-| 14.4.2 | title | Official (human readable) title | Open Data Commons Open Database License 1.0 |
-| 14.4.3 | path | A link to the license | https://opendatacommons.org/licenses/odbl/1-0/index.html |
-| 14.4.4 | instruction | short description of rights and restrictions |  You are free to share and change, but you must attribute, and share derivations under the same license. |
-| 14.4.5 | attribution | copyrightholder of the source | © Intergovernmental Panel on Climate Change 2014 |
-| 15 | licenses | The license(s) under which the described package is provided. List of Objects. Each object has all name-value-pairs  |  |
-| 15.1 | name | SPDX identifier | ODbL-1.0 |
-| 15.2 | title | Official (human readable) title | Open Data Commons Open Database License 1.0 |
-| 15.3 | path | A url-or-path string, that is a fully qualified HTTP address, or a relative POSIX path (see the url-or-path definition in Data Resource for details). | https://opendatacommons.org/licenses/odbl/1-0/index.html |
-| 15.4 | instruction | short description of rights and restrictions |  You are free to share and change, but you must attribute, and share derivations under the same license. |
-| 15.5 | attribution | copyrightholder of the produced data set | © Reiner Lemoine Institut |
-| 16 | contributors | The people or organizations who contributed to this Data Package. This has to be a list. Each object refers to one contributor. Every contributor must have a title and property. A path, email, role and organization properties are optional extras. |  |
-| 16.1 | title | Name/title of the contributor (name for a person, name or title for an organization) | Jon Doe |
-| 16.2 | email | E-mail address of the contributor | contact@example.com |
-| 16.3 | date | Date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601. | 2016-06-16 |
-| 16.4 | object | Target of contribution. Which part of the package was supplied/changed | Metadata |
-| 16.5 | comment | Free text comment on what's been done | Fixed a typo in the title |
-| 17 | resources | The Data Resource format describes a data resource as an individual file or table. |  |
-| 17.1 | profile | A string identifying the profile of this descriptor as per the profiles specification. This information is retained in order to comply with the "Tabular Data Package" standard. If at all in doubt the value should read "tabular-data-resource". | tabular-data-resource |
-| 17.2 | name | A resource MUST contain a name unique to amongst all resources in this data package. To comply with the data package standard it must consist of only lowercase alphanumeric character plus ".", "-" and "_". It may not start with a number. In a database this will be the name of the table within its containing schema. It would be usual for the name to correspond to the file name (minus the file-extension) of the data file the resource describes.  | sandbox.example_table |
-| 17.3 | path | A url-or-path string, that should be a permanent http(s) address or other path directly linking to the resource. | https://openenergy-platform.org/dataedit/view/openstreetmap/osm_deu_roads |
-| 17.4 | format | 'csv', 'xls', 'json' etc. would be expected to be the standard file extension for this type of resource. When you upload your data to the OEDB, in the shown metadata string, the format will be changed accordingly to 'PostgreSQL', since the data there are stored in a data base. | csv |
-| 17.5 | encoding | Specifies the character encoding of the resource's data file. The values should be one of the "Preferred MIME Names" for a character encoding registered with IANA. If no value for this key is specified then the default is UTF-8. | UTF-8 |
-| 17.6 | schema | Object containing fields and primary key. Describes the structure of the present data. |  |
-| 17.6.1 | fields | List of objects. Every object describes a column and provides name, description, type and unit. ||
-| 17.6.1.1 | name | Name string unique within its scope. | year |
-| 17.6.1.2 | description | Free-text describing the field. | Reference year for which the data were collected. |
-| 17.6.1.3 | type | Data type of the field. In case of a geom-column in a database, also indicate the shape and  CRS. | geometry(Point, 4326) |
-| 17.6.1.4 | is_about | Ontology URI to describe the column header | |
-| 17.6.1.5 | value_reference | Ontology URI for an extended description of the values in the column | |
-| 17.6.1.6 | unit | Unit, preferably SI-Unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null' | MW |
-| 17.6.2 | primaryKey | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns. | id |
-| 17.6.3 | foreignKeys | A foreign key is a field that refers to a column in another table. | |
-| 17.6.3.1 | fields | The column in the table that is constrainted by the foreign key. | version |
-| 17.6.3.2 | reference | The reference to the foreign table. | |
-| 17.6.3.2.1 | resource | The foreign resource (table) | schema.table |
-| 17.6.3.2.2 | fields | The foreign resource column | version |
-| 17.7 | dialect | Object. A CSV Dialect defines a simple format to describe the various dialects of CSV files in a language agnostic manner. In case of a database, the values in the containing fields are 'null'. ||
-| 17.7.1 | delimiter | Specifies the character sequence which should separate fields (aka columns). Common characters are "," (comma), "." (point) and "\t" (tab). | , |
-| 17.7.2 | decimalSeparator | Symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be "." or ",". | . |
+| 1 | name | File name or database table name | oep_metadata_table_example_v15 |
+| 2 | title | Human readable title | Metadata Example Table |
+| 3 | id | Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI). | https://example.com |
+| 4 | description | A description of the package. It should be usable as summary information for the entire package that is described by the metadata. | Example table used to illustrate the metadata structure and meaning |
+| 5 | language | Language used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47) | [en-GB, de-DE, fr-FR] |
+| 6 | subject | Reference the topic of the resource in ontology terms | |
+| 7 | keywords | An Array of string keywords to assist users searching for the package in catalogs. | [example, template, test] |
+| 8 | publicationDate | Date of publishing. Date Format is ISO 8601 (YYYY-MM-DD) | 2019-02-06 |
+| 9 | context | Object. Contains name-value-pairs that describe the general setting, evironment or project leading to the creation or maintenance of this dataset. ||
+| 9.1 | homepage | URL of Project | https://openenergy-platform.org/ | 
+| 9.2 | documentation | URL of the projects source code | https://github.com/OpenEnergyPlatform/examples/wiki/Metadata-Description | 
+| 9.3 | sourceCode | URL of Project | https://github.com/OpenEnergyPlatform | 
+| 9.4 | contact | Reference to the creator or maintainer of the data set | contact@example.com | 
+| 9.5 | grantNo | In a publicly funded Project: the identifying grant number | 01AB2345 | 
+| 9.6 | fundingAgency | In a funded Project: The name of the funding agency | Bundesministerium für Wirtschaft und Energie | 
+| 9.7 | fundingAgencyLogo | In a publicly funded Project: A link to the Logo of the funding agency | https://www.innovation-beratung-foerderung.de/INNO/Redaktion/DE/Bilder/Titelbilder/titel_foerderlogo_bmwi.jpg?__blob=poster&v=2 | 
+| 9.8 | publisherLogo | Link to the logo of the publishing institution | https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png | 
+| 10 | spatial | Object. Contains name-value-pairs describing the spatial context of the contained data. | |
+| 10.1 | location | In the case of data where the location can be described as a point. May come as coordinates, URI or addresses with street, house number and zip code | 52.433509, 13.535855 |
+| 10.2 | extent | Covered area. May be the name of a region, or the geometry of a bounding box. | Europe |
+| 10.3 | resolution | Pixel size in case of a regular raster image. Reference to administrative level or other spatial division that is present as the smallest spatially distinguished unit size. | 30 m |
+| 11 | temporal | Object. Time period covered in the data. Temporal information should either contain a "referenceDate" or the keys describing a time series; in rare cases both. Use `null` for the ones that don't apply. |  |
+| 11.1 | referenceDate | Base year, month or day. Point in time for which the data is meant to be accurate. A census will generally have a reference year. A satellite image will have a reference date. Date Format is ISO 8601. |  2016-01-01 |
+| 11.2 | timeseries | Object ||
+| 11.2.1 | start | The beginning point in time of a time series. |  2019-02-06T10:12:04+00:00 |
+| 11.2.2 | end | The end point in time of a time series. | 2019-02-07T10:12:04+00:00 |
+| 11.2.3 | resolution | The time span between individual points of information in a time series. | 30 s |
+| 11.2.4 | alignment | Indicator whether stamps in a time series are left, right or middle. `null` if there is no time series. | left |
+| 11.2.5 | aggregationType | Indicates whether the values are a sum, average or current. | sum |
+| 12 | sources | List of Objects. Each object has all name-value-pairs ||
+| 12.1 | title | Human readable title of the source, e.g. document title or organisation name | IPCC Fifth Assessment Report |
+| 12.2 | description | Free text description of the data set. | Scientific climate change report by the UN |
+| 12.3 | path | URL to original source | https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_full.pdf |
+| 12.4 | licenses | List of Objects. Each object has all name-value-pairs. The license(s) under which the source is provided. | |
+| 12.4.1 | name | [SPDX](https://spdx.org/licenses/) identifier | ODbL-1.0 |
+| 12.4.2 | title | Official (human readable) title | Open Data Commons Open Database License 1.0 |
+| 12.4.3 | path | A link to the license | https://opendatacommons.org/licenses/odbl/1-0/index.html |
+| 12.4.4 | instruction | short description of rights and restrictions |  You are free to share and change, but you must attribute, and share derivations under the same license. |
+| 12.4.5 | attribution | copyrightholder of the source | © Intergovernmental Panel on Climate Change 2014 |
+| 13 | licenses | The license(s) under which the described package is provided. List of Objects. Each object has all name-value-pairs  |  |
+| 13.1 | name | SPDX identifier | ODbL-1.0 |
+| 13.2 | title | Official (human readable) title | Open Data Commons Open Database License 1.0 |
+| 13.3 | path | A url-or-path string, that is a fully qualified HTTP address, or a relative POSIX path (see the url-or-path definition in Data Resource for details). | https://opendatacommons.org/licenses/odbl/1-0/index.html |
+| 13.4 | instruction | short description of rights and restrictions |  You are free to share and change, but you must attribute, and share derivations under the same license. |
+| 13.5 | attribution | copyrightholder of the produced data set | © Reiner Lemoine Institut |
+| 14 | contributors | The people or organizations who contributed to this Data Package. This has to be a list. Each object refers to one contributor. Every contributor must have a title and property. A path, email, role and organization properties are optional extras. |  |
+| 14.1 | title | Name/title of the contributor (name for a person, name or title for an organization) | Jon Doe |
+| 14.2 | email | E-mail address of the contributor | contact@example.com |
+| 14.3 | date | Date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601. | 2016-06-16 |
+| 14.4 | object | Target of contribution. Which part of the package was supplied/changed | Metadata |
+| 14.5 | comment | Free text comment on what's been done | Fixed a typo in the title |
+| 15 | resources | The Data Resource format describes a data resource as an individual file or table. |  |
+| 15.1 | profile | A string identifying the profile of this descriptor as per the profiles specification. This information is retained in order to comply with the "Tabular Data Package" standard. If at all in doubt the value should read "tabular-data-resource". | tabular-data-resource |
+| 15.2 | name | A resource MUST contain a name unique to amongst all resources in this data package. To comply with the data package standard it must consist of only lowercase alphanumeric character plus ".", "-" and "_". It may not start with a number. In a database this will be the name of the table within its containing schema. It would be usual for the name to correspond to the file name (minus the file-extension) of the data file the resource describes.  | sandbox.example_table |
+| 15.3 | path | A url-or-path string, that should be a permanent http(s) address or other path directly linking to the resource. | https://openenergy-platform.org/dataedit/view/openstreetmap/osm_deu_roads |
+| 15.4 | format | 'csv', 'xls', 'json' etc. would be expected to be the standard file extension for this type of resource. When you upload your data to the OEDB, in the shown metadata string, the format will be changed accordingly to 'PostgreSQL', since the data there are stored in a data base. | csv |
+| 15.5 | encoding | Specifies the character encoding of the resource's data file. The values should be one of the "Preferred MIME Names" for a character encoding registered with IANA. If no value for this key is specified then the default is UTF-8. | UTF-8 |
+| 15.6 | schema | Object containing fields and primary key. Describes the structure of the present data. |  |
+| 15.6.1 | fields | List of objects. Every object describes a column and provides name, description, type and unit. ||
+| 15.6.1.1 | name | Name string unique within its scope. | year |
+| 15.6.1.2 | description | Free-text describing the field. | Reference year for which the data were collected. |
+| 15.6.1.3 | type | Data type of the field. In case of a geom-column in a database, also indicate the shape and  CRS. | geometry(Point, 4326) |
+| 15.6.1.4 | is_about | Ontology URI to describe the column header | |
+| 15.6.1.5 | value_reference | Ontology URI for an extended description of the values in the column | |
+| 15.6.1.6 | unit | Unit, preferably SI-Unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null' | MW |
+| 15.6.2 | primaryKey | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns. | id |
+| 15.6.3 | foreignKeys | A foreign key is a field that refers to a column in another table. | |
+| 15.6.3.1 | fields | The column in the table that is constrainted by the foreign key. | version |
+| 15.6.3.2 | reference | The reference to the foreign table. | |
+| 15.6.3.2.1 | resource | The foreign resource (table) | schema.table |
+| 15.6.3.2.2 | fields | The foreign resource column | version |
+| 15.7 | dialect | Object. A CSV Dialect defines a simple format to describe the various dialects of CSV files in a language agnostic manner. In case of a database, the values in the containing fields are 'null'. ||
+| 15.7.1 | delimiter | Specifies the character sequence which should separate fields (aka columns). Common characters are "," (comma), "." (point) and "\t" (tab). | , |
+| 15.7.2 | decimalSeparator | Symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be "." or ",". | . |
+| 16 | @id | Uniform Resource Identifier (URI) that links the resource via the dpedia databus | https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00 |
+| 17 | @context | Explanation of metadata keys in ontology terms | https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld |
 | 18. | review | Data uploaded through the OEP needs to go through review. The review will cover the areas described here: https://github.com/OpenEnergyPlatform/data-preprocessing/wiki and carried out by a team of the platform. The review itself is documented at the specified path and a badge is rewarded with regards to completeness. |  |
 | 18.1 | path | A URL or path string, that should be a permanent http(s) address directly linking to the documented review. | https://www.example.com |
 | 18.2 | badge | A badge of either Bronze, Silver, Gold or Platin is used to label the given metadata based on its quality. | Platin |
