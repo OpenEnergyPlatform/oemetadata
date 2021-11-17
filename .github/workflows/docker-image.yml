@@ -31,17 +31,6 @@ jobs:
   # https://github.community/t/how-to-use-docker-compose-with-github-actions/16850/3
   test:    
     runs-on: ubuntu-latest
-    name: django-test
+    name: metadata-tests
     steps:
     - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: docker-compose -f local.yml build
-    - name: Ensure celerybeat does not crash due to non-existent tables
-      run: docker-compose -f local.yml run --rm django python manage.py migrate
-    - name: docker-compose up
-      run: docker-compose -f local.yml up -d
-    - name: Run test suite
-      run: docker-compose -f local.yml run django pytest
-# if fail?
-#    - name: Check logs
-#      run: docker-compose -f local.yml logs
