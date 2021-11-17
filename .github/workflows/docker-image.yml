@@ -1,0 +1,47 @@
+# https://github.com/actions/runner
+# https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions#understanding-the-workflow-file
+# https://docs.github.com/pt/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions
+# https://github.com/actions/virtual-environments#available-environments
+# ubuntu-latest, ubuntu-18.04, or ubuntu-16.04
+# windows-latest or windows-2019
+# macos-latest or macos-10.15
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ dev, feature/migrate-to-githubactions ]
+  pull_request:
+    branches: [ dev ]
+
+jobs:
+  # https://github.com/marketplace/actions/python-flake8-lint
+  flake8-lint:
+    runs-on: ubuntu-latest
+    name: Lint
+    steps:
+      - name: Check out source repository
+        uses: actions/checkout@v2
+      - name: Set up Python environment
+        uses: actions/setup-python@v1
+        with:
+          python-version: "3.8"
+      - name: flake8 Lint
+        uses: py-actions/flake8@v1
+        
+  # https://github.community/t/how-to-use-docker-compose-with-github-actions/16850/3
+  test:    
+    runs-on: ubuntu-latest
+    name: django-test
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker-compose -f local.yml build
+    - name: Ensure celerybeat does not crash due to non-existent tables
+      run: docker-compose -f local.yml run --rm django python manage.py migrate
+    - name: docker-compose up
+      run: docker-compose -f local.yml up -d
+    - name: Run test suite
+      run: docker-compose -f local.yml run django pytest
+# if fail?
+#    - name: Check logs
+#      run: docker-compose -f local.yml logs
