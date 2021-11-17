@@ -27,15 +27,15 @@ jobs:
           python-version: "3.8"
       - name: flake8 Lint
         uses: py-actions/flake8@v1
-        
-  # https://github.community/t/how-to-use-docker-compose-with-github-actions/16850/3
+  
   test:    
     runs-on: ubuntu-latest
     name: metadata-tests
     steps:
-    - uses: actions/checkout@v2
-    - name: Install env
-    run: pip install -r requirements.txt
+      uses: actions/checkout@v2
+      uses: actions/setup-python@v1
+    - name: Install packages
+      run: pip install -r requirements.txt
     - name: Test metadata
-    run: tox -v
-    run: more .tox/log/* | cat
+      run: tox -v
+      run: more .tox/log/* | cat
