@@ -9,7 +9,7 @@ with open(path.join(here, "README.md"), encoding="utf-8") as f:
 
 setup(
     name="oemetadata",
-    version="1.1.0",
+    version="1.5.0",
     description="Open Energy Platform (OEP) - metadata schemas, examples and templates package",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -21,7 +21,7 @@ setup(
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.9",
     ],
     keywords="JSON metadata schema open energy platform oep",
     packages=find_packages(exclude=["tests"]),
