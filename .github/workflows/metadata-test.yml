@@ -5,7 +5,7 @@
 # ubuntu-latest, ubuntu-18.04, or ubuntu-16.04
 # windows-latest or windows-2019
 # macos-latest or macos-10.15
-name: Docker Image CI
+name: Automated tests
 
 on:
   push:
@@ -14,28 +14,14 @@ on:
     branches: [ dev ]
 
 jobs:
-  # https://github.com/marketplace/actions/python-flake8-lint
-  # flake8-lint:
-  #   runs-on: ubuntu-latest
-  #   name: Lint
-  #   steps:
-  #     - name: Check out source repository
-  #       uses: actions/checkout@v2
-  #     - name: Set up Python environment
-  #       uses: actions/setup-python@v1
-  #       with:
-  #         python-version: "3.8"
-  #     - name: flake8 Lint
-  #       uses: py-actions/flake8@v1
-  strategy:
+  test:    
+    runs-on: ubuntu-latest
+    name: metadata-tests
+    strategy:
       matrix:
         python-version:
           - 3.6
           - 3.7
-
-  test:    
-    runs-on: ubuntu-latest
-    name: metadata-tests
     steps:
       - name: Check out source repository
         uses: actions/checkout@v2
