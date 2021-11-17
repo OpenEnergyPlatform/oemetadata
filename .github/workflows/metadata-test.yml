@@ -16,6 +16,8 @@ on:
 jobs:
   test:    
     runs-on: ubuntu-latest
+    env:
+      TOXENV: py3
     name: metadata-tests
     strategy:
       matrix:
