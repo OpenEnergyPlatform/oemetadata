@@ -7,4 +7,10 @@
 This version of the OEM represents the latest released version. This release is fully integrated 
 into the OEP. 
 
-For further information see the [Changelog](https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/CHANGELOG.md).
+The OEM contains the following files:
+
+* [template.json](https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/latest/template.json) contains an empty metadata string with all fields.
+* [metadata_key_description.md](https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/latest/metadata_key_description.md) contains a full description of each metadata key and an example.
+* [example.json](https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/latest/example.json) contains a basic metadata example.
+
+For further information see the [Changelog](https://github.com/OpenEnergyPlatform/oemetadata/blob/master/CHANGELOG.md).
