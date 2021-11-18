@@ -9,9 +9,9 @@ name: Automated tests
 
 on:
   push:
-    branches: [ dev, feature/migrate-to-githubactions ]
+    branches: [ develop, master]
   pull_request:
-    branches: [ dev ]
+    branches: [ develop, master ]
 
 jobs:
   test:    
