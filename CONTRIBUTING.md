@@ -48,12 +48,35 @@ it through first).
 
 #### Step 3: Run tests locally
 
-To run tests locally, install the dependencies 
+To run tests locally, 
+
+1. create virtualenv in root folder of repo
+
+```bash 
+python -m venv venv
+```
+
+2. Activate virtualenv
+
+    Linux:
+
+    ```bash
+    . venv/bin/activate
+   ```
+
+    Windows:
+
+    ```bash
+    . venv/Scripts/activate
+   ```
+
+3. Install requirements
+
 ```bash 
 pip install -r requirements.txt 
 ```
 
-1. Integration/unit tests 
+4. Integration/unit tests 
     ```bash
     pytest
     ```
@@ -61,7 +84,7 @@ pip install -r requirements.txt
     ```bash
     tox -v
     ```
-2.  Linting tests
+5. Linting tests
     ```bash
     flake8
     ```
@@ -98,3 +121,15 @@ In the `.travis.yml` file are many options commented out, you can have
 very complexe schemes to test on many different python versions etc. For
 more information look at Travis
 [doc](https://docs.travis-ci.com/user/languages/python/) for python.
+
+### If a Python interpreter version is missing:
+
+Linux (Ubuntu):
+
+```
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get update
+# Install only missing interpreters:
+sudo apt-get install python3.6
+sudo apt-get install python3.7
+```

@@ -1,6 +1,6 @@
 {
     "name": "oep_metadata_table_example_v140",
-    "title": "Good example title",
+    "title": "Example title for metadata example - Version 1.4.0",
     "id": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v140",
     "description": "example metadata for example data",
     "language": [
@@ -17,7 +17,7 @@
     "publicationDate": "2018-06-12",
     "context": {
         "homepage": "https://reiner-lemoine-institut.de/szenariendb/",
-        "documentation": "https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/metadata/latest/metadata_key_description.md",
+        "documentation": "https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/metadata/v140/metadata_key_description.md",
         "sourceCode": "https://github.com/OpenEnergyPlatform/oemetadata",
         "contact": "https://github.com/Ludee",
         "grantNo": "03ET4057",
