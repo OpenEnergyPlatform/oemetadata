@@ -1,14 +1,25 @@
-﻿<a href="http://oep.iks.cs.ovgu.de/"><img align="right" width="200" height="200" src="https://avatars2.githubusercontent.com/u/37101913?s=400&u=9b593cfdb6048a05ea6e72d333169a65e7c922be&v=4" alt="OpenEnergyPlatform"></a>
+﻿[![Build Status](https://travis-ci.org/OpenEnergyPlatform/oemetadata.svg?branch=develop)](https://travis-ci.org/OpenEnergyPlatform/oemetadata)
 
-# Open Energy Family - Metadata
+<a href="https://github.com/OpenEnergyPlatform/oemetadata/"><img align="right" width="100" height="100" src="https://raw.githubusercontent.com/OpenEnergyPlatform/organisation/master/logo/OpenEnergyFamily_Logo_OEMetadata.png" alt="OpenEnergyMetadata"></a>
+<a href="https://openenergy-platform.org/"><img align="right" width="100" height="100" src="https://avatars2.githubusercontent.com/u/37101913?s=400&u=9b593cfdb6048a05ea6e72d333169a65e7c922be&v=4" alt="OpenEnergyPlatform"></a>
 
-OEF metadata schemata, examples and templates package
+# Open Energy Family - Open Energy Metadata (OEM)
 
-[![Build Status](https://travis-ci.org/OpenEnergyPlatform/oemetadata.svg?branch=develop)](https://travis-ci.org/OpenEnergyPlatform/oemetadata)
+Open Energy Metadata (OEM) is an energy metadata standard including a template, examples and a metadata schema.
+It is an extensive set of metadata based on the tabular data package specifications and the FAIR principles.
+The metadata contains multiple fields (keys) in a nested JSON structure.
+
+You can find the latest version right here:
+* [template.json](./metadata/latest/template.json) contains an empty metadata string
+* [metadata_key_description.md](./metadata/latest/metadata_key_description.md) contains a description of each metadata key
+* [example.json](./metadata/latest/example.json) contains a basic metadata example
+
 
 ## License / Copyright
 
-This repository is licensed under [MIT License (MIT)](https://spdx.org/licenses/MIT.html)
+This repository is licensed under [MIT License (MIT)](https://spdx.org/licenses/MIT.html) <br>
+The oemetadata is licensed under [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) <br>
+The oemetadata example and oemetadata template are licensed under [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Installation
 
@@ -17,77 +28,28 @@ This repository is licensed under [MIT License (MIT)](https://spdx.org/licenses/
 ## Usage Examples
 
 ```
-from oemetadata.v140.example import OEMETADATA_V140_EXAMPLE
+from metadata.v150.example import OEMETADATA_v150_EXAMPLE
 
-print(OEMETADATA_V140_EXAMPLE)
+print(OEMETADATA_v150_EXAMPLE)
 ```
 
 ```
-from oemetadata.v140.schema import OEMETADATA_V140_SCHEMA
+from metadata.v150.schema import OEMETADATA_v150_SCHEMA
 
-print(OEMETADATA_V140_SCHEMA)
+print(OEMETADATA_v150_SCHEMA)
 ```
 
 ```
-from oemetadata.v140.template import OEMETADATA_V140_TEMPLATE
+from metadata.v150.template import OEMETADATA_v150_TEMPLATE
 
-print(OEMETADATA_V140_TEMPLATE)
+print(OEMETADATA_v150_TEMPLATE)
 ```
 
-## Open Energy Metadata description
-
-The OEMeta data contains multiple fields/keys in a nested JSON data structure. We [describe](https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/metadata/latest/metadata_key_description.md)
-each field/key and update the description for each release if necessary!
-
-## Development
-
-### Example for activating virtualenv and install development dependencies:
-
-1. Create virtualenv in root folder of repo
-
-`python -m venv venv`
-
-2. Activate virtualenv
-
-    Linux:
-
-    `. venv/bin/activate`
-
-    Windows:
-
-    `. venv/Scripts/activate`
-
-3. Install requirements
-
-`pip install -r requirements.txt`
-
-### Run tests locally (after above steps):
-
-Short:
-
-`pytest`
-
-Complete:
-
-`tox -v`
-
-### If a Python interpreter version is missing:
-
-Linux (Ubuntu):
-
-```
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt-get update
-# Install only missing interpreters:
-sudo apt-get install python3.6
-sudo apt-get install python3.7
-```
-
-### Contributing
+## Contributing
 
 For further contributing infos and conventions see: [CONTRIBUTING.md](./CONTRIBUTING.md)
 
-### Make PyPI release:
+## Make PyPI release:
 
 First bump version in setup.py, then:
 

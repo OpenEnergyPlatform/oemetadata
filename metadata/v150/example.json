@@ -1,8 +1,9 @@
 {
-    "name": "oep_metadata_table_example_v140",
-    "title": "Good example title",
-    "id": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v140",
+    "name": "oep_metadata_table_example_v150",
+    "title": "Example title for metadata example - Version 1.5.0",
+    "id": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v150",
     "description": "example metadata for example data",
+    "subject": null,
     "language": [
         "en-GB",
         "en-US",
@@ -14,15 +15,15 @@
         "template",
         "test"
     ],
-    "publicationDate": "2018-06-12",
+    "publicationDate": "2021-11-15",
     "context": {
-        "homepage": "https://reiner-lemoine-institut.de/szenariendb/",
-        "documentation": "https://github.com/OpenEnergyPlatform/organisation/wiki/metadata",
-        "sourceCode": "https://github.com/OpenEnergyPlatform/examples/tree/master/metadata",
+        "homepage": "https://reiner-lemoine-institut.de/lod-geoss/",
+        "documentation": "https://openenergy-platform.org/tutorials/jupyter/OEMetadata/",
+        "sourceCode": "https://github.com/OpenEnergyPlatform/oemetadata/tree/master",
         "contact": "https://github.com/Ludee",
-        "grantNo": "03ET4057",
+        "grantNo": "03EI1005",
         "fundingAgency": "Bundesministerium für Wirtschaft und Energie",
-        "fundingAgencyLogo": "https://www.innovation-beratung-foerderung.de/INNO/Redaktion/DE/Bilder/Titelbilder/titel_foerderlogo_bmwi.jpg?__blob=poster&v=2",
+        "fundingAgencyLogo": "https://www.innovation-beratung-foerderung.de/INNO/Redaktion/DE/Bilder/Titelbilder/titel_foerderlogo_bmwi.jpg?__blob=normal&v=3",
         "publisherLogo": "https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png"
     },
     "spatial": {
@@ -32,13 +33,21 @@
     },
     "temporal": {
         "referenceDate": "2016-01-01",
-        "timeseries": {
+        "timeseries": [{
             "start": "2017-01-01T00:00+01",
             "end": "2017-12-31T23:00+01",
             "resolution": "1 h",
             "alignment": "left",
             "aggregationType": "sum"
+        },
+        {
+            "start": "2018-01-01T00:00+01",
+            "end": "2019-06-01T23:00+01",
+            "resolution": "15 min",
+            "alignment": "right",
+            "aggregationType": "sum"
         }
+        ]
     },
     "sources": [
         {
@@ -184,13 +193,20 @@
             "date": "2019-07-09",
             "object": "metadata",
             "comment": "Release metadata version OEP-1.3.0"
+        },
+        {
+            "title": "Ludee",
+            "email": null,
+            "date": "2021-11-15",
+            "object": "metadata",
+            "comment": "Release metadata version OEP-1.5.0"
         }
     ],
     "resources": [
         {
             "profile": "tabular-data-resource",
-            "name": "model_draft.oep_metadata_table_example_v140",
-            "path": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v140",
+            "name": "model_draft.oep_metadata_table_example_v150",
+            "path": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v150",
             "format": "PostgreSQL",
             "encoding": "UTF-8",
             "schema": {
@@ -199,24 +215,40 @@
                         "name": "id",
                         "description": "Unique identifier",
                         "type": "serial",
+                        "is_about": null,
+                        "value_reference": null,
+                        "unit": null
+                    },
+                    {
+                        "name": "name",
+                        "description": "Example name",
+                        "type": "text",
+                        "is_about": null,
+                        "value_reference": null,
                         "unit": null
                     },
                     {
                         "name": "year",
                         "description": "Reference year",
                         "type": "integer",
+                        "is_about": null,
+                        "value_reference": null,
                         "unit": null
                     },
                     {
                         "name": "value",
                         "description": "Example value",
                         "type": "double precision",
+                        "is_about": null,
+                        "value_reference": null,
                         "unit": "MW"
                     },
                     {
                         "name": "geom",
                         "description": "Geometry",
                         "type": "geometry(Point, 4326)",
+                        "is_about": null,
+                        "value_reference": null,
                         "unit": null
                     }
                 ],
@@ -243,12 +275,14 @@
             }
         }
     ],
+    "@id": "https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00",
+    "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/30887e4cd7dabc316d1ee674791f0cc815277e38/metadata/latest/context.json",
     "review": {
-        "path": "https://github.com/OpenEnergyPlatform/data-preprocessing/wiki",
+        "path": "https://github.com/OpenEnergyPlatform/data-preprocessing/issues",
         "badge": "platin"
     },
     "metaMetadata": {
-        "metadataVersion": "OEP-1.4.0",
+        "metadataVersion": "OEP-1.5.0",
         "metadataLicense": {
             "name": "CC0-1.0",
             "title": "Creative Commons Zero v1.0 Universal",
@@ -256,12 +290,13 @@
         }
     },
     "_comment": {
-        "metadata": "Metadata documentation and explanation (https://github.com/OpenEnergyPlatform/organisation/wiki/metadata)",
+        "metadata": "Metadata documentation and explanation (https://github.com/OpenEnergyPlatform/oemetadata)",
         "dates": "Dates and time must follow the ISO8601 including time zone (YYYY-MM-DD or YYYY-MM-DDThh:mm:ss±hh)",
         "units": "Use a space between numbers and units (100 m)",
         "languages": "Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE)",
         "licenses": "License name must follow the SPDX License List (https://spdx.org/licenses/)",
-        "review": "Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/wiki)",
-        "null": "If not applicable use (null)"
+        "review": "Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md)",
+        "null": "If not applicable use: null",
+        "todo": "If a value is not yet available, use: todo"
     }
 }

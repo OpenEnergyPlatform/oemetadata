@@ -9,8 +9,8 @@ into the OEP.
 
 The OEM contains the following files:
 
-* [template.json](https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/latest/template.json) contains an empty metadata string with all fields.
-* [metadata_key_description.md](https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/latest/metadata_key_description.md) contains a full description of each metadata key and an example.
-* [example.json](https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/latest/example.json) contains a basic metadata example.
+* [template.json](https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/v150/template.json) contains an empty metadata string with all fields.
+* [metadata_key_description.md](https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/v150/metadata_key_description.md) contains a full description of each metadata key and an example.
+* [example.json](https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/v150/example.json) contains a basic metadata example.
 
 For further information see the [Changelog](https://github.com/OpenEnergyPlatform/oemetadata/blob/master/CHANGELOG.md).

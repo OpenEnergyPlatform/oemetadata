@@ -450,7 +450,7 @@
                                             ]
                                         },
                                         "unit": {
-                                            "description": "Unit, preferably SI-Unit, that values in this field are mapped to. If \"unit\" doesn't apply to a field, use \"none\". Example: MW",
+                                            "description": "Unit, preferably SI-Unit, that values in this field are mapped to. If \"unit\" doesn't apply to a field, use \"null\". Example: MW",
                                             "type": [
                                                 "string",
                                                 "null"
@@ -519,7 +519,7 @@
                         "additionalProperties": false
                     },
                     "dialect": {
-                        "description": "Object. A CSV Dialect defines a simple format to describe the various dialects of CSV files in a language agnostic manner. In case of a database, the values in the containing fields are \"none\".",
+                        "description": "Object. A CSV Dialect defines a simple format to describe the various dialects of CSV files in a language agnostic manner. In case of a database, the values in the containing fields are \"null\".",
                         "type": "object",
                         "properties": {
                             "delimiter": {
@@ -653,7 +653,7 @@
                     ]
                 },
                 "null": {
-                    "description": "Feel free to add more descriptive comments. Like \"none\". Example: If a field is not applicable just enter \"none\"",
+                    "description": "Feel free to add more descriptive comments. Like \"null\". Example: If a field is not applicable just enter \"null\"",
                     "type": [
                         "string",
                         "null"

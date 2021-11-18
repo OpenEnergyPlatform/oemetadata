@@ -70,14 +70,14 @@ This pages describes the OEP Metadata version 1.4.1 You can have a look at an em
 | 14.6.1.1 | name | Name string unique within its scope. | year |
 | 14.6.1.2 | description | Free-text describing the field. | Reference year for which the data were collected. |
 | 14.6.1.3 | type | Data type of the field. In case of a geom-column in a database, also indicate the shape and  CRS. | geometry(Point, 4326) |
-| 14.6.1.4 | unit | Unit, preferably SI-Unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'none' | MW |
+| 14.6.1.4 | unit | Unit, preferably SI-Unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null' | MW |
 | 14.6.2 | primaryKey | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns. | id |
 | 14.6.3 | foreignKeys | A foreign key is a field that refers to a column in another table. | |
 | 14.6.3.1 | fields | The column in the table that is constrainted by the foreign key. | version |
 | 14.6.3.2 | reference | The reference to the foreign table. | |
 | 14.6.3.2.1 | resource | The foreign resource (table) | schema.table |
 | 14.6.3.2.2 | fields | The foreign resource column | version |
-| 14.7 | dialect | Object. A CSV Dialect defines a simple format to describe the various dialects of CSV files in a language agnostic manner. In case of a database, the values in the containing fields are "none". ||
+| 14.7 | dialect | Object. A CSV Dialect defines a simple format to describe the various dialects of CSV files in a language agnostic manner. In case of a database, the values in the containing fields are `null`. ||
 | 14.7.1 | delimiter | Specifies the character sequence which should separate fields (aka columns). Common characters are "," (comma), "." (point) and "\t" (tab). | , |
 | 14.7.2 | decimalSeparator | Symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be "." or ",". | . |
 | 15. | review | Data uploaded through the OEP needs to go through review. The review will cover the areas described here: https://github.com/OpenEnergyPlatform/data-preprocessing/wiki and carried out by a team of the platform. The review itself is documented at the specified path and a badge is rewarded with regards to completeness. |  |
@@ -96,4 +96,4 @@ This pages describes the OEP Metadata version 1.4.1 You can have a look at an em
 | 17.4 | languages | Comment on language format | Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE) |
 | 17.5 | licenses | Reference to license format | License name must follow the SPDX License List (https://spdx.org/licenses/) |
 | 17.6 | review | Reference to review documentation | Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/wiki) |
-| 17.7 | ... | Feel free to add more descriptive comments. Like "none" | If a field is not applicable just enter "none" |
+| 17.7 | ... | Feel free to add more descriptive comments. Like null | If a field is not applicable just enter: null |

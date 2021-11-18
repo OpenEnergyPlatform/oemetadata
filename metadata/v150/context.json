@@ -7,6 +7,7 @@
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "oeo": "http://openenergy-platform.org/ontology/oeo/",
         "csvw": "http://www.w3.org/ns/csvw#",
+        "obo":"http://purl.obolibrary.org/obo/",
         "title": {
             "@id": "dct:title",
             "@type": "xsd:string"
@@ -48,7 +49,7 @@
             "@type": "xsd:string"
         },
         "about": {
-            "@id": "http://purl.obolibrary.org/obo/IAO_0000136",
+            "@id": "obo:IAO_0000136",
             "@type": "@id"
         }
     }
