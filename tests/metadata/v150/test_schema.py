@@ -25,4 +25,4 @@ def test_schema_against_metaschema_which_should_succeed():
     from metadata.v150.schema import OEMETADATA_V150_SCHEMA
     from metadata.metaschema.draft07.schema import OEMETADATA_METASCHEMA_DRAFT07_SCHEMA
 
-    assert jsonschema.validate(OEMETADATA_V141_SCHEMA, OEMETADATA_METASCHEMA_DRAFT07_SCHEMA) is None
+    assert jsonschema.validate(OEMETADATA_V150_SCHEMA, OEMETADATA_METASCHEMA_DRAFT07_SCHEMA) is None
