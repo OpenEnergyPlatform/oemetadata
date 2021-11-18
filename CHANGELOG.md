@@ -46,6 +46,7 @@ Here is a template for new release sections
 - Add licence information to README.md
 - Update all .json files to v1.5.0
 - reintroduce automated tests (CI) by switching form travis-ci to github actions [PR#63]
+- Updated schema.json for v1.5.0 now includes the new key "title" which describes the title of the curent field [PR#56] adapted from [PR#43]
 
 ## [1.4.1] - Minor release 2021-01-14
 
