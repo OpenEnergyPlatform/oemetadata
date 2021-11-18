@@ -184,7 +184,10 @@
                 },
                 "timeseries": {
                     "description": "Times series object in temporal object, contains start, end, resolution, alignment and aggregation type properties.",
-                    "type": "object",
+                    "type": [
+                        "array",
+                        "null"
+                    ],
                     "properties": {
                         "start": {
                             "description": "The beginning point in time of a time series. Example: 2019-02-06T10:12:04+00:00",
@@ -695,7 +698,7 @@
                     ]
                 },
                 "todo": {
-                    "description": "If an applicable value is not yet available and will be inserted later on use: "todo" ",
+                    "description": "If an applicable value is not yet available and will be inserted later on use: 'todo' ",
                     "type": [
                         "string",
                         "null"

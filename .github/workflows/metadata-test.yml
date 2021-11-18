@@ -1,0 +1,39 @@
+# https://github.com/actions/runner
+# https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions#understanding-the-workflow-file
+# https://docs.github.com/pt/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions
+# https://github.com/actions/virtual-environments#available-environments
+# ubuntu-latest, ubuntu-18.04, or ubuntu-16.04
+# windows-latest or windows-2019
+# macos-latest or macos-10.15
+name: Automated tests
+
+on:
+  push:
+    branches: [ dev, feature/migrate-to-githubactions ]
+  pull_request:
+    branches: [ dev ]
+
+jobs:
+  test:    
+    runs-on: ubuntu-latest
+    env:
+      TOXENV: py3
+    name: metadata-tests
+    strategy:
+      matrix:
+        python-version:
+          - 3.6
+          - 3.7
+    steps:
+      - name: Check out source repository
+        uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+            python-version: ${{ matrix.python-version }}
+      - name: Install python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Test metadata
+        run: tox -v
