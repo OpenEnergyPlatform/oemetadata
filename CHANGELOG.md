@@ -45,6 +45,7 @@ Here is a template for new release sections
 - Relocate development information from README.md to CONTRIBUTING.md 
 - Add licence information to README.md
 - Update all .json files to v1.5.0
+- reintroduce automated tests (CI) by switching form travis-ci to github actions [PR#63]
 
 ## [1.4.1] - Minor release 2021-01-14
 
