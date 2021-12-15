@@ -3,9 +3,9 @@
 <a href="https://github.com/OpenEnergyPlatform/oemetadata/"><img align="right" width="100" height="100" src="https://raw.githubusercontent.com/OpenEnergyPlatform/organisation/master/logo/OpenEnergyFamily_Logo_OEMetadata.png" alt="OpenEnergyMetadata"></a>
 <a href="https://openenergy-platform.org/"><img align="right" width="100" height="100" src="https://avatars2.githubusercontent.com/u/37101913?s=400&u=9b593cfdb6048a05ea6e72d333169a65e7c922be&v=4" alt="OpenEnergyPlatform"></a>
 
-# Open Energy Family - Open Energy Metadata (OEM)
+# Open Energy Family - Open Energy Metadata (OEMetadata)
 
-Open Energy Metadata (OEM) is an energy metadata standard including a template, examples and a metadata schema.
+Open Energy Metadata (OEMetadata) is an energy metadata standard including a template, examples and a metadata schema.
 It is an extensive set of metadata based on the tabular data package specifications and the FAIR principles.
 The metadata contains multiple fields (keys) in a nested JSON structure.
 
