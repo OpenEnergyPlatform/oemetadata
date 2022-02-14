@@ -72,7 +72,7 @@ This pages describes the OEP Metadata version 1.5.0. You can have a look at an e
 | 15.6.1.2 | description | Free-text describing the field. | Reference year for which the data were collected. |
 | 15.6.1.3 | type | Data type of the field. In case of a geom-column in a database, also indicate the shape and  CRS. | geometry(Point, 4326) |
 | 15.6.1.4 | isAbout | An array of Ontology URI that describe the column header | {"wind energy converting unit" : "https://openenergy-platform.org/ontology/oeo/OEO_00000044"}, {"declared net capacity" : "https://openenergy-platform.org/ontology/oeo/OEO_00230002"} |
-| 15.6.1.5 | value_reference | Ontology URI for an extended description of the values in the column | |
+| 15.6.1.5 | valueReference | An array of Ontology URI for an extended description of the values in the column |"valueReference": [{"offshore ":{"name": "onshore wind farm" ,"path" : "https://openenergy-platform.org/ontology/oeo/OEO_00000311"}}, {"onshore ":{"name": "offshore wind farm" ,"path" : "https://openenergy-platform.org/ontology/oeo/OEO_00000308"}}]|
 | 15.6.1.6 | unit | Unit, preferably SI-Unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null' | MW |
 | 15.6.2 | primaryKey | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns. | id |
 | 15.6.3 | foreignKeys | A foreign key is a field that refers to a column in another table. | |
