@@ -102,12 +102,12 @@ The JSON format offers different formats:
 ### Provenience Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 14 | contributors | The people or organizations who contributed to this Data Package. This has to be a list. Each object refers to one contributor. Every contributor must have a title and property. A path, email, role and organization properties are optional extras. |  |
-| 14.1 | title | Name/title of the contributor (name for a person, name or title for an organization) | Jon Doe |
-| 14.2 | email | E-mail address of the contributor | contact@example.com |
-| 14.3 | date | Date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601. | 2016-06-16 |
-| 14.4 | object | Target of contribution. Which part of the package was supplied/changed | Metadata |
-| 14.5 | comment | Free text comment on what's been done | Fixed a typo in the title |
+| 14 | contributors | An array of objects of the people or organizations who contributed to the data or metadata. Each object refers to one contributor. Every contributor must have a title and property. The path, email, role and organization properties are optional. |  |
+| 14.1 | title | A name of the contributor. | Jon Doe |
+| 14.2 | email | A email address of the contributor or GitHUb handle. | @Ludee |
+| 14.3 | date | The date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601. | 2016-06-16 |
+| 14.4 | object | The target of the contribution. Which part of the package was supplied or changed. Can be the data, metadata or both. | data and metadata |
+| 14.5 | comment | A free text commentary on what has been done.  | Fixed a typo in the title. |
 
 ### Resource Keys
 |#|Key |Description |Example |
