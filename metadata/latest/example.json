@@ -218,7 +218,9 @@
                         "name": "id",
                         "description": "Unique identifier",
                         "type": "serial",
-                        "isAbout": null,
+                        "isAbout": [
+                            null
+                        ],
                         "value_reference": null,
                         "unit": null
                     },
@@ -226,7 +228,9 @@
                         "name": "name",
                         "description": "Example name",
                         "type": "text",
-                        "isAbout": null,
+                        "isAbout": [
+                            {"written name": "https://openenergy-platform.org/ontology/oeo/IAO_0000590"}
+                        ],
                         "value_reference": null,
                         "unit": null
                     },
@@ -234,7 +238,9 @@
                         "name": "year",
                         "description": "Reference year",
                         "type": "integer",
-                        "isAbout": null,
+                        "isAbout": [
+                            {"year": "https://openenergy-platform.org/ontology/oeo/UO_0000036"}
+                        ],
                         "value_reference": null,
                         "unit": null
                     },
@@ -242,7 +248,9 @@
                         "name": "value",
                         "description": "Example value",
                         "type": "double precision",
-                        "isAbout": null,
+                        "isAbout": [
+                            {"quantity value": "https://openenergy-platform.org/ontology/oeo/OEO_00000350"}
+                        ],
                         "value_reference": null,
                         "unit": "MW"
                     },
@@ -250,7 +258,9 @@
                         "name": "geom",
                         "description": "Geometry",
                         "type": "geometry(Point, 4326)",
-                        "isAbout": null,
+                        "isAbout": [
+                            {"spatial region": "https://openenergy-platform.org/ontology/oeo/BFO_0000006"}
+                        ],
                         "value_reference": null,
                         "unit": null
                     }
