@@ -114,7 +114,7 @@
                         "name": null,
                         "description": null,
                         "type": null,
-                        "is_about": null,
+                        "isAbout": null,
                         "value_reference": null,
                         "unit": null
                     },
@@ -122,7 +122,7 @@
                         "name": null,
                         "description": null,
                         "type": null,
-                        "is_about": null,
+                        "isAbout": null,
                         "value_reference": null,
                         "unit": null
                     }
