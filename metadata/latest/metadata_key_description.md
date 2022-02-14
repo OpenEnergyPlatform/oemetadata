@@ -87,15 +87,15 @@ The JSON format offers different formats:
 | 12.4.2 | title | An official (human readable) title of the license. | Open Data Commons Open Database License 1.0 |
 | 12.4.3 | path | A link to the license text. | https://opendatacommons.org/licenses/odbl/1-0/index.html |
 | 12.4.4 | instruction | A short description of rights and restrictions. The use of [tl;drLegal](https://tldrlegal.com/) is recommended. | You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information. |
-| 12.4.5 | attribution | The copyright owner of the source. If attribution licenses are used, that name must be acknowledged. | © Intergovernmental Panel on Climate Change 2014 |
+| 12.4.5 | attribution | The copyright owner of the **source**. If attribution licenses are used, that name must be acknowledged. | © Intergovernmental Panel on Climate Change 2014 |
 
 ### License Keys
-| 13 | licenses | An array objects of the license(s) under which the described package is provided. List of Objects. Each object has all name-value-pairs  |  |
+| 13 | licenses | An array of objects of the license(s) under which the described package is provided. It can depend on the licenses of the sources (copyleft or share-alike) or can be granted by the creator of the data. |  |
 | 13.1 | name | The [SPDX](https://spdx.org/licenses/) identifier. | ODbL-1.0 |
-| 13.2 | title | Official (human readable) title | Open Data Commons Open Database License 1.0 |
-| 13.3 | path | A url-or-path string, that is a fully qualified HTTP address, or a relative POSIX path (see the url-or-path definition in Data Resource for details). | https://opendatacommons.org/licenses/odbl/1-0/index.html |
-| 13.4 | instruction | short description of rights and restrictions |  You are free to share and change, but you must attribute, and share derivations under the same license. |
-| 13.5 | attribution | copyrightholder of the produced data set | © Reiner Lemoine Institut |
+| 13.2 | title | An official (human readable) title of the license. | Open Data Commons Open Database License 1.0 |
+| 13.3 | path | A link to the license text. | https://opendatacommons.org/licenses/odbl/1-0/index.html |
+| 13.4 | instruction | A short description of rights and restrictions. The use of [tl;drLegal](https://tldrlegal.com/) is recommended. | You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information. |
+| 13.5 | attribution | The copyright owner of the **data**. If attribution licenses are used, that name must be acknowledged. | © Reiner Lemoine Institut |
 
 ### Provenience Keys
 |#|Key |Description |Example |
