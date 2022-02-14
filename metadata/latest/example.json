@@ -233,7 +233,9 @@
                             "path": null}
                         ],
                         "valueReference": [
-                            null
+                            {"value": null,
+                            "name": null,
+                            "path" : null}
                         ],
                         "unit": null
                     },
@@ -246,7 +248,9 @@
                             "path": "https://openenergy-platform.org/ontology/oeo/IAO_0000590"}
                         ],
                         "valueReference": [
-                            null
+                            {"value": null,
+                            "name": null,
+                            "path" : null}
                         ],
                         "unit": null
                     },
@@ -259,18 +263,12 @@
                             "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000447"}
                         ],
                         "valueReference": [
-                            {"offshore ":
-                                {
-                                    "name": "onshore wind farm" ,
-                                    "path" : "https://openenergy-platform.org/ontology/oeo/OEO_00000311"
-                                }
-                            },
-                            {"onshore ":
-                                {
-                                    "name": "offshore wind farm" ,
-                                    "path" : "https://openenergy-platform.org/ontology/oeo/OEO_00000308"
-                                }
-                            }
+                            {"value": "onshore ",
+                            "name": "onshore wind farm",
+                            "path" : "https://openenergy-platform.org/ontology/oeo/OEO_00000311"},
+                            {"value": "offshore ",
+                            "name": "offshore wind farm",
+                            "path" : "https://openenergy-platform.org/ontology/oeo/OEO_00000308"}
                         ],
                         "unit": null
                     },
@@ -283,7 +281,9 @@
                             "path": "https://openenergy-platform.org/ontology/oeo/UO_0000036"}
                         ],
                         "valueReference": [
-                            null
+                            {"value": null,
+                            "name": null,
+                            "path" : null}
                         ],
                         "unit": null
                     },
@@ -296,7 +296,9 @@
                             "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000350"}
                         ],
                         "valueReference": [
-                            null
+                            {"value": null,
+                            "name": null,
+                            "path" : null}
                         ],
                         "unit": "MW"
                     },
@@ -309,7 +311,9 @@
                             "path": "https://openenergy-platform.org/ontology/oeo/BFO_0000006"}
                         ],
                         "valueReference": [
-                            null
+                            {"value": null,
+                            "name": null,
+                            "path" : null}
                         ],
                         "unit": null
                     }
