@@ -56,10 +56,14 @@
         },
         "subject": {
             "description": "Reference the topic of the resource in ontology terms",
-            "type": [
-                "string",
-                "null"
-            ],
+            "type": "array",
+            "items": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "title": "Subject"
+            },
             "title": "Subject"
         },
         "language": {
