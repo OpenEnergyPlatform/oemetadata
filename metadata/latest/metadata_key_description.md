@@ -1,13 +1,13 @@
-# Open Energy Metadata - OEMetadata
+# OEMetadata - Key Description
 
 This pages describes the key of **OEMetadata version 1.5.1.** <br>
 You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v151/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v151/example.json) of the metadata string.
 
 The JSON format offers different formats:
-* key value pairs: `key:value`
-* array: `key:[value1,value2]`
-* nested key value: `key:{key:value}`
-* nested array: `key:[{key:value},{key:value}]`
+* key value pairs: ```JSON {"key":"value"}```
+* array: `{key:[value1,value2]}`
+* nested key value: `{key:{key:value}}`
+* nested array: `{key:[{key:value},{key:value}]}`
 
 
 ## Metadata keys with a description and example
