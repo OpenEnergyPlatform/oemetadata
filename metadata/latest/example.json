@@ -218,7 +218,7 @@
                         "name": "id",
                         "description": "Unique identifier",
                         "type": "serial",
-                        "is_about": null,
+                        "isAbout": null,
                         "value_reference": null,
                         "unit": null
                     },
@@ -226,7 +226,7 @@
                         "name": "name",
                         "description": "Example name",
                         "type": "text",
-                        "is_about": null,
+                        "isAbout": null,
                         "value_reference": null,
                         "unit": null
                     },
@@ -234,7 +234,7 @@
                         "name": "year",
                         "description": "Reference year",
                         "type": "integer",
-                        "is_about": null,
+                        "isAbout": null,
                         "value_reference": null,
                         "unit": null
                     },
@@ -242,7 +242,7 @@
                         "name": "value",
                         "description": "Example value",
                         "type": "double precision",
-                        "is_about": null,
+                        "isAbout": null,
                         "value_reference": null,
                         "unit": "MW"
                     },
@@ -250,7 +250,7 @@
                         "name": "geom",
                         "description": "Geometry",
                         "type": "geometry(Point, 4326)",
-                        "is_about": null,
+                        "isAbout": null,
                         "value_reference": null,
                         "unit": null
                     }
