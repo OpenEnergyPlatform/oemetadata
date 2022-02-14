@@ -3,12 +3,12 @@
     "title": null,
     "id": null,
     "description": null,
+    "language": [
+        null
+    ],
     "subject": [
         {"name" : null,
         "path": null}
-    ],
-    "language": [
-        null
     ],
     "keywords": [
         null
