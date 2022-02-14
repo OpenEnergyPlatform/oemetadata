@@ -108,6 +108,7 @@
                         "name": null,
                         "description": null,
                         "type": null,
+                        "unit": null,
                         "isAbout": [
                             {"name" : null,
                             "path": null}
@@ -116,13 +117,13 @@
                             {"value": null,
                             "name": null,
                             "path" : null}
-                        ],
-                        "unit": null
+                        ]
                     },
                     {
                         "name": null,
                         "description": null,
                         "type": null,
+                        "unit": null,
                         "isAbout": [
                             {"name" : null,
                             "path": null}
@@ -131,8 +132,7 @@
                             {"value": null,
                             "name": null,
                             "path" : null}
-                        ],
-                        "unit": null
+                        ]
                     }
                 ],
                 "primaryKey": [
