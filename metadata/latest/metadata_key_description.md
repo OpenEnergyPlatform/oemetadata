@@ -15,13 +15,13 @@ The JSON format offers different formats:
     {"key":
         ["value","value"]}
     ```
-* nested key value:
+* object {nested key}:
     ```JSON
     {"key":
         {"key":"value"},
         {"key":"value"}}
     ```
-* nested array:
+* object list {nested array}:
     ```JSON
     {"key": [
         {"key":"value"},
@@ -39,25 +39,25 @@ The JSON format offers different formats:
 | 2 | title | A human readable full title including author. | RLI - OEMetadata - Metadata example table |
 | 3 | id | An Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI). | https://example.com |
 | 4 | description | A description or abstract of the package. It should be usable as summary information for the entire package that is described by the metadata. | Example table used to illustrate the metadata structure and meaning. |
-| 5 | language | An Array of languages used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47) | en-GB, de-DE, fr-FR |
-| 6 | subject | An Array of topics of the data in OEO terms. |
+| 5 | language | An array of languages used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47) | en-GB, de-DE, fr-FR |
+| 6 | subject | An array of topics of the data in OEO terms. |
 | 6.1 | name | An class label of the OEO terms. | energy |
 | 6.2 | path | A URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000150 |
-| 7 | keywords | An Array of keywords to assist users searching for the package in catalogs. | example, template, test |
-| 8 | publicationDate | A date of publishing of the data or metadata. Date Format is ISO 8601 (YYYY-MM-DD). | 2019-02-06 |
+| 7 | keywords | An array of keywords to assist users searching for the package in catalogs. | example, template, test |
+| 8 | publicationDate | A date of publishing of the data or metadata. Date format is ISO 8601 (YYYY-MM-DD). | 2019-02-06 |
 
 ### Context Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 9 | context | Object. Contains name-value-pairs that describe the general setting, environment or project leading to the creation or maintenance of this dataset. |  |
-| 9.1 | homepage | URL of Project | https://openenergy-platform.org/ | 
-| 9.2 | documentation | URL of the projects source code | https://github.com/OpenEnergyPlatform/examples/wiki/Metadata-Description | 
-| 9.3 | sourceCode | URL of Project | https://github.com/OpenEnergyPlatform | 
-| 9.4 | contact | Reference to the creator or maintainer of the data set | contact@example.com | 
-| 9.5 | grantNo | In a publicly funded Project: the identifying grant number | 01AB2345 | 
-| 9.6 | fundingAgency | In a funded Project: The name of the funding agency | Bundesministerium für Wirtschaft und Energie | 
-| 9.7 | fundingAgencyLogo | In a publicly funded Project: A link to the Logo of the funding agency | https://commons.wikimedia.org/wiki/File:BMWi_Logo_2021.svg#/media/File:BMWi_Logo_2021.svg | 
-| 9.8 | publisherLogo | Link to the logo of the publishing institution | https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png | 
+| 9 | context | An object that describes the general setting, environment, or project leading to the creation or maintenance of this dataset. In science this is can be the research project. | |
+| 9.1 | homepage | A URL of the project | https://openenergy-platform.org/ | 
+| 9.2 | documentation | A URL of the project documentation. | https://openenergy-platform.org/about/ | 
+| 9.3 | sourceCode | A URL of the projects source code. | https://github.com/OpenEnergyPlatform | 
+| 9.4 | contact | A reference to the creator or maintainer of the data set. Can be an email address or a GitHub handle. | contact@example.com | 
+| 9.5 | grantNo | An identifying grant number. In the case of a publicly funded project, this number is assigned by the funding agency. | 01AB2345 | 
+| 9.6 | fundingAgency | A name of the entity providing the funding. This can be a government agency or a company. | Bundesministerium für Wirtschaft und Klimaschutz | 
+| 9.7 | fundingAgencyLogo | A URL to the logo or image of the funding agency. | https://commons.wikimedia.org/wiki/File:BMWi_Logo_2021.svg#/media/File:BMWi_Logo_2021.svg | 
+| 9.8 | publisherLogo | A URL to the logo of the publishing agency of data. | https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png | 
 
 ### Spatial and Temporal Keys
 |#|Key |Description |Example |
