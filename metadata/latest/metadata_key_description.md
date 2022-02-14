@@ -14,17 +14,17 @@ This pages describes the OEP Metadata version 1.5.0. You can have a look at an e
 | 3 | id | Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI). | https://example.com |
 | 4 | description | A description of the package. It should be usable as summary information for the entire package that is described by the metadata. | Example table used to illustrate the metadata structure and meaning |
 | 5 | language | Language used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47) | [en-GB, de-DE, fr-FR] |
-| 6 | subject | Reference the topic of the resource in ontology terms | | ["energy" : "https://openenergy-platform.org/ontology/oeo/OEO_00000150"]
+| 6 | subject | Reference the topic of the resource in ontology terms | ["energy" : "https://openenergy-platform.org/ontology/oeo/OEO_00000150"] |
 | 7 | keywords | An Array of string keywords to assist users searching for the package in catalogs. | [example, template, test] |
 | 8 | publicationDate | Date of publishing. Date Format is ISO 8601 (YYYY-MM-DD) | 2019-02-06 |
-| 9 | context | Object. Contains name-value-pairs that describe the general setting, evironment or project leading to the creation or maintenance of this dataset. ||
+| 9 | context | Object. Contains name-value-pairs that describe the general setting, environment or project leading to the creation or maintenance of this dataset. |  |
 | 9.1 | homepage | URL of Project | https://openenergy-platform.org/ | 
 | 9.2 | documentation | URL of the projects source code | https://github.com/OpenEnergyPlatform/examples/wiki/Metadata-Description | 
 | 9.3 | sourceCode | URL of Project | https://github.com/OpenEnergyPlatform | 
 | 9.4 | contact | Reference to the creator or maintainer of the data set | contact@example.com | 
 | 9.5 | grantNo | In a publicly funded Project: the identifying grant number | 01AB2345 | 
 | 9.6 | fundingAgency | In a funded Project: The name of the funding agency | Bundesministerium für Wirtschaft und Energie | 
-| 9.7 | fundingAgencyLogo | In a publicly funded Project: A link to the Logo of the funding agency | https://www.innovation-beratung-foerderung.de/INNO/Redaktion/DE/Bilder/Titelbilder/titel_foerderlogo_bmwi.jpg?__blob=poster&v=2 | 
+| 9.7 | fundingAgencyLogo | In a publicly funded Project: A link to the Logo of the funding agency | https://commons.wikimedia.org/wiki/File:BMWi_Logo_2021.svg#/media/File:BMWi_Logo_2021.svg | 
 | 9.8 | publisherLogo | Link to the logo of the publishing institution | https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png | 
 | 10 | spatial | Object. Contains name-value-pairs describing the spatial context of the contained data. | |
 | 10.1 | location | In the case of data where the location can be described as a point. May come as coordinates, URI or addresses with street, house number and zip code | 52.433509, 13.535855 |
