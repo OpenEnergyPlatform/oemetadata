@@ -106,7 +106,7 @@ The JSON format offers different formats:
 | 14.1 | title | A name of the contributor. | Ludwig Hülk |
 | 14.2 | email | A email address of the contributor or GitHub handle. | @Ludee |
 | 14.3 | date | The date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601. | 2016-06-16 |
-| 14.4 | object | The target of the contribution. Which part of the package was supplied or changed. Can be the data, metadata or both. | data and metadata |
+| 14.4 | object | The target of the contribution. Which part of the package was supplied or changed. Can be the data, metadata or both (data and metadata). | data and metadata |
 | 14.5 | comment | A free text commentary on what has been done.  | Fixed a typo in the title. |
 
 ### Resource Keys
