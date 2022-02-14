@@ -221,7 +221,7 @@
                         "isAbout": [
                             null
                         ],
-                        "value_reference": [
+                        "valueReference": [
                             null
                         ],
                         "unit": null
@@ -233,7 +233,7 @@
                         "isAbout": [
                             {"written name": "https://openenergy-platform.org/ontology/oeo/IAO_0000590"}
                         ],
-                        "value_reference": [
+                        "valueReference": [
                             null
                         ],
                         "unit": null
@@ -245,11 +245,11 @@
                         "isAbout": [
                             {"wind farm": "https://openenergy-platform.org/ontology/oeo/OEO_00000447"}
                         ],
-                        "value_reference": [
+                        "valueReference": [
                             {"offshore ":
                                 {
                                     "name": "onshore wind farm" ,
-                                    "url" : "https://openenergy-platform.org/ontology/oeo/OEO_00000311"
+                                    "path" : "https://openenergy-platform.org/ontology/oeo/OEO_00000311"
                                 }
                             },
                             {"onshore ":
@@ -268,7 +268,7 @@
                         "isAbout": [
                             {"year": "https://openenergy-platform.org/ontology/oeo/UO_0000036"}
                         ],
-                        "value_reference": [
+                        "valueReference": [
                             null
                         ],
                         "unit": null
@@ -280,7 +280,7 @@
                         "isAbout": [
                             {"quantity value": "https://openenergy-platform.org/ontology/oeo/OEO_00000350"}
                         ],
-                        "value_reference": [
+                        "valueReference": [
                             null
                         ],
                         "unit": "MW"
@@ -292,7 +292,7 @@
                         "isAbout": [
                             {"spatial region": "https://openenergy-platform.org/ontology/oeo/BFO_0000006"}
                         ],
-                        "value_reference": [
+                        "valueReference": [
                             null
                         ],
                         "unit": null
