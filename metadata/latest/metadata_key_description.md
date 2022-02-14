@@ -9,14 +9,16 @@ You can have a look at an empty [template](https://github.com/OpenEnergyPlatform
 ### General keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 1 | name | File name or database table name | oep_metadata_table_example_v15 |
-| 2 | title | Human readable title | Metadata Example Table |
-| 3 | id | Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI). | https://example.com |
-| 4 | description | A description of the package. It should be usable as summary information for the entire package that is described by the metadata. | Example table used to illustrate the metadata structure and meaning |
-| 5 | language | Language used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47) | [en-GB, de-DE, fr-FR] |
-| 6 | subject | Reference the topic of the resource in ontology terms | ["energy" : "https://openenergy-platform.org/ontology/oeo/OEO_00000150"] |
-| 7 | keywords | An Array of string keywords to assist users searching for the package in catalogs. | [example, template, test] |
-| 8 | publicationDate | Date of publishing of the data or metadata. Date Format is ISO 8601 (YYYY-MM-DD) | 2019-02-06 |
+| 1 | name | A file name or database table name. | oep_metadata_table_example_v15 |
+| 2 | title | A human readable full title including author. | RLI - OEMetadata - Metadata example table |
+| 3 | id | An Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI). | https://example.com |
+| 4 | description | A description or abstract of the package. It should be usable as summary information for the entire package that is described by the metadata. | Example table used to illustrate the metadata structure and meaning. |
+| 5 | language | An Array of languages used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47) | en-GB, de-DE, fr-FR |
+| 6 | subject | An Array of topics of the data in OEO terms. |
+| 6.1 | name | An class label of the OEO terms. | energy", "path": ""}, |
+| 6.2 | path | A URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000150 |
+| 7 | keywords | An Array of keywords to assist users searching for the package in catalogs. | example, template, test |
+| 8 | publicationDate | A date of publishing of the data or metadata. Date Format is ISO 8601 (YYYY-MM-DD). | 2019-02-06 |
 
 ### Context keys
 |#|Key |Description |Example |
