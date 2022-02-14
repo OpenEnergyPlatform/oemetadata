@@ -171,13 +171,12 @@ The JSON format offers different formats:
 ### Comments
 |#|Key |Description |Example |
 |---|---|---|---|
-| 20 | _comment| Array of objects. The “_comment”-section is used as a self-description of the final metadata-file. It is text, intended for humans and can include a link to the metadata documentation(s), required value formats and similar remarks. The comment section has no fix structure or mandatory values, but a useful self-description, similar to the one depicted here, is encouraged. ||
-| 20.1 | metadata | Reference to the metadata documentation in use. | "Metadata documentation and explanation (https://github.com/OpenEnergyPlatform/organisation/wiki/metadata)" |
-| 20.2 | dates | Comment on data/time format | Dates and time must follow the ISO8601 including time zone (YYYY-MM-DD or YYYY-MM-DDThh:mm:ss±hh) |
-| 20.3 | units | Comment on units | If you must use units in cells (which is discouraged), leave a space between numbers and units (100 m) |
+| 20 | **_comment** | An array of objects. This section is used as a self-description of the final metadata file. It is text, intended for humans and includes a link to the metadata documentation, required value formats and similar remarks. | |
+| 20.1 | metadata | Reference to the metadata documentation in use. | Metadata documentation and explanation (https://github.com/OpenEnergyPlatform/oemetadata) |
+| 20.2 | dates | Comment on data and time format. | Dates and time must follow the ISO8601 including time zone (YYYY-MM-DD or YYYY-MM-DDThh:mm:ss±hh) |
+| 20.3 | units | Comment on units. | Use a space between numbers and units (100 m) |
 | 20.4 | languages | Comment on language format | Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE) |
-| 20.5 | licenses | Reference to license format | License name must follow the SPDX License List (https://spdx.org/licenses/) |
-| 20.6 | review | Reference to review documentation | Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/wiki) |
-| 20.7 | null | If a field is not applicable just enter: null | null |
-| 20.8 | todo | If an applicable value is not yet available and will be inserted later on, use: "todo" | "todo" |
-| 20.9 | ... | Feel free to add more descriptive comments. | |
+| 20.5 | licenses | Comment on license format. | License name must follow the SPDX License List (https://spdx.org/licenses/) |
+| 20.6 | review | Reference to review documentation. | Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md) |
+| 20.7 | null | Comment on fields that don't apply. | If not applicable use: null |
+| 20.8 | todo | Comment on fields that are not yet available and will be inserted later on. | If a value is not yet available, use: todo |
