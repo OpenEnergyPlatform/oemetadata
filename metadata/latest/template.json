@@ -117,7 +117,9 @@
                         "isAbout": [
                             null
                                 ],
-                        "value_reference": null,
+                        "valueReference": [
+                            null
+                                ],
                         "unit": null
                     },
                     {
@@ -125,7 +127,9 @@
                         "description": null,
                         "type": null,
                         "isAbout": null,
-                        "value_reference": null,
+                        "valueReference": [
+                            null
+                                ],
                         "unit": null
                     }
                 ],
