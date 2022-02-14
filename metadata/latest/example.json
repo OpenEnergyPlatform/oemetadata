@@ -206,13 +206,20 @@
             "date": "2021-11-15",
             "object": "metadata",
             "comment": "Release metadata version OEP-1.5.0"
+        },
+        {
+            "title": "Ludee",
+            "email": null,
+            "date": "2022-02-15",
+            "object": "metadata",
+            "comment": "Release metadata version OEP-1.5.1"
         }
     ],
     "resources": [
         {
             "profile": "tabular-data-resource",
-            "name": "model_draft.oep_metadata_table_example_v150",
-            "path": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v150",
+            "name": "model_draft.oep_metadata_table_example_v151",
+            "path": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v151",
             "format": "PostgreSQL",
             "encoding": "UTF-8",
             "schema": {
