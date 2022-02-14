@@ -255,7 +255,7 @@
                             {"onshore ":
                                 {
                                     "name": "offshore wind farm" ,
-                                    "url" : "https://openenergy-platform.org/ontology/oeo/OEO_00000308"
+                                    "path" : "https://openenergy-platform.org/ontology/oeo/OEO_00000308"
                                 }
                             }
                         ],
