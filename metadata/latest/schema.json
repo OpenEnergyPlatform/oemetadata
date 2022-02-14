@@ -568,12 +568,16 @@
                                             "title": "Type",
                                             "readonly": true
                                         },
-                                        "is_about": {
+                                        "isAbout": {
                                             "description": "Ontology URI to describe the column header",
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ],
+                                            "type": "array",
+                                            "items": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "title": "Is about"
+                                            },
                                             "title": "Is about",
                                             "format": "uri"
                                         },
