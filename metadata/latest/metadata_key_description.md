@@ -3,17 +3,36 @@
 This pages describes the key of **OEMetadata version 1.5.1.** <br>
 You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v151/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v151/example.json) of the metadata string.
 
+
+## JSON Format
 The JSON format offers different formats:
-* key value pairs: ```JSON {"key":"value"}```
-* array: `{key:[value1,value2]}`
-* nested key value: `{key:{key:value}}`
-* nested array: `{key:[{key:value},{key:value}]}`
+* key-value pair: 
+    ```JSON
+    {"key":"value"}
+    ```
+* array: 
+    ```JSON
+    {"key":
+        ["value","value"]}
+    ```
+* nested key value:
+    ```JSON
+    {"key":
+        {"key":"value"},
+        {"key":"value"}}
+    ```
+* nested array:
+    ```JSON
+    {"key": [
+        {"key":"value"},
+        {"key":"value"}]}
+    ```
 
 
 ## Metadata keys with a description and example
 
 
-### General keys
+### General Keys
 |#|Key |Description |Example |
 |---|---|---|---|
 | 1 | name | A file name or database table name. | oep_metadata_table_example_v15 |
@@ -27,7 +46,7 @@ The JSON format offers different formats:
 | 7 | keywords | An Array of keywords to assist users searching for the package in catalogs. | example, template, test |
 | 8 | publicationDate | A date of publishing of the data or metadata. Date Format is ISO 8601 (YYYY-MM-DD). | 2019-02-06 |
 
-### Context keys
+### Context Keys
 |#|Key |Description |Example |
 |---|---|---|---|
 | 9 | context | Object. Contains name-value-pairs that describe the general setting, environment or project leading to the creation or maintenance of this dataset. |  |
@@ -40,7 +59,7 @@ The JSON format offers different formats:
 | 9.7 | fundingAgencyLogo | In a publicly funded Project: A link to the Logo of the funding agency | https://commons.wikimedia.org/wiki/File:BMWi_Logo_2021.svg#/media/File:BMWi_Logo_2021.svg | 
 | 9.8 | publisherLogo | Link to the logo of the publishing institution | https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png | 
 
-### Spatial and temporal keys
+### Spatial and Temporal Keys
 |#|Key |Description |Example |
 |---|---|---|---|
 | 10 | spatial | Object. Contains name-value-pairs describing the spatial context of the contained data. | |
@@ -56,7 +75,7 @@ The JSON format offers different formats:
 | 11.2.4 | alignment | Indicator whether stamps in a time series are left, right or middle. `null` if there is no time series. | left |
 | 11.2.5 | aggregationType | Indicates whether the values are a sum, average or current. | sum |
 
-### Source keys
+### Source Keys
 |#|Key |Description |Example |
 |---|---|---|---|
 | 12 | sources | List of Objects. Each object has all name-value-pairs ||
@@ -76,7 +95,7 @@ The JSON format offers different formats:
 | 13.4 | instruction | short description of rights and restrictions |  You are free to share and change, but you must attribute, and share derivations under the same license. |
 | 13.5 | attribution | copyrightholder of the produced data set | © Reiner Lemoine Institut |
 
-### Provenience keys
+### Provenience Keys
 |#|Key |Description |Example |
 |---|---|---|---|
 | 14 | contributors | The people or organizations who contributed to this Data Package. This has to be a list. Each object refers to one contributor. Every contributor must have a title and property. A path, email, role and organization properties are optional extras. |  |
@@ -86,7 +105,7 @@ The JSON format offers different formats:
 | 14.4 | object | Target of contribution. Which part of the package was supplied/changed | Metadata |
 | 14.5 | comment | Free text comment on what's been done | Fixed a typo in the title |
 
-### Resource keys
+### Resource Keys
 |#|Key |Description |Example |
 |---|---|---|---|
 | 15 | resources | The Data Resource format describes a data resource as an individual file or table. |  |
@@ -113,14 +132,14 @@ The JSON format offers different formats:
 | 15.7.1 | delimiter | Specifies the character sequence which should separate fields (aka columns). Common characters are "," (comma), "." (point) and "\t" (tab). | , |
 | 15.7.2 | decimalSeparator | Symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be "." or ",". | . |
 
-### Review keys
+### Review Keys
 | 16 | @id | Uniform Resource Identifier (URI) that links the resource via the dpedia databus | https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00 |
 | 17 | @context | Explanation of metadata keys in ontology terms | https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld |
 | 18. | review | Data uploaded through the OEP needs to go through review. The review will cover the areas described here: https://github.com/OpenEnergyPlatform/data-preprocessing/wiki and carried out by a team of the platform. The review itself is documented at the specified path and a badge is rewarded with regards to completeness. |  |
 | 18.1 | path | A URL or path string, that should be a permanent http(s) address directly linking to the documented review. | https://www.example.com |
 | 18.2 | badge | A badge of either Bronze, Silver, Gold or Platin is used to label the given metadata based on its quality. | Platin |
 
-### MetaMetadata keys
+### MetaMetadata Keys
 | 19 | metaMetadata | Object. Description about the metadata themselves, their format, version and license. These fields should already be provided when you’re filling out your metadata. ||
 | 19.1 | metadataVersion | Type and version number of the metadata | OEP-1.5 |
 | 19.2 | metadataLicense | Object describing the license of the provided metadata ||
