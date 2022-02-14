@@ -90,7 +90,9 @@ The JSON format offers different formats:
 | 12.4.5 | attribution | The copyright owner of the **source**. If attribution licenses are used, that name must be acknowledged. | © Intergovernmental Panel on Climate Change 2014 |
 
 ### License Keys
-| 13 | licenses | An array of objects of the license(s) under which the described package is provided. It can depend on the licenses of the sources (copyleft or share-alike) or can be granted by the creator of the data. |  |
+|#|Key |Description |Example |
+|---|---|---|---|
+| 13 | licenses | An array of objects of the license(s) under which the described package is provided. It can depend on the licenses of the sources (copyleft or share-alike) or can be granted by the creator of the data. | |
 | 13.1 | name | The [SPDX](https://spdx.org/licenses/) identifier. | ODbL-1.0 |
 | 13.2 | title | An official (human readable) title of the license. | Open Data Commons Open Database License 1.0 |
 | 13.3 | path | A link to the license text. | https://opendatacommons.org/licenses/odbl/1-0/index.html |
