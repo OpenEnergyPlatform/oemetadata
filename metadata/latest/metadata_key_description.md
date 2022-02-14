@@ -21,7 +21,7 @@ The JSON format offers different formats:
         {"key":"value"},
         {"key":"value"}}
     ```
-* object list {nested array}:
+* array of objects {nested array}:
     ```JSON
     {"key": [
         {"key":"value"},
@@ -62,34 +62,36 @@ The JSON format offers different formats:
 ### Spatial and Temporal Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 10 | spatial | Object. Contains name-value-pairs describing the spatial context of the contained data. | |
-| 10.1 | location | In the case of data where the location can be described as a point. May come as coordinates, URI or addresses with street, house number and zip code | 52.433509, 13.535855 |
-| 10.2 | extent | Covered area. May be the name of a region, or the geometry of a bounding box. | Europe |
-| 10.3 | resolution | Pixel size in case of a regular raster image. Reference to administrative level or other spatial division that is present as the smallest spatially distinguished unit size. | 30 m |
-| 11 | temporal | Object. Time period covered in the data. Temporal information should either contain a "referenceDate" or the keys describing a time series; in rare cases both. Use `null` for the ones that don't apply. |  |
-| 11.1 | referenceDate | Base year, month or day. Point in time for which the data is meant to be accurate. A census will generally have a reference year. A satellite image will have a reference date. Date Format is ISO 8601. |  2016-01-01 |
-| 11.2 | timeseries | Object ||
+| 10 | spatial | An object that describing the spatial context of the contained data. | |
+| 10.1 | location | A location of the data. In the case of data where the location can be described as a point. May come as coordinates, URI or addresses with street, house number and zip code | 52.433509, 13.535855 |
+| 10.2 | extent | A covered area. May be the name of a region, or the geometry of a bounding box. | Europe |
+| 10.3 | resolution | Pixel size in case of a regular raster image. Reference to administrative level or other spatial division that is present as the smallest spatially distinguished unit size. | 1 ha |
+| 11 | temporal | An object with the time period covered in the data. Temporal information should either contain a "referenceDate" or the keys describing a time series; in rare cases both. | |
+| 11.1 | referenceDate | The base year, month or day. Point in time for which the data is meant to be accurate. The census data or a satellite image will have a reference date. Date Format is ISO 8601. | 2016-01-01 |
+| 11.2 | timeseries | An array that describes the timeseries. ||
 | 11.2.1 | start | The beginning point in time of a time series. |  2019-02-06T10:12:04+00:00 |
 | 11.2.2 | end | The end point in time of a time series. | 2019-02-07T10:12:04+00:00 |
 | 11.2.3 | resolution | The time span between individual points of information in a time series. | 30 s |
-| 11.2.4 | alignment | Indicator whether stamps in a time series are left, right or middle. `null` if there is no time series. | left |
+| 11.2.4 | alignment | An indicator whether stamps in a time series are left, right or middle.  | left |
 | 11.2.5 | aggregationType | Indicates whether the values are a sum, average or current. | sum |
 
 ### Source Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 12 | sources | List of Objects. Each object has all name-value-pairs ||
-| 12.1 | title | Human readable title of the source, e.g. document title or organisation name | IPCC Fifth Assessment Report |
-| 12.2 | description | Free text description of the data set. | Scientific climate change report by the UN |
-| 12.3 | path | URL to original source | https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_full.pdf |
-| 12.4 | licenses | List of Objects. Each object has all name-value-pairs. The license(s) under which the source is provided. | |
-| 12.4.1 | name | [SPDX](https://spdx.org/licenses/) identifier | ODbL-1.0 |
-| 12.4.2 | title | Official (human readable) title | Open Data Commons Open Database License 1.0 |
-| 12.4.3 | path | A link to the license | https://opendatacommons.org/licenses/odbl/1-0/index.html |
-| 12.4.4 | instruction | short description of rights and restrictions |  You are free to share and change, but you must attribute, and share derivations under the same license. |
-| 12.4.5 | attribution | copyrightholder of the source | © Intergovernmental Panel on Climate Change 2014 |
-| 13 | licenses | The license(s) under which the described package is provided. List of Objects. Each object has all name-value-pairs  |  |
-| 13.1 | name | SPDX identifier | ODbL-1.0 |
+| 12 | sources | An array of objects with the used and underlying sources of the data and metadata. | |
+| 12.1 | title | A human readable title of the source, a document title or organisation name. | IPCC Fifth Assessment Report |
+| 12.2 | description | A free text description of the data set. | Scientific climate change report by the UN |
+| 12.3 | path | A URL to the original source | https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_full.pdf |
+| 12.4 | licenses | An array of objects under which the source is provided. | |
+| 12.4.1 | name | The [SPDX](https://spdx.org/licenses/) identifier. | ODbL-1.0 |
+| 12.4.2 | title | An official (human readable) title of the license. | Open Data Commons Open Database License 1.0 |
+| 12.4.3 | path | A link to the license text. | https://opendatacommons.org/licenses/odbl/1-0/index.html |
+| 12.4.4 | instruction | A short description of rights and restrictions. The use of [tl;drLegal](https://tldrlegal.com/) is recommended. | You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information. |
+| 12.4.5 | attribution | The copyright owner of the source. If attribution licenses are used, that name must be acknowledged. | © Intergovernmental Panel on Climate Change 2014 |
+
+### License Keys
+| 13 | licenses | An array objects of the license(s) under which the described package is provided. List of Objects. Each object has all name-value-pairs  |  |
+| 13.1 | name | The [SPDX](https://spdx.org/licenses/) identifier. | ODbL-1.0 |
 | 13.2 | title | Official (human readable) title | Open Data Commons Open Database License 1.0 |
 | 13.3 | path | A url-or-path string, that is a fully qualified HTTP address, or a relative POSIX path (see the url-or-path definition in Data Resource for details). | https://opendatacommons.org/licenses/odbl/1-0/index.html |
 | 13.4 | instruction | short description of rights and restrictions |  You are free to share and change, but you must attribute, and share derivations under the same license. |
