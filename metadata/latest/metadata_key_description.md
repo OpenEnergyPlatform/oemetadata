@@ -148,11 +148,11 @@ The JSON format offers different formats:
 | 15.7.2 | decimalSeparator | A symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be "." or ",". | . |
 
 ### Review Keys
-| 16 | @id | Uniform Resource Identifier (URI) that links the resource via the dpedia databus | https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00 |
+| 16 | @id | A Uniform Resource Identifier (URI) that links the resource via the [DBedia Databus](https://www.dbpedia.org/resources/databus/) | https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00 |
 | 17 | @context | Explanation of metadata keys in ontology terms | https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld |
-| 18. | review | Data uploaded through the OEP needs to go through review. The review will cover the areas described here: https://github.com/OpenEnergyPlatform/data-preprocessing/wiki and carried out by a team of the platform. The review itself is documented at the specified path and a badge is rewarded with regards to completeness. |  |
-| 18.1 | path | A URL or path string, that should be a permanent http(s) address directly linking to the documented review. | https://www.example.com |
-| 18.2 | badge | A badge of either Bronze, Silver, Gold or Platin is used to label the given metadata based on its quality. | Platin |
+| 18. | **review** | Data uploaded through the OEP will go through a review process. The review will cover the data and metadata. It is done by the OEP community. See the [OEP Data Review](https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md) for detailed information. The review itself is documented at the specified path and a badge is rewarded with regards to completeness. | |
+| 18.1 | path | A URL that should be a permanent http(s) address directly linking to the documented review. | https://www.example.com |
+| 18.2 | badge | A badge of either Bronze, Silver, Gold or Platinum is used to label the given data and metadata based on its quality. | Platinum |
 
 ### MetaMetadata Keys
 | 19 | metaMetadata | Object. Description about the metadata themselves, their format, version and license. These fields should already be provided when you’re filling out your metadata. ||
