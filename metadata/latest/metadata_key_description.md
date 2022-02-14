@@ -121,6 +121,7 @@ The JSON format offers different formats:
 
 #### Resource Keys - Schema
 |#|Key |Description |Example |
+|---|---|---|---|
 | 15.6 | **schema** | An object that describes the structure of the present data. It contains all fields (columns of the table), the primary key and optional foreign keys. |  |
 | 15.6.1 | **fields** | An array of objects that describe a column and provides name, description, type and unit. | |
 | 15.6.1.1 | name | The name of the field. | year |
@@ -137,6 +138,7 @@ The JSON format offers different formats:
 
 #### Resource Keys - Properties
 |#|Key |Description |Example |
+|---|---|---|---|
 | 15.6.2 | primaryKey | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as an array, since it is possible to define the primary key as made up of several columns. | id |
 | 15.6.3 | **foreignKeys** | A foreign key is a field that refers to a column in another table. | |
 | 15.6.3.1 | fields | The column in the table that is constrainted by the foreign key. | version |
@@ -148,6 +150,8 @@ The JSON format offers different formats:
 | 15.7.2 | decimalSeparator | A symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be "." or ",". | . |
 
 ### Review Keys
+|#|Key |Description |Example |
+|---|---|---|---|
 | 16 | @id | A Uniform Resource Identifier (URI) that links the resource via the [DBedia Databus](https://www.dbpedia.org/resources/databus/) | https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00 |
 | 17 | @context | Explanation of metadata keys in ontology terms | https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld |
 | 18. | **review** | Data uploaded through the OEP will go through a review process. The review will cover the data and metadata. It is done by the OEP community. See the [OEP Data Review](https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md) for detailed information. The review itself is documented at the specified path and a badge is rewarded with regards to completeness. | |
@@ -155,6 +159,8 @@ The JSON format offers different formats:
 | 18.2 | badge | A badge of either Bronze, Silver, Gold or Platinum is used to label the given data and metadata based on its quality. | Platinum |
 
 ### MetaMetadata Keys
+|#|Key |Description |Example |
+|---|---|---|---|
 | 19 | metaMetadata | Object. Description about the metadata themselves, their format, version and license. These fields should already be provided when you’re filling out your metadata. ||
 | 19.1 | metadataVersion | Type and version number of the metadata | OEP-1.5 |
 | 19.2 | metadataLicense | Object describing the license of the provided metadata ||
