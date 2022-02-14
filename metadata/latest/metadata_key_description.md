@@ -1,12 +1,12 @@
-# Open Energy Metadata
+# Open Energy Metadata - OEMetadata
 
-## Open Energy Metadata Description
+This pages describes the key of **OEMetadata version 1.5.1.** <br>
+You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v151/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v151/example.json) of the metadata string.
 
-This pages describes the OEP Metadata version 1.5.0. You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v150/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v150/example.json) of the metadata string.
+## Metadata keys with a description and example
 
 
-### Table with all Metadata keys and a short description
-
+### General keys
 |#|Key |Description |Example |
 |---|---|---|---|
 | 1 | name | File name or database table name | oep_metadata_table_example_v15 |
@@ -18,6 +18,7 @@ This pages describes the OEP Metadata version 1.5.0. You can have a look at an e
 | 7 | keywords | An Array of string keywords to assist users searching for the package in catalogs. | [example, template, test] |
 | 8 | publicationDate | Date of publishing of the data or metadata. Date Format is ISO 8601 (YYYY-MM-DD) | 2019-02-06 |
 
+### Context keys
 |#|Key |Description |Example |
 |---|---|---|---|
 | 9 | context | Object. Contains name-value-pairs that describe the general setting, environment or project leading to the creation or maintenance of this dataset. |  |
@@ -29,6 +30,10 @@ This pages describes the OEP Metadata version 1.5.0. You can have a look at an e
 | 9.6 | fundingAgency | In a funded Project: The name of the funding agency | Bundesministerium für Wirtschaft und Energie | 
 | 9.7 | fundingAgencyLogo | In a publicly funded Project: A link to the Logo of the funding agency | https://commons.wikimedia.org/wiki/File:BMWi_Logo_2021.svg#/media/File:BMWi_Logo_2021.svg | 
 | 9.8 | publisherLogo | Link to the logo of the publishing institution | https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png | 
+
+### Spatial and temporal keys
+|#|Key |Description |Example |
+|---|---|---|---|
 | 10 | spatial | Object. Contains name-value-pairs describing the spatial context of the contained data. | |
 | 10.1 | location | In the case of data where the location can be described as a point. May come as coordinates, URI or addresses with street, house number and zip code | 52.433509, 13.535855 |
 | 10.2 | extent | Covered area. May be the name of a region, or the geometry of a bounding box. | Europe |
@@ -41,6 +46,10 @@ This pages describes the OEP Metadata version 1.5.0. You can have a look at an e
 | 11.2.3 | resolution | The time span between individual points of information in a time series. | 30 s |
 | 11.2.4 | alignment | Indicator whether stamps in a time series are left, right or middle. `null` if there is no time series. | left |
 | 11.2.5 | aggregationType | Indicates whether the values are a sum, average or current. | sum |
+
+### Source keys
+|#|Key |Description |Example |
+|---|---|---|---|
 | 12 | sources | List of Objects. Each object has all name-value-pairs ||
 | 12.1 | title | Human readable title of the source, e.g. document title or organisation name | IPCC Fifth Assessment Report |
 | 12.2 | description | Free text description of the data set. | Scientific climate change report by the UN |
@@ -57,12 +66,20 @@ This pages describes the OEP Metadata version 1.5.0. You can have a look at an e
 | 13.3 | path | A url-or-path string, that is a fully qualified HTTP address, or a relative POSIX path (see the url-or-path definition in Data Resource for details). | https://opendatacommons.org/licenses/odbl/1-0/index.html |
 | 13.4 | instruction | short description of rights and restrictions |  You are free to share and change, but you must attribute, and share derivations under the same license. |
 | 13.5 | attribution | copyrightholder of the produced data set | © Reiner Lemoine Institut |
+
+### Provenience keys
+|#|Key |Description |Example |
+|---|---|---|---|
 | 14 | contributors | The people or organizations who contributed to this Data Package. This has to be a list. Each object refers to one contributor. Every contributor must have a title and property. A path, email, role and organization properties are optional extras. |  |
 | 14.1 | title | Name/title of the contributor (name for a person, name or title for an organization) | Jon Doe |
 | 14.2 | email | E-mail address of the contributor | contact@example.com |
 | 14.3 | date | Date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601. | 2016-06-16 |
 | 14.4 | object | Target of contribution. Which part of the package was supplied/changed | Metadata |
 | 14.5 | comment | Free text comment on what's been done | Fixed a typo in the title |
+
+### Resource keys
+|#|Key |Description |Example |
+|---|---|---|---|
 | 15 | resources | The Data Resource format describes a data resource as an individual file or table. |  |
 | 15.1 | profile | A string identifying the profile of this descriptor as per the profiles specification. This information is retained in order to comply with the "Tabular Data Package" standard. If at all in doubt the value should read "tabular-data-resource". | tabular-data-resource |
 | 15.2 | name | A resource MUST contain a name unique to amongst all resources in this data package. To comply with the data package standard it must consist of only lowercase alphanumeric character plus ".", "-" and "_". It may not start with a number. In a database this will be the name of the table within its containing schema. It would be usual for the name to correspond to the file name (minus the file-extension) of the data file the resource describes.  | sandbox.example_table |
@@ -86,11 +103,15 @@ This pages describes the OEP Metadata version 1.5.0. You can have a look at an e
 | 15.7 | dialect | Object. A CSV Dialect defines a simple format to describe the various dialects of CSV files in a language agnostic manner. In case of a database, the values in the containing fields are 'null'. ||
 | 15.7.1 | delimiter | Specifies the character sequence which should separate fields (aka columns). Common characters are "," (comma), "." (point) and "\t" (tab). | , |
 | 15.7.2 | decimalSeparator | Symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be "." or ",". | . |
+
+### Review keys
 | 16 | @id | Uniform Resource Identifier (URI) that links the resource via the dpedia databus | https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00 |
 | 17 | @context | Explanation of metadata keys in ontology terms | https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld |
 | 18. | review | Data uploaded through the OEP needs to go through review. The review will cover the areas described here: https://github.com/OpenEnergyPlatform/data-preprocessing/wiki and carried out by a team of the platform. The review itself is documented at the specified path and a badge is rewarded with regards to completeness. |  |
 | 18.1 | path | A URL or path string, that should be a permanent http(s) address directly linking to the documented review. | https://www.example.com |
 | 18.2 | badge | A badge of either Bronze, Silver, Gold or Platin is used to label the given metadata based on its quality. | Platin |
+
+### MetaMetadata keys
 | 19 | metaMetadata | Object. Description about the metadata themselves, their format, version and license. These fields should already be provided when you’re filling out your metadata. ||
 | 19.1 | metadataVersion | Type and version number of the metadata | OEP-1.5 |
 | 19.2 | metadataLicense | Object describing the license of the provided metadata ||
