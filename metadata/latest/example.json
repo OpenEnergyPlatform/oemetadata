@@ -345,7 +345,7 @@
     "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/30887e4cd7dabc316d1ee674791f0cc815277e38/metadata/latest/context.json",
     "review": {
         "path": "https://github.com/OpenEnergyPlatform/data-preprocessing/issues",
-        "badge": "Platin"
+        "badge": "Platinum"
     },
     "metaMetadata": {
         "metadataVersion": "OEP-1.5.1",
