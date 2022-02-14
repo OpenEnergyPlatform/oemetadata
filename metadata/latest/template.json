@@ -4,8 +4,7 @@
     "id": null,
     "description": null,
     "subject": [
-        {"name" : null,
-        "path": null}
+        null
     ],
     "language": [
         null
