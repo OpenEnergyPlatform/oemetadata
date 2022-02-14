@@ -3,7 +3,9 @@
     "title": null,
     "id": null,
     "description": null,
-    "subject": null,
+    "subject": [
+        null
+    ],
     "language": [
         null
     ],
