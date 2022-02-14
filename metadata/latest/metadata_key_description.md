@@ -14,7 +14,7 @@ This pages describes the OEP Metadata version 1.5.0. You can have a look at an e
 | 3 | id | Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI). | https://example.com |
 | 4 | description | A description of the package. It should be usable as summary information for the entire package that is described by the metadata. | Example table used to illustrate the metadata structure and meaning |
 | 5 | language | Language used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47) | [en-GB, de-DE, fr-FR] |
-| 6 | subject | Reference the topic of the resource in ontology terms | |
+| 6 | subject | Reference the topic of the resource in ontology terms | | ["energy" : "https://openenergy-platform.org/ontology/oeo/OEO_00000150"]
 | 7 | keywords | An Array of string keywords to assist users searching for the package in catalogs. | [example, template, test] |
 | 8 | publicationDate | Date of publishing. Date Format is ISO 8601 (YYYY-MM-DD) | 2019-02-06 |
 | 9 | context | Object. Contains name-value-pairs that describe the general setting, evironment or project leading to the creation or maintenance of this dataset. ||
