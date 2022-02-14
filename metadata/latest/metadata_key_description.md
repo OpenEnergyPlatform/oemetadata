@@ -81,7 +81,7 @@ The JSON format offers different formats:
 | 12 | **sources** | An array of objects with the used and underlying sources of the data and metadata. | |
 | 12.1 | title | A human readable title of the source, a document title or organisation name. | IPCC Fifth Assessment Report |
 | 12.2 | description | A free text description of the data set. | Scientific climate change report by the UN |
-| 12.3 | path | A URL to the original source | https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_full.pdf |
+| 12.3 | path | A URL to the original source. | https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_full.pdf |
 | 12.4 | **licenses** | An array of objects under which the source is provided. | |
 | 12.4.1 | name | The [SPDX](https://spdx.org/licenses/) identifier. | ODbL-1.0 |
 | 12.4.2 | title | The official (human readable) title of the license. | Open Data Commons Open Database License 1.0 |
@@ -104,7 +104,7 @@ The JSON format offers different formats:
 |---|---|---|---|
 | 14 | **contributors** | An array of objects of the people or organizations who contributed to the data or metadata. Each object refers to one contributor. Every contributor must have a title and property. The path, email, role and organization properties are optional. |  |
 | 14.1 | title | A name of the contributor. | Ludwig Hülk |
-| 14.2 | email | A email address of the contributor or GitHUb handle. | @Ludee |
+| 14.2 | email | A email address of the contributor or GitHub handle. | @Ludee |
 | 14.3 | date | The date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601. | 2016-06-16 |
 | 14.4 | object | The target of the contribution. Which part of the package was supplied or changed. Can be the data, metadata or both. | data and metadata |
 | 14.5 | comment | A free text commentary on what has been done.  | Fixed a typo in the title. |
@@ -113,8 +113,8 @@ The JSON format offers different formats:
 |#|Key |Description |Example |
 |---|---|---|---|
 | 15 | **resources** | An array of objects of the data. It describes the data resource as an individual file or (database) table. |  |
-| 15.1 | profile | The profile of this descriptor as per the profiles specification. This information is retained in order to comply with the "Tabular Data Package" standard. Use "tabular-data-resource" for all tables. | tabular-data-resource |
-| 15.2 | name | A name for the entire data package. To comply with the data package standard it must consist of only lowercase alphanumeric character plus ".", "-" and "_". It may not start with a number. In a database this will be the name of the table within its containing schema. It would be usual for the name to correspond to the file name (minus the file-extension) of the data file the resource describes. | openstreetmap.osm_deu_line |
+| 15.1 | profile | The profile of this descriptor according to the profiles specification. This information is retained in order to comply with the "Tabular Data Package" standard. Use "tabular-data-resource" for all tables. | tabular-data-resource |
+| 15.2 | name | A name for the entire data package. To comply with the data package standard it must consist of only lowercase alphanumeric character plus ".", "-" and "_". It may not start with a number. In a database, this will be the name of the table within the  schema containing it. The name usually corresponds to the file name (minus the file-extension) of the data file describing the resource. | openstreetmap.osm_deu_line |
 | 15.3 | path | A URL that should be a permanent http(s) address or other path directly linking to the resource. | https://openenergy-platform.org/dataedit/view/openstreetmap/osm_deu_line |
 | 15.4 | format | The file extension. 'csv', 'xls', 'json' etc. would be expected to be the standard file extension for this type of resource. When you upload your data to the OEDB, in the shown metadata string, the format will be changed accordingly to 'PostgreSQL', since the data there are stored in a database. | PostgreSQL |
 | 15.5 | encoding | Specifies the character encoding of the resource's data file. The values should be one of the ["Preferred MIME Names"](https://www.iana.org/assignments/character-sets/character-sets.xhtml) for a character encoding registered with IANA. If no value for this key is specified then the default is UTF-8. | UTF-8 |
@@ -123,12 +123,12 @@ The JSON format offers different formats:
 |#|Key |Description |Example |
 |---|---|---|---|
 | 15.6 | **schema** | An object that describes the structure of the present data. It contains all fields (columns of the table), the primary key and optional foreign keys. |  |
-| 15.6.1 | **fields** | An array of objects that describe a column and provides name, description, type and unit. | |
+| 15.6.1 | **fields** | An array of objects describing a column and providing name, description, type and unit. | |
 | 15.6.1.1 | name | The name of the field. | year |
 | 15.6.1.2 | description | A text describing the field. | Reference year for which the data were collected. |
 | 15.6.1.3 | type | The data type of the field. In case of a geom column in a database, also indicate the shape and CRS. | geometry(Point, 4326) |
 | 15.6.1.4 | unit | The unit, preferably SI-unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null'. If the unit is given in a seperate field, reference this field. | MW |
-| 15.6.1.5 | **isAbout** | An array of objects with that describe the field in [OEO](https://openenergy-platform.org/ontology/oeo/) terms. | 
+| 15.6.1.5 | **isAbout** | An array of objects with describe the field in [OEO](https://openenergy-platform.org/ontology/oeo/) terms. | 
 | 15.6.1.5.1 | name | The class label of the OEO terms. | wind energy converting unit |
 | 15.6.1.5.2 | path | The URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000044 |
 | 15.6.1.6 | **valueReference** | An array of objects for an extended description of the values in the column in [OEO](https://openenergy-platform.org/ontology/oeo/) terms. | |
@@ -139,7 +139,7 @@ The JSON format offers different formats:
 #### Resource Keys - Properties
 |#|Key |Description |Example |
 |---|---|---|---|
-| 15.6.2 | primaryKey | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as an array, since it is possible to define the primary key as made up of several columns. | id |
+| 15.6.2 | primaryKey | A primary key is a field or set of fields that uniquely identifies each row in the table. It is recorded as an array, since it is possible to define the primary key as made up of several columns. | id |
 | 15.6.3 | **foreignKeys** | A foreign key is a field that refers to a column in another table. | |
 | 15.6.3.1 | fields | The column in the table that is constrainted by the foreign key. | version |
 | 15.6.3.2 | **reference** | The reference to the foreign table. | |
@@ -152,8 +152,8 @@ The JSON format offers different formats:
 ### Review Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 16 | @id | A Uniform Resource Identifier (URI) that links the resource via the [DBedia Databus](https://www.dbpedia.org/resources/databus/) | https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00 |
-| 17 | @context | Explanation of metadata keys in ontology terms | https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld |
+| 16 | @id | A Uniform Resource Identifier (URI) that links the resource via the [DBedia Databus](https://www.dbpedia.org/resources/databus/). | https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00 |
+| 17 | @context | Explanation of metadata keys in ontology terms. | https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld |
 | 18. | **review** | Data uploaded through the OEP will go through a review process. The review will cover the data and metadata. It is done by the OEP community. See the [OEP Data Review](https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md) for detailed information. The review itself is documented at the specified path and a badge is rewarded with regards to completeness. | |
 | 18.1 | path | A URL that should be a permanent http(s) address directly linking to the documented review. | https://www.example.com |
 | 18.2 | badge | A badge of either Bronze, Silver, Gold or Platinum is used to label the given data and metadata based on its quality. | Platinum |
@@ -161,7 +161,7 @@ The JSON format offers different formats:
 ### MetaMetadata Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 19 | **metaMetadata** | An object that describes the metadata themselves, their format, version and license. These fields should already be provided when you’re filling out your metadata. | |
+| 19 | **metaMetadata** | An object that describes the metadata themselves, their format, version and license. These fields should already be provided when you are filling out your metadata. | |
 | 19.1 | metadataVersion | The type and version number of the metadata. | OEP-1.5.1 |
 | 19.2 | **metadataLicense** | The license of the provided metadata. | |
 | 19.2.1 | name | The [SPDX](https://spdx.org/licenses/) identifier. | CC0-1.0 |
@@ -175,7 +175,7 @@ The JSON format offers different formats:
 | 20.1 | metadata | Reference to the metadata documentation in use. | Metadata documentation and explanation (https://github.com/OpenEnergyPlatform/oemetadata) |
 | 20.2 | dates | Comment on data and time format. | Dates and time must follow the ISO8601 including time zone (YYYY-MM-DD or YYYY-MM-DDThh:mm:ss±hh) |
 | 20.3 | units | Comment on units. | Use a space between numbers and units (100 m) |
-| 20.4 | languages | Comment on language format | Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE) |
+| 20.4 | languages | Comment on language format. | Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE) |
 | 20.5 | licenses | Comment on license format. | License name must follow the SPDX License List (https://spdx.org/licenses/) |
 | 20.6 | review | Reference to review documentation. | Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md) |
 | 20.7 | null | Comment on fields that don't apply. | If not applicable use: null |
