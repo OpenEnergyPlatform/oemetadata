@@ -63,7 +63,7 @@ The JSON format offers different formats:
 |#|Key |Description |Example |
 |---|---|---|---|
 | 10 | **spatial** | An object that describing the spatial context of the contained data. | |
-| 10.1 | location | A location of the data. In the case of data where the location can be described as a point. May come as coordinates, URI or addresses with street, house number and zip code | 52.433509, 13.535855 |
+| 10.1 | location | A location of the data. In the case of data where the location can be described as a point. May come as coordinates, URI or addresses with street, house number and zip code. | 52.433509, 13.535855 |
 | 10.2 | extent | A covered area. May be the name of a region, or the geometry of a bounding box. | Europe |
 | 10.3 | resolution | Pixel size in case of a regular raster image. Reference to administrative level or other spatial division that is present as the smallest spatially distinguished unit size. | 1 ha |
 | 11 | **temporal** | An object with the time period covered in the data. Temporal information should either contain a "referenceDate" or the keys describing a time series; in rare cases both. | |
@@ -142,9 +142,9 @@ The JSON format offers different formats:
 | 15.6.2 | primaryKey | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as an array, since it is possible to define the primary key as made up of several columns. | id |
 | 15.6.3 | **foreignKeys** | A foreign key is a field that refers to a column in another table. | |
 | 15.6.3.1 | fields | The column in the table that is constrainted by the foreign key. | version |
-| 15.6.3.2 | reference | The reference to the foreign table. | |
-| 15.6.3.2.1 | resource | The foreign resource (table) | schema.table |
-| 15.6.3.2.2 | fields | The foreign resource column | version |
+| 15.6.3.2 | **reference** | The reference to the foreign table. | |
+| 15.6.3.2.1 | resource | The foreign resource (table). | schema.table |
+| 15.6.3.2.2 | fields | The foreign resource column. | version |
 | 15.7 | **dialect** | Object. A CSV Dialect defines a simple format to describe the various dialects of CSV files in a language agnostic manner. In case of a database, the values in the containing fields are 'null'. | |
 | 15.7.1 | delimiter | The delimiter specifies the character sequence which should separate fields (columns). Common characters are "," (comma), "." (point) and "\t" (tab). | , |
 | 15.7.2 | decimalSeparator | A symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be "." or ",". | . |
