@@ -50,11 +50,11 @@ The JSON format offers different formats:
 |#|Key |Description |Example |
 |---|---|---|---|
 | 9 | **context** | An object that describes the general setting, environment, or project leading to the creation or maintenance of this dataset. In science this is can be the research project. | |
-| 9.1 | homepage | A URL of the project | https://openenergy-platform.org/ | 
+| 9.1 | homepage | A URL of the project. | https://openenergy-platform.org/ | 
 | 9.2 | documentation | A URL of the project documentation. | https://openenergy-platform.org/about/ | 
 | 9.3 | sourceCode | A URL of the projects source code. | https://github.com/OpenEnergyPlatform | 
-| 9.4 | contact | A reference to the creator or maintainer of the data set. Can be an email address or a GitHub handle. | contact@example.com | 
-| 9.5 | grantNo | An identifying grant number. In the case of a publicly funded project, this number is assigned by the funding agency. | 01AB2345 | 
+| 9.4 | contact | A reference to the creator or maintainer of the data set. It can be an email address or a GitHub handle. | contact@example.com | 
+| 9.5 | grantNo | An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency. | 01AB2345 | 
 | 9.6 | fundingAgency | A name of the entity providing the funding. This can be a government agency or a company. | Bundesministerium für Wirtschaft und Klimaschutz | 
 | 9.7 | fundingAgencyLogo | A URL to the logo or image of the funding agency. | https://commons.wikimedia.org/wiki/File:BMWi_Logo_2021.svg#/media/File:BMWi_Logo_2021.svg | 
 | 9.8 | publisherLogo | A URL to the logo of the publishing agency of data. | https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png | 
@@ -62,8 +62,8 @@ The JSON format offers different formats:
 ### Spatial and Temporal Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 10 | **spatial** | An object that describing the spatial context of the contained data. | |
-| 10.1 | location | A location of the data. In the case of data where the location can be described as a point. May come as coordinates, URI or addresses with street, house number and zip code. | 52.433509, 13.535855 |
+| 10 | **spatial** | An object that describes the spatial context of the data it contains. | |
+| 10.1 | location | A location of the data. In case of data where the location can be described as a point. May be specified as coordinates, URI or addresses with street, house number and zip code. | 52.433509, 13.535855 |
 | 10.2 | extent | A covered area. May be the name of a region, or the geometry of a bounding box. | Europe |
 | 10.3 | resolution | Pixel size in case of a regular raster image. Reference to administrative level or other spatial division that is present as the smallest spatially distinguished unit size. | 1 ha |
 | 11 | **temporal** | An object with the time period covered in the data. Temporal information should either contain a "referenceDate" or the keys describing a time series; in rare cases both. | |
