@@ -229,7 +229,8 @@
                         "description": "Unique identifier",
                         "type": "serial",
                         "isAbout": [
-                            null
+                            {"name" : null,
+                            "path": null}
                         ],
                         "valueReference": [
                             null
@@ -241,7 +242,8 @@
                         "description": "Example name",
                         "type": "text",
                         "isAbout": [
-                            {"written name": "https://openenergy-platform.org/ontology/oeo/IAO_0000590"}
+                            {"name" : "written name",
+                            "path": "https://openenergy-platform.org/ontology/oeo/IAO_0000590"}
                         ],
                         "valueReference": [
                             null
@@ -253,7 +255,8 @@
                         "description": "Type of wind farm",
                         "type": "text",
                         "isAbout": [
-                            {"wind farm": "https://openenergy-platform.org/ontology/oeo/OEO_00000447"}
+                            {"name" : "wind farm",
+                            "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000447"}
                         ],
                         "valueReference": [
                             {"offshore ":
@@ -276,7 +279,8 @@
                         "description": "Reference year",
                         "type": "integer",
                         "isAbout": [
-                            {"year": "https://openenergy-platform.org/ontology/oeo/UO_0000036"}
+                            {"name" : "year",
+                            "path": "https://openenergy-platform.org/ontology/oeo/UO_0000036"}
                         ],
                         "valueReference": [
                             null
@@ -288,7 +292,8 @@
                         "description": "Example value",
                         "type": "double precision",
                         "isAbout": [
-                            {"quantity value": "https://openenergy-platform.org/ontology/oeo/OEO_00000350"}
+                            {"name" : "quantity value",
+                            "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000350"}
                         ],
                         "valueReference": [
                             null
@@ -300,7 +305,8 @@
                         "description": "Geometry",
                         "type": "geometry(Point, 4326)",
                         "isAbout": [
-                            {"spatial region": "https://openenergy-platform.org/ontology/oeo/BFO_0000006"}
+                            {"name" : "spatial region",
+                            "path": "https://openenergy-platform.org/ontology/oeo/BFO_0000006"}
                         ],
                         "valueReference": [
                             null
