@@ -84,7 +84,7 @@ The JSON format offers different formats:
 | 12.3 | path | A URL to the original source | https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_full.pdf |
 | 12.4 | **licenses** | An array of objects under which the source is provided. | |
 | 12.4.1 | name | The [SPDX](https://spdx.org/licenses/) identifier. | ODbL-1.0 |
-| 12.4.2 | title | An official (human readable) title of the license. | Open Data Commons Open Database License 1.0 |
+| 12.4.2 | title | The official (human readable) title of the license. | Open Data Commons Open Database License 1.0 |
 | 12.4.3 | path | A link to the license text. | https://opendatacommons.org/licenses/odbl/1-0/index.html |
 | 12.4.4 | instruction | A short description of rights and restrictions. The use of [tl;drLegal](https://tldrlegal.com/) is recommended. | You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information. |
 | 12.4.5 | attribution | The copyright owner of the **source**. If attribution licenses are used, that name must be acknowledged. | © Intergovernmental Panel on Climate Change 2014 |
@@ -94,7 +94,7 @@ The JSON format offers different formats:
 |---|---|---|---|
 | 13 | **licenses** | An array of objects of the license(s) under which the described package is provided. It can depend on the licenses of the sources (copyleft or share-alike) or can be granted by the creator of the data. | |
 | 13.1 | name | The [SPDX](https://spdx.org/licenses/) identifier. | ODbL-1.0 |
-| 13.2 | title | An official (human readable) title of the license. | Open Data Commons Open Database License 1.0 |
+| 13.2 | title | The official (human readable) title of the license. | Open Data Commons Open Database License 1.0 |
 | 13.3 | path | A link to the license text. | https://opendatacommons.org/licenses/odbl/1-0/index.html |
 | 13.4 | instruction | A short description of rights and restrictions. The use of [tl;drLegal](https://tldrlegal.com/) is recommended. | You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information. |
 | 13.5 | attribution | The copyright owner of the **data**. If attribution licenses are used, that name must be acknowledged. | © Reiner Lemoine Institut |
@@ -161,12 +161,16 @@ The JSON format offers different formats:
 ### MetaMetadata Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 19 | metaMetadata | Object. Description about the metadata themselves, their format, version and license. These fields should already be provided when you’re filling out your metadata. ||
-| 19.1 | metadataVersion | Type and version number of the metadata | OEP-1.5 |
-| 19.2 | metadataLicense | Object describing the license of the provided metadata ||
-| 19.2.1 | name | SPDX identifier | CC0-1.0 |
-| 19.2.2 | title | Official (human readable) license title | Creative Commons Zero v1.0 Universal |
-| 19.2.3 | path | Url or path string, that is a fully qualified HTTP address | https://creativecommons.org/publicdomain/zero/1.0/ |
+| 19 | **metaMetadata** | An object that describes the metadata themselves, their format, version and license. These fields should already be provided when you’re filling out your metadata. | |
+| 19.1 | metadataVersion | The type and version number of the metadata. | OEP-1.5.1 |
+| 19.2 | **metadataLicense** | The license of the provided metadata. | |
+| 19.2.1 | name | The [SPDX](https://spdx.org/licenses/) identifier. | CC0-1.0 |
+| 19.2.2 | title | The official (human readable) title of the license. | Creative Commons Zero v1.0 Universal |
+| 19.2.3 | path | A link to the license text. | https://creativecommons.org/publicdomain/zero/1.0/ |
+
+### Comments
+|#|Key |Description |Example |
+|---|---|---|---|
 | 20 | _comment| Array of objects. The “_comment”-section is used as a self-description of the final metadata-file. It is text, intended for humans and can include a link to the metadata documentation(s), required value formats and similar remarks. The comment section has no fix structure or mandatory values, but a useful self-description, similar to the one depicted here, is encouraged. ||
 | 20.1 | metadata | Reference to the metadata documentation in use. | "Metadata documentation and explanation (https://github.com/OpenEnergyPlatform/organisation/wiki/metadata)" |
 | 20.2 | dates | Comment on data/time format | Dates and time must follow the ISO8601 including time zone (YYYY-MM-DD or YYYY-MM-DDThh:mm:ss±hh) |
