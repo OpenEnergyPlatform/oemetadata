@@ -62,8 +62,8 @@ The JSON format offers different formats:
 ### Spatial and Temporal Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 10 | **spatial** | An object that describing the spatial context of the contained data. | |
-| 10.1 | location | A location of the data. In the case of data where the location can be described as a point. May come as coordinates, URI or addresses with street, house number and zip code. | 52.433509, 13.535855 |
+| 10 | **spatial** | An object that describes the spatial context of the data it contains. | |
+| 10.1 | location | A location of the data. In case of data where the location can be described as a point. May be specified as coordinates, URI or addresses with street, house number and zip code. | 52.433509, 13.535855 |
 | 10.2 | extent | A covered area. May be the name of a region, or the geometry of a bounding box. | Europe |
 | 10.3 | resolution | Pixel size in case of a regular raster image. Reference to administrative level or other spatial division that is present as the smallest spatially distinguished unit size. | 1 ha |
 | 11 | **temporal** | An object with the time period covered in the data. Temporal information should either contain a "referenceDate" or the keys describing a time series; in rare cases both. | |
