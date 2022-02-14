@@ -16,7 +16,10 @@ This pages describes the OEP Metadata version 1.5.0. You can have a look at an e
 | 5 | language | Language used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47) | [en-GB, de-DE, fr-FR] |
 | 6 | subject | Reference the topic of the resource in ontology terms | ["energy" : "https://openenergy-platform.org/ontology/oeo/OEO_00000150"] |
 | 7 | keywords | An Array of string keywords to assist users searching for the package in catalogs. | [example, template, test] |
-| 8 | publicationDate | Date of publishing. Date Format is ISO 8601 (YYYY-MM-DD) | 2019-02-06 |
+| 8 | publicationDate | Date of publishing of the data or metadata. Date Format is ISO 8601 (YYYY-MM-DD) | 2019-02-06 |
+
+|#|Key |Description |Example |
+|---|---|---|---|
 | 9 | context | Object. Contains name-value-pairs that describe the general setting, environment or project leading to the creation or maintenance of this dataset. |  |
 | 9.1 | homepage | URL of Project | https://openenergy-platform.org/ | 
 | 9.2 | documentation | URL of the projects source code | https://github.com/OpenEnergyPlatform/examples/wiki/Metadata-Description | 
