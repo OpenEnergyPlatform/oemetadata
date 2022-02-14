@@ -40,7 +40,7 @@ The JSON format offers different formats:
 | 3 | id | An Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI). | https://example.com |
 | 4 | description | A description or abstract of the package. It should be usable as summary information for the entire package that is described by the metadata. | Example table used to illustrate the metadata structure and meaning. |
 | 5 | language | An array of languages used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47) | en-GB, de-DE, fr-FR |
-| 6 | subject | An array of objects with topics of the data in OEO terms. |
+| 6 | **subject** | An array of objects with topics of the data in OEO terms. |
 | 6.1 | name | The class label of the OEO terms. | energy |
 | 6.2 | path | The URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000150 |
 | 7 | keywords | An array of keywords to assist users searching for the package in catalogs. | example, template, test |
@@ -49,7 +49,7 @@ The JSON format offers different formats:
 ### Context Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 9 | context | An object that describes the general setting, environment, or project leading to the creation or maintenance of this dataset. In science this is can be the research project. | |
+| 9 | **context** | An object that describes the general setting, environment, or project leading to the creation or maintenance of this dataset. In science this is can be the research project. | |
 | 9.1 | homepage | A URL of the project | https://openenergy-platform.org/ | 
 | 9.2 | documentation | A URL of the project documentation. | https://openenergy-platform.org/about/ | 
 | 9.3 | sourceCode | A URL of the projects source code. | https://github.com/OpenEnergyPlatform | 
@@ -62,13 +62,13 @@ The JSON format offers different formats:
 ### Spatial and Temporal Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 10 | spatial | An object that describing the spatial context of the contained data. | |
+| 10 | **spatial** | An object that describing the spatial context of the contained data. | |
 | 10.1 | location | A location of the data. In the case of data where the location can be described as a point. May come as coordinates, URI or addresses with street, house number and zip code | 52.433509, 13.535855 |
 | 10.2 | extent | A covered area. May be the name of a region, or the geometry of a bounding box. | Europe |
 | 10.3 | resolution | Pixel size in case of a regular raster image. Reference to administrative level or other spatial division that is present as the smallest spatially distinguished unit size. | 1 ha |
-| 11 | temporal | An object with the time period covered in the data. Temporal information should either contain a "referenceDate" or the keys describing a time series; in rare cases both. | |
+| 11 | **temporal** | An object with the time period covered in the data. Temporal information should either contain a "referenceDate" or the keys describing a time series; in rare cases both. | |
 | 11.1 | referenceDate | The base year, month or day. Point in time for which the data is meant to be accurate. The census data or a satellite image will have a reference date. Date Format is ISO 8601. | 2016-01-01 |
-| 11.2 | timeseries | An array that describes the timeseries. ||
+| 11.2 | **timeseries** | An array that describes the timeseries. ||
 | 11.2.1 | start | The beginning point in time of a time series. |  2019-02-06T10:12:04+00:00 |
 | 11.2.2 | end | The end point in time of a time series. | 2019-02-07T10:12:04+00:00 |
 | 11.2.3 | resolution | The time span between individual points of information in a time series. | 30 s |
@@ -78,11 +78,11 @@ The JSON format offers different formats:
 ### Source Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 12 | sources | An array of objects with the used and underlying sources of the data and metadata. | |
+| 12 | **sources** | An array of objects with the used and underlying sources of the data and metadata. | |
 | 12.1 | title | A human readable title of the source, a document title or organisation name. | IPCC Fifth Assessment Report |
 | 12.2 | description | A free text description of the data set. | Scientific climate change report by the UN |
 | 12.3 | path | A URL to the original source | https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_full.pdf |
-| 12.4 | licenses | An array of objects under which the source is provided. | |
+| 12.4 | **licenses** | An array of objects under which the source is provided. | |
 | 12.4.1 | name | The [SPDX](https://spdx.org/licenses/) identifier. | ODbL-1.0 |
 | 12.4.2 | title | An official (human readable) title of the license. | Open Data Commons Open Database License 1.0 |
 | 12.4.3 | path | A link to the license text. | https://opendatacommons.org/licenses/odbl/1-0/index.html |
@@ -92,7 +92,7 @@ The JSON format offers different formats:
 ### License Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 13 | licenses | An array of objects of the license(s) under which the described package is provided. It can depend on the licenses of the sources (copyleft or share-alike) or can be granted by the creator of the data. | |
+| 13 | **licenses** | An array of objects of the license(s) under which the described package is provided. It can depend on the licenses of the sources (copyleft or share-alike) or can be granted by the creator of the data. | |
 | 13.1 | name | The [SPDX](https://spdx.org/licenses/) identifier. | ODbL-1.0 |
 | 13.2 | title | An official (human readable) title of the license. | Open Data Commons Open Database License 1.0 |
 | 13.3 | path | A link to the license text. | https://opendatacommons.org/licenses/odbl/1-0/index.html |
@@ -102,7 +102,7 @@ The JSON format offers different formats:
 ### Provenience Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 14 | contributors | An array of objects of the people or organizations who contributed to the data or metadata. Each object refers to one contributor. Every contributor must have a title and property. The path, email, role and organization properties are optional. |  |
+| 14 | **contributors** | An array of objects of the people or organizations who contributed to the data or metadata. Each object refers to one contributor. Every contributor must have a title and property. The path, email, role and organization properties are optional. |  |
 | 14.1 | title | A name of the contributor. | Ludwig Hülk |
 | 14.2 | email | A email address of the contributor or GitHUb handle. | @Ludee |
 | 14.3 | date | The date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601. | 2016-06-16 |
@@ -112,7 +112,7 @@ The JSON format offers different formats:
 ### Resource Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 15 | resources | An array of objects of the data. It describes the data resource as an individual file or (database) table. |  |
+| 15 | **resources** | An array of objects of the data. It describes the data resource as an individual file or (database) table. |  |
 | 15.1 | profile | The profile of this descriptor as per the profiles specification. This information is retained in order to comply with the "Tabular Data Package" standard. Use "tabular-data-resource" for all tables. | tabular-data-resource |
 | 15.2 | name | A name for the entire data package. To comply with the data package standard it must consist of only lowercase alphanumeric character plus ".", "-" and "_". It may not start with a number. In a database this will be the name of the table within its containing schema. It would be usual for the name to correspond to the file name (minus the file-extension) of the data file the resource describes. | openstreetmap.osm_deu_line |
 | 15.3 | path | A URL that should be a permanent http(s) address or other path directly linking to the resource. | https://openenergy-platform.org/dataedit/view/openstreetmap/osm_deu_line |
@@ -121,31 +121,31 @@ The JSON format offers different formats:
 
 #### Resource Keys - Schema
 |#|Key |Description |Example |
-| 15.6 | schema | An object that describes the structure of the present data. It contains all fields (columns of the table), the primary key and optional foreign keys. |  |
-| 15.6.1 | fields | An array of objects that describe a column and provides name, description, type and unit. | |
+| 15.6 | **schema** | An object that describes the structure of the present data. It contains all fields (columns of the table), the primary key and optional foreign keys. |  |
+| 15.6.1 | **fields** | An array of objects that describe a column and provides name, description, type and unit. | |
 | 15.6.1.1 | name | The name of the field. | year |
 | 15.6.1.2 | description | A text describing the field. | Reference year for which the data were collected. |
 | 15.6.1.3 | type | The data type of the field. In case of a geom column in a database, also indicate the shape and CRS. | geometry(Point, 4326) |
 | 15.6.1.4 | unit | The unit, preferably SI-unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null'. If the unit is given in a seperate field, reference this field. | MW |
-| 15.6.1.5 | isAbout | An array of objects with that describe the field in [OEO](https://openenergy-platform.org/ontology/oeo/) terms. | 
+| 15.6.1.5 | **isAbout** | An array of objects with that describe the field in [OEO](https://openenergy-platform.org/ontology/oeo/) terms. | 
 | 15.6.1.5.1 | name | The class label of the OEO terms. | wind energy converting unit |
 | 15.6.1.5.2 | path | The URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000044 |
-| 15.6.1.6 | valueReference | An array of objects for an extended description of the values in the column in [OEO](https://openenergy-platform.org/ontology/oeo/) terms. | |
+| 15.6.1.6 | **valueReference** | An array of objects for an extended description of the values in the column in [OEO](https://openenergy-platform.org/ontology/oeo/) terms. | |
 | 15.6.1.6.1 | value | The name of the value in the column. | onshore |
 | 15.6.1.6.2 | name | The class label of the OEO terms. | onshore wind farm |
 | 15.6.1.6.3 | path | The URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000311 |
 
 #### Resource Keys - Properties
 |#|Key |Description |Example |
-| 15.6.2 | primaryKey | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns. | id |
-| 15.6.3 | foreignKeys | A foreign key is a field that refers to a column in another table. | |
+| 15.6.2 | primaryKey | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as an array, since it is possible to define the primary key as made up of several columns. | id |
+| 15.6.3 | **foreignKeys** | A foreign key is a field that refers to a column in another table. | |
 | 15.6.3.1 | fields | The column in the table that is constrainted by the foreign key. | version |
 | 15.6.3.2 | reference | The reference to the foreign table. | |
 | 15.6.3.2.1 | resource | The foreign resource (table) | schema.table |
 | 15.6.3.2.2 | fields | The foreign resource column | version |
-| 15.7 | dialect | Object. A CSV Dialect defines a simple format to describe the various dialects of CSV files in a language agnostic manner. In case of a database, the values in the containing fields are 'null'. ||
-| 15.7.1 | delimiter | Specifies the character sequence which should separate fields (aka columns). Common characters are "," (comma), "." (point) and "\t" (tab). | , |
-| 15.7.2 | decimalSeparator | Symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be "." or ",". | . |
+| 15.7 | **dialect** | Object. A CSV Dialect defines a simple format to describe the various dialects of CSV files in a language agnostic manner. In case of a database, the values in the containing fields are 'null'. | |
+| 15.7.1 | delimiter | The delimiter specifies the character sequence which should separate fields (columns). Common characters are "," (comma), "." (point) and "\t" (tab). | , |
+| 15.7.2 | decimalSeparator | A symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be "." or ",". | . |
 
 ### Review Keys
 | 16 | @id | Uniform Resource Identifier (URI) that links the resource via the dpedia databus | https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00 |
