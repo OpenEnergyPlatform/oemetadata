@@ -114,7 +114,9 @@
                         "name": null,
                         "description": null,
                         "type": null,
-                        "isAbout": null,
+                        "isAbout": [
+                            null
+                                ],
                         "value_reference": null,
                         "unit": null
                     },
