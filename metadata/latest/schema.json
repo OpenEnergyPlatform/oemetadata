@@ -56,14 +56,27 @@
         },
         "subject": {
             "description": "Reference the topic of the resource in ontology terms",
-            "type": "array",
-            "items": {
-                "type": [
-                    "string",
-                    "null"
-                ],
-                "title": "Subject"
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "Name of the OEO Class",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "title": "Name"
+                },
+                "path": {
+                    "description": "Path to the OEO (URL)",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "title": "Path",
+                    "format": "uri"
+                }
             },
+            "additionalProperties": false,
             "title": "Subject"
         },
         "language": {
