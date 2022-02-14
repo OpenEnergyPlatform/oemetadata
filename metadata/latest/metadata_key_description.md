@@ -40,9 +40,9 @@ The JSON format offers different formats:
 | 3 | id | An Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI). | https://example.com |
 | 4 | description | A description or abstract of the package. It should be usable as summary information for the entire package that is described by the metadata. | Example table used to illustrate the metadata structure and meaning. |
 | 5 | language | An array of languages used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47) | en-GB, de-DE, fr-FR |
-| 6 | subject | An array of topics of the data in OEO terms. |
-| 6.1 | name | An class label of the OEO terms. | energy |
-| 6.2 | path | A URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000150 |
+| 6 | subject | An array of objects with topics of the data in OEO terms. |
+| 6.1 | name | The class label of the OEO terms. | energy |
+| 6.2 | path | The URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000150 |
 | 7 | keywords | An array of keywords to assist users searching for the package in catalogs. | example, template, test |
 | 8 | publicationDate | A date of publishing of the data or metadata. Date format is ISO 8601 (YYYY-MM-DD). | 2019-02-06 |
 
@@ -103,7 +103,7 @@ The JSON format offers different formats:
 |#|Key |Description |Example |
 |---|---|---|---|
 | 14 | contributors | An array of objects of the people or organizations who contributed to the data or metadata. Each object refers to one contributor. Every contributor must have a title and property. The path, email, role and organization properties are optional. |  |
-| 14.1 | title | A name of the contributor. | Jon Doe |
+| 14.1 | title | A name of the contributor. | Ludwig Hülk |
 | 14.2 | email | A email address of the contributor or GitHUb handle. | @Ludee |
 | 14.3 | date | The date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601. | 2016-06-16 |
 | 14.4 | object | The target of the contribution. Which part of the package was supplied or changed. Can be the data, metadata or both. | data and metadata |
@@ -112,20 +112,31 @@ The JSON format offers different formats:
 ### Resource Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 15 | resources | The Data Resource format describes a data resource as an individual file or table. |  |
-| 15.1 | profile | A string identifying the profile of this descriptor as per the profiles specification. This information is retained in order to comply with the "Tabular Data Package" standard. If at all in doubt the value should read "tabular-data-resource". | tabular-data-resource |
-| 15.2 | name | A resource MUST contain a name unique to amongst all resources in this data package. To comply with the data package standard it must consist of only lowercase alphanumeric character plus ".", "-" and "_". It may not start with a number. In a database this will be the name of the table within its containing schema. It would be usual for the name to correspond to the file name (minus the file-extension) of the data file the resource describes.  | sandbox.example_table |
-| 15.3 | path | A url-or-path string, that should be a permanent http(s) address or other path directly linking to the resource. | https://openenergy-platform.org/dataedit/view/openstreetmap/osm_deu_roads |
-| 15.4 | format | 'csv', 'xls', 'json' etc. would be expected to be the standard file extension for this type of resource. When you upload your data to the OEDB, in the shown metadata string, the format will be changed accordingly to 'PostgreSQL', since the data there are stored in a data base. | csv |
-| 15.5 | encoding | Specifies the character encoding of the resource's data file. The values should be one of the "Preferred MIME Names" for a character encoding registered with IANA. If no value for this key is specified then the default is UTF-8. | UTF-8 |
-| 15.6 | schema | Object containing fields and primary key. Describes the structure of the present data. |  |
-| 15.6.1 | fields | List of objects. Every object describes a column and provides name, description, type and unit. ||
-| 15.6.1.1 | name | Name string unique within its scope. | year |
-| 15.6.1.2 | description | Free-text describing the field. | Reference year for which the data were collected. |
-| 15.6.1.3 | type | Data type of the field. In case of a geom-column in a database, also indicate the shape and  CRS. | geometry(Point, 4326) |
-| 15.6.1.4 | isAbout | An array of Ontology URI that describe the column header | {"wind energy converting unit" : "https://openenergy-platform.org/ontology/oeo/OEO_00000044"}, {"declared net capacity" : "https://openenergy-platform.org/ontology/oeo/OEO_00230002"} |
-| 15.6.1.5 | valueReference | An array of Ontology URI for an extended description of the values in the column |"valueReference": [{"offshore ":{"name": "onshore wind farm" ,"path" : "https://openenergy-platform.org/ontology/oeo/OEO_00000311"}}, {"onshore ":{"name": "offshore wind farm" ,"path" : "https://openenergy-platform.org/ontology/oeo/OEO_00000308"}}]|
-| 15.6.1.6 | unit | Unit, preferably SI-Unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null' | MW |
+| 15 | resources | An array of objects of the data. It describes the data resource as an individual file or (database) table. |  |
+| 15.1 | profile | The profile of this descriptor as per the profiles specification. This information is retained in order to comply with the "Tabular Data Package" standard. Use "tabular-data-resource" for all tables. | tabular-data-resource |
+| 15.2 | name | A name for the entire data package. To comply with the data package standard it must consist of only lowercase alphanumeric character plus ".", "-" and "_". It may not start with a number. In a database this will be the name of the table within its containing schema. It would be usual for the name to correspond to the file name (minus the file-extension) of the data file the resource describes. | openstreetmap.osm_deu_line |
+| 15.3 | path | A URL that should be a permanent http(s) address or other path directly linking to the resource. | https://openenergy-platform.org/dataedit/view/openstreetmap/osm_deu_line |
+| 15.4 | format | The file extension. 'csv', 'xls', 'json' etc. would be expected to be the standard file extension for this type of resource. When you upload your data to the OEDB, in the shown metadata string, the format will be changed accordingly to 'PostgreSQL', since the data there are stored in a database. | PostgreSQL |
+| 15.5 | encoding | Specifies the character encoding of the resource's data file. The values should be one of the ["Preferred MIME Names"](https://www.iana.org/assignments/character-sets/character-sets.xhtml) for a character encoding registered with IANA. If no value for this key is specified then the default is UTF-8. | UTF-8 |
+
+#### Resource Keys - Schema
+|#|Key |Description |Example |
+| 15.6 | schema | An object that describes the structure of the present data. It contains all fields (columns of the table), the primary key and optional foreign keys. |  |
+| 15.6.1 | fields | An array of objects that describe a column and provides name, description, type and unit. | |
+| 15.6.1.1 | name | The name of the field. | year |
+| 15.6.1.2 | description | A text describing the field. | Reference year for which the data were collected. |
+| 15.6.1.3 | type | The data type of the field. In case of a geom column in a database, also indicate the shape and CRS. | geometry(Point, 4326) |
+| 15.6.1.4 | unit | The unit, preferably SI-unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null'. If the unit is given in a seperate field, reference this field. | MW |
+| 15.6.1.5 | isAbout | An array of objects with that describe the field in [OEO](https://openenergy-platform.org/ontology/oeo/) terms. | 
+| 15.6.1.5.1 | name | The class label of the OEO terms. | wind energy converting unit |
+| 15.6.1.5.2 | path | The URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000044 |
+| 15.6.1.6 | valueReference | An array of objects for an extended description of the values in the column in [OEO](https://openenergy-platform.org/ontology/oeo/) terms. | |
+| 15.6.1.6.1 | value | The name of the value in the column. | onshore |
+| 15.6.1.6.2 | name | The class label of the OEO terms. | onshore wind farm |
+| 15.6.1.6.3 | path | The URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000311 |
+
+#### Resource Keys - Properties
+|#|Key |Description |Example |
 | 15.6.2 | primaryKey | A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns. | id |
 | 15.6.3 | foreignKeys | A foreign key is a field that refers to a column in another table. | |
 | 15.6.3.1 | fields | The column in the table that is constrainted by the foreign key. | version |
