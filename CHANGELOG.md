@@ -27,6 +27,7 @@ Here is a template for new release sections
 -
 ```
 ## [1.5.1] - 2022-02-15
+- hier merge conflict
 
 ## Current
 
