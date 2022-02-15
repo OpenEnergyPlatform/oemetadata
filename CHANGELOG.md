@@ -26,6 +26,8 @@ Here is a template for new release sections
 ### Removed
 -
 ```
+## [1.5.1] - 2022-02-15
+
 ## Current
 
 ### Added
