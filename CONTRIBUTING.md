@@ -19,90 +19,90 @@ in the GitHub repository. The `issue title` describes the problem you will addre
 
 ##### 0. Get the latest version of the `develop` branch
 
-    ```bash
-    git checkout develop
-    ```
-   
-    ```bash
-    git pull
-    ```
+```bash
+git checkout develop
+```
+
+```bash
+git pull
+```
 
 ##### 1. Create a new (local) branch
 
-    ```bash
-    git checkout -b feature-1314-my-feature
-    ```
+```bash
+git checkout -b feature-1314-my-feature
+```
 
-    **Naming convention** for branches: `type`-`issue-nr`-`short-description`
+**Naming convention** for branches: `type`-`issue-nr`-`short-description`
 
-    **type**
+**type**
 
-    * master / main / stable - includes the current stable version
-    * dev - includes all current developments
-    * feature - includes the feature that will be implemented
-    * hotfix - includes small improvements before an release, should be branched from a release branch
-    * release - includes the current version to be released
+* master / main / stable - includes the current stable version
+* dev - includes all current developments
+* feature - includes the feature that will be implemented
+* hotfix - includes small improvements before an release, should be branched from a release branch
+* release - includes the current version to be released
 
-    The majority of the development will be done in `feature` branches.
+The majority of the development will be done in `feature` branches.
 
-    **issue-nr**
+**issue-nr**
 
-    The `issueNumber` should be taken from Step 1. Do not use the "#". 
+The `issueNumber` should be taken from Step 1. Do not use the "#". 
 
-    **short-description**
+**short-description**
 
-    Describe shortly what the branch is about. Avoid long and short descriptive names for branches, 2-4 words are optimal.
+Describe shortly what the branch is about. Avoid long and short descriptive names for branches, 2-4 words are optimal.
 
-    Other hints:
-    - Separate words with `-` (minus)
-    - Avoid using capital letters
-    - Do not put your name to the branch name, it's a collaborative project
-    - Branch names should be precise and informative
+Other hints:
+- Separate words with `-` (minus)
+- Avoid using capital letters
+- Do not put your name to the branch name, it's a collaborative project
+- Branch names should be precise and informative
 
-    Examples of branch names : `feature-42-add-new-ontology-class` or `feature-911-branch-naming-convention`
+Examples of branch names : `feature-42-add-new-ontology-class` or `feature-911-branch-naming-convention`
 
 ##### 2. Start editing the files
 
-    - Divide your feature into small logical units
-    - Start to write the documentation or a docstring
-    - Don't rush, have the commit messages in mind
+- Divide your feature into small logical units
+- Start to write the documentation or a docstring
+- Don't rush, have the commit messages in mind
 
 
 ##### 3. Commit your changes 
 
-        ```bash
-        git commit filename.md
-        ``` 
+```bash
+git commit filename.md
+``` 
 
-    - Follow [existing conventions for commit messages](https://chris.beams.io/posts/git-commit)
-    - Keep the subject line [shorter than 50 characters](https://chris.beams.io/posts/git-commit/#limit-50)
-    - Do not commit more than a few changes at the time: [atomic commits](https://en.wikipedia.org/wiki/Atomic_commit)
-    - Use [imperative](https://chris.beams.io/posts/git-commit/#imperative)
-    - Do not end the commit message with a [period~~.~~](https://chris.beams.io/posts/git-commit/#end) 
-    
+- Follow [existing conventions for commit messages](https://chris.beams.io/posts/git-commit)
+- Keep the subject line [shorter than 50 characters](https://chris.beams.io/posts/git-commit/#limit-50)
+- Do not commit more than a few changes at the time: [atomic commits](https://en.wikipedia.org/wiki/Atomic_commit)
+- Use [imperative](https://chris.beams.io/posts/git-commit/#imperative)
+- Do not end the commit message with a [period](https://chris.beams.io/posts/git-commit/#end) ~~.~~ 
+
 ##### 3.2 Fix your latest commit message
 
-    You want to improve your latest commit message? Your latest commit is not pushed yet? 
-    Edit the commit message of your latest commit
-    
-        ```bash
-        git commit --amend
-        ```
+You want to improve your latest commit message? Your latest commit is not pushed yet? 
+Edit the commit message of your latest commit
+
+```bash
+git commit --amend
+```
 
 
 ##### 4. Push your `local` branch on the remote server `origin`
 
-    If your branch does not exist on the remote server yet, use:
-    
-        ```bash
-        git push --set-upstream origin feature-1314-my-feature
-        ```
+If your branch does not exist on the remote server yet, use:
+
+```bash
+git push --set-upstream origin feature-1314-my-feature
+```
 
 Then push regularly with:
 
-        ```bash
-        git push
-        ```
+```bash
+git push
+```
 
 
 #### Step 3: Run tests locally
