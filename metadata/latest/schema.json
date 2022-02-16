@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/oemetadata/v150/schema.json",
-    "description": "Open Energy Plaftorm (OEP) metadata schema v1.5.0",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/oemetadata/latest/schema.json",
+    "description": "Open Energy Plaftorm (OEP) metadata schema latest",
     "type": "object",
     "properties": {
         "@context": {
@@ -56,27 +56,31 @@
         },
         "subject": {
             "description": "Reference the topic of the resource in ontology terms",
-            "type": "object",
-            "properties": {
-                "name": {
-                    "description": "Name of the OEO Class",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "title": "Name"
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Name of the OEO Class",
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "title": "Name"
+                    },
+                    "path": {
+                        "description": "Path to the OEO (URL)",
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "title": "Path",
+                        "format": "uri"
+                    }
                 },
-                "path": {
-                    "description": "Path to the OEO (URL)",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "title": "Path",
-                    "format": "uri"
-                }
+                "additionalProperties": false,
+                "title": "Subject"
             },
-            "additionalProperties": false,
             "title": "Subject"
         },
         "language": {
@@ -235,52 +239,56 @@
                 },
                 "timeseries": {
                     "description": "Times series object in temporal object, contains start, end, resolution, alignment and aggregation type properties.",
-                    "type": "object",
-                    "properties": {
-                        "start": {
-                            "description": "The beginning point in time of a time series. Example: 2019-02-06T10:12:04+00:00",
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "Start",
-                            "format": "date-time"
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "start": {
+                                "description": "The beginning point in time of a time series. Example: 2019-02-06T10:12:04+00:00",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "title": "Start",
+                                "format": "date-time"
+                            },
+                            "end": {
+                                "description": "The end point in time of a time series. Example: 2019-02-07T10:12:04+00:00",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "title": "End",
+                                "format": "date-time"
+                            },
+                            "resolution": {
+                                "description": "The time span between individual points of information in a time series. Example: 30 s",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "title": "Resolution"
+                            },
+                            "alignment": {
+                                "description": "Indicator whether stamps in a time series are left, right or middle. \"null\" if there is no time series. Example: left",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "title": "Alignment"
+                            },
+                            "aggregationType": {
+                                "description": "Indicates whether the values are a sum, average or current. Example: sum",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "title": "Aggregation type"
+                            }
                         },
-                        "end": {
-                            "description": "The end point in time of a time series. Example: 2019-02-07T10:12:04+00:00",
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "End",
-                            "format": "date-time"
-                        },
-                        "resolution": {
-                            "description": "The time span between individual points of information in a time series. Example: 30 s",
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "Resolution"
-                        },
-                        "alignment": {
-                            "description": "Indicator whether stamps in a time series are left, right or middle. \"null\" if there is no time series. Example: left",
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "Alignment"
-                        },
-                        "aggregationType": {
-                            "description": "Indicates whether the values are a sum, average or current. Example: sum",
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "Aggregation type"
-                        }
+                        "additionalProperties": false,
+                        "title": "Timeseries"
                     },
-                    "additionalProperties": false,
                     "title": "Timeseries"
                 }
             },
@@ -583,62 +591,70 @@
                                         },
                                         "isAbout": {
                                             "description": "Ontology URI to describe the column header",
-                                            "type": "object",
-                                            "properties": {
-                                                "name": {
-                                                    "description": "Name of the Dataset",
-                                                    "type": [
-                                                        "string",
-                                                        "null"
-                                                    ],
-                                                    "title": "Name"
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "Name of the Dataset",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "title": "Name"
+                                                    },
+                                                    "path": {
+                                                        "description": "Path to the OEO (URL)",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "title": "Path",
+                                                        "format": "uri"
+                                                    }
                                                 },
-                                                "path": {
-                                                    "description": "Path to the OEO (URL)",
-                                                    "type": [
-                                                        "string",
-                                                        "null"
-                                                    ],
-                                                    "title": "Path",
-                                                    "format": "uri"
-                                                }
+                                                "additionalProperties": false,
+                                                "title": "IsAbout"
                                             },
-                                            "additionalProperties": false,
                                             "title": "IsAbout"
                                         },
                                         "valueReference": {
                                             "description": "Ontology URI for an extended description of the values in the column",
-                                            "type": "object",
-                                            "properties": {
-                                                "value": {
-                                                    "description": "The value this reference is assinged to.",
-                                                    "type": [
-                                                        "string",
-                                                        "null"
-                                                    ],
-                                                    "title": "Value"
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "value": {
+                                                        "description": "The value this reference is assinged to.",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "title": "Value"
+                                                    },
+                                                    "name": {
+                                                        "description": "Full name of the value",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "title": "Name",
+                                                        "format": "uri"
+                                                    },
+                                                    "path": {
+                                                        "description": "Path to the OEO",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "title": "Path",
+                                                        "format": "uri"
+                                                    }
                                                 },
-                                                "name": {
-                                                    "description": "Full name of the value",
-                                                    "type": [
-                                                        "string",
-                                                        "null"
-                                                    ],
-                                                    "title": "Name",
-                                                    "format": "uri"
-                                                },
-                                                "path": {
-                                                    "description": "Path to the OEO",
-                                                    "type": [
-                                                        "string",
-                                                        "null"
-                                                    ],
-                                                    "title": "Path",
-                                                    "format": "uri"
-                                                }
+                                                "additionalProperties": false,
+                                                "title": "Value reference"
                                             },
-                                            "additionalProperties": false,
-                                            "title": "Value reference"
+                                            "title": "valueReference"
                                         },
                                         "unit": {
                                             "description": "Unit, preferably SI-Unit, that values in this field are mapped to. If \"unit\" doesn't apply to a field, use \"null\". Example: MW",
