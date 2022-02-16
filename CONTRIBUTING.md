@@ -24,7 +24,7 @@ it through first).
 0. Get the latest version of the `develop` branch
 
     ```bash
-    git checkout dev
+    git checkout develop
     ```
    
     ```bash
@@ -62,19 +62,35 @@ Other hints:
 - Do not put your name to the branch name, it's a collaborative project
 - Branch names should be precise and informative
 
+Examples of branch names : `feature-42-add-new-ontology-class` or `feature-911-branch-naming-convention`
 
-2. Try to follow [these conventions](https://chris.beams.io/posts/git-commit) for commit messages:
-    - Keep the subject line [short](https://chris.beams.io/posts/git-commit/#limit-50) (i.e. do not commit more than a few changes at the time)
-    - Use [imperative](https://chris.beams.io/posts/git-commit/#imperative) for commit messages 
-    - Do not end the commit message with a [period](https://chris.beams.io/posts/git-commit/#end) 
-        You can use 
+2. Start editing the files
+    - Divide your feature into small logical units
+    - Start to write the documentation or a docstring
+    - Don't rush, have the commit messages in mind
+
+
+3. Commit your changes 
+        ```bash
+        git commit filename.md
+        ``` 
+
+    - Follow [existing conventions for commit messages](https://chris.beams.io/posts/git-commit)
+    - Keep the subject line [shorter than 50 characters](https://chris.beams.io/posts/git-commit/#limit-50)
+    - Do not commit more than a few changes at the time: [atomic commits](https://en.wikipedia.org/wiki/Atomic_commit)
+    - Use [imperative](https://chris.beams.io/posts/git-commit/#imperative)
+    - Do not end the commit message with a [period~~.~~](https://chris.beams.io/posts/git-commit/#end) 
+    
+3.2 Fix your latest commit message
+
+        You want to improve your latest commit message? Your latest commit is not pushed yet? 
+        Edit the commit message of your latest commit
         ```bash
         git commit --amend
         ```
-        to edit the commit message of your latest commit (provided it is not already pushed on the remote server).
-        With `--amend` you can even add/modify changes to the commit.
 
-3. Push your local branch on the remote server `origin`
+
+4. Push your `local` branch on the remote server `origin`
     ```bash
     git push
     ```
