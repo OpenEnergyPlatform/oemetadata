@@ -239,52 +239,56 @@
                 },
                 "timeseries": {
                     "description": "Times series object in temporal object, contains start, end, resolution, alignment and aggregation type properties.",
-                    "type": "object",
-                    "properties": {
-                        "start": {
-                            "description": "The beginning point in time of a time series. Example: 2019-02-06T10:12:04+00:00",
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "Start",
-                            "format": "date-time"
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "start": {
+                                "description": "The beginning point in time of a time series. Example: 2019-02-06T10:12:04+00:00",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "title": "Start",
+                                "format": "date-time"
+                            },
+                            "end": {
+                                "description": "The end point in time of a time series. Example: 2019-02-07T10:12:04+00:00",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "title": "End",
+                                "format": "date-time"
+                            },
+                            "resolution": {
+                                "description": "The time span between individual points of information in a time series. Example: 30 s",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "title": "Resolution"
+                            },
+                            "alignment": {
+                                "description": "Indicator whether stamps in a time series are left, right or middle. \"null\" if there is no time series. Example: left",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "title": "Alignment"
+                            },
+                            "aggregationType": {
+                                "description": "Indicates whether the values are a sum, average or current. Example: sum",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "title": "Aggregation type"
+                            }
                         },
-                        "end": {
-                            "description": "The end point in time of a time series. Example: 2019-02-07T10:12:04+00:00",
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "End",
-                            "format": "date-time"
-                        },
-                        "resolution": {
-                            "description": "The time span between individual points of information in a time series. Example: 30 s",
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "Resolution"
-                        },
-                        "alignment": {
-                            "description": "Indicator whether stamps in a time series are left, right or middle. \"null\" if there is no time series. Example: left",
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "Alignment"
-                        },
-                        "aggregationType": {
-                            "description": "Indicates whether the values are a sum, average or current. Example: sum",
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "Aggregation type"
-                        }
+                        "additionalProperties": false,
+                        "title": "Timeseries"
                     },
-                    "additionalProperties": false,
                     "title": "Timeseries"
                 }
             },
