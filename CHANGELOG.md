@@ -38,6 +38,7 @@ Here is a template for new release sections
 ### Added
 - Use  [GitHub projects](https://github.com/OpenEnergyPlatform/oemetadata/projects) to organise releases
 - Add new example table to show connection to OEO
+- Add test for latest [PR#74]
 
 ### Changed
 - Update ``subject`` to work with OEO
