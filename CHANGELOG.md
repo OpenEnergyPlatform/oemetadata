@@ -33,7 +33,7 @@ Here is a template for new release sections
 ### Changed
 
 
-## [1.5.1] - Release - Ontology-Ready - 2022-02-17
+## [1.5.1] - Release - Ontology-Ready - 2022-02-21
 
 ### Added
 - Use  [GitHub projects](https://github.com/OpenEnergyPlatform/oemetadata/projects) to organise releases
