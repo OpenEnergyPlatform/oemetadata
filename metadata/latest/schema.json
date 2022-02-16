@@ -56,10 +56,27 @@
         },
         "subject": {
             "description": "Reference the topic of the resource in ontology terms",
-            "type": [
-                "string",
-                "null"
-            ],
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "Name of the OEO Class",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "title": "Name"
+                },
+                "path": {
+                    "description": "Path to the OEO (URL)",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "title": "Path",
+                    "format": "uri"
+                }
+            },
+            "additionalProperties": false,
             "title": "Subject"
         },
         "language": {
@@ -564,23 +581,64 @@
                                             "title": "Type",
                                             "readonly": true
                                         },
-                                        "is_about": {
+                                        "isAbout": {
                                             "description": "Ontology URI to describe the column header",
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ],
-                                            "title": "Is about",
-                                            "format": "uri"
+                                            "type": "object",
+                                            "properties": {
+                                                "name": {
+                                                    "description": "Name of the Dataset",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "title": "Name"
+                                                },
+                                                "path": {
+                                                    "description": "Path to the OEO (URL)",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "title": "Path",
+                                                    "format": "uri"
+                                                }
+                                            },
+                                            "additionalProperties": false,
+                                            "title": "IsAbout"
                                         },
-                                        "value_reference": {
+                                        "valueReference": {
                                             "description": "Ontology URI for an extended description of the values in the column",
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ],
-                                            "title": "Value reference",
-                                            "format": "uri"
+                                            "type": "object",
+                                            "properties": {
+                                                "value": {
+                                                    "description": "The value this reference is assinged to.",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "title": "Value"
+                                                },
+                                                "name": {
+                                                    "description": "Full name of the value",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "title": "Name",
+                                                    "format": "uri"
+                                                },
+                                                "path": {
+                                                    "description": "Path to the OEO",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "title": "Path",
+                                                    "format": "uri"
+                                                }
+                                            },
+                                            "additionalProperties": false,
+                                            "title": "Value reference"
                                         },
                                         "unit": {
                                             "description": "Unit, preferably SI-Unit, that values in this field are mapped to. If \"unit\" doesn't apply to a field, use \"null\". Example: MW",
