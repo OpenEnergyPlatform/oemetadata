@@ -1,29 +1,35 @@
 {
-    "name": "oep_metadata_table_example_v150",
-    "title": "Example title for metadata example - Version 1.5.0",
-    "id": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v150",
+    "name": "oep_metadata_table_example_v151",
+    "title": "Example title for metadata example - Version 1.5.1",
+    "id": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v151",
     "description": "example metadata for example data",
-    "subject": null,
     "language": [
         "en-GB",
         "en-US",
         "de-DE",
         "fr-FR"
     ],
+    "subject": [
+        {"name" : "energy",
+        "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000150"},
+        {"name" : "test dataset",
+        "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000408"}
+    ],
     "keywords": [
+        "energy",
         "example",
         "template",
         "test"
     ],
-    "publicationDate": "2021-11-15",
+    "publicationDate": "2022-02-15",
     "context": {
         "homepage": "https://reiner-lemoine-institut.de/lod-geoss/",
         "documentation": "https://openenergy-platform.org/tutorials/jupyter/OEMetadata/",
         "sourceCode": "https://github.com/OpenEnergyPlatform/oemetadata/tree/master",
         "contact": "https://github.com/Ludee",
         "grantNo": "03EI1005",
-        "fundingAgency": "Bundesministerium für Wirtschaft und Energie",
-        "fundingAgencyLogo": "https://www.innovation-beratung-foerderung.de/INNO/Redaktion/DE/Bilder/Titelbilder/titel_foerderlogo_bmwi.jpg?__blob=normal&v=3",
+        "fundingAgency": "Bundesministerium für Wirtschaft und Klimaschutz",
+        "fundingAgencyLogo": "https://commons.wikimedia.org/wiki/File:BMWi_Logo_2021.svg#/media/File:BMWi_Logo_2021.svg",
         "publisherLogo": "https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png"
     },
     "spatial": {
@@ -200,13 +206,20 @@
             "date": "2021-11-15",
             "object": "metadata",
             "comment": "Release metadata version OEP-1.5.0"
+        },
+        {
+            "title": "Ludee",
+            "email": null,
+            "date": "2022-02-15",
+            "object": "metadata",
+            "comment": "Release metadata version OEP-1.5.1"
         }
     ],
     "resources": [
         {
             "profile": "tabular-data-resource",
-            "name": "model_draft.oep_metadata_table_example_v150",
-            "path": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v150",
+            "name": "model_draft.oep_metadata_table_example_v151",
+            "path": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v151",
             "format": "PostgreSQL",
             "encoding": "UTF-8",
             "schema": {
@@ -215,41 +228,94 @@
                         "name": "id",
                         "description": "Unique identifier",
                         "type": "serial",
-                        "is_about": null,
-                        "value_reference": null,
-                        "unit": null
+                        "unit": null,
+                        "isAbout": [
+                            {"name" : null,
+                            "path": null}
+                        ],
+                        "valueReference": [
+                            {"value": null,
+                            "name": null,
+                            "path" : null}
+                        ]
                     },
                     {
                         "name": "name",
                         "description": "Example name",
                         "type": "text",
-                        "is_about": null,
-                        "value_reference": null,
-                        "unit": null
+                        "unit": null,
+                        "isAbout": [
+                            {"name" : "written name",
+                            "path": "https://openenergy-platform.org/ontology/oeo/IAO_0000590"}
+                        ],
+                        "valueReference": [
+                            {"value": null,
+                            "name": null,
+                            "path" : null}
+                        ]
+                    },
+                    {
+                        "name": "type",
+                        "description": "Type of wind farm",
+                        "type": "text",
+                        "unit": null,
+                        "isAbout": [
+                            {"name" : "wind farm",
+                            "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000447"}
+                        ],
+                        "valueReference": [
+                            {"value": "onshore ",
+                            "name": "onshore wind farm",
+                            "path" : "https://openenergy-platform.org/ontology/oeo/OEO_00000311"},
+                            {"value": "offshore ",
+                            "name": "offshore wind farm",
+                            "path" : "https://openenergy-platform.org/ontology/oeo/OEO_00000308"}
+                        ]
                     },
                     {
                         "name": "year",
                         "description": "Reference year",
                         "type": "integer",
-                        "is_about": null,
-                        "value_reference": null,
-                        "unit": null
+                        "unit": null,
+                        "isAbout": [
+                            {"name" : "year",
+                            "path": "https://openenergy-platform.org/ontology/oeo/UO_0000036"}
+                        ],
+                        "valueReference": [
+                            {"value": null,
+                            "name": null,
+                            "path" : null}
+                        ]
                     },
                     {
                         "name": "value",
                         "description": "Example value",
                         "type": "double precision",
-                        "is_about": null,
-                        "value_reference": null,
-                        "unit": "MW"
+                        "unit": "MW",
+                        "isAbout": [
+                            {"name" : "quantity value",
+                            "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000350"}
+                        ],
+                        "valueReference": [
+                            {"value": null,
+                            "name": null,
+                            "path" : null}
+                        ]
                     },
                     {
                         "name": "geom",
                         "description": "Geometry",
                         "type": "geometry(Point, 4326)",
-                        "is_about": null,
-                        "value_reference": null,
-                        "unit": null
+                        "unit": null,
+                        "isAbout": [
+                            {"name" : "spatial region",
+                            "path": "https://openenergy-platform.org/ontology/oeo/BFO_0000006"}
+                        ],
+                        "valueReference": [
+                            {"value": null,
+                            "name": null,
+                            "path" : null}
+                        ]
                     }
                 ],
                 "primaryKey": [
@@ -279,10 +345,10 @@
     "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/30887e4cd7dabc316d1ee674791f0cc815277e38/metadata/latest/context.json",
     "review": {
         "path": "https://github.com/OpenEnergyPlatform/data-preprocessing/issues",
-        "badge": "platin"
+        "badge": "Platinum"
     },
     "metaMetadata": {
-        "metadataVersion": "OEP-1.5.0",
+        "metadataVersion": "OEP-1.5.1",
         "metadataLicense": {
             "name": "CC0-1.0",
             "title": "Creative Commons Zero v1.0 Universal",
