@@ -2,7 +2,7 @@
     "name": "oep_metadata_table_example_v151",
     "title": "Example title for metadata example - Version 1.5.1",
     "id": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v151",
-    "description": "example metadata for example data",
+    "description": "This is an metadata example for example data. There is a corresponding table on the OEP for each metadata version.",
     "language": [
         "en-GB",
         "en-US",
@@ -373,7 +373,7 @@
         }
     ],
     "@id": "https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00",
-    "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/30887e4cd7dabc316d1ee674791f0cc815277e38/metadata/latest/context.json",
+    "@context": "https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/latest/context.json",
     "review": {
         "path": "https://github.com/OpenEnergyPlatform/data-preprocessing/issues",
         "badge": "Platinum"
