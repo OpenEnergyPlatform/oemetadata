@@ -3,9 +3,14 @@
     "title": null,
     "id": null,
     "description": null,
-    "subject": null,
     "language": [
         null
+    ],
+    "subject": [
+        {
+            "name": null,
+            "path": null
+        }
     ],
     "keywords": [
         null
@@ -28,20 +33,21 @@
     },
     "temporal": {
         "referenceDate": null,
-        "timeseries": [{
-            "start": null,
-            "end": null,
-            "resolution": null,
-            "alignment": null,
-            "aggregationType": null
-        },
-        {
-            "start": null,
-            "end": null,
-            "resolution": null,
-            "alignment": null,
-            "aggregationType": null
-        }
+        "timeseries": [
+            {
+                "start": null,
+                "end": null,
+                "resolution": null,
+                "alignment": null,
+                "aggregationType": null
+            },
+            {
+                "start": null,
+                "end": null,
+                "resolution": null,
+                "alignment": null,
+                "aggregationType": null
+            }
         ]
     },
     "sources": [
@@ -90,13 +96,6 @@
             "date": null,
             "object": null,
             "comment": null
-        },
-        {
-            "title": null,
-            "email": null,
-            "date": null,
-            "object": null,
-            "comment": null
         }
     ],
     "resources": [
@@ -112,17 +111,39 @@
                         "name": null,
                         "description": null,
                         "type": null,
-                        "is_about": null,
-                        "value_reference": null,
-                        "unit": null
+                        "unit": null,
+                        "isAbout": [
+                            {
+                                "name": null,
+                                "path": null
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": null,
+                                "name": null,
+                                "path": null
+                            }
+                        ]
                     },
                     {
                         "name": null,
                         "description": null,
                         "type": null,
-                        "is_about": null,
-                        "value_reference": null,
-                        "unit": null
+                        "unit": null,
+                        "isAbout": [
+                            {
+                                "name": null,
+                                "path": null
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": null,
+                                "name": null,
+                                "path": null
+                            }
+                        ]
                     }
                 ],
                 "primaryKey": [
