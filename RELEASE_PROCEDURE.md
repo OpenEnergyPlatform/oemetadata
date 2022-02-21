@@ -1,4 +1,4 @@
-# Release prozedur
+# Release procedure
  ## Pre-Release
 - View the GitHub project for the next release and check the 
 Status of all issues and PR's assigned to the project.
