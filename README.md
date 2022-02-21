@@ -28,21 +28,21 @@ The oemetadata example and oemetadata template are licensed under [Creative Comm
 ## Usage Examples
 
 ```
-from metadata.v150.example import OEMETADATA_v150_EXAMPLE
+from metadata.latest.example import OEMETADATA_v150_EXAMPLE
 
-print(OEMETADATA_v150_EXAMPLE)
+print(OEMETADATA_LATEST_EXAMPLE)
 ```
 
 ```
-from metadata.v150.schema import OEMETADATA_v150_SCHEMA
+from metadata.latest.schema import OEMETADATA_v150_SCHEMA
 
-print(OEMETADATA_v150_SCHEMA)
+print(OEMETADATA_LATEST_SCHEMA)
 ```
 
 ```
-from metadata.v150.template import OEMETADATA_v150_TEMPLATE
+from metadata.latest.template import OEMETADATA_v150_TEMPLATE
 
-print(OEMETADATA_v150_TEMPLATE)
+print(OEMETADATA_LATEST_TEMPLATE)
 ```
 
 ## Contributing
