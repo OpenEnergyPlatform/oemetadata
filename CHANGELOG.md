@@ -38,7 +38,7 @@ Here is a template for new release sections
 ### Added
 - Use  [GitHub projects](https://github.com/OpenEnergyPlatform/oemetadata/projects) to organise releases
 - Add new example table to show connection to OEO
-- Add test for latest [PR#74]
+- Add test for latest directory to CI [PR#74]
 
 ### Changed
 - Update ``subject`` to work with OEO
@@ -47,6 +47,7 @@ Here is a template for new release sections
 - Improve documentation
 - Update schema.json
 - Update CHANGELOG.md and give names to releases
+- Update CONTRIBUTING.md
 
 ## [1.5.0] - Release - Get Some Semantics - 2021-11-18
 
