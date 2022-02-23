@@ -49,7 +49,10 @@ print(OEMETADATA_LATEST_TEMPLATE)
 
 For further contributing infos and conventions see: [CONTRIBUTING.md](./CONTRIBUTING.md)
 
-## Make PyPI release:
+## Release a new version
+See the complete instructions in the [RELEASE_PROCEDURE](./RELEASE_PROCEDURE.md).
+
+### Make PyPI release:
 
 First bump version in setup.py, then:
 
