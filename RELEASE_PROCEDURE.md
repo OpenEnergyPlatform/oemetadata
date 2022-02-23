@@ -5,6 +5,14 @@ Status of all issues and PR's assigned to the project.
 If there are any open issues or PR's, decide if you want to include them
 them to be included in the upcoming release. Make sure that all changes are
 are included in the development branch before proceeding to the next steps.
+- Create a new folder named "vXXX" (release version) in the metadata and
+test directory. 
+	- In the metadata direcotry copy all files from latest to the 
+	new folder then adapt all .py files to the latest version and
+	update the id in schema.json.
+	- In test copy all files from previous oder latest version folder 
+	in test directory and adapt all tests (test_***.py files) to
+	the latest version.
 ## Release
 - 1 Checkout a new branch from devolop branch named: release/oem-vX.X.X
 - 2 Update the following files: 
