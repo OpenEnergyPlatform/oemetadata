@@ -39,6 +39,8 @@ Here is a template for new release sections
 - Use  [GitHub projects](https://github.com/OpenEnergyPlatform/oemetadata/projects) to organise releases
 - Add new example table to show connection to OEO
 - Add test for latest directory to CI [PR#74]
+- Add tests for v151 [PR#81]
+- Add release version directory for oem-v151
 
 ### Changed
 - Update ``subject`` to work with OEO
