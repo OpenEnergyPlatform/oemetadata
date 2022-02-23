@@ -28,28 +28,31 @@ The oemetadata example and oemetadata template are licensed under [Creative Comm
 ## Usage Examples
 
 ```
-from metadata.v150.example import OEMETADATA_v150_EXAMPLE
+from metadata.latest.example import OEMETADATA_LATEST_EXAMPLE
 
-print(OEMETADATA_v150_EXAMPLE)
+print(OEMETADATA_LATEST_EXAMPLE)
 ```
 
 ```
-from metadata.v150.schema import OEMETADATA_v150_SCHEMA
+from metadata.latest.schema import OEMETADATA_LATEST_SCHEMA
 
-print(OEMETADATA_v150_SCHEMA)
+print(OEMETADATA_LATEST_SCHEMA)
 ```
 
 ```
-from metadata.v150.template import OEMETADATA_v150_TEMPLATE
+from metadata.latest.template import OEMETADATA_LATEST_TEMPLATE
 
-print(OEMETADATA_v150_TEMPLATE)
+print(OEMETADATA_LATEST_TEMPLATE)
 ```
 
 ## Contributing
 
 For further contributing infos and conventions see: [CONTRIBUTING.md](./CONTRIBUTING.md)
 
-## Make PyPI release:
+## Release a new version
+See the complete instructions in the [RELEASE_PROCEDURE](./RELEASE_PROCEDURE.md).
+
+### Make PyPI release:
 
 First bump version in setup.py, then:
 
