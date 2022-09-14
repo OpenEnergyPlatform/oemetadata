@@ -638,8 +638,7 @@
                                                             "string",
                                                             "null"
                                                         ],
-                                                        "title": "Name",
-                                                        "format": "uri"
+                                                        "title": "Name"
                                                     },
                                                     "path": {
                                                         "description": "Path to the OEO",
