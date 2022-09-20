@@ -1,3 +1,5 @@
+name: Build and release on pypi tests and production
+
 jobs:
   build-n-publish:
     name: Build and publish Python 🐍 distributions 📦 to PyPI and TestPyPI
