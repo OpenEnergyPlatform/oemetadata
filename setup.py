@@ -16,7 +16,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/OpenEnergyPlatform/oemetadata",
     author="Alexis Michaltsis",
-    author_email="a.michaltsis@rl-institut.de",
+    author_email="oep_dev@lists.riseup.net",
     license="MIT",
     classifiers=[
         "Intended Audience :: Developers",
