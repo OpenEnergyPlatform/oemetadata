@@ -1,3 +1,4 @@
+import json
 from os import path
 
 from setuptools import find_packages, setup
@@ -25,5 +26,6 @@ setup(
     ],
     keywords="JSON metadata schema open energy platform oep",
     packages=find_packages(exclude=["tests"]),
+    package_data={"oemetadata":["metadata/../*.json"]},
     python_requires=">=3.6",
 )
