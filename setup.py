@@ -26,6 +26,6 @@ setup(
     ],
     keywords="JSON metadata schema open energy platform oep",
     packages=find_packages(exclude=["tests"]),
-    package_data={"oemetadata":["metadata/../*.json"]},
+    package_data={"oemetadata": ["metadata/../*.json"]},
     python_requires=">=3.6",
 )
