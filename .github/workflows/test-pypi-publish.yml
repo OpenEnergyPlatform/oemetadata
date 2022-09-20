@@ -1,5 +1,11 @@
 name: Build and release on pypi tests and production
 
+on:
+  # push:
+  #   branches: [ develop, master]
+  pull_request:
+    branches: [ develop, master ]
+
 jobs:
   build-n-publish:
     name: Build and publish Python 🐍 distributions 📦 to PyPI and TestPyPI
