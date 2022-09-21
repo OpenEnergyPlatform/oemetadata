@@ -1,3 +1,4 @@
+import json
 from os import path
 
 from setuptools import find_packages, setup
@@ -9,13 +10,13 @@ with open(path.join(here, "README.md"), encoding="utf-8") as f:
 
 setup(
     name="oemetadata",
-    version="1.5.1",
+    version="1.5.1a1",
     description="Open Energy Platform (OEP) - metadata schemas, examples and templates package",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/OpenEnergyPlatform/oemetadata",
     author="Alexis Michaltsis",
-    author_email="a.michaltsis@rl-institut.de",
+    author_email="oep_dev@lists.riseup.net",
     license="MIT",
     classifiers=[
         "Intended Audience :: Developers",
@@ -25,5 +26,6 @@ setup(
     ],
     keywords="JSON metadata schema open energy platform oep",
     packages=find_packages(exclude=["tests"]),
+    package_data={"": ["./*.json"]},
     python_requires=">=3.6",
 )

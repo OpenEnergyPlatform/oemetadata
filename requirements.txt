@@ -5,3 +5,4 @@ pytest
 tox
 twine
 wheel
+build
