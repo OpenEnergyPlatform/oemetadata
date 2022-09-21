@@ -10,7 +10,7 @@ with open(path.join(here, "README.md"), encoding="utf-8") as f:
 
 setup(
     name="oemetadata",
-    version="1.5.1",
+    version="1.5.1a1",
     description="Open Energy Platform (OEP) - metadata schemas, examples and templates package",
     long_description=long_description,
     long_description_content_type="text/markdown",
