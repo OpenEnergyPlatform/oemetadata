@@ -26,12 +26,15 @@ Here is a template for new release sections
 ### Removed
 -
 ```
+
 ## Current
+
+- Fix missing json files in pypi oemetadata package
+- Add github actions/workflwos to automate package build and upload process on test and production pypi index
 
 ### Added
 
 ### Changed
-
 
 ## [1.5.1] - Release - Ontology-Ready - 2022-02-21
 
