@@ -28,10 +28,6 @@
             "@id": "dc:subject",
             "@type": "@id"
         },
-        "about": {
-            "@id": "saref:isAbout",
-            "@type": "@id"
-        },
         "keywords": {
             "@id": "dc:subject",
             "@type": "xsd:string"
