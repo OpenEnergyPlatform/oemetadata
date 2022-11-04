@@ -72,7 +72,7 @@
             "@type": "xsd:string"
         },
         "isAbout": {
-            "@id": "https://saref.etsi.org/core/isAbout",
+            "@id": "http://purl.org/goodrelations/v1#valueReference",
             "@type": "@id"
         },
         "valueReference": {
