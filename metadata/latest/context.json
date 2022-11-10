@@ -11,6 +11,7 @@
         "obo":"http://purl.obolibrary.org/obo/",
         "time":"http://www.w3.org/2006/time#",
         "dbo": "http://dbpedia.org/ontology/",
+        "saref": "https://saref.etsi.org/core/",
         "title": {
             "@id": "dct:title",
             "@type": "xsd:string"
@@ -72,7 +73,7 @@
             "@type": "xsd:string"
         },
         "isAbout": {
-            "@id": "http://purl.org/goodrelations/v1#valueReference",
+            "@id": "saref:isAbout",
             "@type": "@id"
         },
         "valueReference": {
