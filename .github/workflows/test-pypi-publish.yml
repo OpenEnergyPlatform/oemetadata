@@ -2,7 +2,9 @@ name: Build and release on pypi tests
 
 on:
   push:
-    branches: [ deployment-test ]
+    branches:
+      - deployment-test
+      - 'release/*'
 
 jobs:
   build-n-publish:
