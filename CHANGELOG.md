@@ -29,6 +29,15 @@ Here is a template for new release sections
 
 ## Current
 
+### Added
+-
+### Changed
+-
+### Removed
+-
+
+## [1.5.2] - Release - Fix missing json files in pypi package, Improve context.jsonld - 2022-11-18
+
 - Fix missing json files in pypi oemetadata package
 - Add github actions/workflwos to automate package build and upload process on test and production pypi index
 
