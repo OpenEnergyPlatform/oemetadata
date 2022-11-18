@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/metadata/v151/schema.json",
-    "description": "Open Energy Plaftorm (OEP) metadata schema latest",
+    "description": "Open Energy Plaftorm (OEP) metadata schema v1.5.1",
     "type": "object",
     "properties": {
         "@context": {
