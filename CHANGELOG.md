@@ -35,6 +35,7 @@ Here is a template for new release sections
 ### Added
 
 ### Changed
+- Update context.json in latest & v151 to ensure ontologically annotated metadata can be sparqled #99
 
 ## [1.5.1] - Release - Ontology-Ready - 2022-02-21
 

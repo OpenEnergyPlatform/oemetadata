@@ -7,7 +7,10 @@
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "oeo": "http://openenergy-platform.org/ontology/oeo/",
         "csvw": "http://www.w3.org/ns/csvw#",
-        "obo": "http://purl.obolibrary.org/obo/",
+        "obo":"http://purl.obolibrary.org/obo/",
+        "time":"http://www.w3.org/2006/time#",
+        "dbo": "http://dbpedia.org/ontology/",
+        "saref": "https://saref.etsi.org/core/",
         "title": {
             "@id": "dct:title",
             "@type": "xsd:string"
@@ -20,6 +23,30 @@
             "@id": "rdfs:comment",
             "@type": "xsd:string"
         },
+        "subject": {
+            "@id": "dc:subject",
+            "@type": "@id"
+        },
+        "keywords": {
+            "@id": "dc:subject",
+            "@type": "xsd:string"
+        },
+        "temporal": {
+            "@id": "time:hasTemporalDuration",
+            "@type": "@id"
+        },
+        "timeseries": {
+            "@id": "time:hasDateTimeDescription",
+            "@type": "@id"
+        },
+        "start": {
+            "@id": "dbo:startDateTime",
+            "@type": "xsd:dateTime"
+        },
+        "end": {
+            "@id": "dbo:endDateTime",
+            "@type": "xsd:dateTime"
+        },
         "fields": {
             "@id": "csvw:column",
             "@type": "@id"
@@ -30,10 +57,6 @@
         },
         "schema": {
             "@id": "csvw:tableSchema",
-            "@type": "@id"
-        },
-        "subject": {
-            "@id": "dc:subject",
             "@type": "@id"
         },
         "name": {
@@ -48,8 +71,12 @@
             "@id": "oeo:OEO_00040010",
             "@type": "xsd:string"
         },
-        "about": {
-            "@id": "obo:IAO_0000136",
+        "isAbout": {
+            "@id": "saref:isAbout",
+            "@type": "@id"
+        },
+        "valueReference": {
+            "@id": "http://purl.org/goodrelations/v1#valueReference",
             "@type": "@id"
         }
     }
