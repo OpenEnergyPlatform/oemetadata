@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/oemetadata/v151/schema.json",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/oemetadata/latest/schema.json",
     "description": "Open Energy Plaftorm (OEP) metadata schema latest",
     "type": "object",
     "properties": {
@@ -614,9 +614,9 @@
                                                     }
                                                 },
                                                 "additionalProperties": false,
-                                                "title": "IsAbout"
+                                                "title": "isAbout"
                                             },
-                                            "title": "IsAbout"
+                                            "title": "isAbout"
                                         },
                                         "valueReference": {
                                             "description": "Ontology URI for an extended description of the values in the column",
@@ -638,8 +638,7 @@
                                                             "string",
                                                             "null"
                                                         ],
-                                                        "title": "Name",
-                                                        "format": "uri"
+                                                        "title": "Name"
                                                     },
                                                     "path": {
                                                         "description": "Path to the OEO",
@@ -652,7 +651,7 @@
                                                     }
                                                 },
                                                 "additionalProperties": false,
-                                                "title": "Value reference"
+                                                "title": "valueReference"
                                             },
                                             "title": "valueReference"
                                         },
