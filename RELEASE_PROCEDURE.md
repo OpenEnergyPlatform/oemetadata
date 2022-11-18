@@ -22,4 +22,15 @@ test directory.
 - 4 Create the Pull Request via the GitHub website and merge changes to 
 develop then merge develop in master branch.
 - 5 Create a new release via the GitHub website and tag the master branch.
-- 6 Update the PyPi (pip) Package [oep-metadata](https://pypi.org/project/oep-metadata/)
+
+# Publish and Deploy Release automation
+We provide automation workflows that will build and upload PyPi Packages.
+
+Keep in mind that specific package versions (as specified in the [setup.py](https://github.com/OpenEnergyPlatform/oemetadata/blob/5fc02df0a5efeb01cc8d9b78929c3dfe9eebd8cb/setup.py#L13)) can only be release once. This stands for test and official PyPi package index.
+
+**Test workflows** are triggered when pushing commits to the permanent branch called `deployment-test`. 
+
+**Release Deployment Workflow** is triggered as soon as one publishes a new github release.
+
+- [Test Workflow](https://github.com/OpenEnergyPlatform/oemetadata/actions/workflows/test-pypi-publish.yml): Update test PyPi (pip) Package [oemetadata pypi test](https://test.pypi.org/project/oemetadata/)
+- [Release Deployment Workflow](https://github.com/OpenEnergyPlatform/oemetadata/actions/workflows/pypi-publish.yml) Update the PyPi (pip) Package [oemetadata](https://pypi.org/project/oemetadata/)

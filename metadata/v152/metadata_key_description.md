@@ -1,7 +1,7 @@
 # OEMetadata - Key Description
 
 This pages describes the key of **OEMetadata version 1.5.2 .** <br>
-You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v151/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v151/example.json) of the metadata string.
+You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v152/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v152/example.json) of the metadata string.
 
 
 ## JSON Format

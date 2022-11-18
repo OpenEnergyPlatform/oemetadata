@@ -26,12 +26,25 @@ Here is a template for new release sections
 ### Removed
 -
 ```
+
 ## Current
+
+### Added
+-
+### Changed
+-
+### Removed
+-
+
+## [1.5.2] - Release - Fix missing json files in pypi package, Improve context.jsonld - 2022-11-18
+
+- Fix missing json files in pypi oemetadata package
+- Add github actions/workflwos to automate package build and upload process on test and production pypi index
 
 ### Added
 
 ### Changed
-
+- Update context.json in latest & v151 to ensure ontologically annotated metadata can be sparqled #99
 
 ## [1.5.1] - Release - Ontology-Ready - 2022-02-21
 
