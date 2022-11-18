@@ -1,6 +1,6 @@
 # OEMetadata - Key Description
 
-This pages describes the key of **OEMetadata version 1.5.1.** <br>
+This pages describes the key of **OEMetadata version 1.5.2 .** <br>
 You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v151/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v151/example.json) of the metadata string.
 
 
@@ -162,7 +162,7 @@ The JSON format offers different formats:
 |#|Key |Description |Example |
 |---|---|---|---|
 | 19 | **metaMetadata** | An object that describes the metadata themselves, their format, version and license. These fields should already be provided when you are filling out your metadata. | |
-| 19.1 | metadataVersion | The type and version number of the metadata. | OEP-1.5.1 |
+| 19.1 | metadataVersion | The type and version number of the metadata. | OEP-1.5.2 |
 | 19.2 | **metadataLicense** | The license of the provided metadata. | |
 | 19.2.1 | name | The [SPDX](https://spdx.org/licenses/) identifier. | CC0-1.0 |
 | 19.2.2 | title | The official (human readable) title of the license. | Creative Commons Zero v1.0 Universal |
