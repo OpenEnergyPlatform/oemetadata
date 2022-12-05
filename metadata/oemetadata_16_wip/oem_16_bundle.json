@@ -232,10 +232,10 @@
                     "comment": "Release metadata version OEP-1.5.2"
                 }
             ],
-            "format": "PostgreSQL",
-            "encoding": "UTF-8",
+            "format": "csv",
+            "encoding": "utf-8",            
             "dialect": {
-                "delimiter": null,
+                "delimiter": ",",
                 "decimalSeparator": "."
             },
             "schema": {
