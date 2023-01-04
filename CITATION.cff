@@ -20,7 +20,7 @@ authors:
     given-names: "Christoph"
     alias: "@chrwm"
     affiliation: "Reiner Lemoine Institut"
-    orcid: 
+    orcid: "https://orcid.org/0000-0001-8144-5260"
 title: "Open Energy Family - Open Energy Metadata (OEMetadata)"
 type: software
 license: MIT
