@@ -114,7 +114,7 @@ The JSON format offers different formats:
 |---|---|---|---|
 | 15 | **resources** | An array of objects of the data. It describes the data resource as an individual file or (database) table. |  |
 | 15.1 | profile | The profile of this descriptor according to the profiles specification. This information is retained in order to comply with the "Tabular Data Package" standard. Use "tabular-data-resource" for all tables. | tabular-data-resource |
-| 15.2 | name | A name for the entire data package. To comply with the data package standard it must consist of only lowercase alphanumeric character plus ".", "-" and "_". It may not start with a number. In a database, this will be the name of the table within the  schema containing it. The name usually corresponds to the file name (minus the file-extension) of the data file describing the resource. | openstreetmap.osm_deu_line |
+| 15.2 | name | A name for the entire data package. The name must consist of only lowercase alphanumeric characters or underscore. It must not start with a number or underscore. In a database, this will be the name of the table within the schema containing it. The name can correspond to the file name (minus the file-extension) of the data file describing the resource, if it complies with the naming convention above. Name also contains information about the shema on the OEP, use "." to seperate shema from table name. | openstreetmap.osm_deu_line |
 | 15.3 | path | A URL that should be a permanent http(s) address or other path directly linking to the resource. | https://openenergy-platform.org/dataedit/view/openstreetmap/osm_deu_line |
 | 15.4 | format | The file extension. 'csv', 'xls', 'json' etc. would be expected to be the standard file extension for this type of resource. When you upload your data to the OEDB, in the shown metadata string, the format will be changed accordingly to 'PostgreSQL', since the data there are stored in a database. | PostgreSQL |
 | 15.5 | encoding | Specifies the character encoding of the resource's data file. The values should be one of the ["Preferred MIME Names"](https://www.iana.org/assignments/character-sets/character-sets.xhtml) for a character encoding registered with IANA. If no value for this key is specified then the default is UTF-8. | UTF-8 |
@@ -124,7 +124,7 @@ The JSON format offers different formats:
 |---|---|---|---|
 | 15.6 | **schema** | An object that describes the structure of the present data. It contains all fields (columns of the table), the primary key and optional foreign keys. |  |
 | 15.6.1 | **fields** | An array of objects describing a column and providing name, description, type and unit. | |
-| 15.6.1.1 | name | The name of the field. | year |
+| 15.6.1.1 | name | The name of the field. The name must consist of only lowercase alphanumeric characters or underscore. It must not start with a number or underscore. | year |
 | 15.6.1.2 | description | A text describing the field. | Reference year for which the data were collected. |
 | 15.6.1.3 | type | The data type of the field. In case of a geom column in a database, also indicate the shape and CRS. | geometry(Point, 4326) |
 | 15.6.1.4 | unit | The unit, preferably SI-unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null'. If the unit is given in a seperate field, reference this field. | MW |
