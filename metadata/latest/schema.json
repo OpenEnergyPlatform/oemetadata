@@ -5,7 +5,8 @@
     "type": "object",
     "properties": {
         "@context": {
-            "description": "Explanation of metadata keys in ontology terms. Example: https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld",
+            "description": "Explanation of metadata keys in ontology terms.",
+            "example": "https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld",
             "type": [
                 "string",
                 "null"
@@ -13,27 +14,36 @@
             "title": "@context"
         },
         "name": {
-            "description": "File name or database table name. Example: oep_metadata_table_example_v15",
+            "description": "A file name or database table name",
+            "example": "oep_metadata_table_example_v15",
             "type": [
                 "string",
                 "null"
             ],
+            "stronglyRecommended": false,
+            "badge": "Silver",
             "title": "Name"
         },
         "title": {
-            "description": "Human readable title. Example: Metadata Example Table",
+            "description": "A human readable full title including author.",
+            "example": "RLI - OEMetadata - Metadata example table",
             "type": [
                 "string",
                 "null"
             ],
+            "stronglyRecommended": false,
+            "badge": "Silver",
             "title": "Title"
         },
         "id": {
-            "description": "Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI). Example: https://example.com",
+            "description": "An Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI).",
+            "example": "https://example.com",
             "type": [
                 "string",
                 "null"
             ],
+            "stronglyRecommended": false,
+            "badge": "Bronze",
             "title": "Id",
             "readonly": true
         },
