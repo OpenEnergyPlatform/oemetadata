@@ -20,7 +20,6 @@
                 "string",
                 "null"
             ],
-            "stronglyRecommended": false,
             "badge": "Silver",
             "title": "Name"
         },
@@ -31,7 +30,6 @@
                 "string",
                 "null"
             ],
-            "stronglyRecommended": false,
             "badge": "Silver",
             "title": "Title"
         },
@@ -42,7 +40,6 @@
                 "string",
                 "null"
             ],
-            "stronglyRecommended": false,
             "badge": "Bronze",
             "title": "Id",
             "readonly": true
@@ -63,7 +60,6 @@
                 "string",
                 "null"
             ],
-            "stronglyRecommended": null,
             "badge": "Silver",
             "title": "Description"
         },
@@ -76,7 +72,6 @@
                     "string",
                     "null"
                 ],
-                "stronglyRecommended": null,
                 "badge": "Gold",
                 "title": "Language"
             },
@@ -93,7 +88,6 @@
                         "string",
                         "null"
                     ],
-                    "stronglyRecommended": null,
                     "badge": "Platinum",
                     "title": "Name"
                 },
@@ -104,7 +98,6 @@
                         "string",
                         "null"
                     ],
-                    "stronglyRecommended": null,
                     "badge": "Platinum",
                     "title": "Path"
                 }
@@ -121,7 +114,6 @@
                     "string",
                     "null"
                 ],
-                "stronglyRecommended": null,
                 "badge": "Silver",
                 "title": "Keyword"
             },
@@ -134,7 +126,6 @@
                 "string",
                 "null"
             ],
-            "stronglyRecommended": null,
             "badge": "Bronze",
             "title": "Publication date",
             "format": "date"
@@ -150,7 +141,6 @@
                         "string",
                         "null"
                     ],
-                    "stronglyRecommended": null,
                     "badge": "Gold",
                     "title": "Homepage",
                     "format": "uri"
@@ -162,7 +152,6 @@
                         "string",
                         "null"
                     ],
-                    "stronglyRecommended": null,
                     "badge": "Gold",
                     "title": "Documentation"
                 },
@@ -173,7 +162,6 @@
                         "string",
                         "null"
                     ],
-                    "stronglyRecommended": null,
                     "badge": "Gold",
                     "title": "Source code"
                 },
@@ -184,7 +172,6 @@
                         "string",
                         "null"
                     ],
-                    "stronglyRecommended": null,
                     "badge": "Gold",
                     "title": "E-Mail contact",
                     "format": "email"
@@ -196,7 +183,6 @@
                         "string",
                         "null"
                     ],
-                    "stronglyRecommended": null,
                     "badge": "Gold",
                     "title": "Grant no"
                 },
@@ -207,7 +193,6 @@
                         "string",
                         "null"
                     ],
-                    "stronglyRecommended": null,
                     "badge": "Gold",
                     "title": "Funding agency"
                 },
@@ -218,7 +203,6 @@
                         "string",
                         "null"
                     ],
-                    "stronglyRecommended": null,
                     "badge": "Gold",
                     "title": "Funding agency logo",
                     "format": "uri"
@@ -230,7 +214,6 @@
                         "string",
                         "null"
                     ],
-                    "stronglyRecommended": null,
                     "badge": "Gold",
                     "title": "Publisher logo",
                     "format": "uri"
@@ -250,7 +233,6 @@
                         "string",
                         "null"
                     ],
-                    "stronglyRecommended": null,
                     "badge": "Silver",
                     "title": "Location"
                 },
@@ -261,7 +243,6 @@
                         "string",
                         "null"
                     ],
-                    "stronglyRecommended": null,
                     "badge": "Silver",
                     "title": "Extent"
                 },
@@ -272,7 +253,6 @@
                         "string",
                         "null"
                     ],
-                    "stronglyRecommended": null,
                     "badge": "Silver",
                     "title": "Resolution"
                 }
@@ -291,7 +271,6 @@
                         "string",
                         "null"
                     ],
-                    "stronglyRecommended": null,
                     "badge": "Bronze",
                     "title": "Reference date",
                     "format": "date"
@@ -307,7 +286,6 @@
                                 "string",
                                 "null"
                             ],
-                            "stronglyRecommended": null,
                             "badge": "Silver",
                             "title": "Start",
                             "format": "date-time"
@@ -319,7 +297,6 @@
                                 "string",
                                 "null"
                             ],
-                            "stronglyRecommended": null,
                             "badge": "Silver",
                             "title": "End",
                             "format": "date-time"
@@ -331,7 +308,6 @@
                                 "string",
                                 "null"
                             ],
-                            "stronglyRecommended": null,
                             "badge": "Silver",
                             "title": "Resolution"
                         },
@@ -342,7 +318,6 @@
                                 "string",
                                 "null"
                             ],
-                            "stronglyRecommended": null,
                             "badge": "Gold",
                             "title": "Alignment"
                         },
@@ -353,7 +328,6 @@
                                 "string",
                                 "null"
                             ],
-                            "stronglyRecommended": null,
                             "badge": "Gold",
                             "title": "Aggregation type"
                         }
@@ -379,7 +353,6 @@
                             "string",
                             "null"
                         ],
-                        "stronglyRecommended": null,
                         "badge": "Bronze",
                         "title": "Title"
                     },
@@ -390,7 +363,6 @@
                             "string",
                             "null"
                         ],
-                        "stronglyRecommended": null,
                         "badge": "Bronze",
                         "title": "Description"
                     },
@@ -401,7 +373,6 @@
                             "string",
                             "null"
                         ],
-                        "stronglyRecommended": null,
                         "badge": "Bronze",
                         "title": "Path",
                         "format": "uri"
@@ -420,7 +391,6 @@
                                         "string",
                                         "null"
                                     ],
-                                    "stronglyRecommended": null,
                                     "badge": "Bronze",
                                     "title": "Name"
                                 },
@@ -431,7 +401,6 @@
                                         "string",
                                         "null"
                                     ],
-                                    "stronglyRecommended": null,
                                     "badge": "Bronze",
                                     "title": "Title"
                                 },
@@ -442,7 +411,6 @@
                                         "string",
                                         "null"
                                     ],
-                                    "stronglyRecommended": null,
                                     "badge": "Bronze",
                                     "title": "Path"
                                 },
@@ -453,7 +421,6 @@
                                         "string",
                                         "null"
                                     ],
-                                    "stronglyRecommended": null,
                                     "badge": "Bronze",
                                     "title": "Instruction"
                                 },
@@ -464,7 +431,6 @@
                                         "string",
                                         "null"
                                     ],
-                                    "stronglyRecommended": null,
                                     "badge": "Bronze",
                                     "title": "Attribution"
                                 }
@@ -493,7 +459,6 @@
                             "string",
                             "null"
                         ],
-                        "stronglyRecommended": null,
                         "badge": "Bronze",
                         "title": "Name"
                     },
@@ -504,7 +469,6 @@
                             "string",
                             "null"
                         ],
-                        "stronglyRecommended": null,
                         "badge": "Bronze",
                         "title": "Title"
                     },
@@ -515,7 +479,6 @@
                             "string",
                             "null"
                         ],
-                        "stronglyRecommended": null,
                         "badge": "Bronze",
                         "title": "Path"
                     },
@@ -526,7 +489,6 @@
                             "string",
                             "null"
                         ],
-                        "stronglyRecommended": null,
                         "badge": "Bronze",
                         "title": "Instruction"
                     },
@@ -537,7 +499,6 @@
                             "string",
                             "null"
                         ],
-                        "stronglyRecommended": null,
                         "badge": "Bronze",
                         "title": "Attribution"
                     }
@@ -561,7 +522,6 @@
                             "string",
                             "null"
                         ],
-                        "stronglyRecommended": null,
                         "badge": "Bronze",
                         "title": "Title"
                     },
@@ -572,7 +532,6 @@
                             "string",
                             "null"
                         ],
-                        "stronglyRecommended": null,
                         "badge": "Bronze",
                         "title": "Email",
                         "format": "email"
@@ -584,7 +543,6 @@
                             "string",
                             "null"
                         ],
-                        "stronglyRecommended": null,
                         "badge": "Bronze",
                         "title": "Date",
                         "format": "date"
@@ -596,7 +554,6 @@
                             "string",
                             "null"
                         ],
-                        "stronglyRecommended": null,
                         "badge": "Bronze",
                         "title": "Object"
                     },
@@ -607,7 +564,6 @@
                             "string",
                             "null"
                         ],
-                        "stronglyRecommended": null,
                         "badge": "Bronze",
                         "title": "Comment"
                     }
@@ -631,7 +587,6 @@
                             "string",
                             "null"
                         ],
-                        "stronglyRecommended": null,
                         "badge": "Gold",
                         "title": "Profile",
                         "options": {
@@ -645,7 +600,6 @@
                             "string",
                             "null"
                         ],
-                        "stronglyRecommended": null,
                         "badge": "Iron",
                         "title": "Name"
                     },
@@ -656,7 +610,6 @@
                             "string",
                             "null"
                         ],
-                        "stronglyRecommended": null,
                         "badge": "Gold",
                         "title": "Path",
                         "options": {
@@ -670,7 +623,6 @@
                             "string",
                             "null"
                         ],
-                        "stronglyRecommended": null,
                         "badge": "Gold",
                         "title": "Format",
                         "options": {
@@ -684,7 +636,6 @@
                             "string",
                             "null"
                         ],
-                        "stronglyRecommended": null,
                         "badge": "Gold",
                         "title": "Encoding",
                         "options": {
@@ -709,7 +660,6 @@
                                                 "string",
                                                 "null"
                                             ],
-                                            "stronglyRecommended": null,
                                             "badge": "Iron",
                                             "title": "Name",
                                             "readonly": true
@@ -721,7 +671,6 @@
                                                 "string",
                                                 "null"
                                             ],
-                                            "stronglyRecommended": null,
                                             "badge": "Silver",
                                             "title": "Description"
                                         },
@@ -732,7 +681,6 @@
                                                 "string",
                                                 "null"
                                             ],
-                                            "stronglyRecommended": null,
                                             "badge": "Iron",
                                             "title": "Type",
                                             "readonly": true
@@ -744,7 +692,6 @@
                                                 "string",
                                                 "null"
                                             ],
-                                            "stronglyRecommended": null,
                                             "badge": "Silver",
                                             "title": "Unit"
                                         },
@@ -759,7 +706,6 @@
                                                         "string",
                                                         "null"
                                                     ],
-                                                    "stronglyRecommended": null,
                                                     "badge": "Platinum",
                                                     "title": "Name"
                                                 },
@@ -770,7 +716,6 @@
                                                         "string",
                                                         "null"
                                                     ],
-                                                    "stronglyRecommended": null,
                                                     "badge": "Platinum",
                                                     "title": "Path",
                                                     "format": "uri"
@@ -790,7 +735,6 @@
                                                         "string",
                                                         "null"
                                                     ],
-                                                    "stronglyRecommended": null,
                                                     "badge": "Platinum",
                                                     "title": "Value"
                                                 },
@@ -801,7 +745,6 @@
                                                         "string",
                                                         "null"
                                                     ],
-                                                    "stronglyRecommended": null,
                                                     "badge": "Platinum",
                                                     "title": "Name"
                                                 },
@@ -812,7 +755,6 @@
                                                         "string",
                                                         "null"
                                                     ],
-                                                    "stronglyRecommended": null,
                                                     "badge": "Platinum",
                                                     "title": "Path",
                                                     "format": "uri"
@@ -836,7 +778,6 @@
                                         "string",
                                         "null"
                                     ],
-                                    "stronglyRecommended": null,
                                     "badge": "Iron",
                                     "title": "Primary key"
                                 },
@@ -858,7 +799,6 @@
                                                     "string",
                                                     "null"
                                                 ],
-                                                "stronglyRecommended": null,
                                                 "badge": "Iron",
                                                 "title": "Field"
                                             },
@@ -875,7 +815,6 @@
                                                         "string",
                                                         "null"
                                                     ],
-                                                    "stronglyRecommended": null,
                                                     "badge": "Iron",
                                                     "title": "Resource"
                                                 },
@@ -888,7 +827,6 @@
                                                             "string",
                                                             "null"
                                                         ],
-                                                        "stronglyRecommended": null,
                                                         "badge": "Iron",
                                                         "title": "Field"
                                                     },
@@ -919,7 +857,6 @@
                                     "string",
                                     "null"
                                 ],
-                                "stronglyRecommended": null,
                                 "badge": "Silver",
                                 "title": "Delimiter"
                             },
@@ -930,7 +867,6 @@
                                     "string",
                                     "null"
                                 ],
-                                "stronglyRecommended": null,
                                 "badge": "Silver",
                                 "title": "Decimal separator"
                             }
