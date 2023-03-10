@@ -5,7 +5,8 @@
     "type": "object",
     "properties": {
         "@context": {
-            "description": "Explanation of metadata keys in ontology terms. Example: https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld",
+            "description": "Explanation of metadata keys in ontology terms.",
+            "example":"https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld",
             "type": [
                 "string",
                 "null"
