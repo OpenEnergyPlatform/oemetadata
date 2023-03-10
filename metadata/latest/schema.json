@@ -34,12 +34,14 @@
             "title": "Title"
         },
         "id": {
-            "description": "Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI). Example: https://example.com",
+            "description": "Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI).",
+            "example": "https://example.com",
             "type": [
                 "string",
                 "null"
             ],
-            "title": "Id",
+            "badge": "Bronze",
+            "title": "ID",
             "readonly": true
         },
         "@id": {
