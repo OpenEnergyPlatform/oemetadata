@@ -73,26 +73,32 @@
                 "type": "object",
                 "properties": {
                     "name": {
-                        "description": "Name of the OEO Class",
+                        "description": "The class label of the OEO term.",
+                        "example": "energy",
                         "type": [
                             "string",
                             "null"
                         ],
+                        "badge": "Platinum",
                         "title": "Name"
                     },
                     "path": {
-                        "description": "Path to the OEO (URL)",
+                        "description": "The URI of the class.",
+                        "example": "https://openenergy-platform.org/ontology/oeo/OEO_00000150",
                         "type": [
                             "string",
                             "null"
                         ],
+                        "badge": "Platinum",
                         "title": "Path",
                         "format": "uri"
                     }
                 },
-                "additionalProperties": false,
-                "title": "Subject"
+                "badge": "Platinum",
+                "title": "Subject",
+                "additionalProperties": false
             },
+            "badge": "Platinum",
             "title": "Subject"
         },
         "language": {
