@@ -279,75 +279,90 @@
             "additionalProperties": false
         },
         "temporal": {
-            "description": "Temporal object. Time period covered in the data. Temporal information should either contain a \"referenceDate\" or the keys describing a time series; in rare cases both. Use null for the ones that don't apply.",
+            "description": "An object with the time period covered in the data. Temporal information should either contain a \"referenceDate\" or the keys describing a time series; in rare cases both.",
             "type": "object",
             "properties": {
                 "referenceDate": {
-                    "description": "Base year, month or day. Point in time for which the data is meant to be accurate. A census will generally have a reference year. A satellite image will have a reference date. Date Format is ISO 8601. Example: 2016-01-01",
+                    "description": "The base year, month or day. Point in time for which the data is meant to be accurate. The census data or a satellite image will have a reference date. Date Format is ISO 8601.",
+                    "example": "2016-01-01",
                     "type": [
                         "string",
                         "null"
                     ],
+                    "badge": "Bronze",
                     "title": "Reference date",
                     "format": "date"
                 },
                 "timeseries": {
-                    "description": "Times series object in temporal object, contains start, end, resolution, alignment and aggregation type properties.",
+                    "description": "A list of objects that describe the timeseries. It contains start, end, resolution, alignment and aggregation type properties.",
                     "type": "array",
                     "items": {
                         "type": "object",
                         "properties": {
                             "start": {
-                                "description": "The beginning point in time of a time series. Example: 2019-02-06T10:12:04+00:00",
+                                "description": "The beginning point in time of a time series.",
+                                "example": "2019-02-06T10:12:04+00:00",
                                 "type": [
                                     "string",
                                     "null"
                                 ],
+                                "badge": "Silver",
                                 "title": "Start",
                                 "format": "date-time"
                             },
                             "end": {
-                                "description": "The end point in time of a time series. Example: 2019-02-07T10:12:04+00:00",
+                                "description": "The end point in time of a time series.",
+                                "example": "2019-02-07T10:12:04+00:00",
                                 "type": [
                                     "string",
                                     "null"
                                 ],
+                                "badge": "Silver",
                                 "title": "End",
                                 "format": "date-time"
                             },
                             "resolution": {
-                                "description": "The time span between individual points of information in a time series. Example: 30 s",
+                                "description": "The time span between individual points of information in a time series.",
+                                "example": " 30 s",
                                 "type": [
                                     "string",
                                     "null"
                                 ],
+                                "badge": "Silver",
                                 "title": "Resolution"
                             },
                             "alignment": {
-                                "description": "Indicator whether stamps in a time series are left, right or middle. \"null\" if there is no time series. Example: left",
+                                "description": "An indicator whether stamps in a time series are left, right or middle.",
+                                "example": "left",
                                 "type": [
                                     "string",
                                     "null"
                                 ],
+                                "badge": "Silver",
                                 "title": "Alignment"
                             },
                             "aggregationType": {
-                                "description": "Indicates whether the values are a sum, average or current. Example: sum",
+                                "description": "Indicates whether the values are a sum, average or current.",
+                                "example": "sum",
                                 "type": [
                                     "string",
                                     "null"
                                 ],
+                                "badge": "Silver",
                                 "title": "Aggregation type"
                             }
                         },
-                        "additionalProperties": false,
-                        "title": "Timeseries"
+                        "badge": "Silver",
+                        "title": "Timeseries",
+                        "additionalProperties": false
                     },
+                    "badge": "Silver",
                     "title": "Timeseries"
                 }
             },
-            "additionalProperties": false,
-            "title": "Temporal"
+            "badge": "Silver",
+            "title": "Temporal",
+            "additionalProperties": false
         },
         "sources": {
             "description": "List of source objects. Each object has all name-value-pairs.",
