@@ -14,11 +14,13 @@
             "title": "@context"
         },
         "name": {
-            "description": "File name or database table name. Example: oep_metadata_table_example_v15",
+            "description": "File name or database table name",
+            "example": "oep_metadata_table_example_v15",
             "type": [
                 "string",
                 "null"
             ],
+            "badge": "Silver",
             "title": "Name"
         },
         "title": {
