@@ -136,11 +136,13 @@
             "title": "Keywords"
         },
         "publicationDate": {
-            "description": "Date of publishing. Date Format is ISO 8601 (YYYY-MM-DD). Example: 2019-02-06",
+            "description": "Date of publishing. Date Format is ISO 8601 (YYYY-MM-DD)",
+            "example": "2019-02-06",
             "type": [
                 "string",
                 "null"
             ],
+            "badge": "Bronze",
             "title": "Publication date",
             "format": "date"
         },
