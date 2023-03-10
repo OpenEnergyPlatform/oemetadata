@@ -11,6 +11,7 @@
                 "string",
                 "null"
             ],
+            "badge": null,
             "title": "@context"
         },
         "name": {
@@ -45,11 +46,13 @@
             "readonly": true
         },
         "@id": {
-            "description": "Uniform Resource Identifier (URI) that links the resource via the databus",
+            "description": "A Uniform Resource Identifier (URI) that links the resource via the DBpedia Databus",
+            "example": "https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00",
             "type": [
                 "string",
                 "null"
             ],
+            "badge": null,
             "title": "@Id",
             "readonly": true
         },
