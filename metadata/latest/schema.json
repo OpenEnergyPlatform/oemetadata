@@ -102,15 +102,20 @@
             "title": "Subject"
         },
         "language": {
-            "description": "Language used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47). Example: [en-GB, de-DE, fr-FR]",
+            "description": "List of languages used within the described data structures (e.g. titles, descriptions). Standard: IETF (BCP47).",
+            "example": "[en-GB, de-DE, fr-FR]",
             "type": "array",
             "items": {
+                "description": "Language used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47)",
+                "example": "en-GB",
                 "type": [
                     "string",
                     "null"
                 ],
+                "badge": "Gold",
                 "title": "Language"
             },
+            "badge": "Gold",
             "title": "Language"
         },
         "keywords": {
