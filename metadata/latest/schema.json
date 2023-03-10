@@ -24,11 +24,13 @@
             "title": "Name"
         },
         "title": {
-            "description": "Human readable title. Example: Metadata Example Table",
+            "description": "A Human readable, full title , including author.",
+            "example": "RLI - OEMetadata - Metadata example table",
             "type": [
                 "string",
                 "null"
             ],
+            "badge": "Silver",
             "title": "Title"
         },
         "id": {
