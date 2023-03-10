@@ -57,11 +57,13 @@
             "readonly": true
         },
         "description": {
-            "description": "A description of the package. It should be usable as summary information for the entire package that is described by the metadata. Example: Example table used to illustrate the metadata structure and meaning",
+            "description": "A description of the package. It should be usable as summary information for the entire package that is described by the metadata.",
+            "example": "Example table used to illustrate the metadata structure and meaning.",
             "type": [
                 "string",
                 "null"
             ],
+            "badge": "Silver",
             "title": "Description"
         },
         "subject": {
