@@ -687,28 +687,34 @@
                                     "type": "object",
                                     "properties": {
                                         "name": {
-                                            "description": "Name string unique within its scope. Example: year",
+                                            "description": "The name of the field. The string must be unique within it's scope",
+                                            "example": "year",
                                             "type": [
                                                 "string",
                                                 "null"
                                             ],
+                                            "badge": "Iron",
                                             "title": "Name",
                                             "readonly": true
                                         },
                                         "description": {
-                                            "description": "Free-text describing the field. Example: Reference year for which the data were collected.",
+                                            "description": "A text describing the field.",
+                                            "example": "Reference year for which the data were collected.",
                                             "type": [
                                                 "string",
                                                 "null"
                                             ],
+                                            "badge": "Silver",
                                             "title": "Description"
                                         },
                                         "type": {
-                                            "description": "Data type of the field. In case of a geom-column in a database, also indicate the shape and CRS. Example: geometry(Point, 4326)",
+                                            "description": "The data type of the field. In case of a geom column in a database, also indicate the shape and CRS.",
+                                            "example": "geometry(Point, 4326)",
                                             "type": [
                                                 "string",
                                                 "null"
                                             ],
+                                            "badge": "Iron",
                                             "title": "Type",
                                             "readonly": true
                                         },
@@ -719,26 +725,32 @@
                                                 "type": "object",
                                                 "properties": {
                                                     "name": {
-                                                        "description": "Name of the Dataset",
+                                                        "description": "A class label of the OEO terms.",
+                                                        "example": "wind energy converting unit",
                                                         "type": [
                                                             "string",
                                                             "null"
                                                         ],
+                                                        "badge": "Platinum",
                                                         "title": "Name"
                                                     },
                                                     "path": {
-                                                        "description": "Path to the OEO (URL)",
+                                                        "description": "Path to the OEO class (URI)",
+                                                        "example": "https://openenergy-platform.org/ontology/oeo/OEO_00000044",
                                                         "type": [
                                                             "string",
                                                             "null"
                                                         ],
+                                                        "badge": "Platinum",
                                                         "title": "Path",
                                                         "format": "uri"
                                                     }
                                                 },
-                                                "additionalProperties": false,
-                                                "title": "isAbout"
+                                                "badge": "Platinum",
+                                                "title": "isAbout",
+                                                "additionalProperties": false
                                             },
+                                            "badge": "Platinum",
                                             "title": "isAbout"
                                         },
                                         "valueReference": {
@@ -748,42 +760,52 @@
                                                 "type": "object",
                                                 "properties": {
                                                     "value": {
-                                                        "description": "The value this reference is assinged to.",
+                                                        "description": "The name of the value in the column.",
+                                                        "example": "onshore",
                                                         "type": [
                                                             "string",
                                                             "null"
                                                         ],
+                                                        "badge": "Platinum",
                                                         "title": "Value"
                                                     },
                                                     "name": {
-                                                        "description": "Full name of the value",
+                                                        "description": "The class label of the OEO terms.",
+                                                        "example": "onshore wind farm",
                                                         "type": [
                                                             "string",
                                                             "null"
                                                         ],
+                                                        "badge": "Platinum",
                                                         "title": "Name"
                                                     },
                                                     "path": {
-                                                        "description": "Path to the OEO",
+                                                        "description": " The URI of the OEO class",
+                                                        "example": "https://openenergy-platform.org/ontology/oeo/OEO_00000311",
                                                         "type": [
                                                             "string",
                                                             "null"
                                                         ],
+                                                        "badge": "Platinum",
                                                         "title": "Path",
                                                         "format": "uri"
                                                     }
                                                 },
-                                                "additionalProperties": false,
-                                                "title": "valueReference"
+                                                "badge": "Platinum",
+                                                "title": "valueReference",
+                                                "additionalProperties": false
                                             },
+                                            "badge": "Platinum",
                                             "title": "valueReference"
                                         },
                                         "unit": {
-                                            "description": "Unit, preferably SI-Unit, that values in this field are mapped to. If \"unit\" doesn't apply to a field, use \"null\". Example: MW",
+                                            "description": "The unit, preferably SI-unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null'. If the unit is given in a seperate field, reference this field.",
+                                            "example": "MW",
                                             "type": [
                                                 "string",
                                                 "null"
                                             ],
+                                            "badge": "Silver",
                                             "title": "Unit"
                                         }
                                     },
@@ -793,15 +815,20 @@
                                 "title": "Field"
                             },
                             "primaryKey": {
-                                "description": "A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns. Example: id",
+                                "description": "A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns.",
+                                "example": "id",
                                 "type": "array",
                                 "items": {
+                                    "description": "A primary key is a field or set of fields that uniquely identifies each row in the table.",
+                                    "example": "id",
                                     "type": [
                                         "string",
                                         "null"
                                     ],
+                                    "badge": "Iron",
                                     "title": "Primary key"
                                 },
+                                "badge": "Iron",
                                 "title": "Primary key"
                             },
                             "foreignKeys": {
@@ -812,15 +839,20 @@
                                     "type": "object",
                                     "properties": {
                                         "fields": {
-                                            "description": "The column (as list of items) in the table that is constrainted by the foreign key. Example: version",
+                                            "description": "The column (as list of items) in the table that is constrainted by the foreign key.",
+                                            "example": "version",
                                             "type": "array",
                                             "items": {
+                                                "description": "The column in the table that is constrainted by the foreign key.",
+                                                "example": "version",
                                                 "type": [
                                                     "string",
                                                     "null"
                                                 ],
+                                                "badge": "Iron",
                                                 "title": "Field"
                                             },
+                                            "badge": "Iron",
                                             "title": "Fields"
                                         },
                                         "reference": {
@@ -828,38 +860,47 @@
                                             "type": "object",
                                             "properties": {
                                                 "resource": {
-                                                    "description": "The foreign resource (table). Example: schema.table",
+                                                    "description": "The foreign resource (table).",
+                                                    "example": "schema.table",
                                                     "type": [
                                                         "string",
                                                         "null"
                                                     ],
+                                                    "badge": "Iron",
                                                     "title": "Resource"
                                                 },
                                                 "fields": {
-                                                    "description": "The foreign resource column. List of fields. Example: version",
+                                                    "description": "The foreign resource column.",
+                                                    "example": "version",
                                                     "type": "array",
                                                     "items": {
+                                                        "description": "The foreign resource column.",
+                                                        "example": "version",
                                                         "type": [
                                                             "string",
                                                             "null"
                                                         ],
+                                                        "badge": "Iron",
                                                         "title": "Field"
                                                     },
+                                                    "badge": "Iron",
                                                     "title": "Field"
                                                 }
                                             },
-                                            "additionalProperties": false,
-                                            "title": "Reference"
+                                            "badge": "Iron",
+                                            "title": "Reference",
+                                            "additionalProperties": false
                                         }
                                     },
-                                    "additionalProperties": false,
-                                    "title": "Foreign Key"
+                                    "title": "Foreign Key",
+                                    "additionalProperties": false
                                 },
+                                "badge": "Iron",
                                 "title": "Foreign Keys"
                             }
                         },
-                        "additionalProperties": false,
-                        "title": "Schema"
+                        "title": "Schema",
+                        "additionalProperties": false
                     },
                     "dialect": {
                         "description": "Object. A CSV Dialect defines a simple format to describe the various dialects of CSV files in a language agnostic manner. In case of a database, the values in the containing fields are \"null\".",
