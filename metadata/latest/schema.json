@@ -975,11 +975,13 @@
             "type": "object",
             "properties": {
                 "metadataVersion": {
-                    "description": "Type and version number of the metadata. Example: OEP-1.5",
+                    "description": "Type and version number of the metadata.",
+                    "example": "OEP-1.5",
                     "type": [
                         "string",
                         "null"
                     ],
+                    "badge": null,
                     "title": "Metadata version"
                 },
                 "metadataLicense": {
@@ -987,36 +989,43 @@
                     "type": "object",
                     "properties": {
                         "name": {
-                            "description": "SPDX identifier. Example: CC0-1.0",
+                            "description": "SPDX identifier",
+                            "example": "CC0-1.0",
                             "type": [
                                 "string",
                                 "null"
                             ],
+                            "badge": null,
                             "title": "Name"
                         },
                         "title": {
-                            "description": "Official (human readable) license title. Example: Creative Commons Zero v1.0 Universal",
+                            "description": "Official (human readable) license title.",
+                            "example": "Creative Commons Zero v1.0 Universal",
                             "type": [
                                 "string",
                                 "null"
                             ],
+                            "badge": null,
                             "title": "Title"
                         },
                         "path": {
-                            "description": "Url or path string, that is a fully qualified HTTP address. Example: https://creativecommons.org/publicdomain/zero/1.0/",
+                            "description": "Url or path string, that is a fully qualified HTTP address.",
+                            "example": "https://creativecommons.org/publicdomain/zero/1.0",
                             "type": [
                                 "string",
                                 "null"
                             ],
+                            "badge": null,
                             "title": "Path"
                         }
                     },
-                    "additionalProperties": false,
-                    "title": "Metadata license"
+                    "badge": null,
+                    "title": "Metadata license",
+                    "additionalProperties": false
                 }
             },
             "additionalProperties": false,
-            "title": "Meta metadata",
+            "title": "Meta Metadata",
             "options": {
                 "hidden": true
             }
