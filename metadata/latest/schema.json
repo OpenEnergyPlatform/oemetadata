@@ -599,9 +599,11 @@
                         "title": "Comment"
                     }
                 },
-                "additionalProperties": false,
-                "title": "Contributors"
+                "badge": "Bronze",
+                "title": "Contributors",
+                "additionalProperties": false
             },
+            "badge": "Bronze",
             "title": "Contributors"
         },
         "resources": {
@@ -612,52 +614,62 @@
                 "type": "object",
                 "properties": {
                     "profile": {
-                        "description": "A string identifying the profile of this descriptor as per the profiles specification. This information is retained in order to comply with the \"Tabular Data Package\" standard. If at all in doubt the value should read \"tabular-data-resource\". Example: tabular-data-resource",
+                        "description": "A string identifying the profile of this descriptor as per the profiles specification. This information is retained in order to comply with the \"Tabular Data Package\" standard. If at all in doubt the value should read \"tabular-data-resource\".",
+                        "example": "tabular-data-resource",
                         "type": [
                             "string",
                             "null"
                         ],
+                        "badge": "Gold",
                         "title": "Profile",
                         "options": {
                             "hidden": true
                         }
                     },
                     "name": {
-                        "description": "A resource MUST contain a name unique to amongst all resources in this data package. To comply with the data package standard it must consist of only lowercase alphanumeric character plus \".\", \"-\" and \"_\". It may not start with a number. In a database this will be the name of the table within its containing schema. It would be usual for the name to correspond to the file name (minus the file-extension) of the data file the resource describes. Example: sandbox.example_table",
+                        "description": "A resource MUST contain a name unique to amongst all resources in this data package. To comply with the data package standard it must consist of only lowercase alphanumeric character plus \".\", \"-\" and \"_\". It may not start with a number. In a database this will be the name of the table within its containing schema. It would be usual for the name to correspond to the file name (minus the file-extension) of the data file the resource describes. Example:",
+                        "example": "sandbox.example_table",
                         "type": [
                             "string",
                             "null"
                         ],
+                        "badge": "Iron",
                         "title": "Name"
                     },
                     "path": {
-                        "description": "A url-or-path string, that should be a permanent http(s) address or other path directly linking to the resource. Example: directly linking to the resource. https://openenergy-platform.org/dataedit/view/openstreetmap/osm_deu_roads",
+                        "description": "A URL that should be a permanent http(s) address or other path directly linking to the resource.",
+                        "example": "https://openenergy-platform.org/dataedit/view/openstreetmap/osm_deu_line",
                         "type": [
                             "string",
                             "null"
                         ],
+                        "badge": "Gold",
                         "title": "Path",
                         "options": {
                             "hidden": true
                         }
                     },
                     "format": {
-                        "description": "\"csv\", \"xls\", \"json\" etc. would be expected to be the standard file extension for this type of resource. When you upload your data to the OEDB, in the shown metadata string, the format will be changed accordingly to \"PostgreSQL\", since the data there are stored in a database. Example: csv",
+                        "description": "The file extension. 'csv', 'xls', 'json' etc. are expected to be the standard file extension for this type of resource. When you upload your data to the OEDB, in the shown metadata string, the format will be changed accordingly to 'PostgreSQL', since the data there are stored in a database.",
+                        "example": "csv",
                         "type": [
                             "string",
                             "null"
                         ],
+                        "badge": "Gold",
                         "title": "Format",
                         "options": {
                             "hidden": true
                         }
                     },
                     "encoding": {
-                        "description": "Specifies the character encoding of the resource's data file. The values should be one of the \"Preferred MIME Names\" for a character encoding registered with IANA. If no value for this key is specified then the default is UTF-8. Example: UTF-8",
+                        "description": "Specifies the character encoding of the resource's data file. The values should be one of the \"Preferred MIME Names\" for a character encoding registered with IANA. If no value for this key is specified then the default is UTF-8.",
+                        "example": "UTF-8",
                         "type": [
                             "string",
                             "null"
                         ],
+                        "badge": "Gold",
                         "title": "Encoding",
                         "options": {
                             "hidden": true
