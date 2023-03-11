@@ -547,45 +547,55 @@
                 "type": "object",
                 "properties": {
                     "title": {
-                        "description": "Name/title of the contributor (name for a person, name or title for an organization). Example: Jon Doe",
+                        "description": "Name/title of the contributor (name for a person, name or title for an organization).",
+                        "example": "John Doe",
                         "type": [
                             "string",
                             "null"
                         ],
+                        "badge": "Bronze",
                         "title": "Title"
                     },
                     "email": {
-                        "description": "E-mail address of the contributor. Example: contact@example.com",
+                        "description": "E-mail address of the contributor.",
+                        "example": "contact@example.com",
                         "type": [
                             "string",
                             "null"
                         ],
+                        "badge": "Bronze",
                         "title": "Email",
                         "format": "email"
                     },
                     "date": {
-                        "description": "Date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601. Example: 2016-06-16",
+                        "description": "Date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601.",
+                        "example": "2016-06-16",
                         "type": [
                             "string",
                             "null"
                         ],
+                        "badge": "Bronze",
                         "title": "Date",
                         "format": "date"
                     },
                     "object": {
-                        "description": "Target of contribution. Which part of the package was supplied/changed. Example: Metadata",
+                        "description": "Target of contribution. Which part of the package was supplied/changed.",
+                        "example": "data and metadata",
                         "type": [
                             "string",
                             "null"
                         ],
+                        "badge": "Bronze",
                         "title": "Object"
                     },
                     "comment": {
-                        "description": "Free text comment on what's been done. Example: Fixed a typo in the title",
+                        "description": "Free text comment on what's been done.",
+                        "example": "Fixed a typo in the title.",
                         "type": [
                             "string",
                             "null"
                         ],
+                        "badge": "Bronze",
                         "title": "Comment"
                     }
                 },
