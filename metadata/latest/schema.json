@@ -944,19 +944,23 @@
             "type": "object",
             "properties": {
                 "path": {
-                    "description": "A URL or path string, that should be a permanent http(s) address directly linking to the documented review. Example: https://www.example.com",
+                    "description": "A URL or path string, that should be a permanent http(s) address directly linking to the documented review.",
+                    "example": "https://www.example.com",
                     "type": [
                         "string",
                         "null"
                     ],
+                    "badge": null,
                     "title": "Path"
                 },
                 "badge": {
-                    "description": "A badge of either Bronze, Silver, Gold or Platin is used to label the given metadata based on its quality. Example: Platin",
+                    "description": "A badge of either Bronze, Silver, Gold or Platinum is used to label the given metadata based on its quality.",
+                    "example": "Platinum",
                     "type": [
                         "string",
                         "null"
                     ],
+                    "badge": null,
                     "title": "Badge"
                 }
             },
