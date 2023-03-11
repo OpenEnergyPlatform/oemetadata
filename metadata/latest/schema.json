@@ -372,27 +372,33 @@
                 "type": "object",
                 "properties": {
                     "title": {
-                        "description": "Human readable title of the source, e.g. document title or organisation name. Example: IPCC Fifth Assessment Report",
+                        "description": "A human readable title of the source, a document title or organisation name.",
+                        "example": "IPCC Fifth Assessment Report",
                         "type": [
                             "string",
                             "null"
                         ],
+                        "badge": "Bronze",
                         "title": "Title"
                     },
                     "description": {
-                        "description": "Free text description of the data set. Example: Scientific climate change report by the UN",
+                        "description": "A free text description of the data set.",
+                        "example": "Scientific climate change report by the UN",
                         "type": [
                             "string",
                             "null"
                         ],
+                        "badge": "Bronze",
                         "title": "Description"
                     },
                     "path": {
-                        "description": "URL to original source. Example: https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_full.pdf",
+                        "description": "A URL to the original source.",
+                        "example": "https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_full.pdf",
                         "type": [
                             "string",
                             "null"
                         ],
+                        "badge": "Bronze",
                         "title": "Path",
                         "format": "uri"
                     },
@@ -404,54 +410,68 @@
                             "type": "object",
                             "properties": {
                                 "name": {
-                                    "description": "SPDX identifier: Example: ODbL-1.0",
+                                    "description": "THe SPDX identifier.",
+                                    "example": "ODbL-1.0",
                                     "type": [
                                         "string",
                                         "null"
                                     ],
+                                    "badge": "Bronze",
                                     "title": "Name"
                                 },
                                 "title": {
-                                    "description": "Official (human readable) title. Example: Open Data Commons Open Database License 1.0",
+                                    "description": "The official (human readable) title of the license.",
+                                    "example": "Open Data Commons Open Database License 1.0",
                                     "type": [
                                         "string",
                                         "null"
                                     ],
+                                    "badge": "Bronze",
                                     "title": "Title"
                                 },
                                 "path": {
-                                    "description": "A link to the license. Example: https://opendatacommons.org/licenses/odbl/1-0/index.html",
+                                    "description": "A link to the license text.",
+                                    "example": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
                                     "type": [
                                         "string",
                                         "null"
                                     ],
+                                    "badge": "Bronze",
                                     "title": "Path"
                                 },
                                 "instruction": {
-                                    "description": "Short description of rights and restrictions. Example: You are free to share and change, but you must attribute, and share derivations under the same license.",
+                                    "description": "A short description of rights and restrictions. The use of tl;drLegal is recommended.",
+                                    "example": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information.",
                                     "type": [
                                         "string",
                                         "null"
                                     ],
+                                    "badge": "Bronze",
                                     "title": "Instruction"
                                 },
                                 "attribution": {
-                                    "description": "Copyrightholder of the source. Example: © Intergovernmental Panel on Climate Change 2014",
+                                    "description": "The copyright owner of the source. If attribution licenses are used, that name must be acknowledged.",
+                                    "example": "© Intergovernmental Panel on Climate Change 2014",
                                     "type": [
                                         "string",
                                         "null"
                                     ],
+                                    "badge": "Bronze",
                                     "title": "Attribution"
                                 }
                             },
+                            "badge": "Bronze",
                             "title": "Licenses"
                         },
+                        "badge": "Bronze",
                         "title": "Licenses"
                     }
                 },
-                "additionalProperties": false,
-                "title": "Sources"
+                "badge": "Bronze",
+                "title": "Sources",
+                "additionalProperties": false
             },
+            "badge": "Bronze",
             "title": "Sources"
         },
         "licenses": {
