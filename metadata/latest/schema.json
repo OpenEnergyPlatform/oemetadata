@@ -907,19 +907,23 @@
                         "type": "object",
                         "properties": {
                             "delimiter": {
-                                "description": "Specifies the character sequence which should separate fields (aka columns). Common characters are \",\" (comma), \".\" (point) and \"\t\" (tab). Example: ,",
+                                "description": "The delimiter specifies the character sequence which should separate fields (columns). Common characters are \",\" (comma), \".\" (point) and \"\\t\" (tab).",
+                                "example": ",",
                                 "type": [
                                     "string",
                                     "null"
                                 ],
+                                "badge": "Silver",
                                 "title": "Delimiter"
                             },
                             "decimalSeparator": {
-                                "description": "Symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be \".\" or \",\". Example: .",
+                                "description": "A symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be \".\" or \",\".",
+                                "example": ".",
                                 "type": [
                                     "string",
                                     "null"
                                 ],
+                                "badge": "Silver",
                                 "title": "Decimal separator"
                             }
                         },
