@@ -30,7 +30,7 @@ Here is a template for new release sections
 ## Current
 
 ### Added
--
+- Add CITATION.cff with list of authors [(#111)](https://github.com/OpenEnergyPlatform/oemetadata/pull/111)
 ### Changed
 -
 ### Removed
