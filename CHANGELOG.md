@@ -30,7 +30,9 @@ Here is a template for new release sections
 ## Current
 
 ### Added
+
 - Add badge for all fields [PR#117]
+- Add CITATION.cff with list of authors [(#111)](https://github.com/OpenEnergyPlatform/oemetadata/pull/111)
 
 ### Changed
 - Separate examples from descripton and put into its own key-value pair [PR#117]
