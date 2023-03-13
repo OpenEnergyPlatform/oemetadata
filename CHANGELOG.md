@@ -30,9 +30,11 @@ Here is a template for new release sections
 ## Current
 
 ### Added
--
+- Add badge for all fields
+
 ### Changed
--
+- Separate examples from descripton and put into its own key-value pair
+
 ### Removed
 -
 
