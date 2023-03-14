@@ -590,7 +590,7 @@
                     },
                     "comment": {
                         "description": "Free text comment on what has been done.",
-                        "example": "Fixed a typo in the title.",
+                        "example": "Fix typo in the title.",
                         "type": [
                             "string",
                             "null"
