@@ -450,7 +450,7 @@
                                     "title": "Instruction"
                                 },
                                 "attribution": {
-                                    "description": "The copyright owner of the source. If attribution licenses are used, that name must be acknowledged.",
+                                    "description": "The copyright owner of the source. Copyright owner name must be acknowledged if attribution licenses are used.",
                                     "example": "© Intergovernmental Panel on Climate Change 2014",
                                     "type": [
                                         "string",
