@@ -147,7 +147,7 @@
             "format": "date"
         },
         "context": {
-            "description": "An Object that describes the general setting, evironment or project leading to the creation or maintenance of this dataset. In science this can be the research projecti.",
+            "description": "An Object that describes the general setting, evironment or project leading to the creation or maintenance of this dataset. In science this can be the research project.",
             "type": "object",
             "properties": {
                 "homepage": {
