@@ -162,7 +162,7 @@
                     "format": "uri"
                 },
                 "documentation": {
-                    "description": "A URL of the project documentation.",
+                    "description": "A URL of the project's documentation.",
                     "example": "https://openenergy-platform.org/about/",
                     "type": [
                         "string",
