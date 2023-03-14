@@ -589,7 +589,7 @@
                         "title": "Object"
                     },
                     "comment": {
-                        "description": "Free text comment on what's been done.",
+                        "description": "Free text comment on what has been done.",
                         "example": "Fixed a typo in the title.",
                         "type": [
                             "string",
