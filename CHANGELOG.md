@@ -13,7 +13,7 @@ Here is a template for new release sections
 ### Added
 -
 ### Changed
--
+- 
 ### Removed
 -
 
@@ -32,7 +32,7 @@ Here is a template for new release sections
 ### Added
 - Add CITATION.cff with list of authors [(#111)](https://github.com/OpenEnergyPlatform/oemetadata/pull/111)
 ### Changed
--
+- Update context field [PR#114]
 ### Removed
 -
 
