@@ -6,8 +6,8 @@
             "name": "model_draft.oep_metadata_table_example_v152", // Table name
             "path": "data/oep_metadata_table_example_v152.csv", // Local path to CSV and on server URL to table
             "format": "csv",
-            "encoding": "utf-8",            
-            "dialect": {
+            "encoding": "utf-8", // Just for CSV, not relevant on server
+            "dialect": { // Just for CSV, not relevant on server
                 "delimiter": ",",
                 "decimalSeparator": "."
             },
@@ -16,7 +16,8 @@
                     {
                         "name": "id",
                         "description": "Unique identifier",
-                        "type": "serial",
+                        "type": "array null", // 100% frictionless + umwandlung zu SQL typen ... array problem
+                        "sqlDataType": "", // postgresql database types + guter weg damit user nicht beide types ausfüllen müssen
                         "unit": null,
                         "isAbout": [
                             {
@@ -390,16 +391,6 @@
                     "title": "Creative Commons Zero v1.0 Universal",
                     "path": "https://creativecommons.org/publicdomain/zero/1.0/"
                 }
-            },
-            "_comment": {
-                "metadata": "Metadata documentation and explanation (https://github.com/OpenEnergyPlatform/oemetadata)",
-                "dates": "Dates and time must follow the ISO8601 including time zone (YYYY-MM-DD or YYYY-MM-DDThh:mm:ss±hh)",
-                "units": "Use a space between numbers and units (100 m)",
-                "languages": "Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE)",
-                "licenses": "License name must follow the SPDX License List (https://spdx.org/licenses/)",
-                "review": "Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md)",
-                "null": "If not applicable use: null",
-                "todo": "If a value is not yet available, use: todo"
             }
         },
         {
