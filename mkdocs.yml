@@ -1,0 +1,82 @@
+# Project
+site_name: Open Energy Metadata Documentation
+site_url: 
+site_description: Open Energy Metadata (OEMetadata) is an energy metadata standard including a template, examples and a metadata schema.
+
+# Repository
+repo_name: OpenEnergyPlatform/oemetadata
+repo_url: https://github.com/OpenEnergyPlatform/oemetadata
+docs_dir: docs
+
+# Configuration
+theme:
+  name: material
+  logo: img/logo_rli_small.png
+  palette:
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.path
+    - navigation.tracking
+    - navigation.top
+    - toc.follow
+
+# extensions 
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: 💙
+
+plugins:
+- mkdocstrings:
+
+# Customization
+extra:
+  generator: false
+
+extra_css:
+  - css/extra.css
+
+# Navigation
+nav:
+  - Home: index.md
+  - Development:
+    - Collaboration:
+      - development/collaboration/index.md
+      - License: development/collaboration/license.md
+      - Citation: development/collaboration/citation.md
+      - Contributing: development/collaboration/contributing.md
+      - Users: development/collaboration/users.md
+      - Code of Conduct: development/collaboration/code_of_conduct.md
+    - Git:
+      - development/git/index.md
+      - Gitignore: development/git/gitignore.md
+    - Documentation:
+      - development/documentation/index.md
+    - Release:
+      - development/release/index.md
+  - Metadata Documentation:
+      - metadata/index.md
+      - Key Description: metadata/metadata_key_description.md
+#  - Code Documentation:
+#    - Install:
+#      - code/install/index.md
+#    - Code Style:
+#      - code/style/index.md
+#    - Functions:
+#      - code/index.md
+#      - code/code_example.md
