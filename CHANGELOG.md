@@ -30,7 +30,8 @@ Here is a template for new release sections
 ## Current
 
 ### Added
--
+- Add issue and PR templates [(#116)](https://github.com/OpenEnergyPlatform/oemetadata/pull/116)
+
 ### Changed
 -
 ### Removed
