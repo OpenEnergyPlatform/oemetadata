@@ -1,0 +1,73 @@
+{
+    "$schema": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/feature/draft_updated_oem_ressourse_and_datapackge/metadata/v200_draft/schema.json",
+    "id": "https://openenergy-platform.org/dataedit/view/example_table_name",
+    "name": "example_table_name",
+    "title": "Example Table Name",
+    "description": "Example description",
+    "language": [
+        "en"
+    ],
+    "keywords": [
+        "example"
+    ],
+    "publicationDate": "2023-12-04",
+    "context": {
+        "homepage": "https://example.org",
+        "contact": "example@example.org"
+    },
+    "spatial": {
+        "extent": "Germany",
+        "resolution": "100m"
+    },
+    "temporal": {
+        "referenceDate": "2020-01-01",
+        "timeseries": [
+            {
+                "start": "2019-02-06T10:12:04+00:00",
+                "end": " 2019-02-07T10:12:04+00:00",
+                "resolution": "1h",
+                "aggregationType": "current"
+            }
+        ]
+    },
+    "sources": [
+        {
+            "title": "IPCC Fifth Assessment Report",
+            "path": "https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_full.pdf",
+            "licenses": [
+                {
+                    "name": "CC-BY-4.0"
+                }
+            ]
+        }
+    ],
+    "licenses": [
+        {
+            "name": "ODbL-1.0",
+            "title": "Open Data Commons Open Database License 1.0",
+            "path": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
+            "attribution": "© Reiner Lemoine Institut"
+        }
+    ],
+    "contributors": [
+        {
+            "title": "Jon Doe",
+            "email": "example@example.org",
+            "date": "2023-03-12"
+        }
+    ],
+    "schema": {
+        "fields": [
+            {
+                "name": "id",
+                "type": "integer"
+            }
+        ]
+    },
+    "metaMetadata": {
+        "metadataVersion": "OEP-2.0.0-draft",
+        "metadataLicense": {
+            "name": "CC0-1.0"
+        }
+    }
+}

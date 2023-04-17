@@ -1,14 +1,17 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/metadata/v200_draft/schema.json",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/feature/draft_updated_oem_ressourse_and_datapackge/metadata/v200_draft/schema.json",
     "description": "Open Energy Plaftorm (OEP) metadata schema v2.0.0-draft",
     "type": "object",
     "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri",
+            "const": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/feature/draft_updated_oem_ressourse_and_datapackge/metadata/v200_draft/schema.json",
+            "readonly": true
+        },
         "@context": {
             "description": "Explanation of metadata keys in ontology terms. Example: https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld",
-            "examples": [
-                "https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld"
-            ],
             "type": "string",
             "title": "@context"
         },
@@ -22,24 +25,36 @@
             "description": "Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI). Example: https://example.com",
             "type": "string",
             "title": "Id",
-            "readonly": true
+            "readonly": true,
+            "examples": [
+                "https://openenergy-platform.org/dataedit/view/example_table_name"
+            ]
         },
         "name": {
             "description": "File name or database table name. Example: oep_metadata_table_example_v15",
             "type": "string",
             "title": "Name",
             "maxLength": 50,
-            "pattern": "[a-z][a-z_0-9]*"
+            "pattern": "[a-z][a-z_0-9]*",
+            "examples": [
+                "example_table_name"
+            ]
         },
         "title": {
             "description": "Human readable title. Example: Metadata Example Table",
             "type": "string",
-            "title": "Title"
+            "title": "Title",
+            "examples": [
+                "Example Table Name"
+            ]
         },
         "description": {
             "description": "A description of the package. It should be usable as summary information for the entire package that is described by the metadata. Example: Example table used to illustrate the metadata structure and meaning",
             "type": "string",
-            "title": "Description"
+            "title": "Description",
+            "examples": [
+                "Example description"
+            ]
         },
         "subject": {
             "description": "Reference the topic of the resource in ontology terms",
@@ -87,7 +102,10 @@
             "items": {
                 "type": "string",
                 "maxLength": 40,
-                "title": "Keyword"
+                "title": "Keyword",
+                "examples": [
+                    "example"
+                ]
             },
             "title": "Keyword"
         },
@@ -95,7 +113,10 @@
             "description": "Date of publishing. Date Format is ISO 8601 (YYYY-MM-DD). Example: 2019-02-06",
             "type": "string",
             "title": "Publication date",
-            "format": "date"
+            "format": "date",
+            "examples": [
+                "2023-12-04"
+            ]
         },
         "context": {
             "description": "Object. Contains name-value-pairs that describe the general setting, evironment or project leading to the creation or maintenance of this dataset.",
@@ -105,7 +126,10 @@
                     "description": "URL of project. Example: https://openenergy-platform.org/",
                     "type": "string",
                     "title": "Homepage",
-                    "format": "uri"
+                    "format": "uri",
+                    "examples": [
+                        "https://example.org"
+                    ]
                 },
                 "documentation": {
                     "description": "URL of project documentation. Example: https://github.com/OpenEnergyPlatform/metadata/wiki/Metadata-Description",
@@ -121,7 +145,10 @@
                     "description": "Reference to the creator or maintainer of the data set. Example: contact@example.com",
                     "type": "string",
                     "title": "E-Mail contact",
-                    "format": "email"
+                    "format": "email",
+                    "examples": [
+                        "example@example.org"
+                    ]
                 },
                 "grantNo": {
                     "description": "In a publicly funded Project: the identifying grant number. Example: 01AB2345",
@@ -161,12 +188,20 @@
                 "extent": {
                     "description": "Covered area. May be the name of a region, or the geometry of a bounding box. Example: Europe",
                     "type": "string",
-                    "title": "Extent"
+                    "title": "Extent",
+                    "examples": [
+                        "Germany",
+                        "Europe"
+                    ]
                 },
                 "resolution": {
-                    "description": "Pixel size in case of a regular raster image. Reference to administrative level or other spatial division that is present as the smallest spatially distinguished unit size. Example: 30 m",
+                    "description": "Pixel size in case of a regular raster image. Reference to administrative level or other spatial division that is present as the smallest spatially distinguished unit size. Example: 30m",
                     "type": "string",
-                    "title": "Resolution"
+                    "title": "Resolution",
+                    "examples": [
+                        "100m",
+                        "NUTS-2"
+                    ]
                 }
             },
             "additionalProperties": false,
@@ -180,7 +215,10 @@
                     "description": "Base year, month or day. Point in time for which the data is meant to be accurate. A census will generally have a reference year. A satellite image will have a reference date. Date Format is ISO 8601. Example: 2016-01-01",
                     "type": "string",
                     "title": "Reference date",
-                    "format": "date"
+                    "format": "date",
+                    "examples": [
+                        "2020-01-01"
+                    ]
                 },
                 "timeseries": {
                     "description": "Times series object in temporal object, contains start, end, resolution, alignment and aggregation type properties.",
@@ -192,18 +230,27 @@
                                 "description": "The beginning point in time of a time series. Example: 2019-02-06T10:12:04+00:00",
                                 "type": "string",
                                 "title": "Start",
-                                "format": "date-time"
+                                "format": "date-time",
+                                "examples": [
+                                    "2019-02-06T10:12:04+00:00"
+                                ]
                             },
                             "end": {
                                 "description": "The end point in time of a time series. Example: 2019-02-07T10:12:04+00:00",
                                 "type": "string",
                                 "title": "End",
-                                "format": "date-time"
+                                "format": "date-time",
+                                "examples": [
+                                    " 2019-02-07T10:12:04+00:00"
+                                ]
                             },
                             "resolution": {
-                                "description": "The time span between individual points of information in a time series. Example: 30 s",
+                                "description": "The time span between individual points of information in a time series. Example: 30s",
                                 "type": "string",
-                                "title": "Resolution"
+                                "title": "Resolution",
+                                "examples": [
+                                    "1h"
+                                ]
                             },
                             "alignment": {
                                 "description": "Indicator whether stamps in a time series are left, right or middle. Example: left",
@@ -220,9 +267,9 @@
                                 "type": "string",
                                 "title": "Aggregation type",
                                 "examples": [
+                                    "current",
                                     "sum",
-                                    "average",
-                                    "current"
+                                    "average"
                                 ]
                             }
                         },
@@ -245,7 +292,10 @@
                     "title": {
                         "description": "Human readable title of the source, e.g. document title or organisation name. Example: IPCC Fifth Assessment Report",
                         "type": "string",
-                        "title": "Title"
+                        "title": "Title",
+                        "examples": [
+                            "IPCC Fifth Assessment Report"
+                        ]
                     },
                     "description": {
                         "description": "Free text description of the data set. Example: Scientific climate change report by the UN",
@@ -256,7 +306,10 @@
                         "description": "URL to original source. Example: https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_full.pdf",
                         "type": "string",
                         "title": "Path",
-                        "format": "uri"
+                        "format": "uri",
+                        "examples": [
+                            "https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_full.pdf"
+                        ]
                     },
                     "licenses": {
                         "description": "The license(s) under which the source(s) is/are provided. List of objects.",
@@ -270,24 +323,18 @@
                                     "type": "string",
                                     "title": "Name",
                                     "examples": [
-                                        "ODbL-1.0"
+                                        "CC-BY-4.0"
                                     ]
                                 },
                                 "title": {
                                     "description": "Official (human readable) title. Example: Open Data Commons Open Database License 1.0",
                                     "type": "string",
-                                    "title": "Title",
-                                    "examples": [
-                                        "Open Data Commons Open Database License 1.0"
-                                    ]
+                                    "title": "Title"
                                 },
                                 "path": {
                                     "description": "A link to the license. Example: https://opendatacommons.org/licenses/odbl/1-0/index.html",
                                     "type": "string",
-                                    "title": "Path",
-                                    "examples": [
-                                        "https://opendatacommons.org/licenses/odbl/1-0/index.html"
-                                    ]
+                                    "title": "Path"
                                 },
                                 "instruction": {
                                     "description": "Short description of rights and restrictions. Example: You are free to share and change, but you must attribute, and share derivations under the same license.",
@@ -320,17 +367,26 @@
                     "name": {
                         "description": "SPDX identifier. Example: ODbL-1.0",
                         "type": "string",
-                        "title": "Name"
+                        "title": "Name",
+                        "examples": [
+                            "ODbL-1.0"
+                        ]
                     },
                     "title": {
                         "description": "Official (human readable) title. Example: Open Data Commons Open Database License 1.0",
                         "type": "string",
-                        "title": "Title"
+                        "title": "Title",
+                        "examples": [
+                            "Open Data Commons Open Database License 1.0"
+                        ]
                     },
                     "path": {
                         "description": "A url-or-path string, that is a fully qualified HTTP address, or a relative POSIX path (see the url-or-path definition in Data Resource for details). Example: https://opendatacommons.org/licenses/odbl/1-0/index.html",
                         "type": "string",
-                        "title": "Path"
+                        "title": "Path",
+                        "examples": [
+                            "https://opendatacommons.org/licenses/odbl/1-0/index.html"
+                        ]
                     },
                     "instruction": {
                         "description": "Short description of rights and restrictions. Example: You are free to share and change, but you must attribute, and share derivations under the same license.",
@@ -340,7 +396,10 @@
                     "attribution": {
                         "description": "Copyrightholder of the produced data set. Example: © Reiner Lemoine Institut",
                         "type": "string",
-                        "title": "Attribution"
+                        "title": "Attribution",
+                        "examples": [
+                            "© Reiner Lemoine Institut"
+                        ]
                     }
                 },
                 "additionalProperties": false,
@@ -358,19 +417,28 @@
                     "title": {
                         "description": "Name/title of the contributor (name for a person, name or title for an organization). Example: Jon Doe",
                         "type": "string",
-                        "title": "Title"
+                        "title": "Title",
+                        "examples": [
+                            "Jon Doe"
+                        ]
                     },
                     "email": {
                         "description": "E-mail address of the contributor. Example: contact@example.com",
                         "type": "string",
                         "title": "Email",
-                        "format": "email"
+                        "format": "email",
+                        "examples": [
+                            "example@example.org"
+                        ]
                     },
                     "date": {
                         "description": "Date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601. Example: 2016-06-16",
                         "type": "string",
                         "title": "Date",
-                        "format": "date"
+                        "format": "date",
+                        "examples": [
+                            "2023-03-12"
+                        ]
                     },
                     "object": {
                         "description": "Target of contribution. Which part of the package was supplied/changed. Example: Metadata",
@@ -405,6 +473,9 @@
                                 "title": "Name",
                                 "maxLength": 50,
                                 "pattern": "[a-z][a-z0-9_]*",
+                                "examples": [
+                                    "id"
+                                ],
                                 "readonly": true
                             },
                             "description": {
@@ -417,8 +488,8 @@
                                 "type": "string",
                                 "title": "Type",
                                 "examples": [
-                                    "string",
                                     "integer",
+                                    "string",
                                     "number"
                                 ],
                                 "readonly": true
@@ -483,7 +554,8 @@
                         "additionalProperties": false,
                         "title": "Field"
                     },
-                    "title": "Field"
+                    "title": "Field",
+                    "minItems": 1
                 },
                 "primaryKey": {
                     "description": "A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns. Example: id",
@@ -571,7 +643,8 @@
                     "description": "Type and version number of the metadata",
                     "type": "string",
                     "title": "Metadata version",
-                    "const": "OEP-2.0.0-draft"
+                    "const": "OEP-2.0.0-draft",
+                    "readonly": true
                 },
                 "metadataLicense": {
                     "description": "Object describing the license of the provided metadata.",
