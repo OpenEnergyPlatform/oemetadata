@@ -31,6 +31,15 @@ Here is a template for new release sections
 
 ### Added
 
+### Changed
+
+### Removed
+-
+
+## [1.6.0] - Release - Introduce badges in json schema - 2023-05-30
+
+### Added
+
 - Add badge for all fields [PR#117]
 - Add CITATION.cff with list of authors [(#111)](https://github.com/OpenEnergyPlatform/oemetadata/pull/111)
 
