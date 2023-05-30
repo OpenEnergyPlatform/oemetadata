@@ -1,7 +1,7 @@
 {
-    "name": "oep_metadata_table_example_v152",
-    "title": "Example title for metadata example - Version 1.5.2",
-    "id": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v152",
+    "name": "oep_metadata_table_example_v160",
+    "title": "Example title for metadata example - Version 1.6.0",
+    "id": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v160",
     "description": "This is an metadata example for example data. There is a corresponding table on the OEP for each metadata version.",
     "language": [
         "en-GB",
@@ -225,13 +225,20 @@
             "date": "2022-11-18",
             "object": "metadata",
             "comment": "Release metadata version OEP-1.5.2"
+        },
+        {
+            "title": "christian-rli",
+            "email": null,
+            "date": "2023-05-30",
+            "object": "metadata",
+            "comment": "Release metadata version OEP-1.6.0"
         }
     ],
     "resources": [
         {
             "profile": "tabular-data-resource",
-            "name": "model_draft.oep_metadata_table_example_v152",
-            "path": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v152",
+            "name": "model_draft.oep_metadata_table_example_v160",
+            "path": "http://openenergyplatform.org/dataedit/view/model_draft/oep_metadata_table_example_v160",
             "format": "PostgreSQL",
             "encoding": "UTF-8",
             "schema": {
@@ -386,7 +393,7 @@
         "badge": "Platinum"
     },
     "metaMetadata": {
-        "metadataVersion": "OEP-1.5.2",
+        "metadataVersion": "OEP-1.6.0",
         "metadataLicense": {
             "name": "CC0-1.0",
             "title": "Creative Commons Zero v1.0 Universal",

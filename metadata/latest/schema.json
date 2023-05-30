@@ -16,7 +16,7 @@
         },
         "name": {
             "description": "File name or database table name",
-            "example": "oep_metadata_table_example_v15",
+            "example": "oep_metadata_table_example_v160",
             "type": [
                 "string",
                 "null"
@@ -976,7 +976,7 @@
             "properties": {
                 "metadataVersion": {
                     "description": "Type and version number of the metadata.",
-                    "example": "OEM-1.5",
+                    "example": "OEM-1.6.0",
                     "type": [
                         "string",
                         "null"
