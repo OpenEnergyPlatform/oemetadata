@@ -46,7 +46,7 @@ Documentation
 | The documentation is created with Markdown using `MkDocs <https://www.mkdocs.org/>`_.
 | All files are stored in the ``docs`` folder of the repository.
 | A **GitHub Actions** deploys the ``production`` branch on a **GitHub Page**.
-| The documentation page is `rl-institut.github.io/super-repo/ <https://rl-institut.github.io/super-repo/>`_
+| The documentation page is `openenergyplatform.github.io/oemetadata/ <https://openenergyplatform.github.io/oemetadata/>`_
 
 Collaboration
 =============
