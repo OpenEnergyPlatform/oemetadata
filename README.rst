@@ -36,6 +36,7 @@ Introduction
 | The metadata contains multiple fields (keys) in a nested JSON structure.
 
 You can find the latest version right here:
+
 - `template.json <./metadata/latest/template.json>`_ contains an empty metadata string
 - `metadata_key_description.md <./metadata/latest/metadata_key_description.md>`_ contains a description of each metadata key
 - `example.json <./metadata/latest/example.json>`_ contains a basic metadata example
