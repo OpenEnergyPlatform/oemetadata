@@ -1,7 +1,7 @@
 # OEMetadata - Key Description
 
-This pages describes the key of **OEMetadata version 1.5.2 .** <br>
-You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v151/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v151/example.json) of the metadata string.
+This pages describes the keys of **OEMetadata version 1.6.0**. <br>
+You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v160/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v160/example.json) of the metadata string.
 
 
 ## JSON Format
@@ -34,18 +34,18 @@ The JSON format offers different formats: <br>
 
 
 ### General Keys
-|#|Key |Description |Example |
-|---|---|---|---|
-| 1 | name | A file name or database table name. | oep_metadata_table_example_v15 |
-| 2 | title | A human readable full title including author. | RLI - OEMetadata - Metadata example table |
-| 3 | id | An Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI). | https://example.com |
+|#|Key |Description | Example                                                              |
+|---|---|---|----------------------------------------------------------------------|
+| 1 | name | A file name or database table name. | oep_metadata_table_example_v160                                      |
+| 2 | title | A human readable full title including author. | OEMetadata - Metadata example table                                  |
+| 3 | id | An Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI). | https://example.com                                                  |
 | 4 | description | A description or abstract of the package. It should be usable as summary information for the entire package that is described by the metadata. | Example table used to illustrate the metadata structure and meaning. |
-| 5 | language | An array of languages used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47) | en-GB, de-DE, fr-FR |
+| 5 | language | An array of languages used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47) | en-GB, de-DE, fr-FR                                                  |
 | 6 | **subject** | An array of objects with topics of the data in OEO terms. |
-| 6.1 | name | The class label of the OEO terms. | energy |
-| 6.2 | path | The URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000150 |
-| 7 | keywords | An array of keywords to assist users searching for the package in catalogs. | example, template, test |
-| 8 | publicationDate | A date of publishing of the data or metadata. Date format is ISO 8601 (YYYY-MM-DD). | 2019-02-06 |
+| 6.1 | name | The class label of the OEO terms. | energy                                                               |
+| 6.2 | path | The URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000150            |
+| 7 | keywords | An array of keywords to assist users searching for the package in catalogs. | example, template, test                                              |
+| 8 | publicationDate | A date of publishing of the data or metadata. Date format is ISO 8601 (YYYY-MM-DD). | 2019-02-06                                                           |
 
 ### Context Keys
 |#|Key |Description |Example |
