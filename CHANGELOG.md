@@ -48,7 +48,7 @@ Here is a template for new release sections
 ### Changed
 - Separate examples from description and put into its own key-value pair [(PR#117)](https://github.com/OpenEnergyPlatform/oemetadata/pull/117)
 - Add issue and PR templates [(#116)](https://github.com/OpenEnergyPlatform/oemetadata/pull/116)
-- Update context field [PR#114]
+- Update context field [(PR#114)](https://github.com/OpenEnergyPlatform/oemetadata/pull/114)
 
 
 ## [1.5.2] - Release - Fix Repo and Package - 2022-11-18
