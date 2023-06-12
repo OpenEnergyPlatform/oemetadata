@@ -30,36 +30,36 @@ Here is a template for new release sections
 ## Current
 
 ### Added
+-
 
 ### Changed
+-
 
 ### Removed
 -
 
-## [1.6.0] - Release - Introduce badges in json schema - 2023-05-30
+## [1.6.0] - Release - Introduce badges - 2023-05-30
 
 ### Added
 
-- Add badge for all fields [PR#117]
+- Add badge for all fields [PR#117](https://github.com/OpenEnergyPlatform/oemetadata/pull/117)
 - Add CITATION.cff with list of authors [(#111)](https://github.com/OpenEnergyPlatform/oemetadata/pull/111)
 
 ### Changed
-- Separate examples from descripton and put into its own key-value pair [PR#117]
+- Separate examples from description and put into its own key-value pair [(PR#117)](https://github.com/OpenEnergyPlatform/oemetadata/pull/117)
 - Add issue and PR templates [(#116)](https://github.com/OpenEnergyPlatform/oemetadata/pull/116)
 - Update context field [PR#114]
 
-### Removed
--
 
-## [1.5.2] - Release - Fix missing json files in pypi package, Improve context.jsonld - 2022-11-18
-
-- Fix missing json files in pypi oemetadata package
-- Add github actions/workflwos to automate package build and upload process on test and production pypi index
+## [1.5.2] - Release - Fix Repo and Package - 2022-11-18
 
 ### Added
+- Add GitHub actions to automate package build and upload process on test and production pypi index
 
 ### Changed
-- Update context.json in latest & v151 to ensure ontologically annotated metadata can be sparqled #99
+- Fix missing json files in pypi oemetadata package
+- Update context.json in latest & v151 to ensure ontologically annotated metadata can be sparkled #99
+
 
 ## [1.5.1] - Release - Ontology-Ready - 2022-02-21
 
@@ -79,6 +79,7 @@ Here is a template for new release sections
 - Update CHANGELOG.md and give names to releases
 - Update CONTRIBUTING.md
 
+
 ## [1.5.0] - Release - Get Some Semantics - 2021-11-18
 
 ### Added
@@ -97,6 +98,7 @@ Here is a template for new release sections
 ### Removed
 - Delete future directory
 
+
 ## [1.4.1] Minor Release - Repo Upgrade - 2021-01-18
 
 ### Added
@@ -107,6 +109,7 @@ Here is a template for new release sections
 
 ### Changed
 - Rename repository from "metadata" to "oemetadata"
+
 
 ## [1.4.0] Release - It'll be a standard - 2021-01-11
 
@@ -128,6 +131,7 @@ Here is a template for new release sections
 ### Changed
 - Rename ``url`` to ``path`` according to datapackage standard
 
+
 ## [1.0.1] Initial Release - Hello OEMetadata - 2019-11-07
 
 ### Added
@@ -137,4 +141,3 @@ Here is a template for new release sections
 - Python implementation and tests for schema, example, template of v1.3.0
 - Python implementation and tests for schema, example, template of v1.4.0
 - Implementation of metaschema (draft07) and test of metaschema
-
