@@ -1,4 +1,9 @@
-[![Automated tests](https://github.com/OpenEnergyPlatform/oemetadata/actions/workflows/metadata-test.yml/badge.svg)](https://github.com/OpenEnergyPlatform/oemetadata/actions/workflows/metadata-test.yml)
+| Workflow                                       | Badge                                                                                                      |
+| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Automated tests                                | [![Automated tests](https://github.com/OpenEnergyPlatform/oemetadata/actions/workflows/metadata-test.yml/badge.svg)](https://github.com/OpenEnergyPlatform/oemetadata/actions/workflows/metadata-test.yml) |
+| PyPI Publish                                   | [![](https://github.com/OpenEnergyPlatform/oemetadata/actions/workflows/pypi-publish.yml/badge.svg)](https://pypi.org/project/oemetadata/) |
+| Docs                                           | [![Docs](https://github.com/OpenEnergyPlatform/oemetadata/actions/workflows/pages/pages-build-deployment/badge.svg)](https://openenergyplatform.github.io/oemetadata/) |
+
 
 <a href="https://github.com/OpenEnergyPlatform/oemetadata/"><img align="right" width="100" height="100" src="https://raw.githubusercontent.com/OpenEnergyPlatform/organisation/master/logo/OpenEnergyFamily_Logo_OEMetadata.png" alt="OpenEnergyMetadata"></a>
 <a href="https://openenergy-platform.org/"><img align="right" width="100" height="100" src="https://avatars2.githubusercontent.com/u/37101913?s=400&u=9b593cfdb6048a05ea6e72d333169a65e7c922be&v=4" alt="OpenEnergyPlatform"></a>
