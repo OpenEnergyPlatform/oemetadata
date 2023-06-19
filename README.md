@@ -10,9 +10,9 @@ It is an extensive set of metadata based on the tabular data package specificati
 The metadata contains multiple fields (keys) in a nested JSON structure.
 
 You can find the latest version right here:
-* [template.json](./metadata/latest/template.json) contains an empty metadata string
-* [metadata_key_description.md](./metadata/latest/metadata_key_description.md) contains a description of each metadata key
-* [example.json](./metadata/latest/example.json) contains a basic metadata example
+* [template.json](https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/metadata/latest/template.json) contains an empty metadata string
+* [metadata_key_description.md](https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/metadata/latest/metadata_key_description.md) contains a description of each metadata key
+* [example.json](https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/metadata/latest/example.json) contains a basic metadata example
 
 
 ## License / Copyright
@@ -47,14 +47,31 @@ print(OEMETADATA_LATEST_TEMPLATE)
 
 ## Contributing
 
-For further contributing infos and conventions see: [CONTRIBUTING.md](./CONTRIBUTING.md)
+For further contributing infos and conventions see: [CONTRIBUTING.md](https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/CONTRIBUTING.md)
 
 ## Release a new version
-See the complete instructions in the [RELEASE_PROCEDURE](./RELEASE_PROCEDURE.md).
+See the complete instructions in the [RELEASE_PROCEDURE](https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/RELEASE_PROCEDURE.md).
 
 ### Make PyPI release:
 
-First bump version in setup.py, then:
+1. Update the version in the setup.py file to reflect the new version number.
+2. Follow these steps to utilize the release automation workflow:
+
+Testing Stage:
+
+- Create a new branch named "release/branch-name" to test your changes.
+- Make sure all your changes are included in a single commit (until a more efficient workflow is determined).
+- The release automation workflow is automatically exceuted, which will attempt to upload the package to the test.PyPI repository.
+- If the upload is successful, the workflow will fail on subsequent attempts (as it should only be uploaded once successfully).
+
+Deployment Stage:
+
+- Merge the release branch into the "master" or "main" branch, depending on your repository's default branch.
+- Publish a release on GitHub, documenting the changes made in this version.
+- This action will trigger the automated workflow to release the new version to the official PyPI repository.
+
+
+Manual steps are:
 
 ```
 python3 setup.py sdist bdist_wheel
