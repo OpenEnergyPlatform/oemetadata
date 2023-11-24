@@ -52,6 +52,11 @@
 Open Energy Family - Open Energy Metadata (OEMetadata)
 ======================================================
 
+.. contents::
+    :depth: 2
+    :local:
+    :backlinks: top
+
 Open Energy Metadata (OEMetadata) is an energy metadata standard including a template, examples and a metadata schema. It is an extensive set of metadata based on the tabular data package specifications and the FAIR principles. The metadata contains multiple fields (keys) in a nested JSON structure.
 
 You can find the latest version right here:
