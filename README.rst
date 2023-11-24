@@ -1,9 +1,8 @@
-.. image:: https://raw.githubusercontent.com/OpenEnergyPlatform/organisation/master/logo/OpenEnergyFamily_Logo_OEMetadata.png
-   :align: right
-   :width: 100
-   :height: 100
-   :alt: OpenEnergyMetadata
-   :target: https://github.com/OpenEnergyPlatform/oemetadata/
+
+.. figure:: https://user-images.githubusercontent.com/14353512/185425447-85dbcde9-f3a2-4f06-a2db-0dee43af2f5f.png
+    :align: left
+    :target: https://github.com/rl-institut/super-repo/
+    :alt: Repo logo
 
 .. list-table::
    :widths: 50 50
@@ -60,6 +59,12 @@
 .. |badge_pr_closes| image:: https://img.shields.io/github/issues-pr-closed-raw/OpenEnergyPlatform/oemetadata
     :alt: closes issues
 
+.. image:: https://raw.githubusercontent.com/OpenEnergyPlatform/organisation/master/logo/OpenEnergyFamily_Logo_OEMetadata.png
+   :align: right
+   :width: 100
+   :height: 100
+   :alt: OpenEnergyMetadata
+   :target: https://github.com/OpenEnergyPlatform/oemetadata/
 
 .. image:: https://avatars2.githubusercontent.com/u/37101913?s=400&u=9b593cfdb6048a05ea6e72d333169a65e7c922be&v=4
    :align: right
