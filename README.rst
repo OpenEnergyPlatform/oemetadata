@@ -22,6 +22,10 @@
    * - Community
      - |badge_contributing| |badge_contributors| |badge_repo_counts|
 
+.. |badge_license| image:: https://img.shields.io/github/license/OpenEnergyPlatform/oemetadata
+    :target: LICENSE.txt
+    :alt: License
+
 .. |Automated tests| image:: https://github.com/OpenEnergyPlatform/oemetadata/actions/workflows/metadata-test.yml/badge.svg
    :target: https://github.com/OpenEnergyPlatform/oemetadata/actions/workflows/metadata-test.yml
    :alt: Automated tests
@@ -33,6 +37,27 @@
 .. |Docs| image:: https://github.com/OpenEnergyPlatform/oemetadata/actions/workflows/pages/pages-build-deployment/badge.svg
    :target: https://openenergyplatform.github.io/oemetadata/
    :alt: Docs
+
+.. |badge_contributing| image:: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat
+    :alt: contributions
+
+.. |badge_repo_counts| image:: http://hits.dwyl.com/OpenEnergyPlatform/oemetadata.svg
+    :alt: counter
+
+.. |badge_contributors| image:: https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square
+    :alt: contributors
+
+.. |badge_issue_open| image:: https://img.shields.io/github/issues-raw/OpenEnergyPlatform/oemetadata
+    :alt: open issues
+
+.. |badge_issue_closes| image:: https://img.shields.io/github/issues-closed-raw/OpenEnergyPlatform/oemetadata
+    :alt: closes issues
+
+.. |badge_pr_open| image:: https://img.shields.io/github/issues-pr-raw/OpenEnergyPlatform/oemetadata
+    :alt: closes issues
+
+.. |badge_pr_closes| image:: https://img.shields.io/github/issues-pr-closed-raw/OpenEnergyPlatform/oemetadata
+    :alt: closes issues
 
 .. image:: https://raw.githubusercontent.com/OpenEnergyPlatform/organisation/master/logo/OpenEnergyFamily_Logo_OEMetadata.png
    :align: right
