@@ -12,7 +12,7 @@
    * - Workflow
      - Badge
    * - Automated tests
-     - `|Automated tests|`
+     - |Automated tests|
    * - PyPI Publish
      - `|PyPI Publish|`
    * - Docs
