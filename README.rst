@@ -14,9 +14,9 @@
    * - Automated tests
      - |Automated tests|
    * - PyPI Publish
-     - `|PyPI Publish|`
+     - |PyPI Publish|
    * - Docs
-     - `|Docs|`
+     - |Docs|
    * - Development
      - |badge_issue_open| |badge_issue_closes| |badge_pr_open| |badge_pr_closes|
    * - Community
