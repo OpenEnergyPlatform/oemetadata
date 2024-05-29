@@ -1,6 +1,6 @@
 {
     "name": null,
-    "ressources": [
+    "resources": [
         {
             "name": null,
             "dialect": {
@@ -174,7 +174,7 @@
                 "badge": null
             },
             "metaMetadata": {
-                "metadataVersion": "OEP-1.5.2",
+                "metadataVersion": "2.0.0",
                 "metadataLicense": {
                     "name": "CC0-1.0",
                     "title": "Creative Commons Zero v1.0 Universal",

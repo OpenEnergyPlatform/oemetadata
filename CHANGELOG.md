@@ -30,9 +30,24 @@ Here is a template for new release sections
 ## Current
 
 ### Added
-- Add CITATION.cff with list of authors [(#111)](https://github.com/OpenEnergyPlatform/oemetadata/pull/111)
+
 ### Changed
+
+### Removed
+-
+
+## [1.6.0] - Release - Introduce badges in json schema - 2023-05-30
+
+### Added
+
+- Add badge for all fields [PR#117]
+- Add CITATION.cff with list of authors [(#111)](https://github.com/OpenEnergyPlatform/oemetadata/pull/111)
+
+### Changed
+- Separate examples from descripton and put into its own key-value pair [PR#117]
+- Add issue and PR templates [(#116)](https://github.com/OpenEnergyPlatform/oemetadata/pull/116)
 - Update context field [PR#114]
+
 ### Removed
 -
 
