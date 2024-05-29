@@ -66,7 +66,7 @@ Testing Stage:
 
 - Create a new branch named "release/branch-name" to test your changes.
 - Make sure all your changes are included in a single commit (until a more efficient workflow is determined).
-- The release automation workflow is automatically exceuted, which will attempt to upload the package to the test.PyPI repository.
+- The release automation workflow is automatically executed, which will attempt to upload the package to the test.PyPI repository.
 - If the upload is successful, the workflow will fail on subsequent attempts (as it should only be uploaded once successfully).
 
 Deployment Stage:
