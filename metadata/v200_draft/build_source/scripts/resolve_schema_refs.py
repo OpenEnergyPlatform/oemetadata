@@ -38,10 +38,10 @@ logger = logging.getLogger(__name__)
 BASE_PATH = Path("metadata/")
 VERSION = "v200_draft"
 VERSION_PATH = BASE_PATH / VERSION
-SCHEMA_BUILD_PATH = VERSION_PATH / "build"
-MAIN_SCHEMA_PATH = SCHEMA_BUILD_PATH / "main_schema.json"
+SCHEMA_BUILD_PATH = VERSION_PATH / "build_source"
+MAIN_SCHEMA_PATH = SCHEMA_BUILD_PATH / "schema_structure.json"
 SCHEMA_REFS = SCHEMA_BUILD_PATH / "schemas"
-RESOLVED_SCHEMA_FILE_NAME = VERSION_PATH / "res_schema.json"
+RESOLVED_SCHEMA_FILE_NAME = VERSION_PATH / "schema.json"
 EXPECTED_SCHEMA_PATH = VERSION_PATH / "schema.json"
 
 
@@ -55,7 +55,7 @@ def setup():
 
 # Load the main schema
 def load_schema(schema_path):
-    with open(schema_path, "r") as file:
+    with open(schema_path, "r", encoding="utf-8") as file:
         return json.load(file)
 
 
@@ -112,7 +112,9 @@ def resolve_and_merge(schema_path, debug):
                         print(
                             f"Resolved reference {ref_uri} to {ref_schema.contents}"
                         )  # Debugging
-                    return resolve_references(ref_schema.contents, registry, base_uri)
+                    return ref_schema.contents[
+                        "properties"
+                    ]  # Return only the properties
                 except KeyError as e:
                     raise ValueError(f"Reference {ref_uri} could not be resolved: {e}")
             else:
@@ -125,16 +127,20 @@ def resolve_and_merge(schema_path, debug):
         return schema
 
     # Resolve the top-level properties
-    resolved_properties = {}
-    for prop, value in schema["properties"].items():
-        if "$ref" in value:
-            resolved_value = resolve_references(value, registry, base_uri)
-            resolved_properties.update(resolved_value["properties"])
-        else:
-            resolved_properties[prop] = resolve_references(value, registry, base_uri)
+    def resolve_top_level_properties(schema, registry, base_uri):
+        resolved_properties = {}
+        for prop, value in schema["properties"].items():
+            if isinstance(value, dict) and "properties" in value:
+                resolved_value = resolve_references(
+                    value["properties"], registry, base_uri
+                )
+                resolved_properties[prop] = resolved_value
+            else:
+                resolved_value = resolve_references(value, registry, base_uri)
+                resolved_properties[prop] = resolved_value
+        return resolved_properties
 
-    # Replace the properties in the schema with the resolved properties
-    schema["properties"] = resolved_properties
+    schema["properties"] = resolve_top_level_properties(schema, registry, base_uri)
     return schema
 
 
@@ -164,7 +170,7 @@ def main(debug):
         resolved_schema = resolve_and_merge(MAIN_SCHEMA_PATH, debug)
 
         # Save the resolved schema to a new file
-        with open(RESOLVED_SCHEMA_FILE_NAME, "w") as output_file:
+        with open(RESOLVED_SCHEMA_FILE_NAME, "w", encoding="utf-8") as output_file:
             json.dump(resolved_schema, output_file, indent=2)
 
         # Load the expected schema and validate
