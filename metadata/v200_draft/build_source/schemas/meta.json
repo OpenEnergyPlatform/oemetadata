@@ -1,0 +1,67 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "general.json#metadata/v200_draft/schemas/meta.json",
+    "type": "object",
+    "properties": {
+        "metaMetadata": {
+            "description": "Object. Description about the metadata themselves, their format, version and license. These fields should already be provided when you’re filling out your metadata.",
+            "type": "object",
+            "properties": {
+                "metadataVersion": {
+                    "description": "Type and version number of the metadata.",
+                    "example": "OEM-2.0.0",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": null,
+                    "title": "Metadata version"
+                },
+                "metadataLicense": {
+                    "description": "Object describing the license of the provided metadata.",
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "description": "SPDX identifier",
+                            "example": "CC0-1.0",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "badge": null,
+                            "title": "Name"
+                        },
+                        "title": {
+                            "description": "Official (human readable) license title.",
+                            "example": "Creative Commons Zero v1.0 Universal",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "badge": null,
+                            "title": "Title"
+                        },
+                        "path": {
+                            "description": "Url or path string, that is a fully qualified HTTP address.",
+                            "example": "https://creativecommons.org/publicdomain/zero/1.0",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "badge": null,
+                            "title": "Path"
+                        }
+                    },
+                    "badge": null,
+                    "title": "Metadata license",
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false,
+            "title": "Meta Metadata",
+            "options": {
+                "hidden": true
+            }
+        }
+    }
+}
