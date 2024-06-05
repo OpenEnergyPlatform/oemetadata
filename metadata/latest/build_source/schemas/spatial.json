@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "general.json#metadata/v200_draft/schemas/spatial.json",
+    "type": "object",
+    "properties": {
+        "spatial": {
+            "description": "An object that describes the spatial context of the data it contains.",
+            "type": "object",
+            "properties": {
+                "location": {
+                    "description": "A location of the data. In case of data where the location can be described as a point. May be specified as coordinates, URI or addresses with street, house number and zip code.",
+                    "example": "52.433509, 13.535855",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Silver",
+                    "title": "Location"
+                },
+                "extent": {
+                    "description": "A covered area. May be the name of a region, or the geometry of a bounding box.",
+                    "example": "Europe",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Silver",
+                    "title": "Extent"
+                },
+                "resolution": {
+                    "description": "Pixel size in case of a regular raster image. Reference to administrative level or other spatial division that is present as the smallest spatially distinguished unit size.",
+                    "example": "3 m",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Silver",
+                    "title": "Resolution"
+                }
+            },
+            "badge": "Silver",
+            "title": "Spatial",
+            "additionalProperties": false
+        }
+    }
+}
