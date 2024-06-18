@@ -78,15 +78,19 @@
           "attribution": "© Reiner Lemoine Institut"
         }
       ],
-      "contributors": [
-        {
-          "title": "John Doe",
-          "email": "contact@example.com",
-          "date": "2016-06-16",
-          "object": "data and metadata",
-          "comment": "Fix typo in the title."
-        }
-      ],
+      "trace": {
+        "contributors": [
+          {
+            "title": "John Doe",
+            "email": "contact@example.com",
+            "date": "2016-06-16",
+            "object": "data and metadata",
+            "comment": "Fix typo in the title."
+          }
+        ],
+        "wasGeneratedBy": "",
+        "": ""
+      },
       "resource": {
         "profile": "tabular-data-resource",
         "name": "sandbox.example_table",
