@@ -79,6 +79,22 @@
         }
       ],
       "trace": {
+        "alternateOf": "",
+        "checksum": "",
+        "dateModified": "",
+        "digtalObjectLocationAccessProtocol": "",
+        "digitalObjectType": "",
+        "hadPrimarySource": "",
+        "hasMetadata": "",
+        "isMetadataFor": "",
+        "policy": "",
+        "provenanceGraph": "",
+        "specializationOf": "",
+        "version": "",
+        "wasDerivedFrom": "",
+        "wasGeneratedBy": "",
+        "wasRevisionOf": "",
+        "wasQuotedFrom": "",
         "contributors": [
           {
             "title": "John Doe",
@@ -87,9 +103,7 @@
             "object": "data and metadata",
             "comment": "Fix typo in the title."
           }
-        ],
-        "wasGeneratedBy": "",
-        "": ""
+        ]
       },
       "resource": {
         "profile": "tabular-data-resource",
