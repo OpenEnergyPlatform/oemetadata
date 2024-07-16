@@ -145,8 +145,10 @@ def resolve_and_merge(schema_path, debug):
                         resolved_value = resolve_references(value, registry, base_uri)
                         resources = {}
                         for _k, _v in resolved_value["items"].items():
-                            resources.update(_v)
-                        resolved_properties[prop] = resources
+                            if isinstance(_v, dict):
+                                resources.update(_v)
+                        resolved_properties[prop] = resolved_value
+                        resolved_properties[prop]["items"] = resources
 
                     else:
                         resolved_properties[prop] = resolved_value
