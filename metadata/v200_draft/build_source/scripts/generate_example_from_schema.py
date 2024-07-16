@@ -18,6 +18,8 @@ import sys
 import json
 import logging
 
+from typing import Any, Dict, Union, List
+
 # from datetime import datetime
 from pathlib import Path
 
@@ -37,74 +39,87 @@ MAIN_SCHEMA_PATH = SCHEMA_BUILD_PATH / "schema_structure.json"
 SCHEMA_REFS = SCHEMA_BUILD_PATH / "schemas"
 RESOLVED_SCHEMA_FILE_NAME = VERSION_PATH / "schema.json"
 EXPECTED_SCHEMA_PATH = VERSION_PATH / "schema.json"
-EXAMPLE_PATH = VERSION_PATH / "resolved_example.json"
+EXAMPLE_PATH = VERSION_PATH / "example.json"
 
 
-def generate_example(schema):
-    if isinstance(schema, bool):
-        return {} if schema else None
+def read_schema(filename: str) -> Dict[str, Any]:
+    """Read a JSON schema from a file.
 
-    if "type" not in schema and "properties" not in schema and "items" not in schema:
-        return None
+    Args:
+        filename (str): The path to the JSON schema file.
 
-    schema_type = schema.get("type")
+    Returns:
+        Dict[str, Any]: The JSON schema as a dictionary.
+    """
+    pwd = dirname(__file__)
+    with open(pwd + filename, "r", encoding="utf-8") as file:
+        schema = json.load(file)
+    return schema
 
+
+def generate_example(
+    schema: Dict[str, Any]
+) -> Union[Dict[str, Any], List[Any], str, None]:
+    """Generate a JSON object from the schema using the example values provided.
+
+    Args:
+        schema (Dict[str, Any]): The JSON schema.
+
+    Returns:
+        Union[Dict[str, Any], List[Any], str, None]: A JSON object generated from the schema.
+    """
+    if "example" in schema:
+        return schema["example"]
+
+    schema_type = schema.get("type", None)
     if isinstance(schema_type, list):
         schema_type = schema_type[0]
 
-    if "example" in schema:
-        example = schema["example"]
-        # Convert example string to actual type if necessary
-        if schema_type == "array" and isinstance(example, str):
-            try:
-                example = json.loads(example.replace("'", '"'))
-            except json.JSONDecodeError:
-                pass
-        return example
-
-    if schema_type == "object" or "properties" in schema:
-        example = {}
+    if schema_type == "object":
+        example_object = {}
         properties = schema.get("properties", {})
-        for prop, prop_schema in properties.items():
-            example[prop] = generate_example(prop_schema)
-        additional_properties = schema.get("additionalProperties", True)
-        if isinstance(additional_properties, dict):
-            example["additional_property"] = generate_example(additional_properties)
-        return example
+        for key, value in properties.items():
+            example_object[key] = generate_example(value)
+        return example_object
 
-    if schema_type == "array":
-        item_schema = schema.get("items", {})
-        return [generate_example(item_schema)]
+    elif schema_type == "array":
+        items = schema.get("items", {})
+        return [generate_example(items)]
 
-    if schema_type == "string":
+    elif schema_type == "string":
         return ""
 
-    if schema_type == "number":
-        return 0
-
-    if schema_type == "integer":
-        return 0
-
-    if schema_type == "boolean":
-        return False
+    elif schema_type == "null":
+        return None
 
     return None
 
 
-def main():
-    schema_file_path = RESOLVED_SCHEMA_FILE_NAME
+def generate_json_from_schema(schema_file: str) -> Dict[str, Any]:
+    """Generate a JSON object that conforms to the schema read from a file.
 
-    with open(schema_file_path, "r",  encoding="utf-8") as schema_file:
-        schema = json.load(schema_file)
+    Args:
+        schema_file (str): The path to the JSON schema file.
 
-    example = generate_example(schema)
+    Returns:
+        Dict[str, Any]: A JSON object generated from the schema.
+    """
+    schema = read_schema(schema_file)
+    return generate_example(schema)
 
-    example_file_path = EXAMPLE_PATH
-    with open(example_file_path, "w",  encoding="utf-8") as example_file:
-        json.dump(example, example_file, indent=2, ensure_ascii=False)
 
-    print(f"Example JSON generated and saved to {example_file_path}")
+def save_json(data: Dict[str, Any], filename: Path) -> None:
+    """Save the given data as a JSON file.
+
+    Args:
+        data (Dict[str, Any]): The JSON data to be saved.
+        filename (str): The filename where the JSON data will be saved.
+    """
+    with open(filename, "w", encoding="utf-8") as file:
+        json.dump(data, file, ensure_ascii=False, indent=4)
 
 
 if __name__ == "__main__":
-    main()
+    schema_filename = "/res_schema.json"
+    json_data = generate_json_from_schema(schema_filename)
+    save_json(json_data, EXAMPLE_PATH)
