@@ -137,13 +137,39 @@ def resolve_and_merge(schema_path, debug):
                 resolved_properties[prop] = resolved_value
             else:
                 resolved_value = resolve_references(value, registry, base_uri)
-                resolved_properties[prop] = resolved_value
+                for i, v in resolved_value.items():
+                    if isinstance(v, dict) and i != "items":
+                        resolved_properties[i] = v
+
+                    elif prop == "resources":
+                        resolved_value = resolve_references(value, registry, base_uri)
+                        resources = {}
+                        for _k, _v in resolved_value["items"].items():
+                            resources.update(_v)
+                        resolved_properties[prop] = resources
+
+                    else:
+                        resolved_properties[prop] = resolved_value
         return resolved_properties
 
     schema["properties"] = resolve_top_level_properties(schema, registry, base_uri)
     return schema
 
 
+#  if isinstance(value, dict) and "properties" in value:
+#     resolved_value = resolve_references(
+#         value["properties"], registry, base_uri
+#     )
+#     resolved_properties[prop] = resolved_value
+# elif prop == "resources":
+#     resolved_value = resolve_references(value, registry, base_uri)
+#     for k,v in resolved_value["items"].items():
+#         resolved_properties.update(v)
+
+
+# else:
+#     resolved_value = resolve_references(value, registry, base_uri)
+#     resolved_properties[prop] = resolved_value
 # Validate the schema
 def validate_schema(resolved_schema, expected_schema):
     validator = Draft7Validator(expected_schema)

@@ -28,6 +28,8 @@ def generate_example(schema: dict) -> dict:
         dict: example object
     """
 
+    schema = schema
+
     if schema.get("const"):
         return schema["const"]
     if schema.get("examples"):
@@ -55,4 +57,4 @@ def generate_example(schema: dict) -> dict:
 
 if __name__ == "__main__":
     pwd = dirname(__file__)
-    main(pwd + "/schema.json", pwd + "/example.json")
+    main(pwd + "/demo_gen_schema.json", pwd + "/example.json")
