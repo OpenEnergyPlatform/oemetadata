@@ -1,0 +1,100 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "general.json#metadata/v200_draft/schemas/context.json",
+    "type": "object",
+    "properties": {
+        "context": {
+            "description": "An Object that describes the general setting, environment or project leading to the creation or maintenance of this dataset. In science this can be the research project.",
+            "type": "object",
+            "properties": {
+                "homepage": {
+                    "description": "URL of project.",
+                    "example": "https://openenergy-platform.org/",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Homepage",
+                    "format": "uri"
+                },
+                "documentation": {
+                    "description": "A URL of the project's documentation.",
+                    "example": "https://openenergy-platform.org/about/",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Documentation"
+                },
+                "sourceCode": {
+                    "description": "A URL of the projects source code.",
+                    "example": "https://github.com/OpenEnergyPlatform",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Source Code"
+                },
+                "contact": {
+                    "description": "A reference to the creator or maintainer of the data set. This can be an email address or a GitHub handle.",
+                    "example": "contact@example.com",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "E-Mail Contact",
+                    "format": "email"
+                },
+                "grantNo": {
+                    "description": "An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency.",
+                    "example": "01AB2345",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Grant no"
+                },
+                "fundingAgency": {
+                    "description": "In a funded project this is the funding agency, which can be a governmental or a company.",
+                    "example": "Bundesministerium für Wirtschaft und Klimaschutz",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Funding agency"
+                },
+                "fundingAgencyLogo": {
+                    "description": "A URL to the logo or image of the funding agency.",
+                    "example": "https://commons.wikimedia.org/wiki/File:BMWi_Logo_2021.svg#/media/File:BMWi_Logo_2021.svg",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Funding agency logo",
+                    "format": "uri"
+                },
+                "publisherLogo": {
+                    "description": "A URL to the logo of the agency publishing the data.",
+                    "example": "https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Publisher logo",
+                    "format": "uri"
+                }
+            },
+            "badge": "Gold",
+            "title": "Context",
+            "additionalProperties": false
+        }
+    }
+}

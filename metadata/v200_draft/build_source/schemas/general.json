@@ -1,0 +1,128 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "general.json#metadata/v200_draft/schemas/general.json",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "File name or database table name",
+            "example": "oep_metadata_table_example_v160",
+            "type": [
+                "string",
+                "null"
+            ],
+            "badge": "Silver",
+            "title": "Name"
+        },
+        "title": {
+            "description": "A Human readable, full title , including author.",
+            "example": "RLI - OEMetadata - Metadata example table",
+            "type": [
+                "string",
+                "null"
+            ],
+            "badge": "Silver",
+            "title": "Title"
+        },
+        "id": {
+            "description": "Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI).",
+            "example": "https://example.com",
+            "type": [
+                "string",
+                "null"
+            ],
+            "badge": "Bronze",
+            "title": "ID",
+            "readonly": true
+        },
+        "description": {
+            "description": "A description of the package. It should be usable as summary information for the entire package that is described by the metadata.",
+            "example": "Example table used to illustrate the metadata structure and meaning.",
+            "type": [
+                "string",
+                "null"
+            ],
+            "badge": "Silver",
+            "title": "Description"
+        },
+        "subject": {
+            "description": "Reference the topic of the resource in ontology terms",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "The class label of the OEO term.",
+                        "example": "energy",
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "badge": "Platinum",
+                        "title": "Name"
+                    },
+                    "path": {
+                        "description": "The URI of the class.",
+                        "example": "https://openenergy-platform.org/ontology/oeo/OEO_00000150",
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "badge": "Platinum",
+                        "title": "Path",
+                        "format": "uri"
+                    }
+                },
+                "badge": "Platinum",
+                "title": "Subject",
+                "additionalProperties": false
+            },
+            "badge": "Platinum",
+            "title": "Subject"
+        },
+        "language": {
+            "description": "List of languages used within the described data structures (e.g. titles, descriptions). Standard: IETF (BCP47).",
+            "example": "[en-GB, de-DE, fr-FR]",
+            "type": "array",
+            "items": {
+                "description": "Language used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47)",
+                "example": "en-GB",
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "badge": "Gold",
+                "title": "Language"
+            },
+            "badge": "Gold",
+            "title": "Language"
+        },
+        "keywords": {
+            "description": "A list of string keywords to assist users searching for the package in catalogs.",
+            "example": "[example, template, test]",
+            "type": "array",
+            "items": {
+                "description": "A keyword to assist users searching for the package in catalogs.",
+                "example": "template",
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "badge": "Silver",
+                "title": "Keyword"
+            },
+            "badge": "Silver",
+            "title": "Keywords"
+        },
+        "publicationDate": {
+            "description": "Date of publishing. Date Format is ISO 8601 (YYYY-MM-DD)",
+            "example": "2019-02-06",
+            "type": [
+                "string",
+                "null"
+            ],
+            "badge": "Bronze",
+            "title": "Publication date",
+            "format": "date"
+        }
+    }
+}

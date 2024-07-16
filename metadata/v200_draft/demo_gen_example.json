@@ -1,0 +1,159 @@
+{
+  "name": "my_oep_collection",
+  "title": "RLI - OEMetadata - Metadata example table",
+  "collectionId": "https://todo",
+  "resources": [
+    {
+      "@id": "https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00",
+      "@context": "https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld",
+      "wasGeneratedBy": {
+        "@id": "todo",
+        "@type": "moss:OEMetadataMod",
+        "version": "1.0.0",
+        "used": "todo",
+        "license": "CC0"
+      },
+      "name": "oep_metadata_table_example_v160",
+      "title": "RLI - OEMetadata - Metadata example table",
+      "id": "https://example.com",
+      "description": "Example table used to illustrate the metadata structure and meaning.",
+      "subject": [
+        {
+          "name": "energy",
+          "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000150"
+        }
+      ],
+      "language": "[en-GB, de-DE, fr-FR]",
+      "keywords": "[example, template, test]",
+      "publicationDate": "2019-02-06",
+      "context": {
+        "homepage": "https://openenergy-platform.org/",
+        "documentation": "https://openenergy-platform.org/about/",
+        "sourceCode": "https://github.com/OpenEnergyPlatform",
+        "contact": "contact@example.com",
+        "grantNo": "01AB2345",
+        "fundingAgency": "Bundesministerium für Wirtschaft und Klimaschutz",
+        "fundingAgencyLogo": "https://commons.wikimedia.org/wiki/File:BMWi_Logo_2021.svg#/media/File:BMWi_Logo_2021.svg",
+        "publisherLogo": "https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png"
+      },
+      "spatial": {
+        "location": "52.433509, 13.535855",
+        "extent": "Europe",
+        "resolution": "3 m"
+      },
+      "temporal": {
+        "referenceDate": "2016-01-01",
+        "timeseries": [
+          {
+            "start": "2019-02-06T10:12:04+00:00",
+            "end": "2019-02-07T10:12:04+00:00",
+            "resolution": " 30 s",
+            "alignment": "left",
+            "aggregationType": "sum"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "IPCC Fifth Assessment Report",
+          "description": "Scientific climate change report by the UN",
+          "path": "https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_full.pdf",
+          "licenses": [
+            {
+              "name": "ODbL-1.0",
+              "title": "Open Data Commons Open Database License 1.0",
+              "path": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
+              "instruction": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information.",
+              "attribution": "© Intergovernmental Panel on Climate Change 2014"
+            }
+          ]
+        }
+      ],
+      "licenses": [
+        {
+          "name": "ODbL-1.0",
+          "title": "Open Data Commons Open Database License 1.0",
+          "path": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
+          "instruction": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information.",
+          "attribution": "© Reiner Lemoine Institut"
+        }
+      ],
+      "trace": {
+        "alternateOf": "",
+        "checksum": "",
+        "dateModified": "",
+        "digtalObjectLocationAccessProtocol": "",
+        "digitalObjectType": "",
+        "hadPrimarySource": "",
+        "hasMetadata": "",
+        "isMetadataFor": "",
+        "policy": "",
+        "provenanceGraph": "",
+        "specializationOf": "",
+        "version": "",
+        "wasDerivedFrom": "",
+        "wasGeneratedBy": "",
+        "wasRevisionOf": "",
+        "wasQuotedFrom": "",
+        "contributors": [
+          {
+            "title": "John Doe",
+            "email": "contact@example.com",
+            "date": "2016-06-16",
+            "object": "data and metadata",
+            "comment": "Fix typo in the title."
+          }
+        ]
+      },
+      "resource": {
+        "profile": "tabular-data-resource",
+        "name": "sandbox.example_table",
+        "path": "https://openenergy-platform.org/dataedit/view/openstreetmap/osm_deu_line",
+        "format": "csv",
+        "encoding": "UTF-8",
+        "schema": {
+          "fields": [
+            {
+              "name": "year",
+              "description": "Reference year for which the data were collected.",
+              "type": "geometry(Point, 4326)",
+              "isAbout": [
+                {
+                  "name": "wind energy converting unit",
+                  "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000044"
+                }
+              ],
+              "valueReference": [
+                {
+                  "value": "onshore",
+                  "name": "onshore wind farm",
+                  "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000311"
+                }
+              ],
+              "unit": "MW"
+            }
+          ],
+          "primaryKey": "id",
+          "foreignKeys": [
+            {
+              "fields": "version",
+              "reference": {
+                "resource": "schema.table",
+                "fields": "version"
+              }
+            }
+          ]
+        },
+        "dialect": {
+          "delimiter": ",",
+          "decimalSeparator": "."
+        },
+        "review": {
+          "path": "https://www.example.com",
+          "badge": "Platinum"
+        }
+      }
+    }
+  ],
+  "additionalProperties": {}
+}

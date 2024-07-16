@@ -1,0 +1,72 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "general.json#metadata/v200_draft/schemas/licences.json",
+    "type": "object",
+    "properties": {
+        "licenses": {
+            "description": "The license(s) under which the described package is provided. List of objects.",
+            "type": "array",
+            "items": {
+                "description": "A license object under which the described package is provided. Each object has all name-value-pairs.",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "The SPDX identifier.",
+                        "example": "ODbL-1.0",
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "badge": "Bronze",
+                        "title": "Name"
+                    },
+                    "title": {
+                        "description": "The official (human readable) title of the license.",
+                        "example": "Open Data Commons Open Database License 1.0",
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "badge": "Bronze",
+                        "title": "Title"
+                    },
+                    "path": {
+                        "description": "A url-or-path string, that is a fully qualified HTTP address, or a relative POSIX path (see the url-or-path definition in Data Resource for details).",
+                        "example": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "badge": "Bronze",
+                        "title": "Path"
+                    },
+                    "instruction": {
+                        "description": "A short description of rights and restrictions. The use of tl;drLegal is recommended.",
+                        "example": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information.",
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "badge": "Bronze",
+                        "title": "Instruction"
+                    },
+                    "attribution": {
+                        "description": "The copyrightholder of the data set. If attribution licenses are used, that name must be acknowledged.",
+                        "example": "© Reiner Lemoine Institut",
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "badge": "Bronze",
+                        "title": "Attribution"
+                    }
+                },
+                "badge": "Bronze",
+                "title": "Licenses",
+                "additionalProperties": false
+            },
+            "badge": "Bronze",
+            "title": "Licenses"
+        }
+    }
+}

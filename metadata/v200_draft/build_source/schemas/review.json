@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "general.json#metadata/v200_draft/schemas/review.json",
+    "type": "object",
+    "properties": {
+        "review": {
+            "description": "Data uploaded through the OEP needs to go through review. The review will cover the areas described here: https://github.com/OpenEnergyPlatform/data-preprocessing/wiki and carried out by a team of the platform. The review itself is documented at the specified path and a badge is rewarded with regards to completeness.",
+            "type": "object",
+            "properties": {
+                "path": {
+                    "description": "A URL or path string, that should be a permanent http(s) address directly linking to the documented review.",
+                    "example": "https://www.example.com",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": null,
+                    "title": "Path"
+                },
+                "badge": {
+                    "description": "A badge of either Bronze, Silver, Gold or Platinum is used to label the given metadata based on its quality.",
+                    "example": "Platinum",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": null,
+                    "title": "Badge"
+                }
+            },
+            "additionalProperties": false,
+            "title": "Review",
+            "options": {
+                "hidden": true
+            }
+        }
+    }
+}
