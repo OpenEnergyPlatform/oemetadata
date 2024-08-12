@@ -179,7 +179,7 @@
                   },
                   "language": {
                       "description": "List of languages used within the described data structures (e.g. titles, descriptions). Standard: IETF (BCP47).",
-                      "example": "[en-GB, de-DE, fr-FR]",
+                      "example": ["en-GB", "de-DE", "fr-FR"],
                       "type": "array",
                       "items": {
                           "description": "Language used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47)",
@@ -196,7 +196,7 @@
                   },
                   "keywords": {
                       "description": "A list of string keywords to assist users searching for the package in catalogs.",
-                      "example": "[example, template, test]",
+                      "example": ["example", "template", "test"],
                       "type": "array",
                       "items": {
                           "description": "A keyword to assist users searching for the package in catalogs.",
@@ -399,7 +399,7 @@
                                       },
                                       "resolution": {
                                           "description": "The time span between individual points of information in a time series.",
-                                          "example": " 30 s",
+                                          "example": "30 s",
                                           "type": [
                                               "string",
                                               "null"
