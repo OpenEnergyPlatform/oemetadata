@@ -23,8 +23,8 @@
                     "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000150"
                 }
             ],
-            "language": "[en-GB, de-DE, fr-FR]",
-            "keywords": "[example, template, test]",
+            "language": ["en-GB", "de-DE", "fr-FR"],
+            "keywords": ["example", "template", "test"],
             "publicationDate": "2019-02-06",
             "context": {
                 "homepage": "https://openenergy-platform.org/",
