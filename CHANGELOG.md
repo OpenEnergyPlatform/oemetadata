@@ -45,6 +45,8 @@ Here is a template for new release sections
 
 - Remove comment field as it holds information on how to fill out the metadata and therefore should not be part of the actual oemetadata but the documentation. [#???](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
 
+- Update the schema json file content (schema generation still broken, add desired output) and fix the schema path in the script for generating examples (it pointed to an incorrect directory and file name) [(#149)](https://github.com/OpenEnergyPlatform/oemetadata/pull/149)
+
 ### Removed
 
 -
