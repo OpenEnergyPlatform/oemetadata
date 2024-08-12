@@ -51,8 +51,8 @@ def read_schema(filename: str) -> Dict[str, Any]:
     Returns:
         Dict[str, Any]: The JSON schema as a dictionary.
     """
-    pwd = dirname(__file__)
-    with open(pwd + filename, "r", encoding="utf-8") as file:
+    # pwd = dirname(__file__)
+    with open(VERSION_PATH / filename, "r", encoding="utf-8") as file:
         schema = json.load(file)
     return schema
 
@@ -120,6 +120,6 @@ def save_json(data: Dict[str, Any], filename: Path) -> None:
 
 
 if __name__ == "__main__":
-    schema_filename = "/res_schema.json"
+    schema_filename = "schema.json"
     json_data = generate_json_from_schema(schema_filename)
     save_json(json_data, EXAMPLE_PATH)
