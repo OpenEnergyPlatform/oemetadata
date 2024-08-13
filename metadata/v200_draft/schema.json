@@ -26,7 +26,7 @@
       },
       "collectionId": {
           "description": "A Uniform Resource Identifier (URI) that links the resource collection.",
-          "example": "https://todo",
+          "example": "https://todo.do",
           "type": [
               "string",
               "null"
@@ -71,7 +71,7 @@
                               "type": "string",
                               "format": "uri",
                               "description": "The unique identifier for the wasGeneratedBy object.",
-                              "example": "todo"
+                              "example": "https://todo.do"
                           },
                           "@type": {
                               "type": "string",
@@ -91,13 +91,13 @@
                               "type": "string",
                               "format": "uri",
                               "description": "A reference to the resource used.",
-                              "example": "todo"
+                              "example": "https://todo.do"
                           },
                           "license": {
                               "type": "string",
                               "format": "uri",
                               "description": "The license under which the resource is available.",
-                              "example": "CC0"
+                              "example": "https://creativecommons.org/public-domain/cc0/"
                           }
                       }
                   },
