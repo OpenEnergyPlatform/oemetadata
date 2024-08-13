@@ -7,11 +7,11 @@
             "@id": "https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00",
             "@context": "https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld",
             "wasGeneratedBy": {
-                "@id": "todo",
+                "@id": "https://todo.do",
                 "@type": "moss:OEMetadataMod",
                 "version": "1.0.0",
-                "used": "todo",
-                "license": "CC0"
+                "used": "https://todo.do",
+                "license": "https://todo.do"
             },
             "name": "oep_metadata_table_example_v160",
             "title": "RLI - OEMetadata - Metadata example table",
@@ -115,13 +115,13 @@
                             "unit": "MW"
                         }
                     ],
-                    "primaryKey": "id",
+                    "primaryKey": ["id"],
                     "foreignKeys": [
                         {
-                            "fields": "version",
+                            "fields": ["version"],
                             "reference": {
                                 "resource": "schema.table",
-                                "fields": "version"
+                                "fields": ["version"]
                             }
                         }
                     ]
@@ -136,5 +136,13 @@
                 }
             }
         }
-    ]
+    ],
+    "metaMetadata": {
+        "metadataVersion": "OEP-2.0.0",
+        "metadataLicense": {
+            "name": "CC0-1.0",
+            "title": "Creative Commons Zero v1.0 Universal",
+            "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+    }
 }
