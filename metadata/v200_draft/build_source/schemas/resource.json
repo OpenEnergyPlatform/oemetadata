@@ -211,7 +211,7 @@
                         },
                         "primaryKey": {
                             "description": "A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns.",
-                            "example": "id",
+                            "example": ["id"],
                             "type": "array",
                             "items": {
                                 "description": "A primary key is a field or set of fields that uniquely identifies each row in the table.",
@@ -235,11 +235,15 @@
                                 "properties": {
                                     "fields": {
                                         "description": "The column (as list of items) in the table that is constrainted by the foreign key.",
-                                        "example": "version",
+                                        "example": [
+                                            "version"
+                                        ],
                                         "type": "array",
                                         "items": {
                                             "description": "The column in the table that is constrainted by the foreign key.",
-                                            "example": "version",
+                                            "example": [
+                                                "version"
+                                            ],
                                             "type": [
                                                 "string",
                                                 "null"
@@ -266,11 +270,15 @@
                                             },
                                             "fields": {
                                                 "description": "The foreign resource column.",
-                                                "example": "version",
+                                                "example": [
+                                                    "version"
+                                                ],
                                                 "type": "array",
                                                 "items": {
                                                     "description": "The foreign resource column.",
-                                                    "example": "version",
+                                                    "example": [
+                                                        "version"
+                                                    ],
                                                     "type": [
                                                         "string",
                                                         "null"

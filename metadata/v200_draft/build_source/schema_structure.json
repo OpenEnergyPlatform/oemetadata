@@ -11,35 +11,38 @@
             "description": "A collection of related data resource descriptions and metadata. This may include relational data models which are technically related",
             "type": "array",
             "items": {
-                "jsonLd": {
-                    "$ref": "json_ld.json#"
-                },
-                "general": {
-                    "$ref": "general.json#"
-                },
-                "context": {
-                    "$ref": "context.json#"
-                },
-                "spatial": {
-                    "$ref": "spatial.json#"
-                },
-                "temporal": {
-                    "$ref": "temporal.json#"
-                },
-                "sources": {
-                    "$ref": "sources.json#"
-                },
-                "licenses": {
-                    "$ref": "licences.json#"
-                },
-                "contribution": {
-                    "$ref": "contribution.json#"
-                },
-                "resource": {
-                    "$ref": "resource.json#"
-                },
-                "review": {
-                    "$ref": "review.json#"
+                "type": "object",
+                "properties": {
+                    "jsonLd": {
+                        "$ref": "json_ld.json#"
+                    },
+                    "general": {
+                        "$ref": "general.json#"
+                    },
+                    "context": {
+                        "$ref": "context.json#"
+                    },
+                    "spatial": {
+                        "$ref": "spatial.json#"
+                    },
+                    "temporal": {
+                        "$ref": "temporal.json#"
+                    },
+                    "sources": {
+                        "$ref": "sources.json#"
+                    },
+                    "licenses": {
+                        "$ref": "licences.json#"
+                    },
+                    "provenance": {
+                        "$ref": "provenance.json#"
+                    },
+                    "resource": {
+                        "$ref": "resource.json#"
+                    },
+                    "review": {
+                        "$ref": "review.json#"
+                    }
                 }
             },
             "title": "Resources"

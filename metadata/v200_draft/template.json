@@ -3,14 +3,165 @@
   "title": "",
   "collectionId": "",
   "resources": [
-    null
-  ],
-  "metaMetadata": {
-    "metadataVersion": "",
-    "metadataLicense": {
+    {
+      "@id": "",
+      "@context": "",
+      "wasGeneratedBy": {
+        "@id": "",
+        "@type": "",
+        "version": "",
+        "used": "",
+        "license": ""
+      },
       "name": "",
       "title": "",
-      "path": ""
+      "id": "",
+      "description": "",
+      "subject": [
+        {
+          "name": "",
+          "path": ""
+        }
+      ],
+      "language": [
+        ""
+      ],
+      "keywords": [
+        ""
+      ],
+      "publicationDate": "",
+      "context": {
+        "homepage": "",
+        "documentation": "",
+        "sourceCode": "",
+        "contact": "",
+        "grantNo": "",
+        "fundingAgency": "",
+        "fundingAgencyLogo": "",
+        "publisherLogo": ""
+      },
+      "spatial": {
+        "location": "",
+        "extent": "",
+        "resolution": ""
+      },
+      "temporal": {
+        "referenceDate": "",
+        "timeseries": [
+          {
+            "start": "",
+            "end": "",
+            "resolution": "",
+            "alignment": "",
+            "aggregationType": ""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "",
+          "description": "",
+          "path": "",
+          "licenses": [
+            {
+              "name": "",
+              "title": "",
+              "path": "",
+              "instruction": "",
+              "attribution": ""
+            }
+          ]
+        }
+      ],
+      "licenses": [
+        {
+          "name": "",
+          "title": "",
+          "path": "",
+          "instruction": "",
+          "attribution": ""
+        }
+      ],
+      "provenance": {
+        "alternateOf": "",
+        "checksum": "",
+        "dateModified": "",
+        "digtalObjectLocationAccessProtocol": "",
+        "digitalObjectType": "",
+        "hadPrimarySource": "",
+        "hasMetadata": "",
+        "isMetadataFor": "",
+        "policy": "",
+        "provenanceGraph": "",
+        "specializationOf": "",
+        "version": "",
+        "wasDerivedFrom": "",
+        "wasRevisionOf": "",
+        "wasQuotedFrom": "",
+        "contributors": [
+          {
+            "title": "",
+            "email": "",
+            "date": "",
+            "object": "",
+            "comment": ""
+          }
+        ]
+      },
+      "resource": {
+        "profile": "",
+        "name": "",
+        "path": "",
+        "format": "",
+        "encoding": "",
+        "schema": {
+          "fields": [
+            {
+              "name": "",
+              "description": "",
+              "type": "",
+              "isAbout": [
+                {
+                  "name": "",
+                  "path": ""
+                }
+              ],
+              "valueReference": [
+                {
+                  "value": "",
+                  "name": "",
+                  "path": ""
+                }
+              ],
+              "unit": ""
+            }
+          ],
+          "primaryKey": [
+            ""
+          ],
+          "foreignKeys": [
+            {
+              "fields": [
+                ""
+              ],
+              "reference": {
+                "resource": "",
+                "fields": [
+                  ""
+                ]
+              }
+            }
+          ]
+        },
+        "dialect": {
+          "delimiter": "",
+          "decimalSeparator": ""
+        },
+        "review": {
+          "path": "",
+          "badge": ""
+        }
+      }
     }
-  }
+  ]
 }
