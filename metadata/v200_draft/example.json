@@ -1,7 +1,7 @@
 {
     "name": "my_oep_collection",
     "title": "RLI - OEMetadata - Metadata example table",
-    "collectionId": "https://todo",
+    "collectionId": "https://todo.do",
     "resources": [
         {
             "@id": "https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00",
@@ -11,7 +11,7 @@
                 "@type": "moss:OEMetadataMod",
                 "version": "1.0.0",
                 "used": "https://todo.do",
-                "license": "https://todo.do"
+                "license": "https://creativecommons.org/public-domain/cc0/"
             },
             "name": "oep_metadata_table_example_v160",
             "title": "RLI - OEMetadata - Metadata example table",
@@ -23,8 +23,16 @@
                     "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000150"
                 }
             ],
-            "language": ["en-GB", "de-DE", "fr-FR"],
-            "keywords": ["example", "template", "test"],
+            "language": [
+                "en-GB",
+                "de-DE",
+                "fr-FR"
+            ],
+            "keywords": [
+                "example",
+                "template",
+                "test"
+            ],
             "publicationDate": "2019-02-06",
             "context": {
                 "homepage": "https://openenergy-platform.org/",
@@ -47,7 +55,7 @@
                     {
                         "start": "2019-02-06T10:12:04+00:00",
                         "end": "2019-02-07T10:12:04+00:00",
-                        "resolution": " 30 s",
+                        "resolution": "30 s",
                         "alignment": "left",
                         "aggregationType": "sum"
                     }
@@ -78,15 +86,32 @@
                     "attribution": "© Reiner Lemoine Institut"
                 }
             ],
-            "contributors": [
-                {
-                    "title": "John Doe",
-                    "email": "contact@example.com",
-                    "date": "2016-06-16",
-                    "object": "data and metadata",
-                    "comment": "Fix typo in the title."
-                }
-            ],
+            "provenance": {
+                "alternateOf": "12.T34567/abcdefghij1234567890",
+                "checksum": "abcdefghij1234567890",
+                "dateModified": "2016-06-16",
+                "digtalObjectLocationAccessProtocol": null,
+                "digitalObjectType": "12.T34567/abcdefghij1234567890",
+                "hadPrimarySource": "12.T34567/abcdefghij1234567890",
+                "hasMetadata": "12.T34567/abcdefghij1234567890",
+                "isMetadataFor": "12.T34567/abcdefghij1234567890",
+                "policy": "https://www.example.com",
+                "provenanceGraph": "12.T34567/abcdefghij1234567890",
+                "specializationOf": "12.T34567/abcdefghij1234567890",
+                "version": "1.2.3",
+                "wasDerivedFrom": "12.T34567/abcdefghij1234567890",
+                "wasRevisionOf": "12.T34567/abcdefghij1234567890",
+                "wasQuotedFrom": "12.T34567/abcdefghij1234567890",
+                "contributors": [
+                    {
+                        "title": "John Doe",
+                        "email": "contact@example.com",
+                        "date": "2016-06-16",
+                        "object": "data and metadata",
+                        "comment": "Fix typo in the title."
+                    }
+                ]
+            },
             "resource": {
                 "profile": "tabular-data-resource",
                 "name": "sandbox.example_table",
@@ -136,13 +161,5 @@
                 }
             }
         }
-    ],
-    "metaMetadata": {
-        "metadataVersion": "OEP-2.0.0",
-        "metadataLicense": {
-            "name": "CC0-1.0",
-            "title": "Creative Commons Zero v1.0 Universal",
-            "path": "https://creativecommons.org/publicdomain/zero/1.0/"
-        }
-    }
+    ]
 }
