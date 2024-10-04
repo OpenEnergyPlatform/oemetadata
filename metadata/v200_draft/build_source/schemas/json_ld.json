@@ -45,7 +45,7 @@
                 },
                 "version": {
                     "type": "string",
-                    "pattern": "^OEP-[0-9]+\\.[0-9]+\\.[0-9]+$",
+                    "pattern": "^OEP-[0-9]+\\.[0-9]+\\.[0-9]+$|^$",
                     "description": "The version of the metadata format.",
                     "example": "1.0.0"
                 },
