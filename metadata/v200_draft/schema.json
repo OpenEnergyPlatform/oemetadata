@@ -76,7 +76,7 @@
                           "@type": {
                               "type": "string",
                               "enum": [
-                                  "moss:OEMetadataMod"
+                                  "moss:OEMetadataMod", ""
                               ],
                               "description": "The type of the wasGeneratedBy object.",
                               "example": "moss:OEMetadataMod"
