@@ -8,14 +8,14 @@
             "type": "object",
             "properties": {
                 "contributors": {
-                    "description": "A list of objects that describe contributors and contributions. It contains title, email, date, object and comment.",
+                    "description": "A list of objects that describe contributors and contributions. It contains title, path, organization, roles, date, object and comment.",
                     "type": "array",
                     "items": {
                         "type": "object",
                         "properties": {
                             "title": {
-                                "description": "Name/title of the contributor (name for a person, name or title for an organization).",
-                                "example": "John Doe",
+                                "description": "Name or title of the contributor. Full name for a person and name or title for an organization.",
+                                "example": "Ludwig Hülk",
                                 "type": [
                                     "string",
                                     "null"
@@ -23,15 +23,15 @@
                                 "badge": null,
                                 "title": "Title"
                             },
-                            "email": {
-                                "description": "E-mail address of the contributor.",
-                                "example": "contact@example.com",
+                            "path": {
+                                "description": "A qualified URL pointing to a relevant location online for the contributor. This can be the GitHub page or ORCID.",
+                                "example": "https://github.com/Ludee",
                                 "type": [
                                     "string",
                                     "null"
                                 ],
                                 "badge": null,
-                                "title": "Email"
+                                "title": "Path"
                             },
                             "date": {
                                 "description": "Date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601.",
