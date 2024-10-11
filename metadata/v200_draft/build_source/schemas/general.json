@@ -135,17 +135,17 @@
                         "string",
                         "null"
                     ],
-                    "badge": "Gold",
+                    "badge": "Bronze",
                     "title": "Embargo period start"
                 },
                 "end": {
-                    "description": "The end date of the embargo period.",
+                    "description": "The end date of the embargo period. This is the intended release date.",
                     "example": "2025-01-01",
                     "type": [
                         "string",
                         "null"
                     ],
-                    "badge": "Gold",
+                    "badge": "Bronze",
                     "title": "Embargo period end (Publication date)"
                 },
                 "isActive": {
@@ -155,12 +155,12 @@
                         "boolean",
                         "null"
                     ],
-                    "badge": "Gold",
-                    "title": "Resolution"
+                    "badge": "Bronze",
+                    "title": "Active embargo period"
                 }
             },
-            "badge": "Gold",
-            "title": "Active embargo period",
+            "badge": "Bronze",
+            "title": "Embargo period",
             "additionalProperties": false
         }
     }
