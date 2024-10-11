@@ -33,6 +33,16 @@
                                 "badge": null,
                                 "title": "Path"
                             },
+                            "organization": {
+                                "description": "A string describing the organization this contributor is affiliated to. This can be relevant for the copyright.",
+                                "example": "Reiner Lemoine Institut",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "badge": null,
+                                "title": "Organization"
+                            },
                             "date": {
                                 "description": "Date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601.",
                                 "example": "2016-06-16",
