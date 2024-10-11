@@ -43,6 +43,23 @@
                                 "badge": null,
                                 "title": "Organization"
                             },
+                            "roles": {
+                                "description": "An array of strings describing the roles of the contributor.",
+                                "example": "[creator, dataCurator]",
+                                "type": "array",
+                                "items": {
+                                    "description": "A role is RECOMMENDED to follow an established vocabulary, such as DataCite Metadata Schema’s contributorRole or CreDIT. Useful roles to indicate are: creator, contact, and dataCurator.",
+                                    "example": "creator",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "badge": null,
+                                    "title": "Role"
+                                },
+                                "badge": null,
+                                "title": "Roles"
+                            },
                             "date": {
                                 "description": "Date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601.",
                                 "example": "2016-06-16",
