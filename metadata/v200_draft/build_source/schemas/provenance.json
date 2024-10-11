@@ -14,7 +14,7 @@
                         "type": "object",
                         "properties": {
                             "title": {
-                                "description": "Name or title of the contributor. Full name for a person and name or title for an organization.",
+                                "description": "A full Name of the contributor.",
                                 "example": "Ludwig Hülk",
                                 "type": [
                                     "string",
