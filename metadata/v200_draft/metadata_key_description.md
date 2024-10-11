@@ -103,11 +103,13 @@ The JSON format offers different formats:
 |#|Key |Description |Example |
 |---|---|---|---|
 | 14 | **contributors** | An array of objects of the people or organizations who contributed to the data or metadata. Each object refers to one contributor. Every contributor must have a title and property. The path, email, role and organization properties are optional. |  |
-| 14.1 | title | A name of the contributor. | Ludwig Hülk |
-| 14.2 | email | A email address of the contributor or GitHub handle. | @Ludee |
+| 14.1 | title | A full Name of the contributor. | Ludwig Hülk |
+| 14.2 | path | A qualified URL pointing to a relevant location online for the contributor. This can be the GitHub page or ORCID. | https://github.com/Ludee |
+| 14.2 | organization | A string describing the organization this contributor is affiliated to. This can be relevant for the copyright. | Reiner Lemoine Institut |
+| 14.2 | roles | An array of strings describing the roles of the contributor. A role is RECOMMENDED to follow an established vocabulary, such as DataCite Metadata Schema’s contributorRole or CreDIT. Useful roles to indicate are: creator, contact, and dataCurator. | creator, dataCurator |
 | 14.3 | date | The date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601. | 2016-06-16 |
 | 14.4 | object | The target of the contribution. Which part of the package was supplied or changed. Can be the data, metadata or both (data and metadata). | data and metadata |
-| 14.5 | comment | A free text commentary on what has been done.  | Fixed a typo in the title. |
+| 14.5 | comment | A free text commentary on what has been done.  | Updated the description. |
 
 ### Resource Keys
 |#|Key |Description |Example |
