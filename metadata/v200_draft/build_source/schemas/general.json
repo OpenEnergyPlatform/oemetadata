@@ -123,6 +123,45 @@
             "badge": "Bronze",
             "title": "Publication date",
             "format": "date"
+        },
+        "embargoPeriod": {
+            "description": "An object that describes the embargo period during which public access to the data is not allowed.",
+            "type": "object",
+            "properties": {
+                "start": {
+                    "description": "The start date of the embargo period.",
+                    "example": "2024-10-11",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Embargo period start"
+                },
+                "end": {
+                    "description": "The end date of the embargo period.",
+                    "example": "2025-01-01",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Embargo period end (Publication date)"
+                },
+                "isActive": {
+                    "description": "A boolean key that indicates if the embargo period is currently active. Must be changed to False on the embargo period end date.",
+                    "example": "True",
+                    "type": [
+                        "boolean",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Resolution"
+                }
+            },
+            "badge": "Gold",
+            "title": "Active embargo period",
+            "additionalProperties": false
         }
     }
 }
