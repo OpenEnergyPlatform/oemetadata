@@ -1,0 +1,87 @@
+{
+    "@context": {
+        "path": "@id",
+        "bfo": "http://purl.obolibrary.org/obo/bfo.owl#",
+        "csvw": "http://www.w3.org/ns/csvw#",
+        "dbo": "http://dbpedia.org/ontology/",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "dct": "http://purl.org/dc/terms/",
+        "obda": "https://w3id.org/obda/vocabulary#",
+        "oeo": "http://openenergyplatform.org/ontology/oeo/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "saref": "https://saref.etsi.org/core/",
+        "time": "http://www.w3.org/2006/time#",
+        "xml": "http://www.w3.org/XML/1998/namespace",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "title": {
+            "@id": "dct:title",
+            "@type": "xsd:string"
+        },
+        "description": {
+            "@id": "dct:description",
+            "@type": "xsd:string"
+        },
+        "comment": {
+            "@id": "rdfs:comment",
+            "@type": "xsd:string"
+        },
+        "subject": {
+            "@id": "dc:subject",
+            "@type": "@id"
+        },
+        "keywords": {
+            "@id": "dc:subject",
+            "@type": "xsd:string"
+        },
+        "temporal": {
+            "@id": "time:hasTemporalDuration",
+            "@type": "@id"
+        },
+        "timeseries": {
+            "@id": "time:hasDateTimeDescription",
+            "@type": "@id"
+        },
+        "start": {
+            "@id": "dbo:startDateTime",
+            "@type": "xsd:dateTime"
+        },
+        "end": {
+            "@id": "dbo:endDateTime",
+            "@type": "xsd:dateTime"
+        },
+        "fields": {
+            "@id": "csvw:column",
+            "@type": "@id"
+        },
+        "resources": {
+            "@id": "csvw:table",
+            "@type": "@id"
+        },
+        "schema": {
+            "@id": "csvw:tableSchema",
+            "@type": "@id"
+        },
+        "name": {
+            "@id": "rdfs:label",
+            "@type": "xsd:string"
+        },
+        "type": {
+            "@id": "csvw:datatype",
+            "@type": "xsd:string"
+        },
+        "unit": {
+            "@id": "oeo:OEO_00040010",
+            "@type": "xsd:string"
+        },
+        "isAbout": {
+            "@id": "saref:isAbout",
+            "@type": "@id"
+        },
+        "valueReference": {
+            "@id": "http://purl.org/goodrelations/v1#valueReference",
+            "@type": "@id"
+        }
+    }
+}
