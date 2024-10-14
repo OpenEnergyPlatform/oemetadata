@@ -40,6 +40,9 @@ Here is a template for new release sections
   - We use json schema $ref elements to reference the schema modules and we provide code to resolve the reference´s and generate the complete schema.json.
 
 - Add code to generate a example.json based on the schema.json. We read the example values for each of the fields specified in the schema and generate the example. [#???](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
+- Add path to contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
+- Add organization to contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
+- Add roles to contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
 
 ### Changed
 
@@ -49,7 +52,7 @@ Here is a template for new release sections
 
 ### Removed
 
--
+- Remove email from contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
 
 ## [1.6.0] - Release - Introduce badges in json schema - 2023-05-30
 
