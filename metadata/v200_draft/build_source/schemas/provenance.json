@@ -7,166 +7,15 @@
             "description": "An object that specifies provenance information of the data contained.",
             "type": "object",
             "properties": {
-                "alternateOf": {
-                    "description": "A PID pointing to another FAIR Digital Object which is an alternate of the object referenced by digitalObjectLocation",
-                    "example": "12.T34567/abcdefghij1234567890",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": null,
-                    "title": "Alternate of"
-                },
-                "checksum": {
-                    "description": "A checksum used to validate the integrity of the data.",
-                    "example": "abcdefghij1234567890",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": null,
-                    "title": "Checksum"
-                },
-                "dateModified": {
-                    "description": "Date of the last modification. Date Format is ISO 8601.",
-                    "example": "2016-06-16",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": null,
-                    "title": "Last modified"
-                },
-                "digtalObjectLocationAccessProtocol": {
-                    "description": "Additional information which can be used by an access client for accessing",
-                    "example": null,
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": null,
-                    "title": "Digital Object Location Access Protocol"
-                },
-                "digitalObjectType": {
-                    "description": "A PID pointing to a data type in a Data Type Registry describing the object referenced by digtalObject Location",
-                    "example": "12.T34567/abcdefghij1234567890",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": null,
-                    "title": "Digital Object Type"
-                },
-                "hadPrimarySource": {
-                    "description": "A PID pointing to another FAIR DO which is the primary source of the object referenced by digitalObjectLocation",
-                    "example": "12.T34567/abcdefghij1234567890",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": null,
-                    "title": "Primary Source"
-                },
-                "hasMetadata": {
-                    "description": "One or more PIDs referring to related FAIR Digital Objects provding metadata for the object referenced by digitalObjectLocation. It is the innverse to isMetadata for",
-                    "example": "12.T34567/abcdefghij1234567890",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": null,
-                    "title": "Has Metadata"
-                },
-                "isMetadataFor": {
-                    "description": "A PID pointing to another FAIR Digital Object decribing the object referenced by digitalObjectLocation. It is the inverse to hasMetadata",
-                    "example": "12.T34567/abcdefghij1234567890",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": null,
-                    "title": "Is Metadata for"
-                },
-                "policy": {
-                    "description": "A web-resolveable pointer to a policy object describing e.g. object access and modification policies",
-                    "example": "https://www.example.com",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": null,
-                    "title": "Policy"
-                },
-                "provenanceGraph": {
-                    "description": "A PID pointing to another FAIR DO which refers to the provenance graph of the object referenced by digitalObjectLocation",
-                    "example": "12.T34567/abcdefghij1234567890",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": null,
-                    "title": "Provenance Graph"
-                },
-                "specializationOf": {
-                    "description": "A PID pointing to another FAIR DO which is a specialization of the object referenced by digitalObjectLocation",
-                    "example": "12.T34567/abcdefghij1234567890",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": null,
-                    "title": "Specialization of"
-                },
-                "version": {
-                    "description": "Version of the object referenced by digitalObjectLocation",
-                    "example": "1.2.3",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": null,
-                    "title": "Version"
-                },
-
-                "wasDerivedFrom": {
-                    "description": "A PID pointing to another FAIR Digital Object which the object referenced by digitalObjectLocation was derived from",
-                    "example": "12.T34567/abcdefghij1234567890",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": null,
-                    "title": "Was derived from"
-                },
-                "wasRevisionOf": {
-                    "description": "A PID pointing to another FAIR DO which is a revisionof the object referenced by digitalObjectLocation",
-                    "example": "12.T34567/abcdefghij1234567890",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": null,
-                    "title": "Was Revision of"
-                },
-                "wasQuotedFrom": {
-                    "description": "A PID pointing to another FAIR DO from which the object referenced by digitalObjectLocation was folly or partly quoted.",
-                    "example": "12.T34567/abcdefghij1234567890",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": null,
-                    "title": "Was quoted from"
-                },
                 "contributors": {
-                    "description": "A list of objects that describe contributors and contributions. It contains title, email, date, object and comment.",
+                    "description": "A list of objects that describe contributors and contributions. It contains title, path, organization, roles, date, object and comment.",
                     "type": "array",
                     "items": {
                         "type": "object",
                         "properties": {
                             "title": {
-                                "description": "Name/title of the contributor (name for a person, name or title for an organization).",
-                                "example": "John Doe",
+                                "description": "A full Name of the contributor.",
+                                "example": "Ludwig Hülk",
                                 "type": [
                                     "string",
                                     "null"
@@ -174,15 +23,42 @@
                                 "badge": null,
                                 "title": "Title"
                             },
-                            "email": {
-                                "description": "E-mail address of the contributor.",
-                                "example": "contact@example.com",
+                            "path": {
+                                "description": "A qualified URL pointing to a relevant location online for the contributor. This can be the GitHub page or ORCID.",
+                                "example": "https://github.com/Ludee",
                                 "type": [
                                     "string",
                                     "null"
                                 ],
                                 "badge": null,
-                                "title": "Email"
+                                "title": "Path"
+                            },
+                            "organization": {
+                                "description": "A string describing the organization this contributor is affiliated to. This can be relevant for the copyright.",
+                                "example": "Reiner Lemoine Institut",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "badge": null,
+                                "title": "Organization"
+                            },
+                            "roles": {
+                                "description": "An array of strings describing the roles of the contributor.",
+                                "example": "[creator, dataCurator]",
+                                "type": "array",
+                                "items": {
+                                    "description": "A role is RECOMMENDED to follow an established vocabulary, such as DataCite Metadata Schema’s contributorRole or CreDIT. Useful roles to indicate are: creator, contact, and dataCurator.",
+                                    "example": "creator",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "badge": null,
+                                    "title": "Role"
+                                },
+                                "badge": null,
+                                "title": "Roles"
                             },
                             "date": {
                                 "description": "Date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601.",
