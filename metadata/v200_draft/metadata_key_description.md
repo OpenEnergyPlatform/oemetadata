@@ -45,35 +45,39 @@ The JSON format offers different formats:
 | 6.2 | path | The URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000150 |
 | 7 | keywords | An array of keywords to assist users searching for the package in catalogs. | example, template, test |
 | 8 | publicationDate | A date of publishing of the data or metadata. Date format is ISO 8601 (YYYY-MM-DD). | 2019-02-06 |
+| 9 | **embargoPeriod** | An object that describes the embargo period during which public access to the data is not allowed. |
+| 9.1 | start | The start date of the embargo period. The date of the data (metadata) upload. | 2024-10-11 |
+| 9.2 | end | The end date of the embargo period. This is the envisioned publication date. | 2025-01-01 |
+| 9.3 | isActive | A boolean key that indicates if the embargo period is currently active. Must be changed to False on the embargo period end date. | True |
 
 ### Context Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 9 | **context** | An object that describes the general setting, environment, or project leading to the creation or maintenance of this dataset. In science this is can be the research project. | |
-| 9.1 | homepage | A URL of the project. | https://openenergy-platform.org/ | 
-| 9.2 | documentation | A URL of the project documentation. | https://openenergy-platform.org/about/ | 
-| 9.3 | sourceCode | A URL of the projects source code. | https://github.com/OpenEnergyPlatform | 
-| 9.4 | contact | A reference to the creator or maintainer of the data set. It can be an email address or a GitHub handle. | contact@example.com | 
-| 9.5 | grantNo | An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency. | 01AB2345 | 
-| 9.6 | fundingAgency | A name of the entity providing the funding. This can be a government agency or a company. | Bundesministerium für Wirtschaft und Klimaschutz | 
-| 9.7 | fundingAgencyLogo | A URL to the logo or image of the funding agency. | https://commons.wikimedia.org/wiki/File:BMWi_Logo_2021.svg#/media/File:BMWi_Logo_2021.svg | 
-| 9.8 | publisherLogo | A URL to the logo of the publishing agency of data. | https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png | 
+| 10 | **context** | An object that describes the general setting, environment, or project leading to the creation or maintenance of this dataset. In science this is can be the research project. | |
+| 10.1 | homepage | A URL of the project. | https://openenergy-platform.org/ | 
+| 10.2 | documentation | A URL of the project documentation. | https://openenergy-platform.org/about/ | 
+| 10.3 | sourceCode | A URL of the projects source code. | https://github.com/OpenEnergyPlatform | 
+| 10.4 | contact | A reference to the creator or maintainer of the data set. It can be an email address or a GitHub handle. | contact@example.com | 
+| 10.5 | grantNo | An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency. | 01AB2345 | 
+| 10.6 | fundingAgency | A name of the entity providing the funding. This can be a government agency or a company. | Bundesministerium für Wirtschaft und Klimaschutz | 
+| 10.7 | fundingAgencyLogo | A URL to the logo or image of the funding agency. | https://commons.wikimedia.org/wiki/File:BMWi_Logo_2021.svg#/media/File:BMWi_Logo_2021.svg | 
+| 10.8 | publisherLogo | A URL to the logo of the publishing agency of data. | https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png | 
 
 ### Spatial and Temporal Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 10 | **spatial** | An object that describes the spatial context of the data it contains. | |
-| 10.1 | location | A location of the data. In case of data where the location can be described as a point. May be specified as coordinates, URI or addresses with street, house number and zip code. | 52.433509, 13.535855 |
-| 10.2 | extent | A covered area. May be the name of a region, or the geometry of a bounding box. | Europe |
-| 10.3 | resolution | Pixel size in case of a regular raster image. Reference to administrative level or other spatial division that is present as the smallest spatially distinguished unit size. | 1 ha |
+| 11 | **spatial** | An object that describes the spatial context of the data it contains. | |
+| 11.1 | location | A location of the data. In case of data where the location can be described as a point. May be specified as coordinates, URI or addresses with street, house number and zip code. | 52.433509, 13.535855 |
+| 11.2 | extent | A covered area. May be the name of a region, or the geometry of a bounding box. | Europe |
+| 11.3 | resolution | Pixel size in case of a regular raster image. Reference to administrative level or other spatial division that is present as the smallest spatially distinguished unit size. | 1 ha |
 | 11 | **temporal** | An object with the time period covered in the data. Temporal information should either contain a "referenceDate" or the keys describing a time series; in rare cases both. | |
-| 11.1 | referenceDate | The base year, month or day. Point in time for which the data is meant to be accurate. The census data or a satellite image will have a reference date. Date Format is ISO 8601. | 2016-01-01 |
-| 11.2 | **timeseries** | An array that describes the timeseries. ||
-| 11.2.1 | start | The beginning point in time of a time series. |  2019-02-06T10:12:04+00:00 |
-| 11.2.2 | end | The end point in time of a time series. | 2019-02-07T10:12:04+00:00 |
-| 11.2.3 | resolution | The time span between individual points of information in a time series. | 30 s |
-| 11.2.4 | alignment | An indicator whether stamps in a time series are left, right or middle.  | left |
-| 11.2.5 | aggregationType | Indicates whether the values are a sum, average or current. | sum |
+| 12.1 | referenceDate | The base year, month or day. Point in time for which the data is meant to be accurate. The census data or a satellite image will have a reference date. Date Format is ISO 8601. | 2016-01-01 |
+| 12.2 | **timeseries** | An array that describes the timeseries. ||
+| 12.2.1 | start | The beginning point in time of a time series. |  2019-02-06T10:12:04+00:00 |
+| 12.2.2 | end | The end point in time of a time series. | 2019-02-07T10:12:04+00:00 |
+| 12.2.3 | resolution | The time span between individual points of information in a time series. | 30 s |
+| 12.2.4 | alignment | An indicator whether stamps in a time series are left, right or middle.  | left |
+| 12.2.5 | aggregationType | Indicates whether the values are a sum, average or current. | sum |
 
 ### Source Keys
 |#|Key |Description |Example |
@@ -124,61 +128,61 @@ The JSON format offers different formats:
 #### Resource Keys - Schema
 |#|Key |Description |Example |
 |---|---|---|---|
-| 15.6 | **schema** | An object that describes the structure of the present data. It contains all fields (columns of the table), the primary key and optional foreign keys. |  |
-| 15.6.1 | **fields** | An array of objects describing a column and providing name, description, type and unit. | |
-| 15.6.1.1 | name | The name of the field. The name must consist of only lowercase alphanumeric characters or underscore. It must not start with a number or underscore. | year |
-| 15.6.1.2 | description | A text describing the field. | Reference year for which the data were collected. |
-| 15.6.1.3 | type | The data type of the field. In case of a geom column in a database, also indicate the shape and CRS. | geometry(Point, 4326) |
-| 15.6.1.4 | unit | The unit, preferably SI-unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null'. If the unit is given in a seperate field, reference this field. | MW |
-| 15.6.1.5 | **isAbout** | An array of objects with describe the field in [OEO](https://openenergy-platform.org/ontology/oeo/) terms. | 
-| 15.6.1.5.1 | name | The class label of the OEO terms. | wind energy converting unit |
-| 15.6.1.5.2 | path | The URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000044 |
-| 15.6.1.6 | **valueReference** | An array of objects for an extended description of the values in the column in [OEO](https://openenergy-platform.org/ontology/oeo/) terms. | |
-| 15.6.1.6.1 | value | The name of the value in the column. | onshore |
-| 15.6.1.6.2 | name | The class label of the OEO terms. | onshore wind farm |
-| 15.6.1.6.3 | path | The URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000311 |
+| 16.6 | **schema** | An object that describes the structure of the present data. It contains all fields (columns of the table), the primary key and optional foreign keys. |  |
+| 16.6.1 | **fields** | An array of objects describing a column and providing name, description, type and unit. | |
+| 16.6.1.1 | name | The name of the field. The name must consist of only lowercase alphanumeric characters or underscore. It must not start with a number or underscore. | year |
+| 16.6.1.2 | description | A text describing the field. | Reference year for which the data were collected. |
+| 16.6.1.3 | type | The data type of the field. In case of a geom column in a database, also indicate the shape and CRS. | geometry(Point, 4326) |
+| 16.6.1.4 | unit | The unit, preferably SI-unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null'. If the unit is given in a seperate field, reference this field. | MW |
+| 16.6.1.5 | **isAbout** | An array of objects with describe the field in [OEO](https://openenergy-platform.org/ontology/oeo/) terms. | 
+| 16.6.1.5.1 | name | The class label of the OEO terms. | wind energy converting unit |
+| 16.6.1.5.2 | path | The URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000044 |
+| 16.6.1.6 | **valueReference** | An array of objects for an extended description of the values in the column in [OEO](https://openenergy-platform.org/ontology/oeo/) terms. | |
+| 16.6.1.6.1 | value | The name of the value in the column. | onshore |
+| 16.6.1.6.2 | name | The class label of the OEO terms. | onshore wind farm |
+| 16.6.1.6.3 | path | The URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000311 |
 
 #### Resource Keys - Properties
 |#|Key |Description |Example |
 |---|---|---|---|
-| 15.6.2 | primaryKey | A primary key is a field or set of fields that uniquely identifies each row in the table. It is recorded as an array, since it is possible to define the primary key as made up of several columns. | id |
-| 15.6.3 | **foreignKeys** | A foreign key is a field that refers to a column in another table. | |
-| 15.6.3.1 | fields | The column in the table that is constrainted by the foreign key. | version |
-| 15.6.3.2 | **reference** | The reference to the foreign table. | |
-| 15.6.3.2.1 | resource | The foreign resource (table). | schema.table |
-| 15.6.3.2.2 | fields | The foreign resource column. | version |
-| 15.7 | **dialect** | Object. A CSV Dialect defines a simple format to describe the various dialects of CSV files in a language agnostic manner. In case of a database, the values in the containing fields are 'null'. | |
-| 15.7.1 | delimiter | The delimiter specifies the character sequence which should separate fields (columns). Common characters are "," (comma), "." (point) and "\t" (tab). | , |
-| 15.7.2 | decimalSeparator | A symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be "." or ",". | . |
+| 16.6.2 | primaryKey | A primary key is a field or set of fields that uniquely identifies each row in the table. It is recorded as an array, since it is possible to define the primary key as made up of several columns. | id |
+| 16.6.3 | **foreignKeys** | A foreign key is a field that refers to a column in another table. | |
+| 16.6.3.1 | fields | The column in the table that is constrainted by the foreign key. | version |
+| 16.6.3.2 | **reference** | The reference to the foreign table. | |
+| 16.6.3.2.1 | resource | The foreign resource (table). | schema.table |
+| 16.6.3.2.2 | fields | The foreign resource column. | version |
+| 16.7 | **dialect** | Object. A CSV Dialect defines a simple format to describe the various dialects of CSV files in a language agnostic manner. In case of a database, the values in the containing fields are 'null'. | |
+| 16.7.1 | delimiter | The delimiter specifies the character sequence which should separate fields (columns). Common characters are "," (comma), "." (point) and "\t" (tab). | , |
+| 16.7.2 | decimalSeparator | A symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be "." or ",". | . |
 
 ### Review Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 16 | @id | A Uniform Resource Identifier (URI) that links the resource via the [DBedia Databus](https://www.dbpedia.org/resources/databus/). | https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00 |
-| 17 | @context | Explanation of metadata keys in ontology terms. | https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/latest/context.json |
-| 18. | **review** | Data uploaded through the OEP will go through a review process. The review will cover the data and metadata. It is done by the OEP community. See the [OEP Data Review](https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md) for detailed information. The review itself is documented at the specified path and a badge is rewarded with regards to completeness. | |
-| 18.1 | path | A URL that should be a permanent http(s) address directly linking to the documented review. | https://www.example.com |
-| 18.2 | badge | A badge of either Bronze, Silver, Gold or Platinum is used to label the given data and metadata based on its quality. | Platinum |
+| 17 | @id | A Uniform Resource Identifier (URI) that links the resource via the [DBedia Databus](https://www.dbpedia.org/resources/databus/). | https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00 |
+| 18 | @context | Explanation of metadata keys in ontology terms. | https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/latest/context.json |
+| 19. | **review** | Data uploaded through the OEP will go through a review process. The review will cover the data and metadata. It is done by the OEP community. See the [OEP Data Review](https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md) for detailed information. The review itself is documented at the specified path and a badge is rewarded with regards to completeness. | |
+| 19.1 | path | A URL that should be a permanent http(s) address directly linking to the documented review. | https://www.example.com |
+| 19.2 | badge | A badge of either Bronze, Silver, Gold or Platinum is used to label the given data and metadata based on its quality. | Platinum |
 
 ### MetaMetadata Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 19 | **metaMetadata** | An object that describes the metadata themselves, their format, version and license. These fields should already be provided when you are filling out your metadata. | |
-| 19.1 | metadataVersion | The type and version number of the metadata. | OEP-1.5.2 |
-| 19.2 | **metadataLicense** | The license of the provided metadata. | |
-| 19.2.1 | name | The [SPDX](https://spdx.org/licenses/) identifier. | CC0-1.0 |
-| 19.2.2 | title | The official (human readable) title of the license. | Creative Commons Zero v1.0 Universal |
-| 19.2.3 | path | A link to the license text. | https://creativecommons.org/publicdomain/zero/1.0/ |
+| 20 | **metaMetadata** | An object that describes the metadata themselves, their format, version and license. These fields should already be provided when you are filling out your metadata. | |
+| 20.1 | metadataVersion | The type and version number of the metadata. | OEP-1.5.2 |
+| 20.2 | **metadataLicense** | The license of the provided metadata. | |
+| 20.2.1 | name | The [SPDX](https://spdx.org/licenses/) identifier. | CC0-1.0 |
+| 20.2.2 | title | The official (human readable) title of the license. | Creative Commons Zero v1.0 Universal |
+| 20.2.3 | path | A link to the license text. | https://creativecommons.org/publicdomain/zero/1.0/ |
 
 ### Comments
 |#|Key |Description |Example |
 |---|---|---|---|
-| 20 | **_comment** | An array of objects. This section is used as a self-description of the final metadata file. It is text, intended for humans and includes a link to the metadata documentation, required value formats and similar remarks. | |
-| 20.1 | metadata | Reference to the metadata documentation in use. | Metadata documentation and explanation (https://github.com/OpenEnergyPlatform/oemetadata) |
-| 20.2 | dates | Comment on data and time format. | Dates and time must follow the ISO8601 including time zone (YYYY-MM-DD or YYYY-MM-DDThh:mm:ss±hh) |
-| 20.3 | units | Comment on units. | Use a space between numbers and units (100 m) |
-| 20.4 | languages | Comment on language format. | Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE) |
-| 20.5 | licenses | Comment on license format. | License name must follow the SPDX License List (https://spdx.org/licenses/) |
-| 20.6 | review | Reference to review documentation. | Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md) |
-| 20.7 | null | Comment on fields that don't apply. | If not applicable use: null |
-| 20.8 | todo | Comment on fields that are not yet available and will be inserted later on. | If a value is not yet available, use: todo |
+| 21 | **_comment** | An array of objects. This section is used as a self-description of the final metadata file. It is text, intended for humans and includes a link to the metadata documentation, required value formats and similar remarks. | |
+| 21.1 | metadata | Reference to the metadata documentation in use. | Metadata documentation and explanation (https://github.com/OpenEnergyPlatform/oemetadata) |
+| 21.2 | dates | Comment on data and time format. | Dates and time must follow the ISO8601 including time zone (YYYY-MM-DD or YYYY-MM-DDThh:mm:ss±hh) |
+| 21.3 | units | Comment on units. | Use a space between numbers and units (100 m) |
+| 21.4 | languages | Comment on language format. | Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE) |
+| 21.5 | licenses | Comment on license format. | License name must follow the SPDX License List (https://spdx.org/licenses/) |
+| 21.6 | review | Reference to review documentation. | Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md) |
+| 21.7 | null | Comment on fields that don't apply. | If not applicable use: null |
+| 21.8 | todo | Comment on fields that are not yet available and will be inserted later on. | If a value is not yet available, use: todo |
