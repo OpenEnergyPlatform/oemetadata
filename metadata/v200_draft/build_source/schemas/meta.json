@@ -4,12 +4,12 @@
     "type": "object",
     "properties": {
         "metaMetadata": {
-            "description": "Object. Description about the metadata themselves, their format, version and license. These fields should already be provided when you’re filling out your metadata.",
+            "description": "Description about the metadata themselves, their format, version and license. These fields should already be provided when you’re filling out your metadata.",
             "type": "object",
             "properties": {
                 "metadataVersion": {
                     "description": "Type and version number of the metadata.",
-                    "example": "OEM-2.0.0",
+                    "example": "OEMetadata-2.0",
                     "type": [
                         "string",
                         "null"
