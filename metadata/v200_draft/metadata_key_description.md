@@ -154,31 +154,40 @@ The JSON format offers different formats:
 ### Review Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 16 | @id | A Uniform Resource Identifier (URI) that links the resource via the [DBedia Databus](https://www.dbpedia.org/resources/databus/). | https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00 |
-| 17 | @context | Explanation of metadata keys in ontology terms. | https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/latest/context.json |
-| 18. | **review** | Data uploaded through the OEP will go through a review process. The review will cover the data and metadata. It is done by the OEP community. See the [OEP Data Review](https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md) for detailed information. The review itself is documented at the specified path and a badge is rewarded with regards to completeness. | |
-| 18.1 | path | A URL that should be a permanent http(s) address directly linking to the documented review. | https://www.example.com |
-| 18.2 | badge | A badge of either Bronze, Silver, Gold or Platinum is used to label the given data and metadata based on its quality. | Platinum |
+| 16. | **review** | Data uploaded through the OEP will go through a review process. The review will cover the data and metadata. It is done by the OEP community. See the [OEP Data Review](https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md) for detailed information. The review itself is documented at the specified path and a badge is rewarded with regards to completeness. | |
+| 16.1 | path | A URL that should be a permanent http(s) address directly linking to the documented review. | https://www.example.com |
+| 16.2 | badge | A badge of either Bronze, Silver, Gold or Platinum is used to label the given data and metadata based on its quality. | Platinum |
+
+### Linked Data Keys
+|#|Key |Description |Example |
+|---|---|---|---|
+| 17 | **linkedData** | Keys used for Linked Data (LD). | |
+| 17.1 | @id | A Uniform Resource Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus). | https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07 |
+| 17.2 | @context | Explanation of metadata keys in ontology terms. | https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/latest/context.json |
+| 17.3 | **wasGeneratedBy** | Information about the ? | |
+| 17.3.1 | @id | The unique identifier for the wasGeneratedBy object. | oeplatform |
+| 17.3.2 | @type | The type of the wasGeneratedBy object. | moss:OEMetadataMod |
+| 17.3.3 | used | A reference to the resource used. (ToDo) | ToDo |
 
 ### MetaMetadata Keys
 |#|Key |Description |Example |
 |---|---|---|---|
-| 19 | **metaMetadata** | An object that describes the metadata themselves, their format, version and license. These fields should already be provided when you are filling out your metadata. | |
-| 19.1 | metadataVersion | The type and version number of the metadata. | OEP-1.5.2 |
-| 19.2 | **metadataLicense** | The license of the provided metadata. | |
-| 19.2.1 | name | The [SPDX](https://spdx.org/licenses/) identifier. | CC0-1.0 |
-| 19.2.2 | title | The official (human readable) title of the license. | Creative Commons Zero v1.0 Universal |
-| 19.2.3 | path | A link to the license text. | https://creativecommons.org/publicdomain/zero/1.0/ |
+| 18 | **metaMetadata** | An object that describes the metadata themselves, their format, version and license. These fields should already be provided when you are filling out your metadata. | |
+| 18.1 | metadataVersion | The type and version number of the metadata. | OEP-1.5.2 |
+| 18.2 | **metadataLicense** | The license of the provided metadata. | |
+| 18.2.1 | name | The [SPDX](https://spdx.org/licenses/) identifier. | CC0-1.0 |
+| 18.2.2 | title | The official (human readable) title of the license. | Creative Commons Zero v1.0 Universal |
+| 18.2.3 | path | A link to the license text. | https://creativecommons.org/publicdomain/zero/1.0/ |
 
 ### Comments
 |#|Key |Description |Example |
 |---|---|---|---|
-| 20 | **_comment** | An array of objects. This section is used as a self-description of the final metadata file. It is text, intended for humans and includes a link to the metadata documentation, required value formats and similar remarks. | |
-| 20.1 | metadata | Reference to the metadata documentation in use. | Metadata documentation and explanation (https://github.com/OpenEnergyPlatform/oemetadata) |
-| 20.2 | dates | Comment on data and time format. | Dates and time must follow the ISO8601 including time zone (YYYY-MM-DD or YYYY-MM-DDThh:mm:ss±hh) |
-| 20.3 | units | Comment on units. | Use a space between numbers and units (100 m) |
-| 20.4 | languages | Comment on language format. | Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE) |
-| 20.5 | licenses | Comment on license format. | License name must follow the SPDX License List (https://spdx.org/licenses/) |
-| 20.6 | review | Reference to review documentation. | Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md) |
-| 20.7 | null | Comment on fields that don't apply. | If not applicable use: null |
-| 20.8 | todo | Comment on fields that are not yet available and will be inserted later on. | If a value is not yet available, use: todo |
+| 19 | **_comment** | An array of objects. This section is used as a self-description of the final metadata file. It is text, intended for humans and includes a link to the metadata documentation, required value formats and similar remarks. | |
+| 19.1 | metadata | Reference to the metadata documentation in use. | Metadata documentation and explanation (https://github.com/OpenEnergyPlatform/oemetadata) |
+| 19.2 | dates | Comment on data and time format. | Dates and time must follow the ISO8601 including time zone (YYYY-MM-DD or YYYY-MM-DDThh:mm:ss±hh) |
+| 19.3 | units | Comment on units. | Use a space between numbers and units (100 m) |
+| 19.4 | languages | Comment on language format. | Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE) |
+| 19.5 | licenses | Comment on license format. | License name must follow the SPDX License List (https://spdx.org/licenses/) |
+| 19.6 | review | Reference to review documentation. | Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md) |
+| 19.7 | null | Comment on fields that don't apply. | If not applicable use: null |
+| 19.8 | todo | Comment on fields that are not yet available and will be inserted later on. | If a value is not yet available, use: todo |
