@@ -200,7 +200,8 @@
                                 }
                             },
                             "additionalProperties": false,
-                            "title": "Field"
+                            "title": "Field",
+                            "required": ["name", "type"]
                         },
                         "title": "Field"
                     },
@@ -287,18 +288,21 @@
                                     },
                                     "badge": "Iron",
                                     "title": "Reference",
-                                    "additionalProperties": false
+                                    "additionalProperties": false,
+                                    "required": ["resource", "fields"]
                                 }
                             },
                             "title": "Foreign Key",
-                            "additionalProperties": false
+                            "additionalProperties": false,
+                            "required": ["fields"]
                         },
                         "badge": "Iron",
                         "title": "Foreign Keys"
                     }
                 },
                 "title": "Schema",
-                "additionalProperties": false
+                "additionalProperties": false,
+                "required": ["primaryKey"]
             },
             "dialect": {
                 "description": "Object. A CSV Dialect defines a simple format to describe the various dialects of CSV files in a language agnostic manner. In case of a database, the values in the containing fields are \"null\".",
