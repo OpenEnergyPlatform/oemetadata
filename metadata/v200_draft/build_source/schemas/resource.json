@@ -108,6 +108,17 @@
                                     "title": "Type",
                                     "readonly": true
                                 },
+                                "isNullable": {
+                                    "description": "A boolean key to specify that a column can be nullable. True is the default value.",
+                                    "example": "True",
+                                    "type": [
+                                        "boolean",
+                                        "null"
+                                    ],
+                                    "badge": "Iron",
+                                    "title": "Nullable",
+                                    "readonly": true
+                                },
                                 "isAbout": {
                                     "description": "Ontology URI to describe the column header",
                                     "type": "array",
@@ -201,7 +212,7 @@
                             },
                             "additionalProperties": false,
                             "title": "Field",
-                            "required": ["name", "type"]
+                            "required": ["name", "type", "isNullable"]
                         },
                         "title": "Field"
                     },
