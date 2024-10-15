@@ -107,8 +107,7 @@
                     }
                 },
                 "badge": "Bronze",
-                "title": "Sources",
-                "additionalProperties": false
+                "title": "Sources"
             },
             "badge": "Bronze",
             "title": "Sources"
