@@ -163,5 +163,6 @@
             "title": "Embargo Period",
             "additionalProperties": false
         }
-    }
+    },
+    "required": ["name"]
 }
