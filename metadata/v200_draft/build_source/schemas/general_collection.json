@@ -4,35 +4,36 @@
     "type": "object",
     "properties": {
         "name": {
-            "description": "Collection name",
-            "example": "my_oep_collection",
+            "description": "A filename or database conform collection name.",
+            "example": "oemetadata",
             "type": [
                 "string",
                 "null"
             ],
-            "badge": "Silver",
-            "title": "Collection name"
+            "badge": "Iron",
+            "title": "Collection Name"
         },
         "title": {
-            "description": "A Human readable, full title , including author.",
-            "example": "RLI - OEMetadata - Metadata example table",
+            "description": "A human readable collection name.",
+            "example": "OEMetadata",
             "type": [
                 "string",
                 "null"
             ],
             "badge": "Silver",
-            "title": "Title"
+            "title": "Collection Title"
         },
-        "collectionId": {
-            "description": "A Uniform Resource Identifier (URI) that links the resource collection.",
-            "example": "https://todo",
+        "id": {
+            "description": "A unique identifier (UUID/DOI) for the collection.",
+            "example": "https://databus.openenergyplatform.org/oeplatform/supply",
             "type": [
                 "string",
                 "null"
             ],
-            "badge": null,
+            "badge": "Silver",
             "title": "Collection identifier",
             "readonly": true
         }
-    }
+    },
+    "required": ["name"]
 }

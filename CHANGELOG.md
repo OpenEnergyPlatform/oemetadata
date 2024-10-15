@@ -50,6 +50,7 @@ Here is a template for new release sections
 
 - Add roles to contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
 
+- Add mandatory fields to the json schema (Iron Badge) [(#160)](https://github.com/OpenEnergyPlatform/oemetadata/pull/160)
 
 ### Changed
 
