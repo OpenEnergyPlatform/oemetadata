@@ -61,17 +61,18 @@
                                 "title": "Roles"
                             },
                             "date": {
-                                "description": "Date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601.",
+                                "description": "The date of the final contribution. Date Format is ISO 8601.",
                                 "example": "2016-06-16",
                                 "type": [
                                     "string",
                                     "null"
                                 ],
                                 "badge": null,
-                                "title": "Date"
+                                "title": "Date",
+                                "format": "date"
                             },
                             "object": {
-                                "description": "Target of contribution. Which part of the package was supplied/changed.",
+                                "description": "Target of contribution. Which part of the package was supplied or changed.",
                                 "example": "data and metadata",
                                 "type": [
                                     "string",
@@ -82,7 +83,7 @@
                             },
                             "comment": {
                                 "description": "Free text comment on what has been done.",
-                                "example": "Fix typo in the title.",
+                                "example": "Add general context.",
                                 "type": [
                                     "string",
                                     "null"
