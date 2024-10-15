@@ -133,14 +133,15 @@ The JSON format offers different formats:
 | 16.6.1.1 | name | The name of the field. The name must consist of only lowercase alphanumeric characters or underscore. It must not start with a number or underscore. | year |
 | 16.6.1.2 | description | A text describing the field. | Reference year for which the data were collected. |
 | 16.6.1.3 | type | The data type of the field. In case of a geom column in a database, also indicate the shape and CRS. | geometry(Point, 4326) |
-| 16.6.1.4 | unit | The unit, preferably SI-unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null'. If the unit is given in a seperate field, reference this field. | MW |
-| 16.6.1.5 | **isAbout** | An array of objects with describe the field in [OEO](https://openenergy-platform.org/ontology/oeo/) terms. | 
-| 16.6.1.5.1 | name | The class label of the OEO terms. | wind energy converting unit |
-| 16.6.1.5.2 | path | The URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000044 |
-| 16.6.1.6 | **valueReference** | An array of objects for an extended description of the values in the column in [OEO](https://openenergy-platform.org/ontology/oeo/) terms. | |
-| 16.6.1.6.1 | value | The name of the value in the column. | onshore |
-| 16.6.1.6.2 | name | The class label of the OEO terms. | onshore wind farm |
-| 16.6.1.6.3 | path | The URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000311 |
+| 16.6.1.4 | nullable | A boolean key to specify that a column can be nullable. True is the default value. | True |
+| 16.6.1.5 | unit | The unit, preferably SI-unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null'. If the unit is given in a seperate field, reference this field. | MW |
+| 16.6.1.6 | **isAbout** | An array of objects with describe the field in [OEO](https://openenergy-platform.org/ontology/oeo/) terms. | 
+| 16.6.1.6.1 | name | The class label of the OEO terms. | wind energy converting unit |
+| 16.6.1.6.2 | path | The URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000044 |
+| 16.6.1.7 | **valueReference** | An array of objects for an extended description of the values in the column in [OEO](https://openenergy-platform.org/ontology/oeo/) terms. | |
+| 16.6.1.7.1 | value | The name of the value in the column. | onshore |
+| 16.6.1.7.2 | name | The class label of the OEO terms. | onshore wind farm |
+| 16.6.1.7.3 | path | The URI of the class. | https://openenergy-platform.org/ontology/oeo/OEO_00000311 |
 
 #### Resource Keys - Properties
 |#|Key |Description |Example |
