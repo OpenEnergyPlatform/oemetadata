@@ -93,8 +93,7 @@
                 }
             },
             "badge": "Gold",
-            "title": "Context",
-            "additionalProperties": false
+            "title": "Context"
         }
     }
 }
