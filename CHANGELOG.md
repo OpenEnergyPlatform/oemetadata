@@ -54,6 +54,8 @@ Here is a template for new release sections
 
 - Add key copyrightStatement to sources [(#162)](https://github.com/OpenEnergyPlatform/oemetadata/pull/162)
 
+- Add key nullable to fields section (columns) [(#161)](https://github.com/OpenEnergyPlatform/oemetadata/pull/161)
+
 ### Changed
 
 - Remove comment field as it holds information on how to fill out the metadata and therefore should not be part of the actual oemetadata but the documentation. [#???](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
