@@ -119,6 +119,16 @@
                                     "title": "Nullable",
                                     "readonly": true
                                 },
+                                "unit": {
+                                    "description": "The unit, preferably SI-unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null'. If the unit is given in a seperate field, reference this field.",
+                                    "example": "MW",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "badge": "Silver",
+                                    "title": "Unit"
+                                },
                                 "isAbout": {
                                     "description": "Ontology URI to describe the column header",
                                     "type": "array",
@@ -198,16 +208,6 @@
                                     },
                                     "badge": "Platinum",
                                     "title": "valueReference"
-                                },
-                                "unit": {
-                                    "description": "The unit, preferably SI-unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null'. If the unit is given in a seperate field, reference this field.",
-                                    "example": "MW",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ],
-                                    "badge": "Silver",
-                                    "title": "Unit"
                                 }
                             },
                             "additionalProperties": false,
