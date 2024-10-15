@@ -119,7 +119,7 @@ The JSON format offers different formats:
 |#|Key |Description |Example |
 |---|---|---|---|
 | 15 | **resources** | An array of objects of the data. It describes the data resource as an individual file or (database) table. |  |
-| 15.1 | profile | The profile of this descriptor according to the profiles specification. This information is retained in order to comply with the "Tabular Data Package" standard. Use "tabular-data-resource" for all tables. | tabular-data-resource |
+| 15.1 | type | A string that indicates that the resource is tabular as per Tabular Data definition. Use "table" for all tables. | table |
 | 15.2 | name | A name for the entire data package. The name must consist of only lowercase alphanumeric characters or underscore. It must not start with a number or underscore. In a database, this will be the name of the table within the schema containing it. The name can correspond to the file name (minus the file-extension) of the data file describing the resource, if it complies with the naming convention above. Name also contains information about the shema on the OEP, use "." to seperate shema from table name. | openstreetmap.osm_deu_line |
 | 15.3 | path | A URL that should be a permanent http(s) address or other path directly linking to the resource. | https://openenergy-platform.org/dataedit/view/openstreetmap/osm_deu_line |
 | 15.4 | format | The file extension. 'csv', 'xls', 'json' etc. would be expected to be the standard file extension for this type of resource. When you upload your data to the OEDB, in the shown metadata string, the format will be changed accordingly to 'PostgreSQL', since the data there are stored in a database. | PostgreSQL |
