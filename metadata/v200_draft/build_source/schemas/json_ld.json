@@ -68,8 +68,7 @@
                 "version",
                 "used",
                 "license"
-            ],
-            "additionalProperties": false
+            ]
         }
     }
 }
