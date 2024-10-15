@@ -39,8 +39,7 @@
                 }
             },
             "badge": "Silver",
-            "title": "Spatial",
-            "additionalProperties": false
+            "title": "Spatial"
         }
     }
 }

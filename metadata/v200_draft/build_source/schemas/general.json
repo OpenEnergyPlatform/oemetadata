@@ -73,8 +73,7 @@
                     }
                 },
                 "badge": "Platinum",
-                "title": "Subject",
-                "additionalProperties": false
+                "title": "Subject"
             },
             "badge": "Platinum",
             "title": "Subject"
@@ -160,8 +159,7 @@
                 }
             },
             "badge": "Bronze",
-            "title": "Embargo Period",
-            "additionalProperties": false
+            "title": "Embargo Period"
         }
     },
     "required": ["name"]

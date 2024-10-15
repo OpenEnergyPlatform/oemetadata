@@ -62,8 +62,7 @@
                     }
                 },
                 "badge": "Bronze",
-                "title": "Licenses",
-                "additionalProperties": false
+                "title": "Licenses"
             },
             "badge": "Bronze",
             "title": "Licenses"

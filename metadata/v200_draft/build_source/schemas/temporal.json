@@ -78,16 +78,14 @@
                             }
                         },
                         "badge": "Silver",
-                        "title": "Timeseries",
-                        "additionalProperties": false
+                        "title": "Timeseries"
                     },
                     "badge": "Silver",
                     "title": "Timeseries"
                 }
             },
             "badge": "Silver",
-            "title": "Temporal",
-            "additionalProperties": false
+            "title": "Temporal"
         }
     }
 }

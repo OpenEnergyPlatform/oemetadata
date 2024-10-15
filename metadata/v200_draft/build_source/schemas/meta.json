@@ -53,11 +53,9 @@
                         }
                     },
                     "badge": null,
-                    "title": "Metadata license",
-                    "additionalProperties": false
+                    "title": "Metadata license"
                 }
             },
-            "additionalProperties": false,
             "title": "Meta Metadata",
             "options": {
                 "hidden": true

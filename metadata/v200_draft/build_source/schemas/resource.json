@@ -158,8 +158,7 @@
                                             }
                                         },
                                         "badge": "Platinum",
-                                        "title": "isAbout",
-                                        "additionalProperties": false
+                                        "title": "isAbout"
                                     },
                                     "badge": "Platinum",
                                     "title": "isAbout"
@@ -203,14 +202,12 @@
                                             }
                                         },
                                         "badge": "Platinum",
-                                        "title": "valueReference",
-                                        "additionalProperties": false
+                                        "title": "valueReference"
                                     },
                                     "badge": "Platinum",
                                     "title": "valueReference"
                                 }
                             },
-                            "additionalProperties": false,
                             "title": "Field",
                             "required": ["name", "type", "nullable"]
                         },
@@ -299,12 +296,10 @@
                                     },
                                     "badge": "Iron",
                                     "title": "Reference",
-                                    "additionalProperties": false,
                                     "required": ["resource", "fields"]
                                 }
                             },
                             "title": "Foreign Key",
-                            "additionalProperties": false,
                             "required": ["fields"]
                         },
                         "badge": "Iron",
@@ -312,7 +307,6 @@
                     }
                 },
                 "title": "Schema",
-                "additionalProperties": false,
                 "required": ["primaryKey"]
             },
             "dialect": {
@@ -340,7 +334,7 @@
                         "title": "Decimal separator"
                     }
                 },
-                "additionalProperties": false,
+                "badge": "Silver",
                 "title": "Dialect",
                 "options": {
                     "hidden": true
