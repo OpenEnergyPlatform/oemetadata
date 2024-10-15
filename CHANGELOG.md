@@ -52,6 +52,8 @@ Here is a template for new release sections
 
 - Add mandatory fields to the json schema (Iron Badge) [(#160)](https://github.com/OpenEnergyPlatform/oemetadata/pull/160)
 
+- Add key copyrightStatement to sources [(#162)](https://github.com/OpenEnergyPlatform/oemetadata/pull/162)
+
 - Add key nullable to fields section (columns) [(#161)](https://github.com/OpenEnergyPlatform/oemetadata/pull/161)
 
 ### Changed

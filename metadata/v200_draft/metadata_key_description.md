@@ -92,6 +92,7 @@ The JSON format offers different formats:
 | 12.4.3 | path | A link to the license text. | https://opendatacommons.org/licenses/odbl/1-0/index.html |
 | 12.4.4 | instruction | A short description of rights and restrictions. The use of [tl;drLegal](https://tldrlegal.com/) is recommended. | You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information. |
 | 12.4.5 | attribution | The copyright owner of the **source**. If attribution licenses are used, that name must be acknowledged. | © Intergovernmental Panel on Climate Change 2014 |
+| 12.4.6 | copyrightStatement | A link or path that proves that the source or data has the appropriate license. | https://www.marktstammdatenregister.de/MaStR/Startseite/Impressum |
 
 ### License Keys
 |#|Key |Description |Example |
