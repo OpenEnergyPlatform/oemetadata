@@ -62,6 +62,8 @@ Here is a template for new release sections
 
 - Update the schema json file content (schema generation still broken, add desired output) and fix the schema path in the script for generating examples (it pointed to an incorrect directory and file name) [(#149)](https://github.com/OpenEnergyPlatform/oemetadata/pull/149)
 
+- Update resource/profile to resource/type [(#164)](https://github.com/OpenEnergyPlatform/oemetadata/pull/164)
+
 ### Removed
 
 - Remove email from contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)

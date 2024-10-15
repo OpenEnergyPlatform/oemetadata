@@ -3,9 +3,9 @@
     "$id": "general.json#metadata/v200_draft/schemas/resource.json",
     "type": "object",
     "properties": {
-            "profile": {
-                "description": "A string identifying the profile of this descriptor as per the profiles specification. This information is retained in order to comply with the \"Tabular Data Package\" standard. If at all in doubt the value should read \"tabular-data-resource\".",
-                "example": "tabular-data-resource",
+            "type": {
+                "description": "A string that indicates that the resource is tabular as per Tabular Data definition. Use \"table\" for all tables.",
+                "example": "table",
                 "type": [
                     "string",
                     "null"
