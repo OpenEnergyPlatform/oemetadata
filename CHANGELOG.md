@@ -52,6 +52,8 @@ Here is a template for new release sections
 
 - Add mandatory fields to the json schema (Iron Badge) [(#160)](https://github.com/OpenEnergyPlatform/oemetadata/pull/160)
 
+- Add key copyrightStatement to sources [(#162)](https://github.com/OpenEnergyPlatform/oemetadata/pull/162)
+
 ### Changed
 
 - Remove comment field as it holds information on how to fill out the metadata and therefore should not be part of the actual oemetadata but the documentation. [#???](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
