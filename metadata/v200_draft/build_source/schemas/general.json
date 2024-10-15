@@ -135,7 +135,8 @@
                         "null"
                     ],
                     "badge": "Bronze",
-                    "title": "Embargo Period Start"
+                    "title": "Embargo Period Start",
+                    "format": "date"
                 },
                 "end": {
                     "description": "The end date of the embargo period. This is the intended publication date.",
@@ -145,7 +146,8 @@
                         "null"
                     ],
                     "badge": "Bronze",
-                    "title": "Embargo Period End (Publication Date)"
+                    "title": "Embargo Period End (Publication Date)",
+                    "format": "date"
                 },
                 "isActive": {
                     "description": "A boolean key that indicates if the embargo period is currently active. Must be changed to False on the embargo period end date.",
