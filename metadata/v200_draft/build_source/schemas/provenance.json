@@ -99,8 +99,7 @@
                 }
             },
             "badge": null,
-            "title": "Provenance",
-            "additionalProperties": false
+            "title": "Provenance"
         }
     }
 }
