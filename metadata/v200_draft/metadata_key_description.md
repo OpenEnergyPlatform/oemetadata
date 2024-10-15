@@ -164,10 +164,9 @@ The JSON format offers different formats:
 | 17 | **linkedData** | Keys used for Linked Data (LD). | |
 | 17.1 | @id | A Uniform Resource Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus). | https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07 |
 | 17.2 | @context | Explanation of metadata keys in ontology terms. | https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/latest/context.json |
-| 17.3 | **wasGeneratedBy** | Information about the ? | |
-| 17.3.1 | @id | The unique identifier for the wasGeneratedBy object. | oeplatform |
-| 17.3.2 | @type | The type of the wasGeneratedBy object. | moss:OEMetadataMod |
-| 17.3.3 | used | A reference to the resource used. (ToDo) | ToDo |
+| 17.3 | user | The unique identifier for the wasGeneratedBy object. | oeplatform |
+| 17.4 | @type | The type of the wasGeneratedBy object. | moss:OEMetadataMod |
+| 17.5 | usedResource | A reference to the resource used. (ToDo) | ToDo |
 
 ### MetaMetadata Keys
 |#|Key |Description |Example |
