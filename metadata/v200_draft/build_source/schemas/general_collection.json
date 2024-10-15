@@ -32,6 +32,7 @@
             ],
             "badge": "Silver",
             "title": "Collection identifier",
+            "format": "uri",
             "readonly": true
         }
     },
