@@ -43,12 +43,15 @@ Here is a template for new release sections
 - Add path to contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
 - Add organization to contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
 - Add roles to contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
+- Add a section for Linked Data keys [(#159)](https://github.com/OpenEnergyPlatform/oemetadata/pull/159)
 
 ### Changed
 
 - Remove comment field as it holds information on how to fill out the metadata and therefore should not be part of the actual oemetadata but the documentation. [#???](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
 
 - Update the schema json file content (schema generation still broken, add desired output) and fix the schema path in the script for generating examples (it pointed to an incorrect directory and file name) [(#149)](https://github.com/OpenEnergyPlatform/oemetadata/pull/149)
+
+- Update broken Link in key description example [(#159)](https://github.com/OpenEnergyPlatform/oemetadata/pull/159)
 
 ### Removed
 
