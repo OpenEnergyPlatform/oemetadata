@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "general.json#metadata/v200_draft/schemas/linked_data.json",
+    "$id": "general.json#metadata/v20/schemas/linked_data.json",
     "type": "object",
     "properties": {
         "linkedData": {

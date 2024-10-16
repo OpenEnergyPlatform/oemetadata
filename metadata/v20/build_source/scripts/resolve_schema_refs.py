@@ -36,7 +36,7 @@ logger = logging.getLogger(__name__)
 
 # Constants
 BASE_PATH = Path("metadata/")
-VERSION = "v200_draft"
+VERSION = "v20"
 VERSION_PATH = BASE_PATH / VERSION
 SCHEMA_BUILD_PATH = VERSION_PATH / "build_source"
 MAIN_SCHEMA_PATH = SCHEMA_BUILD_PATH / "schema_structure.json"
