@@ -62,12 +62,10 @@ Here is a template for new release sections
 ### Changed
 
 - Remove comment field as it holds information on how to fill out the metadata and therefore should not be part of the actual oemetadata but the documentation. [#???](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
-
 - Update the schema json file content (schema generation still broken, add desired output) and fix the schema path in the script for generating examples (it pointed to an incorrect directory and file name) [(#149)](https://github.com/OpenEnergyPlatform/oemetadata/pull/149)
-
 - Update broken Link in key description example [(#159)](https://github.com/OpenEnergyPlatform/oemetadata/pull/159)
 - Update resource/profile to resource/type [(#164)](https://github.com/OpenEnergyPlatform/oemetadata/pull/164)
-
+- Update links in context.json and example.json for all versions [(#167)](https://github.com/OpenEnergyPlatform/oemetadata/pull/167)
 
 ### Removed
 
