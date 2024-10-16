@@ -15,7 +15,7 @@
                         "null"
                     ],
                     "badge": null,
-                    "title": "Metadata version"
+                    "title": "Metadata Version"
                 },
                 "metadataLicense": {
                     "description": "Object describing the license of the provided metadata.",
@@ -49,11 +49,12 @@
                                 "null"
                             ],
                             "badge": null,
-                            "title": "Path"
+                            "title": "Path",
+                            "format": "uri"
                         }
                     },
                     "badge": null,
-                    "title": "Metadata license"
+                    "title": "Metadata License"
                 }
             },
             "title": "Meta Metadata",
