@@ -56,6 +56,8 @@ Here is a template for new release sections
 
 - Add key nullable to fields section (columns) [(#161)](https://github.com/OpenEnergyPlatform/oemetadata/pull/161)
 
+- Add explicit json types [(#166)](https://github.com/OpenEnergyPlatform/oemetadata/pull/166)
+
 ### Changed
 
 - Remove comment field as it holds information on how to fill out the metadata and therefore should not be part of the actual oemetadata but the documentation. [#???](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
@@ -70,6 +72,7 @@ Here is a template for new release sections
 
 - Remove email from contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
 - Remove all additionalProperties is false [(#163)](https://github.com/OpenEnergyPlatform/oemetadata/pull/163)
+- Remove duplicate keys from resources [(#165)](https://github.com/OpenEnergyPlatform/oemetadata/pull/165)
 
 ## [1.6.0] - Release - Introduce badges in json schema - 2023-05-30
 

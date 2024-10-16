@@ -16,32 +16,9 @@
                     "hidden": true
                 }
             },
-            "name": {
-                "description": "A resource MUST contain a name unique to amongst all resources in this data package. To comply with the data package standard it must consist of only lowercase alphanumeric character plus \".\", \"-\" and \"_\". It may not start with a number. In a database this will be the name of the table within its containing schema. It would be usual for the name to correspond to the file name (minus the file-extension) of the data file the resource describes. Example:",
-                "example": "sandbox.example_table",
-                "type": [
-                    "string",
-                    "null"
-                ],
-                "badge": "Iron",
-                "title": "Name"
-            },
-            "path": {
-                "description": "A URL that should be a permanent http(s) address or other path directly linking to the resource.",
-                "example": "https://openenergy-platform.org/dataedit/view/openstreetmap/osm_deu_line",
-                "type": [
-                    "string",
-                    "null"
-                ],
-                "badge": "Gold",
-                "title": "Path",
-                "options": {
-                    "hidden": true
-                }
-            },
             "format": {
-                "description": "The file extension. 'csv', 'xls', 'json' etc. are expected to be the standard file extension for this type of resource. When you upload your data to the OEDB, in the shown metadata string, the format will be changed accordingly to 'PostgreSQL', since the data there are stored in a database.",
-                "example": "csv",
+                "description": "A file extension format. Possible options are 'csv', 'xls', 'json' and other standard file extension for this type of resource. When you upload your data to the OEP, in the shown metadata string, the format will be changed accordingly to 'PostgreSQL', since the data is stored in a relational database.",
+                "example": "PostgreSQL",
                 "type": [
                     "string",
                     "null"
@@ -66,7 +43,7 @@
                 }
             },
             "schema": {
-                "description": "Object containing fields, primary key and for foreign keys. Describes the structure of the present data.",
+                "description": "Object containing fields, primary key and for foreign keys. Describes the structure of the data.",
                 "type": "object",
                 "properties": {
                     "fields": {
