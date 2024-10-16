@@ -5,7 +5,7 @@
     "properties": {
         "name": {
             "description": "A filename or database conform table name.",
-            "example": "oemetadata_table_example_v20",
+            "example": "model_draft.oemetadata_table_example_v20",
             "type": [
                 "string",
                 "null"
@@ -23,7 +23,7 @@
             "badge": "Silver",
             "title": "Title"
         },
-        "id": {
+        "path": {
             "description": "A unique identifier (URI/UUID/DOI) for the table or file.",
             "example": "http://openenergyplatform.org/dataedit/view/model_draft/oemetadata_table_example_v20",
             "type": [
@@ -31,7 +31,7 @@
                 "null"
             ],
             "badge": "Bronze",
-            "title": "ID",
+            "title": "Path",
             "readonly": true
         },
         "description": {
