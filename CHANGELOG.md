@@ -64,6 +64,8 @@ Here is a template for new release sections
 
 - Update resource/profile to resource/type [(#164)](https://github.com/OpenEnergyPlatform/oemetadata/pull/164)
 
+- Update links in context.json and example.json for all versions [(#167)](https://github.com/OpenEnergyPlatform/oemetadata/pull/167)
+
 ### Removed
 
 - Remove email from contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
