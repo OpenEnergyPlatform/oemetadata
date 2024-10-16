@@ -97,6 +97,16 @@
                                     ],
                                     "badge": "Bronze",
                                     "title": "Attribution"
+                                },
+                                "copyrightStatement": {
+                                    "description": "A link or path that proves that the source or data has the appropriate license.",
+                                    "example": "https://www.marktstammdatenregister.de/MaStR/Startseite/Impressum",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "badge": "Bronze",
+                                    "title": "Copyright Statement"
                                 }
                             },
                             "badge": "Bronze",
@@ -107,8 +117,7 @@
                     }
                 },
                 "badge": "Bronze",
-                "title": "Sources",
-                "additionalProperties": false
+                "title": "Sources"
             },
             "badge": "Bronze",
             "title": "Sources"

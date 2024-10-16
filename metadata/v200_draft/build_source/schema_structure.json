@@ -13,9 +13,6 @@
             "items": {
                 "type": "object",
                 "properties": {
-                    "jsonLd": {
-                        "$ref": "json_ld.json#"
-                    },
                     "general": {
                         "$ref": "general.json#"
                     },
@@ -42,6 +39,9 @@
                     },
                     "review": {
                         "$ref": "review.json#"
+                    },
+                    "linkedData": {
+                        "$ref": "linked_data.json#"
                     }
                 }
             },

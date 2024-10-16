@@ -38,7 +38,8 @@
                             "null"
                         ],
                         "badge": "Bronze",
-                        "title": "Path"
+                        "title": "Path",
+                        "format": "uri"
                     },
                     "instruction": {
                         "description": "A short description of rights and restrictions. The use of tl;drLegal is recommended.",
@@ -51,7 +52,7 @@
                         "title": "Instruction"
                     },
                     "attribution": {
-                        "description": "The copyrightholder of the data set. If attribution licenses are used, that name must be acknowledged.",
+                        "description": "The copyright holder of the data set. If attribution licenses are used, that name must be acknowledged.",
                         "example": "© Reiner Lemoine Institut",
                         "type": [
                             "string",
@@ -62,8 +63,7 @@
                     }
                 },
                 "badge": "Bronze",
-                "title": "Licenses",
-                "additionalProperties": false
+                "title": "Licenses"
             },
             "badge": "Bronze",
             "title": "Licenses"

@@ -28,7 +28,6 @@
                     "title": "Badge"
                 }
             },
-            "additionalProperties": false,
             "title": "Review",
             "options": {
                 "hidden": true

@@ -40,10 +40,24 @@ Here is a template for new release sections
   - We use json schema $ref elements to reference the schema modules and we provide code to resolve the reference´s and generate the complete schema.json.
 
 - Add code to generate a example.json based on the schema.json. We read the example values for each of the fields specified in the schema and generate the example. [#???](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
+- Add updated context.json [(#154)](https://github.com/OpenEnergyPlatform/oemetadata/pull/154)
+
+- Add embargoPeriod section with keys start, end, isActive [(#155)](https://github.com/OpenEnergyPlatform/oemetadata/pull/155)
+
 - Add path to contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
+
 - Add organization to contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
+
 - Add roles to contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
 - Add a section for Linked Data keys [(#159)](https://github.com/OpenEnergyPlatform/oemetadata/pull/159)
+
+- Add mandatory fields to the json schema (Iron Badge) [(#160)](https://github.com/OpenEnergyPlatform/oemetadata/pull/160)
+
+- Add key copyrightStatement to sources [(#162)](https://github.com/OpenEnergyPlatform/oemetadata/pull/162)
+
+- Add key nullable to fields section (columns) [(#161)](https://github.com/OpenEnergyPlatform/oemetadata/pull/161)
+
+- Add explicit json types [(#166)](https://github.com/OpenEnergyPlatform/oemetadata/pull/166)
 
 ### Changed
 
@@ -52,10 +66,14 @@ Here is a template for new release sections
 - Update the schema json file content (schema generation still broken, add desired output) and fix the schema path in the script for generating examples (it pointed to an incorrect directory and file name) [(#149)](https://github.com/OpenEnergyPlatform/oemetadata/pull/149)
 
 - Update broken Link in key description example [(#159)](https://github.com/OpenEnergyPlatform/oemetadata/pull/159)
+- Update resource/profile to resource/type [(#164)](https://github.com/OpenEnergyPlatform/oemetadata/pull/164)
+
 
 ### Removed
 
 - Remove email from contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
+- Remove all additionalProperties is false [(#163)](https://github.com/OpenEnergyPlatform/oemetadata/pull/163)
+- Remove duplicate keys from resources [(#165)](https://github.com/OpenEnergyPlatform/oemetadata/pull/165)
 
 ## [1.6.0] - Release - Introduce badges in json schema - 2023-05-30
 
