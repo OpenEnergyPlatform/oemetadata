@@ -14,13 +14,13 @@
                     "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000150"
                 }
             ],
-            "languages": "[en-GB, de-DE, fr-FR]",
-            "keywords": "[example, ODbL-1.0, RLI, NFDI4Energy]",
+            "languages": ["en-GB", "de-DE", "fr-FR"],
+            "keywords": ["example", "ODbL-1.0", "RLI", "NFDI4Energy"],
             "publicationDate": "2024-10-15",
             "embargoPeriod": {
                 "start": "2024-10-11",
                 "end": "2025-01-01",
-                "isActive": "True"
+                "isActive": true
             },
             "context": {
                 "homepage": "https://openenergy-platform.org/",
@@ -81,7 +81,7 @@
                         "title": "Ludwig Hülk",
                         "path": "https://github.com/Ludee",
                         "organization": "Reiner Lemoine Institut",
-                        "roles": "[creator, dataCurator]",
+                        "roles": ["creator", "dataCurator"],
                         "date": "2016-06-16",
                         "object": "data and metadata",
                         "comment": "Add general context."
@@ -97,7 +97,7 @@
                         "name": "year",
                         "description": "Reference year for which the data were collected.",
                         "type": "geometry(Point, 4326)",
-                        "nullable": "True",
+                        "nullable": true,
                         "unit": "MW",
                         "isAbout": [
                             {
@@ -142,9 +142,9 @@
             "linkedData": {
                 "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07",
                 "@context": "https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/context.json",
-                "user": "oeplatform",
+                "user": "https://databus.openenergyplatform.org/oeplatform",
                 "@type": "moss:OEMetadataMod",
-                "usedResource": "ToDo"
+                "usedResource": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07"
             }
         }
     ],
