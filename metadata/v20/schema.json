@@ -136,7 +136,12 @@
           },
           "keywords": {
             "description": "A list of string keywords to assist users searching for the package in catalogs.",
-            "example": "[example, ODbL-1.0, RLI, NFDI4Energy]",
+            "example": [
+              "example",
+              "ODbL-1.0",
+              "RLI",
+              "NFDI4Energy"
+            ],
             "type": "array",
             "items": {
               "description": "The keyword are used and managed in the OEP as table tags.",
@@ -190,7 +195,7 @@
               },
               "isActive": {
                 "description": "A boolean key that indicates if the embargo period is currently active. Must be changed to False on the embargo period end date.",
-                "example": "True",
+                "example": true,
                 "type": [
                   "boolean",
                   "null"
@@ -642,7 +647,10 @@
                     },
                     "roles": {
                       "description": "An array of strings describing the roles of the contributor.",
-                      "example": "[creator, dataCurator]",
+                      "example": [
+                        "creator",
+                        "dataCurator"
+                      ],
                       "type": "array",
                       "items": {
                         "description": "A role is RECOMMENDED to follow an established vocabulary, such as DataCite Metadata Schema\u2019s contributorRole or CreDIT. Useful roles to indicate are: creator, contact, and dataCurator.",
