@@ -1,21 +1,12 @@
 {
   "name": "",
   "title": "",
-  "collectionId": "",
+  "id": "",
   "resources": [
     {
-      "@id": "",
-      "@context": "",
-      "wasGeneratedBy": {
-        "@id": "",
-        "@type": "",
-        "version": "",
-        "used": "",
-        "license": ""
-      },
       "name": "",
       "title": "",
-      "id": "",
+      "path": "",
       "description": "",
       "subject": [
         {
@@ -23,13 +14,18 @@
           "path": ""
         }
       ],
-      "language": [
+      "languages": [
         ""
       ],
       "keywords": [
         ""
       ],
       "publicationDate": "",
+      "embargoPeriod": {
+        "start": "",
+        "end": "",
+        "isActive": false
+      },
       "context": {
         "homepage": "",
         "documentation": "",
@@ -68,7 +64,8 @@
               "title": "",
               "path": "",
               "instruction": "",
-              "attribution": ""
+              "attribution": "",
+              "copyrightStatement": ""
             }
           ]
         }
@@ -83,85 +80,86 @@
         }
       ],
       "provenance": {
-        "alternateOf": "",
-        "checksum": "",
-        "dateModified": "",
-        "digtalObjectLocationAccessProtocol": "",
-        "digitalObjectType": "",
-        "hadPrimarySource": "",
-        "hasMetadata": "",
-        "isMetadataFor": "",
-        "policy": "",
-        "provenanceGraph": "",
-        "specializationOf": "",
-        "version": "",
-        "wasDerivedFrom": "",
-        "wasRevisionOf": "",
-        "wasQuotedFrom": "",
         "contributors": [
           {
             "title": "",
-            "email": "",
+            "path": "",
+            "organization": "",
+            "roles": [
+              ""
+            ],
             "date": "",
             "object": "",
             "comment": ""
           }
         ]
       },
-      "resource": {
-        "profile": "",
-        "name": "",
-        "path": "",
-        "format": "",
-        "encoding": "",
-        "schema": {
-          "fields": [
-            {
-              "name": "",
-              "description": "",
-              "type": "",
-              "isAbout": [
-                {
-                  "name": "",
-                  "path": ""
-                }
-              ],
-              "valueReference": [
-                {
-                  "value": "",
-                  "name": "",
-                  "path": ""
-                }
-              ],
-              "unit": ""
-            }
-          ],
-          "primaryKey": [
-            ""
-          ],
-          "foreignKeys": [
-            {
+      "type": "",
+      "format": "",
+      "encoding": "",
+      "schema": {
+        "fields": [
+          {
+            "name": "",
+            "description": "",
+            "type": "",
+            "nullable": false,
+            "unit": "",
+            "isAbout": [
+              {
+                "name": "",
+                "path": ""
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "",
+                "name": "",
+                "path": ""
+              }
+            ]
+          }
+        ],
+        "primaryKey": [
+          ""
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              ""
+            ],
+            "reference": {
+              "resource": "",
               "fields": [
                 ""
-              ],
-              "reference": {
-                "resource": "",
-                "fields": [
-                  ""
-                ]
-              }
+              ]
             }
-          ]
-        },
-        "dialect": {
-          "delimiter": "",
-          "decimalSeparator": ""
-        },
-        "review": {
-          "path": "",
-          "badge": ""
-        }
+          }
+        ]
+      },
+      "dialect": {
+        "delimiter": "",
+        "decimalSeparator": ""
+      },
+      "review": {
+        "path": "",
+        "badge": ""
+      },
+      "linkedData": {
+        "@id": "",
+        "@context": "",
+        "user": "",
+        "@type": "",
+        "usedResource": ""
       }
     }
-  ]
+  ],
+  "metaMetadata": {
+    "metadataVersion": "OEP-2.0.0",
+    "metadataLicense": {
+      "name": "CC0-1.0",
+      "title": "Creative Commons Zero v1.0 Universal",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  }
 }
