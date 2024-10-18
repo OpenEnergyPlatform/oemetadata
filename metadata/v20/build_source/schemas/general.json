@@ -151,7 +151,7 @@
                 },
                 "isActive": {
                     "description": "A boolean key that indicates if the embargo period is currently active. Must be changed to False on the embargo period end date.",
-                    "example": "True",
+                    "example": true,
                     "type": [
                         "boolean",
                         "null"
