@@ -5,7 +5,7 @@
     "properties": {
         "name": {
             "description": "A filename or database conform table name.",
-            "example": "oemetadata_table_example",
+            "example": "oep_oemetadata_table_example",
             "type": [
                 "string",
                 "null"
@@ -13,13 +13,16 @@
             "badge": "Iron",
             "title": "Name"
         },
-        "topic": {
-            "description": "A list predefined topics that correspond to the database schemas.",
+        "topics": {
+            "description": "A list predefined topics that correspond to the database schemas of the OEP.",
             "example": "[model_draft, reference]",
             "type": "array",
             "items": {
                 "description": "The topics are used to group the data in the database.",
-                "example": "model_draft",
+                "example": [
+                    "model_draft",
+                    "reference"
+                ],
                 "type": [
                     "string",
                     "null"
@@ -42,7 +45,7 @@
         },
         "path": {
             "description": "A unique identifier (URI/UUID/DOI) for the table or file.",
-            "example": "http://openenergyplatform.org/dataedit/view/model_draft/oemetadata_table_example",
+            "example": "http://openenergyplatform.org/dataedit/view/model_draft/oep_oemetadata_table_example",
             "type": [
                 "string",
                 "null"
