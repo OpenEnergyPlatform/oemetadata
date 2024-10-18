@@ -5,7 +5,7 @@
     "properties": {
         "name": {
             "description": "A filename or database conform table name.",
-            "example": "model_draft.oemetadata_table_example_v20",
+            "example": "oemetadata_table_example",
             "type": [
                 "string",
                 "null"
@@ -13,9 +13,26 @@
             "badge": "Iron",
             "title": "Name"
         },
+        "topic": {
+            "description": "A list predefined topics that correspond to the database schemas.",
+            "example": "[model_draft, reference]",
+            "type": "array",
+            "items": {
+                "description": "The topics are used to group the data in the database.",
+                "example": "model_draft",
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "badge": "Bronze",
+                "title": "Keyword"
+            },
+            "badge": "Bronze",
+            "title": "Keywords"
+        },
         "title": {
             "description": "A human readable table name.",
-            "example": "OEMetadata example table - Version 2.0",
+            "example": "OEMetadata example table",
             "type": [
                 "string",
                 "null"
@@ -25,7 +42,7 @@
         },
         "path": {
             "description": "A unique identifier (URI/UUID/DOI) for the table or file.",
-            "example": "http://openenergyplatform.org/dataedit/view/model_draft/oemetadata_table_example_v20",
+            "example": "http://openenergyplatform.org/dataedit/view/model_draft/oemetadata_table_example",
             "type": [
                 "string",
                 "null"
@@ -33,7 +50,7 @@
             "badge": "Bronze",
             "title": "Path",
             "readonly": true
-        },
+                },
         "description": {
             "description": "A description of the table. It should be usable as summary information for the table that is described by the metadata.",
             "example": "Example table used to illustrate the oemetadata structure and meaning.",
