@@ -25,7 +25,7 @@
         },
         "path": {
             "description": "A unique identifier (URI/UUID/DOI) for the table or file.",
-            "example": "http://openenergyplatform.org/dataedit/view/model_draft/oemetadata_table_example_v20",
+            "example": "http://openenergyplatform.org/dataedit/view/model_draft/oemetadata_table_example",
             "type": [
                 "string",
                 "null"
@@ -45,13 +45,13 @@
             "title": "Description"
         },
         "subject": {
-            "description": "References to the topics of the resource in ontology terms.",
+            "description": "An array of references to the subjects of the resource in ontology terms.",
             "type": "array",
             "items": {
                 "type": "object",
                 "properties": {
                     "name": {
-                        "description": "The class label of the OEO term.",
+                        "description": "The class label of the ontology term.",
                         "example": "energy",
                         "type": [
                             "string",
