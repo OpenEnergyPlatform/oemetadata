@@ -59,6 +59,8 @@ Here is a template for new release sections
 
 - Add explicit json types [(#166)](https://github.com/OpenEnergyPlatform/oemetadata/pull/166)
 
+- Add key topics to general [(#170)](https://github.com/OpenEnergyPlatform/oemetadata/pull/170)
+
 ### Changed
 
 - Remove comment field as it holds information on how to fill out the metadata and therefore should not be part of the actual oemetadata but the documentation. [#???](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
