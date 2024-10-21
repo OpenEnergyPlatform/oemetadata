@@ -5,7 +5,7 @@
     "properties": {
         "name": {
             "description": "A filename or database conform collection name.",
-            "example": "oemetadata",
+            "example": "oep_oemetadata",
             "type": [
                 "string",
                 "null"
@@ -15,7 +15,7 @@
         },
         "title": {
             "description": "A human readable collection name.",
-            "example": "OEMetadata",
+            "example": "OEP OEMetadata",
             "type": [
                 "string",
                 "null"
@@ -25,13 +25,13 @@
         },
         "id": {
             "description": "A unique identifier (UUID/DOI) for the collection.",
-            "example": "https://databus.openenergyplatform.org/oeplatform/supply",
+            "example": "https://databus.openenergyplatform.org/oeplatform/reference",
             "type": [
                 "string",
                 "null"
             ],
             "badge": "Silver",
-            "title": "Collection identifier",
+            "title": "Collection Identifier",
             "format": "uri",
             "readonly": true
         }

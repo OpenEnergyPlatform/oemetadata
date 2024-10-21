@@ -31,6 +31,12 @@ The JSON format offers different formats:
 
 ## Metadata keys with a description and example
 
+### Collection Keys
+| #    | Key               | Description                                                                                                                                                                      | Example                                                                              | Badge |
+|------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------|
+| 1    | name              | A filename or database conform collection name.                                                                                                                                  | oep_oemetadata                                                       |       |
+| 2    | title             | A human readable collection name.                                                                                                                                                | OEP OEMetadata                                                           |       |
+| 3    | id                | A unique identifier (UUID/DOI) for the collection.                                                                                                                               | https://databus.openenergyplatform.org/oeplatform/reference                                           |       |
 
 ### General Keys
 | #    | Key               | Description                                                                                                                                                                      | Example                                                                              | Badge |
