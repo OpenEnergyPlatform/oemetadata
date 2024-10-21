@@ -163,5 +163,13 @@
                 "usedResource": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07"
             }
         }
-    ]
+    ],
+    "metaMetadata": {
+        "metadataVersion": "OEP-2.0.0",
+        "metadataLicense": {
+            "name": "CC0-1.0",
+            "title": "Creative Commons Zero v1.0 Universal",
+            "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+    }
 }
