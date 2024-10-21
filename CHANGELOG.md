@@ -61,6 +61,8 @@ Here is a template for new release sections
 
 - Add key topics to general [(#170)](https://github.com/OpenEnergyPlatform/oemetadata/pull/170)
 
+- Add badge labels to documentation [(#175)](https://github.com/OpenEnergyPlatform/oemetadata/pull/175)
+
 ### Changed
 
 - Remove comment field as it holds information on how to fill out the metadata and therefore should not be part of the actual oemetadata but the documentation. [#???](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
@@ -69,6 +71,7 @@ Here is a template for new release sections
 - Update resource/profile to resource/type [(#164)](https://github.com/OpenEnergyPlatform/oemetadata/pull/164)
 - Update links in context.json and example.json for all versions [(#167)](https://github.com/OpenEnergyPlatform/oemetadata/pull/167)
 - Restrict the version number to only major and minor versions since 2.0 [(#168)](https://github.com/OpenEnergyPlatform/oemetadata/pull/168)
+- Update all descriptions and examples [(#175)](https://github.com/OpenEnergyPlatform/oemetadata/pull/175)
 
 ### Removed
 

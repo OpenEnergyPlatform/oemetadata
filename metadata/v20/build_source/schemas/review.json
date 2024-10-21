@@ -4,11 +4,11 @@
     "type": "object",
     "properties": {
         "review": {
-            "description": "Data uploaded through the OEP needs to go through review. The review will cover the areas described here: https://github.com/OpenEnergyPlatform/data-preprocessing/wiki and carried out by a team of the platform. The review itself is documented at the specified path and a badge is rewarded with regards to completeness.",
+            "description": "The metadata on the OEP can go through an open peer review process. See the Academy course [Open Peer Review](https://openenergyplatform.github.io/academy/courses/09_peer_review/) for further information.",
             "type": "object",
             "properties": {
                 "path": {
-                    "description": "A URL or path string, that should be a permanent http(s) address directly linking to the documented review.",
+                    "description": "A link or path to the documented open peer review.",
                     "example": "https://www.example.com",
                     "type": [
                         "string",
@@ -18,7 +18,7 @@
                     "title": "Path"
                 },
                 "badge": {
-                    "description": "A badge of either Bronze, Silver, Gold or Platinum is used to label the given metadata based on its quality.",
+                    "description": "A badge of either Iron, Bronze, Silver, Gold or Platinum is used to label the quality of the metadata.",
                     "example": "Platinum",
                     "type": [
                         "string",
