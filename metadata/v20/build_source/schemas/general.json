@@ -15,14 +15,10 @@
         },
         "topics": {
             "description": "A list predefined topics that correspond to the database schemas of the OEP.",
-            "example": "[model_draft, reference]",
             "type": "array",
             "items": {
                 "description": "The topics are used to group the data in the database.",
-                "example": [
-                    "model_draft",
-                    "reference"
-                ],
+                "example": ["model_draft","reference"],
                 "type": [
                     "string",
                     "null"
@@ -119,11 +115,7 @@
             "type": "array",
             "items": {
                 "description": "The keyword are used and managed in the OEP as table tags.",
-                "example": [
-                    "example",
-+                   "ODbL-1.0",
-+                   "NFDI4Energy"
-+               ],
+                "example": ["example","ODbL-1.0","NFDI4Energy"],
                 "type": [
                     "string",
                     "null"

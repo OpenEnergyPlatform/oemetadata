@@ -190,12 +190,11 @@
                         "title": "Field"
                     },
                     "primaryKey": {
-                        "description": "A primary key is a field or set of fields that uniquely identifies each row in the table. It's recorded as a list of strings, since it is possible to define the primary key as made up of several columns.",
-                        "example": ["id"],
+                        "description": "An array of fields that uniquely identifies each row in the table.",
                         "type": "array",
                         "items": {
-                            "description": "A primary key is a field or set of fields that uniquely identifies each row in the table.",
-                            "example": "id",
+                            "description": "The default value is the “id” column.",
+                            "example": ["id"],
                             "type": [
                                 "string",
                                 "null"
@@ -210,26 +209,21 @@
                         "description": "List of foreign keys.",
                         "type": "array",
                         "items": {
-                            "description": "A foreign key is a field that refers to a column in another table.",
+                            "description": "An array of objects with foreign keys that describe a field that relates to a field in another table.",
                             "type": "object",
                             "properties": {
                                 "fields": {
-                                    "description": "The column (as list of items) in the table that is constrainted by the foreign key.",
-                                    "example": [
-                                        "version"
-                                    ],
+                                    "description": "An array of fields in the table that is constrained by the foreign key.",
                                     "type": "array",
                                     "items": {
-                                        "description": "The column in the table that is constrainted by the foreign key.",
-                                        "example": [
-                                            "version"
-                                        ],
+                                        "description": "The column in the table that is constrained by the foreign key.",
+                                        "example": ["id","version"],
                                         "type": [
                                             "string",
                                             "null"
                                         ],
                                         "badge": "Iron",
-                                        "title": "Field"
+                                        "title": "Foreign Key Field"
                                     },
                                     "badge": "Iron",
                                     "title": "Fields"
@@ -239,26 +233,21 @@
                                     "type": "object",
                                     "properties": {
                                         "resource": {
-                                            "description": "The foreign resource (table).",
-                                            "example": "schema.table",
+                                            "description": "The referenced foreign table.",
+                                            "example": "model_draft.oep_oemetadata_table_example_version",
                                             "type": [
                                                 "string",
                                                 "null"
                                             ],
                                             "badge": "Iron",
-                                            "title": "Resource"
+                                            "title": "Foreign Resource"
                                         },
                                         "fields": {
                                             "description": "The foreign resource column.",
-                                            "example": [
-                                                "version"
-                                            ],
                                             "type": "array",
                                             "items": {
                                                 "description": "The foreign resource column.",
-                                                "example": [
-                                                    "version"
-                                                ],
+                                                "example": ["id","version"],
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -286,12 +275,12 @@
                 "required": ["primaryKey"]
             },
             "dialect": {
-                "description": "Object. A CSV Dialect defines a simple format to describe the various dialects of CSV files in a language agnostic manner. In case of a database, the values in the containing fields are \"null\".",
+                "description": "The Dialect defines a simple format for describing the various dialects of CSV files in a language-independent manner. In a database, the values in the fields are 'null'.",
                 "type": "object",
                 "properties": {
                     "delimiter": {
-                        "description": "The delimiter specifies the character sequence which should separate fields (columns). Common characters are \",\" (comma), \".\" (point) and \"\\t\" (tab).",
-                        "example": ",",
+                        "description": "The delimiter specifies the character sequence which should separate fields (columns). Common characters are ',' (comma), ';' (semicolon), '.' (point) and '\\t' (tab).",
+                        "example": ";",
                         "type": [
                             "string",
                             "null"
@@ -300,7 +289,7 @@
                         "title": "Delimiter"
                     },
                     "decimalSeparator": {
-                        "description": "A symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be \".\" or \",\".",
+                        "description": "The symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be '.' or ','.",
                         "example": ".",
                         "type": [
                             "string",
