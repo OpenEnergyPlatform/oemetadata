@@ -43,30 +43,29 @@
                 }
             },
             "schema": {
-                "description": "Object containing fields, primary key and for foreign keys. Describes the structure of the data.",
+                "description": "An object that describes the structure of a table. It contains all fields (columns of the table), the primary key and optional foreign keys.",
                 "type": "object",
                 "properties": {
                     "fields": {
-                        "description": "List of field objects.",
+                        "description": "An array of objects that describes a field (column) and its detailed information.",
                         "type": "array",
                         "items": {
-                            "description": "Field object. Every object describes a column and provides name, description, type and unit.",
                             "type": "object",
                             "properties": {
                                 "name": {
-                                    "description": "The name of the field. The string must be unique within it's scope",
+                                    "description": "The name of the field. The name may only consist of lowercase alphanumeric characters or underscores. It must not begin with a number or an underscore.",
                                     "example": "year",
                                     "type": [
                                         "string",
                                         "null"
                                     ],
                                     "badge": "Iron",
-                                    "title": "Name",
+                                    "title": "Column Name",
                                     "readonly": true
                                 },
                                 "description": {
                                     "description": "A text describing the field.",
-                                    "example": "Reference year for which the data were collected.",
+                                    "example": "Reference year for which the data was collected.",
                                     "type": [
                                         "string",
                                         "null"
@@ -97,7 +96,7 @@
                                     "readonly": true
                                 },
                                 "unit": {
-                                    "description": "The unit, preferably SI-unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null'. If the unit is given in a seperate field, reference this field.",
+                                    "description": "The unit of a field. If it does not apply, use 'null'. If the unit is given in a separate field, reference this field (e.g. 'unit').",
                                     "example": "MW",
                                     "type": [
                                         "string",
@@ -107,13 +106,13 @@
                                     "title": "Unit"
                                 },
                                 "isAbout": {
-                                    "description": "Ontology URI to describe the column header",
+                                    "description": "An array of objects that describes the field in ontology terms.",
                                     "type": "array",
                                     "items": {
                                         "type": "object",
                                         "properties": {
                                             "name": {
-                                                "description": "A class label of the OEO terms.",
+                                                "description": "The class label of the ontology term.",
                                                 "example": "wind energy converting unit",
                                                 "type": [
                                                     "string",
@@ -123,8 +122,8 @@
                                                 "title": "Name"
                                             },
                                             "path": {
-                                                "description": "Path to the OEO class (URI)",
-                                                "example": "https://openenergy-platform.org/ontology/oeo/OEO_00000044",
+                                                "description": "The path of the ontology term (IRI).",
+                                                "example": "https://openenergyplatform.org/ontology/oeo/OEO_00000044",
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -141,7 +140,7 @@
                                     "title": "isAbout"
                                 },
                                 "valueReference": {
-                                    "description": "Ontology URI for an extended description of the values in the column",
+                                    "description": "An array of objects for an extended description of the values in the column in ontology terms.",
                                     "type": "array",
                                     "items": {
                                         "type": "object",
@@ -157,7 +156,7 @@
                                                 "title": "Value"
                                             },
                                             "name": {
-                                                "description": "The class label of the OEO terms.",
+                                                "description": "The class label of the ontology term in the column.",
                                                 "example": "onshore wind farm",
                                                 "type": [
                                                     "string",
@@ -167,8 +166,8 @@
                                                 "title": "Name"
                                             },
                                             "path": {
-                                                "description": " The URI of the OEO class",
-                                                "example": "https://openenergy-platform.org/ontology/oeo/OEO_00000311",
+                                                "description": "The path of the ontology term (IRI) in the column.",
+                                                "example": "https://openenergyplatform.org/ontology/oeo/OEO_00000311",
                                                 "type": [
                                                     "string",
                                                     "null"
