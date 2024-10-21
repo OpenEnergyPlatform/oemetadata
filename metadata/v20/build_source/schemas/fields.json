@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "general.json#metadata/v20/schemas/properties.json",
+    "$id": "general.json#metadata/v20/schemas/fields.json",
     "type": "object",
     "properties": {
             "type": {
@@ -96,7 +96,7 @@
                                     "readonly": true
                                 },
                                 "unit": {
-                                    "description": "The unit of a field. If it does not apply, use 'null'. If the unit is given in a separate field, reference this field (e.g. 'unit').",
+                                    "description": "The unit of a field. If it does not apply, use 'null'. If the unit is given in a separate field, reference this field (e.g. 'unit'). Use a space between numbers and units (100 m).",
                                     "example": "MW",
                                     "type": [
                                         "string",

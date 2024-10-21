@@ -35,7 +35,7 @@
                         "$ref": "provenance.json#"
                     },
                     "resource": {
-                        "$ref": "properties.json#"
+                        "$ref": "fields.json#"
                     },
                     "linkedData": {
                         "$ref": "linked_data.json#"
