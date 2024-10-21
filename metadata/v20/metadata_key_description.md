@@ -169,26 +169,22 @@ If a value is not yet available, use: 'ToDo'.
 ### Resource - Linked Data Keys
 | #    | Key            | Description                                                                                              | Example                                                                                             | Badge    |
 |------|----------------|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|----------|
-| 24   | **linkedData** | Keys used for Linked Data (LD).                                                                          |                                                                                                     |          |
-| 24.1 | @id            | A Uniform Resource Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus). | https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07 | Platinum |
-| 24.2 | @context       | Explanation of metadata keys in ontology terms.                                                          | https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/latest/context.json           | Platinum |
-| 24.3 | user           | The unique identifier for the wasGeneratedBy object.                                                     | oeplatform                                                                                          | Platinum |
-| 24.4 | @type          | The type of the wasGeneratedBy object.                                                                   | moss:OEMetadataMod                                                                                  | Platinum |
-| 24.5 | usedResource   | A reference to the resource used. (ToDo)                                                                 | ToDo                                                                                                | Platinum |
+| 24   | @id            | A Uniform Resource Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus). | https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07 | Platinum |
+| 25   | @context       | Explanation of metadata keys in ontology terms.                                                          | https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/latest/context.json           | Platinum |
 
 ### Resource - Review Keys
 | #    | Key        | Description                                                                                                                                                                                                  | Example                 |
 |------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 25.  | **review** | The metadata on the OEP can go through an open peer review process. See the Academy course [Open Peer Review](https://openenergyplatform.github.io/academy/courses/09_peer_review/) for further information. |                         |
-| 25.1 | path       | A link or path to the documented open peer review.                                                                                                                                                           | https://www.example.com |
-| 25.2 | badge      | A badge of either Iron, Bronze, Silver, Gold or Platinum is used to label the quality of the metadata.                                                                                                       | Platinum                |
+| 26.  | **review** | The metadata on the OEP can go through an open peer review process. See the Academy course [Open Peer Review](https://openenergyplatform.github.io/academy/courses/09_peer_review/) for further information. |                         |
+| 26.1 | path       | A link or path to the documented open peer review.                                                                                                                                                           | https://www.example.com |
+| 26.2 | badge      | A badge of either Iron, Bronze, Silver, Gold or Platinum is used to label the quality of the metadata.                                                                                                       | Platinum                |
 
 ### MetaMetadata Keys
 | #      | Key                 | Description                                                                          | Example                                            |
 |--------|---------------------|--------------------------------------------------------------------------------------|----------------------------------------------------|
-| 26     | **metaMetadata**    | An object that describes the metadata themselves, their format, version and license. |                                                    |
-| 26.1   | metadataVersion     | Type and version number of the metadata.                                             | OEMetadata-2.0                                     |
-| 26.2   | **metadataLicense** | The license of the provided metadata.                                                |                                                    |
-| 26.2.1 | name                | The [SPDX](https://spdx.org/licenses/) identifier.                                   | CC0-1.0                                            |
-| 26.2.2 | title               | The official (human-readable) title of the license.                                  | Creative Commons Zero v1.0 Universal               |
-| 26.2.3 | path                | A link or path to the license text.                                                  | https://creativecommons.org/publicdomain/zero/1.0/ |
+| 27     | **metaMetadata**    | An object that describes the metadata themselves, their format, version and license. |                                                    |
+| 27.1   | metadataVersion     | Type and version number of the metadata.                                             | OEMetadata-2.0                                     |
+| 27.2   | **metadataLicense** | The license of the provided metadata.                                                |                                                    |
+| 27.2.1 | name                | The [SPDX](https://spdx.org/licenses/) identifier.                                   | CC0-1.0                                            |
+| 27.2.2 | title               | The official (human-readable) title of the license.                                  | Creative Commons Zero v1.0 Universal               |
+| 27.2.3 | path                | A link or path to the license text.                                                  | https://creativecommons.org/publicdomain/zero/1.0/ |
