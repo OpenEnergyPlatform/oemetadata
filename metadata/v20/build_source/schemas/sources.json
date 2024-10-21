@@ -4,35 +4,34 @@
     "type": "object",
     "properties": {
         "sources": {
-            "description": "List of source objects. Each object has all name-value-pairs.",
+            "description": "An array of objects with the used and underlying sources of the data and metadata.",
             "type": "array",
             "items": {
-                "description": "Source object in list of source objects. Each object has all name-value-pairs.",
                 "type": "object",
                 "properties": {
                     "title": {
                         "description": "A human readable title of the source, a document title or organisation name.",
-                        "example": "IPCC Fifth Assessment Report",
+                        "example": "IPCC Sixth Assessment Report (AR6) - Climate Change 2023 - Synthesis Report",
                         "type": [
                             "string",
                             "null"
                         ],
                         "badge": "Bronze",
-                        "title": "Title"
+                        "title": "Source Title"
                     },
                     "description": {
-                        "description": "A free text description of the data set.",
-                        "example": "Scientific climate change report by the UN",
+                        "description": "A free text description of the source.",
+                        "example": "A Report of the Intergovernmental Panel on Climate Change.",
                         "type": [
                             "string",
                             "null"
                         ],
                         "badge": "Bronze",
-                        "title": "Description"
+                        "title": "Source Description"
                     },
                     "path": {
                         "description": "A URL to the original source.",
-                        "example": "https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_full.pdf",
+                        "example": "https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf",
                         "type": [
                             "string",
                             "null"
@@ -42,14 +41,13 @@
                         "format": "uri"
                     },
                     "licenses": {
-                        "description": "The license(s) under which the source(s) is/are provided. List of objects.",
                         "type": "array",
                         "items": {
-                            "description": "A license object under which the described source is provided. Each object has all name-value-pairs.",
+                            "description": "An array of objects of licenses under which the described source is provided. See https://openenergyplatform.github.io/academy/courses/08_licensing/ for further information.",
                             "type": "object",
                             "properties": {
                                 "name": {
-                                    "description": "THe SPDX identifier.",
+                                    "description": "The SPDX identifier.",
                                     "example": "ODbL-1.0",
                                     "type": [
                                         "string",
@@ -69,18 +67,19 @@
                                     "title": "Title"
                                 },
                                 "path": {
-                                    "description": "A link to the license text.",
+                                    "description": "A link or path to the license text.",
                                     "example": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
                                     "type": [
                                         "string",
                                         "null"
                                     ],
                                     "badge": "Bronze",
-                                    "title": "Path"
+                                    "title": "Path",
+                                    "format": "uri"
                                 },
                                 "instruction": {
                                     "description": "A short description of rights and restrictions. The use of tl;drLegal is recommended.",
-                                    "example": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information.",
+                                    "example": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-odbl for further information.",
                                     "type": [
                                         "string",
                                         "null"
@@ -89,8 +88,8 @@
                                     "title": "Instruction"
                                 },
                                 "attribution": {
-                                    "description": "The copyright owner of the source. Copyright owner name must be acknowledged if attribution licenses are used.",
-                                    "example": "© Intergovernmental Panel on Climate Change 2014",
+                                    "description": "A copyright owner of the source. Must be provided if attribution licenses are used.",
+                                    "example": "© Intergovernmental Panel on Climate Change 2023",
                                     "type": [
                                         "string",
                                         "null"
@@ -99,8 +98,8 @@
                                     "title": "Attribution"
                                 },
                                 "copyrightStatement": {
-                                    "description": "A link or path that proves that the source or data has the appropriate license.",
-                                    "example": "https://www.marktstammdatenregister.de/MaStR/Startseite/Impressum",
+                                    "description": "A link or path that proves that the source or data has the appropriate license. This can be a page number or website imprint.",
+                                    "example": "https://www.ipcc.ch/copyright/",
                                     "type": [
                                         "string",
                                         "null"
