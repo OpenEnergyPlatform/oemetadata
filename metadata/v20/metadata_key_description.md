@@ -167,10 +167,10 @@ If a value is not yet available, use: 'ToDo'.
 | 23.7.2     | decimalSeparator | The symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be '.' or ','. | .                                                | Iron  |
 
 ### Resource - Linked Data Keys
-| #    | Key            | Description                                                                                              | Example                                                                                             | Badge    |
-|------|----------------|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|----------|
-| 24   | @id            | A Uniform Resource Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus). | https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07 | Platinum |
-| 25   | @context       | Explanation of metadata keys in ontology terms.                                                          | https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/latest/context.json           | Platinum |
+| #  | Key      | Description                                                                                              | Example                                                                                             | Badge    |
+|----|----------|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|----------|
+| 24 | @id      | A Uniform Resource Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus). | https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07 | Platinum |
+| 25 | @context | Explanation of metadata keys in ontology terms.                                                          | https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/metadata/latest/context.json | Platinum |
 
 ### Resource - Review Keys
 | #    | Key        | Description                                                                                                                                                                                                  | Example                 |

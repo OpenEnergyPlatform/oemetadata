@@ -16,13 +16,14 @@
         },
         "@context": {
             "description": "Explanation of metadata keys in ontology terms.",
-            "example": "https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/context.json",
+            "example": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/metadata/latest/context.json",
             "type": [
                 "string",
                 "null"
             ],
             "badge": "Platinum",
-            "title": "@context"
+            "title": "@context",
+            "readonly": true
         }
     }
 }
