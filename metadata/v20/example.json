@@ -1,5 +1,9 @@
 {
     "name": "oemetadata",
+    "topic": [
+        "model_draft",
+        "reference"
+    ],
     "title": "OEMetadata",
     "id": "https://databus.openenergyplatform.org/oeplatform/supply",
     "resources": [
@@ -14,8 +18,17 @@
                     "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000150"
                 }
             ],
-            "languages": ["en-GB", "de-DE", "fr-FR"],
-            "keywords": ["example", "ODbL-1.0", "RLI", "NFDI4Energy"],
+            "languages": [
+                "en-GB",
+                "de-DE",
+                "fr-FR"
+            ],
+            "keywords": [
+                "example",
+                "ODbL-1.0",
+                "RLI",
+                "NFDI4Energy"
+            ],
             "publicationDate": "2024-10-15",
             "embargoPeriod": {
                 "start": "2024-10-11",
@@ -81,7 +94,10 @@
                         "title": "Ludwig Hülk",
                         "path": "https://github.com/Ludee",
                         "organization": "Reiner Lemoine Institut",
-                        "roles": ["creator", "dataCurator"],
+                        "roles": [
+                            "creator",
+                            "dataCurator"
+                        ],
                         "date": "2016-06-16",
                         "object": "data and metadata",
                         "comment": "Add general context."

@@ -14,7 +14,7 @@
             "title": "Name"
         },
         "topics": {
-            "description": "A list predefined topics that correspond to the database schemas of the OEP.",
+            "description": "An array of predefined topics that correspond to the database schemas of the OEP.",
             "type": "array",
             "items": {
                 "description": "The topics are used to group the data in the database.",
