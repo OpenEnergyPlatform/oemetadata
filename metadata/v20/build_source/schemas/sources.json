@@ -78,7 +78,7 @@
                                     "format": "uri"
                                 },
                                 "instruction": {
-                                    "description": "A short description of rights and restrictions. The use of tl;drLegal is recommended.",
+                                    "description": "A short description of rights and obligations. The use of tl;drLegal is recommended.",
                                     "example": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-odbl for further information.",
                                     "type": [
                                         "string",
