@@ -87,7 +87,7 @@
                                 },
                                 "nullable": {
                                     "description": "A boolean key to specify that a column can be nullable. True is the default value.",
-                                    "example": "True",
+                                    "example": true,
                                     "type": [
                                         "boolean",
                                         "null"

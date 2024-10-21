@@ -15,7 +15,7 @@
         },
         "topic": {
             "description": "A list predefined topics that correspond to the database schemas.",
-            "example": "[model_draft, reference]",
+            "example": ["model_draft", "reference"],
             "type": "array",
             "items": {
                 "description": "The topics are used to group the data in the database.",
@@ -97,7 +97,7 @@
         },
         "languages": {
             "description": "A list of languages used within the described data structures (e.g. titles, descriptions) or metadata.",
-            "example": "[en-GB, de-DE, fr-FR]",
+            "example": ["en-GB", "de-DE", "fr-FR"],
             "type": "array",
             "items": {
                 "description": "The language keys must follow the Standard IETF (BCP47) and can be repeated if more languages are used.",
