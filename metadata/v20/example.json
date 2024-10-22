@@ -1,32 +1,30 @@
 {
-    "name": "oemetadata",
-    "topic": [
-        "model_draft",
-        "reference"
-    ],
-    "title": "OEMetadata",
-    "id": "https://databus.openenergyplatform.org/oeplatform/supply",
+    "name": "oep_oemetadata",
+    "title": "OEP OEMetadata",
+    "id": "https://databus.openenergyplatform.org/oeplatform/reference",
     "resources": [
         {
-            "name": "model_draft.oemetadata_table_example_v20",
-            "title": "OEMetadata example table - Version 2.0",
-            "path": "http://openenergyplatform.org/dataedit/view/model_draft/oemetadata_table_example_v20",
-            "description": "Example table used to illustrate the oemetadata structure and meaning.",
+            "name": "oep_oemetadata_table_example",
+            "topics": [
+                "model_draft",
+                "reference"
+            ],
+            "title": "OEP OEMetadata Example Table",
+            "path": "http://openenergyplatform.org/dataedit/view/model_draft/oep_oemetadata_table_example",
+            "description": "Example table used to illustrate the OEMetadata structure and meaning.",
+            "languages": [
+                "en-GB",
+                "de-DE"
+            ],
             "subject": [
                 {
                     "name": "energy",
                     "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000150"
                 }
             ],
-            "languages": [
-                "en-GB",
-                "de-DE",
-                "fr-FR"
-            ],
             "keywords": [
                 "example",
                 "ODbL-1.0",
-                "RLI",
                 "NFDI4Energy"
             ],
             "publicationDate": "2024-10-15",
@@ -36,45 +34,46 @@
                 "isActive": true
             },
             "context": {
-                "homepage": "https://openenergy-platform.org/",
-                "documentation": "https://openenergy-platform.org/about/",
-                "sourceCode": "https://github.com/OpenEnergyPlatform",
+                "title": "NFDI4Energy",
+                "homepage": "https://nfdi4energy.uol.de/",
+                "documentation": "https://nfdi4energy.uol.de/sites/about_us/",
+                "sourceCode": "https://github.com/NFDI4Energy",
                 "contact": "contact@example.com",
-                "grantNo": "01AB2345",
-                "fundingAgency": "Bundesministerium für Wirtschaft und Klimaschutz",
-                "fundingAgencyLogo": "https://commons.wikimedia.org/wiki/File:BMWi_Logo_2021.svg#/media/File:BMWi_Logo_2021.svg",
+                "grantNo": "501865131",
+                "fundingAgency": " Deutsche Forschungsgemeinschaft (DFG)",
+                "fundingAgencyLogo": "https://upload.wikimedia.org/wikipedia/commons/8/86/DFG-logo-blau.svg",
                 "publisherLogo": "https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png"
             },
             "spatial": {
                 "location": "52.433509, 13.535855",
                 "extent": "Europe",
-                "resolution": "3 m"
+                "resolution": "1 ha"
             },
             "temporal": {
-                "referenceDate": "2016-01-01",
+                "referenceDate": "2020-01-01",
                 "timeseries": [
                     {
-                        "start": "2019-02-06T10:12:04+00:00",
-                        "end": "2019-02-07T10:12:04+00:00",
+                        "start": "2020-01-01T00:00:00+00:00",
+                        "end": "2020-01-01T23:59:30+00:00",
                         "resolution": " 30 s",
                         "alignment": "left",
-                        "aggregationType": "sum"
+                        "aggregationType": "current"
                     }
                 ]
             },
             "sources": [
                 {
-                    "title": "IPCC Fifth Assessment Report",
-                    "description": "Scientific climate change report by the UN",
-                    "path": "https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_full.pdf",
+                    "title": "IPCC Sixth Assessment Report (AR6) - Climate Change 2023 - Synthesis Report",
+                    "description": "A Report of the Intergovernmental Panel on Climate Change.",
+                    "path": "https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf",
                     "licenses": [
                         {
                             "name": "ODbL-1.0",
                             "title": "Open Data Commons Open Database License 1.0",
                             "path": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
-                            "instruction": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information.",
-                            "attribution": "© Intergovernmental Panel on Climate Change 2014",
-                            "copyrightStatement": "https://www.marktstammdatenregister.de/MaStR/Startseite/Impressum"
+                            "instruction": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-odbl for further information.",
+                            "attribution": "© Intergovernmental Panel on Climate Change 2023",
+                            "copyrightStatement": "https://www.ipcc.ch/copyright/"
                         }
                     ]
                 }
@@ -88,22 +87,20 @@
                     "attribution": "© Reiner Lemoine Institut"
                 }
             ],
-            "provenance": {
-                "contributors": [
-                    {
-                        "title": "Ludwig Hülk",
-                        "path": "https://github.com/Ludee",
-                        "organization": "Reiner Lemoine Institut",
-                        "roles": [
-                            "creator",
-                            "dataCurator"
-                        ],
-                        "date": "2016-06-16",
-                        "object": "data and metadata",
-                        "comment": "Add general context."
-                    }
-                ]
-            },
+            "contributors": [
+                {
+                    "title": "Ludwig Hülk",
+                    "path": "https://github.com/Ludee",
+                    "organization": "Reiner Lemoine Institut",
+                    "roles": [
+                        "creator",
+                        "dataCurator"
+                    ],
+                    "date": "2024-10-21",
+                    "object": "data and metadata",
+                    "comment": "Add general context."
+                }
+            ],
             "type": "table",
             "format": "PostgreSQL",
             "encoding": "UTF-8",
@@ -111,21 +108,21 @@
                 "fields": [
                     {
                         "name": "year",
-                        "description": "Reference year for which the data were collected.",
+                        "description": "Reference year for which the data was collected.",
                         "type": "geometry(Point, 4326)",
                         "nullable": true,
                         "unit": "MW",
                         "isAbout": [
                             {
                                 "name": "wind energy converting unit",
-                                "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000044"
+                                "path": "https://openenergyplatform.org/ontology/oeo/OEO_00000044"
                             }
                         ],
                         "valueReference": [
                             {
                                 "value": "onshore",
                                 "name": "onshore wind farm",
-                                "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000311"
+                                "path": "https://openenergyplatform.org/ontology/oeo/OEO_00000311"
                             }
                         ]
                     }
@@ -136,11 +133,13 @@
                 "foreignKeys": [
                     {
                         "fields": [
+                            "id",
                             "version"
                         ],
                         "reference": {
-                            "resource": "schema.table",
+                            "resource": "model_draft.oep_oemetadata_table_example_version",
                             "fields": [
+                                "id",
                                 "version"
                             ]
                         }
@@ -148,28 +147,23 @@
                 ]
             },
             "dialect": {
-                "delimiter": ",",
+                "delimiter": ";",
                 "decimalSeparator": "."
             },
+            "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07",
+            "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/metadata/latest/context.json",
             "review": {
                 "path": "https://www.example.com",
                 "badge": "Platinum"
-            },
-            "linkedData": {
-                "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07",
-                "@context": "https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/context.json",
-                "user": "https://databus.openenergyplatform.org/oeplatform",
-                "@type": "moss:OEMetadataMod",
-                "usedResource": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07"
             }
         }
     ],
     "metaMetadata": {
-        "metadataVersion": "OEP-2.0.0",
+        "metadataVersion": "OEMetadata-2.0",
         "metadataLicense": {
             "name": "CC0-1.0",
             "title": "Creative Commons Zero v1.0 Universal",
-            "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+            "path": "https://creativecommons.org/publicdomain/zero/1.0"
         }
     }
 }
