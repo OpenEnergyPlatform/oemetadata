@@ -81,6 +81,10 @@ Here is a template for new release sections
 - Remove duplicate keys from resources [(#165)](https://github.com/OpenEnergyPlatform/oemetadata/pull/165)
 - Remove linkedData section and keys [(#176)](https://github.com/OpenEnergyPlatform/oemetadata/pull/176)
 
+### Added
+
+- Implement schema build system v1: Enhance the resolve and generation module to match the expected oemetadata specification for all schema parts available for release v20 [(#180)]
+
 ## [1.6.0] - Release - Introduce badges in json schema - 2023-05-30
 
 ### Added
