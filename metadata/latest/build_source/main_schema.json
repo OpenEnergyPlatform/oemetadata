@@ -23,7 +23,7 @@
             "$ref": "sources.json#"
         },
         "licenses": {
-            "$ref": "licences.json#"
+            "$ref": "licenses.json#"
         },
         "contribution": {
             "$ref": "contribution.json#"
