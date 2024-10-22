@@ -73,6 +73,7 @@ Here is a template for new release sections
 - Restrict the version number to only major and minor versions since 2.0 [(#168)](https://github.com/OpenEnergyPlatform/oemetadata/pull/168)
 - Update all descriptions and examples [(#175)](https://github.com/OpenEnergyPlatform/oemetadata/pull/175)
 - Build scripts use a settings file to share variables [(#177)](https://github.com/OpenEnergyPlatform/oemetadata/pull/177)
+- Refactor the spatial section and add new keys for location: 'address', '@id', 'latitude', 'longitude' and for extent: 'name', '@id', 'resolutionValue', 'resolutionUnit', 'boundingBox', 'crs' [(#179)](https://github.com/OpenEnergyPlatform/oemetadata/pull/179)
 
 ### Removed
 
