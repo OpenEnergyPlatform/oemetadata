@@ -38,7 +38,7 @@
                                 "string",
                                 "null"
                             ],
-                            "badge": "Silver",
+                            "badge": "Gold",
                             "title": "Latitude"
                         },
                         "longitude": {
@@ -48,7 +48,7 @@
                                 "string",
                                 "null"
                             ],
-                            "badge": "Silver",
+                            "badge": "Gold",
                             "title": "Longitude"
                         }
                     },
@@ -109,7 +109,7 @@
                             },
                             "minItems": 4,
                             "maxItems": 4,
-                            "badge": "Silver",
+                            "badge": "Gold",
                             "title": "Bounding Box"
                         },
                         "crs": {
@@ -119,7 +119,7 @@
                                 "string",
                                 "null"
                             ],
-                            "badge": "Silver",
+                            "badge": "Gold",
                             "title": " Coordinate Reference System (CRS)"
                         }
 
