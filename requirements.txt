@@ -6,3 +6,6 @@ tox
 twine
 wheel
 build
+argparse
+jsonschema
+referencing
