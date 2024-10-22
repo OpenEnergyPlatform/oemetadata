@@ -23,17 +23,17 @@
                         },
                         "@id": {
                             "description": "A path or URI to a specific location. It can use Wikidata or OpenStreetMap.",
-                            "example": "Rudower Chaussee 12, 12489 Berlin",
+                            "example": "https://www.wikidata.org/wiki/Q77077223",
                             "type": [
                                 "string",
                                 "null"
                             ],
-                            "badge": "Silver",
+                            "badge": "Platinum",
                             "title": "Address"
                         },
                         "latitude": {
                             "description": "The latitude (lat) information of the location.",
-                            "example": "52.433509",
+                            "example": "52.432822",
                             "type": [
                                 "string",
                                 "null"
@@ -43,7 +43,7 @@
                         },
                         "longitude": {
                             "description": "The longitude (lon) information of the location.",
-                            "example": "13.535855",
+                            "example": "13.5351004",
                             "type": [
                                 "string",
                                 "null"
@@ -70,7 +70,7 @@
                             "title": "Extent Name"
                         },
                         "@id": {
-                            "description": "An URI reference for the region.",
+                            "description": "A URI reference for the region.",
                             "example": "https://www.wikidata.org/wiki/Q64",
                             "type": [
                                 "string",
@@ -79,18 +79,6 @@
                             "format": "uri",
                             "badge": "Platinum",
                             "title": "Extent URI"
-                        },
-                        "boundingBox": {
-                            "description": "The covered area specified by the coordinates of a bounding box. The format is [minLon, minLat, maxLon, maxLat] or [W,S,E,N].",
-                            "example": [13.08825, 52.33859, 13.76104, 52.6754],
-                            "type": "array",
-                            "items": {
-                                "type": "number"
-                            },
-                            "minItems": 4,
-                            "maxItems": 4,
-                            "badge": "Silver",
-                            "title": "Bounding Box"
                         },
                         "resolutionValue": {
                             "description": "The value of the resolution.",
@@ -112,8 +100,20 @@
                             "badge": "Silver",
                             "title": "Resolution Unit"
                         },
+                        "boundingBox": {
+                            "description": "The covered area specified by the coordinates of a bounding box. The format is [minLon, minLat, maxLon, maxLat] or [W,S,E,N].",
+                            "example": [13.08825, 52.33859, 13.76104, 52.6754],
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            },
+                            "minItems": 4,
+                            "maxItems": 4,
+                            "badge": "Silver",
+                            "title": "Bounding Box"
+                        },
                         "crs": {
-                            "description": "Coordinate Reference System, specified as an EPSG code.",
+                            "description": "The Coordinate Reference System, specified as an EPSG code.",
                             "example": "EPSG:4326",
                             "type": [
                                 "string",
