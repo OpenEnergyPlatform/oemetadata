@@ -21,7 +21,7 @@ from typing import Any, Dict, Union, List
 # from datetime import datetime
 from pathlib import Path
 
-from settings import VERSION_PATH, RESOLVED_SCHEMA_FILE_NAME, EXAMPLE_PATH, LOG_FORMAT
+from settings import RESOLVED_SCHEMA_FILE_NAME, EXAMPLE_PATH, LOG_FORMAT
 
 # Configuration
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
