@@ -7,9 +7,9 @@
             "description": "An object that describes the spatial context of the data.",
             "type": "object",
             "properties": {
-                "location": {
-                    "description": "A location of the data. In case of data where the location can be described as a point. May be specified as coordinates, URI or addresses with street, house number and zip code.",
-                    "example": "52.433509, 13.535855",
+                "address": {
+                    "description": "A readable location of the data. In case of data where the location can be described as a point. May be specified as URI or addresses with street, house number and zip code.",
+                    "example": "Rudower Ch 12, 12489 Berlin",
                     "type": [
                         "string",
                         "null"
@@ -17,25 +17,106 @@
                     "badge": "Silver",
                     "title": "Location"
                 },
-                "extent": {
-                    "description": "A covered area. May be the name of a region, or the geometry of a bounding box.",
-                    "example": "Europe",
+                "latitude": {
+                    "description": "The Latitude information for the data.",
+                    "example": "52.433509",
                     "type": [
                         "string",
                         "null"
                     ],
                     "badge": "Silver",
-                    "title": "Extent"
+                    "title": "Latitude"
+                },
+                "longitude": {
+                    "description": "The Longitude information for the data.",
+                    "example": "13.535855",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Silver",
+                    "title": "Longitude"
+                },
+                "extent": {
+                    "description": "A covered area. May include the name of a region (using GeoNames) and a linked URI.",
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "description": "The name of the region, based on GeoNames or another external reference.",
+                            "example": "Europe",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "badge": "Silver",
+                            "title": "Name"
+                        },
+                        "@id": {
+                            "description": "The URI reference for the region, typically linking to an external resource like GeoNames.",
+                            "example": "http://sws.geonames.org/6252001/",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "format": "uri",
+                            "badge": "Platinum",
+                            "title": "Link to external URI"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "bbox": {
+                    "description": "A covered area specified by the geometry of a bounding box. Bounding box of the area in [minLon, minLat, maxLon, maxLat] format.",
+                    "example": [
+                        -180,
+                        -90,
+                        180,
+                        90
+                    ],
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "minItems": 4,
+                    "maxItems": 4,
+                    "badge": "Silver",
+                    "title": "Bounding bo"
                 },
                 "resolution": {
                     "description": "The resolution of the spatial extent. Reference to the administrative level or another spatial subdivision that exists as the smallest spatially differentiated unit size. Pixel size in case of a regular raster image.",
-                    "example": "1 ha",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": "Silver",
-                    "title": "Resolution"
+                    "type": "object",
+                    "properties": {
+                        "value": {
+                            "description": "The value of the spatial extend. Depending on the smallest spatially differentiated unit size.",
+                            "example": "1",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "badge": "Silver",
+                            "title": "Value"
+                        },
+                        "unit": {
+                            "description": "The name of the unit if available. Specifies the unit for the value.",
+                            "example": "ha",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "badge": "Silver",
+                            "title": "Unit"
+                        }
+                    },
+                    "crs": {
+                        "description": "Coordinate Reference System, specified as an EPSG code (e.g., EPSG:4326).",
+                        "example": "EPSG:4326",
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "badge": "Silver",
+                        "title": " Coordinate Reference System"
+                    }
                 }
             },
             "badge": "Silver",
