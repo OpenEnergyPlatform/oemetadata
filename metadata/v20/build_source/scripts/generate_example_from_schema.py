@@ -28,7 +28,7 @@ logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
 logger = logging.getLogger(__name__)
 
 
-def read_schema(filename: str) -> Dict[str, Any]:
+def read_schema(filepath: str) -> Dict[str, Any]:
     """Read a JSON schema from a file.
 
     Args:
@@ -38,7 +38,7 @@ def read_schema(filename: str) -> Dict[str, Any]:
         Dict[str, Any]: The JSON schema as a dictionary.
     """
 
-    with open(VERSION_PATH / filename, "r", encoding="utf-8") as file:
+    with open(filepath, "r", encoding="utf-8") as file:
         schema = json.load(file)
     return schema
 
