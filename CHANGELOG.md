@@ -78,6 +78,7 @@ Here is a template for new release sections
 - Remove email from contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
 - Remove all additionalProperties is false [(#163)](https://github.com/OpenEnergyPlatform/oemetadata/pull/163)
 - Remove duplicate keys from resources [(#165)](https://github.com/OpenEnergyPlatform/oemetadata/pull/165)
+- Remove linkedData section and keys [(#176)](https://github.com/OpenEnergyPlatform/oemetadata/pull/176)
 
 ## [1.6.0] - Release - Introduce badges in json schema - 2023-05-30
 
