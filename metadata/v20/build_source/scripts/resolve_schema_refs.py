@@ -143,6 +143,9 @@ def resolve_and_merge(schema_path, debug):
                         resources = {}
                         for _k, _v in resolved_value["items"].items():
                             if isinstance(_v, dict):
+                                # Update all values instead of key:values to
+                                # avoid adding schema_structure.json wrapper
+                                # objects
                                 for element in _v.values():
                                     resources.update(element)
                         resolved_properties[prop] = resolved_value
