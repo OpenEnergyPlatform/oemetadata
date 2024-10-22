@@ -10,19 +10,8 @@ Date: 2024-05-30
 Version: 1.0.0
 """
 
-# Standard Library Imports
-# import os
-from os.path import dirname
-
-import sys
 import json
 import logging
-
-# from datetime import datetime
-from pathlib import Path
-
-from jsonschema import validate, ValidationError
-
 
 from settings import RESOLVED_SCHEMA_FILE_NAME, TEMPLATE_PATH, LOG_FORMAT
 
