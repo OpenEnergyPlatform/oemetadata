@@ -4,7 +4,7 @@
     "type": "object",
     "properties": {
         "spatial": {
-            "description": "An object that describes the spatial context of the data it contains.",
+            "description": "An object that describes the spatial context of the data.",
             "type": "object",
             "properties": {
                 "location": {
@@ -28,8 +28,8 @@
                     "title": "Extent"
                 },
                 "resolution": {
-                    "description": "Pixel size in case of a regular raster image. Reference to administrative level or other spatial division that is present as the smallest spatially distinguished unit size.",
-                    "example": "3 m",
+                    "description": "The resolution of the spatial extent. Reference to the administrative level or another spatial subdivision that exists as the smallest spatially differentiated unit size. Pixel size in case of a regular raster image.",
+                    "example": "1 ha",
                     "type": [
                         "string",
                         "null"

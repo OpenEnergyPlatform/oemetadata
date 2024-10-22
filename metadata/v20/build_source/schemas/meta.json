@@ -4,7 +4,7 @@
     "type": "object",
     "properties": {
         "metaMetadata": {
-            "description": "Description about the metadata themselves, their format, version and license. These fields should already be provided when you’re filling out your metadata.",
+            "description": "An object that describes the metadata themselves, their format, version and license.",
             "type": "object",
             "properties": {
                 "metadataVersion": {
@@ -18,38 +18,38 @@
                     "title": "Metadata Version"
                 },
                 "metadataLicense": {
-                    "description": "Object describing the license of the provided metadata.",
+                    "description": "The license of the provided metadata. ",
                     "type": "object",
                     "properties": {
                         "name": {
-                            "description": "SPDX identifier",
+                            "description": "The [SPDX](https://spdx.org/licenses/) identifier.",
                             "example": "CC0-1.0",
                             "type": [
                                 "string",
                                 "null"
                             ],
                             "badge": null,
-                            "title": "Name"
+                            "title": "License Name"
                         },
                         "title": {
-                            "description": "Official (human readable) license title.",
+                            "description": "The official (human-readable) title of the license.",
                             "example": "Creative Commons Zero v1.0 Universal",
                             "type": [
                                 "string",
                                 "null"
                             ],
                             "badge": null,
-                            "title": "Title"
+                            "title": "License Title"
                         },
                         "path": {
-                            "description": "Url or path string, that is a fully qualified HTTP address.",
+                            "description": "A link or path to the license text.",
                             "example": "https://creativecommons.org/publicdomain/zero/1.0",
                             "type": [
                                 "string",
                                 "null"
                             ],
                             "badge": null,
-                            "title": "Path",
+                            "title": "License Path",
                             "format": "uri"
                         }
                     },

@@ -35,13 +35,13 @@
                         "$ref": "provenance.json#"
                     },
                     "resource": {
-                        "$ref": "resource.json#"
-                    },
-                    "review": {
-                        "$ref": "review.json#"
+                        "$ref": "fields.json#"
                     },
                     "linkedData": {
                         "$ref": "linked_data.json#"
+                    },
+                    "review": {
+                        "$ref": "review.json#"
                     }
                 }
             },
