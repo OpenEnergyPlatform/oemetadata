@@ -46,13 +46,15 @@ def read_schema(filename: str) -> Dict[str, Any]:
 def generate_example(
     schema: Dict[str, Any]
 ) -> Union[Dict[str, Any], List[Any], str, None]:
-    """Generate a JSON object from the schema using the example values provided.
+    """Generate a JSON object from the schema using the
+    example values provided.
 
     Args:
         schema (Dict[str, Any]): The JSON schema.
 
     Returns:
-        Union[Dict[str, Any], List[Any], str, None]: A JSON object generated from the schema.
+        Union[Dict[str, Any], List[Any], str, None]:
+            A JSON object generated from the schema.
     """
     if "example" in schema:
         return schema["example"]
@@ -70,7 +72,15 @@ def generate_example(
 
     elif schema_type == "array":
         items = schema.get("items", {})
-        return [generate_example(items)]
+
+        # Fix: Avoid double-wrapping by checking if the generated
+        # example is already a list
+        example = generate_example(items)
+
+        if isinstance(example, list):
+            return example  # If it's already a list, return it directly
+        else:
+            return [example]  # Otherwise, wrap it in a list
 
     elif schema_type == "string":
         return ""
