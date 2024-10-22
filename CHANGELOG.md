@@ -72,6 +72,7 @@ Here is a template for new release sections
 - Update links in context.json and example.json for all versions [(#167)](https://github.com/OpenEnergyPlatform/oemetadata/pull/167)
 - Restrict the version number to only major and minor versions since 2.0 [(#168)](https://github.com/OpenEnergyPlatform/oemetadata/pull/168)
 - Update all descriptions and examples [(#175)](https://github.com/OpenEnergyPlatform/oemetadata/pull/175)
+- Build scripts use a settings file to share variables [(#177)](https://github.com/OpenEnergyPlatform/oemetadata/pull/177)
 
 ### Removed
 
