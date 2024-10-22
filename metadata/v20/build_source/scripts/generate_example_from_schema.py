@@ -12,9 +12,7 @@ Version: 1.0.0
 
 # Standard Library Imports
 # import os
-from os.path import dirname
 
-import sys
 import json
 import logging
 
@@ -23,23 +21,11 @@ from typing import Any, Dict, Union, List
 # from datetime import datetime
 from pathlib import Path
 
-from jsonschema import validate, ValidationError
+from settings import VERSION_PATH, RESOLVED_SCHEMA_FILE_NAME, EXAMPLE_PATH, LOG_FORMAT
 
 # Configuration
-LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
 logger = logging.getLogger(__name__)
-
-# Constants
-BASE_PATH = Path("metadata/")
-VERSION = "v20"
-VERSION_PATH = BASE_PATH / VERSION
-SCHEMA_BUILD_PATH = VERSION_PATH / "build_source"
-MAIN_SCHEMA_PATH = SCHEMA_BUILD_PATH / "schema_structure.json"
-SCHEMA_REFS = SCHEMA_BUILD_PATH / "schemas"
-RESOLVED_SCHEMA_FILE_NAME = VERSION_PATH / "schema.json"
-EXPECTED_SCHEMA_PATH = VERSION_PATH / "schema.json"
-EXAMPLE_PATH = VERSION_PATH / "example.json"
 
 
 def read_schema(filename: str) -> Dict[str, Any]:
@@ -51,7 +37,7 @@ def read_schema(filename: str) -> Dict[str, Any]:
     Returns:
         Dict[str, Any]: The JSON schema as a dictionary.
     """
-    # pwd = dirname(__file__)
+
     with open(VERSION_PATH / filename, "r", encoding="utf-8") as file:
         schema = json.load(file)
     return schema
@@ -120,6 +106,6 @@ def save_json(data: Dict[str, Any], filename: Path) -> None:
 
 
 if __name__ == "__main__":
-    schema_filename = "schema.json"
+    schema_filename = RESOLVED_SCHEMA_FILE_NAME
     json_data = generate_json_from_schema(schema_filename)
     save_json(json_data, EXAMPLE_PATH)

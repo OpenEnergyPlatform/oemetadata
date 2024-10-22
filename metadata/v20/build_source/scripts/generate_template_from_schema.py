@@ -23,21 +23,13 @@ from pathlib import Path
 
 from jsonschema import validate, ValidationError
 
+
+from settings import RESOLVED_SCHEMA_FILE_NAME, TEMPLATE_PATH, LOG_FORMAT
+
 # Configuration
-LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
 logger = logging.getLogger(__name__)
-
-# Constants
-BASE_PATH = Path("metadata/")
-VERSION = "v20"
-VERSION_PATH = BASE_PATH / VERSION
-SCHEMA_BUILD_PATH = VERSION_PATH / "build_source"
-MAIN_SCHEMA_PATH = SCHEMA_BUILD_PATH / "schema_structure.json"
-SCHEMA_REFS = SCHEMA_BUILD_PATH / "schemas"
-RESOLVED_SCHEMA_FILE_NAME = VERSION_PATH / "schema.json"
-EXPECTED_SCHEMA_PATH = VERSION_PATH / "schema.json"
-TEMPLATE_PATH = VERSION_PATH / "template.json"
 
 
 def generate_template(schema):

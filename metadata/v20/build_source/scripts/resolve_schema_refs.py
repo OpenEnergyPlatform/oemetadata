@@ -11,7 +11,7 @@ Version: 1.0.0
 
 requires: "pip install jsonschema referencing"
 
-Usage: Script with additional arguments --debug for more detailed output. 
+Usage: Script with additional arguments --debug for more detailed output.
         Requires the folder structure introduced in oemetadata v2.0.0.
 """
 
@@ -22,27 +22,24 @@ import json
 import logging
 
 # from datetime import datetime
-from pathlib import Path
 from urllib.parse import urljoin
 import argparse
 
 from referencing import Registry, Resource
 from jsonschema import Draft7Validator
 
+from settings import (
+    MAIN_SCHEMA_PATH,
+    SCHEMA_REFS,
+    RESOLVED_SCHEMA_FILE_NAME,
+    EXPECTED_SCHEMA_PATH,
+    LOG_FORMAT,
+)
+
 # Configuration
-LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
 logger = logging.getLogger(__name__)
-
-# Constants
-BASE_PATH = Path("metadata/")
-VERSION = "v20"
-VERSION_PATH = BASE_PATH / VERSION
-SCHEMA_BUILD_PATH = VERSION_PATH / "build_source"
-MAIN_SCHEMA_PATH = SCHEMA_BUILD_PATH / "schema_structure.json"
-SCHEMA_REFS = SCHEMA_BUILD_PATH / "schemas"
-RESOLVED_SCHEMA_FILE_NAME = VERSION_PATH / "schema.json"
-EXPECTED_SCHEMA_PATH = VERSION_PATH / "schema.json"
 
 
 # Function Definitions
