@@ -143,9 +143,14 @@ def resolve_and_merge(schema_path, debug):
                         resources = {}
                         for _k, _v in resolved_value["items"].items():
                             if isinstance(_v, dict):
-                                resources.update(_v)
+                                for element in _v.values():
+                                    resources.update(element)
                         resolved_properties[prop] = resolved_value
-                        resolved_properties[prop]["items"] = resources
+                        # Patch the missing keys
+                        resolved_properties[prop]["items"] = {
+                            "type": "object",
+                            "properties": {**resources},
+                        }
 
                     else:
                         resolved_properties[prop] = resolved_value
