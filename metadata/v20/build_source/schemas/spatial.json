@@ -8,34 +8,125 @@
             "type": "object",
             "properties": {
                 "location": {
-                    "description": "A location of the data. In case of data where the location can be described as a point. May be specified as coordinates, URI or addresses with street, house number and zip code.",
-                    "example": "52.433509, 13.535855",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": "Silver",
-                    "title": "Location"
-                },
-                "extent": {
-                    "description": "A covered area. May be the name of a region, or the geometry of a bounding box.",
-                    "example": "Europe",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
+                    "description": "An object that describes a covered area or region.",
+                    "type": "object",
+                    "properties": {
+                        "address": {
+                            "description": "An address of the location of the data. May be specified with street name, house number, zip code, and city name.",
+                            "example": "Rudower Chaussee 12, 12489 Berlin",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "badge": "Silver",
+                            "title": "Address"
+                        },
+                        "@id": {
+                            "description": "A path or URI to a specific location. It can use Wikidata or OpenStreetMap.",
+                            "example": "https://www.wikidata.org/wiki/Q77077223",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "badge": "Platinum",
+                            "title": "Address"
+                        },
+                        "latitude": {
+                            "description": "The latitude (lat) information of the location.",
+                            "example": "52.432822",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "badge": "Gold",
+                            "title": "Latitude"
+                        },
+                        "longitude": {
+                            "description": "The longitude (lon) information of the location.",
+                            "example": "13.5351004",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "badge": "Gold",
+                            "title": "Longitude"
+                        }
+                    },
                     "badge": "Silver",
                     "title": "Extent"
                 },
-                "resolution": {
-                    "description": "The resolution of the spatial extent. Reference to the administrative level or another spatial subdivision that exists as the smallest spatially differentiated unit size. Pixel size in case of a regular raster image.",
-                    "example": "1 ha",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
+                "extent": {
+                    "description": "An object that describes a covered area or region.",
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "description": "The name of the region.",
+                            "example": "Berlin",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "badge": "Silver",
+                            "title": "Extent Name"
+                        },
+                        "@id": {
+                            "description": "A URI reference for the region.",
+                            "example": "https://www.wikidata.org/wiki/Q64",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "format": "uri",
+                            "badge": "Platinum",
+                            "title": "Extent URI"
+                        },
+                        "resolutionValue": {
+                            "description": "The value of the resolution.",
+                            "example": "100",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "badge": "Silver",
+                            "title": "Resolution Value"
+                        },
+                        "resolutionUnit": {
+                            "description": "The unit of the resolution.",
+                            "example": "m",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "badge": "Silver",
+                            "title": "Resolution Unit"
+                        },
+                        "boundingBox": {
+                            "description": "The covered area specified by the coordinates of a bounding box. The format is [minLon, minLat, maxLon, maxLat] or [W,S,E,N].",
+                            "example": [13.08825, 52.33859, 13.76104, 52.6754],
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            },
+                            "minItems": 4,
+                            "maxItems": 4,
+                            "badge": "Gold",
+                            "title": "Bounding Box"
+                        },
+                        "crs": {
+                            "description": "The Coordinate Reference System, specified as an EPSG code.",
+                            "example": "EPSG:4326",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "badge": "Gold",
+                            "title": " Coordinate Reference System (CRS)"
+                        }
+
+
+                    },
                     "badge": "Silver",
-                    "title": "Resolution"
+                    "title": "Extent"
                 }
             },
             "badge": "Silver",
