@@ -1,0 +1,175 @@
+{
+  "name": "",
+  "title": "",
+  "id": "",
+  "resources": [
+    {
+      "@id": "",
+      "@context": "",
+      "name": "",
+      "topics": [
+        ""
+      ],
+      "title": "",
+      "path": "",
+      "description": "",
+      "languages": [
+        ""
+      ],
+      "subject": [
+        {
+          "name": "",
+          "path": ""
+        }
+      ],
+      "keywords": [
+        ""
+      ],
+      "publicationDate": "",
+      "embargoPeriod": {
+        "start": "",
+        "end": "",
+        "isActive": false
+      },
+      "context": {
+        "title": "",
+        "homepage": "",
+        "documentation": "",
+        "sourceCode": "",
+        "contact": "",
+        "grantNo": "",
+        "fundingAgency": "",
+        "fundingAgencyLogo": "",
+        "publisherLogo": ""
+      },
+      "spatial": {
+        "location": {
+          "address": "",
+          "@id": "",
+          "latitude": "",
+          "longitude": ""
+        },
+        "extent": {
+          "name": "",
+          "@id": "",
+          "resolutionValue": "",
+          "resolutionUnit": "",
+          "boundingBox": [
+            0, 0, 0, 0
+          ],
+          "crs": ""
+        }
+      },
+      "temporal": {
+        "referenceDate": "",
+        "timeseries": [
+          {
+            "start": "",
+            "end": "",
+            "resolution": "",
+            "alignment": "",
+            "aggregationType": ""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "",
+          "description": "",
+          "path": "",
+          "licenses": [
+            {
+              "name": "",
+              "title": "",
+              "path": "",
+              "instruction": "",
+              "attribution": "",
+              "copyrightStatement": ""
+            }
+          ]
+        }
+      ],
+      "licenses": [
+        {
+          "name": "",
+          "title": "",
+          "path": "",
+          "instruction": "",
+          "attribution": ""
+        }
+      ],
+      "contributors": [
+        {
+          "title": "",
+          "path": "",
+          "organization": "",
+          "roles": [
+            ""
+          ],
+          "date": "",
+          "object": "",
+          "comment": ""
+        }
+      ],
+      "type": "",
+      "format": "",
+      "encoding": "",
+      "schema": {
+        "fields": [
+          {
+            "name": "",
+            "description": "",
+            "type": "",
+            "nullable": false,
+            "unit": "",
+            "isAbout": [
+              {
+                "name": "",
+                "path": ""
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "",
+                "name": "",
+                "path": ""
+              }
+            ]
+          }
+        ],
+        "primaryKey": [
+          ""
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              ""
+            ],
+            "reference": {
+              "resource": "",
+              "fields": [
+                ""
+              ]
+            }
+          }
+        ]
+      },
+      "dialect": {
+        "delimiter": "",
+        "decimalSeparator": ""
+      },
+      "review": {
+        "path": "",
+        "badge": ""
+      }
+    }
+  ],
+  "metaMetadata": {
+    "metadataVersion": "",
+    "metadataLicense": {
+      "name": "",
+      "title": "",
+      "path": ""
+    }
+  }
+}

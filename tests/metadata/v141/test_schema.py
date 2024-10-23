@@ -15,7 +15,7 @@ def test_if_schema_json_has_correct_schema_and_id_set():
     assert get_string(OEMETADATA_V141_SCHEMA["$schema"]) == get_string("http://json-schema.org/draft-07/schema#")
 
     assert get_string(OEMETADATA_V141_SCHEMA["$id"]) == get_string(
-        "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/oemetadata/v141/schema.json"
+        "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/metadata/v141/schema.json"
     )
 
 

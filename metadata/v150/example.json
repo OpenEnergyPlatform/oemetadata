@@ -276,7 +276,7 @@
         }
     ],
     "@id": "https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00",
-    "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/30887e4cd7dabc316d1ee674791f0cc815277e38/metadata/latest/context.json",
+    "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/metadata/v150/context.json",
     "review": {
         "path": "https://github.com/OpenEnergyPlatform/data-preprocessing/issues",
         "badge": "platin"

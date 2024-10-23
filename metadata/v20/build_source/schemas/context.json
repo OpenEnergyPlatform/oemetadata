@@ -1,0 +1,108 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "general.json#metadata/v20/schemas/context.json",
+    "type": "object",
+    "properties": {
+        "context": {
+            "description": "An Object that describes the general setting, environment or project leading to the creation or maintenance of this dataset. In science this can be the research project.",
+            "type": "object",
+            "properties": {
+                "title": {
+                    "description": "A title of the associated project.",
+                    "example": "NFDI4Energy",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Context Title"
+                },"homepage": {
+                    "description": "A URL of the project.",
+                    "example": "https://nfdi4energy.uol.de/",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Homepage",
+                    "format": "uri"
+                },
+                "documentation": {
+                    "description": "A URL of the project documentation.",
+                    "example": "https://nfdi4energy.uol.de/sites/about_us/",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Documentation"
+                },
+                "sourceCode": {
+                    "description": "A URL of the source code of the project.",
+                    "example": "https://github.com/NFDI4Energy",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Source Code"
+                },
+                "contact": {
+                    "description": "A reference to the creator or maintainer of the data set. This can be an email address or a GitHub handle.",
+                    "example": "contact@example.com",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "E-Mail Contact",
+                    "format": "email"
+                },
+                "grantNo": {
+                    "description": "An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency.",
+                    "example": "501865131",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Grant Number"
+                },
+                "fundingAgency": {
+                    "description": "A name of the entity providing the funding. This can be a government agency or a company.",
+                    "example": " Deutsche Forschungsgemeinschaft (DFG)",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Funding Agency"
+                },
+                "fundingAgencyLogo": {
+                    "description": "A URL to the logo or image of the funding agency.",
+                    "example": "https://upload.wikimedia.org/wikipedia/commons/8/86/DFG-logo-blau.svg",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Funding Agency Logo",
+                    "format": "uri"
+                },
+                "publisherLogo": {
+                    "description": "A URL to the logo of the publishing agency of data.",
+                    "example": "https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Publisher Logo",
+                    "format": "uri"
+                }
+            },
+            "badge": "Gold",
+            "title": "Context"
+        }
+    }
+}
