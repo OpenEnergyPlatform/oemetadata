@@ -143,9 +143,17 @@ def resolve_and_merge(schema_path, debug):
                         resources = {}
                         for _k, _v in resolved_value["items"].items():
                             if isinstance(_v, dict):
-                                resources.update(_v)
+                                # Update all values instead of key:values to
+                                # avoid adding schema_structure.json wrapper
+                                # objects
+                                for element in _v.values():
+                                    resources.update(element)
                         resolved_properties[prop] = resolved_value
-                        resolved_properties[prop]["items"] = resources
+                        # Patch the missing keys
+                        resolved_properties[prop]["items"] = {
+                            "type": "object",
+                            "properties": {**resources},
+                        }
 
                     else:
                         resolved_properties[prop] = resolved_value
@@ -155,21 +163,6 @@ def resolve_and_merge(schema_path, debug):
     return schema
 
 
-#  if isinstance(value, dict) and "properties" in value:
-#     resolved_value = resolve_references(
-#         value["properties"], registry, base_uri
-#     )
-#     resolved_properties[prop] = resolved_value
-# elif prop == "resources":
-#     resolved_value = resolve_references(value, registry, base_uri)
-#     for k,v in resolved_value["items"].items():
-#         resolved_properties.update(v)
-
-
-# else:
-#     resolved_value = resolve_references(value, registry, base_uri)
-#     resolved_properties[prop] = resolved_value
-# Validate the schema
 def validate_schema(resolved_schema, expected_schema):
     validator = Draft7Validator(expected_schema)
     errors = sorted(validator.iter_errors(resolved_schema), key=lambda e: e.path)

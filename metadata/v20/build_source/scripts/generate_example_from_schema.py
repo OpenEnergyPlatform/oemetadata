@@ -21,14 +21,14 @@ from typing import Any, Dict, Union, List
 # from datetime import datetime
 from pathlib import Path
 
-from settings import VERSION_PATH, RESOLVED_SCHEMA_FILE_NAME, EXAMPLE_PATH, LOG_FORMAT
+from settings import RESOLVED_SCHEMA_FILE_NAME, EXAMPLE_PATH, LOG_FORMAT
 
 # Configuration
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
 logger = logging.getLogger(__name__)
 
 
-def read_schema(filename: str) -> Dict[str, Any]:
+def read_schema(filepath: str) -> Dict[str, Any]:
     """Read a JSON schema from a file.
 
     Args:
@@ -38,7 +38,7 @@ def read_schema(filename: str) -> Dict[str, Any]:
         Dict[str, Any]: The JSON schema as a dictionary.
     """
 
-    with open(VERSION_PATH / filename, "r", encoding="utf-8") as file:
+    with open(filepath, "r", encoding="utf-8") as file:
         schema = json.load(file)
     return schema
 
@@ -46,13 +46,15 @@ def read_schema(filename: str) -> Dict[str, Any]:
 def generate_example(
     schema: Dict[str, Any]
 ) -> Union[Dict[str, Any], List[Any], str, None]:
-    """Generate a JSON object from the schema using the example values provided.
+    """Generate a JSON object from the schema using the
+    example values provided.
 
     Args:
         schema (Dict[str, Any]): The JSON schema.
 
     Returns:
-        Union[Dict[str, Any], List[Any], str, None]: A JSON object generated from the schema.
+        Union[Dict[str, Any], List[Any], str, None]:
+            A JSON object generated from the schema.
     """
     if "example" in schema:
         return schema["example"]
@@ -70,7 +72,15 @@ def generate_example(
 
     elif schema_type == "array":
         items = schema.get("items", {})
-        return [generate_example(items)]
+
+        # Fix: Avoid double-wrapping by checking if the generated
+        # example is already a list
+        example = generate_example(items)
+
+        if isinstance(example, list):
+            return example  # If it's already a list, return it directly
+        else:
+            return [example]  # Otherwise, wrap it in a list
 
     elif schema_type == "string":
         return ""
@@ -103,6 +113,8 @@ def save_json(data: Dict[str, Any], filename: Path) -> None:
     """
     with open(filename, "w", encoding="utf-8") as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
+
+    print(f"template JSON generated and saved to {filename}")
 
 
 if __name__ == "__main__":

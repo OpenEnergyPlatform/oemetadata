@@ -5,17 +5,20 @@
   "resources": [
     {
       "name": "",
+      "topics": [
+        ""
+      ],
       "title": "",
       "path": "",
       "description": "",
+      "languages": [
+        ""
+      ],
       "subject": [
         {
           "name": "",
           "path": ""
         }
-      ],
-      "languages": [
-        ""
       ],
       "keywords": [
         ""
@@ -27,6 +30,7 @@
         "isActive": false
       },
       "context": {
+        "title": "",
         "homepage": "",
         "documentation": "",
         "sourceCode": "",
@@ -37,9 +41,22 @@
         "publisherLogo": ""
       },
       "spatial": {
-        "location": "",
-        "extent": "",
-        "resolution": ""
+        "location": {
+          "address": "",
+          "@id": "",
+          "latitude": "",
+          "longitude": ""
+        },
+        "extent": {
+          "name": "",
+          "@id": "",
+          "resolutionValue": "",
+          "resolutionUnit": "",
+          "boundingBox": [
+            0, 0, 0, 0
+          ],
+          "crs": ""
+        }
       },
       "temporal": {
         "referenceDate": "",
@@ -79,21 +96,19 @@
           "attribution": ""
         }
       ],
-      "provenance": {
-        "contributors": [
-          {
-            "title": "",
-            "path": "",
-            "organization": "",
-            "roles": [
-              ""
-            ],
-            "date": "",
-            "object": "",
-            "comment": ""
-          }
-        ]
-      },
+      "contributors": [
+        {
+          "title": "",
+          "path": "",
+          "organization": "",
+          "roles": [
+            ""
+          ],
+          "date": "",
+          "object": "",
+          "comment": ""
+        }
+      ],
       "type": "",
       "format": "",
       "encoding": "",
@@ -141,25 +156,20 @@
         "delimiter": "",
         "decimalSeparator": ""
       },
+      "@id": "",
+      "@context": "",
       "review": {
         "path": "",
         "badge": ""
-      },
-      "linkedData": {
-        "@id": "",
-        "@context": "",
-        "user": "",
-        "@type": "",
-        "usedResource": ""
       }
     }
   ],
   "metaMetadata": {
-    "metadataVersion": "OEP-2.0.0",
+    "metadataVersion": "",
     "metadataLicense": {
-      "name": "CC0-1.0",
-      "title": "Creative Commons Zero v1.0 Universal",
-      "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+      "name": "",
+      "title": "",
+      "path": ""
     }
   }
 }
