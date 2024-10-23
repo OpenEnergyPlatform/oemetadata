@@ -41,9 +41,22 @@
         "publisherLogo": ""
       },
       "spatial": {
-        "location": "",
-        "extent": "",
-        "resolution": ""
+        "location": {
+          "address": "",
+          "@id": "",
+          "latitude": "",
+          "longitude": ""
+        },
+        "extent": {
+          "name": "",
+          "@id": "",
+          "resolutionValue": "",
+          "resolutionUnit": "",
+          "boundingBox": [
+            0
+          ],
+          "crs": ""
+        }
       },
       "temporal": {
         "referenceDate": "",
