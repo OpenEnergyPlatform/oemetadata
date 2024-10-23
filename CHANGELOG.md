@@ -61,6 +61,7 @@ Here is a template for new release sections
 - Update all descriptions and examples [(#175)](https://github.com/OpenEnergyPlatform/oemetadata/pull/175)
 - Build scripts use a settings file to share variables [(#177)](https://github.com/OpenEnergyPlatform/oemetadata/pull/177)
 - Refactor the spatial section and add new keys for location: 'address', '@id', 'latitude', 'longitude' and for extent: 'name', '@id', 'resolutionValue', 'resolutionUnit', 'boundingBox', 'crs' [(#179)](https://github.com/OpenEnergyPlatform/oemetadata/pull/179)
+- Move linkedData keys to the top of the resource [(#183)](https://github.com/OpenEnergyPlatform/oemetadata/pull/183)
 
 ### Removed
 
@@ -72,6 +73,7 @@ Here is a template for new release sections
 ### Added
 
 - Implement schema build system v1: Enhance the resolve and generation module to match the expected oemetadata specification for all schema parts available for release v20 [(#180)]
+
 
 ## [1.6.0] - Release - Introduce badges in json schema - 2023-05-30
 
