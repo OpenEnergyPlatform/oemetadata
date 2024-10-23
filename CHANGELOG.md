@@ -31,15 +31,15 @@ Here is a template for new release sections
 
 ### Added
 
-- Added oemetadata version 2.0.0: [#???](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
+- Added oemetadata version 2.0.0: [#105](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
   - This includes restructured oemetadata: We now store metadata for each resource that is described in the oemetdata. A resource describes a files (CSV) or database table. Before it was not possible to add metadata to each resource. This change also alines the oemetadata specification with the requirements form frictionless datapackage v1.
 
-- Introduce a schema build system: [#???](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
+- Introduce a schema build system: [#105](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
   - The build files (schema & script) are maintained for each version (starting form v1.6.0) within the new directory called "metadata/v200/build_source"  
   - The schema is rather long and complex. We split the long schema.json into modules. The modules are assembled in a json file that specifies the structure of the final schema.json and it is called schema_structure.json.
   - We use json schema $ref elements to reference the schema modules and we provide code to resolve the reference´s and generate the complete schema.json.
 
-- Add code to generate a example.json based on the schema.json. We read the example values for each of the fields specified in the schema and generate the example. [#???](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
+- Add code to generate a example.json based on the schema.json. We read the example values for each of the fields specified in the schema and generate the example. [#105](https://github.com/OpenEnergyPlatform/oemetadata/pull/105)
 - Add updated context.json [(#154)](https://github.com/OpenEnergyPlatform/oemetadata/pull/154)
 
 - Add embargoPeriod section with keys start, end, isActive [(#155)](https://github.com/OpenEnergyPlatform/oemetadata/pull/155)
@@ -65,7 +65,7 @@ Here is a template for new release sections
 
 ### Changed
 
-- Remove comment field as it holds information on how to fill out the metadata and therefore should not be part of the actual oemetadata but the documentation. [#???](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
+- Remove comment field as it holds information on how to fill out the metadata and therefore should not be part of the actual oemetadata but the documentation. [#105](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
 - Update the schema json file content (schema generation still broken, add desired output) and fix the schema path in the script for generating examples (it pointed to an incorrect directory and file name) [(#149)](https://github.com/OpenEnergyPlatform/oemetadata/pull/149)
 - Update broken Link in key description example [(#159)](https://github.com/OpenEnergyPlatform/oemetadata/pull/159)
 - Update resource/profile to resource/type [(#164)](https://github.com/OpenEnergyPlatform/oemetadata/pull/164)
