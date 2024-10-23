@@ -13,6 +13,9 @@
             "items": {
                 "type": "object",
                 "properties": {
+                    "linkedData": {
+                        "$ref": "linked_data.json#"
+                    },
                     "general": {
                         "$ref": "general.json#"
                     },
@@ -36,9 +39,6 @@
                     },
                     "resource": {
                         "$ref": "fields.json#"
-                    },
-                    "linkedData": {
-                        "$ref": "linked_data.json#"
                     },
                     "review": {
                         "$ref": "review.json#"

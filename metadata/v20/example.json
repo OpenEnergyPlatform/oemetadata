@@ -4,6 +4,8 @@
     "id": "https://databus.openenergyplatform.org/oeplatform/reference",
     "resources": [
         {
+            "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07",
+            "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/metadata/latest/context.json",
             "name": "oep_oemetadata_table_example",
             "topics": [
                 "model_draft",
@@ -166,8 +168,6 @@
                 "delimiter": ";",
                 "decimalSeparator": "."
             },
-            "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07",
-            "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/metadata/latest/context.json",
             "review": {
                 "path": "https://www.example.com",
                 "badge": "Platinum"

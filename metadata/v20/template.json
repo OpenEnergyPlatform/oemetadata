@@ -4,6 +4,8 @@
   "id": "",
   "resources": [
     {
+      "@id": "",
+      "@context": "",
       "name": "",
       "topics": [
         ""
@@ -156,8 +158,6 @@
         "delimiter": "",
         "decimalSeparator": ""
       },
-      "@id": "",
-      "@context": "",
       "review": {
         "path": "",
         "badge": ""
