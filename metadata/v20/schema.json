@@ -42,6 +42,28 @@
       "items": {
         "type": "object",
         "properties": {
+          "@id": {
+            "description": "A Uniform Resource Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus).",
+            "example": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07",
+            "type": [
+              "string",
+              "null"
+            ],
+            "badge": "Platinum",
+            "title": "@Id",
+            "readonly": true
+          },
+          "@context": {
+            "description": "Explanation of metadata keys in ontology terms.",
+            "example": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/metadata/latest/context.json",
+            "type": [
+              "string",
+              "null"
+            ],
+            "badge": "Platinum",
+            "title": "@context",
+            "readonly": true
+          },
           "name": {
             "description": "A filename or database conform table name.",
             "example": "oep_oemetadata_table_example",
@@ -1139,28 +1161,6 @@
             "options": {
               "hidden": true
             }
-          },
-          "@id": {
-            "description": "A Uniform Resource Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus).",
-            "example": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07",
-            "type": [
-              "string",
-              "null"
-            ],
-            "badge": "Platinum",
-            "title": "@Id",
-            "readonly": true
-          },
-          "@context": {
-            "description": "Explanation of metadata keys in ontology terms.",
-            "example": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/metadata/latest/context.json",
-            "type": [
-              "string",
-              "null"
-            ],
-            "badge": "Platinum",
-            "title": "@context",
-            "readonly": true
           },
           "review": {
             "description": "The metadata on the OEP can go through an open peer review process. See the Academy course [Open Peer Review](https://openenergyplatform.github.io/academy/courses/09_peer_review/) for further information.",
