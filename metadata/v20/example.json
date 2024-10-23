@@ -45,9 +45,25 @@
                 "publisherLogo": "https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png"
             },
             "spatial": {
-                "location": "52.433509, 13.535855",
-                "extent": "Europe",
-                "resolution": "1 ha"
+                "location": {
+                    "address": "Rudower Chaussee 12, 12489 Berlin",
+                    "@id": "https://www.wikidata.org/wiki/Q77077223",
+                    "latitude": "52.432822",
+                    "longitude": "13.5351004"
+                },
+                "extent": {
+                    "name": "Berlin",
+                    "@id": "https://www.wikidata.org/wiki/Q64",
+                    "resolutionValue": "100",
+                    "resolutionUnit": "m",
+                    "boundingBox": [
+                        13.08825,
+                        52.33859,
+                        13.76104,
+                        52.6754
+                    ],
+                    "crs": "EPSG:4326"
+                }
             },
             "temporal": {
                 "referenceDate": "2020-01-01",
