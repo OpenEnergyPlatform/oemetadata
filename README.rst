@@ -31,7 +31,7 @@ Open Energy Metadata (OEMetadata)
 
 Introduction
 ============
-| Open Energy Metadata (OEMetadata) is an energy metadata standard including a template, examples and a metadata schema.
+| Open Energy Metadata (OEMetadata) is a metadata standard for the energy domain.
 | It is an extensive set of metadata based on the tabular data package specifications and the FAIR principles.
 | The metadata contains multiple fields (keys) in a nested JSON structure.
 
@@ -67,8 +67,8 @@ License and Citation
     :target: LICENSE.txt
     :alt: License
 
-.. |badge_documentation| image:: https://img.shields.io/github/actions/workflow/status/OpenEnergyPlatform/oemetadata/gh-pages.yml?branch=production
-    :target: https://rl-institut.github.io/super-repo/
+.. |badge_documentation| image:: https://img.shields.io/github/actions/workflow/status/OpenEnergyPlatform/oemetadata/gh-pages.yml?branch=feature-120-repo
+    :target: https://openenergyplatform.github.io/oemetadata/
     :alt: Documentation
 
 .. |badge_contributing| image:: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat
