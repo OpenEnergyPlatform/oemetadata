@@ -82,7 +82,7 @@ def resolve_and_merge(schema_path, debug):
 
     for schema_file in SCHEMA_REFS.glob("*.json"):
         try:
-            with open(schema_file, "r") as file:
+            with open(schema_file, "r", encoding="utf-8") as file:
                 ref_schema = json.load(file)
                 ref_schema = ensure_schema_field(ref_schema)
                 schema_uri = urljoin(base_uri, schema_file.name)
