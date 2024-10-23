@@ -114,6 +114,8 @@ def save_json(data: Dict[str, Any], filename: Path) -> None:
     with open(filename, "w", encoding="utf-8") as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
 
+    print(f"template JSON generated and saved to {filename}")
+
 
 if __name__ == "__main__":
     schema_filename = RESOLVED_SCHEMA_FILE_NAME
