@@ -53,7 +53,7 @@
           "resolutionValue": "",
           "resolutionUnit": "",
           "boundingBox": [
-            0
+            0, 0, 0, 0
           ],
           "crs": ""
         }
