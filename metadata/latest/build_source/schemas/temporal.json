@@ -1,0 +1,93 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "general.json#metadata/v20/schemas/temporal.json",
+    "type": "object",
+    "properties": {
+        "temporal": {
+            "description": "An object with the time period covered in the data. Temporal information should either contain a \"referenceDate\" or the keys describing a time series; in rare cases both.",
+            "type": "object",
+            "properties": {
+                "referenceDate": {
+                    "description": "The base year, month or day. Point in time for which the data is meant to be accurate. The census data or a satellite image will have a reference date. Date Format is ISO 8601.",
+                    "example": "2016-01-01",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Bronze",
+                    "title": "Reference date",
+                    "format": "date"
+                },
+                "timeseries": {
+                    "description": "A list of objects that describe the timeseries. It contains start, end, resolution, alignment and aggregation type properties.",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "start": {
+                                "description": "The beginning point in time of a time series.",
+                                "example": "2019-02-06T10:12:04+00:00",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "badge": "Silver",
+                                "title": "Start",
+                                "format": "date-time"
+                            },
+                            "end": {
+                                "description": "The end point in time of a time series.",
+                                "example": "2019-02-07T10:12:04+00:00",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "badge": "Silver",
+                                "title": "End",
+                                "format": "date-time"
+                            },
+                            "resolution": {
+                                "description": "The time span between individual points of information in a time series.",
+                                "example": " 30 s",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "badge": "Silver",
+                                "title": "Resolution"
+                            },
+                            "alignment": {
+                                "description": "An indicator whether stamps in a time series are left, right or middle.",
+                                "example": "left",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "badge": "Silver",
+                                "title": "Alignment"
+                            },
+                            "aggregationType": {
+                                "description": "Indicates whether the values are a sum, average or current.",
+                                "example": "sum",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "badge": "Silver",
+                                "title": "Aggregation type"
+                            }
+                        },
+                        "badge": "Silver",
+                        "title": "Timeseries",
+                        "additionalProperties": false
+                    },
+                    "badge": "Silver",
+                    "title": "Timeseries"
+                }
+            },
+            "badge": "Silver",
+            "title": "Temporal",
+            "additionalProperties": false
+        }
+    }
+}

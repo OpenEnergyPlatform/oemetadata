@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "json_ld.json#metadata/v20/schemas/json_ld.json",
+    "type": "object",
+    "properties": {
+        "@id": {
+            "description": "A Uniform Resource Identifier (URI) that links the resource via the DBpedia Databus",
+            "example": "https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00",
+            "type": [
+                "string",
+                "null"
+            ],
+            "badge": null,
+            "title": "@Id",
+            "readonly": true
+        },
+        "@context": {
+            "description": "Explanation of metadata keys in ontology terms.",
+            "example": "https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld",
+            "type": [
+                "string",
+                "null"
+            ],
+            "badge": null,
+            "title": "@context"
+        }
+    }
+}
