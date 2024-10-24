@@ -52,6 +52,8 @@ Collaboration
 =============
 | Everyone is invited to develop this repository with good intentions.
 | Please follow the workflow described in the `CONTRIBUTING.md <CONTRIBUTING.md>`_.
+| Development work that aims to extend the oemetadata specification is added to the build_source/schemas/ directory for each release.
+| To generate the schema, template & example JSON files see your script based `tooling <.metadata/latest/build_source/>`_ 
 
 License and Citation
 ====================
