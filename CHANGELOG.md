@@ -49,6 +49,7 @@ Here is a template for new release sections
 - Add explicit json types [(#166)](https://github.com/OpenEnergyPlatform/oemetadata/pull/166)
 - Add key topics to general [(#170)](https://github.com/OpenEnergyPlatform/oemetadata/pull/170)
 - Add badge labels to documentation [(#175)](https://github.com/OpenEnergyPlatform/oemetadata/pull/175)
+- Add key 'publisher' to section 'context' [(#191)](https://github.com/OpenEnergyPlatform/oemetadata/pull/191)
 
 ### Changed
 
@@ -62,6 +63,7 @@ Here is a template for new release sections
 - Build scripts use a settings file to share variables [(#177)](https://github.com/OpenEnergyPlatform/oemetadata/pull/177)
 - Refactor the spatial section and add new keys for location: 'address', '@id', 'latitude', 'longitude' and for extent: 'name', '@id', 'resolutionValue', 'resolutionUnit', 'boundingBox', 'crs' [(#179)](https://github.com/OpenEnergyPlatform/oemetadata/pull/179)
 - Move linkedData keys to the top of the resource [(#183)](https://github.com/OpenEnergyPlatform/oemetadata/pull/183)
+- Update order of keys in section 'context' [(#191)](https://github.com/OpenEnergyPlatform/oemetadata/pull/191)
 
 ### Removed
 
