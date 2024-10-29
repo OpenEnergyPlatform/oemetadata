@@ -48,7 +48,7 @@
                     "title": "Source Code"
                 },
                 "publisher": {
-                    "description": "The publishing agency of data. This can be the OEP.",
+                    "description": "The publishing agency of the data. This can be the OEP.",
                     "example": "Open Energy Platform (OEP)",
                     "type": [
                         "string",
@@ -58,7 +58,7 @@
                     "title": "Publisher"
                 },"publisherLogo": {
                     "description": "A URL to the logo of the publishing agency of data.",
-                    "example": "https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png",
+                    "example": "https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg",
                     "type": [
                         "string",
                         "null"
