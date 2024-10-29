@@ -49,6 +49,7 @@ Here is a template for new release sections
 - Add explicit json types [(#166)](https://github.com/OpenEnergyPlatform/oemetadata/pull/166)
 - Add key topics to general [(#170)](https://github.com/OpenEnergyPlatform/oemetadata/pull/170)
 - Add badge labels to documentation [(#175)](https://github.com/OpenEnergyPlatform/oemetadata/pull/175)
+- Add an array 'authors' in section 'sources'. [(#193)](https://github.com/OpenEnergyPlatform/oemetadata/pull/193)
 
 ### Changed
 
