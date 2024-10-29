@@ -50,6 +50,7 @@ Here is a template for new release sections
 - Add badge labels to documentation [(#175)](https://github.com/OpenEnergyPlatform/oemetadata/pull/175)
 - Implement schema build system v1: Enhance the resolve and generation module [(#180)](https://github.com/OpenEnergyPlatform/oemetadata/pull/180)
 - Add basic documentation with MKdocs [(#184)](https://github.com/OpenEnergyPlatform/oemetadata/pull/184)
+- Add key 'publisher' to section 'context' [(#191)](https://github.com/OpenEnergyPlatform/oemetadata/pull/191)
 - Add a key description to collection and update badges [(#195)](https://github.com/OpenEnergyPlatform/oemetadata/pull/195)
 
 ### Changed
@@ -63,6 +64,7 @@ Here is a template for new release sections
 - Build scripts use a settings file to share variables [(#177)](https://github.com/OpenEnergyPlatform/oemetadata/pull/177)
 - Refactor the spatial section and add new keys for location: 'address', '@id', 'latitude', 'longitude' and for extent: 'name', '@id', 'resolutionValue', 'resolutionUnit', 'boundingBox', 'crs' [(#179)](https://github.com/OpenEnergyPlatform/oemetadata/pull/179)
 - Move linkedData keys to the top of the resource [(#183)](https://github.com/OpenEnergyPlatform/oemetadata/pull/183)
+- Update order of keys in section 'context' [(#191)](https://github.com/OpenEnergyPlatform/oemetadata/pull/191)
 
 ### Removed
 - Remove email from contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
