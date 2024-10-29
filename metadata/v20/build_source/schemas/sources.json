@@ -19,6 +19,22 @@
                         "badge": "Bronze",
                         "title": "Source Title"
                     },
+                    "authors": {
+                        "description": "An array of the full names of the authors of the source material.",
+                        "type": "array",
+                        "items": {
+                            "description": "The authors of the source.",
+                            "example": ["Hoesung Lee","José Romero", "The Core Writing Team"],
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "badge": "Bronze",
+                            "title": "Keyword"
+                        },
+                        "badge": "Bronze",
+                        "title": "Keywords"
+                    },
                     "description": {
                         "description": "A free text description of the source.",
                         "example": "A Report of the Intergovernmental Panel on Climate Change.",
