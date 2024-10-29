@@ -32,7 +32,7 @@
                             "title": "Address"
                         },
                         "latitude": {
-                            "description": "The latitude (lat) information of the location.",
+                            "description": "The latitude (lat) information of the location. Specifies the north / south position of the geometry.",
                             "example": "52.432822",
                             "type": [
                                 "string",
@@ -42,7 +42,7 @@
                             "title": "Latitude"
                         },
                         "longitude": {
-                            "description": "The longitude (lon) information of the location.",
+                            "description": "The longitude (lon) information of the location. Specifies the east / west position of the geometry.",
                             "example": "13.5351004",
                             "type": [
                                 "string",
