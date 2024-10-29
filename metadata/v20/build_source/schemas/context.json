@@ -47,6 +47,26 @@
                     "badge": "Gold",
                     "title": "Source Code"
                 },
+                "publisher": {
+                    "description": "The publishing agency of data. This can be the OEP.",
+                    "example": "Open Energy Platform (OEP)",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Publisher"
+                },"publisherLogo": {
+                    "description": "A URL to the logo of the publishing agency of data.",
+                    "example": "https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Publisher Logo",
+                    "format": "uri"
+                },
                 "contact": {
                     "description": "A reference to the creator or maintainer of the data set. This can be an email address or a GitHub handle.",
                     "example": "contact@example.com",
@@ -57,16 +77,6 @@
                     "badge": "Gold",
                     "title": "E-Mail Contact",
                     "format": "email"
-                },
-                "grantNo": {
-                    "description": "An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency.",
-                    "example": "501865131",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": "Gold",
-                    "title": "Grant Number"
                 },
                 "fundingAgency": {
                     "description": "A name of the entity providing the funding. This can be a government agency or a company.",
@@ -89,16 +99,15 @@
                     "title": "Funding Agency Logo",
                     "format": "uri"
                 },
-                "publisherLogo": {
-                    "description": "A URL to the logo of the publishing agency of data.",
-                    "example": "https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png",
+                "grantNo": {
+                    "description": "An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency.",
+                    "example": "501865131",
                     "type": [
                         "string",
                         "null"
                     ],
                     "badge": "Gold",
-                    "title": "Publisher Logo",
-                    "format": "uri"
+                    "title": "Grant Number"
                 }
             },
             "badge": "Gold",
