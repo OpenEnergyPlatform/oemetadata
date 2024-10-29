@@ -20,8 +20,18 @@
                 "string",
                 "null"
             ],
-            "badge": "Silver",
+            "badge": "Bronze",
             "title": "Collection Title"
+        },
+        "description": {
+            "description": "A free text description of the collection.",
+            "example": "A collection of tables for the OEMetadata examples.",
+            "type": [
+                "string",
+                "null"
+            ],
+            "badge": "Bronze",
+            "title": "Collection Description"
         },
         "id": {
             "description": "A unique identifier (UUID/DOI) for the collection.",

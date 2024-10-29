@@ -35,12 +35,13 @@ If a field is not applicable use: 'null'.
 If a value is not yet available, use: 'ToDo'.
 
 ### Collection Keys
-| # | Key       | Description                                                                                 | Example                                                     | Badge  |
-|---|-----------|---------------------------------------------------------------------------------------------|-------------------------------------------------------------|--------|
-| 1 | name      | A filename or database conform collection name.                                             | oep_oemetadata                                              | Iron   |
-| 2 | title     | A human readable collection name.                                                           | OEP OEMetadata                                              | Silver |
-| 3 | id        | A unique identifier (UUID/DOI) for the collection.                                          | https://databus.openenergyplatform.org/oeplatform/reference | Silver |
-| 4 | resources | An array of objects of the resources. The collection can contain several (database) tables. |                                                             |        |
+| # | Key         | Description                                                                                 | Example                                                     | Badge  |
+|---|-------------|---------------------------------------------------------------------------------------------|-------------------------------------------------------------|--------|
+| 1 | name        | A filename or database conform collection name.                                             | oep_oemetadata                                              | Iron   |
+| 2 | title       | A human readable collection name.                                                           | OEP OEMetadata                                              | Bronze |
+| 3 | description | A free text description of the collection.                                                  | A collection of tables for the OEMetadata examples.         | Bronze |
+| 4 | id          | A unique identifier (UUID/DOI) for the collection.                                          | https://databus.openenergyplatform.org/oeplatform/reference | Silver |
+| 5 | resources   | An array of objects of the resources. The collection can contain several (database) tables. |                                                             |        |
 
 ### Resource - Linked Data Keys
 | # | Key      | Description                                                                                              | Example                                                                                             | Badge    |
