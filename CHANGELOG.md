@@ -27,10 +27,9 @@ Here is a template for new release sections
 -
 ```
 
-## Current
+## [2.0.0] - Major Release - Refactor OEMetadata
 
 ### Added
-
 - Add OEMetadata version 2.0: [#144](https://github.com/OpenEnergyPlatform/oemetadata/issues/144)
 - Introduce a schema build system: [#105](https://github.com/OpenEnergyPlatform/oemetadata/pull/105)
   - The build files (schema & script) are maintained for each version (starting form v1.6.0) within the new directory called "metadata/(version)/build_source"  
@@ -49,10 +48,11 @@ Here is a template for new release sections
 - Add explicit json types [(#166)](https://github.com/OpenEnergyPlatform/oemetadata/pull/166)
 - Add key topics to general [(#170)](https://github.com/OpenEnergyPlatform/oemetadata/pull/170)
 - Add badge labels to documentation [(#175)](https://github.com/OpenEnergyPlatform/oemetadata/pull/175)
+- Implement schema build system v1: Enhance the resolve and generation module [(#180)](https://github.com/OpenEnergyPlatform/oemetadata/pull/180)
+- Add basic documentation with MKdocs [(#184)](https://github.com/OpenEnergyPlatform/oemetadata/pull/184)
 - Add key 'publisher' to section 'context' [(#191)](https://github.com/OpenEnergyPlatform/oemetadata/pull/191)
 
 ### Changed
-
 - Remove comment field as it holds information on how to fill out the metadata and therefore should not be part of the actual oemetadata but the documentation. [#105](https://github.com/OpenEnergyPlatform/oemetadata/pull/105)
 - Update the schema json file content (schema generation still broken, add desired output) and fix the schema path in the script for generating examples (it pointed to an incorrect directory and file name) [(#149)](https://github.com/OpenEnergyPlatform/oemetadata/pull/149)
 - Update broken Link in key description example [(#159)](https://github.com/OpenEnergyPlatform/oemetadata/pull/159)
@@ -66,49 +66,37 @@ Here is a template for new release sections
 - Update order of keys in section 'context' [(#191)](https://github.com/OpenEnergyPlatform/oemetadata/pull/191)
 
 ### Removed
-
 - Remove email from contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
 - Remove all additionalProperties is false [(#163)](https://github.com/OpenEnergyPlatform/oemetadata/pull/163)
 - Remove duplicate keys from resources [(#165)](https://github.com/OpenEnergyPlatform/oemetadata/pull/165)
 - Remove linkedData section and keys [(#176)](https://github.com/OpenEnergyPlatform/oemetadata/pull/176)
 
-### Added
-
-- Implement schema build system v1: Enhance the resolve and generation module to match the expected oemetadata specification for all schema parts available for release v20 [(#180)]
-
 
 ## [1.6.0] - Release - Introduce badges in json schema - 2023-05-30
 
 ### Added
-
-- Add badge for all fields [PR#117]
+- Add badge for all fields [PR#117](https://github.com/OpenEnergyPlatform/oemetadata/pull/117)
 - Add CITATION.cff with list of authors [(#111)](https://github.com/OpenEnergyPlatform/oemetadata/pull/111)
 
 ### Changed
-
-- Separate examples from descripton and put into its own key-value pair [PR#117]
+- Separate examples from description and put into its own key-value pair [(PR#117)](https://github.com/OpenEnergyPlatform/oemetadata/pull/117)
 - Add issue and PR templates [(#116)](https://github.com/OpenEnergyPlatform/oemetadata/pull/116)
-- Update context field [PR#114]
+- Update context field [(PR#114)](https://github.com/OpenEnergyPlatform/oemetadata/pull/114)
 
-### Removed
 
--
-
-## [1.5.2] - Release - Fix missing json files in pypi package, Improve context.jsonld - 2022-11-18
-
-- Fix missing json files in pypi oemetadata package
-- Add github actions/workflwos to automate package build and upload process on test and production pypi index
+## [1.5.2] - Release - Fix Repo and Package - 2022-11-18
 
 ### Added
+- Add GitHub actions to automate package build and upload process on test and production pypi index
 
 ### Changed
+- Fix missing json files in pypi oemetadata package
+- Update context.json in latest & v151 to ensure ontologically annotated metadata can be sparkled #99
 
-- Update context.json in latest & v151 to ensure ontologically annotated metadata can be sparqled #99
 
 ## [1.5.1] - Release - Ontology-Ready - 2022-02-21
 
 ### Added
-
 - Use  [GitHub projects](https://github.com/OpenEnergyPlatform/oemetadata/projects) to organise releases
 - Add new example table to show connection to OEO
 - Add test for latest directory to CI [PR#74]
@@ -116,7 +104,6 @@ Here is a template for new release sections
 - Add release version directory for oem-v151
 
 ### Changed
-
 - Update ``subject`` to work with OEO
 - Rename and update ``isAbout`` to work with OEO
 - Rename and update ``valueReference`` to work with OEO
@@ -125,44 +112,41 @@ Here is a template for new release sections
 - Update CHANGELOG.md and give names to releases
 - Update CONTRIBUTING.md
 
+
 ## [1.5.0] - Release - Get Some Semantics - 2021-11-18
 
 ### Added
-
 - Add keys for linked data compatibility: ``@context``, ``@id``, ``subject``, ``is_about``, ``value_reference``
-- Add context.json file
+- Add context.json file 
 - Add licence information to README.md
 
 ### Changed
-
 - Clarify instructions for dealing with non-applicable keys (null) and missing values ("todo")
 - Make key 13.2 ``timeseries`` a list
-- Relocate development information from README.md to CONTRIBUTING.md
+- Relocate development information from README.md to CONTRIBUTING.md 
 - Update all .json files to v1.5.0
 - Reintroduce automated tests (CI) by switching form travis-ci to github actions [PR#63]
 - Updated schema.json for v1.5.0 now includes the new key ``title`` which describes the title of the curent field [PR#56] adapted from [PR#43]
 
 ### Removed
-
 - Delete future directory
+
 
 ## [1.4.1] Minor Release - Repo Upgrade - 2021-01-18
 
 ### Added
-
 - Add directory for v1.4.1
 - Add tests for v1.4.1
 - Add current section to Changelog, documenting all changes in current branch and stage for release
 - Extend black options, COMMAND tox -v now shows exactly what code must be reformatted
 
 ### Changed
-
 - Rename repository from "metadata" to "oemetadata"
+
 
 ## [1.4.0] Release - It'll be a standard - 2021-01-11
 
 ### Added
-
 - Add ``timeseries`` to ``temporal``
 - Add ``context`` object for project information
 - Add ``object`` to ``contributors`` to decide between data and metadata
@@ -178,8 +162,8 @@ Here is a template for new release sections
 - Add ``_comment``
 
 ### Changed
-
 - Rename ``url`` to ``path`` according to datapackage standard
+
 
 ## [1.0.1] Initial Release - Hello OEMetadata - 2019-11-07
 
@@ -190,3 +174,4 @@ Here is a template for new release sections
 - Python implementation and tests for schema, example, template of v1.3.0
 - Python implementation and tests for schema, example, template of v1.4.0
 - Implementation of metaschema (draft07) and test of metaschema
+
