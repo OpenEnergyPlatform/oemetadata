@@ -39,7 +39,7 @@ theme:
 markdown_extensions:
   - admonition
   - toc:
-      permalink: 💙
+      permalink: "#"
 
 plugins:
 - mkdocstrings:
@@ -47,7 +47,7 @@ plugins:
 # Customization
 extra:
   generator: false
-  homepage: https://openenergy-platform.org/
+  homepage: https://openenergyplatform.org/
 
 extra_css:
   - css/extra.css
@@ -73,9 +73,9 @@ nav:
   - Metadata Documentation:
       - metadata/index.md
       - Key Description: metadata/metadata_key_description.md
-#  - Code Documentation:
-#    - Install:
-#      - code/install/index.md
+  - Code Documentation:
+    - Install:
+      - code/install/index.md
 #    - Code Style:
 #      - code/style/index.md
 #    - Functions:
