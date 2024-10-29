@@ -49,6 +49,7 @@ Here is a template for new release sections
 - Add key topics to general [(#170)](https://github.com/OpenEnergyPlatform/oemetadata/pull/170)
 - Add badge labels to documentation [(#175)](https://github.com/OpenEnergyPlatform/oemetadata/pull/175)
 - Implement schema build system v1: Enhance the resolve and generation module [(#180)](https://github.com/OpenEnergyPlatform/oemetadata/pull/180)
+- Add basic documentation with MKdocs [(#184)](https://github.com/OpenEnergyPlatform/oemetadata/pull/184)
 
 ### Changed
 - Remove comment field as it holds information on how to fill out the metadata and therefore should not be part of the actual oemetadata but the documentation. [#105](https://github.com/OpenEnergyPlatform/oemetadata/pull/105)
