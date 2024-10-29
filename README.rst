@@ -18,7 +18,7 @@ Open Energy Metadata (OEMetadata)
    * - Documentation
      - |badge_documentation|
    * - Publication
-     -
+     - |badge_pypi| |badge_pypi_downloads|
    * - Development
      - |badge_issue_open| |badge_issue_closes| |badge_pr_open| |badge_pr_closes|
    * - Community
@@ -73,23 +73,29 @@ License and Citation
     :target: https://openenergyplatform.github.io/oemetadata/
     :alt: Documentation
 
+.. |badge_pypi| image:: https://img.shields.io/pypi/v/oemetadata
+    :alt: PyPI
+
+.. |badge_pypi_downloads| image:: https://img.shields.io/pypi/dm/oemetadata
+    :alt: PyPI Downloads
+
 .. |badge_contributing| image:: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat
-    :alt: contributions
+    :alt: Contributions
 
 .. |badge_repo_counts| image:: http://hits.dwyl.com/OpenEnergyPlatform/oemetadata.svg
-    :alt: counter
+    :alt: Counter
 
 .. |badge_contributors| image:: https://img.shields.io/github/contributors/OpenEnergyPlatform/oemetadata
-    :alt: contributors
+    :alt: Contributors
 
 .. |badge_issue_open| image:: https://img.shields.io/github/issues-raw/OpenEnergyPlatform/oemetadata
-    :alt: open issues
+    :alt: Open issues
 
 .. |badge_issue_closes| image:: https://img.shields.io/github/issues-closed-raw/OpenEnergyPlatform/oemetadata
-    :alt: closes issues
+    :alt: Closes issues
 
 .. |badge_pr_open| image:: https://img.shields.io/github/issues-pr-raw/OpenEnergyPlatform/oemetadata
-    :alt: closes issues
+    :alt: Closes issues
 
 .. |badge_pr_closes| image:: https://img.shields.io/github/issues-pr-closed-raw/OpenEnergyPlatform/oemetadata
-    :alt: closes issues
+    :alt: Closes issues
