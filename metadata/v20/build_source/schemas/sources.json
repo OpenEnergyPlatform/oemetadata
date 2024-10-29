@@ -29,6 +29,16 @@
                         "badge": "Bronze",
                         "title": "Source Description"
                     },
+                    "publicationYear": {
+                        "description": "Indicates the year when the work was published.",
+                        "example": "2023",
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "badge": "Bronze",
+                        "title": "Publication Year"
+                    },
                     "path": {
                         "description": "A URL to the original source.",
                         "example": "https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf",
