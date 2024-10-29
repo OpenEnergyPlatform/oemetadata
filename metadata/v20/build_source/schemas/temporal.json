@@ -63,7 +63,7 @@
                                     "string",
                                     "null"
                                 ],
-                                "badge": "Silver",
+                                "badge": "Gold",
                                 "title": "Timeseries Alignment"
                             },
                             "aggregationType": {
@@ -73,7 +73,7 @@
                                     "string",
                                     "null"
                                 ],
-                                "badge": "Silver",
+                                "badge": "Gold",
                                 "title": "Timeseries Aggregation Type"
                             }
                         },
