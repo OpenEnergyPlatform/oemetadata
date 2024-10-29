@@ -52,6 +52,7 @@ Here is a template for new release sections
 - Add basic documentation with MKdocs [(#184)](https://github.com/OpenEnergyPlatform/oemetadata/pull/184)
 - Add key 'publisher' to section 'context' [(#191)](https://github.com/OpenEnergyPlatform/oemetadata/pull/191)
 - Add an array 'authors' in section 'sources'. [(#193)](https://github.com/OpenEnergyPlatform/oemetadata/pull/193)
+- Add year to section sources [(#194)](https://github.com/OpenEnergyPlatform/oemetadata/pull/194)
 - Add a key description to collection and update badges [(#195)](https://github.com/OpenEnergyPlatform/oemetadata/pull/195)
 
 ### Changed
