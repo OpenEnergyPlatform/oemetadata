@@ -27,7 +27,7 @@ Here is a template for new release sections
 -
 ```
 
-## [2.0.0] - Major Release - Refactor OEMetadata
+## [2.0.0] - Major Release - Refactor OEMetadata for NFDI
 
 ### Added
 - Add OEMetadata version 2.0: [#144](https://github.com/OpenEnergyPlatform/oemetadata/issues/144)
@@ -37,36 +37,36 @@ Here is a template for new release sections
   - It uses JSON schema $ref elements to reference the schema modules, and it provides code to resolve the reference´s and generate the complete schema.json.
 - Add code to generate an example.json based on the schema.json. We read the example values for each of the fields specified in the schema and generate the example. [#105](https://github.com/OpenEnergyPlatform/oemetadata/pull/105)
 - Add updated context.json [(#154)](https://github.com/OpenEnergyPlatform/oemetadata/pull/154)
-- Add embargoPeriod section with keys start, end, isActive [(#155)](https://github.com/OpenEnergyPlatform/oemetadata/pull/155)
-- Add path to contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
+- Add ``embargoPeriod`` section with keys ``start``, ``end``, ``isActive`` [(#155)](https://github.com/OpenEnergyPlatform/oemetadata/pull/155)
+- Add ``path`` to ``contributors`` [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
 - Add organization to contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
 - Add roles to contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
-- Add a section for Linked Data keys [(#159)](https://github.com/OpenEnergyPlatform/oemetadata/pull/159)
+- Add section for ``Linked Data`` keys [(#159)](https://github.com/OpenEnergyPlatform/oemetadata/pull/159)
 - Add mandatory fields to the json schema (Iron Badge) [(#160)](https://github.com/OpenEnergyPlatform/oemetadata/pull/160)
-- Add key copyrightStatement to sources [(#162)](https://github.com/OpenEnergyPlatform/oemetadata/pull/162)
+- Add key ``copyrightStatement`` to ``sources`` [(#162)](https://github.com/OpenEnergyPlatform/oemetadata/pull/162)
 - Add key nullable to fields section (columns) [(#161)](https://github.com/OpenEnergyPlatform/oemetadata/pull/161)
 - Add explicit json types [(#166)](https://github.com/OpenEnergyPlatform/oemetadata/pull/166)
-- Add key topics to general [(#170)](https://github.com/OpenEnergyPlatform/oemetadata/pull/170)
+- Add key ``topics`` to ``general`` [(#170)](https://github.com/OpenEnergyPlatform/oemetadata/pull/170)
 - Add badge labels to documentation [(#175)](https://github.com/OpenEnergyPlatform/oemetadata/pull/175)
 - Implement schema build system v1: Enhance the resolve and generation module [(#180)](https://github.com/OpenEnergyPlatform/oemetadata/pull/180)
-- Add basic documentation with MKdocs [(#184)](https://github.com/OpenEnergyPlatform/oemetadata/pull/184)
-- Add key 'publisher' to section 'context' [(#191)](https://github.com/OpenEnergyPlatform/oemetadata/pull/191)
-- Add an array 'authors' in section 'sources'. [(#193)](https://github.com/OpenEnergyPlatform/oemetadata/pull/193)
-- Add year to section sources [(#194)](https://github.com/OpenEnergyPlatform/oemetadata/pull/194)
-- Add a key description to collection and update badges [(#195)](https://github.com/OpenEnergyPlatform/oemetadata/pull/195)
+- Add basic documentation with MkDocs [(#184)](https://github.com/OpenEnergyPlatform/oemetadata/pull/184)
+- Add key ``publisher`` to ``context`` [(#191)](https://github.com/OpenEnergyPlatform/oemetadata/pull/191)
+- Add array ``authors`` to ``sources``. [(#193)](https://github.com/OpenEnergyPlatform/oemetadata/pull/193)
+- Add ``year`` to ``sources`` [(#194)](https://github.com/OpenEnergyPlatform/oemetadata/pull/194)
+- Add key ``description`` to ``collection`` and update badges [(#195)](https://github.com/OpenEnergyPlatform/oemetadata/pull/195)
 
 ### Changed
 - Remove comment field as it holds information on how to fill out the metadata and therefore should not be part of the actual oemetadata but the documentation. [#105](https://github.com/OpenEnergyPlatform/oemetadata/pull/105)
 - Update the schema json file content (schema generation still broken, add desired output) and fix the schema path in the script for generating examples (it pointed to an incorrect directory and file name) [(#149)](https://github.com/OpenEnergyPlatform/oemetadata/pull/149)
 - Update broken Link in key description example [(#159)](https://github.com/OpenEnergyPlatform/oemetadata/pull/159)
-- Update resource/profile to resource/type [(#164)](https://github.com/OpenEnergyPlatform/oemetadata/pull/164)
+- Update ``resource/profile`` to ``resource/type`` [(#164)](https://github.com/OpenEnergyPlatform/oemetadata/pull/164)
 - Update links in context.json and example.json for all versions [(#167)](https://github.com/OpenEnergyPlatform/oemetadata/pull/167)
 - Restrict the version number to only major and minor versions since 2.0 [(#168)](https://github.com/OpenEnergyPlatform/oemetadata/pull/168)
 - Update all descriptions and examples [(#175)](https://github.com/OpenEnergyPlatform/oemetadata/pull/175)
 - Build scripts use a settings file to share variables [(#177)](https://github.com/OpenEnergyPlatform/oemetadata/pull/177)
-- Refactor the spatial section and add new keys for location: 'address', '@id', 'latitude', 'longitude' and for extent: 'name', '@id', 'resolutionValue', 'resolutionUnit', 'boundingBox', 'crs' [(#179)](https://github.com/OpenEnergyPlatform/oemetadata/pull/179)
-- Move linkedData keys to the top of the resource [(#183)](https://github.com/OpenEnergyPlatform/oemetadata/pull/183)
-- Update order of keys in section 'context' [(#191)](https://github.com/OpenEnergyPlatform/oemetadata/pull/191)
+- Refactor the ``spatial`` section and add new keys for location: ``address``, ``@id``, ``latitude``, ``longitude`` and for extent: ``name``, ``@id``, ``resolutionValue``, ``resolutionUnit``, ``boundingBox``, ``crs`` [(#179)](https://github.com/OpenEnergyPlatform/oemetadata/pull/179)
+- Move ``linkedData`` keys to the top of the resource [(#183)](https://github.com/OpenEnergyPlatform/oemetadata/pull/183)
+- Update order of keys in section context [(#191)](https://github.com/OpenEnergyPlatform/oemetadata/pull/191)
 
 ### Removed
 - Remove email from contributors [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
@@ -128,8 +128,8 @@ Here is a template for new release sections
 - Make key 13.2 ``timeseries`` a list
 - Relocate development information from README.md to CONTRIBUTING.md 
 - Update all .json files to v1.5.0
-- Reintroduce automated tests (CI) by switching form travis-ci to github actions [PR#63]
-- Updated schema.json for v1.5.0 now includes the new key ``title`` which describes the title of the curent field [PR#56] adapted from [PR#43]
+- Reintroduce automated tests (CI) by switching form travis-ci to GitHub actions [PR#63]
+- Updated schema.json for v1.5.0 now includes the new key ``title`` which describes the title of the current field [PR#56] adapted from [PR#43]
 
 ### Removed
 - Delete future directory
