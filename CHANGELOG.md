@@ -1,31 +1,11 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file. <br>
+For each version, important additions, changes and removals are listed here.
 
-The format is inspired from [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
-and the versioning aim to respect [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-Here is a template for new release sections
-
-```
-## Current
-
-### Added
--
-### Changed
-- 
-### Removed
--
-
-## [0.0.0] - Release - Name of Release - 20YY-MM-DD
-
-### Added
--
-### Changed
--
-### Removed
--
-```
 
 ## [2.0.0] - Major Release - Refactor OEMetadata for NFDI
 
