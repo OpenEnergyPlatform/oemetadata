@@ -73,6 +73,7 @@ nav:
   - Metadata Documentation:
       - metadata/index.md
       - Key Description: metadata/metadata_key_description.md
+      - Metadata Mappings: metadata/metadata_mappings.md
   - Code Documentation:
     - Install:
       - code/install/index.md
