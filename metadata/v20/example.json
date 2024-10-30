@@ -1,6 +1,7 @@
 {
     "name": "oep_oemetadata",
     "title": "OEP OEMetadata",
+    "description": "A collection of tables for the OEMetadata examples.",
     "id": "https://databus.openenergyplatform.org/oeplatform/reference",
     "resources": [
         {
@@ -40,11 +41,12 @@
                 "homepage": "https://nfdi4energy.uol.de/",
                 "documentation": "https://nfdi4energy.uol.de/sites/about_us/",
                 "sourceCode": "https://github.com/NFDI4Energy",
+                "publisher": "Open Energy Platform (OEP)",
+                "publisherLogo": "https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg",
                 "contact": "contact@example.com",
-                "grantNo": "501865131",
                 "fundingAgency": " Deutsche Forschungsgemeinschaft (DFG)",
                 "fundingAgencyLogo": "https://upload.wikimedia.org/wikipedia/commons/8/86/DFG-logo-blau.svg",
-                "publisherLogo": "https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png"
+                "grantNo": "501865131"
             },
             "spatial": {
                 "location": {
@@ -82,7 +84,13 @@
             "sources": [
                 {
                     "title": "IPCC Sixth Assessment Report (AR6) - Climate Change 2023 - Synthesis Report",
+                    "authors": [
+                        "Hoesung Lee",
+                        "José Romero",
+                        "The Core Writing Team"
+                    ],
                     "description": "A Report of the Intergovernmental Panel on Climate Change.",
+                    "publicationYear": "2023",
                     "path": "https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf",
                     "licenses": [
                         {
@@ -125,24 +133,129 @@
             "schema": {
                 "fields": [
                     {
-                        "name": "year",
-                        "description": "Reference year for which the data was collected.",
-                        "type": "geometry(Point, 4326)",
-                        "nullable": true,
-                        "unit": "MW",
+                        "name": "id",
+                        "description": "Unique identifier",
+                        "type": "serial",
+                        "unit": null,
                         "isAbout": [
                             {
-                                "name": "wind energy converting unit",
-                                "path": "https://openenergyplatform.org/ontology/oeo/OEO_00000044"
+                                "name": null,
+                                "path": null
                             }
                         ],
                         "valueReference": [
                             {
-                                "value": "onshore",
-                                "name": "onshore wind farm",
-                                "path": "https://openenergyplatform.org/ontology/oeo/OEO_00000311"
+                                "value": null,
+                                "name": null,
+                                "path": null
                             }
-                        ]
+                        ],
+                        "nullable": null
+                    },
+                    {
+                        "name": "name",
+                        "description": "Example name",
+                        "type": "text",
+                        "unit": null,
+                        "isAbout": [
+                            {
+                                "name": "written name",
+                                "path": "https://openenergy-platform.org/ontology/oeo/IAO_0000590"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": null,
+                                "name": null,
+                                "path": null
+                            }
+                        ],
+                        "nullable": null
+                    },
+                    {
+                        "name": "type",
+                        "description": "Type of wind farm",
+                        "type": "text",
+                        "unit": null,
+                        "isAbout": [
+                            {
+                                "name": "wind farm",
+                                "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000447"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "onshore ",
+                                "name": "onshore wind farm",
+                                "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000311"
+                            },
+                            {
+                                "value": "offshore ",
+                                "name": "offshore wind farm",
+                                "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000308"
+                            }
+                        ],
+                        "nullable": null
+                    },
+                    {
+                        "name": "year",
+                        "description": "Reference year",
+                        "type": "integer",
+                        "unit": null,
+                        "isAbout": [
+                            {
+                                "name": "year",
+                                "path": "https://openenergy-platform.org/ontology/oeo/UO_0000036"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": null,
+                                "name": null,
+                                "path": null
+                            }
+                        ],
+                        "nullable": null
+                    },
+                    {
+                        "name": "value",
+                        "description": "Example value",
+                        "type": "double precision",
+                        "unit": "MW",
+                        "isAbout": [
+                            {
+                                "name": "quantity value",
+                                "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000350"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": null,
+                                "name": null,
+                                "path": null
+                            }
+                        ],
+                        "nullable": null
+                    },
+                    {
+                        "name": "geom",
+                        "description": "Geometry",
+                        "type": "geometry(Point, 4326)",
+                        "unit": null,
+                        "isAbout": [
+                            {
+                                "name": "spatial region",
+                                "path": "https://openenergy-platform.org/ontology/oeo/BFO_0000006"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": null,
+                                "name": null,
+                                "path": null
+                            }
+                        ],
+                        "nullable": null
                     }
                 ],
                 "primaryKey": [
@@ -151,14 +264,12 @@
                 "foreignKeys": [
                     {
                         "fields": [
-                            "id",
-                            "version"
+                            "year"
                         ],
                         "reference": {
-                            "resource": "model_draft.oep_oemetadata_table_example_version",
+                            "resource": "schema.table",
                             "fields": [
-                                "id",
-                                "version"
+                                "year"
                             ]
                         }
                     }
