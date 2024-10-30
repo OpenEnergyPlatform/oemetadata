@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 
 here = path.abspath(path.dirname(__file__))
 
-with open(path.join(here, "README.md"), encoding="utf-8") as f:
+with open(path.join(here, "README.rst"), encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
@@ -13,7 +13,7 @@ setup(
     version="1.6.0",
     description="Open Energy Platform (OEP) - metadata schemas, examples and templates package",
     long_description=long_description,
-    long_description_content_type="text/markdown",
+    long_description_content_type="text/x-rst",
     url="https://github.com/OpenEnergyPlatform/oemetadata",
     author="Alexis Michaltsis",
     author_email="oep_dev@lists.riseup.net",

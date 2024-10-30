@@ -1,6 +1,7 @@
 {
   "name": "",
   "title": "",
+  "description": "",
   "id": "",
   "resources": [
     {
@@ -36,11 +37,12 @@
         "homepage": "",
         "documentation": "",
         "sourceCode": "",
+        "publisher": "",
+        "publisherLogo": "",
         "contact": "",
-        "grantNo": "",
         "fundingAgency": "",
         "fundingAgencyLogo": "",
-        "publisherLogo": ""
+        "grantNo": ""
       },
       "spatial": {
         "location": {
@@ -55,7 +57,10 @@
           "resolutionValue": "",
           "resolutionUnit": "",
           "boundingBox": [
-            0, 0, 0, 0
+            0,
+            0,
+            0,
+            0
           ],
           "crs": ""
         }
@@ -75,7 +80,11 @@
       "sources": [
         {
           "title": "",
+          "authors": [
+            ""
+          ],
           "description": "",
+          "publicationYear": "",
           "path": "",
           "licenses": [
             {
