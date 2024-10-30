@@ -22,9 +22,9 @@ For Major and Minor releases, follow the complete workflow.<br>
 For a **Patch Release** (Hotfix), start at [section 3](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/RELEASE_PROCEDURE.md#4--create-a-draft-github-release).
 
 ### 1. 🐙 Create a `GitHub Project`
-* Create [New classic project](https://github.com/OpenEnergyPlatform/oemetadata/projects?type=classic)
+* Create [New classic project](https://github.com/OpenEnergyPlatform/oemetadata/projects)
 * Use the project template *Automated kanban with reviews*
-* Named `OEMetadata 2.0`
+* Named `OEMetadata v2.0`
 * Add a meaningful description
 * Track project progress
 
