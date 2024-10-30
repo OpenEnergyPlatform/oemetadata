@@ -21,8 +21,18 @@
         "string",
         "null"
       ],
-      "badge": "Silver",
+      "badge": "Bronze",
       "title": "Collection Title"
+    },
+    "description": {
+      "description": "A free text description of the collection.",
+      "example": "A collection of tables for the OEMetadata examples.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "badge": "Bronze",
+      "title": "Collection Description"
     },
     "id": {
       "description": "A unique identifier (UUID/DOI) for the collection.",
@@ -293,6 +303,27 @@
                 "badge": "Gold",
                 "title": "Source Code"
               },
+              "publisher": {
+                "description": "The publishing agency of the data. This can be the OEP.",
+                "example": "Open Energy Platform (OEP)",
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "badge": "Gold",
+                "title": "Publisher"
+              },
+              "publisherLogo": {
+                "description": "A URL to the logo of the publishing agency of data.",
+                "example": "https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg",
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "badge": "Gold",
+                "title": "Publisher Logo",
+                "format": "uri"
+              },
               "contact": {
                 "description": "A reference to the creator or maintainer of the data set. This can be an email address or a GitHub handle.",
                 "example": "contact@example.com",
@@ -303,16 +334,6 @@
                 "badge": "Gold",
                 "title": "E-Mail Contact",
                 "format": "email"
-              },
-              "grantNo": {
-                "description": "An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency.",
-                "example": "501865131",
-                "type": [
-                  "string",
-                  "null"
-                ],
-                "badge": "Gold",
-                "title": "Grant Number"
               },
               "fundingAgency": {
                 "description": "A name of the entity providing the funding. This can be a government agency or a company.",
@@ -335,16 +356,15 @@
                 "title": "Funding Agency Logo",
                 "format": "uri"
               },
-              "publisherLogo": {
-                "description": "A URL to the logo of the publishing agency of data.",
-                "example": "https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png",
+              "grantNo": {
+                "description": "An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency.",
+                "example": "501865131",
                 "type": [
                   "string",
                   "null"
                 ],
                 "badge": "Gold",
-                "title": "Publisher Logo",
-                "format": "uri"
+                "title": "Grant Number"
               }
             },
             "badge": "Gold",
@@ -379,7 +399,7 @@
                     "title": "Address"
                   },
                   "latitude": {
-                    "description": "The latitude (lat) information of the location.",
+                    "description": "The latitude (lat) information of the location. Specifies the north / south position of the geometry.",
                     "example": "52.432822",
                     "type": [
                       "string",
@@ -389,7 +409,7 @@
                     "title": "Latitude"
                   },
                   "longitude": {
-                    "description": "The longitude (lon) information of the location.",
+                    "description": "The longitude (lon) information of the location. Specifies the east / west position of the geometry.",
                     "example": "13.5351004",
                     "type": [
                       "string",
@@ -542,7 +562,7 @@
                         "string",
                         "null"
                       ],
-                      "badge": "Silver",
+                      "badge": "Gold",
                       "title": "Timeseries Alignment"
                     },
                     "aggregationType": {
@@ -552,7 +572,7 @@
                         "string",
                         "null"
                       ],
-                      "badge": "Silver",
+                      "badge": "Gold",
                       "title": "Timeseries Aggregation Type"
                     }
                   },
@@ -582,6 +602,26 @@
                   "badge": "Bronze",
                   "title": "Source Title"
                 },
+                "authors": {
+                  "description": "An array of the full names of the authors of the source material.",
+                  "type": "array",
+                  "items": {
+                    "description": "The authors of the source.",
+                    "example": [
+                      "Hoesung Lee",
+                      "Jos\u00e9 Romero",
+                      "The Core Writing Team"
+                    ],
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "badge": "Bronze",
+                    "title": "Keyword"
+                  },
+                  "badge": "Bronze",
+                  "title": "Keywords"
+                },
                 "description": {
                   "description": "A free text description of the source.",
                   "example": "A Report of the Intergovernmental Panel on Climate Change.",
@@ -591,6 +631,16 @@
                   ],
                   "badge": "Bronze",
                   "title": "Source Description"
+                },
+                "publicationYear": {
+                  "description": "Indicates the year when the work was published.",
+                  "example": "2023",
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "badge": "Bronze",
+                  "title": "Publication Year"
                 },
                 "path": {
                   "description": "A URL to the original source.",
