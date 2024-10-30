@@ -8,7 +8,7 @@
 Open Energy Metadata (OEMetadata)
 =================================
 
-**An energy metadata standard including a metadata schema, templates, and examples.**
+**The energy metadata standard including a metadata schema, templates, and examples.**
 
 .. list-table::
    :widths: auto
