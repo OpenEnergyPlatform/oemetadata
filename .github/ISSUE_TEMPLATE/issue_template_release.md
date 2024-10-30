@@ -1,7 +1,7 @@
 ---
 name: Release Issue
 about: For a new release
-title: Release - Minor Version - 0.1.0
+title: Release - Minor Version - 2.1.0
 labels: "enhancement"
 assignees: 'Ludee'
 
@@ -14,7 +14,7 @@ Describe the release in as much detail as possible.
 ## Details of the release
 
 **Name:** Find an appropriate and memorable name for the release that will help it be remembered.
-**Git tag:** v0.1.0 "OEMetadata Minor Release v0.1.0"
+**Git tag:** v2.1.0 "OEMetadata Minor Release v2.1.0"
 **Release Manager:** Choose a responsible person.
 **Date:** Arrange a convenient date
 
