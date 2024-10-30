@@ -54,6 +54,7 @@ Here is a template for new release sections
 - Add an array 'authors' in section 'sources'. [(#193)](https://github.com/OpenEnergyPlatform/oemetadata/pull/193)
 - Add year to section sources [(#194)](https://github.com/OpenEnergyPlatform/oemetadata/pull/194)
 - Add a key description to collection and update badges [(#195)](https://github.com/OpenEnergyPlatform/oemetadata/pull/195)
+Add issue template for user kudos [(#199)](https://github.com/OpenEnergyPlatform/oemetadata/pull/199)
 
 ### Changed
 - Remove comment field as it holds information on how to fill out the metadata and therefore should not be part of the actual oemetadata but the documentation. [#105](https://github.com/OpenEnergyPlatform/oemetadata/pull/105)
