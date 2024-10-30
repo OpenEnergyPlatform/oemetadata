@@ -48,7 +48,7 @@ For a **Patch Release** (Hotfix), start at [section 3](https://github.com/OpenEn
 ### 4. 🐙 Create a `Draft GitHub Release`
 * Start here for a **Patch Release** (Hotfix)
 * [Draft a new release](https://github.com/OpenEnergyPlatform/oemetadata/releases/new)
-* Enter the release version number `0.1.0` as title
+* Enter the release version number `v2.0.0 - Minor Release - TITLE` as title
 * Summarize key changes from changelog in the description
 ```
 ## [0.1.0] Minor Release - Name - Date
