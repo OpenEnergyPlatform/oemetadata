@@ -3,6 +3,9 @@
     "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/develop/metadata/v20/schema.json",
     "description": "Open Energy Platform (OEP) metadata schema latest",
     "type": "object",
+    "required": [
+        "resources"
+    ],
     "properties": {
         "collection": {
             "$ref": "collection.json#"
