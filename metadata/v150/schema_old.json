@@ -1,11 +1,11 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/oemetadata/v150/schema.json",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/v150/schema.json",
     "description": "Open Energy Plaftorm (OEP) metadata schema v1.5.0",
     "type": "object",
     "properties": {
         "@context": {
-            "description": "Explanation of metadata keys in ontology terms. Example: https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld",
+            "description": "Explanation of metadata keys in ontology terms. Example: https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/production/oep_metadata/context.jsonld",
             "type": [
                 "string",
                 "null"

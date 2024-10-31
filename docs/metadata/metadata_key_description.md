@@ -1,7 +1,7 @@
 # OEMetadata - Key Description
 
 This pages describes the key of **OEMetadata version 2.0 .** <br>
-You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/latest/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/latest/example.json) of the metadata string.
+You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/example.json) of the metadata string.
 
 
 ## JSON Format
@@ -46,7 +46,7 @@ If a value is not yet available, use: 'ToDo'.
 | # | Key      | Description                                                                                              | Example                                                                                             | Badge    |
 |---|----------|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|----------|
 | 1 | @id      | A Uniform Resource Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus). | https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07 | Platinum |
-| 2 | @context | Explanation of metadata keys in ontology terms.                                                          | https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/metadata/latest/context.json | Platinum |
+| 2 | @context | Explanation of metadata keys in ontology terms.                                                          | https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/context.json | Platinum |
 
 ### Resource - General Keys
 | #    | Key               | Description                                                                                                                                                                      | Example                                                                              | Badge    |

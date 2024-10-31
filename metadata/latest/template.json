@@ -1,196 +1,184 @@
 {
-    "name": null,
-    "title": null,
-    "id": null,
-    "description": null,
-    "language": [
-        null
-    ],
-    "subject": [
+  "name": "",
+  "title": "",
+  "description": "",
+  "id": "",
+  "resources": [
+    {
+      "@id": "",
+      "@context": "",
+      "name": "",
+      "topics": [
+        ""
+      ],
+      "title": "",
+      "path": "",
+      "description": "",
+      "languages": [
+        ""
+      ],
+      "subject": [
         {
-            "name": null,
-            "path": null
+          "name": "",
+          "path": ""
         }
-    ],
-    "keywords": [
-        null
-    ],
-    "publicationDate": null,
-    "context": {
-        "homepage": null,
-        "documentation": null,
-        "sourceCode": null,
-        "contact": null,
-        "grantNo": null,
-        "fundingAgency": null,
-        "fundingAgencyLogo": null,
-        "publisherLogo": null
-    },
-    "spatial": {
-        "location": null,
-        "extent": null,
-        "resolution": null
-    },
-    "temporal": {
-        "referenceDate": null,
-        "timeseries": [
-            {
-                "start": null,
-                "end": null,
-                "resolution": null,
-                "alignment": null,
-                "aggregationType": null
-            },
-            {
-                "start": null,
-                "end": null,
-                "resolution": null,
-                "alignment": null,
-                "aggregationType": null
-            }
-        ]
-    },
-    "sources": [
-        {
-            "title": null,
-            "description": null,
-            "path": null,
-            "licenses": [
-                {
-                    "name": null,
-                    "title": null,
-                    "path": null,
-                    "instruction": null,
-                    "attribution": null
-                }
-            ]
+      ],
+      "keywords": [
+        ""
+      ],
+      "publicationDate": "",
+      "embargoPeriod": {
+        "start": "",
+        "end": "",
+        "isActive": false
+      },
+      "context": {
+        "title": "",
+        "homepage": "",
+        "documentation": "",
+        "sourceCode": "",
+        "publisher": "",
+        "publisherLogo": "",
+        "contact": "",
+        "fundingAgency": "",
+        "fundingAgencyLogo": "",
+        "grantNo": ""
+      },
+      "spatial": {
+        "location": {
+          "address": "",
+          "@id": "",
+          "latitude": "",
+          "longitude": ""
         },
-        {
-            "title": null,
-            "description": null,
-            "path": null,
-            "licenses": [
-                {
-                    "name": null,
-                    "title": null,
-                    "path": null,
-                    "instruction": null,
-                    "attribution": null
-                }
-            ]
+        "extent": {
+          "name": "",
+          "@id": "",
+          "resolutionValue": "",
+          "resolutionUnit": "",
+          "boundingBox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "crs": ""
         }
-    ],
-    "licenses": [
+      },
+      "temporal": {
+        "referenceDate": "",
+        "timeseries": [
+          {
+            "start": "",
+            "end": "",
+            "resolution": "",
+            "alignment": "",
+            "aggregationType": ""
+          }
+        ]
+      },
+      "sources": [
         {
-            "name": null,
-            "title": null,
-            "path": null,
-            "instruction": null,
-            "attribution": null
-        }
-    ],
-    "contributors": [
-        {
-            "title": null,
-            "email": null,
-            "date": null,
-            "object": null,
-            "comment": null
-        }
-    ],
-    "resources": [
-        {
-            "profile": null,
-            "name": null,
-            "path": null,
-            "format": null,
-            "encoding": null,
-            "schema": {
-                "fields": [
-                    {
-                        "name": null,
-                        "description": null,
-                        "type": null,
-                        "unit": null,
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "path": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "path": null
-                            }
-                        ]
-                    },
-                    {
-                        "name": null,
-                        "description": null,
-                        "type": null,
-                        "unit": null,
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "path": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "path": null
-                            }
-                        ]
-                    }
-                ],
-                "primaryKey": [
-                    null
-                ],
-                "foreignKeys": [
-                    {
-                        "fields": [
-                            null
-                        ],
-                        "reference": {
-                            "resource": null,
-                            "fields": [
-                                null
-                            ]
-                        }
-                    }
-                ]
-            },
-            "dialect": {
-                "delimiter": null,
-                "decimalSeparator": "."
+          "title": "",
+          "authors": [
+            ""
+          ],
+          "description": "",
+          "publicationYear": "",
+          "path": "",
+          "licenses": [
+            {
+              "name": "",
+              "title": "",
+              "path": "",
+              "instruction": "",
+              "attribution": "",
+              "copyrightStatement": ""
             }
+          ]
         }
-    ],
-    "@id": null,
-    "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/develop/metadata/latest/context.json",
-    "review": {
-        "path": null,
-        "badge": null
-    },
-    "metaMetadata": {
-        "metadataVersion": "OEP-1.6.0",
-        "metadataLicense": {
-            "name": "CC0-1.0",
-            "title": "Creative Commons Zero v1.0 Universal",
-            "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+      ],
+      "licenses": [
+        {
+          "name": "",
+          "title": "",
+          "path": "",
+          "instruction": "",
+          "attribution": ""
         }
-    },
-    "_comment": {
-        "metadata": "Metadata documentation and explanation (https://github.com/OpenEnergyPlatform/oemetadata)",
-        "dates": "Dates and time must follow the ISO8601 including time zone (YYYY-MM-DD or YYYY-MM-DDThh:mm:ss±hh)",
-        "units": "Use a space between numbers and units (100 m)",
-        "languages": "Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE)",
-        "licenses": "License name must follow the SPDX License List (https://spdx.org/licenses/)",
-        "review": "Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md)",
-        "null": "If not applicable use: null",
-        "todo": "If a value is not yet available, use: todo"
+      ],
+      "contributors": [
+        {
+          "title": "",
+          "path": "",
+          "organization": "",
+          "roles": [
+            ""
+          ],
+          "date": "",
+          "object": "",
+          "comment": ""
+        }
+      ],
+      "type": "",
+      "format": "",
+      "encoding": "",
+      "schema": {
+        "fields": [
+          {
+            "name": "",
+            "description": "",
+            "type": "",
+            "nullable": false,
+            "unit": "",
+            "isAbout": [
+              {
+                "name": "",
+                "path": ""
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "",
+                "name": "",
+                "path": ""
+              }
+            ]
+          }
+        ],
+        "primaryKey": [
+          ""
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              ""
+            ],
+            "reference": {
+              "resource": "",
+              "fields": [
+                ""
+              ]
+            }
+          }
+        ]
+      },
+      "dialect": {
+        "delimiter": "",
+        "decimalSeparator": ""
+      },
+      "review": {
+        "path": "",
+        "badge": ""
+      }
     }
+  ],
+  "metaMetadata": {
+    "metadataVersion": "OEMetadata-2.0.0",
+    "metadataLicense": {
+      "name": "CC0-1.0",
+      "title": "Creative Commons Zero v1.0 Universal",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0"
+    }
+  }
 }

@@ -2,7 +2,7 @@ name: gh-pages
 on:
   push:
     branches:
-      - feature-120-repo
+      - production
 permissions:
   contents: write
 jobs:

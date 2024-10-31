@@ -19,7 +19,7 @@
     "context": {
         "homepage": "https://reiner-lemoine-institut.de/lod-geoss/",
         "documentation": "https://openenergy-platform.org/tutorials/jupyter/OEMetadata/",
-        "sourceCode": "https://github.com/OpenEnergyPlatform/oemetadata/tree/master",
+        "sourceCode": "https://github.com/OpenEnergyPlatform/oemetadata/tree/production",
         "contact": "https://github.com/Ludee",
         "grantNo": "03EI1005",
         "fundingAgency": "Bundesministerium für Wirtschaft und Energie",
@@ -33,20 +33,21 @@
     },
     "temporal": {
         "referenceDate": "2016-01-01",
-        "timeseries": [{
-            "start": "2017-01-01T00:00+01",
-            "end": "2017-12-31T23:00+01",
-            "resolution": "1 h",
-            "alignment": "left",
-            "aggregationType": "sum"
-        },
-        {
-            "start": "2018-01-01T00:00+01",
-            "end": "2019-06-01T23:00+01",
-            "resolution": "15 min",
-            "alignment": "right",
-            "aggregationType": "sum"
-        }
+        "timeseries": [
+            {
+                "start": "2017-01-01T00:00+01",
+                "end": "2017-12-31T23:00+01",
+                "resolution": "1 h",
+                "alignment": "left",
+                "aggregationType": "sum"
+            },
+            {
+                "start": "2018-01-01T00:00+01",
+                "end": "2019-06-01T23:00+01",
+                "resolution": "15 min",
+                "alignment": "right",
+                "aggregationType": "sum"
+            }
         ]
     },
     "sources": [
@@ -276,7 +277,7 @@
         }
     ],
     "@id": "https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00",
-    "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/metadata/v150/context.json",
+    "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v150/context.json",
     "review": {
         "path": "https://github.com/OpenEnergyPlatform/data-preprocessing/issues",
         "badge": "platin"
@@ -295,7 +296,7 @@
         "units": "Use a space between numbers and units (100 m)",
         "languages": "Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE)",
         "licenses": "License name must follow the SPDX License List (https://spdx.org/licenses/)",
-        "review": "Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md)",
+        "review": "Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/production/data-review/manual/review_manual.md)",
         "null": "If not applicable use: null",
         "todo": "If a value is not yet available, use: todo"
     }

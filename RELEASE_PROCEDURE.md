@@ -78,6 +78,8 @@ For a **Patch Release** (Hotfix), start at [section 3](https://github.com/OpenEn
 * `📝setup.py`
     * Update `version`
     * Update `download_url` (.../v0.1.0.tar.gz)
+* `📝metadata/latest`
+    * Update the folder `metadata/latest`
 
 ▶️ Increase version numbers!
 
@@ -171,7 +173,7 @@ If you messed up, remove tags and start again
 ### 🐙 GitHub workflows for automated release
 
 * The automation workflow will build and upload the PyPi Package.
-  * Note: Each package version (as specified in the [setup.py](https://github.com/OpenEnergyPlatform/oemetadata/blob/master/setup.py#L13)) can only be released once.
+  * Note: Each package version (as specified in the [setup.py](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/setup.py#L13)) can only be released once.
 
 * [Test Workflows](https://github.com/OpenEnergyPlatform/oemetadata/actions/workflows/test-pypi-publish.yml): Update the PyPi Test Package [oemetadata pypi test](https://test.pypi.org/project/oemetadata/)
   * Note: The Test Workflows are triggered when pushing to the branch `deployment-test`.
@@ -181,4 +183,4 @@ If you messed up, remove tags and start again
 
 
 ## Sources:
-* https://raw.githubusercontent.com/folio-org/stripes/master/doc/release-procedure.md
+* https://raw.githubusercontent.com/folio-org/stripes/production/doc/release-procedure.md

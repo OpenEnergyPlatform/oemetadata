@@ -8,7 +8,7 @@
 Open Energy Metadata (OEMetadata)
 =================================
 
-**An energy metadata standard including a metadata schema, templates, and examples.**
+**The energy metadata standard including a metadata schema, templates, and examples.**
 
 .. list-table::
    :widths: auto
@@ -69,7 +69,7 @@ License and Citation
     :target: LICENSE.txt
     :alt: License
 
-.. |badge_documentation| image:: https://img.shields.io/github/actions/workflow/status/OpenEnergyPlatform/oemetadata/gh-pages.yml?branch=feature-120-repo
+.. |badge_documentation| image:: https://img.shields.io/github/actions/workflow/status/OpenEnergyPlatform/oemetadata/gh-pages.yml?branch=release-v2.0.0
     :target: https://openenergyplatform.github.io/oemetadata/
     :alt: Documentation
 
