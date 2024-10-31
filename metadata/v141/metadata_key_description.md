@@ -2,7 +2,7 @@
 
 ## Open Energy Metadata Description
 
-This pages describes the OEP Metadata version 1.4.1 You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v140/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v140/example.json) of a metadata string.
+This pages describes the OEP Metadata version 1.4.1 You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/production/metadata/v140/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/production/metadata/v140/example.json) of a metadata string.
 
 
 ### Table with all Metadata keys and a short description

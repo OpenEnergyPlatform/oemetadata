@@ -68,7 +68,7 @@
           },
           "@context": {
             "description": "Explanation of metadata keys in ontology terms.",
-            "example": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/metadata/latest/context.json",
+            "example": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/productiontiontiontion/metadata/latest/context.json",
             "type": [
               "string",
               "null"

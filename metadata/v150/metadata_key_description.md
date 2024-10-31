@@ -2,7 +2,7 @@
 
 ## Open Energy Metadata Description
 
-This pages describes the OEP Metadata version 1.5.0. You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v150/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v150/example.json) of the metadata string.
+This pages describes the OEP Metadata version 1.5.0. You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/production/metadata/v150/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/production/metadata/v150/example.json) of the metadata string.
 
 
 ### Table with all Metadata keys and a short description
@@ -84,7 +84,7 @@ This pages describes the OEP Metadata version 1.5.0. You can have a look at an e
 | 15.7.1 | delimiter | Specifies the character sequence which should separate fields (aka columns). Common characters are "," (comma), "." (point) and "\t" (tab). | , |
 | 15.7.2 | decimalSeparator | Symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be "." or ",". | . |
 | 16 | @id | Uniform Resource Identifier (URI) that links the resource via the dpedia databus | https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00 |
-| 17 | @context | Explanation of metadata keys in ontology terms | https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/master/oep_metadata/context.jsonld |
+| 17 | @context | Explanation of metadata keys in ontology terms | https://raw.githubusercontent.com/LOD-GEOSS/databus-snippets/production/oep_metadata/context.jsonld |
 | 18. | review | Data uploaded through the OEP needs to go through review. The review will cover the areas described here: https://github.com/OpenEnergyPlatform/data-preprocessing/wiki and carried out by a team of the platform. The review itself is documented at the specified path and a badge is rewarded with regards to completeness. |  |
 | 18.1 | path | A URL or path string, that should be a permanent http(s) address directly linking to the documented review. | https://www.example.com |
 | 18.2 | badge | A badge of either Bronze, Silver, Gold or Platin is used to label the given metadata based on its quality. | Platin |

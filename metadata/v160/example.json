@@ -29,7 +29,7 @@
     "context": {
         "homepage": "https://reiner-lemoine-institut.de/lod-geoss/",
         "documentation": "https://openenergy-platform.org/tutorials/jupyter/OEMetadata/",
-        "sourceCode": "https://github.com/OpenEnergyPlatform/oemetadata/tree/master",
+        "sourceCode": "https://github.com/OpenEnergyPlatform/oemetadata/tree/production",
         "contact": "https://github.com/Ludee",
         "grantNo": "03EI1005",
         "fundingAgency": "Bundesministerium für Wirtschaft und Klimaschutz",
@@ -387,7 +387,7 @@
         }
     ],
     "@id": "https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00",
-    "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/metadata/v160/context.json",
+    "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v160/context.json",
     "review": {
         "path": "https://github.com/OpenEnergyPlatform/data-preprocessing/issues",
         "badge": "Platinum"
@@ -406,7 +406,7 @@
         "units": "Use a space between numbers and units (100 m)",
         "languages": "Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE)",
         "licenses": "License name must follow the SPDX License List (https://spdx.org/licenses/)",
-        "review": "Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md)",
+        "review": "Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/production/data-review/manual/review_manual.md)",
         "null": "If not applicable use: null",
         "todo": "If a value is not yet available, use: todo"
     }
