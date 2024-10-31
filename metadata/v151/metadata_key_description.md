@@ -1,7 +1,7 @@
 # OEMetadata - Key Description
 
 This pages describes the key of **OEMetadata version 1.5.1.** <br>
-You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v151/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/master/metadata/v151/example.json) of the metadata string.
+You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/metadata/blob/production/metadata/v151/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/metadata/blob/production/metadata/v151/example.json) of the metadata string.
 
 
 ## JSON Format
@@ -153,8 +153,8 @@ The JSON format offers different formats:
 |#|Key |Description |Example |
 |---|---|---|---|
 | 16 | @id | A Uniform Resource Identifier (URI) that links the resource via the [DBedia Databus](https://www.dbpedia.org/resources/databus/). | https://databus.dbpedia.org/kurzum/mastr/bnetza-mastr/01.04.00 |
-| 17 | @context | Explanation of metadata keys in ontology terms. | https://github.com/OpenEnergyPlatform/oemetadata/blob/master/metadata/latest/context.json |
-| 18. | **review** | Data uploaded through the OEP will go through a review process. The review will cover the data and metadata. It is done by the OEP community. See the [OEP Data Review](https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md) for detailed information. The review itself is documented at the specified path and a badge is rewarded with regards to completeness. | |
+| 17 | @context | Explanation of metadata keys in ontology terms. | https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/context.json |
+| 18. | **review** | Data uploaded through the OEP will go through a review process. The review will cover the data and metadata. It is done by the OEP community. See the [OEP Data Review](https://github.com/OpenEnergyPlatform/data-preprocessing/blob/production/data-review/manual/review_manual.md) for detailed information. The review itself is documented at the specified path and a badge is rewarded with regards to completeness. | |
 | 18.1 | path | A URL that should be a permanent http(s) address directly linking to the documented review. | https://www.example.com |
 | 18.2 | badge | A badge of either Bronze, Silver, Gold or Platinum is used to label the given data and metadata based on its quality. | Platinum |
 
@@ -177,6 +177,6 @@ The JSON format offers different formats:
 | 20.3 | units | Comment on units. | Use a space between numbers and units (100 m) |
 | 20.4 | languages | Comment on language format. | Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE) |
 | 20.5 | licenses | Comment on license format. | License name must follow the SPDX License List (https://spdx.org/licenses/) |
-| 20.6 | review | Reference to review documentation. | Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/master/data-review/manual/review_manual.md) |
+| 20.6 | review | Reference to review documentation. | Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/production/data-review/manual/review_manual.md) |
 | 20.7 | null | Comment on fields that don't apply. | If not applicable use: null |
 | 20.8 | todo | Comment on fields that are not yet available and will be inserted later on. | If a value is not yet available, use: todo |

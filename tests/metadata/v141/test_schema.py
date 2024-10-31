@@ -12,10 +12,12 @@ def test_if_schema_json_has_correct_schema_and_id_set():
     def get_string(s):
         return string.printable + s + string.printable
 
-    assert get_string(OEMETADATA_V141_SCHEMA["$schema"]) == get_string("http://json-schema.org/draft-07/schema#")
+    assert get_string(OEMETADATA_V141_SCHEMA["$schema"]) == get_string(
+        "http://json-schema.org/draft-07/schema#"
+    )
 
     assert get_string(OEMETADATA_V141_SCHEMA["$id"]) == get_string(
-        "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/master/oemetadata/v141/schema.json"
+        "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v141/schema.json"
     )
 
 
@@ -24,4 +26,9 @@ def test_schema_against_metaschema_which_should_succeed():
     from metadata.v141.schema import OEMETADATA_V141_SCHEMA
     from metadata.metaschema.draft07.schema import OEMETADATA_METASCHEMA_DRAFT07_SCHEMA
 
-    assert jsonschema.validate(OEMETADATA_V141_SCHEMA, OEMETADATA_METASCHEMA_DRAFT07_SCHEMA) is None
+    assert (
+        jsonschema.validate(
+            OEMETADATA_V141_SCHEMA, OEMETADATA_METASCHEMA_DRAFT07_SCHEMA
+        )
+        is None
+    )

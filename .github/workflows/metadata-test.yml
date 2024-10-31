@@ -9,9 +9,9 @@ name: Automated tests
 
 on:
   push:
-    branches: [ develop, master]
+    branches: [ develop, production]
   pull_request:
-    branches: [ develop, master ]
+    branches: [ develop, production ]
 
 jobs:
   test:    
