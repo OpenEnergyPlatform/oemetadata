@@ -69,7 +69,7 @@ License and Citation
     :target: LICENSE.txt
     :alt: License
 
-.. |badge_documentation| image:: https://img.shields.io/github/actions/workflow/status/OpenEnergyPlatform/oemetadata/gh-pages.yml?branch=release-v2.0.0
+.. |badge_documentation| image:: https://img.shields.io/github/actions/workflow/status/OpenEnergyPlatform/oemetadata/gh-pages.yml?branch=release-v2.0.1
     :target: https://openenergyplatform.github.io/oemetadata/
     :alt: Documentation
 
