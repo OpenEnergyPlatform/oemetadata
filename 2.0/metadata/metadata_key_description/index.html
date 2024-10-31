@@ -1,0 +1,2162 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Open Energy Metadata (OEMetadata) is an energy metadata standard including a template, examples and a metadata schema.">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../metadata_mappings/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.1">
+    
+    
+      
+        <title>Key Description - Open Energy Metadata</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3bd4f189.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#oemetadata-key-description" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://openenergyplatform.org/" title="Open Energy Metadata" class="md-header__button md-logo" aria-label="Open Energy Metadata" data-md-component="logo">
+      
+  <img src="../../img/OpenEnergyFamily_Logo_OEMetadata_white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Open Energy Metadata
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Key Description
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/OpenEnergyPlatform/oemetadata" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    OpenEnergyPlatform/oemetadata
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../development/collaboration/" class="md-tabs__link">
+        Development
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        Metadata Documentation
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../code/install/" class="md-tabs__link">
+        Code Documentation
+      </a>
+    </li>
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://openenergyplatform.org/" title="Open Energy Metadata" class="md-nav__button md-logo" aria-label="Open Energy Metadata" data-md-component="logo">
+      
+  <img src="../../img/OpenEnergyFamily_Logo_OEMetadata_white.png" alt="logo">
+
+    </a>
+    Open Energy Metadata
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/OpenEnergyPlatform/oemetadata" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    OpenEnergyPlatform/oemetadata
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Development
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Development" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Development
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../development/collaboration/">Collaboration</a>
+          
+            <label for="__nav_2_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Collaboration" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Collaboration
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/collaboration/license/" class="md-nav__link">
+        License
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/collaboration/citation/" class="md-nav__link">
+        Citation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/collaboration/contributing/" class="md-nav__link">
+        Contributing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/collaboration/users/" class="md-nav__link">
+        Users
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/collaboration/code_of_conduct/" class="md-nav__link">
+        Code of Conduct
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../development/git/">Git</a>
+          
+            <label for="__nav_2_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Git" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Git
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/git/gitignore/" class="md-nav__link">
+        Gitignore
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../development/documentation/">Documentation</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Documentation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../development/release/">Release</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Release" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Release
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Metadata Documentation</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Metadata Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Metadata Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Key Description
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Key Description
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#json-format" class="md-nav__link">
+    JSON Format
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metadata-keys-with-a-description-and-example" class="md-nav__link">
+    Metadata keys with a description and example
+  </a>
+  
+    <nav class="md-nav" aria-label="Metadata keys with a description and example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collection-keys" class="md-nav__link">
+    Collection Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-linked-data-keys" class="md-nav__link">
+    Resource - Linked Data Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-general-keys" class="md-nav__link">
+    Resource - General Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-context-keys" class="md-nav__link">
+    Resource - Context Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-spatial-keys" class="md-nav__link">
+    Resource - Spatial Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-temporal-keys" class="md-nav__link">
+    Resource - Temporal Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-sources-keys" class="md-nav__link">
+    Resource - Sources Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-licenses-keys" class="md-nav__link">
+    Resource - Licenses Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-provenance-keys" class="md-nav__link">
+    Resource - Provenance Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-type-keys" class="md-nav__link">
+    Resource - Type Keys
+  </a>
+  
+    <nav class="md-nav" aria-label="Resource - Type Keys">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resource-fields-keys" class="md-nav__link">
+    Resource - Fields Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-properties-keys" class="md-nav__link">
+    Resource - Properties Keys
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-review-keys" class="md-nav__link">
+    Resource - Review Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metametadata-keys" class="md-nav__link">
+    MetaMetadata Keys
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata_mappings/" class="md-nav__link">
+        Metadata Mappings
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Code Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Code Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Code Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../code/install/">Install</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Install" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          Install
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#json-format" class="md-nav__link">
+    JSON Format
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metadata-keys-with-a-description-and-example" class="md-nav__link">
+    Metadata keys with a description and example
+  </a>
+  
+    <nav class="md-nav" aria-label="Metadata keys with a description and example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collection-keys" class="md-nav__link">
+    Collection Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-linked-data-keys" class="md-nav__link">
+    Resource - Linked Data Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-general-keys" class="md-nav__link">
+    Resource - General Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-context-keys" class="md-nav__link">
+    Resource - Context Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-spatial-keys" class="md-nav__link">
+    Resource - Spatial Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-temporal-keys" class="md-nav__link">
+    Resource - Temporal Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-sources-keys" class="md-nav__link">
+    Resource - Sources Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-licenses-keys" class="md-nav__link">
+    Resource - Licenses Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-provenance-keys" class="md-nav__link">
+    Resource - Provenance Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-type-keys" class="md-nav__link">
+    Resource - Type Keys
+  </a>
+  
+    <nav class="md-nav" aria-label="Resource - Type Keys">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resource-fields-keys" class="md-nav__link">
+    Resource - Fields Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-properties-keys" class="md-nav__link">
+    Resource - Properties Keys
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-review-keys" class="md-nav__link">
+    Resource - Review Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metametadata-keys" class="md-nav__link">
+    MetaMetadata Keys
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+
+<h1 id="oemetadata-key-description">OEMetadata - Key Description<a class="headerlink" href="#oemetadata-key-description" title="Permanent link">#</a></h1>
+<p>This pages describes the key of <strong>OEMetadata version 2.0 .</strong> <br>
+You can have a look at an empty <a href="https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/template.json">template</a> and a filled out <a href="https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/example.json">example</a> of the metadata string.</p>
+<h2 id="json-format">JSON Format<a class="headerlink" href="#json-format" title="Permanent link">#</a></h2>
+<p>The JSON format offers different formats:
+* key-value pair: 
+    <code>JSON
+    {"key":"value"}</code>
+* array: 
+    <code>JSON
+    {"key":
+        ["value","value"]}</code>
+* object {nested key}:
+    <code>JSON
+    {"key": {
+        "key_a":"value",
+        "key_b":"value"}}</code>
+* array of objects {nested array}:
+    <code>JSON
+    {"key": [
+        {"key_a":"value"},
+        {"key_a":"value"}]}</code></p>
+<h2 id="metadata-keys-with-a-description-and-example">Metadata keys with a description and example<a class="headerlink" href="#metadata-keys-with-a-description-and-example" title="Permanent link">#</a></h2>
+<p>If a field is not applicable use: 'null'.
+If a value is not yet available, use: 'ToDo'.</p>
+<h3 id="collection-keys">Collection Keys<a class="headerlink" href="#collection-keys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Key</th>
+<th>Description</th>
+<th>Example</th>
+<th>Badge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>name</td>
+<td>A filename or database conform collection name.</td>
+<td>oep_oemetadata</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>2</td>
+<td>title</td>
+<td>A human readable collection name.</td>
+<td>OEP OEMetadata</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>3</td>
+<td>id</td>
+<td>A unique identifier (UUID/DOI) for the collection.</td>
+<td>https://databus.openenergyplatform.org/oeplatform/reference</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>4</td>
+<td>resources</td>
+<td>An array of objects of the resources. The collection can contain several (database) tables.</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="resource-linked-data-keys">Resource - Linked Data Keys<a class="headerlink" href="#resource-linked-data-keys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Key</th>
+<th>Description</th>
+<th>Example</th>
+<th>Badge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>@id</td>
+<td>A Uniform Resource Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus).</td>
+<td>https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>2</td>
+<td>@context</td>
+<td>Explanation of metadata keys in ontology terms.</td>
+<td>https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/context.json</td>
+<td>Platinum</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resource-general-keys">Resource - General Keys<a class="headerlink" href="#resource-general-keys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Key</th>
+<th>Description</th>
+<th>Example</th>
+<th>Badge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>name</td>
+<td>A filename or database conform table name.</td>
+<td>oep_oemetadata_table_example</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>2</td>
+<td>topics</td>
+<td>An array of predefined topics that correspond to the database schemas of the OEP.</td>
+<td>model_draft, reference</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>3</td>
+<td>title</td>
+<td>A human readable table name.</td>
+<td>OEP OEMetadata Example Table</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>4</td>
+<td>path</td>
+<td>A unique identifier (URI/UUID/DOI) for the table or file.</td>
+<td>http://openenergyplatform.org/dataedit/view/model_draft/oep_oemetadata_table_example</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>5</td>
+<td>description</td>
+<td>A description of the table. It should be usable as summary information for the table that is described by the metadata.</td>
+<td>Example table used to illustrate the OEMetadata structure and meaning.</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>6</td>
+<td>languages</td>
+<td>An array of languages used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47)</td>
+<td>en-GB, de-DE, fr-FR</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>subject</strong></td>
+<td>An array of objects that references to the subjects of the resource in ontology terms.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>7.1</td>
+<td>name</td>
+<td>A class label of the ontology term.</td>
+<td>energy</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>7.2</td>
+<td>path</td>
+<td>A unique identifier (URI/IRI) of the ontology class.</td>
+<td>https://openenergy-platform.org/ontology/oeo/OEO_00000150</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>8</td>
+<td>keywords</td>
+<td>An array of freely selectable keywords that help with searching and structuring. The keyword are used and managed in the OEP as table tags.</td>
+<td>example, ODbL-1.0, NFDI4Energy</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>9</td>
+<td>publicationDate</td>
+<td>A date of publication of the data or metadata. The date format is ISO 8601 (YYYY-MM-DD).</td>
+<td>2024-10-15</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>embargoPeriod</strong></td>
+<td>An object that describes the embargo period during which public access to the data is not allowed.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10.1</td>
+<td>start</td>
+<td>The start date of the embargo period. The date of the data (metadata) upload.</td>
+<td>2024-10-11</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>10.2</td>
+<td>end</td>
+<td>The end date of the embargo period. This is the envisioned publication date.</td>
+<td>2025-01-01</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>10.3</td>
+<td>isActive</td>
+<td>A boolean key that indicates if the embargo period is currently active. Must be changed to False on the embargo period end date.</td>
+<td>True</td>
+<td>Bronze</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resource-context-keys">Resource - Context Keys<a class="headerlink" href="#resource-context-keys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Key</th>
+<th>Description</th>
+<th>Example</th>
+<th>Badge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>context</strong></td>
+<td>An object that describes the general setting, environment, or project leading to the creation or maintenance of this dataset. In science this is can be the research project.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>title</td>
+<td>A title of the associated project.</td>
+<td>NFDI4Energy</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>homepage</td>
+<td>A URL of the project.</td>
+<td>https://nfdi4energy.uol.de/</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>documentation</td>
+<td>A URL of the project documentation.</td>
+<td>https://nfdi4energy.uol.de/sites/about_us/</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>sourceCode</td>
+<td>A URL of the source code of the project.</td>
+<td>https://github.com/NFDI4Energy</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>contact</td>
+<td>A reference to the creator or maintainer of the data set. It can be an email address or a GitHub handle.</td>
+<td>info@nfdi4energy.org</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>1.6</td>
+<td>grantNo</td>
+<td>An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency.</td>
+<td>501865131</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>1.7</td>
+<td>fundingAgency</td>
+<td>A name of the entity providing the funding. This can be a government agency or a company.</td>
+<td>Deutsche Forschungsgemeinschaft (DFG)</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>1.8</td>
+<td>fundingAgencyLogo</td>
+<td>A URL to the logo or image of the funding agency.</td>
+<td>https://upload.wikimedia.org/wikipedia/commons/8/86/DFG-logo-blau.svg</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>1.9</td>
+<td>publisherLogo</td>
+<td>A URL to the logo of the publishing agency of data.</td>
+<td>https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png</td>
+<td>Gold</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resource-spatial-keys">Resource - Spatial Keys<a class="headerlink" href="#resource-spatial-keys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Key</th>
+<th>Description</th>
+<th>Example</th>
+<th>Badge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>spatial</strong></td>
+<td>An object that describes the spatial context of the data.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.1</td>
+<td><strong>location</strong></td>
+<td>An object that describes a covered area or region.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.1.1</td>
+<td>address</td>
+<td>An address of the location of the data. May be specified with street name, house number, zip code, and city name.</td>
+<td>Rudower Chaussee 12, 12489 Berlin</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>1.1.2</td>
+<td>@id</td>
+<td>A path or URI to a specific location. It can use Wikidata or OpenStreetMap.</td>
+<td>https://www.wikidata.org/wiki/Q77077223</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>1.1.3</td>
+<td>longitude</td>
+<td>The latitude (lat) information of the location.</td>
+<td>52.432822</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>1.1.4</td>
+<td>longitude</td>
+<td>The longitude (lon) information of the location.</td>
+<td>13.5351004</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td><strong>extent</strong></td>
+<td>An object that describes a covered area or region.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.2.1</td>
+<td>name</td>
+<td>The name of the region.</td>
+<td>Berlin</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>1.2.2</td>
+<td>@id</td>
+<td>A URI reference for the region.</td>
+<td>https://www.wikidata.org/wiki/Q64</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>1.2.3</td>
+<td>resolutionValue</td>
+<td>The value of the resolution.</td>
+<td>100</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>1.2.4</td>
+<td>resolutionUnit</td>
+<td>The unit of the resolution.</td>
+<td>m</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>1.2.5</td>
+<td>boundingBox</td>
+<td>The covered area specified by the coordinates of a bounding box. The format is [minLon, minLat, maxLon, maxLat] or [W,S,E,N].</td>
+<td>[13.08825, 52.33859, 13.76104, 52.6754]</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>1.2.6</td>
+<td>crs</td>
+<td>The Coordinate Reference System, specified as an EPSG code.</td>
+<td>EPSG:4326</td>
+<td>Gold</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resource-temporal-keys">Resource - Temporal Keys<a class="headerlink" href="#resource-temporal-keys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Key</th>
+<th>Description</th>
+<th>Example</th>
+<th>Badge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>temporal</strong></td>
+<td>An object with the time period covered in the data. Temporal information should contain either a "referenceDate" or the keys that describe a time series, in rare cases both.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>referenceDate</td>
+<td>A base year, month or day. The time for which the data is should be accurate. Date Format is ISO 8601.</td>
+<td>2020-01-01</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td><strong>timeseries</strong></td>
+<td>An array that describes the timeseries.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.2.1</td>
+<td>start</td>
+<td>The start time of a time series.</td>
+<td>2020-01-01T00:00:00+00:00</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>1.2.2</td>
+<td>end</td>
+<td>The temporal end point of a time series.</td>
+<td>2020-01-01T23:59:30+00:00</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>1.2.3</td>
+<td>resolution</td>
+<td>The time span between individual information points in a time series.</td>
+<td>30 s</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>1.2.4</td>
+<td>alignment</td>
+<td>An indicator of whether timestamps in a time series are to the left, right or in the centre.</td>
+<td>left</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>1.2.5</td>
+<td>aggregationType</td>
+<td>An indicator of whether the values are a sum, an average or a current value.</td>
+<td>current</td>
+<td>Silver</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resource-sources-keys">Resource - Sources Keys<a class="headerlink" href="#resource-sources-keys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Key</th>
+<th>Description</th>
+<th>Example</th>
+<th>Badge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>sources</strong></td>
+<td>An array of objects with the used and underlying sources of the data and metadata.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>title</td>
+<td>A human readable title of the source, a document title or organisation name.</td>
+<td>IPCC Sixth Assessment Report (AR6) - Climate Change 2023 - Synthesis Report</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>description</td>
+<td>A free text description of the source.</td>
+<td>A Report of the Intergovernmental Panel on Climate Change</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>path</td>
+<td>A URL to the original source.</td>
+<td>https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td><strong>licenses</strong></td>
+<td>An array of objects of licenses under which the described source is provided. See https://openenergyplatform.github.io/academy/courses/08_licensing/ for further information.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.4.1</td>
+<td>name</td>
+<td>The <a href="https://spdx.org/licenses/">SPDX</a> identifier.</td>
+<td>ODbL-1.0</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.4.2</td>
+<td>title</td>
+<td>The official (human-readable) title of the license.</td>
+<td>Open Data Commons Open Database License 1.0</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.4.3</td>
+<td>path</td>
+<td>A link or path to the license text.</td>
+<td>https://opendatacommons.org/licenses/odbl/1-0/index.html</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.4.4</td>
+<td>instruction</td>
+<td>A short description of rights and obligations. The use of <a href="https://tldrlegal.com/">tl;drLegal</a> is recommended.</td>
+<td>You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-odbl for further information.</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.4.5</td>
+<td>attribution</td>
+<td>A copyright owner of the <strong>source</strong>. Must be provided if attribution licenses are used.</td>
+<td>© Intergovernmental Panel on Climate Change 2023</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.4.6</td>
+<td>copyrightStatement</td>
+<td>A link or path that proves that the source or data has the appropriate license. This can be a page number or website imprint.</td>
+<td>https://www.ipcc.ch/copyright/</td>
+<td>Bronze</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resource-licenses-keys">Resource - Licenses Keys<a class="headerlink" href="#resource-licenses-keys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Key</th>
+<th>Description</th>
+<th>Example</th>
+<th>Badge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>licenses</strong></td>
+<td>An array of objects of licenses under which the described data is provided.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>name</td>
+<td>The <a href="https://spdx.org/licenses/">SPDX</a> identifier.</td>
+<td>ODbL-1.0</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>title</td>
+<td>The official (human-readable) title of the license.</td>
+<td>Open Data Commons Open Database License 1.0</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>path</td>
+<td>A link or path to the license text.</td>
+<td>https://opendatacommons.org/licenses/odbl/1-0/index.html</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>instruction</td>
+<td>A short description of rights and obligations. The use of <a href="https://tldrlegal.com/">tl;drLegal</a> is recommended.</td>
+<td>You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-odbl for further information.</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>attribution</td>
+<td>A copyright owner of the <strong>data</strong>. Must be provided if attribution licenses are used.</td>
+<td>© Reiner Lemoine Institut</td>
+<td>Bronze</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resource-provenance-keys">Resource - Provenance Keys<a class="headerlink" href="#resource-provenance-keys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Key</th>
+<th>Description</th>
+<th>Example</th>
+<th>Badge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>contributors</strong></td>
+<td>An array of objects of the people or organizations who contributed to the data or metadata.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>title</td>
+<td>A full name of the contributor.</td>
+<td>Ludwig Hülk</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>path</td>
+<td>A qualified link or path pointing to a relevant location online for the contributor. This can be the GitHub page or ORCID.</td>
+<td>https://github.com/Ludee</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>organization</td>
+<td>A string describing the organization this contributor is affiliated to. This can be relevant for the copyright.</td>
+<td>Reiner Lemoine Institut</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>roles</td>
+<td>An array describing the roles of the contributor. A role is recommended to follow an established vocabulary, such as DataCite Metadata Schema’s contributorRole or CreDIT. Useful roles to indicate are: creator, contact, and dataCurator.</td>
+<td>creator, dataCurator</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>date</td>
+<td>The date of the final contribution. Date Format is ISO 8601.</td>
+<td>2024-10-21</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.6</td>
+<td>object</td>
+<td>The target of the contribution. This can be the data, the metadata or both (data and metadata).</td>
+<td>data and metadata</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.7</td>
+<td>comment</td>
+<td>A free-text commentary on what has been done.</td>
+<td>Add general context.</td>
+<td>Bronze</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resource-type-keys">Resource - Type Keys<a class="headerlink" href="#resource-type-keys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Key</th>
+<th>Description</th>
+<th>Example</th>
+<th>Badge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>type</td>
+<td>The 'table' type indicates that the resource is tabular as per 'Frictionless Tabular Data' definition.</td>
+<td>table</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>2</td>
+<td>format</td>
+<td>A file extension format. Possible options are 'csv', 'xlsx', 'json', 'PostgreSQL', 'SQLite' and other standard file extensions.</td>
+<td>PostgreSQL</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>3</td>
+<td>encoding</td>
+<td>Specifies the character encoding of the resource's data file. The default is 'UTF-8'. The values should be one of the 'Preferred MIME Names'.</td>
+<td>UTF-8</td>
+<td>Gold</td>
+</tr>
+</tbody>
+</table>
+<h4 id="resource-fields-keys">Resource - Fields Keys<a class="headerlink" href="#resource-fields-keys" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Key</th>
+<th>Description</th>
+<th>Example</th>
+<th>Badge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>schema</strong></td>
+<td>An object that describes the structure of a table. It contains all fields (columns of the table), the primary key and optional foreign keys.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.1</td>
+<td><strong>fields</strong></td>
+<td>An array of objects that describes a field (column) and its detailed information.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.1.1</td>
+<td>name</td>
+<td>The name of the field. The name may only consist of lowercase alphanumeric characters or underscores. It must not begin with a number or an underscore.</td>
+<td>year</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>1.1.2</td>
+<td>description</td>
+<td>A text describing the field.</td>
+<td>Reference year for which the data were collected.</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>1.1.3</td>
+<td>type</td>
+<td>The data type of the field. In case of a geom column in a database, also indicate the shape and CRS.</td>
+<td>geometry(Point, 4326)</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>1.1.4</td>
+<td>nullable</td>
+<td>A boolean key to specify that a column can be nullable. True is the default value.</td>
+<td>True</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>1.1.5</td>
+<td>unit</td>
+<td>The unit of a field. If it does not apply, use 'null'. If the unit is given in a separate field, reference this field (e.g. 'unit').  Use a space between numbers and units (100 m).</td>
+<td>MW</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>1.1.6</td>
+<td><strong>isAbout</strong></td>
+<td>An array of objects that describes the field in ontology terms.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.1.6.1</td>
+<td>name</td>
+<td>The class label of the ontology term.</td>
+<td>wind energy converting unit</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>1.1.6.2</td>
+<td>path</td>
+<td>The path of the ontology term (IRI).</td>
+<td>https://openenergy-platform.org/ontology/oeo/OEO_00000044</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>1.1.7</td>
+<td><strong>valueReference</strong></td>
+<td>An array of objects for an extended description of the values in the column in ontology terms.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.1.7.1</td>
+<td>value</td>
+<td>The name of the value in the column.</td>
+<td>onshore</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>1.1.7.2</td>
+<td>name</td>
+<td>The class label of the ontology term in the column.</td>
+<td>onshore wind farm</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>1.1.7.3</td>
+<td>path</td>
+<td>The path of the ontology term (IRI) in the column.</td>
+<td>https://openenergy-platform.org/ontology/oeo/OEO_00000311</td>
+<td>Platinum</td>
+</tr>
+</tbody>
+</table>
+<h4 id="resource-properties-keys">Resource - Properties Keys<a class="headerlink" href="#resource-properties-keys" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Key</th>
+<th>Description</th>
+<th>Example</th>
+<th>Badge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.2</td>
+<td>primaryKey</td>
+<td>An array of fields that uniquely identifies each row in the table. The default value is the “id” column.</td>
+<td>id</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td><strong>foreignKeys</strong></td>
+<td>An array of objects with foreign keys that describe a field that relates to a field in another table.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.3.1</td>
+<td>fields</td>
+<td>An array of fields in the table that is constrained by the foreign key.</td>
+<td>id, version</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>1.3.2</td>
+<td><strong>reference</strong></td>
+<td>The reference to the foreign table.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.3.2.1</td>
+<td>resource</td>
+<td>The referenced foreign table.</td>
+<td>model_draft.oep_oemetadata_table_example_version</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>1.3.2.2</td>
+<td>fields</td>
+<td>The foreign resource column.</td>
+<td>id, version</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td><strong>dialect</strong></td>
+<td>The Dialect defines a simple format for describing the various dialects of CSV files in a language-independent manner. In a database, the values in the fields are 'null'.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.4.1</td>
+<td>delimiter</td>
+<td>The delimiter specifies the character sequence which should separate fields (columns). Common characters are ',' (comma), ';' (semicolon), '.' (point) and '\t' (tab).</td>
+<td>,</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>1.4.2</td>
+<td>decimalSeparator</td>
+<td>The symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be '.' or ','.</td>
+<td>.</td>
+<td>Iron</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resource-review-keys">Resource - Review Keys<a class="headerlink" href="#resource-review-keys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Key</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.</td>
+<td><strong>review</strong></td>
+<td>The metadata on the OEP can go through an open peer review process. See the Academy course <a href="https://openenergyplatform.github.io/academy/courses/09_peer_review/">Open Peer Review</a> for further information.</td>
+<td></td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>path</td>
+<td>A link or path to the documented open peer review.</td>
+<td>https://www.example.com</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>badge</td>
+<td>A badge of either Iron, Bronze, Silver, Gold or Platinum is used to label the quality of the metadata.</td>
+<td>Platinum</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metametadata-keys">MetaMetadata Keys<a class="headerlink" href="#metametadata-keys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Key</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>metaMetadata</strong></td>
+<td>An object that describes the metadata themselves, their format, version and license.</td>
+<td></td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>metadataVersion</td>
+<td>Type and version number of the metadata.</td>
+<td>OEMetadata-2.0</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td><strong>metadataLicense</strong></td>
+<td>The license of the provided metadata.</td>
+<td></td>
+</tr>
+<tr>
+<td>1.2.1</td>
+<td>name</td>
+<td>The <a href="https://spdx.org/licenses/">SPDX</a> identifier.</td>
+<td>CC0-1.0</td>
+</tr>
+<tr>
+<td>1.2.2</td>
+<td>title</td>
+<td>The official (human-readable) title of the license.</td>
+<td>Creative Commons Zero v1.0 Universal</td>
+</tr>
+<tr>
+<td>1.2.3</td>
+<td>path</td>
+<td>A link or path to the license text.</td>
+<td>https://creativecommons.org/publicdomain/zero/1.0/</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.path", "navigation.tracking", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5cf534bf.min.js"></script>
+      
+    
+  </body>
+</html>

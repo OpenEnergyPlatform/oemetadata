@@ -1,0 +1,1948 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Open Energy Metadata (OEMetadata) is an energy metadata standard including a template, examples and a metadata schema.">
+      
+      
+      
+      
+        <link rel="prev" href="../metadata_key_description/">
+      
+      
+        <link rel="next" href="../../code/install/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.1">
+    
+    
+      
+        <title>Metadata Mappings - Open Energy Metadata</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3bd4f189.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#metadata-mappings" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://openenergyplatform.org/" title="Open Energy Metadata" class="md-header__button md-logo" aria-label="Open Energy Metadata" data-md-component="logo">
+      
+  <img src="../../img/OpenEnergyFamily_Logo_OEMetadata_white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Open Energy Metadata
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Metadata Mappings
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/OpenEnergyPlatform/oemetadata" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    OpenEnergyPlatform/oemetadata
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../development/collaboration/" class="md-tabs__link">
+        Development
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        Metadata Documentation
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../code/install/" class="md-tabs__link">
+        Code Documentation
+      </a>
+    </li>
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://openenergyplatform.org/" title="Open Energy Metadata" class="md-nav__button md-logo" aria-label="Open Energy Metadata" data-md-component="logo">
+      
+  <img src="../../img/OpenEnergyFamily_Logo_OEMetadata_white.png" alt="logo">
+
+    </a>
+    Open Energy Metadata
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/OpenEnergyPlatform/oemetadata" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    OpenEnergyPlatform/oemetadata
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Development
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Development" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Development
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../development/collaboration/">Collaboration</a>
+          
+            <label for="__nav_2_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Collaboration" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Collaboration
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/collaboration/license/" class="md-nav__link">
+        License
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/collaboration/citation/" class="md-nav__link">
+        Citation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/collaboration/contributing/" class="md-nav__link">
+        Contributing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/collaboration/users/" class="md-nav__link">
+        Users
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/collaboration/code_of_conduct/" class="md-nav__link">
+        Code of Conduct
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../development/git/">Git</a>
+          
+            <label for="__nav_2_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Git" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Git
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/git/gitignore/" class="md-nav__link">
+        Gitignore
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../development/documentation/">Documentation</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Documentation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../development/release/">Release</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Release" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Release
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Metadata Documentation</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Metadata Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Metadata Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata_key_description/" class="md-nav__link">
+        Key Description
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Metadata Mappings
+      </a>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Code Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Code Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Code Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../code/install/">Install</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Install" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          Install
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+
+<h1 id="metadata-mappings">Metadata Mappings<a class="headerlink" href="#metadata-mappings" title="Permanent link">#</a></h1>
+<table>
+<thead>
+<tr>
+<th>n</th>
+<th>OEMetadata Key</th>
+<th>Badge</th>
+<th>Dublin Core</th>
+<th>DCAT necessity</th>
+<th>DCAT-AP.de</th>
+<th>IRI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>name</td>
+<td>Iron</td>
+<td></td>
+<td>mandatory</td>
+<td>dcat:Dataset</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#klasse-datensatz</td>
+</tr>
+<tr>
+<td>2</td>
+<td>title</td>
+<td>Bronze</td>
+<td></td>
+<td>mandatory</td>
+<td>dcat:Dataset / dct:title</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#datensatz-titel</td>
+</tr>
+<tr>
+<td>3</td>
+<td>description</td>
+<td>Bronze</td>
+<td>description</td>
+<td>mandatory</td>
+<td>dcat:Dataset / dcterms:description</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#datensatz-beschreibung</td>
+</tr>
+<tr>
+<td>4</td>
+<td>id</td>
+<td>Silver</td>
+<td>identifier</td>
+<td>optional</td>
+<td>dcat:Dataset / dct:identifier</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#datensatz-id</td>
+</tr>
+<tr>
+<td>5</td>
+<td>resources</td>
+<td></td>
+<td>type</td>
+<td>mandatory</td>
+<td>dcat:Distribution</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#klasse-distribution</td>
+</tr>
+<tr>
+<td>6</td>
+<td>name</td>
+<td>Iron</td>
+<td></td>
+<td>mandatory</td>
+<td>dcat:Distribution / dcat:accessURL</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-zugangs-url</td>
+</tr>
+<tr>
+<td>7</td>
+<td>topics</td>
+<td>Bronze</td>
+<td>coverage</td>
+<td>mandatory</td>
+<td>dcat:Distribution / dcat:accessURL</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-zugangs-url</td>
+</tr>
+<tr>
+<td>8</td>
+<td>title</td>
+<td>Silver</td>
+<td>title</td>
+<td>recommended</td>
+<td><a href="https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-titel">dcat:Distribution / dcterms:title</a></td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-titel</td>
+</tr>
+<tr>
+<td>9</td>
+<td>path</td>
+<td>Bronze</td>
+<td>identifier</td>
+<td>mandatory</td>
+<td>dcat:Distribution / dcat:accessURL</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-zugangs-url</td>
+</tr>
+<tr>
+<td>10</td>
+<td>description</td>
+<td>Silver</td>
+<td>description</td>
+<td>optional</td>
+<td><a href="http://purl.org/dc/terms/description">dcat:Distribution / dcterms:description</a></td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-beschreibung</td>
+</tr>
+<tr>
+<td>11</td>
+<td>languages</td>
+<td>Gold</td>
+<td>language</td>
+<td>optional</td>
+<td><a href="http://purl.org/dc/terms/language">dcat:Distribution / dcterms:language</a></td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-sprache</td>
+</tr>
+<tr>
+<td>12</td>
+<td>**subject**</td>
+<td></td>
+<td>subject</td>
+<td></td>
+<td>Datapackage</td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>name</td>
+<td>Platinum</td>
+<td></td>
+<td>recommended</td>
+<td>dcat:Dataset / dcat:theme</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#kv-data-theme</td>
+</tr>
+<tr>
+<td>14</td>
+<td>path</td>
+<td>Platinum</td>
+<td></td>
+<td>recommended</td>
+<td>dcat:Dataset / dcat:theme</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#kv-data-theme</td>
+</tr>
+<tr>
+<td>15</td>
+<td>keywords</td>
+<td>Silver</td>
+<td>subject</td>
+<td>recommended</td>
+<td>dcat:Dataset / dcat:keyword</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#datensatz-schlagwort</td>
+</tr>
+<tr>
+<td>16</td>
+<td>publicationDate</td>
+<td>Bronze</td>
+<td>date</td>
+<td>optional</td>
+<td>dcat:Distribution / dcterms:issued</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-veroffentlichungsdatum</td>
+</tr>
+<tr>
+<td>17</td>
+<td>**embargoPeriod**</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Datapackage</td>
+<td></td>
+</tr>
+<tr>
+<td>18</td>
+<td>start</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>19</td>
+<td>end</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>20</td>
+<td>isActive</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>21</td>
+<td>**context**</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Datapackage</td>
+<td></td>
+</tr>
+<tr>
+<td>22</td>
+<td>title</td>
+<td>Gold</td>
+<td></td>
+<td>recommended</td>
+<td><a href="http://www.w3.org/2006/vcard/ns#fn">vcard:fn</a></td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#kontaktinformationen-name</td>
+</tr>
+<tr>
+<td>23</td>
+<td>homepage</td>
+<td>Gold</td>
+<td></td>
+<td>recommended</td>
+<td><a href="http://www.w3.org/2006/vcard/ns#hasURL">vcard:hasURL</a></td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#kontaktinformationen-url</td>
+</tr>
+<tr>
+<td>24</td>
+<td>documentation</td>
+<td>Gold</td>
+<td></td>
+<td>optional</td>
+<td>dcat:Distribution / foaf:page</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-dokumentation</td>
+</tr>
+<tr>
+<td>25</td>
+<td>sourceCode</td>
+<td>Gold</td>
+<td></td>
+<td>optional</td>
+<td>dcat:Distribution / foaf:page</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-dokumentation</td>
+</tr>
+<tr>
+<td>26</td>
+<td>contact</td>
+<td>Gold</td>
+<td></td>
+<td>recommended</td>
+<td><a href="http://www.w3.org/2006/vcard/ns#hasEmail">vcard:hasEmail</a></td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#kontaktinformationen-email</td>
+</tr>
+<tr>
+<td>27</td>
+<td>grantNo</td>
+<td>Gold</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>28</td>
+<td>fundingAgency</td>
+<td>Gold</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>29</td>
+<td>fundingAgencyLogo</td>
+<td>Gold</td>
+<td></td>
+<td>optional</td>
+<td>foaf:logo</td>
+<td>http://xmlns.com/foaf/spec/#term_logo</td>
+</tr>
+<tr>
+<td>30</td>
+<td>publisher</td>
+<td>Bronze</td>
+<td>publisher</td>
+<td>mandatory</td>
+<td>dcat:Dataset / dcat:publisher</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#datensatz-herausgeber</td>
+</tr>
+<tr>
+<td>31</td>
+<td>publisherLogo</td>
+<td>Gold</td>
+<td></td>
+<td>optional</td>
+<td>foaf:logo</td>
+<td>http://xmlns.com/foaf/spec/#term_logo</td>
+</tr>
+<tr>
+<td>32</td>
+<td>**spatial**</td>
+<td></td>
+<td>coverage</td>
+<td></td>
+<td>Datapackage</td>
+<td></td>
+</tr>
+<tr>
+<td>33</td>
+<td>**location**</td>
+<td></td>
+<td></td>
+<td></td>
+<td>dcterms:Location</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#klasse-standort</td>
+</tr>
+<tr>
+<td>34</td>
+<td>address</td>
+<td>Silver</td>
+<td></td>
+<td>optional</td>
+<td>locn:Address / locn:fullAddress</td>
+<td>https://semiceu.github.io/Core-Location-Vocabulary/releases/2.1.0/#Address</td>
+</tr>
+<tr>
+<td>35</td>
+<td>@id</td>
+<td>Platinum</td>
+<td></td>
+<td>optional</td>
+<td>dcterms:Location / locn:geographicIdentifier</td>
+<td>https://semiceu.github.io/Core-Location-Vocabulary/releases/2.1.0/#Location.geographicidentifier</td>
+</tr>
+<tr>
+<td>36</td>
+<td>latitude</td>
+<td>Gold</td>
+<td></td>
+<td>optional</td>
+<td>locn:Geometry / latitude</td>
+<td>https://semiceu.github.io/Core-Location-Vocabulary/releases/2.1.0/#Geometry.latitude</td>
+</tr>
+<tr>
+<td>37</td>
+<td>longitude</td>
+<td>Gold</td>
+<td></td>
+<td>optional</td>
+<td>locn:Geometry / longitude</td>
+<td>https://semiceu.github.io/Core-Location-Vocabulary/releases/2.1.0/#Geometry.longitude</td>
+</tr>
+<tr>
+<td>38</td>
+<td>**extent**</td>
+<td></td>
+<td></td>
+<td></td>
+<td>dcterms:Location</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#klasse-standort</td>
+</tr>
+<tr>
+<td>39</td>
+<td>name</td>
+<td>Silver</td>
+<td></td>
+<td>optional</td>
+<td>dcterms:Location / geographicName</td>
+<td>https://semiceu.github.io/Core-Location-Vocabulary/releases/2.1.0/#Location.geographicname</td>
+</tr>
+<tr>
+<td>40</td>
+<td>@id</td>
+<td>Platinum</td>
+<td></td>
+<td>optional</td>
+<td>dcterms:Location / locn:geographicIdentifier</td>
+<td>https://semiceu.github.io/Core-Location-Vocabulary/releases/2.1.0/#Location.geographicidentifier</td>
+</tr>
+<tr>
+<td>41</td>
+<td>resolutionValue</td>
+<td>Silver</td>
+<td></td>
+<td>optional</td>
+<td><a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters">dcat:Distribution / dcat:spatialResolutionInMeters</a></td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-raumliche-auflosung-in-meter</td>
+</tr>
+<tr>
+<td>42</td>
+<td>resolutionUnit</td>
+<td>Silver</td>
+<td></td>
+<td>optional</td>
+<td><a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters">dcat:Distribution / dcat:spatialResolutionInMeters</a></td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-raumliche-auflosung-in-meter</td>
+</tr>
+<tr>
+<td>43</td>
+<td>boundingBox</td>
+<td>Gold</td>
+<td></td>
+<td>recommended</td>
+<td><a href="https://www.w3.org/ns/dcat#bbox">dcterms:Location / dcat:bbox</a></td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#standort-bounding-box</td>
+</tr>
+<tr>
+<td>44</td>
+<td>crs</td>
+<td>Gold</td>
+<td></td>
+<td>optional</td>
+<td>locn:Geometry / crs</td>
+<td>https://semiceu.github.io/Core-Location-Vocabulary/releases/2.1.0/#Geometry.crs</td>
+</tr>
+<tr>
+<td>45</td>
+<td>**temporal**</td>
+<td></td>
+<td>coverage</td>
+<td></td>
+<td>dcterms:PeriodOfTime</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#klasse-zeitraum</td>
+</tr>
+<tr>
+<td>46</td>
+<td>referenceDate</td>
+<td>Silver</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>47</td>
+<td>**timeseries**</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Datapackage</td>
+<td></td>
+</tr>
+<tr>
+<td>48</td>
+<td>start</td>
+<td>Silver</td>
+<td></td>
+<td>optional</td>
+<td>dcterms:PeriodOfTime / time:hasBeginning</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#zeitraum-anfang</td>
+</tr>
+<tr>
+<td>49</td>
+<td>end</td>
+<td>Silver</td>
+<td></td>
+<td>optional</td>
+<td>dcterms:PeriodOfTime / time:hasEnd</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#zeitraum-ende</td>
+</tr>
+<tr>
+<td>50</td>
+<td>resolution</td>
+<td>Silver</td>
+<td></td>
+<td>optional</td>
+<td><a href="http://www.w3.org/ns/dcat#temporalResolution">dcat:Distribution / dcat:temporalResolution</a></td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-zeitliche-auflosung</td>
+</tr>
+<tr>
+<td>51</td>
+<td>alignment</td>
+<td>Gold</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>52</td>
+<td>aggregationType</td>
+<td>Gold</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>53</td>
+<td>**sources**</td>
+<td></td>
+<td>source</td>
+<td></td>
+<td>Datapackage</td>
+<td></td>
+</tr>
+<tr>
+<td>54</td>
+<td>title</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>BibTeX title</td>
+<td></td>
+</tr>
+<tr>
+<td>55</td>
+<td>author</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>BibTeX author</td>
+<td></td>
+</tr>
+<tr>
+<td>56</td>
+<td>description</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>BibTeX note</td>
+<td></td>
+</tr>
+<tr>
+<td>57</td>
+<td>publicationYear</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>BibTeX year</td>
+<td></td>
+</tr>
+<tr>
+<td>58</td>
+<td>path</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>BibTeX howpublished</td>
+<td></td>
+</tr>
+<tr>
+<td>59</td>
+<td>**licenses**</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Datapackage</td>
+<td></td>
+</tr>
+<tr>
+<td>60</td>
+<td>name</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td>https://spdx.org/licenses/</td>
+</tr>
+<tr>
+<td>61</td>
+<td>title</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>62</td>
+<td>path</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td><a href="https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-lizenz">dcat:Distribution / dcterms:license</a></td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-lizenz</td>
+</tr>
+<tr>
+<td>63</td>
+<td>instruction</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>64</td>
+<td>attribution</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td><a href="http://dcat-ap.de/def/dcatde/licenseAttributionByText">dcat:Distribution / dcatde:licenseAttributionByText</a></td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-namensnennungstext-by-clauses</td>
+</tr>
+<tr>
+<td>65</td>
+<td>copyrightStatement</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td><a href="http://purl.org/dc/terms/accessRights">dcat:Distribution / dcterms:rights</a></td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-rechte</td>
+</tr>
+<tr>
+<td>66</td>
+<td>**licenses**</td>
+<td></td>
+<td>rights</td>
+<td></td>
+<td>Datapackage</td>
+<td></td>
+</tr>
+<tr>
+<td>67</td>
+<td>name</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td>https://spdx.org/licenses/</td>
+</tr>
+<tr>
+<td>68</td>
+<td>title</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>69</td>
+<td>path</td>
+<td>Bronze</td>
+<td></td>
+<td>mandatory</td>
+<td><a href="https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-lizenz">dcat:Distribution / dcterms:license</a></td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-lizenz</td>
+</tr>
+<tr>
+<td>70</td>
+<td>instruction</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>71</td>
+<td>attribution</td>
+<td>Bronze</td>
+<td>creator</td>
+<td>optional</td>
+<td><a href="http://dcat-ap.de/def/dcatde/licenseAttributionByText">dcat:Distribution / dcatde:licenseAttributionByText</a></td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-namensnennungstext-by-clauses</td>
+</tr>
+<tr>
+<td>72</td>
+<td>**contributors**</td>
+<td></td>
+<td>contributor</td>
+<td></td>
+<td>Datapackage</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#datensatz-bearbeiter</td>
+</tr>
+<tr>
+<td>73</td>
+<td>title</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>foaf:name</td>
+<td></td>
+</tr>
+<tr>
+<td>74</td>
+<td>path</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>dcat:Dataset / dcterms:contributor</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#datensatz-bearbeiter</td>
+</tr>
+<tr>
+<td>75</td>
+<td>organization</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>foaf:Organization</td>
+<td></td>
+</tr>
+<tr>
+<td>76</td>
+<td>roles</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>dcat:Relationship / dcat:hadRole</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#beziehung-rolle</td>
+</tr>
+<tr>
+<td>77</td>
+<td>date</td>
+<td>Bronze</td>
+<td>date</td>
+<td>recommended</td>
+<td><a href="https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-aktualisierungsdatum">dcat:Distribution / dcterms:modified</a></td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-aktualisierungsdatum</td>
+</tr>
+<tr>
+<td>78</td>
+<td>object</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>79</td>
+<td>comment</td>
+<td>Bronze</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>80</td>
+<td>type</td>
+<td>Gold</td>
+<td></td>
+<td></td>
+<td>Datapackage</td>
+<td></td>
+</tr>
+<tr>
+<td>81</td>
+<td>format</td>
+<td>Gold</td>
+<td>format</td>
+<td>recommended</td>
+<td><a href="https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-format">dcat:Distribution / dcterms:format</a></td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-format</td>
+</tr>
+<tr>
+<td>82</td>
+<td>encoding</td>
+<td>Gold</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>83</td>
+<td>**schema**</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Datapackage</td>
+<td></td>
+</tr>
+<tr>
+<td>84</td>
+<td>**fields**</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Datapackage</td>
+<td></td>
+</tr>
+<tr>
+<td>85</td>
+<td>name</td>
+<td>Iron</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>86</td>
+<td>description</td>
+<td>Silver</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>87</td>
+<td>type</td>
+<td>Iron</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>88</td>
+<td>nullable</td>
+<td>Iron</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>89</td>
+<td>unit</td>
+<td>Silver</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>90</td>
+<td>**isAbout**</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Datapackage</td>
+<td></td>
+</tr>
+<tr>
+<td>91</td>
+<td>name</td>
+<td>Platinum</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>92</td>
+<td>path</td>
+<td>Platinum</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>93</td>
+<td>**valueReference**</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Datapackage</td>
+<td></td>
+</tr>
+<tr>
+<td>94</td>
+<td>value</td>
+<td>Platinum</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>95</td>
+<td>name</td>
+<td>Platinum</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>96</td>
+<td>path</td>
+<td>Platinum</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>97</td>
+<td>primaryKey</td>
+<td>Iron</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>98</td>
+<td>**foreignKeys**</td>
+<td></td>
+<td>relation</td>
+<td></td>
+<td>Datapackage</td>
+<td></td>
+</tr>
+<tr>
+<td>99</td>
+<td>fields</td>
+<td>Iron</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>100</td>
+<td>**reference**</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Datapackage</td>
+<td></td>
+</tr>
+<tr>
+<td>101</td>
+<td>resource</td>
+<td>Iron</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>102</td>
+<td>fields</td>
+<td>Iron</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>103</td>
+<td>**dialect**</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Datapackage</td>
+<td></td>
+</tr>
+<tr>
+<td>104</td>
+<td>delimiter</td>
+<td>Iron</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>105</td>
+<td>decimalSeparator</td>
+<td>Iron</td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>106</td>
+<td>@id</td>
+<td>Platinum</td>
+<td>identifier</td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>107</td>
+<td>@context</td>
+<td>Platinum</td>
+<td></td>
+<td>optional</td>
+<td>dcat:Distribution / dcterms:conformsTo</td>
+<td>https://www.dcat-ap.de/def/dcatde/3.0/spec/#distribution-konform-zu-standard</td>
+</tr>
+<tr>
+<td>108</td>
+<td>**review**</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Datapackage</td>
+<td></td>
+</tr>
+<tr>
+<td>109</td>
+<td>path</td>
+<td></td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>110</td>
+<td>badge</td>
+<td></td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>111</td>
+<td>**metaMetadata**</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Datapackage</td>
+<td></td>
+</tr>
+<tr>
+<td>112</td>
+<td>metadataVersion</td>
+<td></td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>113</td>
+<td>**metadataLicense**</td>
+<td></td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>114</td>
+<td>name</td>
+<td></td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>115</td>
+<td>title</td>
+<td></td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+<tr>
+<td>116</td>
+<td>path</td>
+<td></td>
+<td></td>
+<td>optional</td>
+<td>OEP</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.path", "navigation.tracking", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5cf534bf.min.js"></script>
+      
+    
+  </body>
+</html>
