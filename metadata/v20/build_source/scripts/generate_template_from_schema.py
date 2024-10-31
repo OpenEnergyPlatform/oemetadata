@@ -83,8 +83,10 @@ def main():
     with open(template_file_path, "w", encoding="utf-8") as template_file:
         json.dump(template, template_file, indent=2, ensure_ascii=False)
 
-    print(f"template JSON generated and saved to {template_file_path}")
+    logger.info(f"template JSON generated and saved to {template_file_path}")
 
 
 if __name__ == "__main__":
+    logger.info("Generation started.")
     main()
+    logger.info("Generation ended.")
