@@ -1255,7 +1255,7 @@
       "properties": {
         "metadataVersion": {
           "description": "Type and version number of the metadata.",
-          "example": "OEMetadata-2.0.0",
+          "example": "OEMetadata-2.0.1",
           "type": [
             "string",
             "null"

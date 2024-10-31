@@ -28,7 +28,7 @@ authors:
 title: "Open Energy Family - Open Energy Metadata (OEMetadata)"
 type: software
 license: MIT
-version: 2.0.0
+version: 2.0.1
 doi: 
 date-released: 2024-10-31
 url: "https://github.com/OpenEnergyPlatform/oemetadata"

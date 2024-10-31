@@ -12,7 +12,7 @@ Version: 1.0.0
 requires: "pip install jsonschema referencing"
 
 Usage: Script with additional arguments --debug for more detailed output.
-        Requires the folder structure introduced in oemetadata v2.0.0.
+        Requires the folder structure introduced in oemetadata v2.0.1.
 """
 
 # Standard Library Imports
