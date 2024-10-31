@@ -189,7 +189,7 @@
         "units": "Use a space between numbers and units (100 m)",
         "languages": "Languages must follow the IETF (BCP47) format (en-GB, en-US, de-DE)",
         "licenses": "License name must follow the SPDX License List (https://spdx.org/licenses/)",
-        "review": "Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/productiontion/data-review/manual/review_manual.md)",
+        "review": "Following the OEP Data Review (https://github.com/OpenEnergyPlatform/data-preprocessing/blob/production/data-review/manual/review_manual.md)",
         "null": "If not applicable use: null",
         "todo": "If a value is not yet available, use: todo"
     }
