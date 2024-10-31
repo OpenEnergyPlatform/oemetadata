@@ -78,6 +78,8 @@ For a **Patch Release** (Hotfix), start at [section 3](https://github.com/OpenEn
 * `📝setup.py`
     * Update `version`
     * Update `download_url` (.../v0.1.0.tar.gz)
+* `📝metadata/latest`
+    * Update the folder `metadata/latest`
 
 ▶️ Increase version numbers!
 

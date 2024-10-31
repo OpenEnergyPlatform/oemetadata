@@ -4,18 +4,34 @@
     "type": "object",
     "properties": {
         "name": {
-            "description": "File name or database table name",
-            "example": "oep_metadata_table_example_v160",
+            "description": "A filename or database conform table name.",
+            "example": "oep_oemetadata_table_example",
             "type": [
                 "string",
                 "null"
             ],
-            "badge": "Silver",
+            "badge": "Iron",
             "title": "Name"
         },
+        "topics": {
+            "description": "An array of predefined topics that correspond to the database schemas of the OEP.",
+            "type": "array",
+            "items": {
+                "description": "The topics are used to group the data in the database.",
+                "example": ["model_draft","reference"],
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "badge": "Bronze",
+                "title": "Keyword"
+            },
+            "badge": "Bronze",
+            "title": "Keywords"
+        },
         "title": {
-            "description": "A Human readable, full title , including author.",
-            "example": "RLI - OEMetadata - Metadata example table",
+            "description": "A human readable table name.",
+            "example": "OEP OEMetadata Example Table",
             "type": [
                 "string",
                 "null"
@@ -23,20 +39,20 @@
             "badge": "Silver",
             "title": "Title"
         },
-        "id": {
-            "description": "Uniform Resource Identifier (URI) that unambiguously identifies the resource. This can be a URL on the data set. It can also be a Digital Object Identifier (DOI).",
-            "example": "https://example.com",
+        "path": {
+            "description": "A unique identifier (URI/UUID/DOI) for the table or file.",
+            "example": "http://openenergyplatform.org/dataedit/view/model_draft/oep_oemetadata_table_example",
             "type": [
                 "string",
                 "null"
             ],
             "badge": "Bronze",
-            "title": "ID",
+            "title": "Path",
             "readonly": true
-        },
+                },
         "description": {
-            "description": "A description of the package. It should be usable as summary information for the entire package that is described by the metadata.",
-            "example": "Example table used to illustrate the metadata structure and meaning.",
+            "description": "A description of the table. It should be usable as summary information for the table that is described by the metadata.",
+            "example": "Example table used to illustrate the OEMetadata structure and meaning.",
             "type": [
                 "string",
                 "null"
@@ -44,14 +60,30 @@
             "badge": "Silver",
             "title": "Description"
         },
+        "languages": {
+            "description": "An array of languages used within the described data structures (e.g. titles, descriptions) or metadata.",
+            "type": "array",
+            "items": {
+                "description": "The language keys must follow the Standard IETF (BCP47) and can be repeated if more languages are used.",
+                "example": ["en-GB", "de-DE"],
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "badge": "Gold",
+                "title": "Language"
+            },
+            "badge": "Gold",
+            "title": "Languages"
+        },
         "subject": {
-            "description": "Reference the topic of the resource in ontology terms",
+            "description": "An array of objects that references to the subjects of the resource in ontology terms.",
             "type": "array",
             "items": {
                 "type": "object",
                 "properties": {
                     "name": {
-                        "description": "The class label of the OEO term.",
+                        "description": "A class label of the ontology term.",
                         "example": "energy",
                         "type": [
                             "string",
@@ -61,7 +93,7 @@
                         "title": "Name"
                     },
                     "path": {
-                        "description": "The URI of the class.",
+                        "description": "A unique identifier (URI/IRI) of the ontology class.",
                         "example": "https://openenergy-platform.org/ontology/oeo/OEO_00000150",
                         "type": [
                             "string",
@@ -73,36 +105,17 @@
                     }
                 },
                 "badge": "Platinum",
-                "title": "Subject",
-                "additionalProperties": false
+                "title": "Subject"
             },
             "badge": "Platinum",
             "title": "Subject"
         },
-        "language": {
-            "description": "List of languages used within the described data structures (e.g. titles, descriptions). Standard: IETF (BCP47).",
-            "example": "[en-GB, de-DE, fr-FR]",
-            "type": "array",
-            "items": {
-                "description": "Language used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47)",
-                "example": "en-GB",
-                "type": [
-                    "string",
-                    "null"
-                ],
-                "badge": "Gold",
-                "title": "Language"
-            },
-            "badge": "Gold",
-            "title": "Language"
-        },
         "keywords": {
-            "description": "A list of string keywords to assist users searching for the package in catalogs.",
-            "example": "[example, template, test]",
+            "description": "An array of freely selectable keywords that help with searching and structuring.",
             "type": "array",
             "items": {
-                "description": "A keyword to assist users searching for the package in catalogs.",
-                "example": "template",
+                "description": "The keyword are used and managed in the OEP as table tags.",
+                "example": ["example","ODbL-1.0","NFDI4Energy"],
                 "type": [
                     "string",
                     "null"
@@ -114,15 +127,56 @@
             "title": "Keywords"
         },
         "publicationDate": {
-            "description": "Date of publishing. Date Format is ISO 8601 (YYYY-MM-DD)",
-            "example": "2019-02-06",
+            "description": "A date of publication of the data or metadata. The date format is ISO 8601 (YYYY-MM-DD).",
+            "example": "2024-10-15",
             "type": [
                 "string",
                 "null"
             ],
             "badge": "Bronze",
-            "title": "Publication date",
+            "title": "Publication Date",
             "format": "date"
+        },
+        "embargoPeriod": {
+            "description": "An object that describes the embargo period during which public access to the data is not allowed.",
+            "type": "object",
+            "properties": {
+                "start": {
+                    "description": "The start date of the embargo period. The date of the data (metadata) upload.",
+                    "example": "2024-10-11",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Bronze",
+                    "title": "Embargo Period Start",
+                    "format": "date"
+                },
+                "end": {
+                    "description": "The end date of the embargo period. This is the intended publication date.",
+                    "example": "2025-01-01",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Bronze",
+                    "title": "Embargo Period End (Publication Date)",
+                    "format": "date"
+                },
+                "isActive": {
+                    "description": "A boolean key that indicates if the embargo period is currently active. Must be changed to False on the embargo period end date.",
+                    "example": true,
+                    "type": [
+                        "boolean",
+                        "null"
+                    ],
+                    "badge": "Bronze",
+                    "title": "Embargo Period is Active "
+                }
+            },
+            "badge": "Bronze",
+            "title": "Embargo Period"
         }
-    }
+    },
+    "required": ["name"]
 }

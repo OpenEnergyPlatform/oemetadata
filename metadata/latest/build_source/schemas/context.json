@@ -4,12 +4,21 @@
     "type": "object",
     "properties": {
         "context": {
-            "description": "An Object that describes the general setting, evironment or project leading to the creation or maintenance of this dataset. In science this can be the research project.",
+            "description": "An Object that describes the general setting, environment or project leading to the creation or maintenance of this dataset. In science this can be the research project.",
             "type": "object",
             "properties": {
-                "homepage": {
-                    "description": "URL of project.",
-                    "example": "https://openenergy-platform.org/",
+                "title": {
+                    "description": "A title of the associated project.",
+                    "example": "NFDI4Energy",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Context Title"
+                },"homepage": {
+                    "description": "A URL of the project.",
+                    "example": "https://nfdi4energy.uol.de/",
                     "type": [
                         "string",
                         "null"
@@ -19,8 +28,8 @@
                     "format": "uri"
                 },
                 "documentation": {
-                    "description": "A URL of the project's documentation.",
-                    "example": "https://openenergy-platform.org/about/",
+                    "description": "A URL of the project documentation.",
+                    "example": "https://nfdi4energy.uol.de/sites/about_us/",
                     "type": [
                         "string",
                         "null"
@@ -29,14 +38,34 @@
                     "title": "Documentation"
                 },
                 "sourceCode": {
-                    "description": "A URL of the projects source code.",
-                    "example": "https://github.com/OpenEnergyPlatform",
+                    "description": "A URL of the source code of the project.",
+                    "example": "https://github.com/NFDI4Energy",
                     "type": [
                         "string",
                         "null"
                     ],
                     "badge": "Gold",
                     "title": "Source Code"
+                },
+                "publisher": {
+                    "description": "The publishing agency of the data. This can be the OEP.",
+                    "example": "Open Energy Platform (OEP)",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Publisher"
+                },"publisherLogo": {
+                    "description": "A URL to the logo of the publishing agency of data.",
+                    "example": "https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg",
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "badge": "Gold",
+                    "title": "Publisher Logo",
+                    "format": "uri"
                 },
                 "contact": {
                     "description": "A reference to the creator or maintainer of the data set. This can be an email address or a GitHub handle.",
@@ -49,52 +78,40 @@
                     "title": "E-Mail Contact",
                     "format": "email"
                 },
-                "grantNo": {
-                    "description": "An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency.",
-                    "example": "01AB2345",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "badge": "Gold",
-                    "title": "Grant no"
-                },
                 "fundingAgency": {
-                    "description": "In a funded project this is the funding agency, which can be a governmental or a company.",
-                    "example": "Bundesministerium für Wirtschaft und Klimaschutz",
+                    "description": "A name of the entity providing the funding. This can be a government agency or a company.",
+                    "example": " Deutsche Forschungsgemeinschaft (DFG)",
                     "type": [
                         "string",
                         "null"
                     ],
                     "badge": "Gold",
-                    "title": "Funding agency"
+                    "title": "Funding Agency"
                 },
                 "fundingAgencyLogo": {
                     "description": "A URL to the logo or image of the funding agency.",
-                    "example": "https://commons.wikimedia.org/wiki/File:BMWi_Logo_2021.svg#/media/File:BMWi_Logo_2021.svg",
+                    "example": "https://upload.wikimedia.org/wikipedia/commons/8/86/DFG-logo-blau.svg",
                     "type": [
                         "string",
                         "null"
                     ],
                     "badge": "Gold",
-                    "title": "Funding agency logo",
+                    "title": "Funding Agency Logo",
                     "format": "uri"
                 },
-                "publisherLogo": {
-                    "description": "A URL to the logo of the agency publishing the data.",
-                    "example": "https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png",
+                "grantNo": {
+                    "description": "An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency.",
+                    "example": "501865131",
                     "type": [
                         "string",
                         "null"
                     ],
                     "badge": "Gold",
-                    "title": "Publisher logo",
-                    "format": "uri"
+                    "title": "Grant Number"
                 }
             },
             "badge": "Gold",
-            "title": "Context",
-            "additionalProperties": false
+            "title": "Context"
         }
     }
 }

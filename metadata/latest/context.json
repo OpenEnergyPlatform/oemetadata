@@ -1,16 +1,20 @@
 {
     "@context": {
         "path": "@id",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "dct": "http://purl.org/dc/terms/",
-        "dc": "http://purl.org/dc/elements/1.1/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "oeo": "http://openenergy-platform.org/ontology/oeo/",
+        "bfo": "http://purl.obolibrary.org/obo/bfo.owl#",
         "csvw": "http://www.w3.org/ns/csvw#",
-        "obo":"http://purl.obolibrary.org/obo/",
-        "time":"http://www.w3.org/2006/time#",
         "dbo": "http://dbpedia.org/ontology/",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "dct": "http://purl.org/dc/terms/",
+        "obda": "https://w3id.org/obda/vocabulary#",
+        "oeo": "http://openenergyplatform.org/ontology/oeo/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "saref": "https://saref.etsi.org/core/",
+        "time": "http://www.w3.org/2006/time#",
+        "xml": "http://www.w3.org/XML/1998/namespace",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
         "title": {
             "@id": "dct:title",
             "@type": "xsd:string"

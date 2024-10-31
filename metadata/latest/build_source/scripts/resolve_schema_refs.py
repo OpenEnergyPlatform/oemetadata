@@ -11,7 +11,7 @@ Version: 1.0.0
 
 requires: "pip install jsonschema referencing"
 
-Usage: Script with additional arguments --debug for more detailed output. 
+Usage: Script with additional arguments --debug for more detailed output.
         Requires the folder structure introduced in oemetadata v2.0.0.
 """
 
@@ -22,27 +22,24 @@ import json
 import logging
 
 # from datetime import datetime
-from pathlib import Path
 from urllib.parse import urljoin
 import argparse
 
 from referencing import Registry, Resource
 from jsonschema import Draft7Validator
 
+from settings import (
+    MAIN_SCHEMA_PATH,
+    SCHEMA_REFS,
+    RESOLVED_SCHEMA_FILE_NAME,
+    EXPECTED_SCHEMA_PATH,
+    LOG_FORMAT,
+)
+
 # Configuration
-LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
 logger = logging.getLogger(__name__)
-
-# Constants
-BASE_PATH = Path("metadata/")
-VERSION = "v20"
-VERSION_PATH = BASE_PATH / VERSION
-SCHEMA_BUILD_PATH = VERSION_PATH / "build"
-MAIN_SCHEMA_PATH = SCHEMA_BUILD_PATH / "main_schema.json"
-SCHEMA_REFS = SCHEMA_BUILD_PATH / "schemas"
-RESOLVED_SCHEMA_FILE_NAME = VERSION_PATH / "res_schema.json"
-EXPECTED_SCHEMA_PATH = VERSION_PATH / "schema.json"
 
 
 # Function Definitions
@@ -55,7 +52,7 @@ def setup():
 
 # Load the main schema
 def load_schema(schema_path):
-    with open(schema_path, "r") as file:
+    with open(schema_path, "r", encoding="utf-8") as file:
         return json.load(file)
 
 
@@ -85,7 +82,7 @@ def resolve_and_merge(schema_path, debug):
 
     for schema_file in SCHEMA_REFS.glob("*.json"):
         try:
-            with open(schema_file, "r") as file:
+            with open(schema_file, "r", encoding="utf-8") as file:
                 ref_schema = json.load(file)
                 ref_schema = ensure_schema_field(ref_schema)
                 schema_uri = urljoin(base_uri, schema_file.name)
@@ -112,7 +109,9 @@ def resolve_and_merge(schema_path, debug):
                         print(
                             f"Resolved reference {ref_uri} to {ref_schema.contents}"
                         )  # Debugging
-                    return resolve_references(ref_schema.contents, registry, base_uri)
+                    return ref_schema.contents[
+                        "properties"
+                    ]  # Return only the properties
                 except KeyError as e:
                     raise ValueError(f"Reference {ref_uri} could not be resolved: {e}")
             else:
@@ -125,20 +124,45 @@ def resolve_and_merge(schema_path, debug):
         return schema
 
     # Resolve the top-level properties
-    resolved_properties = {}
-    for prop, value in schema["properties"].items():
-        if "$ref" in value:
-            resolved_value = resolve_references(value, registry, base_uri)
-            resolved_properties.update(resolved_value["properties"])
-        else:
-            resolved_properties[prop] = resolve_references(value, registry, base_uri)
+    def resolve_top_level_properties(schema, registry, base_uri):
+        resolved_properties = {}
+        for prop, value in schema["properties"].items():
+            if isinstance(value, dict) and "properties" in value:
+                resolved_value = resolve_references(
+                    value["properties"], registry, base_uri
+                )
+                resolved_properties[prop] = resolved_value
+            else:
+                resolved_value = resolve_references(value, registry, base_uri)
+                for i, v in resolved_value.items():
+                    if isinstance(v, dict) and i != "items":
+                        resolved_properties[i] = v
 
-    # Replace the properties in the schema with the resolved properties
-    schema["properties"] = resolved_properties
+                    elif prop == "resources":
+                        resolved_value = resolve_references(value, registry, base_uri)
+                        resources = {}
+                        for _k, _v in resolved_value["items"].items():
+                            if isinstance(_v, dict):
+                                # Update all values instead of key:values to
+                                # avoid adding schema_structure.json wrapper
+                                # objects
+                                for element in _v.values():
+                                    resources.update(element)
+                        resolved_properties[prop] = resolved_value
+                        # Patch the missing keys
+                        resolved_properties[prop]["items"] = {
+                            "type": "object",
+                            "properties": {**resources},
+                        }
+
+                    else:
+                        resolved_properties[prop] = resolved_value
+        return resolved_properties
+
+    schema["properties"] = resolve_top_level_properties(schema, registry, base_uri)
     return schema
 
 
-# Validate the schema
 def validate_schema(resolved_schema, expected_schema):
     validator = Draft7Validator(expected_schema)
     errors = sorted(validator.iter_errors(resolved_schema), key=lambda e: e.path)
@@ -164,7 +188,7 @@ def main(debug):
         resolved_schema = resolve_and_merge(MAIN_SCHEMA_PATH, debug)
 
         # Save the resolved schema to a new file
-        with open(RESOLVED_SCHEMA_FILE_NAME, "w") as output_file:
+        with open(RESOLVED_SCHEMA_FILE_NAME, "w", encoding="utf-8") as output_file:
             json.dump(resolved_schema, output_file, indent=2)
 
         # Load the expected schema and validate
