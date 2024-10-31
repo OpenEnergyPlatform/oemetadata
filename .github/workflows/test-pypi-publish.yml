@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: pypi-publish
     steps:
-    - uses: actions/checkout@production
+    - uses: actions/checkout@master
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
