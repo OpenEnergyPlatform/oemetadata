@@ -286,7 +286,7 @@
         }
     ],
     "metaMetadata": {
-        "metadataVersion": "OEMetadata-2.0",
+        "metadataVersion": "OEMetadata-2.0.0",
         "metadataLicense": {
             "name": "CC0-1.0",
             "title": "Creative Commons Zero v1.0 Universal",

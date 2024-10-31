@@ -174,11 +174,11 @@
     }
   ],
   "metaMetadata": {
-    "metadataVersion": "",
+    "metadataVersion": "OEMetadata-2.0.0",
     "metadataLicense": {
-      "name": "",
-      "title": "",
-      "path": ""
+      "name": "CC0-1.0",
+      "title": "Creative Commons Zero v1.0 Universal",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0"
     }
   }
 }
