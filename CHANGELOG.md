@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.0.1] - Major Release - Refactor OEMetadata for NFDI
 
 ### Changed
-- HotFix naming errors in some files related to the renaming of master to production [#](https://github.com/OpenEnergyPlatform/oemetadata/issues/)
+- HotFix naming errors in some files related to the renaming of master to production [#202](https://github.com/OpenEnergyPlatform/oemetadata/issues/202)
 
 ## [2.0.0] - Major Release - Refactor OEMetadata for NFDI
 
