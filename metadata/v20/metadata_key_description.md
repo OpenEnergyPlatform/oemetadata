@@ -1,11 +1,13 @@
 # OEMetadata - Key Description
 
 This pages describes the key of **OEMetadata version 2.0 .** <br>
-You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/example.json) of the metadata string.
-
+You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/example.json) of the metadata string.<br>
+[`schema.json`](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/schema.json) contains the complete schema.
 
 ## JSON Format
+
 The JSON format offers different formats:
+
 * key-value pair: 
     ```JSON
     {"key":"value"}
@@ -31,8 +33,8 @@ The JSON format offers different formats:
 
 ## Metadata keys with a description and example
 
-If a field is not applicable use: 'null'.
-If a value is not yet available, use: 'ToDo'.
+If a field is not applicable use: `null`.<br>
+If a value is not yet available, use: `ToDo`.
 
 ### Collection Keys
 | # | Key         | Description                                                                                 | Example                                                     | Badge  |
@@ -44,9 +46,9 @@ If a value is not yet available, use: 'ToDo'.
 | 5 | resources   | An array of objects of the resources. The collection can contain several (database) tables. |                                                             |        |
 
 ### Resource - Linked Data Keys
-| # | Key      | Description                                                                                              | Example                                                                                             | Badge    |
-|---|----------|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|----------|
-| 1 | @id      | A Uniform Resource Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus). | https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07 | Platinum |
+| # | Key      | Description                                                                                              | Example                                                                                                 | Badge    |
+|---|----------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|----------|
+| 1 | @id      | A Uniform Resource Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus). | https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07     | Platinum |
 | 2 | @context | Explanation of metadata keys in ontology terms.                                                          | https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/context.json | Platinum |
 
 ### Resource - General Keys
