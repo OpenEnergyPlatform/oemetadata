@@ -37,9 +37,9 @@ Introduction
 
 You can find the latest version right here:
 
-- `template.json <./metadata/latest/template.json>`_ contains an empty metadata string
-- `metadata_key_description.md <./metadata/latest/metadata_key_description.md>`_ contains a description of each metadata key
-- `example.json <./metadata/latest/example.json>`_ contains a basic metadata example
+- `template.json <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/template.json>`_ contains an empty metadata string
+- `example.json <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/example.json>`_ contains a basic metadata example
+- `metadata_key_description.md <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/metadata_key_description.md>`_ contains a description of each metadata key
 
 Documentation
 =============
@@ -66,7 +66,7 @@ License and Citation
 
 
 .. |badge_license| image:: https://img.shields.io/github/license/OpenEnergyPlatform/oemetadata
-    :target: LICENSE.txt
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/blob/production/LICENSE.txt
     :alt: License
 
 .. |badge_documentation| image:: https://img.shields.io/github/actions/workflow/status/OpenEnergyPlatform/oemetadata/gh-pages.yml?branch=release-v2.0.1
@@ -74,28 +74,36 @@ License and Citation
     :alt: Documentation
 
 .. |badge_pypi| image:: https://img.shields.io/pypi/v/oemetadata
+    :target: https://pypi.org/project/oemetadata/
     :alt: PyPI
 
 .. |badge_pypi_downloads| image:: https://img.shields.io/pypi/dm/oemetadata
+    :target: https://openenergyplatform.github.io/oemetadata/
     :alt: PyPI Downloads
 
 .. |badge_contributing| image:: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/CONTRIBUTING.md
     :alt: Contributions
 
 .. |badge_repo_counts| image:: http://hits.dwyl.com/OpenEnergyPlatform/oemetadata.svg
     :alt: Counter
 
 .. |badge_contributors| image:: https://img.shields.io/github/contributors/OpenEnergyPlatform/oemetadata
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/graphs/contributors
     :alt: Contributors
 
 .. |badge_issue_open| image:: https://img.shields.io/github/issues-raw/OpenEnergyPlatform/oemetadata
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/issues
     :alt: Open issues
 
 .. |badge_issue_closes| image:: https://img.shields.io/github/issues-closed-raw/OpenEnergyPlatform/oemetadata
-    :alt: Closes issues
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/issues?q=is%3Aissue+is%3Aclosed
+    :alt: Closed issues
 
 .. |badge_pr_open| image:: https://img.shields.io/github/issues-pr-raw/OpenEnergyPlatform/oemetadata
-    :alt: Closes issues
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/pulls
+    :alt: Open PR
 
 .. |badge_pr_closes| image:: https://img.shields.io/github/issues-pr-closed-raw/OpenEnergyPlatform/oemetadata
-    :alt: Closes issues
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/pulls?q=is%3Apr+is%3Aclosed
+    :alt: Closed PR
