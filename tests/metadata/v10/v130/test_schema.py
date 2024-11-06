@@ -5,6 +5,17 @@ def test_oemetadata_schema_should_load():
         print("Cannot open OEMetadata Schema v1.3.0!")
 
 
+def test_jsonschema_should_validate_oemetadata_schema():
+    import jsonschema
+    from metadata.v10.v130.schema import OEMETADATA_V130_SCHEMA
+    from metadata.json_schema.draft07.schema \
+        import OEMETADATA_JSONSCHEMA_DRAFT07_SCHEMA
+
+    assert jsonschema.validate(OEMETADATA_V130_SCHEMA,
+                               OEMETADATA_JSONSCHEMA_DRAFT07_SCHEMA) is None, \
+        "Cannot validate OEMetadata Schema v1.3.0 with JSON schema (draft07)"
+
+
 def test_oemetadata_schema_should_have_correct_path():
     from metadata.v10.v130.schema import OEMETADATA_V130_SCHEMA
     import string
@@ -21,15 +32,3 @@ def test_oemetadata_schema_should_have_correct_path():
     ), "Wrong id path in OEMetadata Schema v1.3.0!"
 
 
-def test_jsonschema_should_validate_oemetadata_schema():
-    import jsonschema
-    from metadata.v10.v130.schema import OEMETADATA_V130_SCHEMA
-    from metadata.json_schema.draft07.schema \
-        import OEMETADATA_JSONSCHEMA_DRAFT07_SCHEMA
-
-    assert (
-        jsonschema.validate(
-            OEMETADATA_V130_SCHEMA, OEMETADATA_JSONSCHEMA_DRAFT07_SCHEMA
-        )
-        is None
-    ), "Cannot validate OEMetadata Schema v1.3.0 with JSON schema (draft07)"

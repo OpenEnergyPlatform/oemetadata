@@ -5,7 +5,7 @@ def test_oemetadata_example_should_load():
         print("Cannot open OEMetadata Example v1.3.0!")
 
 
-def test_jsonschema_should_validate_oemetadata_example():
+def test_oemetadata_schema_should_validate_oemetadata_example():
     import jsonschema
     from metadata.v10.v130.example import OEMETADATA_V130_EXAMPLE
     from metadata.v10.v130.schema import OEMETADATA_V130_SCHEMA
