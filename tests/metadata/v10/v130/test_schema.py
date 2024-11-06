@@ -1,12 +1,12 @@
 def test_if_schema_json_loads_successfully():
     try:
-        from metadata.v130.schema import OEMETADATA_V130_SCHEMA
+        from metadata.v10.v130.schema import OEMETADATA_V130_SCHEMA
     except Warning:
         print("Metadata Schema v1.3.0 cant load. Check if the files are missing!")
 
 
 def test_if_schema_json_has_correct_schema_and_id_set():
-    from metadata.v130.schema import OEMETADATA_V130_SCHEMA
+    from metadata.v10.v130.schema import OEMETADATA_V130_SCHEMA
     import string
 
     def get_string(s):
@@ -23,8 +23,8 @@ def test_if_schema_json_has_correct_schema_and_id_set():
 
 def test_schema_against_metaschema_which_should_succeed():
     import jsonschema
-    from metadata.v130.schema import OEMETADATA_V130_SCHEMA
-    from metadata.metaschema.draft07.schema import OEMETADATA_METASCHEMA_DRAFT07_SCHEMA
+    from metadata.v10.v130.schema import OEMETADATA_V130_SCHEMA
+    from metadata.v10.metaschema.draft07.schema import OEMETADATA_METASCHEMA_DRAFT07_SCHEMA
 
     assert (
         jsonschema.validate(
