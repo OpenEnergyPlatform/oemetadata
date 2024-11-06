@@ -77,6 +77,8 @@ nav:
   - Code Documentation:
     - Install:
       - code/install/index.md
+    - Tests:
+      - code/test/index.md
 #    - Code Style:
 #      - code/style/index.md
 #    - Functions:
