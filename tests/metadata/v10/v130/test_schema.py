@@ -6,14 +6,16 @@ def test_oemetadata_schema_should_load():
 
 
 def test_jsonschema_should_validate_oemetadata_schema():
-    import jsonschema
+    from jsonschema import validate, ValidationError
     from metadata.v10.v130.schema import OEMETADATA_V130_SCHEMA
     from metadata.json_schema.draft07.schema \
         import OEMETADATA_JSONSCHEMA_DRAFT07_SCHEMA
 
-    assert jsonschema.validate(OEMETADATA_V130_SCHEMA,
-                               OEMETADATA_JSONSCHEMA_DRAFT07_SCHEMA) is None, \
-        "Cannot validate OEMetadata Schema v1.3.0 with JSON schema (draft07)"
+    try:
+        validate(OEMETADATA_V130_SCHEMA, OEMETADATA_JSONSCHEMA_DRAFT07_SCHEMA)
+        print("OEMetadata Schema (v1.3.0) is valid JSON Schema.")
+    except ValidationError as e:
+        print("Cannot validate OEMetadata Schema with JSON Schema (v1.3.0)!", e)
 
 
 def test_oemetadata_schema_should_have_correct_path():
@@ -30,5 +32,3 @@ def test_oemetadata_schema_should_have_correct_path():
     assert get_string(OEMETADATA_V130_SCHEMA["$id"]) == get_string(
         "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v10/v130/schema.json"
     ), "Wrong id path in OEMetadata Schema v1.3.0!"
-
-

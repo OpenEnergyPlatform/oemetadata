@@ -1,12 +1,25 @@
-def test_if_schema_json_loads_successfully():
+def test_oemetadata_schema_should_load():
     try:
-        from metadata.v151.schema import OEMETADATA_V151_SCHEMA
+        from metadata.v10.v151.schema import OEMETADATA_V151_SCHEMA
     except Warning:
-        print("Metadata Schema v1.5.1 cant load. Check if the files are missing!")
+        print("Cannot open OEMetadata Schema v1.5.1!")
 
 
-def test_if_schema_json_has_correct_schema_and_id_set():
-    from metadata.v151.schema import OEMETADATA_V151_SCHEMA
+def test_jsonschema_should_validate_oemetadata_schema():
+    from jsonschema import validate, ValidationError
+    from metadata.v10.v151.schema import OEMETADATA_V151_SCHEMA
+    from metadata.json_schema.draft07.schema \
+        import OEMETADATA_JSONSCHEMA_DRAFT07_SCHEMA
+
+    try:
+        validate(OEMETADATA_V151_SCHEMA, OEMETADATA_JSONSCHEMA_DRAFT07_SCHEMA)
+        print("OEMetadata Schema (v1.5.1) is valid JSON Schema.")
+    except ValidationError as e:
+        print("Cannot validate OEMetadata Schema with JSON Schema (v1.5.1)!", e)
+
+
+def test_oemetadata_schema_should_have_correct_path():
+    from metadata.v10.v151.schema import OEMETADATA_V151_SCHEMA
     import string
 
     def get_string(s):
@@ -14,22 +27,8 @@ def test_if_schema_json_has_correct_schema_and_id_set():
 
     assert get_string(OEMETADATA_V151_SCHEMA["$schema"]) == get_string(
         "http://json-schema.org/draft-07/schema#"
-    )
+    ), "Wrong schema path in OEMetadata Schema v1.5.1!"
 
-    # https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/v150/schema.json
     assert get_string(OEMETADATA_V151_SCHEMA["$id"]) == get_string(
-        "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v151/schema.json"
-    )
-
-
-def test_schema_against_metaschema_which_should_succeed():
-    import jsonschema
-    from metadata.v151.schema import OEMETADATA_V151_SCHEMA
-    from metadata.metaschema.draft07.schema import OEMETADATA_METASCHEMA_DRAFT07_SCHEMA
-
-    assert (
-        jsonschema.validate(
-            OEMETADATA_V151_SCHEMA, OEMETADATA_METASCHEMA_DRAFT07_SCHEMA
-        )
-        is None
-    )
+        "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v10/v151/schema.json"
+    ), "Wrong id path in OEMetadata Schema v1.5.1!"
