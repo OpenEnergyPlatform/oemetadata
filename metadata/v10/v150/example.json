@@ -280,7 +280,7 @@
     "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v150/context.json",
     "review": {
         "path": "https://github.com/OpenEnergyPlatform/data-preprocessing/issues",
-        "badge": "platin"
+        "badge": "platinum"
     },
     "metaMetadata": {
         "metadataVersion": "OEP-1.5.0",
