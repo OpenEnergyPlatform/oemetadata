@@ -1,6 +1,6 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "general.json#metadata/v20/schemas/sources.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v20/v20/sources.json",
     "type": "object",
     "properties": {
         "sources": {
@@ -11,11 +11,8 @@
                 "properties": {
                     "title": {
                         "description": "A human readable title of the source, a document title or organisation name.",
-                        "example": "IPCC Sixth Assessment Report (AR6) - Climate Change 2023 - Synthesis Report",
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": ["string", "null"],
+                        "examples": ["IPCC Sixth Assessment Report (AR6) - Climate Change 2023 - Synthesis Report"],
                         "badge": "Bronze",
                         "title": "Source Title"
                     },
@@ -24,11 +21,8 @@
                         "type": "array",
                         "items": {
                             "description": "The authors of the source.",
-                            "example": ["Hoesung Lee","José Romero", "The Core Writing Team"],
-                            "type": [
-                                "string",
-                                "null"
-                            ],
+                            "type": ["string", "null"],
+                            "examples": ["Hoesung Lee","José Romero", "The Core Writing Team"],
                             "badge": "Bronze",
                             "title": "Keyword"
                         },
@@ -37,31 +31,22 @@
                     },
                     "description": {
                         "description": "A free text description of the source.",
-                        "example": "A Report of the Intergovernmental Panel on Climate Change.",
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": ["string", "null"],
+                        "examples": ["A Report of the Intergovernmental Panel on Climate Change."],
                         "badge": "Bronze",
                         "title": "Source Description"
                     },
                     "publicationYear": {
                         "description": "Indicates the year when the work was published.",
-                        "example": "2023",
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": ["string", "null"],
+                        "examples": ["2023"],
                         "badge": "Bronze",
                         "title": "Publication Year"
                     },
                     "path": {
                         "description": "A URL to the original source.",
-                        "example": "https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf",
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": ["string", "null"],
+                        "examples": ["https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf"],
                         "badge": "Bronze",
                         "title": "Path",
                         "format": "uri"
@@ -74,62 +59,44 @@
                             "properties": {
                                 "name": {
                                     "description": "The SPDX identifier.",
-                                    "example": "ODbL-1.0",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ],
+                                    "type": ["string", "null"],
+                                    "examples": ["ODbL-1.0"],
                                     "badge": "Bronze",
                                     "title": "Name"
                                 },
                                 "title": {
                                     "description": "The official (human readable) title of the license.",
-                                    "example": "Open Data Commons Open Database License 1.0",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ],
+                                    "type": ["string", "null"],
+                                    "examples": ["Open Data Commons Open Database License 1.0"],
                                     "badge": "Bronze",
                                     "title": "Title"
                                 },
                                 "path": {
                                     "description": "A link or path to the license text.",
-                                    "example": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ],
+                                    "type": ["string", "null"],
+                                    "examples": ["https://opendatacommons.org/licenses/odbl/1-0/index.html"],
                                     "badge": "Bronze",
                                     "title": "Path",
                                     "format": "uri"
                                 },
                                 "instruction": {
                                     "description": "A short description of rights and obligations. The use of tl;drLegal is recommended.",
-                                    "example": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-odbl for further information.",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ],
+                                    "type": ["string", "null"],
+                                    "examples": ["You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-odbl for further information."],
                                     "badge": "Bronze",
                                     "title": "Instruction"
                                 },
                                 "attribution": {
                                     "description": "A copyright owner of the source. Must be provided if attribution licenses are used.",
-                                    "example": "© Intergovernmental Panel on Climate Change 2023",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ],
+                                    "type": ["string", "null"],
+                                    "examples": ["© Intergovernmental Panel on Climate Change 2023"],
                                     "badge": "Bronze",
                                     "title": "Attribution"
                                 },
                                 "copyrightStatement": {
                                     "description": "A link or path that proves that the source or data has the appropriate license. This can be a page number or website imprint.",
-                                    "example": "https://www.ipcc.ch/copyright/",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ],
+                                    "type": ["string", "null"],
+                                    "examples": ["https://www.ipcc.ch/copyright/"],
                                     "badge": "Bronze",
                                     "title": "Copyright Statement"
                                 }

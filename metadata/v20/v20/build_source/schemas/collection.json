@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/refs/heads/production/metadata/latest/build_source/schemas/collection.json",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v20/v20/build_source/schemas/collection.json",
     "type": "object",
     "properties": {
         "name": {
@@ -34,6 +34,5 @@
             "readOnly": true
         }
     },
-    "required": ["name"],
-    "additionalProperties": false
+    "required": ["name"]
 }
