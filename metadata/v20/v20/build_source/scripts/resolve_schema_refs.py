@@ -26,7 +26,7 @@ from urllib.parse import urljoin
 import argparse
 
 from referencing import Registry, Resource
-from jsonschema import Draft7Validator
+from jsonschema import Draft7Validator, Draft202012Validator
 
 from settings import (
     MAIN_SCHEMA_PATH,
@@ -59,7 +59,7 @@ def load_schema(schema_path):
 # Ensure the schema has the $schema field
 def ensure_schema_field(schema):
     if "$schema" not in schema:
-        schema["$schema"] = "http://json-schema.org/draft-07/schema#"
+        schema["$schema"] = "https://json-schema.org/draft/2020-12/schema"
     return schema
 
 
@@ -164,7 +164,7 @@ def resolve_and_merge(schema_path, debug):
 
 
 def validate_schema(resolved_schema, expected_schema):
-    validator = Draft7Validator(expected_schema)
+    validator = Draft202012Validator(expected_schema)
     errors = sorted(validator.iter_errors(resolved_schema), key=lambda e: e.path)
     for error in errors:
         print(f"Validation error at {list(error.path)}: {error.message}")

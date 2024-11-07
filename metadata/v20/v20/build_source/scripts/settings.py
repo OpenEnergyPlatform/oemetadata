@@ -2,7 +2,7 @@ from pathlib import Path
 
 LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 
-BASE_PATH = Path("metadata/")
+BASE_PATH = Path("metadata/v20/")
 VERSION = "v20"
 VERSION_PATH = BASE_PATH / VERSION
 SCHEMA_BUILD_PATH = VERSION_PATH / "build_source"
