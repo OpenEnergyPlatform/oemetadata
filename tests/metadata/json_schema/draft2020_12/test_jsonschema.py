@@ -28,9 +28,9 @@ def test_jsonschema_should_have_correct_path_string():
         return string.printable + s + string.printable
 
     assert get_string(OEMETADATA_JSONSCHEMA_DRAFT202012_SCHEMA["$schema"]) \
-        is get_string("https://json-schema.org/draft/2020-12/schema"), \
+        == get_string("https://json-schema.org/draft/2020-12/schema"), \
         "Wrong schema path in JSON Schema (draft2020-12) with strings!"
 
     assert get_string(OEMETADATA_JSONSCHEMA_DRAFT202012_SCHEMA["$id"]) \
-        is get_string("https://json-schema.org/draft/2020-12/schema"), \
+        == get_string("https://json-schema.org/draft/2020-12/schema"), \
         "Wrong id path in JSON Schema (draft2020-12) with strings!"
