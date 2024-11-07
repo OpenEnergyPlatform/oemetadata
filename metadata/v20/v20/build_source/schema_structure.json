@@ -1,13 +1,13 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/develop/metadata/v20/schema.json",
-    "description": "Open Energy Platform (OEP) metadata schema latest",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v20/v20/schema.json",
+    "description": "Open Energy Metadata (OEMetadata) schema",
     "type": "object",
     "required": ["resources"],
     "properties": {
         "collection": {"$ref": "collection.json#"},
         "resources": {
-            "description": "A collection of related data resource descriptions and metadata. This may include relational data models which are technically related",
+            "description": "A collection of related resources.",
             "type": "array",
             "items": {
                 "type": "object",
