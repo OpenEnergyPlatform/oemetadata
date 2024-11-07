@@ -56,8 +56,8 @@ def generate_example(
         Union[Dict[str, Any], List[Any], str, None]:
             A JSON object generated from the schema.
     """
-    if "example" in schema:
-        return schema["example"]
+    if "examples" in schema:
+        return schema["examples"]
 
     schema_type = schema.get("type", None)
     if isinstance(schema_type, list):

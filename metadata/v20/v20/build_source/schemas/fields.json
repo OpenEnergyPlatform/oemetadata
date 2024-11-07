@@ -64,7 +64,7 @@
                                     "examples": ["geometry(Point, 4326)"],
                                     "badge": "Iron",
                                     "title": "Type",
-                                    "readonly": true
+                                    "readOnly": true
                                 },
                                 "nullable": {
                                     "description": "A boolean key to specify that a column can be nullable. True is the default value.",
@@ -72,7 +72,7 @@
                                     "examples": [true],
                                     "badge": "Iron",
                                     "title": "Nullable",
-                                    "readonly": true
+                                    "readOnly": true
                                 },
                                 "unit": {
                                     "description": "The unit of a field. If it does not apply, use 'null'. If the unit is given in a separate field, reference this field (e.g. 'unit'). Use a space between numbers and units (100 m).",

@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v20/v20/schema.json",
-  "description": "Open Energy Metadata (OEMetadata) schema",
+  "description": "Open Energy Metadata (OEMetadata) - metadata schema",
   "type": "object",
   "required": [
     "resources"
@@ -1100,7 +1100,7 @@
                       ],
                       "badge": "Iron",
                       "title": "Type",
-                      "readonly": true
+                      "readOnly": true
                     },
                     "nullable": {
                       "description": "A boolean key to specify that a column can be nullable. True is the default value.",
@@ -1113,7 +1113,7 @@
                       ],
                       "badge": "Iron",
                       "title": "Nullable",
-                      "readonly": true
+                      "readOnly": true
                     },
                     "unit": {
                       "description": "The unit of a field. If it does not apply, use 'null'. If the unit is given in a separate field, reference this field (e.g. 'unit'). Use a space between numbers and units (100 m).",

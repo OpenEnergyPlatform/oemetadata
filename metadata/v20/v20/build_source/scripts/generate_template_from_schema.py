@@ -4,7 +4,7 @@
 """
 Title: create template from json schema
 Description: Create template from json schema.
-Author: jh-RLI
+Author: jh-RLI, Ludee
 Email: jonas.huber@rl-institut.de
 Date: 2024-05-30
 Version: 1.0.0
