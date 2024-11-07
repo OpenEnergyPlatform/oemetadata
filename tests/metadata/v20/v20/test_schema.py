@@ -30,5 +30,5 @@ def test_oemetadata_schema_should_have_correct_path():
     ), "Wrong schema path in OEMetadata Schema (v2.0)!"
 
     assert get_string(OEMETADATA_V20_SCHEMA["$id"]) == get_string(
-        "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v20/schema.json"
+        "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v20/v20/schema.json"
     ), "Wrong id path in OEMetadata Schema (v2.0)!"
