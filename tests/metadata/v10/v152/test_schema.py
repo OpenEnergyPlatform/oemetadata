@@ -2,7 +2,7 @@ def test_oemetadata_schema_should_load():
     try:
         from metadata.v10.v152.schema import OEMETADATA_V152_SCHEMA
     except Warning:
-        print("Cannot open OEMetadata Schema v1.5.2!")
+        print("Cannot open OEMetadata Schema (v1.5.2)!")
 
 
 def test_jsonschema_should_validate_oemetadata_schema():
@@ -27,8 +27,8 @@ def test_oemetadata_schema_should_have_correct_path():
 
     assert get_string(OEMETADATA_V152_SCHEMA["$schema"]) == get_string(
         "http://json-schema.org/draft-07/schema#"
-    ), "Wrong schema path in OEMetadata Schema v1.5.2!"
+    ), "Wrong schema path in OEMetadata Schema (v1.5.2)!"
 
     assert get_string(OEMETADATA_V152_SCHEMA["$id"]) == get_string(
         "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v10/v152/schema.json"
-    ), "Wrong id path in OEMetadata Schema v1.5.2!"
+    ), "Wrong id path in OEMetadata Schema (v1.5.2)!"

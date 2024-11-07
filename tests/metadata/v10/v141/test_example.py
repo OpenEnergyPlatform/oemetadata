@@ -2,7 +2,7 @@ def test_oemetadata_example_should_load():
     try:
         from metadata.v10.v141.example import OEMETADATA_V141_EXAMPLE
     except Warning:
-        print("Cannot open OEMetadata Example v1.4.1!")
+        print("Cannot open OEMetadata Example (v1.4.1)!")
 
 
 def test_oemetadata_schema_should_validate_oemetadata_example():

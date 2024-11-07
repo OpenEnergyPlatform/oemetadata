@@ -2,7 +2,7 @@ def test_oemetadata_template_should_load():
     try:
         from metadata.v10.v130.template import OEMETADATA_V130_TEMPLATE
     except Warning:
-        print("Cannot open OEMetadata Template v1.3.0!")
+        print("Cannot open OEMetadata Template (v1.3.0)!")
 
 
 def test_oemetadata_schema_should_validate_oemetadata_template():
