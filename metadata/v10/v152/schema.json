@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v10/v152/schema.json",
-    "description": "Open Energy Plaftorm (OEP) metadata schema v1.5.2",
+    "description": "Open Energy Platform (OEP) metadata schema v1.5.2",
     "type": "object",
     "properties": {
         "@context": {
@@ -117,7 +117,7 @@
             "format": "date"
         },
         "context": {
-            "description": "Object. Contains name-value-pairs that describe the general setting, evironment or project leading to the creation or maintenance of this dataset.",
+            "description": "Object. Contains name-value-pairs that describe the general setting, environment or project leading to the creation or maintenance of this dataset.",
             "type": "object",
             "properties": {
                 "homepage": {
@@ -367,7 +367,7 @@
                                     "title": "Instruction"
                                 },
                                 "attribution": {
-                                    "description": "Copyrightholder of the source. Example: © Intergovernmental Panel on Climate Change 2014",
+                                    "description": "Copyright holder of the source. Example: © Intergovernmental Panel on Climate Change 2014",
                                     "type": [
                                         "string",
                                         "null"
@@ -425,7 +425,7 @@
                         "title": "Instruction"
                     },
                     "attribution": {
-                        "description": "Copyrightholder of the produced data set. Example: © Reiner Lemoine Institut",
+                        "description": "Copyright holder of the produced data set. Example: © Reiner Lemoine Institut",
                         "type": [
                             "string",
                             "null"
@@ -463,7 +463,7 @@
                         "format": "email"
                     },
                     "date": {
-                        "description": "Date of the contribution. If the contribution took more than a day, use the date of the final contribiution. Date Format is ISO 8601. Example: 2016-06-16",
+                        "description": "Date of the contribution. If the contribution took more than a day, use the date of the final contribution. Date Format is ISO 8601. Example: 2016-06-16",
                         "type": [
                             "string",
                             "null"
@@ -531,7 +531,7 @@
                         }
                     },
                     "format": {
-                        "description": "\"csv\", \"xls\", \"json\" etc. would be expected to be the standard file extension for this type of resource. When you upload your data to the OEDB, in the shown metadata string, the format will be changed accordingly to \"PostgreSQL\", since the data there are stored in a database. Example: csv",
+                        "description": "\"csv\", \"xls\", \"json\" etc. would be expected to be the standard file extension for this type of resource. When you upload your data to the OEP, in the shown metadata string, the format will be changed accordingly to \"PostgreSQL\", since the data there are stored in a database. Example: csv",
                         "type": [
                             "string",
                             "null"
@@ -625,7 +625,7 @@
                                                 "type": "object",
                                                 "properties": {
                                                     "value": {
-                                                        "description": "The value this reference is assinged to.",
+                                                        "description": "The value this reference is assigned to.",
                                                         "type": [
                                                             "string",
                                                             "null"
@@ -689,7 +689,7 @@
                                     "type": "object",
                                     "properties": {
                                         "fields": {
-                                            "description": "The column (as list of items) in the table that is constrainted by the foreign key. Example: version",
+                                            "description": "The column (as list of items) in the table that is constrained by the foreign key. Example: version",
                                             "type": "array",
                                             "items": {
                                                 "type": [
@@ -784,7 +784,7 @@
                     "title": "Path"
                 },
                 "badge": {
-                    "description": "A badge of either Bronze, Silver, Gold or Platin is used to label the given metadata based on its quality. Example: Platin",
+                    "description": "A badge of either Bronze, Silver, Gold or Platinum is used to label the given metadata based on its quality. Example: Platinum",
                     "type": [
                         "string",
                         "null"

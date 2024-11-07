@@ -213,7 +213,7 @@
                     "type": "string"
                 },
                 "_contains": {
-                    "description": "Metametadata: Link(s) to description of metadata structure. Example: http://www.json.org/; http://stackoverflow.com/questions/383692/what-is-json-and-why-would-i-use-it",
+                    "description": "MetaMetadata: Link(s) to description of metadata structure. Example: http://www.json.org/; http://stackoverflow.com/questions/383692/what-is-json-and-why-would-i-use-it",
                     "type": "string"
                 },
                 "_additional_information": {
