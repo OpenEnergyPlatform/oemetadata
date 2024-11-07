@@ -6,14 +6,30 @@ def test_jsonschema_should_load():
         print("Cannot open JSON Schema (draft2020-12)!")
 
 
-def test_jsonschema_should_have_correct_path():
+def test_jsonschema_should_have_correct_path_old():
     from metadata.json_schema.draft2020_12.schema \
         import OEMETADATA_JSONSCHEMA_DRAFT202012_SCHEMA
 
     assert OEMETADATA_JSONSCHEMA_DRAFT202012_SCHEMA["$schema"] \
-        is "https://json-schema.org/draft/2020-12/schema", \
-        "Wrong schema path in JSON Schema (draft2020-12)!"
+        == "https://json-schema.org/draft/2020-12/schema", \
+        "Wrong schema path in JSON Schema (draft2020-12) old!"
 
     assert OEMETADATA_JSONSCHEMA_DRAFT202012_SCHEMA["$id"] \
-        is "https://json-schema.org/draft/2020-12/schema", \
+        == "https://json-schema.org/draft/2020-12/schema", \
+        "Wrong id path in JSON Schema (draft2020-12) old!"
+
+def test_jsonschema_should_have_correct_path():
+    from metadata.json_schema.draft2020_12.schema \
+        import OEMETADATA_JSONSCHEMA_DRAFT202012_SCHEMA
+    import string
+
+    def get_string(s):
+        return string.printable + s + string.printable
+
+    assert get_string(OEMETADATA_JSONSCHEMA_DRAFT202012_SCHEMA["$schema"]) \
+        == get_string("https://json-schema.org/draft/2020-12/schema#"), \
+        "Wrong schema path in JSON Schema (draft2020-12)!"
+
+    assert get_string(OEMETADATA_JSONSCHEMA_DRAFT202012_SCHEMA["$id"]) \
+        == get_string("https://json-schema.org/draft/2020-12/schema"), \
         "Wrong id path in JSON Schema (draft2020-12)!"
