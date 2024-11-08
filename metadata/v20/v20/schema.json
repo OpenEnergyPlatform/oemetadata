@@ -515,7 +515,7 @@
                     "title": "Extent URI"
                   },
                   "resolutionValue": {
-                    "description": "The value of the resolution.",
+                    "description": "The value of the spatial resolution.",
                     "type": [
                       "string",
                       "null"
@@ -524,10 +524,10 @@
                       "100"
                     ],
                     "badge": "Silver",
-                    "title": "Resolution Value"
+                    "title": "Spatial Resolution Value"
                   },
                   "resolutionUnit": {
-                    "description": "The unit of the resolution.",
+                    "description": "The unit of the spatial resolution.",
                     "type": [
                       "string",
                       "null"
@@ -536,7 +536,7 @@
                       "m"
                     ],
                     "badge": "Silver",
-                    "title": "Resolution Unit"
+                    "title": "Spatial Resolution Unit"
                   },
                   "boundingBox": {
                     "description": "The covered area specified by the coordinates of a bounding box. The format is [minLon, minLat, maxLon, maxLat] or [W,S,E,N].",
@@ -624,17 +624,29 @@
                       "title": "Timeseries End",
                       "format": "date-time"
                     },
-                    "resolution": {
-                      "description": "The time span between individual information points in a time series.",
+                    "resolutionValue": {
+                      "description": "The time span between individual information points in a time series. The value of the resolution.",
                       "type": [
                         "string",
                         "null"
                       ],
                       "examples": [
-                        "30 s"
+                        "15"
                       ],
                       "badge": "Silver",
-                      "title": "Timeseries Resolution"
+                      "title": "Timeseries Resolution Value"
+                    },
+                    "resolutionUnit": {
+                      "description": "The unit of the temporal resolution.",
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "examples": [
+                        "min"
+                      ],
+                      "badge": "Silver",
+                      "title": "Timeseries Resolution Unit"
                     },
                     "alignment": {
                       "description": "An indicator of whether timestamps in a time series are to the left, right or in the centre.",
