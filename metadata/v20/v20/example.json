@@ -1,172 +1,184 @@
 {
-    "name": "",
-    "title": "",
-    "description": "",
-    "id": "",
+    "name": "oep_oemetadata",
+    "title": "OEP OEMetadata",
+    "description": "A collection of tables for the OEMetadata examples.",
+    "id": "https://databus.openenergyplatform.org/oeplatform/reference",
     "resources": [
         {
-            "@id": "",
-            "@context": "",
-            "name": "",
+            "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07",
+            "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/context.json",
+            "name": "oep_oemetadata_table_example",
             "topics": [
-                ""
+                "model_draft",
+                "reference"
             ],
-            "title": "",
-            "path": "",
-            "description": "",
+            "title": "OEP OEMetadata Example Table",
+            "path": "http://openenergyplatform.org/dataedit/view/model_draft/oep_oemetadata_table_example",
+            "description": "Example table used to illustrate the OEMetadata structure and meaning.",
             "languages": [
-                ""
+                "en-GB",
+                "de-DE"
             ],
             "subject": [
                 {
-                    "name": "",
-                    "path": ""
+                    "name": "energy",
+                    "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000150"
                 }
             ],
             "keywords": [
-                ""
+                "example",
+                "ODbL-1.0",
+                "NFDI4Energy"
             ],
-            "publicationDate": "",
+            "publicationDate": "2024-10-15",
             "embargoPeriod": {
-                "start": "",
-                "end": "",
-                "isActive": null
+                "start": "2024-10-11",
+                "end": "2025-01-01",
+                "isActive": true
             },
             "context": {
-                "title": "",
-                "homepage": "",
-                "documentation": "",
-                "sourceCode": "",
-                "publisher": "",
-                "publisherLogo": "",
-                "contact": "",
-                "fundingAgency": "",
-                "fundingAgencyLogo": "",
-                "grantNo": ""
+                "title": "NFDI4Energy",
+                "homepage": "https://nfdi4energy.uol.de/",
+                "documentation": "https://nfdi4energy.uol.de/sites/about_us/",
+                "sourceCode": "https://github.com/NFDI4Energy",
+                "publisher": "Open Energy Platform (OEP)",
+                "publisherLogo": "https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg",
+                "contact": "contact@example.com",
+                "fundingAgency": " Deutsche Forschungsgemeinschaft (DFG)",
+                "fundingAgencyLogo": "https://upload.wikimedia.org/wikipedia/commons/8/86/DFG-logo-blau.svg",
+                "grantNo": "501865131"
             },
             "spatial": {
                 "location": {
-                    "address": "",
-                    "@id": "",
-                    "latitude": "",
-                    "longitude": ""
+                    "address": "Rudower Chaussee 12, 12489 Berlin",
+                    "@id": "https://www.wikidata.org/wiki/Q77077223",
+                    "latitude": "52.432822",
+                    "longitude": "13.5351004"
                 },
                 "extent": {
-                    "name": "",
-                    "@id": "",
-                    "resolutionValue": "",
-                    "resolutionUnit": "",
+                    "name": "Berlin",
+                    "@id": "https://www.wikidata.org/wiki/Q64",
+                    "resolutionValue": "100",
+                    "resolutionUnit": "m",
                     "boundingBox": [
-                        null
+                        13.08825,
+                        52.33859,
+                        13.76104,
+                        52.6754
                     ],
-                    "crs": ""
+                    "crs": "EPSG:4326"
                 }
             },
             "temporal": {
-                "referenceDate": "",
+                "referenceDate": "2020-01-01",
                 "timeseries": [
                     {
-                        "start": "",
-                        "end": "",
-                        "resolution": "",
-                        "alignment": "",
-                        "aggregationType": ""
+                        "start": "2020-01-01T00:00:00+00:00",
+                        "end": "2020-01-01T23:59:30+00:00",
+                        "resolution": "30 s",
+                        "alignment": "left",
+                        "aggregationType": "current"
                     }
                 ]
             },
             "sources": [
                 {
-                    "title": "",
+                    "title": "IPCC Sixth Assessment Report (AR6) - Climate Change 2023 - Synthesis Report",
                     "authors": [
-                        ""
+                        "Hoesung Lee",
+                        "José Romero",
+                        "The Core Writing Team"
                     ],
-                    "description": "",
-                    "publicationYear": "",
-                    "path": "",
+                    "description": "A Report of the Intergovernmental Panel on Climate Change.",
+                    "publicationYear": "2023",
+                    "path": "https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf",
                     "licenses": [
                         {
-                            "name": "",
-                            "title": "",
-                            "path": "",
-                            "instruction": "",
-                            "attribution": "",
-                            "copyrightStatement": ""
+                            "name": "ODbL-1.0",
+                            "title": "Open Data Commons Open Database License 1.0",
+                            "path": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
+                            "instruction": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-odbl for further information.",
+                            "attribution": "© Intergovernmental Panel on Climate Change 2023",
+                            "copyrightStatement": "https://www.ipcc.ch/copyright/"
                         }
                     ]
                 }
             ],
             "licenses": [
                 {
-                    "name": "ODbL-1.0",
-                    "title": "Open Data Commons Open Database License 1.0",
-                    "path": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
-                    "instruction": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information.",
-                    "attribution": "© Reiner Lemoine Institut"
+                    "name": "",
+                    "title": "",
+                    "path": "",
+                    "instruction": "",
+                    "attribution": ""
                 }
             ],
             "contributors": [
                 {
-                    "title": "",
-                    "path": "",
-                    "organization": "",
+                    "title": "Ludwig Hülk",
+                    "path": "https://github.com/Ludee",
+                    "organization": "Reiner Lemoine Institut",
                     "roles": [
-                        ""
+                        "creator",
+                        "dataCurator"
                     ],
-                    "date": "",
-                    "object": "",
-                    "comment": ""
+                    "date": "2024-10-21",
+                    "object": "data and metadata",
+                    "comment": "Add general context."
                 }
             ],
-            "type": "",
-            "format": "",
-            "encoding": "",
+            "type": "table",
+            "format": "CSV",
+            "encoding": "UTF-8",
             "schema": {
                 "fields": [
                     {
-                        "name": "",
-                        "description": "",
-                        "type": "",
-                        "nullable": null,
-                        "unit": "",
+                        "name": "year",
+                        "description": "Reference year for which the data was collected.",
+                        "type": "geometry(Point, 4326)",
+                        "nullable": true,
+                        "unit": "MW",
                         "isAbout": [
                             {
-                                "name": "",
-                                "path": ""
+                                "name": "wind energy converting unit",
+                                "path": "https://openenergyplatform.org/ontology/oeo/OEO_00000044"
                             }
                         ],
                         "valueReference": [
                             {
-                                "value": "",
-                                "name": "",
-                                "path": ""
+                                "value": "onshore",
+                                "name": "onshore wind farm",
+                                "path": "https://openenergyplatform.org/ontology/oeo/OEO_00000311"
                             }
                         ]
                     }
                 ],
                 "primaryKey": [
-                    ""
+                    "id"
                 ],
                 "foreignKeys": [
                     {
                         "fields": [
-                            ""
+                            "id",
+                            "version"
                         ],
                         "reference": {
-                            "resource": "",
+                            "resource": "model_draft.oep_oemetadata_table_example_version",
                             "fields": [
-                                ""
+                                "id",
+                                "version"
                             ]
                         }
                     }
                 ]
             },
             "dialect": {
-                "delimiter": "",
-                "decimalSeparator": ""
+                "delimiter": ";",
+                "decimalSeparator": "."
             },
             "review": {
-                "path": "",
-                "badge": ""
+                "path": "https://www.example.com",
+                "badge": "Platinum"
             }
         }
     ],

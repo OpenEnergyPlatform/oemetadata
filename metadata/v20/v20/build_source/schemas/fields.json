@@ -16,7 +16,7 @@
             "format": {
                 "description": "A file extension format. Possible options are 'csv', 'xlsx', 'json', 'PostgreSQL', 'SQLite' and other standard file extensions.",
                 "type": ["string", "null"],
-                "examples": ["PostgreSQL", "CSV"],
+                "examples": ["CSV"],
                 "badge": "Gold",
                 "title": "Format",
                 "options": {

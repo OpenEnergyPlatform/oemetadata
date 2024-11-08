@@ -85,8 +85,22 @@ def main():
 
     logger.info(f"template JSON generated and saved to {template_file_path}")
 
+    # WARNING: The metaMetadata is missing and the boundingBox is wrong!
+
+def test_oemetadata_schema_should_validate_oemetadata_template():
+    from jsonschema import validate, ValidationError
+    from metadata.v20.v20.template import OEMETADATA_V20_TEMPLATE
+    from metadata.v20.v20.schema import OEMETADATA_V20_SCHEMA
+
+    try:
+        validate(OEMETADATA_V20_TEMPLATE, OEMETADATA_V20_SCHEMA)
+        print("OEMetadata Template is valid OEMetadata Schema (v2.0).")
+    except ValidationError as e:
+        print("Cannot validate OEMetadata Template with Schema (v2.0)!", e)
+
 
 if __name__ == "__main__":
     logger.info("Generation started.")
     main()
+    test_oemetadata_schema_should_validate_oemetadata_template()
     logger.info("Generation ended.")

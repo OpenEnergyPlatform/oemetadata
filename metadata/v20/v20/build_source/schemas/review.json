@@ -18,7 +18,7 @@
                 "badge": {
                     "description": "A badge of either Iron, Bronze, Silver, Gold or Platinum is used to label the quality of the metadata.",
                     "type": ["string", "null"],
-                    "examples": ["Iron","Bronze","Silver","Gold","Platinum"],
+                    "examples": ["Platinum"],
                     "badge": null,
                     "title": "Badge"
                 }
