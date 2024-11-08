@@ -1411,7 +1411,9 @@
       "properties": {
         "metadataVersion": {
           "description": "Type and version number of the metadata.",
-          "example": "OEMetadata-2.0.1",
+          "examples": [
+            "OEMetadata-2.0.1"
+          ],
           "type": [
             "string",
             "null"
@@ -1420,26 +1422,30 @@
           "title": "Metadata Version"
         },
         "metadataLicense": {
-          "description": "The license of the provided metadata. ",
+          "description": "The license of the OEMetadata. ",
           "type": "object",
           "properties": {
             "name": {
-              "description": "The [SPDX](https://spdx.org/licenses/) identifier.",
+              "description": "The SPDX identifier.",
               "type": [
                 "string",
                 "null"
               ],
-              "example": "CC0-1.0",
+              "examples": [
+                "CC0-1.0"
+              ],
               "badge": null,
               "title": "License Name"
             },
             "title": {
-              "description": "The official (human-readable) title of the license.",
+              "description": "The official (human readable) title of the license.",
               "type": [
                 "string",
                 "null"
               ],
-              "example": "Creative Commons Zero v1.0 Universal",
+              "examples": [
+                "Creative Commons Zero v1.0 Universal"
+              ],
               "badge": null,
               "title": "License Title"
             },
@@ -1449,7 +1455,9 @@
                 "string",
                 "null"
               ],
-              "example": "https://creativecommons.org/publicdomain/zero/1.0",
+              "examples": [
+                "https://creativecommons.org/publicdomain/zero/1.0"
+              ],
               "badge": null,
               "title": "License Path",
               "format": "uri"
