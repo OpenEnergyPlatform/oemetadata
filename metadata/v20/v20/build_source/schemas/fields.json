@@ -92,14 +92,14 @@
                                                 "type": ["string", "null"],
                                                 "examples": ["wind energy converting unit"],
                                                 "badge": "Platinum",
-                                                "title": "Name"
+                                                "title": "Is About Name"
                                             },
-                                            "path": {
+                                            "@id": {
                                                 "description": "The path of the ontology term (IRI).",
                                                 "type": ["string", "null"],
                                                 "examples": ["https://openenergyplatform.org/ontology/oeo/OEO_00000044"],
                                                 "badge": "Platinum",
-                                                "title": "Path",
+                                                "title": "Is About URI",
                                                 "format": "uri"
                                             }
                                         },
@@ -120,21 +120,21 @@
                                                 "type": ["string", "null"],
                                                 "examples": ["onshore"],
                                                 "badge": "Platinum",
-                                                "title": "Value"
+                                                "title": "Value Reference"
                                             },
                                             "name": {
                                                 "description": "The class label of the ontology term in the column.",
                                                 "type": ["string", "null"],
                                                 "examples": ["onshore wind farm"],
                                                 "badge": "Platinum",
-                                                "title": "Name"
+                                                "title": "Value Reference Name"
                                             },
-                                            "path": {
+                                            "@id": {
                                                 "description": "The path of the ontology term (IRI) in the column.",
                                                 "type": ["string", "null"],
                                                 "examples": ["https://openenergyplatform.org/ontology/oeo/OEO_00000311"],
                                                 "badge": "Platinum",
-                                                "title": "Path",
+                                                "title": "Value Reference URI",
                                                 "format": "uri"
                                             }
                                         },

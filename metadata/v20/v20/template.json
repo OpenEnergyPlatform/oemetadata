@@ -20,7 +20,7 @@
       "subject": [
         {
           "name": "",
-          "path": ""
+          "@id": ""
         }
       ],
       "keywords": [
@@ -57,11 +57,8 @@
           "resolutionValue": "",
           "resolutionUnit": "",
           "boundingBox": [
-                13.08825,
-                52.33859,
-                13.76104,
-                52.6754
-            ],
+            0,0,0,0
+          ],
           "crs": ""
         }
       },
@@ -134,14 +131,14 @@
             "isAbout": [
               {
                 "name": "",
-                "path": ""
+                "@id": ""
               }
             ],
             "valueReference": [
               {
                 "value": "",
                 "name": "",
-                "path": ""
+                "@id": ""
               }
             ]
           }
@@ -173,7 +170,7 @@
       }
     }
   ],
-    "metaMetadata": {
+  "metaMetadata": {
         "metadataVersion": "OEMetadata-2.0.1",
         "metadataLicense": {
             "name": "CC0-1.0",
