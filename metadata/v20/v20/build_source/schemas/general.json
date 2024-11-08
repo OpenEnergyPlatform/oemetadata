@@ -69,14 +69,14 @@
                         "type": ["string", "null"],
                         "examples": ["energy"],
                         "badge": "Platinum",
-                        "title": "Name"
+                        "title": "Subject Name"
                     },
-                    "path": {
+                    "@id": {
                         "description": "A unique identifier (URI/IRI) of the ontology class.",
                         "type": ["string", "null"],
                         "examples": ["https://openenergy-platform.org/ontology/oeo/OEO_00000150"],
                         "badge": "Platinum",
-                        "title": "Path",
+                        "title": "Subject @Id",
                         "format": "uri"
                     }
                 },
