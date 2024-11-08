@@ -15,18 +15,18 @@
                     "title": "Metadata Version"
                 },
                 "metadataLicense": {
-                    "description": "The license of the provided metadata. ",
+                    "description": "The license of the OEMetadata. ",
                     "type": "object",
                     "properties": {
                         "name": {
-                            "description": "The [SPDX](https://spdx.org/licenses/) identifier.",
+                            "description": "The SPDX identifier.",
                             "type": ["string", "null"],
                             "example": "CC0-1.0",
                             "badge": null,
                             "title": "License Name"
                         },
                         "title": {
-                            "description": "The official (human-readable) title of the license.",
+                            "description": "The official (human readable) title of the license.",
                             "type": ["string", "null"],
                             "example": "Creative Commons Zero v1.0 Universal",
                             "badge": null,
