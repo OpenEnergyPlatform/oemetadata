@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Update documentation and README [(#209)](https://github.com/OpenEnergyPlatform/oemetadata/pull/209)
 - Move old metadata versions to folder [(#209)](https://github.com/OpenEnergyPlatform/oemetadata/pull/209)
+- Rename URI from `path` to `@id` [(#214)](https://github.com/OpenEnergyPlatform/oemetadata/pull/214)
 
 ### Removed
 - [(#)]()
