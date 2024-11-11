@@ -19,7 +19,7 @@ SPDX-FileCopyrightText = "Ludwig Hülk (@Ludee) © Reiner Lemoine Institut"
 SPDX-License-Identifier = "CC0-1.0"
 
 [[annotations]]
-path = ".github/ISSUE_TEMPLATE/*"
+path = ".github/ISSUE_TEMPLATE/*.md"
 precedence = "override"
 SPDX-FileCopyrightText = "Ludwig Hülk (@Ludee) © Reiner Lemoine Institut"
 SPDX-License-Identifier = "CC0-1.0"
