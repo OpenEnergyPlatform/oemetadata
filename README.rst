@@ -14,7 +14,7 @@ Open Energy Metadata (OEMetadata)
    :widths: auto
 
    * - License
-     - |badge_license|
+     - |badge_license| |badge_reuse|
    * - Documentation
      - |badge_documentation|
    * - Publication
@@ -68,6 +68,10 @@ License and Citation
 .. |badge_license| image:: https://img.shields.io/github/license/OpenEnergyPlatform/oemetadata
     :target: https://github.com/OpenEnergyPlatform/oemetadata/blob/production/LICENSE.txt
     :alt: License
+
+.. |badge_reuse| image:: https://api.reuse.software/badge/github.com/OpenEnergyPlatform/oemetadata
+    :target: https://api.reuse.software/info/github.com/OpenEnergyPlatform/oemetadata
+    :alt: REUSE
 
 .. |badge_documentation| image:: https://img.shields.io/github/actions/workflow/status/OpenEnergyPlatform/oemetadata/gh-pages.yml?branch=release-v2.0.1
     :target: https://openenergyplatform.github.io/oemetadata/
