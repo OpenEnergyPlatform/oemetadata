@@ -20,7 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- [(#)]()
+- Add REUSE Software compliance check [(#218)](https://github.com/OpenEnergyPlatform/oemetadata/pull/218)
 
 ### Changed
 - Update documentation and README [(#209)](https://github.com/OpenEnergyPlatform/oemetadata/pull/209)
