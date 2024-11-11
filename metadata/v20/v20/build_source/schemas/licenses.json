@@ -12,21 +12,21 @@
                     "name": {
                         "description": "The SPDX identifier.",
                         "type": ["string", "null"],
-                        "example": "ODbL-1.0",
+                        "examples": ["ODbL-1.0"],
                         "badge": "Bronze",
                         "title": "Name"
                     },
                     "title": {
                         "description": "The official (human readable) title of the license.",
                         "type": ["string", "null"],
-                        "example": "Open Data Commons Open Database License 1.0",
+                        "examples": ["Open Data Commons Open Database License 1.0"],
                         "badge": "Bronze",
                         "title": "Title"
                     },
                     "path": {
                         "description": "A link or path to the license text.",
                         "type": ["string", "null"],
-                        "example": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
+                        "examples": ["https://opendatacommons.org/licenses/odbl/1-0/index.html"],
                         "badge": "Bronze",
                         "title": "Path",
                         "format": "uri"
@@ -34,16 +34,23 @@
                     "instruction": {
                         "description": "A short description of rights and obligations. The use of tl;drLegal is recommended.",
                         "type": ["string", "null"],
-                        "example": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information.",
+                        "examples": ["You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information."],
                         "badge": "Bronze",
                         "title": "Instruction"
                     },
                     "attribution": {
                         "description": "A copyright holder of the data. Must be provided if attribution licenses are used.",
                         "type": ["string", "null"],
-                        "example": "© Reiner Lemoine Institut",
+                        "examples": ["© Reiner Lemoine Institut"],
                         "badge": "Bronze",
                         "title": "Attribution"
+                    },
+                    "copyrightStatement": {
+                        "description": "A link or path that proves that the source or data has the appropriate license. This can be a page number or website imprint.",
+                        "type": ["string", "null"],
+                        "examples": ["https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/LICENSE.txt"],
+                        "badge": "Bronze",
+                        "title": "Copyright Statement"
                     }
                 },
                 "badge": "Bronze",
