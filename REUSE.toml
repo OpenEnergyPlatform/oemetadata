@@ -7,9 +7,7 @@ version = 1
 [[annotations]]
 path = "docs/*"
 precedence = "override"
-SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut"
-SPDX-FileCopyrightText = "Jonas Huber <jh-RLI> © Reiner Lemoine Institut"
-SPDX-FileCopyrightText = "Christian Hofmann <christian-rli> © Reiner Lemoine Institut"
+SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut; Jonas Huber <jh-RLI> © Reiner Lemoine Institut; Christian Hofmann <christian-rli> © Reiner Lemoine Institut"
 SPDX-License-Identifier = "CC-BY-4.0"
 
 [[annotations]]
@@ -52,12 +50,10 @@ SPDX-License-Identifier = "CC0-1.0"
 path = "setup.py"
 precedence = "override"
 SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut"
-SPDX-FileCopyrightText = "Jonas Huber <jh-RLI> © Reiner Lemoine Institut"
 SPDX-License-Identifier = "CC0-1.0"
 
 [[annotations]]
 path = "setup.cfg"
 precedence = "override"
 SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut"
-SPDX-FileCopyrightText = "Jonas Huber <jh-RLI> © Reiner Lemoine Institut"
 SPDX-License-Identifier = "CC0-1.0"
