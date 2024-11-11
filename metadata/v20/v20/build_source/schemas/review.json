@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v20/v20/review.json",
+    "type": "object",
+    "properties": {
+        "review": {
+            "description": "The metadata on the OEP can go through an open peer review process. See the Academy course [Open Peer Review](https://openenergyplatform.github.io/academy/courses/09_peer_review/) for further information.",
+            "type": "object",
+            "properties": {
+                "path": {
+                    "description": "A link or path to the documented open peer review.",
+                    "type": ["string", "null"],
+                    "examples": ["https://www.example.com"],
+                    "badge": null,
+                    "title": "Path",
+                    "format": "uri"
+                },
+                "badge": {
+                    "description": "A badge of either Iron, Bronze, Silver, Gold or Platinum is used to label the quality of the metadata.",
+                    "type": ["string", "null"],
+                    "examples": ["Platinum"],
+                    "badge": null,
+                    "title": "Badge"
+                }
+            },
+            "title": "Review",
+            "options": {
+                "hidden": true
+            }
+        }
+    }
+}

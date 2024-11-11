@@ -1,0 +1,38 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v20/v20/build_source/schemas/collection.json",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "A filename or database conform collection name.",
+            "type": ["string", "null"],
+            "examples": ["oep_oemetadata"],
+            "badge": "Iron",
+            "title": "Collection Name"
+        },
+        "title": {
+            "description": "A human readable collection name.",
+            "type": ["string", "null"],
+            "examples": ["OEP OEMetadata"],
+            "badge": "Bronze",
+            "title": "Collection Title"
+        },
+        "description": {
+            "description": "A free text description of the collection.",
+            "type": ["string", "null"],
+            "examples": ["A collection of tables for the OEMetadata examples."],
+            "badge": "Bronze",
+            "title": "Collection Description"
+        },
+        "id": {
+            "description": "A unique identifier (UUID/DOI) for the collection.",
+            "type": ["string", "null"],
+            "examples": ["https://databus.openenergyplatform.org/oeplatform/reference"],
+            "badge": "Silver",
+            "title": "Collection Identifier",
+            "format": "uri",
+            "readOnly": true
+        }
+    },
+    "required": ["name"]
+}

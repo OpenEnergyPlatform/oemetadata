@@ -1,0 +1,109 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v20/v20/spatial.json",
+    "type": "object",
+    "properties": {
+        "spatial": {
+            "description": "An object that describes the spatial context of the data.",
+            "type": "object",
+            "properties": {
+                "location": {
+                    "description": "An object that describes a covered area or region.",
+                    "type": "object",
+                    "properties": {
+                        "address": {
+                            "description": "An address of the location of the data. May be specified with street name, house number, zip code, and city name.",
+                            "type": ["string", "null"],
+                            "examples": ["Rudower Chaussee 12, 12489 Berlin"],
+                            "badge": "Silver",
+                            "title": "Address"
+                        },
+                        "@id": {
+                            "description": "A path or URI to a specific location. It can use Wikidata or OpenStreetMap.",
+                            "type": ["string", "null"],
+                            "examples": ["https://www.wikidata.org/wiki/Q77077223"],
+                            "badge": "Platinum",
+                            "title": "Address"
+                        },
+                        "latitude": {
+                            "description": "The latitude (lat) information of the location. Specifies the north / south position of the geometry.",
+                            "type": ["string", "null"],
+                            "examples": ["52.432822"],
+                            "badge": "Gold",
+                            "title": "Latitude"
+                        },
+                        "longitude": {
+                            "description": "The longitude (lon) information of the location. Specifies the east / west position of the geometry.",
+                            "type": ["string", "null"],
+                            "examples": ["13.5351004"],
+                            "badge": "Gold",
+                            "title": "Longitude"
+                        }
+                    },
+                    "badge": "Silver",
+                    "title": "Extent"
+                },
+                "extent": {
+                    "description": "An object that describes a covered area or region.",
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "description": "The name of the region.",
+                            "type": ["string", "null"],
+                            "examples": ["Berlin"],
+                            "badge": "Silver",
+                            "title": "Extent Name"
+                        },
+                        "@id": {
+                            "description": "A URI reference for the region.",
+                            "type": ["string", "null"],
+                            "examples": ["https://www.wikidata.org/wiki/Q64"],
+                            "format": "uri",
+                            "badge": "Platinum",
+                            "title": "Extent URI"
+                        },
+                        "resolutionValue": {
+                            "description": "The value of the resolution.",
+                            "type": ["string", "null"],
+                            "examples": ["100"],
+                            "badge": "Silver",
+                            "title": "Resolution Value"
+                        },
+                        "resolutionUnit": {
+                            "description": "The unit of the resolution.",
+                            "type": ["string", "null"],
+                            "examples": ["m"],
+                            "badge": "Silver",
+                            "title": "Resolution Unit"
+                        },
+                        "boundingBox": {
+                            "description": "The covered area specified by the coordinates of a bounding box. The format is [minLon, minLat, maxLon, maxLat] or [W,S,E,N].",
+                            "type": "array",
+                            "examples": [13.08825, 52.33859, 13.76104, 52.6754],
+                            "items": {
+                                "type": "number"
+                            },
+                            "minItems": 4,
+                            "maxItems": 4,
+                            "badge": "Gold",
+                            "title": "Bounding Box"
+                        },
+                        "crs": {
+                            "description": "The Coordinate Reference System, specified as an EPSG code.",
+                            "type": ["string", "null"],
+                            "examples": ["EPSG:4326"],
+                            "badge": "Gold",
+                            "title": " Coordinate Reference System (CRS)"
+                        }
+
+
+                    },
+                    "badge": "Silver",
+                    "title": "Extent"
+                }
+            },
+            "badge": "Silver",
+            "title": "Spatial"
+        }
+    }
+}

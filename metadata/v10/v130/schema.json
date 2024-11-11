@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v130/schema.json",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v10/v130/schema.json",
     "description": "Contains general information",
     "type": "object",
     "properties": {
@@ -201,7 +201,7 @@
                     "type": "string"
                 },
                 "_copyright": {
-                    "description": "Copyrightholder of the produced data set. Example: © Reiner Lemoine Institut",
+                    "description": "Copyright holder of the produced data set. Example: © Reiner Lemoine Institut",
                     "type": "string"
                 },
                 "_metadata_license": {
@@ -213,7 +213,7 @@
                     "type": "string"
                 },
                 "_contains": {
-                    "description": "Metametadata: Link(s) to description of metadata structure. Example: http://www.json.org/; http://stackoverflow.com/questions/383692/what-is-json-and-why-would-i-use-it",
+                    "description": "MetaMetadata: Link(s) to description of metadata structure. Example: http://www.json.org/; http://stackoverflow.com/questions/383692/what-is-json-and-why-would-i-use-it",
                     "type": "string"
                 },
                 "_additional_information": {

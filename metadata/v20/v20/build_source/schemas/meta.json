@@ -1,0 +1,54 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v20/v20/meta.json",
+    "type": "object",
+    "properties": {
+        "metaMetadata": {
+            "description": "An object that describes the metadata themselves, their format, version and license.",
+            "type": "object",
+            "properties": {
+                "metadataVersion": {
+                    "description": "Type and version number of the metadata.",
+                    "examples": ["OEMetadata-2.0.1"],
+                    "type": ["string", "null"],
+                    "badge": null,
+                    "title": "Metadata Version"
+                },
+                "metadataLicense": {
+                    "description": "The license of the OEMetadata. ",
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "description": "The SPDX identifier.",
+                            "type": ["string", "null"],
+                            "examples": ["CC0-1.0"],
+                            "badge": null,
+                            "title": "License Name"
+                        },
+                        "title": {
+                            "description": "The official (human readable) title of the license.",
+                            "type": ["string", "null"],
+                            "examples": ["Creative Commons Zero v1.0 Universal"],
+                            "badge": null,
+                            "title": "License Title"
+                        },
+                        "path": {
+                            "description": "A link or path to the license text.",
+                            "type": ["string", "null"],
+                            "examples": ["https://creativecommons.org/publicdomain/zero/1.0"],
+                            "badge": null,
+                            "title": "License Path",
+                            "format": "uri"
+                        }
+                    },
+                    "badge": null,
+                    "title": "Metadata License"
+                }
+            },
+            "title": "Meta Metadata",
+            "options": {
+                "hidden": true
+            }
+        }
+    }
+}

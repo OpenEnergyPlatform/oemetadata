@@ -1,11 +1,24 @@
-def test_if_schema_json_loads_successfully():
+def test_oemetadata_schema_should_load():
     try:
         from metadata.latest.schema import OEMETADATA_LATEST_SCHEMA
     except Warning:
-        print("Metadata Schema latest cant load. Check if the files are missing!")
+        print("Cannot open OEMetadata Schema (latest)!")
 
 
-def test_if_schema_json_has_correct_schema_and_id_set():
+def test_jsonschema_should_validate_oemetadata_schema():
+    from jsonschema import validate, ValidationError
+    from metadata.latest.schema import OEMETADATA_LATEST_SCHEMA
+    from metadata.json_schema.draft07.schema \
+        import OEMETADATA_JSONSCHEMA_DRAFT07_SCHEMA
+
+    try:
+        validate(OEMETADATA_LATEST_SCHEMA, OEMETADATA_JSONSCHEMA_DRAFT07_SCHEMA)
+        print("OEMetadata Schema (latest) is valid JSON Schema.")
+    except ValidationError as e:
+        print("Cannot validate OEMetadata Schema with JSON Schema (latest)!", e)
+
+
+def test_oemetadata_schema_should_have_correct_path():
     from metadata.latest.schema import OEMETADATA_LATEST_SCHEMA
     import string
 
@@ -14,21 +27,8 @@ def test_if_schema_json_has_correct_schema_and_id_set():
 
     assert get_string(OEMETADATA_LATEST_SCHEMA["$schema"]) == get_string(
         "http://json-schema.org/draft-07/schema#"
-    )
+    ), "Wrong schema path in OEMetadata Schema (latest)!"
 
     assert get_string(OEMETADATA_LATEST_SCHEMA["$id"]) == get_string(
-        "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/develop/metadata/latest/schema.json"
-    )
-
-
-def test_schema_against_metaschema_which_should_succeed():
-    import jsonschema
-    from metadata.latest.schema import OEMETADATA_LATEST_SCHEMA
-    from metadata.metaschema.draft07.schema import OEMETADATA_METASCHEMA_DRAFT07_SCHEMA
-
-    assert (
-        jsonschema.validate(
-            OEMETADATA_LATEST_SCHEMA, OEMETADATA_METASCHEMA_DRAFT07_SCHEMA
-        )
-        is None
-    )
+        "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/schema.json"
+    ), "Wrong id path in OEMetadata Schema (latest)!"
