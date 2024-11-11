@@ -98,9 +98,45 @@ def test_oemetadata_schema_should_validate_oemetadata_template():
     except ValidationError as e:
         print("Cannot validate OEMetadata Template with Schema (v2.0)!", e)
 
+def find_and_replace_key(data, target_key, new_value):
+    if isinstance(data, dict):
+        for key, value in data.items():
+            if key == target_key:
+                data[key] = new_value
+                return True  # Return True if replacement is successful
+            elif isinstance(value, (dict, list)):
+                if find_and_replace_key(value, target_key, new_value):
+                    return True  # Return True if replacement occurs in nested structure
+    elif isinstance(data, list):
+        for item in data:
+            if find_and_replace_key(item, target_key, new_value):
+                return True
+    return False  # Return False if key not found
+
+def replace_key_in_json(file_path, target_key, new_value):
+    # Open and read the JSON file
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+
+    # Perform the key replacement
+    if find_and_replace_key(data, target_key, new_value):
+        # Save the updated JSON data back to the file
+        with open(file_path, 'w') as file:
+            json.dump(data, file, indent=4)
+        print(f"Updated '{target_key}' to '{new_value}' in {file_path}")
+    else:
+        print(f"Key '{target_key}' not found in JSON file.")
+
 
 if __name__ == "__main__":
     logger.info("Generation started.")
     main()
+    replace_key_in_json(TEMPLATE_PATH, 'boundingBox', [0, 0, 0, 0])
+    replace_key_in_json(TEMPLATE_PATH, 'metadataVersion', 'OEMetadata-2.0.1')
+    replace_key_in_json(TEMPLATE_PATH, 'metadataLicense', {
+            "name": "CC0-1.0",
+            "title": "Creative Commons Zero v1.0 Universal",
+            "path": "https://creativecommons.org/publicdomain/zero/1.0"
+        })
     test_oemetadata_schema_should_validate_oemetadata_template()
     logger.info("Generation ended.")
