@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 os: linux
 dist: bionic
 language: python

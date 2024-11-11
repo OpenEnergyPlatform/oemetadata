@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2024 Coraline Ada Ehmke <https://where.coraline.codes/>
+
+SPDX-License-Identifier: CC-BY-4.0
+ -->
+
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge

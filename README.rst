@@ -1,5 +1,5 @@
 ..
-  SPDX-FileCopyrightText: 2024 Ludwig Hülk <@Ludee>
+  SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
 
   SPDX-License-Identifier: CC-BY-SA-4.0
 
