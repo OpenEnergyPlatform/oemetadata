@@ -15,6 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Update documentation and README [(#209)](https://github.com/OpenEnergyPlatform/oemetadata/pull/209)
 - Move old metadata versions to folder [(#209)](https://github.com/OpenEnergyPlatform/oemetadata/pull/209)
+- Update JSON schema from (draft-07) to (Draft 2020-12) [(#212)](https://github.com/OpenEnergyPlatform/oemetadata/pull/212)
+- Update all tests [(#212)](https://github.com/OpenEnergyPlatform/oemetadata/pull/212)
 - Separate `timeseries - resolution` into `resolutionValue` and `resolutionUnit` [(#213)](https://github.com/OpenEnergyPlatform/oemetadata/pull/213)
 
 ### Removed
