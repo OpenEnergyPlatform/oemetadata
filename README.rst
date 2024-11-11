@@ -1,3 +1,7 @@
+..
+  SPDX-FileCopyrightText: 2024 Ludwig Hülk <@Ludee>
+
+  SPDX-License-Identifier: CC-BY-SA-4.0
 
 .. figure:: https://user-images.githubusercontent.com/14353512/245271998-794e9d73-e728-4993-9ecf-4d0d08d96827.png
     :align: left
