@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- [(#)]()
+- Add example fields function [(#220)](https://github.com/OpenEnergyPlatform/oemetadata/pull/220)
 
 ### Changed
 - Update documentation and README [(#209)](https://github.com/OpenEnergyPlatform/oemetadata/pull/209)
