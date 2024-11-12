@@ -35,6 +35,12 @@ SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut"
 SPDX-License-Identifier = "CC0-1.0"
 
 [[annotations]]
+path = "USERS.cff"
+precedence = "override"
+SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
 path = "format_code.sh"
 precedence = "override"
 SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut"
@@ -69,3 +75,4 @@ path = "setup.cfg"
 precedence = "override"
 SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut"
 SPDX-License-Identifier = "CC0-1.0"
+
