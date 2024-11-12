@@ -1,18 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+#
+# SPDX-License-Identifier: MIT
+
 """
-Title: create example from json schema
-Description: Create example from json schema.
+Title: Create example from schema
+Description: Create example.json from schema.json
 Author: jh-RLI, Ludee
 Email: jonas.huber@rl-institut.de
 Date: 2024-05-30
 Version: 1.0.0
 """
 
-# Standard Library Imports
-# import os
-
+# Import
 import json
 import logging
 import os
@@ -85,52 +88,52 @@ def read_metadata_schema(filepath: str) -> Dict[str, Any]:
         return {}
 
 
-def generate_example_old(
-    schema: Dict[str, Any]
-) -> Union[Dict[str, Any], List[Any], str, None]:
-    """Generate a JSON object from the schema using the
-    example values provided.
-
-    Args:
-        schema (Dict[str, Any]): The JSON schema.
-
-    Returns:
-        Union[Dict[str, Any], List[Any], str, None]:
-            A JSON object generated from the schema.
-    """
-    if "examples" in schema:
-        return schema["examples"]
-
-    schema_type = schema.get("type", None)
-    if isinstance(schema_type, list):
-        schema_type = schema_type[0]
-
-    if schema_type == "object":
-        example_object = {}
-        properties = schema.get("properties", {})
-        for key, value in properties.items():
-            example_object[key] = generate_example(value)
-        return example_object
-
-    elif schema_type == "array":
-        items = schema.get("items", {})
-
-        # Fix: Avoid double-wrapping by checking if the generated
-        # example is already a list
-        example = generate_example(items)
-
-        if isinstance(example, list):
-            return example  # If it's already a list, return it directly
-        else:
-            return [example]  # Otherwise, wrap it in a list
-
-    elif schema_type == "string":
-        return ""
-
-    elif schema_type == "null":
-        return None
-
-    return None
+# def generate_example_old(
+#     schema: Dict[str, Any]
+# ) -> Union[Dict[str, Any], List[Any], str, None]:
+#     """Generate a JSON object from the schema using the
+#     example values provided.
+#
+#     Args:
+#         schema (Dict[str, Any]): The JSON schema.
+#
+#     Returns:
+#         Union[Dict[str, Any], List[Any], str, None]:
+#             A JSON object generated from the schema.
+#     """
+#     if "examples" in schema:
+#         return schema["examples"]
+#
+#     schema_type = schema.get("type", None)
+#     if isinstance(schema_type, list):
+#         schema_type = schema_type[0]
+#
+#     if schema_type == "object":
+#         example_object = {}
+#         properties = schema.get("properties", {})
+#         for key, value in properties.items():
+#             example_object[key] = generate_example(value)
+#         return example_object
+#
+#     elif schema_type == "array":
+#         items = schema.get("items", {})
+#
+#         # Fix: Avoid double-wrapping by checking if the generated
+#         # example is already a list
+#         example = generate_example(items)
+#
+#         if isinstance(example, list):
+#             return example  # If it's already a list, return it directly
+#         else:
+#             return [example]  # Otherwise, wrap it in a list
+#
+#     elif schema_type == "string":
+#         return ""
+#
+#     elif schema_type == "null":
+#         return None
+#
+#     return None
 
 
 def extract_examples_from_schema(schema: Dict[str, Any]) -> Union[
