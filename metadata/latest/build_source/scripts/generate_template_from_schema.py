@@ -1,14 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+#
+# SPDX-License-Identifier: MIT
+
 """
-Title: create template from json schema
-Description: Create template from json schema.
-Author: jh-RLI
+Title: Create template from schema
+Description: Create template.json from schema.json.
+Author: jh-RLI, Ludee
 Email: jonas.huber@rl-institut.de
 Date: 2024-05-30
 Version: 1.0.0
 """
+
+# Import
 
 import json
 import logging
@@ -85,8 +92,22 @@ def main():
 
     logger.info(f"template JSON generated and saved to {template_file_path}")
 
+    # WARNING: The metaMetadata is missing and the boundingBox is wrong!
+
+def test_oemetadata_schema_should_validate_oemetadata_template():
+    from jsonschema import validate, ValidationError
+    from metadata.v20.v20.template import OEMETADATA_V20_TEMPLATE
+    from metadata.v20.v20.schema import OEMETADATA_V20_SCHEMA
+
+    try:
+        validate(OEMETADATA_V20_TEMPLATE, OEMETADATA_V20_SCHEMA)
+        print("OEMetadata Template is valid OEMetadata Schema (v2.0).")
+    except ValidationError as e:
+        print("Cannot validate OEMetadata Template with Schema (v2.0)!", e)
+
 
 if __name__ == "__main__":
     logger.info("Generation started.")
     main()
+    test_oemetadata_schema_should_validate_oemetadata_template()
     logger.info("Generation ended.")

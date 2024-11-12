@@ -1,29 +1,23 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "general.json#metadata/v20/schemas/linked_data.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/build_source/schemas/linked_data.json",
     "type": "object",
     "properties": {
         "@id": {
             "description": "A Uniform Resource Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus).",
-            "example": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07",
-            "type": [
-                "string",
-                "null"
-            ],
+            "type": ["string", "null"],
+            "examples": ["https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07"],
             "badge": "Platinum",
             "title": "@Id",
-            "readonly": true
+            "readOnly": true
         },
         "@context": {
             "description": "Explanation of metadata keys in ontology terms.",
-            "example": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/context.json",
-            "type": [
-                "string",
-                "null"
-            ],
+            "examples": ["https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/context.json"],
+            "type": ["string", "null"],
             "badge": "Platinum",
             "title": "@context",
-            "readonly": true
+            "readOnly": true
         }
     }
 }

@@ -1,15 +1,12 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "general.json#metadata/v20/schemas/general.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/build_source/schemas/general.json",
     "type": "object",
     "properties": {
         "name": {
             "description": "A filename or database conform table name.",
-            "example": "oep_oemetadata_table_example",
-            "type": [
-                "string",
-                "null"
-            ],
+            "type": ["string", "null"],
+            "examples": ["oep_oemetadata_table_example"],
             "badge": "Iron",
             "title": "Name"
         },
@@ -18,11 +15,8 @@
             "type": "array",
             "items": {
                 "description": "The topics are used to group the data in the database.",
-                "example": ["model_draft","reference"],
-                "type": [
-                    "string",
-                    "null"
-                ],
+                "type": ["string", "null"],
+                "examples": ["model_draft","reference"],
                 "badge": "Bronze",
                 "title": "Keyword"
             },
@@ -31,32 +25,23 @@
         },
         "title": {
             "description": "A human readable table name.",
-            "example": "OEP OEMetadata Example Table",
-            "type": [
-                "string",
-                "null"
-            ],
+            "type": ["string", "null"],
+            "examples": ["OEP OEMetadata Example Table"],
             "badge": "Silver",
             "title": "Title"
         },
         "path": {
             "description": "A unique identifier (URI/UUID/DOI) for the table or file.",
-            "example": "http://openenergyplatform.org/dataedit/view/model_draft/oep_oemetadata_table_example",
-            "type": [
-                "string",
-                "null"
-            ],
+            "type": ["string", "null"],
+            "examples": ["http://openenergyplatform.org/dataedit/view/model_draft/oep_oemetadata_table_example"],
             "badge": "Bronze",
             "title": "Path",
-            "readonly": true
+            "readOnly": true
                 },
         "description": {
             "description": "A description of the table. It should be usable as summary information for the table that is described by the metadata.",
-            "example": "Example table used to illustrate the OEMetadata structure and meaning.",
-            "type": [
-                "string",
-                "null"
-            ],
+            "type": ["string", "null"],
+            "examples": ["Example table used to illustrate the OEMetadata structure and meaning."],
             "badge": "Silver",
             "title": "Description"
         },
@@ -65,11 +50,8 @@
             "type": "array",
             "items": {
                 "description": "The language keys must follow the Standard IETF (BCP47) and can be repeated if more languages are used.",
-                "example": ["en-GB", "de-DE"],
-                "type": [
-                    "string",
-                    "null"
-                ],
+                "type": ["string", "null"],
+                "examples": ["en-GB", "de-DE"],
                 "badge": "Gold",
                 "title": "Language"
             },
@@ -84,21 +66,15 @@
                 "properties": {
                     "name": {
                         "description": "A class label of the ontology term.",
-                        "example": "energy",
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": ["string", "null"],
+                        "examples": ["energy"],
                         "badge": "Platinum",
                         "title": "Name"
                     },
                     "path": {
                         "description": "A unique identifier (URI/IRI) of the ontology class.",
-                        "example": "https://openenergy-platform.org/ontology/oeo/OEO_00000150",
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": ["string", "null"],
+                        "examples": ["https://openenergy-platform.org/ontology/oeo/OEO_00000150"],
                         "badge": "Platinum",
                         "title": "Path",
                         "format": "uri"
@@ -115,11 +91,8 @@
             "type": "array",
             "items": {
                 "description": "The keyword are used and managed in the OEP as table tags.",
-                "example": ["example","ODbL-1.0","NFDI4Energy"],
-                "type": [
-                    "string",
-                    "null"
-                ],
+                "type": ["string", "null"],
+                "examples": ["example","ODbL-1.0","NFDI4Energy"],
                 "badge": "Silver",
                 "title": "Keyword"
             },
@@ -128,11 +101,8 @@
         },
         "publicationDate": {
             "description": "A date of publication of the data or metadata. The date format is ISO 8601 (YYYY-MM-DD).",
-            "example": "2024-10-15",
-            "type": [
-                "string",
-                "null"
-            ],
+            "type": ["string", "null"],
+            "examples": ["2024-10-15"],
             "badge": "Bronze",
             "title": "Publication Date",
             "format": "date"
@@ -143,33 +113,24 @@
             "properties": {
                 "start": {
                     "description": "The start date of the embargo period. The date of the data (metadata) upload.",
-                    "example": "2024-10-11",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
+                    "type": ["string", "null"],
+                    "examples": ["2024-10-11"],
                     "badge": "Bronze",
                     "title": "Embargo Period Start",
                     "format": "date"
                 },
                 "end": {
                     "description": "The end date of the embargo period. This is the intended publication date.",
-                    "example": "2025-01-01",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
+                    "type": ["string", "null"],
+                    "examples": ["2025-01-01"],
                     "badge": "Bronze",
                     "title": "Embargo Period End (Publication Date)",
                     "format": "date"
                 },
                 "isActive": {
                     "description": "A boolean key that indicates if the embargo period is currently active. Must be changed to False on the embargo period end date.",
-                    "example": true,
-                    "type": [
-                        "boolean",
-                        "null"
-                    ],
+                    "type": ["boolean", "null"],
+                    "examples": [true],
                     "badge": "Bronze",
                     "title": "Embargo Period is Active "
                 }

@@ -1,6 +1,6 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "general.json#metadata/v20/schemas/context.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/build_source/schemas/context.json",
     "type": "object",
     "properties": {
         "context": {
@@ -9,103 +9,75 @@
             "properties": {
                 "title": {
                     "description": "A title of the associated project.",
-                    "example": "NFDI4Energy",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
+                    "type": ["string", "null"],
+                    "examples": ["NFDI4Energy"],
                     "badge": "Gold",
                     "title": "Context Title"
-                },"homepage": {
+                },
+                "homepage": {
                     "description": "A URL of the project.",
-                    "example": "https://nfdi4energy.uol.de/",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
+                    "type": ["string", "null"],
+                    "examples": ["https://nfdi4energy.uol.de/"],
                     "badge": "Gold",
                     "title": "Homepage",
                     "format": "uri"
                 },
+
                 "documentation": {
                     "description": "A URL of the project documentation.",
-                    "example": "https://nfdi4energy.uol.de/sites/about_us/",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
+                    "type": ["string", "null"],
+                    "examples": ["https://nfdi4energy.uol.de/sites/about_us/"],
                     "badge": "Gold",
                     "title": "Documentation"
                 },
                 "sourceCode": {
                     "description": "A URL of the source code of the project.",
-                    "example": "https://github.com/NFDI4Energy",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
+                    "type": ["string", "null"],
+                    "examples": ["https://github.com/NFDI4Energy"],
                     "badge": "Gold",
                     "title": "Source Code"
                 },
                 "publisher": {
                     "description": "The publishing agency of the data. This can be the OEP.",
-                    "example": "Open Energy Platform (OEP)",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
+                    "type": ["string", "null"],
+                    "examples": ["Open Energy Platform (OEP)"],
                     "badge": "Gold",
                     "title": "Publisher"
                 },"publisherLogo": {
                     "description": "A URL to the logo of the publishing agency of data.",
-                    "example": "https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
+                    "type": ["string", "null"],
+                    "examples": ["https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg"],
                     "badge": "Gold",
                     "title": "Publisher Logo",
                     "format": "uri"
                 },
                 "contact": {
                     "description": "A reference to the creator or maintainer of the data set. This can be an email address or a GitHub handle.",
-                    "example": "contact@example.com",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
+                    "type": ["string", "null"],
+                    "examples": ["contact@example.com"],
                     "badge": "Gold",
                     "title": "E-Mail Contact",
                     "format": "email"
                 },
                 "fundingAgency": {
                     "description": "A name of the entity providing the funding. This can be a government agency or a company.",
-                    "example": " Deutsche Forschungsgemeinschaft (DFG)",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
+                    "type": ["string", "null"],
+                    "examples": [" Deutsche Forschungsgemeinschaft (DFG)"],
                     "badge": "Gold",
                     "title": "Funding Agency"
                 },
                 "fundingAgencyLogo": {
                     "description": "A URL to the logo or image of the funding agency.",
-                    "example": "https://upload.wikimedia.org/wikipedia/commons/8/86/DFG-logo-blau.svg",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
+                    "type": ["string", "null"],
+                    "examples": ["https://upload.wikimedia.org/wikipedia/commons/8/86/DFG-logo-blau.svg"],
                     "badge": "Gold",
                     "title": "Funding Agency Logo",
                     "format": "uri"
                 },
                 "grantNo": {
                     "description": "An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency.",
-                    "example": "501865131",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
+                    "type": ["string", "null"],
+                    "examples": ["501865131"],
                     "badge": "Gold",
                     "title": "Grant Number"
                 }
