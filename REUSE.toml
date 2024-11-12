@@ -76,3 +76,14 @@ precedence = "override"
 SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut"
 SPDX-License-Identifier = "CC0-1.0"
 
+[[annotations]]
+path = "metadata/v20/v20/build_source/schemas/*.json"
+precedence = "override"
+SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut; Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "metadata/latest/build_source/schemas/*.json"
+precedence = "override"
+SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut; Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+SPDX-License-Identifier = "MIT"
