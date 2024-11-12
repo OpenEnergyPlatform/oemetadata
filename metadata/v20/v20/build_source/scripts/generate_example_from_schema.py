@@ -19,7 +19,7 @@ import os
 
 from typing import Any, Dict, Union, List
 from pathlib import Path
-from settings import RESOLVED_SCHEMA_FILE_NAME, EXAMPLE_PATH, LOG_FORMAT
+from settings import RESOLVED_SCHEMA_FILE_NAME, EXAMPLE_PATH, LOG_FORMAT, SCHEMA_EXAMPLE_FIELDS
 
 # Configuration
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
@@ -85,52 +85,52 @@ def read_metadata_schema(filepath: str) -> Dict[str, Any]:
         return {}
 
 
-def generate_example_old(
-    schema: Dict[str, Any]
-) -> Union[Dict[str, Any], List[Any], str, None]:
-    """Generate a JSON object from the schema using the
-    example values provided.
-
-    Args:
-        schema (Dict[str, Any]): The JSON schema.
-
-    Returns:
-        Union[Dict[str, Any], List[Any], str, None]:
-            A JSON object generated from the schema.
-    """
-    if "examples" in schema:
-        return schema["examples"]
-
-    schema_type = schema.get("type", None)
-    if isinstance(schema_type, list):
-        schema_type = schema_type[0]
-
-    if schema_type == "object":
-        example_object = {}
-        properties = schema.get("properties", {})
-        for key, value in properties.items():
-            example_object[key] = generate_example(value)
-        return example_object
-
-    elif schema_type == "array":
-        items = schema.get("items", {})
-
-        # Fix: Avoid double-wrapping by checking if the generated
-        # example is already a list
-        example = generate_example(items)
-
-        if isinstance(example, list):
-            return example  # If it's already a list, return it directly
-        else:
-            return [example]  # Otherwise, wrap it in a list
-
-    elif schema_type == "string":
-        return ""
-
-    elif schema_type == "null":
-        return None
-
-    return None
+# def generate_example_old(
+#     schema: Dict[str, Any]
+# ) -> Union[Dict[str, Any], List[Any], str, None]:
+#     """Generate a JSON object from the schema using the
+#     example values provided.
+#
+#     Args:
+#         schema (Dict[str, Any]): The JSON schema.
+#
+#     Returns:
+#         Union[Dict[str, Any], List[Any], str, None]:
+#             A JSON object generated from the schema.
+#     """
+#     if "examples" in schema:
+#         return schema["examples"]
+#
+#     schema_type = schema.get("type", None)
+#     if isinstance(schema_type, list):
+#         schema_type = schema_type[0]
+#
+#     if schema_type == "object":
+#         example_object = {}
+#         properties = schema.get("properties", {})
+#         for key, value in properties.items():
+#             example_object[key] = generate_example(value)
+#         return example_object
+#
+#     elif schema_type == "array":
+#         items = schema.get("items", {})
+#
+#         # Fix: Avoid double-wrapping by checking if the generated
+#         # example is already a list
+#         example = generate_example(items)
+#
+#         if isinstance(example, list):
+#             return example  # If it's already a list, return it directly
+#         else:
+#             return [example]  # Otherwise, wrap it in a list
+#
+#     elif schema_type == "string":
+#         return ""
+#
+#     elif schema_type == "null":
+#         return None
+#
+#     return None
 
 
 def extract_examples_from_schema(schema: Dict[str, Any]) -> Union[
@@ -215,6 +215,35 @@ def test_oemetadata_schema_should_validate_oemetadata_example(example):
     except ValidationError as e:
         print("Cannot validate OEMetadata Example with Schema (v2.0)!", e)
 
+def find_and_replace_key(data, target_key, new_value):
+    if isinstance(data, dict):
+        for key, value in data.items():
+            if key == target_key:
+                data[key] = new_value
+                return True  # Return True if replacement is successful
+            elif isinstance(value, (dict, list)):
+                if find_and_replace_key(value, target_key, new_value):
+                    return True  # Return True if replacement occurs in nested structure
+    elif isinstance(data, list):
+        for item in data:
+            if find_and_replace_key(item, target_key, new_value):
+                return True
+    return False  # Return False if key not found
+
+def replace_key_in_json(file_path, target_key, new_value):
+    # Open and read the JSON file
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+
+    # Perform the key replacement
+    if find_and_replace_key(data, target_key, new_value):
+        # Save the updated JSON data back to the file
+        with open(file_path, 'w') as file:
+            json.dump(data, file, indent=4)
+        print(f"Updated '{target_key}' to '{new_value}' in {file_path}")
+    else:
+        print(f"Key '{target_key}' not found in JSON file.")
+
 
 if __name__ == "__main__":
     logger.info("Create OEMetadata Example from Schema.")
@@ -222,4 +251,6 @@ if __name__ == "__main__":
     json_data = create_json_from_schema(schema_filename)
     save_json(json_data, EXAMPLE_PATH)
     logger.info("OEMetadata Example created!")
+    example_fields = read_schema(SCHEMA_EXAMPLE_FIELDS)
+    replace_key_in_json(EXAMPLE_PATH, 'fields', example_fields)
     test_oemetadata_schema_should_validate_oemetadata_example(json_data)

@@ -78,7 +78,7 @@
                     },
                     "comment": {
                         "description": "A free-text commentary on what has been done.",
-                        "example": "Add general context.",
+                        "example": "Add metadata example.",
                         "type": [
                             "string",
                             "null"
