@@ -68,7 +68,8 @@
           {
             "start": "",
             "end": "",
-            "resolution": "",
+            "resolutionValue": "",
+            "resolutionUnit": "",
             "alignment": "",
             "aggregationType": ""
           }
