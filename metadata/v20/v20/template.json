@@ -20,7 +20,7 @@
       "subject": [
         {
           "name": "",
-          "path": ""
+          "@id": ""
         }
       ],
       "keywords": [
@@ -132,14 +132,14 @@
             "isAbout": [
               {
                 "name": "",
-                "path": ""
+                "@id": ""
               }
             ],
             "valueReference": [
               {
                 "value": "",
                 "name": "",
-                "path": ""
+                "@id": ""
               }
             ]
           }
@@ -171,7 +171,7 @@
       }
     }
   ],
-    "metaMetadata": {
+  "metaMetadata": {
         "metadataVersion": "OEMetadata-2.0.1",
         "metadataLicense": {
             "name": "CC0-1.0",

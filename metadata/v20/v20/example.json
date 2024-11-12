@@ -22,7 +22,7 @@
             "subject": [
                 {
                     "name": "energy",
-                    "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000150"
+                    "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000150"
                 }
             ],
             "keywords": [
@@ -142,14 +142,14 @@
                         "isAbout": [
                             {
                                 "name": "wind energy converting unit",
-                                "path": "https://openenergyplatform.org/ontology/oeo/OEO_00000044"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000044"
                             }
                         ],
                         "valueReference": [
                             {
                                 "value": "onshore",
                                 "name": "onshore wind farm",
-                                "path": "https://openenergyplatform.org/ontology/oeo/OEO_00000311"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000311"
                             }
                         ]
                     }

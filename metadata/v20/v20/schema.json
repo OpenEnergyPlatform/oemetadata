@@ -192,9 +192,9 @@
                     "energy"
                   ],
                   "badge": "Platinum",
-                  "title": "Name"
+                  "title": "Subject Name"
                 },
-                "path": {
+                "@id": {
                   "description": "A unique identifier (URI/IRI) of the ontology class.",
                   "type": [
                     "string",
@@ -204,7 +204,7 @@
                     "https://openenergy-platform.org/ontology/oeo/OEO_00000150"
                   ],
                   "badge": "Platinum",
-                  "title": "Path",
+                  "title": "Subject URI",
                   "format": "uri"
                 }
               },
@@ -1154,9 +1154,9 @@
                               "wind energy converting unit"
                             ],
                             "badge": "Platinum",
-                            "title": "Name"
+                            "title": "Is About Name"
                           },
-                          "path": {
+                          "@id": {
                             "description": "The path of the ontology term (IRI).",
                             "type": [
                               "string",
@@ -1166,7 +1166,7 @@
                               "https://openenergyplatform.org/ontology/oeo/OEO_00000044"
                             ],
                             "badge": "Platinum",
-                            "title": "Path",
+                            "title": "Is About URI",
                             "format": "uri"
                           }
                         },
@@ -1192,7 +1192,7 @@
                               "onshore"
                             ],
                             "badge": "Platinum",
-                            "title": "Value"
+                            "title": "Value Reference"
                           },
                           "name": {
                             "description": "The class label of the ontology term in the column.",
@@ -1204,9 +1204,9 @@
                               "onshore wind farm"
                             ],
                             "badge": "Platinum",
-                            "title": "Name"
+                            "title": "Value Reference Name"
                           },
-                          "path": {
+                          "@id": {
                             "description": "The path of the ontology term (IRI) in the column.",
                             "type": [
                               "string",
@@ -1216,7 +1216,7 @@
                               "https://openenergyplatform.org/ontology/oeo/OEO_00000311"
                             ],
                             "badge": "Platinum",
-                            "title": "Path",
+                            "title": "Value Reference URI",
                             "format": "uri"
                           }
                         },
