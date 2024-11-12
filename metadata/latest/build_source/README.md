@@ -43,10 +43,10 @@ Install the requirements
 
 Create the OEMetadata json schema from schemas
 
-    cd metadata/v2/v20/build_source/scripts/
-    python metadata/v2/v20/build_source/scripts/create_schema.py
+    cd metadata/latest/build_source/scripts/
+    python metadata/latest/build_source/scripts/create_schema.py
 
 Create the OEMetadata template and example from json schema
     
-    python metadata/v2/v20/build_source/scripts/create_example_from_schema.py
-    python metadata/v2/v20/build_source/scripts/create_template_from_schema.py
+    python metadata/latest/build_source/scripts/create_example_from_schema.py
+    python metadata/latest/build_source/scripts/create_template_from_schema.py

@@ -57,11 +57,8 @@
           "resolutionValue": "",
           "resolutionUnit": "",
           "boundingBox": [
-                13.08825,
-                52.33859,
-                13.76104,
-                52.6754
-            ],
+            0
+          ],
           "crs": ""
         }
       },
@@ -173,12 +170,12 @@
       }
     }
   ],
-    "metaMetadata": {
-        "metadataVersion": "OEMetadata-2.0.1",
-        "metadataLicense": {
-            "name": "CC0-1.0",
-            "title": "Creative Commons Zero v1.0 Universal",
-            "path": "https://creativecommons.org/publicdomain/zero/1.0"
-        }
+  "metaMetadata": {
+    "metadataVersion": "",
+    "metadataLicense": {
+      "name": "",
+      "title": "",
+      "path": ""
     }
+  }
 }
