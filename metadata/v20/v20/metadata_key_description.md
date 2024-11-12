@@ -97,8 +97,8 @@ If a value is not yet available, use: `ToDo`.
 | 1.2   | **extent**      | An object that describes a covered area or region.                                                                            |                                         |          |
 | 1.2.1 | name            | The name of the region.                                                                                                       | Berlin                                  | Silver   |
 | 1.2.2 | @id             | A URI reference for the region.                                                                                               | https://www.wikidata.org/wiki/Q64       | Platinum |
-| 1.2.3 | resolutionValue | The value of the resolution.                                                                                                  | 100                                     | Silver   |
-| 1.2.4 | resolutionUnit  | The unit of the resolution.                                                                                                   | m                                       | Silver   |
+| 1.2.3 | resolutionValue | The value of the spatial resolution.                                                                                          | 100                                     | Silver   |
+| 1.2.4 | resolutionUnit  | The unit of the spatial resolution.                                                                                           | m                                       | Silver   |
 | 1.2.5 | boundingBox     | The covered area specified by the coordinates of a bounding box. The format is [minLon, minLat, maxLon, maxLat] or [W,S,E,N]. | [13.08825, 52.33859, 13.76104, 52.6754] | Gold     |
 | 1.2.6 | crs             | The Coordinate Reference System, specified as an EPSG code.                                                                   | EPSG:4326                               | Gold     |
 
@@ -110,9 +110,10 @@ If a value is not yet available, use: `ToDo`.
 | 1.2   | **timeseries**  | An array that describes the timeseries.                                                                                                                                       |                           |        |
 | 1.2.1 | start           | The start time of a time series.                                                                                                                                              | 2020-01-01T00:00:00+00:00 | Silver |
 | 1.2.2 | end             | The temporal end point of a time series.                                                                                                                                      | 2020-01-01T23:59:30+00:00 | Silver |
-| 1.2.3 | resolution      | The time span between individual information points in a time series.                                                                                                         | 30 s                      | Silver |
-| 1.2.4 | alignment       | An indicator of whether timestamps in a time series are to the left, right or in the centre.                                                                                  | left                      | Silver |
-| 1.2.5 | aggregationType | An indicator of whether the values are a sum, an average or a current value.                                                                                                  | current                   | Silver |
+| 1.2.3 | resolutionValue | The time span between individual information points in a time series. The value of the resolution.                                                                            | 30 s                      | Silver |
+| 1.2.4 | resolutionUnit  | The unit of the temporal resolution.                                                                                                                                          | 30 s                      | Silver |
+| 1.2.5 | alignment       | An indicator of whether timestamps in a time series are to the left, right or in the centre.                                                                                  | left                      | Silver |
+| 1.2.6 | aggregationType | An indicator of whether the values are a sum, an average or a current value.                                                                                                  | current                   | Silver |
 
 ### Resource - Sources Keys
 | #     | Key                | Description                                                                                                                                                                   | Example                                                                                                                                                                                           | Badge  |

@@ -63,18 +63,18 @@
                             "title": "Extent URI"
                         },
                         "resolutionValue": {
-                            "description": "The value of the resolution.",
+                            "description": "The value of the spatial resolution.",
                             "type": ["string", "null"],
                             "examples": ["100"],
                             "badge": "Silver",
-                            "title": "Resolution Value"
+                            "title": "Spatial Resolution Value"
                         },
                         "resolutionUnit": {
-                            "description": "The unit of the resolution.",
+                            "description": "The unit of the spatial resolution.",
                             "type": ["string", "null"],
                             "examples": ["m"],
                             "badge": "Silver",
-                            "title": "Resolution Unit"
+                            "title": "Spatial Resolution Unit"
                         },
                         "boundingBox": {
                             "description": "The covered area specified by the coordinates of a bounding box. The format is [minLon, minLat, maxLon, maxLat] or [W,S,E,N].",
