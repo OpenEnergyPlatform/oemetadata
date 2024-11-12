@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Ludwig Hülk <Ludee> © Reiner Lemoine Institut
+
+SPDX-License-Identifier: CC0-1.0
+-->
+
 # JSON Schema
 
 [JSON Schema](https://json-schema.org/) enables the confident and reliable use of the JSON data format.<br>

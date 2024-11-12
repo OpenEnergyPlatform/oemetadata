@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: Ludwig Hülk (Ludee) © Reiner Lemoine Institut
+SPDX-FileCopyrightText: Ludwig Hülk <Ludee> © Reiner Lemoine Institut
 
 SPDX-License-Identifier: CC0-1.0
 -->
