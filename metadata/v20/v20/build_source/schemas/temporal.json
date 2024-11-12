@@ -37,12 +37,19 @@
                                 "title": "Timeseries End",
                                 "format": "date-time"
                             },
-                            "resolution": {
-                                "description": "The time span between individual information points in a time series.",
+                            "resolutionValue": {
+                            "description": "The time span between individual information points in a time series. The value of the resolution.",
+                            "type": ["string", "null"],
+                            "examples": ["15"],
+                            "badge": "Silver",
+                            "title": "Timeseries Resolution Value"
+                            },
+                            "resolutionUnit": {
+                                "description": "The unit of the temporal resolution.",
                                 "type": ["string", "null"],
-                                "examples": ["30 s"],
+                                "examples": ["min"],
                                 "badge": "Silver",
-                                "title": "Timeseries Resolution"
+                                "title": "Timeseries Resolution Unit"
                             },
                             "alignment": {
                                 "description": "An indicator of whether timestamps in a time series are to the left, right or in the centre.",

@@ -20,7 +20,7 @@
       "subject": [
         {
           "name": "",
-          "path": ""
+          "@id": ""
         }
       ],
       "keywords": [
@@ -68,7 +68,8 @@
           {
             "start": "",
             "end": "",
-            "resolution": "",
+            "resolutionValue": "",
+            "resolutionUnit": "",
             "alignment": "",
             "aggregationType": ""
           }
@@ -132,14 +133,14 @@
             "isAbout": [
               {
                 "name": "",
-                "path": ""
+                "@id": ""
               }
             ],
             "valueReference": [
               {
                 "value": "",
                 "name": "",
-                "path": ""
+                "@id": ""
               }
             ]
           }

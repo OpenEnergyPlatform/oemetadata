@@ -192,9 +192,9 @@
                     "energy"
                   ],
                   "badge": "Platinum",
-                  "title": "Name"
+                  "title": "Subject Name"
                 },
-                "path": {
+                "@id": {
                   "description": "A unique identifier (URI/IRI) of the ontology class.",
                   "type": [
                     "string",
@@ -204,7 +204,7 @@
                     "https://openenergy-platform.org/ontology/oeo/OEO_00000150"
                   ],
                   "badge": "Platinum",
-                  "title": "Path",
+                  "title": "Subject URI",
                   "format": "uri"
                 }
               },
@@ -515,7 +515,7 @@
                     "title": "Extent URI"
                   },
                   "resolutionValue": {
-                    "description": "The value of the resolution.",
+                    "description": "The value of the spatial resolution.",
                     "type": [
                       "string",
                       "null"
@@ -524,10 +524,10 @@
                       "100"
                     ],
                     "badge": "Silver",
-                    "title": "Resolution Value"
+                    "title": "Spatial Resolution Value"
                   },
                   "resolutionUnit": {
-                    "description": "The unit of the resolution.",
+                    "description": "The unit of the spatial resolution.",
                     "type": [
                       "string",
                       "null"
@@ -536,7 +536,7 @@
                       "m"
                     ],
                     "badge": "Silver",
-                    "title": "Resolution Unit"
+                    "title": "Spatial Resolution Unit"
                   },
                   "boundingBox": {
                     "description": "The covered area specified by the coordinates of a bounding box. The format is [minLon, minLat, maxLon, maxLat] or [W,S,E,N].",
@@ -624,17 +624,29 @@
                       "title": "Timeseries End",
                       "format": "date-time"
                     },
-                    "resolution": {
-                      "description": "The time span between individual information points in a time series.",
+                    "resolutionValue": {
+                      "description": "The time span between individual information points in a time series. The value of the resolution.",
                       "type": [
                         "string",
                         "null"
                       ],
                       "examples": [
-                        "30 s"
+                        "15"
                       ],
                       "badge": "Silver",
-                      "title": "Timeseries Resolution"
+                      "title": "Timeseries Resolution Value"
+                    },
+                    "resolutionUnit": {
+                      "description": "The unit of the temporal resolution.",
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "examples": [
+                        "min"
+                      ],
+                      "badge": "Silver",
+                      "title": "Timeseries Resolution Unit"
                     },
                     "alignment": {
                       "description": "An indicator of whether timestamps in a time series are to the left, right or in the centre.",
@@ -1164,9 +1176,9 @@
                               "wind energy converting unit"
                             ],
                             "badge": "Platinum",
-                            "title": "Name"
+                            "title": "Is About Name"
                           },
-                          "path": {
+                          "@id": {
                             "description": "The path of the ontology term (IRI).",
                             "type": [
                               "string",
@@ -1176,7 +1188,7 @@
                               "https://openenergyplatform.org/ontology/oeo/OEO_00000044"
                             ],
                             "badge": "Platinum",
-                            "title": "Path",
+                            "title": "Is About URI",
                             "format": "uri"
                           }
                         },
@@ -1202,7 +1214,7 @@
                               "onshore"
                             ],
                             "badge": "Platinum",
-                            "title": "Value"
+                            "title": "Value Reference"
                           },
                           "name": {
                             "description": "The class label of the ontology term in the column.",
@@ -1214,9 +1226,9 @@
                               "onshore wind farm"
                             ],
                             "badge": "Platinum",
-                            "title": "Name"
+                            "title": "Value Reference Name"
                           },
-                          "path": {
+                          "@id": {
                             "description": "The path of the ontology term (IRI) in the column.",
                             "type": [
                               "string",
@@ -1226,7 +1238,7 @@
                               "https://openenergyplatform.org/ontology/oeo/OEO_00000311"
                             ],
                             "badge": "Platinum",
-                            "title": "Path",
+                            "title": "Value Reference URI",
                             "format": "uri"
                           }
                         },
