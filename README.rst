@@ -1,7 +1,7 @@
 ..
   SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
 
-  SPDX-License-Identifier: CC-BY-SA-4.0
+  SPDX-License-Identifier: CC0-1.0
 
 .. figure:: https://user-images.githubusercontent.com/14353512/245271998-794e9d73-e728-4993-9ecf-4d0d08d96827.png
     :align: left
