@@ -93,12 +93,12 @@
                     "description": "A Report of the Intergovernmental Panel on Climate Change.",
                     "publicationYear": "2023",
                     "path": "https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf",
-                    "licenses": [
+                    "sourceLicenses": [
                         {
-                            "name": "ODbL-1.0",
-                            "title": "Open Data Commons Open Database License 1.0",
-                            "path": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
-                            "instruction": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-odbl for further information.",
+                            "name": "CC-BY-4.0",
+                            "title": "Creative Commons Attribution 4.0 International",
+                            "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+                            "instruction": "You are free to share and change, but you must attribute. See https://tldrlegal.com/license/odc-open-database-license-odbl for further information.",
                             "attribution": "© Intergovernmental Panel on Climate Change 2023",
                             "copyrightStatement": "https://www.ipcc.ch/copyright/"
                         }
@@ -107,11 +107,12 @@
             ],
             "licenses": [
                 {
-                    "name": "",
-                    "title": "",
-                    "path": "",
-                    "instruction": "",
-                    "attribution": ""
+                    "name": "ODbL-1.0",
+                    "title": "Open Data Commons Open Database License 1.0",
+                    "path": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
+                    "instruction": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information.",
+                    "attribution": "© Reiner Lemoine Institut",
+                    "copyrightStatement": "https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/LICENSE.txt"
                 }
             ],
             "contributors": [

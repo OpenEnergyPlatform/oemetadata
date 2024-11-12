@@ -84,7 +84,7 @@
           "description": "",
           "publicationYear": "",
           "path": "",
-          "licenses": [
+          "sourceLicenses": [
             {
               "name": "",
               "title": "",
@@ -102,7 +102,8 @@
           "title": "",
           "path": "",
           "instruction": "",
-          "attribution": ""
+          "attribution": "",
+          "copyrightStatement": ""
         }
       ],
       "contributors": [
@@ -172,11 +173,11 @@
     }
   ],
   "metaMetadata": {
-        "metadataVersion": "OEMetadata-2.0.1",
-        "metadataLicense": {
-            "name": "CC0-1.0",
-            "title": "Creative Commons Zero v1.0 Universal",
-            "path": "https://creativecommons.org/publicdomain/zero/1.0"
-        }
-    }
+    "metadataVersion": "OEMetadata-2.0.1",
+    "metadataLicense": {
+      "name": "CC0-1.0",
+      "title": "Creative Commons Zero v1.0 Universal",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0"
+      }
+  }
 }
