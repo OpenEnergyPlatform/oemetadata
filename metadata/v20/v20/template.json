@@ -20,7 +20,7 @@
       "subject": [
         {
           "name": "",
-          "@id": ""
+          "path": ""
         }
       ],
       "keywords": [
@@ -68,8 +68,7 @@
           {
             "start": "",
             "end": "",
-            "resolutionValue": "",
-            "resolutionUnit": "",
+            "resolution": "",
             "alignment": "",
             "aggregationType": ""
           }
@@ -102,8 +101,7 @@
           "title": "",
           "path": "",
           "instruction": "",
-          "attribution": "",
-          "copyrightStatement": ""
+          "attribution": ""
         }
       ],
       "contributors": [
@@ -133,14 +131,14 @@
             "isAbout": [
               {
                 "name": "",
-                "@id": ""
+                "path": ""
               }
             ],
             "valueReference": [
               {
                 "value": "",
                 "name": "",
-                "@id": ""
+                "path": ""
               }
             ]
           }
@@ -178,6 +176,6 @@
       "name": "CC0-1.0",
       "title": "Creative Commons Zero v1.0 Universal",
       "path": "https://creativecommons.org/publicdomain/zero/1.0"
-      }
+    }
   }
 }

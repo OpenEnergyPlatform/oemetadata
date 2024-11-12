@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Separate `timeseries - resolution` into `resolutionValue` and `resolutionUnit` [(#213)](https://github.com/OpenEnergyPlatform/oemetadata/pull/213)
 - Rename URI from `path` to `@id` [(#214)](https://github.com/OpenEnergyPlatform/oemetadata/pull/214)
 - Rename ``source``- ``licenses`` to ``sourceLicenses`` [(#215)](https://github.com/OpenEnergyPlatform/oemetadata/pull/215)
+- Update create template [(#217)](https://github.com/OpenEnergyPlatform/oemetadata/pull/217)
 
 ### Removed
 - [(#)]()
