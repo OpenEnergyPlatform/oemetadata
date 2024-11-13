@@ -38,7 +38,7 @@ def read_schema(filepath: str) -> Dict[str, Any]:
 
     with open(filepath, "r", encoding="utf-8") as file:
         schema = json.load(file)
-    print(f"Processing schema: {schema}")
+    logger.info(f"Processing schema: {schema}")
     return schema
 
 
@@ -52,7 +52,7 @@ def read_metadata_schema(filepath: str) -> Dict[str, Any]:
         Dict[str, Any]: The JSON schema as a dictionary.
     """
     if not os.path.exists(filepath):
-        print(f"Error: File '{filepath}' does not exist.")
+        logger.info(f"Error: File '{filepath}' does not exist.")
         return {}
 
     try:
@@ -64,24 +64,24 @@ def read_metadata_schema(filepath: str) -> Dict[str, Any]:
             print("Error: Schema is not a dictionary. Check the schema format.")
             return {}
 
-        print(f"Schema loaded successfully from {filepath}")
-        print(f"Schema top-level keys: {list(schema.keys())}")
+        logger.info(f"Schema loaded successfully from {filepath}")
+        logger.info(f"Schema top-level keys: {list(schema.keys())}")
 
         # Additional debugging info: Check expected keys
         if "$schema" not in schema or "type" not in schema:
-            print(
+            logger.info(
                 "Warning: Schema may be missing key fields like '$schema' or 'type'.")
 
-        print(
+        logger.info(
             f"Full schema content (trimmed for large files): {str(schema)[:500]}...")
 
         return schema
 
     except json.JSONDecodeError as e:
-        print(f"Error reading JSON: {e}")
+        logger.info(f"Error reading JSON: {e}")
         return {}
     except Exception as e:
-        print(f"An unexpected error occurred while reading the schema: {e}")
+        logger.info(f"An unexpected error occurred while reading the schema: {e}")
         return {}
 
 
@@ -205,15 +205,17 @@ def save_json(data: Dict[str, Any], filename: Path) -> None:
 
     logger.info(f"example JSON generated and saved to {filename}")
 
+
 def test_oemetadata_schema_should_validate_oemetadata_example(example):
     from jsonschema import validate, ValidationError
     from metadata.v20.v20.schema import OEMETADATA_V20_SCHEMA
 
     try:
         validate(example, OEMETADATA_V20_SCHEMA)
-        print("OEMetadata Example is valid OEMetadata Schema (v2.0).")
+        logger.info("OEMetadata Example is valid OEMetadata Schema (v2.0).")
     except ValidationError as e:
-        print("Cannot validate OEMetadata Example with Schema (v2.0)!", e)
+        logger.info("Cannot validate OEMetadata Example with Schema (v2.0)!", e)
+
 
 def find_and_replace_key(data, target_key, new_value):
     if isinstance(data, dict):
@@ -230,6 +232,7 @@ def find_and_replace_key(data, target_key, new_value):
                 return True
     return False  # Return False if key not found
 
+
 def replace_key_in_json(file_path, target_key, new_value):
     # Open and read the JSON file
     with open(file_path, 'r') as file:
@@ -238,11 +241,11 @@ def replace_key_in_json(file_path, target_key, new_value):
     # Perform the key replacement
     if find_and_replace_key(data, target_key, new_value):
         # Save the updated JSON data back to the file
-        with open(file_path, 'w') as file:
-            json.dump(data, file, indent=4)
-        print(f"Updated '{target_key}' to '{new_value}' in {file_path}")
+        with open(file_path, 'w', encoding="utf-8") as file:
+            json.dump(data, file, ensure_ascii=False, indent=4)
+        logger.info(f"Updated '{target_key}' to '{new_value}' in {file_path}")
     else:
-        print(f"Key '{target_key}' not found in JSON file.")
+        logger.info(f"Key '{target_key}' not found in JSON file.")
 
 
 if __name__ == "__main__":
