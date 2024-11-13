@@ -1,58 +1,32 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/develop/metadata/v20/schema.json",
-    "description": "Open Energy Platform (OEP) metadata schema latest",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/schema.json",
+    "description": "Open Energy Metadata (OEMetadata) - metadata schema",
     "type": "object",
-    "required": [
-        "resources"
-    ],
+    "required": ["resources"],
     "properties": {
-        "collection": {
-            "$ref": "collection.json#"
-        },
+        "collection": {"$ref": "collection.json#"},
         "resources": {
-            "description": "A collection of related data resource descriptions and metadata. This may include relational data models which are technically related",
+            "description": "A collection of related resources.",
             "type": "array",
             "items": {
                 "type": "object",
                 "properties": {
-                    "linkedData": {
-                        "$ref": "linked_data.json#"
-                    },
-                    "general": {
-                        "$ref": "general.json#"
-                    },
-                    "context": {
-                        "$ref": "context.json#"
-                    },
-                    "spatial": {
-                        "$ref": "spatial.json#"
-                    },
-                    "temporal": {
-                        "$ref": "temporal.json#"
-                    },
-                    "sources": {
-                        "$ref": "sources.json#"
-                    },
-                    "licenses": {
-                        "$ref": "licenses.json#"
-                    },
-                    "provenance": {
-                        "$ref": "provenance.json#"
-                    },
-                    "resource": {
-                        "$ref": "fields.json#"
-                    },
-                    "review": {
-                        "$ref": "review.json#"
-                    }
+                    "linkedData": {"$ref": "linked_data.json#"},
+                    "general": {"$ref": "general.json#"},
+                    "context": {"$ref": "context.json#"},
+                    "spatial": {"$ref": "spatial.json#"},
+                    "temporal": {"$ref": "temporal.json#"},
+                    "sources": {"$ref": "sources.json#"},
+                    "licenses": {"$ref": "licenses.json#"},
+                    "provenance": {"$ref": "provenance.json#"},
+                    "resource": {"$ref": "fields.json#"},
+                    "review": {"$ref": "review.json#"}
                 }
             },
             "title": "Resources"
         },
-        "meta": {
-            "$ref": "meta.json#"
-        }
+        "meta": {"$ref": "meta.json#"}
     },
     "additionalProperties": true
 }

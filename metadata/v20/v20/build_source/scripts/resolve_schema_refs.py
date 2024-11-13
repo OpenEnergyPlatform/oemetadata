@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+#
+# SPDX-License-Identifier: MIT
+
 """
-Title: Resolve schema $ref
-Description: Resolve "$ref" elements in schema.json.
-Author: jh-RLI
+Title: Create OEMetadata schema from schemas
+Description: Resolve "$ref" elements in schema.json
+Author: jh-RLI, Ludee
 Email: jonas.huber@rl-institut.de
 Date: 2024-05-30
 Version: 1.0.0
@@ -12,7 +17,7 @@ Version: 1.0.0
 requires: "pip install jsonschema referencing"
 
 Usage: Script with additional arguments --debug for more detailed output.
-        Requires the folder structure introduced in oemetadata v2.0.1.
+        Requires the folder structure introduced in OEMetadata v2.0.1.
 """
 
 # Standard Library Imports

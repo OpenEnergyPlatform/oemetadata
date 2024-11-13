@@ -1,6 +1,6 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "general.json#metadata/v20/schemas/review.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/build_source/schemas/review.json",
     "type": "object",
     "properties": {
         "review": {
@@ -9,21 +9,16 @@
             "properties": {
                 "path": {
                     "description": "A link or path to the documented open peer review.",
-                    "example": "https://www.example.com",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
+                    "type": ["string", "null"],
+                    "examples": ["https://www.example.com"],
                     "badge": null,
-                    "title": "Path"
+                    "title": "Path",
+                    "format": "uri"
                 },
                 "badge": {
                     "description": "A badge of either Iron, Bronze, Silver, Gold or Platinum is used to label the quality of the metadata.",
-                    "example": "Platinum",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
+                    "type": ["string", "null"],
+                    "examples": ["Platinum"],
                     "badge": null,
                     "title": "Badge"
                 }

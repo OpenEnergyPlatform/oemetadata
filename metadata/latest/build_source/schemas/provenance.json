@@ -1,6 +1,6 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "general.json#metadata/v20/schemas/provenance.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/build_source/schemas/provenance.json",
     "type": "object",
     "properties": {
         "contributors": {
@@ -11,31 +11,22 @@
                 "properties": {
                     "title": {
                         "description": "A full name of the contributor.",
-                        "example": "Ludwig Hülk",
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": ["string", "null"],
+                        "examples": ["Ludwig Hülk"],
                         "badge": "Bronze",
                         "title": "Contributor Title"
                     },
                     "path": {
                         "description": "A qualified link or path pointing to a relevant location online for the contributor. This can be the GitHub page or ORCID.",
-                        "example": "https://github.com/Ludee",
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": ["string", "null"],
+                        "examples": ["https://github.com/Ludee"],
                         "badge": "Bronze",
                         "title": "Path"
                     },
                     "organization": {
                         "description": "A string describing the organization this contributor is affiliated to. This can be relevant for the copyright.",
-                        "example": "Reiner Lemoine Institut",
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": ["string", "null"],
+                        "examples": ["Reiner Lemoine Institut"],
                         "badge": "Bronze",
                         "title": "Organization"
                     },
@@ -44,11 +35,8 @@
                         "type": "array",
                         "items": {
                             "description": "A role is recommended to follow an established vocabulary, such as DataCite Metadata Schema’s contributorRole or CreDIT. Useful roles to indicate are: creator, contact, and dataCurator.",
-                            "example": ["creator", "dataCurator"],
-                            "type": [
-                                "string",
-                                "null"
-                            ],
+                            "type": ["string", "null"],
+                            "examples": ["creator", "dataCurator"],
                             "badge": "Bronze",
                             "title": "Role"
                         },
@@ -57,32 +45,23 @@
                     },
                     "date": {
                         "description": "The date of the final contribution. Date Format is ISO 8601.",
-                        "example": "2024-10-21",
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": ["string", "null"],
+                        "examples": ["2024-10-21"],
                         "badge": "Bronze",
                         "title": "Date",
                         "format": "date"
                     },
                     "object": {
                         "description": "The object of the contribution. Which part of the package was supplied or changed.",
-                        "example": "data and metadata",
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": ["string", "null"],
+                        "examples": ["data and metadata"],
                         "badge": "Bronze",
                         "title": "Object"
                     },
                     "comment": {
                         "description": "A free-text commentary on what has been done.",
-                        "example": "Add metadata example.",
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": ["string", "null"],
+                        "examples": ["Add metadata example."],
                         "badge": "Bronze",
                         "title": "Comment"
                     }

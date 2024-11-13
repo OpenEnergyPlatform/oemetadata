@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+#
+# SPDX-License-Identifier: MIT
+
 def test_oemetadata_template_should_load():
     try:
         from metadata.v20.v20.template import OEMETADATA_V20_TEMPLATE

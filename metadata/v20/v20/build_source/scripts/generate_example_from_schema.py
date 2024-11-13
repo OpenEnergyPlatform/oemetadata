@@ -1,18 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+#
+# SPDX-License-Identifier: MIT
+
 """
-Title: create example from json schema
-Description: Create example from json schema.
+Title: Create example from schema
+Description: Create example.json from schema.json
 Author: jh-RLI, Ludee
 Email: jonas.huber@rl-institut.de
 Date: 2024-05-30
 Version: 1.0.0
 """
 
-# Standard Library Imports
-# import os
-
+# Import
 import json
 import logging
 import os
