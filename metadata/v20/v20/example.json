@@ -87,7 +87,7 @@
                     "title": "IPCC Sixth Assessment Report (AR6) - Climate Change 2023 - Synthesis Report",
                     "authors": [
                         "Hoesung Lee",
-                        "JosÃ© Romero",
+                        "José Romero",
                         "The Core Writing Team"
                     ],
                     "description": "A Report of the Intergovernmental Panel on Climate Change.",
@@ -99,7 +99,7 @@
                             "title": "Creative Commons Attribution 4.0 International",
                             "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
                             "instruction": "You are free to share and change, but you must attribute. See https://tldrlegal.com/license/odc-open-database-license-odbl for further information.",
-                            "attribution": "Â© Intergovernmental Panel on Climate Change 2023",
+                            "attribution": "© Intergovernmental Panel on Climate Change 2023",
                             "copyrightStatement": "https://www.ipcc.ch/copyright/"
                         }
                     ]
@@ -111,13 +111,13 @@
                     "title": "Open Data Commons Open Database License 1.0",
                     "path": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
                     "instruction": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information.",
-                    "attribution": "Â© Reiner Lemoine Institut",
+                    "attribution": "© Reiner Lemoine Institut",
                     "copyrightStatement": "https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/LICENSE.txt"
                 }
             ],
             "contributors": [
                 {
-                    "title": "Ludwig HÃ¼lk",
+                    "title": "Ludwig Hülk",
                     "path": "https://github.com/Ludee",
                     "organization": "Reiner Lemoine Institut",
                     "roles": [
