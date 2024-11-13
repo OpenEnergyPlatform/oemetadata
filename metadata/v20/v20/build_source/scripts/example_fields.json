@@ -8,14 +8,14 @@
         "isAbout": [
             {
                 "name": null,
-                "path": null
+                "@id": null
             }
         ],
         "valueReference": [
             {
                 "value": null,
                 "name": null,
-                "path": null
+                "@id": null
             }
         ]
     },
@@ -28,14 +28,14 @@
         "isAbout": [
             {
                 "name": "written name",
-                "path": "https://openenergy-platform.org/ontology/oeo/IAO_0000590"
+                "@id": "https://openenergy-platform.org/ontology/oeo/IAO_0000590"
             }
         ],
         "valueReference": [
             {
                 "value": null,
                 "name": null,
-                "path": null
+                "@id": null
             }
         ]
     },
@@ -48,19 +48,19 @@
         "isAbout": [
             {
                 "name": "wind farm",
-                "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000447"
+                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000447"
             }
         ],
         "valueReference": [
             {
                 "value": "onshore ",
                 "name": "onshore wind farm",
-                "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000311"
+                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000311"
             },
             {
                 "value": "offshore ",
                 "name": "offshore wind farm",
-                "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000308"
+                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000308"
             }
         ]
     },
@@ -73,14 +73,14 @@
         "isAbout": [
             {
                 "name": "year",
-                "path": "https://openenergy-platform.org/ontology/oeo/UO_0000036"
+                "@id": "https://openenergy-platform.org/ontology/oeo/UO_0000036"
             }
         ],
         "valueReference": [
             {
                 "value": null,
                 "name": null,
-                "path": null
+                "@id": null
             }
         ]
     },
@@ -93,14 +93,14 @@
         "isAbout": [
             {
                 "name": "quantity value",
-                "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000350"
+                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000350"
             }
         ],
         "valueReference": [
             {
                 "value": null,
                 "name": null,
-                "path": null
+                "@id": null
             }
         ]
     },
@@ -113,14 +113,14 @@
         "isAbout": [
             {
                 "name": "spatial region",
-                "path": "https://openenergy-platform.org/ontology/oeo/BFO_0000006"
+                "@id": "https://openenergy-platform.org/ontology/oeo/BFO_0000006"
             }
         ],
         "valueReference": [
             {
                 "value": null,
                 "name": null,
-                "path": null
+                "@id": null
             }
         ]
     }
