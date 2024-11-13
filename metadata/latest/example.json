@@ -75,7 +75,7 @@
                     {
                         "start": "2020-01-01T00:00:00+00:00",
                         "end": "2020-01-01T23:59:30+00:00",
-                        "resolution": " 30 s",
+                        "resolution": "30 s",
                         "alignment": "left",
                         "aggregationType": "current"
                     }
@@ -106,11 +106,11 @@
             ],
             "licenses": [
                 {
-                    "name": "ODbL-1.0",
-                    "title": "Open Data Commons Open Database License 1.0",
-                    "path": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
-                    "instruction": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information.",
-                    "attribution": "© Reiner Lemoine Institut"
+                    "name": "",
+                    "title": "",
+                    "path": "",
+                    "instruction": "",
+                    "attribution": ""
                 }
             ],
             "contributors": [
@@ -128,134 +128,29 @@
                 }
             ],
             "type": "table",
-            "format": "PostgreSQL",
+            "format": "CSV",
             "encoding": "UTF-8",
             "schema": {
                 "fields": [
                     {
-                        "name": "id",
-                        "description": "Unique identifier",
-                        "type": "serial",
-                        "unit": null,
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "path": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "path": null
-                            }
-                        ],
-                        "nullable": null
-                    },
-                    {
-                        "name": "name",
-                        "description": "Example name",
-                        "type": "text",
-                        "unit": null,
-                        "isAbout": [
-                            {
-                                "name": "written name",
-                                "path": "https://openenergy-platform.org/ontology/oeo/IAO_0000590"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "path": null
-                            }
-                        ],
-                        "nullable": null
-                    },
-                    {
-                        "name": "type",
-                        "description": "Type of wind farm",
-                        "type": "text",
-                        "unit": null,
-                        "isAbout": [
-                            {
-                                "name": "wind farm",
-                                "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000447"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": "onshore ",
-                                "name": "onshore wind farm",
-                                "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000311"
-                            },
-                            {
-                                "value": "offshore ",
-                                "name": "offshore wind farm",
-                                "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000308"
-                            }
-                        ],
-                        "nullable": null
-                    },
-                    {
                         "name": "year",
-                        "description": "Reference year",
-                        "type": "integer",
-                        "unit": null,
-                        "isAbout": [
-                            {
-                                "name": "year",
-                                "path": "https://openenergy-platform.org/ontology/oeo/UO_0000036"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "path": null
-                            }
-                        ],
-                        "nullable": null
-                    },
-                    {
-                        "name": "value",
-                        "description": "Example value",
-                        "type": "double precision",
+                        "description": "Reference year for which the data was collected.",
+                        "type": "geometry(Point, 4326)",
+                        "nullable": true,
                         "unit": "MW",
                         "isAbout": [
                             {
-                                "name": "quantity value",
-                                "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000350"
+                                "name": "wind energy converting unit",
+                                "path": "https://openenergyplatform.org/ontology/oeo/OEO_00000044"
                             }
                         ],
                         "valueReference": [
                             {
-                                "value": null,
-                                "name": null,
-                                "path": null
+                                "value": "onshore",
+                                "name": "onshore wind farm",
+                                "path": "https://openenergyplatform.org/ontology/oeo/OEO_00000311"
                             }
-                        ],
-                        "nullable": null
-                    },
-                    {
-                        "name": "geom",
-                        "description": "Geometry",
-                        "type": "geometry(Point, 4326)",
-                        "unit": null,
-                        "isAbout": [
-                            {
-                                "name": "spatial region",
-                                "path": "https://openenergy-platform.org/ontology/oeo/BFO_0000006"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "path": null
-                            }
-                        ],
-                        "nullable": null
+                        ]
                     }
                 ],
                 "primaryKey": [
@@ -264,12 +159,14 @@
                 "foreignKeys": [
                     {
                         "fields": [
-                            "year"
+                            "id",
+                            "version"
                         ],
                         "reference": {
-                            "resource": "schema.table",
+                            "resource": "model_draft.oep_oemetadata_table_example_version",
                             "fields": [
-                                "year"
+                                "id",
+                                "version"
                             ]
                         }
                     }

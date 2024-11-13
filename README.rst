@@ -1,3 +1,7 @@
+..
+  SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+
+  SPDX-License-Identifier: CC0-1.0
 
 .. figure:: https://user-images.githubusercontent.com/14353512/245271998-794e9d73-e728-4993-9ecf-4d0d08d96827.png
     :align: left
@@ -14,7 +18,7 @@ Open Energy Metadata (OEMetadata)
    :widths: auto
 
    * - License
-     - |badge_license|
+     - |badge_license| |badge_reuse|
    * - Documentation
      - |badge_documentation|
    * - Publication
@@ -68,6 +72,10 @@ License and Citation
 .. |badge_license| image:: https://img.shields.io/github/license/OpenEnergyPlatform/oemetadata
     :target: https://github.com/OpenEnergyPlatform/oemetadata/blob/production/LICENSE.txt
     :alt: License
+
+.. |badge_reuse| image:: https://api.reuse.software/badge/github.com/OpenEnergyPlatform/oemetadata
+    :target: https://api.reuse.software/info/github.com/OpenEnergyPlatform/oemetadata
+    :alt: REUSE
 
 .. |badge_documentation| image:: https://img.shields.io/github/actions/workflow/status/OpenEnergyPlatform/oemetadata/gh-pages.yml?branch=release-v2.0.1
     :target: https://openenergyplatform.github.io/oemetadata/

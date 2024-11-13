@@ -1,28 +1,22 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "general.json#metadata/v20/schemas/fields.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/build_source/schemas/fields.json",
     "type": "object",
     "properties": {
             "type": {
                 "description": "The 'table' type indicates that the resource is tabular as per 'Frictionless Tabular Data' definition.",
-                "example": "table",
-                "type": [
-                    "string",
-                    "null"
-                ],
+                "type": ["string", "null"],
+                "examples": ["table"],
                 "badge": "Gold",
-                "title": "Profile",
+                "title": "Type",
                 "options": {
                     "hidden": true
                 }
             },
             "format": {
                 "description": "A file extension format. Possible options are 'csv', 'xlsx', 'json', 'PostgreSQL', 'SQLite' and other standard file extensions.",
-                "example": "PostgreSQL",
-                "type": [
-                    "string",
-                    "null"
-                ],
+                "type": ["string", "null"],
+                "examples": ["CSV"],
                 "badge": "Gold",
                 "title": "Format",
                 "options": {
@@ -31,11 +25,8 @@
             },
             "encoding": {
                 "description": "Specifies the character encoding of the resource's data file. The default is 'UTF-8'. The values should be one of the 'Preferred MIME Names'.",
-                "example": "UTF-8",
-                "type": [
-                    "string",
-                    "null"
-                ],
+                "type": ["string", "null"],
+                "examples": ["UTF-8"],
                 "badge": "Gold",
                 "title": "Encoding",
                 "options": {
@@ -54,54 +45,39 @@
                             "properties": {
                                 "name": {
                                     "description": "The name of the field. The name may only consist of lowercase alphanumeric characters or underscores. It must not begin with a number or an underscore.",
-                                    "example": "year",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ],
+                                    "type": ["string", "null"],
+                                    "examples": ["year"],
                                     "badge": "Iron",
                                     "title": "Column Name",
-                                    "readonly": true
+                                    "readOnly": true
                                 },
                                 "description": {
                                     "description": "A text describing the field.",
-                                    "example": "Reference year for which the data was collected.",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ],
+                                    "type": ["string", "null"],
+                                    "examples": ["Reference year for which the data was collected."],
                                     "badge": "Silver",
                                     "title": "Description"
                                 },
                                 "type": {
                                     "description": "The data type of the field. In case of a geom column in a database, also indicate the shape and CRS.",
-                                    "example": "geometry(Point, 4326)",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ],
+                                    "type": ["string", "null"],
+                                    "examples": ["geometry(Point, 4326)"],
                                     "badge": "Iron",
                                     "title": "Type",
-                                    "readonly": true
+                                    "readOnly": true
                                 },
                                 "nullable": {
                                     "description": "A boolean key to specify that a column can be nullable. True is the default value.",
-                                    "example": true,
-                                    "type": [
-                                        "boolean",
-                                        "null"
-                                    ],
+                                    "type": ["boolean", "null"],
+                                    "examples": [true],
                                     "badge": "Iron",
                                     "title": "Nullable",
-                                    "readonly": true
+                                    "readOnly": true
                                 },
                                 "unit": {
                                     "description": "The unit of a field. If it does not apply, use 'null'. If the unit is given in a separate field, reference this field (e.g. 'unit'). Use a space between numbers and units (100 m).",
-                                    "example": "MW",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ],
+                                    "type": ["string", "null"],
+                                    "examples": ["MW"],
                                     "badge": "Silver",
                                     "title": "Unit"
                                 },
@@ -113,21 +89,15 @@
                                         "properties": {
                                             "name": {
                                                 "description": "The class label of the ontology term.",
-                                                "example": "wind energy converting unit",
-                                                "type": [
-                                                    "string",
-                                                    "null"
-                                                ],
+                                                "type": ["string", "null"],
+                                                "examples": ["wind energy converting unit"],
                                                 "badge": "Platinum",
                                                 "title": "Name"
                                             },
                                             "path": {
                                                 "description": "The path of the ontology term (IRI).",
-                                                "example": "https://openenergyplatform.org/ontology/oeo/OEO_00000044",
-                                                "type": [
-                                                    "string",
-                                                    "null"
-                                                ],
+                                                "type": ["string", "null"],
+                                                "examples": ["https://openenergyplatform.org/ontology/oeo/OEO_00000044"],
                                                 "badge": "Platinum",
                                                 "title": "Path",
                                                 "format": "uri"
@@ -147,31 +117,22 @@
                                         "properties": {
                                             "value": {
                                                 "description": "The name of the value in the column.",
-                                                "example": "onshore",
-                                                "type": [
-                                                    "string",
-                                                    "null"
-                                                ],
+                                                "type": ["string", "null"],
+                                                "examples": ["onshore"],
                                                 "badge": "Platinum",
                                                 "title": "Value"
                                             },
                                             "name": {
                                                 "description": "The class label of the ontology term in the column.",
-                                                "example": "onshore wind farm",
-                                                "type": [
-                                                    "string",
-                                                    "null"
-                                                ],
+                                                "type": ["string", "null"],
+                                                "examples": ["onshore wind farm"],
                                                 "badge": "Platinum",
                                                 "title": "Name"
                                             },
                                             "path": {
                                                 "description": "The path of the ontology term (IRI) in the column.",
-                                                "example": "https://openenergyplatform.org/ontology/oeo/OEO_00000311",
-                                                "type": [
-                                                    "string",
-                                                    "null"
-                                                ],
+                                                "type": ["string", "null"],
+                                                "examples": ["https://openenergyplatform.org/ontology/oeo/OEO_00000311"],
                                                 "badge": "Platinum",
                                                 "title": "Path",
                                                 "format": "uri"
@@ -194,11 +155,8 @@
                         "type": "array",
                         "items": {
                             "description": "The default value is the “id” column.",
-                            "example": ["id"],
-                            "type": [
-                                "string",
-                                "null"
-                            ],
+                            "type": ["string", "null"],
+                            "examples": ["id"],
                             "badge": "Iron",
                             "title": "Primary key"
                         },
@@ -217,11 +175,8 @@
                                     "type": "array",
                                     "items": {
                                         "description": "The column in the table that is constrained by the foreign key.",
-                                        "example": ["id","version"],
-                                        "type": [
-                                            "string",
-                                            "null"
-                                        ],
+                                        "type": ["string", "null"],
+                                        "examples": ["id","version"],
                                         "badge": "Iron",
                                         "title": "Foreign Key Field"
                                     },
@@ -234,11 +189,8 @@
                                     "properties": {
                                         "resource": {
                                             "description": "The referenced foreign table.",
-                                            "example": "model_draft.oep_oemetadata_table_example_version",
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ],
+                                            "type": ["string", "null"],
+                                            "examples": ["model_draft.oep_oemetadata_table_example_version"],
                                             "badge": "Iron",
                                             "title": "Foreign Resource"
                                         },
@@ -247,11 +199,8 @@
                                             "type": "array",
                                             "items": {
                                                 "description": "The foreign resource column.",
-                                                "example": ["id","version"],
-                                                "type": [
-                                                    "string",
-                                                    "null"
-                                                ],
+                                                "type": ["string", "null"],
+                                                "examples": ["id","version"],
                                                 "badge": "Iron",
                                                 "title": "Field"
                                             },
@@ -280,21 +229,15 @@
                 "properties": {
                     "delimiter": {
                         "description": "The delimiter specifies the character sequence which should separate fields (columns). Common characters are ',' (comma), ';' (semicolon), '.' (point) and '\\t' (tab).",
-                        "example": ";",
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": ["string", "null"],
+                        "examples": [";"],
                         "badge": "Silver",
                         "title": "Delimiter"
                     },
                     "decimalSeparator": {
                         "description": "The symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be '.' or ','.",
-                        "example": ".",
-                        "type": [
-                            "string",
-                            "null"
-                        ],
+                        "type": ["string", "null"],
+                        "examples": ["."],
                         "badge": "Silver",
                         "title": "Decimal separator"
                     }

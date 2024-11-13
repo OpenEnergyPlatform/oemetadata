@@ -1,9 +1,14 @@
+# SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+#
+# SPDX-License-Identifier: MIT
+
 from pathlib import Path
 
 LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 
 BASE_PATH = Path("metadata/")
-VERSION = "v20"
+VERSION = "latest"
 VERSION_PATH = BASE_PATH / VERSION
 SCHEMA_BUILD_PATH = VERSION_PATH / "build_source"
 MAIN_SCHEMA_PATH = SCHEMA_BUILD_PATH / "schema_structure.json"
