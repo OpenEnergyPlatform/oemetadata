@@ -61,7 +61,7 @@
                     "comment": {
                         "description": "A free-text commentary on what has been done.",
                         "type": ["string", "null"],
-                        "examples": ["Add general context."],
+                        "examples": ["Add metadata example."],
                         "badge": "Bronze",
                         "title": "Comment"
                     }

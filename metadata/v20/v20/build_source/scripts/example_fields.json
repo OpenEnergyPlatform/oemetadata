@@ -1,0 +1,127 @@
+[
+    {
+        "name": "id",
+        "description": "Unique identifier",
+        "type": "serial",
+        "nullable": false,
+        "unit": null,
+        "isAbout": [
+            {
+                "name": null,
+                "@id": null
+            }
+        ],
+        "valueReference": [
+            {
+                "value": null,
+                "name": null,
+                "@id": null
+            }
+        ]
+    },
+    {
+        "name": "name",
+        "description": "Example name",
+        "type": "text",
+        "nullable": true,
+        "unit": null,
+        "isAbout": [
+            {
+                "name": "written name",
+                "@id": "https://openenergy-platform.org/ontology/oeo/IAO_0000590"
+            }
+        ],
+        "valueReference": [
+            {
+                "value": null,
+                "name": null,
+                "@id": null
+            }
+        ]
+    },
+    {
+        "name": "type",
+        "description": "Type of wind farm",
+        "type": "text",
+        "nullable": true,
+        "unit": null,
+        "isAbout": [
+            {
+                "name": "wind farm",
+                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000447"
+            }
+        ],
+        "valueReference": [
+            {
+                "value": "onshore ",
+                "name": "onshore wind farm",
+                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000311"
+            },
+            {
+                "value": "offshore ",
+                "name": "offshore wind farm",
+                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000308"
+            }
+        ]
+    },
+    {
+        "name": "year",
+        "description": "Reference year",
+        "type": "integer",
+        "nullable": true,
+        "unit": null,
+        "isAbout": [
+            {
+                "name": "year",
+                "@id": "https://openenergy-platform.org/ontology/oeo/UO_0000036"
+            }
+        ],
+        "valueReference": [
+            {
+                "value": null,
+                "name": null,
+                "@id": null
+            }
+        ]
+    },
+    {
+        "name": "value",
+        "description": "Example value",
+        "type": "double precision",
+        "nullable": true,
+        "unit": "MW",
+        "isAbout": [
+            {
+                "name": "quantity value",
+                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000350"
+            }
+        ],
+        "valueReference": [
+            {
+                "value": null,
+                "name": null,
+                "@id": null
+            }
+        ]
+    },
+    {
+        "name": "geom",
+        "description": "Geometry",
+        "type": "geometry(Point, 4326)",
+        "nullable": true,
+        "unit": null,
+        "isAbout": [
+            {
+                "name": "spatial region",
+                "@id": "https://openenergy-platform.org/ontology/oeo/BFO_0000006"
+            }
+        ],
+        "valueReference": [
+            {
+                "value": null,
+                "name": null,
+                "@id": null
+            }
+        ]
+    }
+]
