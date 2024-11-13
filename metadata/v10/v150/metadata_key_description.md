@@ -1,3 +1,11 @@
+<!--
+SPDX-FileCopyrightText: Ludwig Hülk <Ludee> © Reiner Lemoine Institut
+SPDX-FileCopyrightText: Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+SPDX-FileCopyrightText: Christian Hofmann <christian-rli> © Reiner Lemoine Institut
+
+SPDX-License-Identifier: CC0-1.0
+-->
+
 # Open Energy Metadata
 
 ## Open Energy Metadata Description

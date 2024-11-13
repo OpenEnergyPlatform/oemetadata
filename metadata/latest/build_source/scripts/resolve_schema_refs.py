@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+#
+# SPDX-License-Identifier: MIT
+
 """
-Title: Resolve schema $ref
-Description: Resolve "$ref" elements in schema.json.
-Author: jh-RLI
+Title: Create OEMetadata schema from schemas
+Description: Resolve "$ref" elements in schema.json
+Author: jh-RLI, Ludee
 Email: jonas.huber@rl-institut.de
 Date: 2024-05-30
 Version: 1.0.0
@@ -12,7 +17,7 @@ Version: 1.0.0
 requires: "pip install jsonschema referencing"
 
 Usage: Script with additional arguments --debug for more detailed output.
-        Requires the folder structure introduced in oemetadata v2.0.1.
+        Requires the folder structure introduced in OEMetadata v2.0.1.
 """
 
 # Standard Library Imports
@@ -26,7 +31,7 @@ from urllib.parse import urljoin
 import argparse
 
 from referencing import Registry, Resource
-from jsonschema import Draft7Validator
+from jsonschema import Draft7Validator, Draft202012Validator
 
 from settings import (
     MAIN_SCHEMA_PATH,
@@ -59,7 +64,7 @@ def load_schema(schema_path):
 # Ensure the schema has the $schema field
 def ensure_schema_field(schema):
     if "$schema" not in schema:
-        schema["$schema"] = "http://json-schema.org/draft-07/schema#"
+        schema["$schema"] = "https://json-schema.org/draft/2020-12/schema"
     return schema
 
 
@@ -164,7 +169,7 @@ def resolve_and_merge(schema_path, debug):
 
 
 def validate_schema(resolved_schema, expected_schema):
-    validator = Draft7Validator(expected_schema)
+    validator = Draft202012Validator(expected_schema)
     errors = sorted(validator.iter_errors(resolved_schema), key=lambda e: e.path)
     for error in errors:
         print(f"Validation error at {list(error.path)}: {error.message}")

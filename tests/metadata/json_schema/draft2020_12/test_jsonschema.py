@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+#
+# SPDX-License-Identifier: CC0-1.0
+
 def test_jsonschema_should_load():
     try:
         from metadata.json_schema.draft2020_12.schema \
