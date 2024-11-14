@@ -43,12 +43,12 @@
                         "badge": "Bronze",
                         "title": "Publication Year"
                     },
-                    "@id": {
-                        "description": "A DOI or URL to the original source.",
+                    "path": {
+                        "description": "A DOI or link to the original source.",
                         "type": ["string", "null"],
                         "examples": ["https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf"],
                         "badge": "Bronze",
-                        "title": "Source Identifier",
+                        "title": "DOI",
                         "format": "uri"
                     },
                     "sourceLicenses": {

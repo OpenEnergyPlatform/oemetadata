@@ -33,7 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Rename ``source``- ``licenses`` to ``sourceLicenses`` [(#215)](https://github.com/OpenEnergyPlatform/oemetadata/pull/215)
 - Update create template [(#217)](https://github.com/OpenEnergyPlatform/oemetadata/pull/217)
 - Update folder structure [(#221)](https://github.com/OpenEnergyPlatform/oemetadata/pull/221)
-- Update `source`- `path` to  `@id` [(#223)](https://github.com/OpenEnergyPlatform/oemetadata/pull/223)
+- Update python version to 3.12 [(#223)](https://github.com/OpenEnergyPlatform/oemetadata/pull/223)
 
 ### Removed
 - [(#)]()
