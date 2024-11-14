@@ -1,6 +1,6 @@
 # SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
 #
-# SPDX-License-Identifier: CC0-1.0
+# SPDX-License-Identifier: MIT
 
 version = 1
 
@@ -23,55 +23,7 @@ SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut"
 SPDX-License-Identifier = "CC0-1.0"
 
 [[annotations]]
-path = ".github/workflows/*.yml"
-precedence = "override"
-SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut"
-SPDX-License-Identifier = "CC0-1.0"
-
-[[annotations]]
-path = "CITATION.cff"
-precedence = "override"
-SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut"
-SPDX-License-Identifier = "CC0-1.0"
-
-[[annotations]]
-path = "USERS.cff"
-precedence = "override"
-SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut"
-SPDX-License-Identifier = "CC0-1.0"
-
-[[annotations]]
 path = "format_code.sh"
-precedence = "override"
-SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut"
-SPDX-License-Identifier = "CC0-1.0"
-
-[[annotations]]
-path = "tox.ini"
-precedence = "override"
-SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut"
-SPDX-License-Identifier = "CC0-1.0"
-
-[[annotations]]
-path = "requirements.txt"
-precedence = "override"
-SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut"
-SPDX-License-Identifier = "CC0-1.0"
-
-[[annotations]]
-path = "requirements-docs.txt"
-precedence = "override"
-SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut"
-SPDX-License-Identifier = "CC0-1.0"
-
-[[annotations]]
-path = "setup.py"
-precedence = "override"
-SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut"
-SPDX-License-Identifier = "CC0-1.0"
-
-[[annotations]]
-path = "setup.cfg"
 precedence = "override"
 SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut"
 SPDX-License-Identifier = "CC0-1.0"
