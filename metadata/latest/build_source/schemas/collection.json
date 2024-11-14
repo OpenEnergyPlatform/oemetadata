@@ -4,32 +4,32 @@
     "type": "object",
     "properties": {
         "name": {
-            "description": "A filename or database conform collection name.",
+            "description": "A filename or database conform dataset name.",
             "type": ["string", "null"],
             "examples": ["oep_oemetadata"],
             "badge": "Iron",
-            "title": "Collection Name"
+            "title": "Dataset Name"
         },
         "title": {
-            "description": "A human readable collection name.",
+            "description": "A human readable dataset name.",
             "type": ["string", "null"],
             "examples": ["OEP OEMetadata"],
             "badge": "Bronze",
-            "title": "Collection Title"
+            "title": "Dataset Title"
         },
         "description": {
-            "description": "A free text description of the collection.",
+            "description": "A free text description of the dataset.",
             "type": ["string", "null"],
-            "examples": ["A collection of tables for the OEMetadata examples."],
+            "examples": ["A dataset for the OEMetadata examples."],
             "badge": "Bronze",
-            "title": "Collection Description"
+            "title": "Dataset Description"
         },
         "id": {
-            "description": "A unique identifier (UUID/DOI) for the collection.",
+            "description": "A unique identifier (UUID/DOI) for the dataset.",
             "type": ["string", "null"],
             "examples": ["https://databus.openenergyplatform.org/oeplatform/reference"],
             "badge": "Silver",
-            "title": "Collection Identifier",
+            "title": "Dataset Identifier",
             "format": "uri",
             "readOnly": true
         }
