@@ -1,7 +1,7 @@
 {
     "name": "oep_oemetadata",
     "title": "OEP OEMetadata",
-    "description": "A collection of tables for the OEMetadata examples.",
+    "description": "A dataset for the OEMetadata examples.",
     "id": "https://databus.openenergyplatform.org/oeplatform/reference",
     "resources": [
         {
@@ -87,19 +87,19 @@
                     "title": "IPCC Sixth Assessment Report (AR6) - Climate Change 2023 - Synthesis Report",
                     "authors": [
                         "Hoesung Lee",
-                        "José Romero",
+                        "JosÃ© Romero",
                         "The Core Writing Team"
                     ],
                     "description": "A Report of the Intergovernmental Panel on Climate Change.",
                     "publicationYear": "2023",
-                    "path": "https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf",
+                    "@id": "https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf",
                     "sourceLicenses": [
                         {
                             "name": "CC-BY-4.0",
                             "title": "Creative Commons Attribution 4.0 International",
                             "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
                             "instruction": "You are free to share and change, but you must attribute. See https://tldrlegal.com/license/odc-open-database-license-odbl for further information.",
-                            "attribution": "© Intergovernmental Panel on Climate Change 2023",
+                            "attribution": "Â© Intergovernmental Panel on Climate Change 2023",
                             "copyrightStatement": "https://www.ipcc.ch/copyright/"
                         }
                     ]
@@ -111,13 +111,13 @@
                     "title": "Open Data Commons Open Database License 1.0",
                     "path": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
                     "instruction": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information.",
-                    "attribution": "© Reiner Lemoine Institut",
+                    "attribution": "Â© Reiner Lemoine Institut",
                     "copyrightStatement": "https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/LICENSE.txt"
                 }
             ],
             "contributors": [
                 {
-                    "title": "Ludwig Hülk",
+                    "title": "Ludwig HÃ¼lk",
                     "path": "https://github.com/Ludee",
                     "organization": "Reiner Lemoine Institut",
                     "roles": [
@@ -163,7 +163,7 @@
                         "isAbout": [
                             {
                                 "name": "written name",
-                                "@id": "https://openenergy-platform.org/ontology/oeo/IAO_0000590"
+                                "@id": "https://openenergy-platform.org/ontology/oeo/IAO_0000590/"
                             }
                         ],
                         "valueReference": [
@@ -183,19 +183,19 @@
                         "isAbout": [
                             {
                                 "name": "wind farm",
-                                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000447"
+                                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000447/"
                             }
                         ],
                         "valueReference": [
                             {
-                                "value": "onshore ",
+                                "value": "onshore",
                                 "name": "onshore wind farm",
-                                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000311"
+                                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000311/"
                             },
                             {
-                                "value": "offshore ",
+                                "value": "offshore",
                                 "name": "offshore wind farm",
-                                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000308"
+                                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000308/"
                             }
                         ]
                     },
@@ -208,7 +208,7 @@
                         "isAbout": [
                             {
                                 "name": "year",
-                                "@id": "https://openenergy-platform.org/ontology/oeo/UO_0000036"
+                                "@id": "https://openenergy-platform.org/ontology/oeo/UO_0000036/"
                             }
                         ],
                         "valueReference": [
@@ -221,14 +221,14 @@
                     },
                     {
                         "name": "value",
-                        "description": "Example value",
+                        "description": "Bruttoleistung",
                         "type": "double precision",
                         "nullable": true,
                         "unit": "MW",
                         "isAbout": [
                             {
-                                "name": "quantity value",
-                                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000350"
+                                "name": "nameplate capacity",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00230003/"
                             }
                         ],
                         "valueReference": [
@@ -248,7 +248,7 @@
                         "isAbout": [
                             {
                                 "name": "spatial region",
-                                "@id": "https://openenergy-platform.org/ontology/oeo/BFO_0000006"
+                                "@id": "https://openenergy-platform.org/ontology/oeo/BFO_000000/"
                             }
                         ],
                         "valueReference": [
