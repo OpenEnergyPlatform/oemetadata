@@ -44,11 +44,11 @@
                         "title": "Publication Year"
                     },
                     "path": {
-                        "description": "A URL to the original source.",
+                        "description": "A DOI or link to the original source.",
                         "type": ["string", "null"],
                         "examples": ["https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf"],
                         "badge": "Bronze",
-                        "title": "Path",
+                        "title": "DOI",
                         "format": "uri"
                     },
                     "sourceLicenses": {
@@ -76,7 +76,7 @@
                                     "type": ["string", "null"],
                                     "examples": ["https://creativecommons.org/licenses/by/4.0/legalcode"],
                                     "badge": "Bronze",
-                                    "title": "Path",
+                                    "title": "License Identifier",
                                     "format": "uri"
                                 },
                                 "instruction": {

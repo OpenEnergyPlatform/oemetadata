@@ -23,7 +23,7 @@
                             "type": ["string", "null"],
                             "examples": ["https://www.wikidata.org/wiki/Q77077223"],
                             "badge": "Platinum",
-                            "title": "Address"
+                            "title": "Address Identifier"
                         },
                         "latitude": {
                             "description": "The latitude (lat) information of the location. Specifies the north / south position of the geometry.",
@@ -60,7 +60,7 @@
                             "examples": ["https://www.wikidata.org/wiki/Q64"],
                             "format": "uri",
                             "badge": "Platinum",
-                            "title": "Extent URI"
+                            "title": "Extent Identifier"
                         },
                         "resolutionValue": {
                             "description": "The value of the resolution.",

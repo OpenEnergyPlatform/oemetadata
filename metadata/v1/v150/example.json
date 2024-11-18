@@ -18,7 +18,7 @@
     "publicationDate": "2021-11-15",
     "context": {
         "homepage": "https://reiner-lemoine-institut.de/lod-geoss/",
-        "documentation": "https://openenergy-platform.org/tutorials/jupyter/OEMetadata/",
+        "documentation": "https://openenergyplatform.org/tutorials/jupyter/OEMetadata/",
         "sourceCode": "https://github.com/OpenEnergyPlatform/oemetadata/tree/production",
         "contact": "https://github.com/Ludee",
         "grantNo": "03EI1005",

@@ -43,15 +43,15 @@
                         "badge": "Bronze",
                         "title": "Publication Year"
                     },
-                    "path": {
+                    "@id": {
                         "description": "A URL to the original source.",
                         "type": ["string", "null"],
                         "examples": ["https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf"],
                         "badge": "Bronze",
-                        "title": "Path",
+                        "title": "Source Identifier",
                         "format": "uri"
                     },
-                    "licenses": {
+                    "sourceLicenses": {
                         "type": "array",
                         "items": {
                             "description": "An array of objects of licenses under which the described source is provided. See https://openenergyplatform.github.io/academy/courses/08_licensing/ for further information.",
@@ -76,7 +76,7 @@
                                     "type": ["string", "null"],
                                     "examples": ["https://opendatacommons.org/licenses/odbl/1-0/index.html"],
                                     "badge": "Bronze",
-                                    "title": "Path",
+                                    "title": "License Identifier",
                                     "format": "uri"
                                 },
                                 "instruction": {

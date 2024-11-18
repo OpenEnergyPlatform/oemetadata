@@ -1,7 +1,7 @@
 {
     "name": "oep_oemetadata",
     "title": "OEP OEMetadata",
-    "description": "A collection of tables for the OEMetadata examples.",
+    "description": "A dataset for the OEMetadata examples.",
     "id": "https://databus.openenergyplatform.org/oeplatform/reference",
     "resources": [
         {
@@ -22,7 +22,7 @@
             "subject": [
                 {
                     "name": "energy",
-                    "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000150"
+                    "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000150"
                 }
             ],
             "keywords": [
@@ -163,7 +163,7 @@
                         "isAbout": [
                             {
                                 "name": "written name",
-                                "@id": "https://openenergy-platform.org/ontology/oeo/IAO_0000590"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/IAO_0000590/"
                             }
                         ],
                         "valueReference": [
@@ -183,19 +183,19 @@
                         "isAbout": [
                             {
                                 "name": "wind farm",
-                                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000447"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000447/"
                             }
                         ],
                         "valueReference": [
                             {
-                                "value": "onshore ",
+                                "value": "onshore",
                                 "name": "onshore wind farm",
-                                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000311"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000311/"
                             },
                             {
-                                "value": "offshore ",
+                                "value": "offshore",
                                 "name": "offshore wind farm",
-                                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000308"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000308/"
                             }
                         ]
                     },
@@ -208,7 +208,7 @@
                         "isAbout": [
                             {
                                 "name": "year",
-                                "@id": "https://openenergy-platform.org/ontology/oeo/UO_0000036"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/UO_0000036/"
                             }
                         ],
                         "valueReference": [
@@ -221,14 +221,14 @@
                     },
                     {
                         "name": "value",
-                        "description": "Example value",
+                        "description": "Bruttoleistung",
                         "type": "double precision",
                         "nullable": true,
                         "unit": "MW",
                         "isAbout": [
                             {
-                                "name": "quantity value",
-                                "@id": "https://openenergy-platform.org/ontology/oeo/OEO_00000350"
+                                "name": "nameplate capacity",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00230003/"
                             }
                         ],
                         "valueReference": [
@@ -248,7 +248,7 @@
                         "isAbout": [
                             {
                                 "name": "spatial region",
-                                "@id": "https://openenergy-platform.org/ontology/oeo/BFO_0000006"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/BFO_000000/"
                             }
                         ],
                         "valueReference": [

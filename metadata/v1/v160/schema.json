@@ -84,7 +84,7 @@
                     },
                     "path": {
                         "description": "The URI of the class.",
-                        "example": "https://openenergy-platform.org/ontology/oeo/OEO_00000150",
+                        "example": "https://openenergyplatform.org/ontology/oeo/OEO_00000150",
                         "type": [
                             "string",
                             "null"
@@ -152,7 +152,7 @@
             "properties": {
                 "homepage": {
                     "description": "URL of project.",
-                    "example": "https://openenergy-platform.org/",
+                    "example": "https://openenergyplatform.org/",
                     "type": [
                         "string",
                         "null"
@@ -163,7 +163,7 @@
                 },
                 "documentation": {
                     "description": "A URL of the project's documentation.",
-                    "example": "https://openenergy-platform.org/about/",
+                    "example": "https://openenergyplatform.org/about/",
                     "type": [
                         "string",
                         "null"
@@ -638,7 +638,7 @@
                     },
                     "path": {
                         "description": "A URL that should be a permanent http(s) address or other path directly linking to the resource.",
-                        "example": "https://openenergy-platform.org/dataedit/view/openstreetmap/osm_deu_line",
+                        "example": "https://openenergyplatform.org/dataedit/view/openstreetmap/osm_deu_line",
                         "type": [
                             "string",
                             "null"
@@ -736,7 +736,7 @@
                                                     },
                                                     "path": {
                                                         "description": "Path to the OEO class (URI)",
-                                                        "example": "https://openenergy-platform.org/ontology/oeo/OEO_00000044",
+                                                        "example": "https://openenergyplatform.org/ontology/oeo/OEO_00000044",
                                                         "type": [
                                                             "string",
                                                             "null"
@@ -781,7 +781,7 @@
                                                     },
                                                     "path": {
                                                         "description": " The URI of the OEO class",
-                                                        "example": "https://openenergy-platform.org/ontology/oeo/OEO_00000311",
+                                                        "example": "https://openenergyplatform.org/ontology/oeo/OEO_00000311",
                                                         "type": [
                                                             "string",
                                                             "null"

@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: Jonas Huber <@jh-RLI> © Reiner Lemoine Institut
+# SPDX-License-Identifier: MIT
+
 # https://github.com/actions/runner
 # https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions#understanding-the-workflow-file
 # https://docs.github.com/pt/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions
@@ -22,8 +26,7 @@ jobs:
     strategy:
       matrix:
         python-version:
-          - 3.6
-          - 3.7
+          - "3.10"
     steps:
       - name: Check out source repository
         uses: actions/checkout@v2

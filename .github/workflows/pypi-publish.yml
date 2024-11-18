@@ -1,4 +1,8 @@
-name: Build 📦 and release on pypi 
+# SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: Jonas Huber <@jh-RLI> © Reiner Lemoine Institut
+# SPDX-License-Identifier: MIT
+
+name: Build 📦 and release on pypi
 
 on:
   release:

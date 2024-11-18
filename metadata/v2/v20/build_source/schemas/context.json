@@ -41,7 +41,7 @@
                     "description": "The publishing agency of the data. This can be the OEP.",
                     "type": ["string", "null"],
                     "examples": ["Open Energy Platform (OEP)"],
-                    "badge": "Gold",
+                    "badge": "Bronze",
                     "title": "Publisher"
                 },"publisherLogo": {
                     "description": "A URL to the logo of the publishing agency of data.",

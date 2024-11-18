@@ -99,7 +99,7 @@
                                                 "type": ["string", "null"],
                                                 "examples": ["https://openenergyplatform.org/ontology/oeo/OEO_00000044"],
                                                 "badge": "Platinum",
-                                                "title": "Is About URI",
+                                                "title": "Is About Identifier",
                                                 "format": "uri"
                                             }
                                         },
@@ -134,7 +134,7 @@
                                                 "type": ["string", "null"],
                                                 "examples": ["https://openenergyplatform.org/ontology/oeo/OEO_00000311"],
                                                 "badge": "Platinum",
-                                                "title": "Value Reference URI",
+                                                "title": "Value Reference Identifier",
                                                 "format": "uri"
                                             }
                                         },

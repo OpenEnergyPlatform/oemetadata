@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+#
+# SPDX-License-Identifier: MIT
+
 import json
 from os import path
 
@@ -22,10 +27,10 @@ setup(
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
     ],
     keywords="OEFamily OEP JSON metadata schema open energy",
     packages=find_packages(exclude=["tests"]),
     package_data={"": ["./*.json"]},
-    python_requires=">=3.6",
+    python_requires=">=3.8",
 )

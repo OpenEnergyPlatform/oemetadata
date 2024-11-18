@@ -8,7 +8,7 @@
   ],
   "properties": {
     "name": {
-      "description": "A filename or database conform collection name.",
+      "description": "A filename or database conform dataset name.",
       "type": [
         "string",
         "null"
@@ -17,10 +17,10 @@
         "oep_oemetadata"
       ],
       "badge": "Iron",
-      "title": "Collection Name"
+      "title": "Dataset Name"
     },
     "title": {
-      "description": "A human readable collection name.",
+      "description": "A human readable dataset name.",
       "type": [
         "string",
         "null"
@@ -29,19 +29,19 @@
         "OEP OEMetadata"
       ],
       "badge": "Bronze",
-      "title": "Collection Title"
+      "title": "Dataset Title"
     },
     "description": {
-      "description": "A free text description of the collection.",
+      "description": "A free text description of the dataset.",
       "type": [
         "string",
         "null"
       ],
       "examples": [
-        "A collection of tables for the OEMetadata examples."
+        "A dataset for the OEMetadata examples."
       ],
       "badge": "Bronze",
-      "title": "Collection Description"
+      "title": "Dataset Description"
     },
     "id": {
       "description": "A unique identifier (UUID/DOI) for the collection.",
@@ -53,7 +53,7 @@
         "https://databus.openenergyplatform.org/oeplatform/reference"
       ],
       "badge": "Silver",
-      "title": "Collection Identifier",
+      "title": "Dataset Identifier",
       "format": "uri",
       "readOnly": true
     },
@@ -201,10 +201,10 @@
                     "null"
                   ],
                   "examples": [
-                    "https://openenergy-platform.org/ontology/oeo/OEO_00000150"
+                    "https://openenergyplatform.org/ontology/oeo/OEO_00000150"
                   ],
                   "badge": "Platinum",
-                  "title": "Subject URI",
+                  "title": "Subject Identifier",
                   "format": "uri"
                 }
               },
@@ -355,7 +355,7 @@
                 "examples": [
                   "Open Energy Platform (OEP)"
                 ],
-                "badge": "Gold",
+                "badge": "Bronze",
                 "title": "Publisher"
               },
               "publisherLogo": {
@@ -455,7 +455,7 @@
                       "https://www.wikidata.org/wiki/Q77077223"
                     ],
                     "badge": "Platinum",
-                    "title": "Address"
+                    "title": "Address Identifier"
                   },
                   "latitude": {
                     "description": "The latitude (lat) information of the location. Specifies the north / south position of the geometry.",
@@ -512,7 +512,7 @@
                     ],
                     "format": "uri",
                     "badge": "Platinum",
-                    "title": "Extent URI"
+                    "title": "Extent Identifier"
                   },
                   "resolutionValue": {
                     "description": "The value of the spatial resolution.",
@@ -746,7 +746,7 @@
                   "title": "Publication Year"
                 },
                 "path": {
-                  "description": "A URL to the original source.",
+                  "description": "A DOI or link to the original source.",
                   "type": [
                     "string",
                     "null"
@@ -755,7 +755,7 @@
                     "https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf"
                   ],
                   "badge": "Bronze",
-                  "title": "Path",
+                  "title": "DOI",
                   "format": "uri"
                 },
                 "sourceLicenses": {
@@ -798,7 +798,7 @@
                           "https://creativecommons.org/licenses/by/4.0/legalcode"
                         ],
                         "badge": "Bronze",
-                        "title": "Path",
+                        "title": "License Identifier",
                         "format": "uri"
                       },
                       "instruction": {
@@ -1188,7 +1188,7 @@
                               "https://openenergyplatform.org/ontology/oeo/OEO_00000044"
                             ],
                             "badge": "Platinum",
-                            "title": "Is About URI",
+                            "title": "Is About Identifier",
                             "format": "uri"
                           }
                         },
@@ -1238,7 +1238,7 @@
                               "https://openenergyplatform.org/ontology/oeo/OEO_00000311"
                             ],
                             "badge": "Platinum",
-                            "title": "Value Reference URI",
+                            "title": "Value Reference Identifier",
                             "format": "uri"
                           }
                         },
