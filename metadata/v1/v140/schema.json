@@ -64,7 +64,7 @@
             "type": "object",
             "properties": {
                 "homepage": {
-                    "description": "URL of project. Example: https://openenergy-platform.org/",
+                    "description": "URL of project. Example: https://openenergyplatform.org/",
                     "type": [
                         "string",
                         "null"
@@ -397,7 +397,7 @@
                         ]
                     },
                     "path": {
-                        "description": "A url-or-path string, that should be a permanent http(s) address or other path directly linking to the resource. Example: directly linking to the resource. https://openenergy-platform.org/dataedit/view/openstreetmap/osm_deu_roads",
+                        "description": "A url-or-path string, that should be a permanent http(s) address or other path directly linking to the resource. Example: directly linking to the resource. https://openenergyplatform.org/dataedit/view/openstreetmap/osm_deu_roads",
                         "type": [
                             "string",
                             "null"

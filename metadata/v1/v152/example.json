@@ -12,11 +12,11 @@
     "subject": [
         {
             "name": "energy",
-            "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000150"
+            "path": "https://openenergyplatform.org/ontology/oeo/OEO_00000150"
         },
         {
             "name": "test dataset",
-            "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000408"
+            "path": "https://openenergyplatform.org/ontology/oeo/OEO_00000408"
         }
     ],
     "keywords": [
@@ -28,7 +28,7 @@
     "publicationDate": "2022-02-15",
     "context": {
         "homepage": "https://reiner-lemoine-institut.de/lod-geoss/",
-        "documentation": "https://openenergy-platform.org/tutorials/jupyter/OEMetadata/",
+        "documentation": "https://openenergyplatform.org/tutorials/jupyter/OEMetadata/",
         "sourceCode": "https://github.com/OpenEnergyPlatform/oemetadata/tree/production",
         "contact": "https://github.com/Ludee",
         "grantNo": "03EI1005",
@@ -263,7 +263,7 @@
                         "isAbout": [
                             {
                                 "name": "written name",
-                                "path": "https://openenergy-platform.org/ontology/oeo/IAO_0000590"
+                                "path": "https://openenergyplatform.org/ontology/oeo/IAO_0000590"
                             }
                         ],
                         "valueReference": [
@@ -282,19 +282,19 @@
                         "isAbout": [
                             {
                                 "name": "wind farm",
-                                "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000447"
+                                "path": "https://openenergyplatform.org/ontology/oeo/OEO_00000447"
                             }
                         ],
                         "valueReference": [
                             {
                                 "value": "onshore ",
                                 "name": "onshore wind farm",
-                                "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000311"
+                                "path": "https://openenergyplatform.org/ontology/oeo/OEO_00000311"
                             },
                             {
                                 "value": "offshore ",
                                 "name": "offshore wind farm",
-                                "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000308"
+                                "path": "https://openenergyplatform.org/ontology/oeo/OEO_00000308"
                             }
                         ]
                     },
@@ -306,7 +306,7 @@
                         "isAbout": [
                             {
                                 "name": "year",
-                                "path": "https://openenergy-platform.org/ontology/oeo/UO_0000036"
+                                "path": "https://openenergyplatform.org/ontology/oeo/UO_0000036"
                             }
                         ],
                         "valueReference": [
@@ -325,7 +325,7 @@
                         "isAbout": [
                             {
                                 "name": "quantity value",
-                                "path": "https://openenergy-platform.org/ontology/oeo/OEO_00000350"
+                                "path": "https://openenergyplatform.org/ontology/oeo/OEO_00000350"
                             }
                         ],
                         "valueReference": [
@@ -344,7 +344,7 @@
                         "isAbout": [
                             {
                                 "name": "spatial region",
-                                "path": "https://openenergy-platform.org/ontology/oeo/BFO_0000006"
+                                "path": "https://openenergyplatform.org/ontology/oeo/BFO_0000006"
                             }
                         ],
                         "valueReference": [

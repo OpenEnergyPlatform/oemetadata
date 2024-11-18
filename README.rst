@@ -22,7 +22,7 @@ Open Energy Metadata (OEMetadata)
    * - Documentation
      - |badge_documentation|
    * - Publication
-     - |badge_pypi| |badge_pypi_downloads|
+     - |badge_pypi| |badge_python| |badge_pypi_downloads|
    * - Development
      - |badge_issue_open| |badge_issue_closes| |badge_pr_open| |badge_pr_closes|
    * - Community
@@ -83,7 +83,11 @@ License and Citation
 
 .. |badge_pypi| image:: https://img.shields.io/pypi/v/oemetadata
     :target: https://pypi.org/project/oemetadata/
-    :alt: PyPI
+    :alt: PyPI Version
+
+.. |badge_python| image:: https://img.shields.io/pypi/pyversions/oemetadata
+    :target: https://pypi.org/project/oemetadata/
+    :alt: PyPI Python Version
 
 .. |badge_pypi_downloads| image:: https://img.shields.io/pypi/dm/oemetadata
     :target: https://openenergyplatform.github.io/oemetadata/

@@ -5,7 +5,7 @@
         "dct": "http://purl.org/dc/terms/",
         "dc": "http://purl.org/dc/elements/1.1/",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "oeo": "http://openenergy-platform.org/ontology/oeo/",
+        "oeo": "https://openenergyplatform.org/ontology/oeo/",
         "csvw": "http://www.w3.org/ns/csvw#",
         "obo":"http://purl.obolibrary.org/obo/",
         "time":"http://www.w3.org/2006/time#",
