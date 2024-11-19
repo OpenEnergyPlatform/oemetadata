@@ -83,7 +83,7 @@ SPDX-FileCopyrightText = ["Ludwig Hülk <@Ludee> © Reiner Lemoine Institut", "J
 SPDX-License-Identifier = "MIT"
 
 [[annotations]]
-path = "metadata/v1/v151/*.json"
+path = "metadata/v1/v152/*.json"
 precedence = "override"
 SPDX-FileCopyrightText = ["Ludwig Hülk <@Ludee> © Reiner Lemoine Institut", "Jonas Huber <@jh-RLI> © Reiner Lemoine Institut", "Christian Hofmann <christian-rli> © Reiner Lemoine Institut"]
 SPDX-License-Identifier = "MIT"
