@@ -7,7 +7,7 @@ version = 1
 [[annotations]]
 path = "docs/**"
 precedence = "override"
-SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut; Jonas Huber <jh-RLI> © Reiner Lemoine Institut; Christian Hofmann <christian-rli> © Reiner Lemoine Institut"
+SPDX-FileCopyrightText = ["Ludwig Hülk <@Ludee> © Reiner Lemoine Institut", "Jonas Huber <@jh-RLI> © Reiner Lemoine Institut", "Christian Hofmann <christian-rli> © Reiner Lemoine Institut"]
 SPDX-License-Identifier = "CC-BY-4.0"
 
 [[annotations]]
@@ -31,11 +31,65 @@ SPDX-License-Identifier = "CC0-1.0"
 [[annotations]]
 path = "metadata/v2/v20/build_source/schemas/*.json"
 precedence = "override"
-SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut; Jonas Huber <jh-RLI> © Reiner Lemoine Institut"
+SPDX-FileCopyrightText = ["Ludwig Hülk <@Ludee> © Reiner Lemoine Institut", "Jonas Huber <@jh-RLI> © Reiner Lemoine Institut"]
 SPDX-License-Identifier = "MIT"
 
 [[annotations]]
 path = "metadata/latest/build_source/schemas/*.json"
 precedence = "override"
-SPDX-FileCopyrightText = "Ludwig Hülk <@Ludee> © Reiner Lemoine Institut; Jonas Huber <jh-RLI> © Reiner Lemoine Institut"
+SPDX-FileCopyrightText = ["Ludwig Hülk <@Ludee> © Reiner Lemoine Institut", "Jonas Huber <@jh-RLI> © Reiner Lemoine Institut"]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "metadata/v2/v20/*.json"
+precedence = "override"
+SPDX-FileCopyrightText = ["Ludwig Hülk <@Ludee> © Reiner Lemoine Institut", "Jonas Huber <@jh-RLI> © Reiner Lemoine Institut"]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "metadata/latest/*.json"
+precedence = "override"
+SPDX-FileCopyrightText = ["Ludwig Hülk <@Ludee> © Reiner Lemoine Institut", "Jonas Huber <@jh-RLI> © Reiner Lemoine Institut"]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "metadata/v1/v130/*.json"
+precedence = "override"
+SPDX-FileCopyrightText = ["Ludwig Hülk <@Ludee> © Reiner Lemoine Institut", "Jonas Huber <@jh-RLI> © Reiner Lemoine Institut", "Christian Hofmann <christian-rli> © Reiner Lemoine Institut"]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "metadata/v1/v140/*.json"
+precedence = "override"
+SPDX-FileCopyrightText = ["Ludwig Hülk <@Ludee> © Reiner Lemoine Institut", "Jonas Huber <@jh-RLI> © Reiner Lemoine Institut", "Christian Hofmann <christian-rli> © Reiner Lemoine Institut"]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "metadata/v1/v141/*.json"
+precedence = "override"
+SPDX-FileCopyrightText = ["Ludwig Hülk <@Ludee> © Reiner Lemoine Institut", "Jonas Huber <@jh-RLI> © Reiner Lemoine Institut", "Christian Hofmann <christian-rli> © Reiner Lemoine Institut"]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "metadata/v1/v150/*.json"
+precedence = "override"
+SPDX-FileCopyrightText = ["Ludwig Hülk <@Ludee> © Reiner Lemoine Institut", "Jonas Huber <@jh-RLI> © Reiner Lemoine Institut", "Christian Hofmann <christian-rli> © Reiner Lemoine Institut"]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "metadata/v1/v151/*.json"
+precedence = "override"
+SPDX-FileCopyrightText = ["Ludwig Hülk <@Ludee> © Reiner Lemoine Institut", "Jonas Huber <@jh-RLI> © Reiner Lemoine Institut", "Christian Hofmann <christian-rli> © Reiner Lemoine Institut"]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "metadata/v1/v151/*.json"
+precedence = "override"
+SPDX-FileCopyrightText = ["Ludwig Hülk <@Ludee> © Reiner Lemoine Institut", "Jonas Huber <@jh-RLI> © Reiner Lemoine Institut", "Christian Hofmann <christian-rli> © Reiner Lemoine Institut"]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "metadata/v1/v160/*.json"
+precedence = "override"
+SPDX-FileCopyrightText = ["Ludwig Hülk <@Ludee> © Reiner Lemoine Institut", "Jonas Huber <@jh-RLI> © Reiner Lemoine Institut", "Christian Hofmann <christian-rli> © Reiner Lemoine Institut"]
 SPDX-License-Identifier = "MIT"
