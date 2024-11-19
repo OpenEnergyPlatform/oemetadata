@@ -22,7 +22,7 @@ import os
 
 from typing import Any, Dict, Union, List
 from pathlib import Path
-from settings import RESOLVED_SCHEMA_FILE_NAME, EXAMPLE_PATH, LOG_FORMAT, SCHEMA_EXAMPLE_FIELDS
+from settings import RESOLVED_SCHEMA_FILE_NAME, EXAMPLE_PATH, LOG_FORMAT, SCHEMA_EXAMPLE_FIELDS, SCHEMA_EXAMPLE_PROV
 
 # Configuration
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
@@ -259,4 +259,6 @@ if __name__ == "__main__":
     logger.info("OEMetadata Example created!")
     example_fields = read_schema(SCHEMA_EXAMPLE_FIELDS)
     replace_key_in_json(EXAMPLE_PATH, 'fields', example_fields)
+    example_contributors = read_schema(SCHEMA_EXAMPLE_PROV)
+    replace_key_in_json(EXAMPLE_PATH, 'contributors', example_contributors)
     test_oemetadata_schema_should_validate_oemetadata_example(json_data)
