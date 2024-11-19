@@ -34,9 +34,9 @@
                         "description": "An array describing the roles of the contributor.",
                         "type": "array",
                         "items": {
-                            "description": "A role is recommended to follow an established vocabulary, such as DataCite Metadata Schema’s contributorRole or CreDIT. Useful roles to indicate are: creator, contact, and dataCurator.",
+                            "description": "A role is recommended to follow an established vocabulary: DataCite Metadata Schema’s contributorRole. Useful roles to indicate are: DataCollector, ContactPerson, and DataCurator.",
                             "type": ["string", "null"],
-                            "examples": ["creator", "dataCurator"],
+                            "examples": ["DataCollector", "DataCurator"],
                             "badge": "Bronze",
                             "title": "Role"
                         },
