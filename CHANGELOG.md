@@ -34,6 +34,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update create template [(#217)](https://github.com/OpenEnergyPlatform/oemetadata/pull/217)
 - Update folder structure [(#221)](https://github.com/OpenEnergyPlatform/oemetadata/pull/221)
 - Update python version to 3.12 [(#223)](https://github.com/OpenEnergyPlatform/oemetadata/pull/223)
+- Update REUSE licenses for json [(#225)](https://github.com/OpenEnergyPlatform/oemetadata/pull/225)
+- Update example contributors and roles [(#225)](https://github.com/OpenEnergyPlatform/oemetadata/pull/225)
 
 ### Removed
 - [(#)]()

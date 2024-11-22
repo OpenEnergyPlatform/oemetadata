@@ -5,7 +5,7 @@
     "type": "object",
     "required": ["resources"],
     "properties": {
-        "collection": {"$ref": "collection.json#"},
+        "collection": {"$ref": "dataset.json#"},
         "resources": {
             "description": "A collection of related resources.",
             "type": "array",
