@@ -24,7 +24,7 @@
                             "start": {
                                 "description": "The start time of a time series.",
                                 "type": ["string", "null"],
-                                "examples": ["2020-01-01T00:00:00+00:00"],
+                                "examples": ["2020-01-01T00:00:00+01:00"],
                                 "badge": "Silver",
                                 "title": "Timeseries Start",
                                 "format": "date-time"
@@ -32,7 +32,7 @@
                             "end": {
                                 "description": "The temporal end point of a time series.",
                                 "type": ["string", "null"],
-                                "examples": ["2020-01-01T23:59:30+00:00"],
+                                "examples": ["2020-01-01T23:59:30+01:00"],
                                 "badge": "Silver",
                                 "title": "Timeseries End",
                                 "format": "date-time"
