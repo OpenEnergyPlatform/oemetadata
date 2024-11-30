@@ -9,6 +9,7 @@ path = "docs/**"
 precedence = "override"
 SPDX-FileCopyrightText = ["Ludwig Hülk <@Ludee> © Reiner Lemoine Institut", "Jonas Huber <@jh-RLI> © Reiner Lemoine Institut", "Christian Hofmann <christian-rli> © Reiner Lemoine Institut"]
 SPDX-License-Identifier = "CC-BY-4.0"
+SPDX-FileComment = "Copyright: OEmetadata documentation © Reiner Lemoine Institut licensed CC-BY-4.0"
 
 [[annotations]]
 path = ".github/pull_request_template.md"
