@@ -15,6 +15,10 @@
         "time": "http://www.w3.org/2006/time#",
         "xml": "http://www.w3.org/XML/1998/namespace",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "name": {
+            "@id": "rdfs:label",
+            "@type": "xsd:string"
+        },
         "title": {
             "@id": "dct:title",
             "@type": "xsd:string"
@@ -23,24 +27,48 @@
             "@id": "dct:description",
             "@type": "xsd:string"
         },
-        "comment": {
-            "@id": "rdfs:comment",
-            "@type": "xsd:string"
+        "id": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "resources": {
+            "@id": "@nest",
+            "@type": "@id"
+        },
+        "@id": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "@context": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "topics": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "path": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "language": {
+            "@id": "xx",
+            "@type": "xx"
         },
         "subject": {
-            "@id": "dc:subject",
+            "@id": "@nest",
             "@type": "@id"
         },
         "keywords": {
             "@id": "dc:subject",
             "@type": "xsd:string"
         },
-        "temporal": {
-            "@id": "time:hasTemporalDuration",
-            "@type": "@id"
+        "publicationDate": {
+            "@id": "xx",
+            "@type": "xx"
         },
-        "timeseries": {
-            "@id": "time:hasDateTimeDescription",
+        "embargoPeriod": {
+            "@id": "@nest",
             "@type": "@id"
         },
         "start": {
@@ -51,21 +79,65 @@
             "@id": "dbo:endDateTime",
             "@type": "xsd:dateTime"
         },
-        "fields": {
-            "@id": "csvw:column",
+        "isActive": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "context": {
+            "@id": "@nest",
             "@type": "@id"
         },
-        "resources": {
-            "@id": "csvw:table",
+        "homepage": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "documentation": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "sourceCode": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "publisher": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "publisherLogo": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "contact": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "fundingAgency": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "fundingAgencyLogo": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "grantNo": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "temporal": {
+            "@id": "time:hasTemporalDuration",
+            "@type": "@id"
+        },
+        "timeseries": {
+            "@id": "time:hasDateTimeDescription",
+            "@type": "@id"
+        },
+        "fields": {
+            "@id": "csvw:column",
             "@type": "@id"
         },
         "schema": {
             "@id": "csvw:tableSchema",
             "@type": "@id"
-        },
-        "name": {
-            "@id": "rdfs:label",
-            "@type": "xsd:string"
         },
         "type": {
             "@id": "csvw:datatype",
@@ -82,6 +154,10 @@
         "valueReference": {
             "@id": "http://purl.org/goodrelations/v1#valueReference",
             "@type": "@id"
-        }
+        },
+        "comment": {
+            "@id": "rdfs:comment",
+            "@type": "xsd:string"
+        },
     }
 }
