@@ -123,41 +123,209 @@
             "@id": "xx",
             "@type": "xx"
         },
-        "temporal": {
-            "@id": "time:hasTemporalDuration",
+        "spatial"{
+            "@id": "@nest",
             "@type": "@id"
+        },
+        "location": {
+            "@id": "@nest",
+            "@type": "@id"
+        },
+        "address": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "latitude": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "longitude": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "extent": {
+            "@id": "@nest",
+            "@type": "@id"
+        },
+        "resolutionValue": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "resolutionUnit": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "boundingBox": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "crs": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "temporal": {
+            "@id": "@nest",
+            "@type": "@id"
+        },
+        "referenceDate": {
+            "@id": "xx",
+            "@type": "xx"
         },
         "timeseries": {
-            "@id": "time:hasDateTimeDescription",
+            "@id": "@nest",
             "@type": "@id"
         },
-        "fields": {
-            "@id": "csvw:column",
+        "allignment": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "aggregationType": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "source": {
+            "@id": "@nest",
             "@type": "@id"
         },
-        "schema": {
-            "@id": "csvw:tableSchema",
+        "authors": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "publicationYear": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "sourceLicenses": {
+            "@id": "@nest",
             "@type": "@id"
+        },
+        "instruction": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "attribution": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "copyrightStatement": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "licenses": {
+            "@id": "@nest",
+            "@type": "@id"
+        },
+        "contributors": {
+            "@id": "@nest",
+            "@type": "@id"
+        },
+        "organization": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "roles": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "date": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "object": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "comment": {
+            "@id": "rdfs:comment",
+            "@type": "xsd:string"
         },
         "type": {
             "@id": "csvw:datatype",
             "@type": "xsd:string"
+        },
+        "format": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "encoding": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "schema": {
+            "@id": "@nest",
+            "@type": "@id"
+        },
+        "fields": {
+            "@id": "@nest",
+            "@type": "@id"
+        },
+        "nullable": {
+            "@id": "xx",
+            "@type": "xx"
         },
         "unit": {
             "@id": "oeo:OEO_00040010",
             "@type": "xsd:string"
         },
         "isAbout": {
-            "@id": "saref:isAbout",
+            "@id": "@nest",
             "@type": "@id"
         },
         "valueReference": {
-            "@id": "http://purl.org/goodrelations/v1#valueReference",
+            "@id": "@nest",
             "@type": "@id"
         },
-        "comment": {
-            "@id": "rdfs:comment",
-            "@type": "xsd:string"
+        "value": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "primaryKey": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "foreignKeys": {
+            "@id": "@nest",
+            "@type": "@id"
+        },
+        "reference": {
+            "@id": "@nest",
+            "@type": "@id"
+        },
+        "fields": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "dialect": {
+            "@id": "@nest",
+            "@type": "@id"
+        },
+        "delimiter": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "decimalSeperator": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "review": {
+            "@id": "@nest",
+            "@type": "@id"
+        },
+        "badge": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "metaMetadata": {
+            "@id": "@nest",
+            "@type": "@id"
+        },
+        "metadataVersion": {
+            "@id": "xx",
+            "@type": "xx"
+        },
+        "metadataLicense": {
+            "@id": "@nest",
+            "@type": "@id"
         },
     }
 }
