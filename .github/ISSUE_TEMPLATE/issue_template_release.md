@@ -2,9 +2,14 @@
 name: Release Issue
 about: For a new release
 title: Release - Minor Version - 2.1.0
-labels: "enhancement"
+labels: 
+  [
+    "priority: critical :fire:",
+    "status: active :construction:",
+    "type: release :rocket:",
+    "part: github :octocat:",
+  ]
 assignees: 'Ludee'
-
 ---
 
 ## Description of the release
@@ -19,6 +24,7 @@ Describe the release in as much detail as possible.
 **Date:** Arrange a convenient date
 
 ## Workflow checklist
+
 - [ ] I am aware of the workflow in [RELEASE_PROCEDURE.md](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/RELEASE_PROCEDURE.md)
 - [ ] 4. 🐙 Create a `Draft GitHub Release`
 - [ ] 5. 💠 Create a `release` branch
