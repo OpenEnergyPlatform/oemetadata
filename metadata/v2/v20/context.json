@@ -228,11 +228,11 @@
             "@type": "xx"
         },
         "date": {
-            "@id": "xx",
+            "@id": "xsd:date",
             "@type": "xx"
         },
         "object": {
-            "@id": "xx",
+            "@id": "oeo:BFO_0000030",
             "@type": "xx"
         },
         "comment": {
@@ -244,11 +244,11 @@
             "@type": "xsd:string"
         },
         "format": {
-            "@id": "xx",
+            "@id": "dc:format , dcterms:format",
             "@type": "xx"
         },
         "encoding": {
-            "@id": "xx",
+            "@id": "dcam:VocabularyEncodingScheme , sdo:encodingFormat",
             "@type": "xx"
         },
         "schema": {
@@ -276,7 +276,7 @@
             "@type": "@id"
         },
         "value": {
-            "@id": "xx",
+            "@id": "rdf:value , dqv:value",
             "@type": "xx"
         },
         "primaryKey": {
@@ -320,7 +320,7 @@
             "@type": "@id"
         },
         "metadataVersion": {
-            "@id": "xx",
+            "@id": "owl:versionInfo , dcat:version",
             "@type": "xx"
         },
         "metadataLicense": {
