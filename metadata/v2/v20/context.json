@@ -123,7 +123,7 @@
             "@id": "xx",
             "@type": "xx"
         },
-        "spatial"{
+        "spatial": {
             "@id": "@nest",
             "@type": "@id"
         },
@@ -326,6 +326,6 @@
         "metadataLicense": {
             "@id": "@nest",
             "@type": "@id"
-        },
+        }
     }
 }
