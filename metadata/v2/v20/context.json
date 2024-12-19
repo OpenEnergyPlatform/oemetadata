@@ -52,7 +52,7 @@
             "@type": "xx"
         },
         "language": {
-            "@id": "xx",
+            "@id": "dc:language",
             "@type": "xx"
         },
         "subject": {
@@ -64,7 +64,7 @@
             "@type": "xsd:string"
         },
         "publicationDate": {
-            "@id": "xx",
+            "@id": "dct:issued , ",
             "@type": "xx"
         },
         "embargoPeriod": {
@@ -88,11 +88,11 @@
             "@type": "@id"
         },
         "homepage": {
-            "@id": "xx",
+            "@id": "foaf:homepage",
             "@type": "xx"
         },
         "documentation": {
-            "@id": "xx",
+            "@id": "sdo:documentation",
             "@type": "xx"
         },
         "sourceCode": {
@@ -100,7 +100,7 @@
             "@type": "xx"
         },
         "publisher": {
-            "@id": "xx",
+            "@id": "dct:publisher",
             "@type": "xx"
         },
         "publisherLogo": {
@@ -108,7 +108,7 @@
             "@type": "xx"
         },
         "contact": {
-            "@id": "xx",
+            "@id": "oeo:OEO_00140109",
             "@type": "xx"
         },
         "fundingAgency": {
