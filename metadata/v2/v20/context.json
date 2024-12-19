@@ -156,7 +156,7 @@
             "@type": "xx"
         },
         "boundingBox": {
-            "@id": "xx",
+            "@id": "dcat:bbox",
             "@type": "xx"
         },
         "crs": {
@@ -180,7 +180,7 @@
             "@type": "xx"
         },
         "aggregationType": {
-            "@id": "xx",
+            "@id": "oeo:OEO_00140068",
             "@type": "xx"
         },
         "source": {
@@ -188,11 +188,11 @@
             "@type": "@id"
         },
         "authors": {
-            "@id": "xx",
+            "@id": "oeo:OEO_00000064",
             "@type": "xx"
         },
         "publicationYear": {
-            "@id": "xx",
+            "@id": "oeo:UO_0000036 , xsd:gYear ",
             "@type": "xx"
         },
         "sourceLicenses": {
@@ -204,11 +204,11 @@
             "@type": "xx"
         },
         "attribution": {
-            "@id": "xx",
+            "@id": "prov:Attribution",
             "@type": "xx"
         },
         "copyrightStatement": {
-            "@id": "xx",
+            "@id": "dct:rights",
             "@type": "xx"
         },
         "licenses": {
@@ -220,11 +220,11 @@
             "@type": "@id"
         },
         "organization": {
-            "@id": "xx",
+            "@id": "oeo:OEO_00030022",
             "@type": "xx"
         },
         "roles": {
-            "@id": "xx",
+            "@id": "oeo:BFO_0000023",
             "@type": "xx"
         },
         "date": {
@@ -244,11 +244,11 @@
             "@type": "xsd:string"
         },
         "format": {
-            "@id": "dc:format , dcterms:format",
+            "@id": "dc:format , dct:format",
             "@type": "xx"
         },
         "encoding": {
-            "@id": "dcam:VocabularyEncodingScheme , sdo:encodingFormat",
+            "@id": "dcam:VocabularyEncodingScheme , sdo:encodingFormat , csvw:encoding",
             "@type": "xx"
         },
         "schema": {
@@ -300,7 +300,7 @@
             "@type": "@id"
         },
         "delimiter": {
-            "@id": "xx",
+            "@id": "csvw:delimiter",
             "@type": "xx"
         },
         "decimalSeperator": {
