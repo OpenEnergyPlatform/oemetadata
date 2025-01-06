@@ -29,7 +29,7 @@
         },
         "id": {
             "@id": "dc:indentifier",
-            "@type": "xx"
+            "@type": "xsd:string"
         },
         "resources": {
             "@id": "@nest",
@@ -49,11 +49,11 @@
         },
         "path": {
             "@id": "dc:source",
-            "@type": "xx"
+            "@type": "xsd:string"
         },
         "language": {
             "@id": "dc:language",
-            "@type": "xx"
+            "@type": "[IETF-BCP47]"
         },
         "subject": {
             "@id": "@nest",
@@ -65,7 +65,7 @@
         },
         "publicationDate": {
             "@id": "dct:issued , ",
-            "@type": "xx"
+            "@type": "xsd:date"
         },
         "embargoPeriod": {
             "@id": "@nest",
@@ -101,11 +101,11 @@
         },
         "publisher": {
             "@id": "dct:publisher",
-            "@type": "xx"
+            "@type": "foaf:Agent"
         },
         "publisherLogo": {
             "@id": "dc:publisher",
-            "@type": "xx"
+            "@type": "foaf:Agent"
         },
         "contact": {
             "@id": "oeo:OEO_00140109",
@@ -157,7 +157,7 @@
         },
         "boundingBox": {
             "@id": "dcat:bbox",
-            "@type": "xx"
+            "@type": "[minLon, minLat, maxLon, maxLat] or [W,S,E,N] , geosparql:asWKT"
         },
         "crs": {
             "@id": "xx",
@@ -169,7 +169,7 @@
         },
         "referenceDate": {
             "@id": "dc:date",
-            "@type": "xx"
+            "@type": "ISO 8601"
         },
         "timeseries": {
             "@id": "@nest",
@@ -193,7 +193,7 @@
         },
         "publicationYear": {
             "@id": "oeo:UO_0000036 , xsd:gYear ",
-            "@type": "xx"
+            "@type": "ISO 8601"
         },
         "sourceLicenses": {
             "@id": "@nest",
@@ -201,7 +201,7 @@
         },
         "instruction": {
             "@id": "dc:rights , dc:source",
-            "@type": "xx"
+            "@type": "xsd:string"
         },
         "attribution": {
             "@id": "prov:Attribution",
@@ -209,7 +209,7 @@
         },
         "copyrightStatement": {
             "@id": "dct:rights",
-            "@type": "xx"
+            "@type": "URI , string"
         },
         "licenses": {
             "@id": "@nest",
@@ -229,7 +229,7 @@
         },
         "date": {
             "@id": "xsd:date",
-            "@type": "xx"
+            "@type": "ISO 8601"
         },
         "object": {
             "@id": "oeo:BFO_0000030",
