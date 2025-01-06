@@ -28,7 +28,7 @@
             "@type": "xsd:string"
         },
         "id": {
-            "@id": "xx",
+            "@id": "dc:indentifier",
             "@type": "xx"
         },
         "resources": {
@@ -48,7 +48,7 @@
             "@type": "xx"
         },
         "path": {
-            "@id": "xx",
+            "@id": "dc:source",
             "@type": "xx"
         },
         "language": {
@@ -96,7 +96,7 @@
             "@type": "xx"
         },
         "sourceCode": {
-            "@id": "xx",
+            "@id": "oeo:OEO_00000091",
             "@type": "xx"
         },
         "publisher": {
@@ -104,7 +104,7 @@
             "@type": "xx"
         },
         "publisherLogo": {
-            "@id": "xx",
+            "@id": "dc:publisher",
             "@type": "xx"
         },
         "contact": {
@@ -112,15 +112,15 @@
             "@type": "xx"
         },
         "fundingAgency": {
-            "@id": "xx",
+            "@id": "oeo:OEO_00000509 , oeo:OEO_00000238",
             "@type": "xx"
         },
         "fundingAgencyLogo": {
-            "@id": "xx",
+            "@id": "oeo:OEO_00000509 , oeo:OEO_00000238",
             "@type": "xx"
         },
         "grantNo": {
-            "@id": "xx",
+            "@id": "oeo:OEO_00000509 , oeo:OEO_00140178",
             "@type": "xx"
         },
         "spatial": {
@@ -168,7 +168,7 @@
             "@type": "@id"
         },
         "referenceDate": {
-            "@id": "xx",
+            "@id": "dc:date",
             "@type": "xx"
         },
         "timeseries": {
@@ -200,7 +200,7 @@
             "@type": "@id"
         },
         "instruction": {
-            "@id": "xx",
+            "@id": "dc:rights , dc:source",
             "@type": "xx"
         },
         "attribution": {
@@ -312,7 +312,7 @@
             "@type": "@id"
         },
         "badge": {
-            "@id": "xx",
+            "@id": "oeo:OEO_00140098 , ro:has quality , bfo:quality",
             "@type": "xx"
         },
         "metaMetadata": {
