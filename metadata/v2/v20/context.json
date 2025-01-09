@@ -47,7 +47,7 @@
             "@id": "foaf:topic_interest",
             "@type": "xx"
         },
-        "path": {
+        "sourcePath": {
             "@id": "dc:source",
             "@type": "xsd:string"
         },
@@ -255,15 +255,13 @@
             "@id": "@nest",
             "@type": "@id"
         },
-        "@context": {
-            "nestedFields": {
-                "@id": "@nest",
-                "@type": "@id"
-            },
-            "schemaFields": {
-                "@id": "csvw:column",
-                "@type": "csvw:Column"
-            }
+        "nestedFields": {
+            "@id": "@nest",
+            "@type": "@id"
+        },
+        "schemaFields": {
+            "@id": "csvw:column",
+            "@type": "csvw:Column"
         },
         "nullable": {
             "@id": "xx",
