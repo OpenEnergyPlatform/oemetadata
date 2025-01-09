@@ -64,7 +64,7 @@
             "@type": "xsd:string"
         },
         "publicationDate": {
-            "@id": "dct:issued , ",
+            "@id": "dct:issued",
             "@type": "xsd:date"
         },
         "embargoPeriod": {
