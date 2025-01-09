@@ -198,6 +198,10 @@
             "@id": "prov:Attribution",
             "@type": "xsd:string"
         },
+        "copyrightStatement": {
+            "@id": "dct:rights",
+            "@type": "xsd:string"
+        },
         "licenses": {
             "@id": "ex:licenses",
             "@container": "@set"
@@ -214,6 +218,10 @@
             "@id": "oeo:BFO_0000023",
             "@container": "@set",
             "@type": "xsd:string"
+        },
+        "date": {
+            "@id": "xsd:date",
+            "@type": "xsd:date"
         },
         "object": {
             "@id": "oeo:BFO_0000030",
