@@ -1,13 +1,13 @@
 {
     "@context": {
-        "path": "@id",
+        "ex": "http://example.org/",
         "bfo": "http://purl.obolibrary.org/obo/bfo.owl#",
         "csvw": "http://www.w3.org/ns/csvw#",
         "dbo": "http://dbpedia.org/ontology/",
         "dc": "http://purl.org/dc/elements/1.1/",
         "dct": "http://purl.org/dc/terms/",
         "obda": "https://w3id.org/obda/vocabulary#",
-        "oeo": "http://openenergyplatform.org/ontology/oeo/",
+        "oeo": "https://openenergyplatform.org/ontology/oeo/releases/oeo-full.owl",
         "owl": "http://www.w3.org/2002/07/owl#",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -15,6 +15,10 @@
         "time": "http://www.w3.org/2006/time#",
         "xml": "http://www.w3.org/XML/1998/namespace",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "geo": "http://www.georss.org/georss/",
+        "sc": "http://schema.org/",
+        "prov": "http://www.w3.org/ns/prov#",
         "name": {
             "@id": "rdfs:label",
             "@type": "xsd:string"
@@ -29,23 +33,20 @@
         },
         "id": {
             "@id": "dc:indentifier",
-            "@type": "xsd:string"
+            "@type": "xsd:anyURI"
         },
         "resources": {
-            "@id": "@nest",
-            "@type": "@id"
-        },
-        "@id": {
-            "@id": "xx",
-            "@type": "xx"
-        },
-        "@context": {
-            "@id": "xx",
-            "@type": "xx"
+            "@container": "@set",
+            "@id": "ex:resource"
         },
         "topics": {
+            "@container": "@set",
             "@id": "foaf:topic_interest",
-            "@type": "xx"
+            "@type": "xsd:string"
+        },
+        "path": {
+            "@id": "sc:url",
+            "@type": "@id"
         },
         "sourcePath": {
             "@id": "dc:source",
@@ -53,11 +54,12 @@
         },
         "language": {
             "@id": "dc:language",
-            "@type": "[IETF-BCP47]"
+            "@container": "@set",
+            "@type": "xsd:string"
         },
         "subject": {
-            "@id": "@nest",
-            "@type": "@id"
+            "@container": "@set",
+            "@id": "ex:subject"
         },
         "keywords": {
             "@id": "dc:subject",
@@ -67,10 +69,7 @@
             "@id": "dct:issued",
             "@type": "xsd:date"
         },
-        "embargoPeriod": {
-            "@id": "@nest",
-            "@type": "@id"
-        },
+        "embargoPeriod": "@nest",
         "start": {
             "@id": "dbo:startDateTime",
             "@type": "xsd:dateTime"
@@ -80,24 +79,21 @@
             "@type": "xsd:dateTime"
         },
         "isActive": {
-            "@id": "xx",
-            "@type": "xx"
+            "@id": "ex:isActive",
+            "@type": "xsd:boolean"
         },
-        "context": {
-            "@id": "@nest",
-            "@type": "@id"
-        },
+        "context": "@nest",
         "homepage": {
             "@id": "foaf:homepage",
-            "@type": "xx"
+            "@type": "xsd:anyURI"
         },
         "documentation": {
             "@id": "sdo:documentation",
-            "@type": "xx"
+            "@type": "xsd:anyURI"
         },
         "sourceCode": {
             "@id": "oeo:OEO_00000091",
-            "@type": "xx"
+            "@type": "xsd:anyURI"
         },
         "publisher": {
             "@id": "dct:publisher",
@@ -109,31 +105,31 @@
         },
         "contact": {
             "@id": "oeo:OEO_00140109",
-            "@type": "xx"
+            "@type": "xsd:string"
         },
         "fundingAgency": {
-            "@id": "oeo:OEO_00000509 , oeo:OEO_00000238",
-            "@type": "xx"
+            "@id": "oeo:OEO_00000238",
+            "@type": "xsd:string"
         },
         "fundingAgencyLogo": {
-            "@id": "oeo:OEO_00000509 , oeo:OEO_00000238",
-            "@type": "xx"
+            "@id": "oeo:OEO_00000238",
+            "@type": "xsd:string"
         },
         "grantNo": {
-            "@id": "oeo:OEO_00000509 , oeo:OEO_00140178",
-            "@type": "xx"
+            "@id": "oeo:OEO_00140178",
+            "@type": "xsd:string"
         },
         "spatial": {
-            "@id": "@nest",
+            "@id": "ex:spatial",
             "@type": "@id"
         },
         "location": {
-            "@id": "@nest",
+            "@id": "dc:location",
             "@type": "@id"
         },
         "address": {
-            "@id": "dc:location ",
-            "@type": "xx"
+            "@id": "dc:location",
+            "@type": "xsd:string"
         },
         "latitude": {
             "@id": "geo:lat",
@@ -143,97 +139,85 @@
             "@id": "geo:long",
             "@type": "xsd:decimal"
         },
-        "extent": {
-            "@id": "@nest",
-            "@type": "@id"
-        },
+        "extent": "@nest",
         "resolutionValue": {
-            "@id": "xx",
-            "@type": "xx"
+            "@id": "ex:resolutionValue",
+            "@type": "xsd:decimal"
         },
         "resolutionUnit": {
-            "@id": "xx",
-            "@type": "xx"
+            "@id": "ex:resolutionUnit",
+            "@type": "xsd:string"
         },
         "boundingBox": {
             "@id": "dcat:bbox",
-            "@type": "[minLon, minLat, maxLon, maxLat] or [W,S,E,N] , geosparql:asWKT"
+            "@container": "@set",
+            "@type": "xsd:decimal"
         },
         "crs": {
             "@id": "geo:crs",
             "@type": "xsd:string"
         },
-        "temporal": {
-            "@id": "@nest",
-            "@type": "@id"
-        },
+        "temporal": "@nest",
         "referenceDate": {
             "@id": "dc:date",
-            "@type": "ISO 8601"
+            "@type": "xsd:date"
         },
         "timeseries": {
-            "@id": "@nest",
-            "@type": "@id"
+            "@id": "ex:timeseries",
+            "@container": "@set"
         },
-        "allignment": {
-            "@id": "xx",
-            "@type": "xx"
+        "alignment": {
+            "@id": "ex:alignment",
+            "@type": "xsd:string"
         },
         "aggregationType": {
             "@id": "oeo:OEO_00140068",
-            "@type": "xx"
+            "@type": "xsd:string"
         },
-        "source": {
-            "@id": "@nest",
-            "@type": "@id"
+        "sources": {
+            "@id": "ex:sources",
+            "@container": "@set"
         },
         "authors": {
             "@id": "oeo:OEO_00000064",
-            "@type": "xx"
+            "@type": "xsd:string"
         },
         "publicationYear": {
-            "@id": "oeo:UO_0000036 , xsd:gYear ",
-            "@type": "ISO 8601"
+            "@id": "oeo:UO_0000036",
+            "@type": "xsd:date"
         },
         "sourceLicenses": {
-            "@id": "@nest",
-            "@type": "@id"
+            "@id": "ex:sourceLicenses",
+            "@container": "@set"
         },
         "instruction": {
-            "@id": "dc:rights , dc:source",
+            "@id": "dc:rights",
             "@type": "xsd:string"
         },
         "attribution": {
             "@id": "prov:Attribution",
-            "@type": "xx"
-        },
-        "copyrightStatement": {
-            "@id": "dct:rights",
-            "@type": "URI , string"
+            "@type": "xsd:string"
         },
         "licenses": {
-            "@id": "@nest",
-            "@type": "@id"
+            "@id": "ex:licenses",
+            "@container": "@set"
         },
         "contributors": {
-            "@id": "@nest",
-            "@type": "@id"
+            "@id": "ex:contributors",
+            "@container": "@set"
         },
         "organization": {
             "@id": "oeo:OEO_00030022",
-            "@type": "xx"
+            "@type": "xsd:string"
         },
         "roles": {
             "@id": "oeo:BFO_0000023",
-            "@type": "xx"
-        },
-        "date": {
-            "@id": "xsd:date",
-            "@type": "ISO 8601"
+            "@container": "@set",
+            "@type": "xsd:string"
         },
         "object": {
             "@id": "oeo:BFO_0000030",
-            "@type": "xx"
+            "@type": "xsd:string"
         },
         "comment": {
             "@id": "rdfs:comment",
@@ -244,92 +228,76 @@
             "@type": "xsd:string"
         },
         "format": {
-            "@id": "dc:format , dct:format",
-            "@type": "xx"
+            "@id": "dc:format",
+            "@type": "xsd:string"
         },
         "encoding": {
-            "@id": "dcam:VocabularyEncodingScheme , sdo:encodingFormat , csvw:encoding",
-            "@type": "xx"
+            "@id": "csvw:encoding",
+            "@type": "xsd:string"
         },
-        "schema": {
-            "@id": "@nest",
-            "@type": "@id"
-        },
+        "schema": "@nest",
         "nestedFields": {
-            "@id": "@nest",
-            "@type": "@id"
+            "@id": "ex:nestedFields",
+            "@container": "@set"
         },
         "schemaFields": {
             "@id": "csvw:column",
             "@type": "csvw:Column"
         },
         "nullable": {
-            "@id": "xx",
-            "@type": "xx"
+            "@id": "schema:isNullable",
+            "@type": "xsd:boolean"
         },
         "unit": {
             "@id": "oeo:OEO_00040010",
             "@type": "xsd:string"
         },
         "isAbout": {
-            "@id": "@nest",
-            "@type": "@id"
+            "@id": "bfo:IAO_0000136",
+            "@container": "@set"
         },
         "valueReference": {
-            "@id": "@nest",
-            "@type": "@id"
+            "@id": "prov:value",
+            "@container": "@set"
         },
         "value": {
-            "@id": "rdf:value , dqv:value",
-            "@type": "xx"
+            "@id": "rdf:value",
+            "@type": "xsd:string"
         },
         "primaryKey": {
-            "@id": "xx",
-            "@type": "xx"
+            "@id": "csvw:primaryKey",
+            "@container": "@set",
+            "@type": "xsd:string"
         },
         "foreignKeys": {
-            "@id": "@nest",
-            "@type": "@id"
+            "@id": "ex:foreignKeys",
+            "@container": "@set"
         },
-        "reference": {
-            "@id": "@nest",
-            "@type": "@id"
-        },
+        "reference": "@nest",
         "fields": {
-            "@id": "xx",
-            "@type": "xx"
+            "@id": "csvw:column",
+            "@container": "@set",
+            "@type": "xsd:string"
         },
-        "dialect": {
-            "@id": "@nest",
-            "@type": "@id"
-        },
+        "dialect": "@nest",
         "delimiter": {
             "@id": "csvw:delimiter",
-            "@type": "xx"
+            "@type": "xsd:string"
         },
-        "decimalSeperator": {
-            "@id": "xx",
-            "@type": "xx"
+        "decimalSeparator": {
+            "@id": "csvw:decimalChar",
+            "@type": "xsd:string"
         },
-        "review": {
-            "@id": "@nest",
-            "@type": "@id"
-        },
+        "review": "@nest",
         "badge": {
-            "@id": "oeo:OEO_00140098 , ro:has quality , bfo:quality",
-            "@type": "xx"
+            "@id": "oeo:OEO_00140098",
+            "@type": "xsd:string"
         },
-        "metaMetadata": {
-            "@id": "@nest",
-            "@type": "@id"
-        },
+        "metaMetadata": "@nest",
         "metadataVersion": {
-            "@id": "owl:versionInfo , dcat:version",
-            "@type": "xx"
+            "@id": "owl:versionInfo",
+            "@type": "xsd:string"
         },
-        "metadataLicense": {
-            "@id": "@nest",
-            "@type": "@id"
-        }
+        "metadataLicense": "@nest"
     }
 }
