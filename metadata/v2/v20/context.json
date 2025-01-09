@@ -44,7 +44,7 @@
             "@type": "xx"
         },
         "topics": {
-            "@id": "xx",
+            "@id": "foaf:topic_interest",
             "@type": "xx"
         },
         "path": {
@@ -132,16 +132,16 @@
             "@type": "@id"
         },
         "address": {
-            "@id": "xx",
+            "@id": "dc:location ",
             "@type": "xx"
         },
         "latitude": {
-            "@id": "xx",
-            "@type": "xx"
+            "@id": "geo:lat",
+            "@type": "xsd:decimal"
         },
         "longitude": {
-            "@id": "xx",
-            "@type": "xx"
+            "@id": "geo:long",
+            "@type": "xsd:decimal"
         },
         "extent": {
             "@id": "@nest",
@@ -160,8 +160,8 @@
             "@type": "[minLon, minLat, maxLon, maxLat] or [W,S,E,N] , geosparql:asWKT"
         },
         "crs": {
-            "@id": "xx",
-            "@type": "xx"
+            "@id": "geo:crs",
+            "@type": "xsd:string"
         },
         "temporal": {
             "@id": "@nest",
@@ -255,9 +255,15 @@
             "@id": "@nest",
             "@type": "@id"
         },
-        "fields": {
-            "@id": "@nest",
-            "@type": "@id"
+        "@context": {
+            "nestedFields": {
+                "@id": "@nest",
+                "@type": "@id"
+            },
+            "schemaFields": {
+                "@id": "csvw:column",
+                "@type": "csvw:Column"
+            }
         },
         "nullable": {
             "@id": "xx",
