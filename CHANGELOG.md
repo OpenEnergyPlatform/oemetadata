@@ -1,7 +1,7 @@
 <!--
-SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
-SPDX-FileCopyrightText: Jonas Huber <jh-RLI> © Reiner Lemoine Institut
-SPDX-FileCopyrightText: Christian Hofmann <christian-rli> © Reiner Lemoine Institut
+SPDX-FileCopyrightText: 2019 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+SPDX-FileCopyrightText: 2019 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+SPDX-FileCopyrightText: 2019 Christian Hofmann <christian-rli> © Reiner Lemoine Institut
 
 SPDX-License-Identifier: CC0-1.0
 

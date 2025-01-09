@@ -1,7 +1,6 @@
 <!--
-SPDX-FileCopyrightText: Ludwig Hülk <Ludee> © Reiner Lemoine Institut
-
-SPDX-License-Identifier: CC0-1.0
+SPDX-FileCopyrightText: 2022 Ludwig Hülk <https://github.com/Ludee> © Reiner Lemoine Institut
+SPDX-License-Identifier: MIT
 -->
 
 # Contributing to Collaborative Development
