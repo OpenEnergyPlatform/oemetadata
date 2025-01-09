@@ -284,7 +284,7 @@
             "@type": "xx"
         },
         "primaryKey": {
-            "@id": "xx",
+            "@id": "tr:primaryKey",
             "@type": "xx"
         },
         "foreignKeys": {
