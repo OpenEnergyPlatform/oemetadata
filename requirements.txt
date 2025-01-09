@@ -13,3 +13,4 @@ build
 argparse
 jsonschema
 referencing
+pyld
