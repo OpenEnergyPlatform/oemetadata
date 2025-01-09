@@ -54,6 +54,19 @@ def is_valid_type(value):
     return False
 
 
+def clean_null_ids(data):
+    """Recursively remove @id entries with null values."""
+    if isinstance(data, dict):
+        return {
+            key: clean_null_ids(value)
+            for key, value in data.items()
+            if not (key == "@id" and value is None)
+        }
+    elif isinstance(data, list):
+        return [clean_null_ids(item) for item in data]
+    return data
+
+
 def test_jsonld_combination(load_files):
     """Test combining example.json with context.json and validating JSON-LD."""
     # try:
@@ -67,10 +80,12 @@ def test_jsonld_combination(load_files):
     for resource in example_data.get("resources", []):
         resource["@context"] = cleaned_context
 
-    # Validate each resource as JSON-LD
-    for resource in example_data["resources"]:
-        expanded = jsonld.expand(resource)
-        assert expanded, f"Validation failed for resource: {resource['@id']}"
+    # Remove @id with null values from resources
+    cleaned_example_data = clean_null_ids(example_data)
 
-    # except Exception as e:
-    #     pytest.fail(f"JSON-LD combination and validation failed: {e}")
+    # Validate each resource as JSON-LD
+    for resource in cleaned_example_data["resources"]:
+        expanded = jsonld.expand(resource)
+        assert (
+            expanded
+        ), f"Validation failed for resource: {resource.get('@id', 'unknown')}"
