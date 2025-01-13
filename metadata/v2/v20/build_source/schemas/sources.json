@@ -24,10 +24,10 @@
                             "type": ["string", "null"],
                             "examples": ["Hoesung Lee","José Romero", "The Core Writing Team"],
                             "badge": "Bronze",
-                            "title": "Keyword"
+                            "title": "Author"
                         },
                         "badge": "Bronze",
-                        "title": "Keywords"
+                        "title": "Authors"
                     },
                     "description": {
                         "description": "A free text description of the source.",

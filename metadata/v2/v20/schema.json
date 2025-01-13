@@ -115,10 +115,10 @@
                 "reference"
               ],
               "badge": "Bronze",
-              "title": "Keyword"
+              "title": "Topic"
             },
             "badge": "Bronze",
-            "title": "Keywords"
+            "title": "Topics"
           },
           "title": {
             "description": "A human readable table name.",
@@ -483,7 +483,7 @@
                   }
                 },
                 "badge": "Silver",
-                "title": "Extent"
+                "title": "Location"
               },
               "extent": {
                 "description": "An object that describes a covered area or region.",
@@ -605,7 +605,7 @@
                         "null"
                       ],
                       "examples": [
-                        "2020-01-01T00:00:00+00:00"
+                        "2020-01-01T00:00:00+01:00"
                       ],
                       "badge": "Silver",
                       "title": "Timeseries Start",
@@ -618,7 +618,7 @@
                         "null"
                       ],
                       "examples": [
-                        "2020-01-01T23:59:30+00:00"
+                        "2020-01-01T23:59:30+01:00"
                       ],
                       "badge": "Silver",
                       "title": "Timeseries End",
@@ -716,10 +716,10 @@
                       "The Core Writing Team"
                     ],
                     "badge": "Bronze",
-                    "title": "Keyword"
+                    "title": "Author"
                   },
                   "badge": "Bronze",
-                  "title": "Keywords"
+                  "title": "Authors"
                 },
                 "description": {
                   "description": "A free text description of the source.",
@@ -983,14 +983,14 @@
                   "description": "An array describing the roles of the contributor.",
                   "type": "array",
                   "items": {
-                    "description": "A role is recommended to follow an established vocabulary, such as DataCite Metadata Schema\u2019s contributorRole or CreDIT. Useful roles to indicate are: creator, contact, and dataCurator.",
+                    "description": "A role is recommended to follow an established vocabulary: DataCite Metadata Schema\u2019s contributorRole. Useful roles to indicate are: DataCollector, ContactPerson, and DataCurator.",
                     "type": [
                       "string",
                       "null"
                     ],
                     "examples": [
-                      "creator",
-                      "dataCurator"
+                      "DataCollector",
+                      "DataCurator"
                     ],
                     "badge": "Bronze",
                     "title": "Role"
