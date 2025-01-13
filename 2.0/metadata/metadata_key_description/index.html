@@ -6,9 +6,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Open Energy Metadata (OEMetadata) is an energy metadata standard including a template, examples and a metadata schema.">
+        <meta name="description" content="Documentation of the Open Energy Metadata (OEMetadata) standard">
       
       
+      
+        <link rel="canonical" href="https://openenergyplatform.github.io/oemetadata/2.0/metadata/metadata_key_description/">
       
       
         <link rel="prev" href="../">
@@ -16,8 +18,9 @@
       
         <link rel="next" href="../metadata_mappings/">
       
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
     
     
       
@@ -25,14 +28,17 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.3bd4f189.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
+
     
+    
+      
     
     
       
@@ -46,9 +52,9 @@
     
       <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="../../css/extra.css">
+      <link rel="stylesheet" href="../../extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -65,11 +71,8 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -86,12 +89,16 @@
       
     </div>
     
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
     
       
 
   
 
-<header class="md-header md-header--lifted" data-md-component="header">
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="https://openenergyplatform.org/" title="Open Energy Metadata" class="md-header__button md-logo" aria-label="Open Energy Metadata" data-md-component="logo">
       
@@ -99,7 +106,8 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -118,34 +126,80 @@
       </div>
     </div>
     
-      <form class="md-header__option" data-md-component="palette">
-        
-          
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
-          
-            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-            </label>
-          
-        
-          
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-            </label>
-          
-        
-      </form>
+      
+        <form class="md-header__option" data-md-component="palette">
+  
     
     
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     
     
       <div class="md-header__source">
         <a href="https://github.com/OpenEnergyPlatform/oemetadata" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     OpenEnergyPlatform/oemetadata
@@ -158,57 +212,21 @@
     
       
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
+  <div class="md-grid">
     <ul class="md-tabs__list">
       
         
   
   
-
-
-  <li class="md-tabs__item">
-    <a href="../.." class="md-tabs__link">
-      Home
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    
-
-  
-  
   
     <li class="md-tabs__item">
-      <a href="../../development/collaboration/" class="md-tabs__link">
-        Development
-      </a>
-    </li>
-  
-
-  
-
-      
+      <a href="../.." class="md-tabs__link">
         
-  
   
     
   
+  Home
 
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link md-tabs__link--active">
-        Metadata Documentation
       </a>
     </li>
   
@@ -217,23 +235,80 @@
         
   
   
-
-
+  
+    
+    
+      
   
   
   
     
+    
+      <li class="md-tabs__item">
+        <a href="../../development/collaboration/" class="md-tabs__link">
+          
+  
+    
+  
+  Development
 
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../code/install/" class="md-tabs__link">
-        Code Documentation
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  Metadata Documentation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../code/install/" class="md-tabs__link">
+          
+  
+    
+  
+  Code Documentation
+
+        </a>
+      </li>
+    
+  
+
+    
   
 
       
@@ -259,6 +334,7 @@
                   <div class="md-sidebar__inner">
                     
 
+
   
 
 
@@ -276,7 +352,7 @@
       <a href="https://github.com/OpenEnergyPlatform/oemetadata" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     OpenEnergyPlatform/oemetadata
@@ -288,14 +364,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
-        Home
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
       </a>
     </li>
   
@@ -303,402 +384,545 @@
     
       
       
+  
+  
+  
+  
+    
+    
       
-
-  
-  
-  
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
-      
-      
-      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Development
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
-          
-        
-          
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_2">
-          Development
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Development" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
-          Development
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
-      
+    
       
       
         
-          
-            
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
       
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../development/collaboration/">Collaboration</a>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
           
-            <label for="__nav_2_1">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
           
-        </div>
-      
-      <nav class="md-nav" aria-label="Collaboration" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_1">
-          <span class="md-nav__icon md-icon"></span>
-          Collaboration
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../development/collaboration/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Collaboration
+  </span>
+  
+
+            </a>
             
               
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Collaboration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../development/collaboration/license/" class="md-nav__link">
-        License
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../development/collaboration/citation/" class="md-nav__link">
-        Citation
+        
+  
+  <span class="md-ellipsis">
+    Citation
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../development/collaboration/contributing/" class="md-nav__link">
-        Contributing
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../development/collaboration/users/" class="md-nav__link">
-        Users
+        
+  
+  <span class="md-ellipsis">
+    Users
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../development/collaboration/code_of_conduct/" class="md-nav__link">
-        Code of Conduct
+        
+  
+  <span class="md-ellipsis">
+    Code of Conduct
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     
+    
+      
+        
+          
+        
+      
+        
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
-      
+    
       
       
         
-          
-            
-          
-        
-          
-        
       
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../development/git/">Git</a>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
           
-            <label for="__nav_2_2">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
           
-        </div>
-      
-      <nav class="md-nav" aria-label="Git" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_2">
-          <span class="md-nav__icon md-icon"></span>
-          Git
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../development/git/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Git
+  </span>
+  
+
+            </a>
             
               
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Git
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../development/git/gitignore/" class="md-nav__link">
-        Gitignore
+        
+  
+  <span class="md-ellipsis">
+    Gitignore
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     
+    
+      
+        
+          
+        
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
-      
+    
       
       
         
-          
-            
-          
-        
       
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../development/documentation/">Documentation</a>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
           
-        </div>
-      
-      <nav class="md-nav" aria-label="Documentation" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_3">
-          <span class="md-nav__icon md-icon"></span>
-          Documentation
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
           
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../development/documentation/" class="md-nav__link ">
               
   
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
-      
-      
-      
-        
-          
-            
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../development/release/">Release</a>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="Release" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_4">
-          <span class="md-nav__icon md-icon"></span>
-          Release
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-        </ul>
-      </nav>
-    </li>
+  <span class="md-ellipsis">
+    Documentation
+  </span>
   
 
+            </a>
             
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
-      
-      
-      
+          </div>
         
-          
-            
-          
-        
-          
-        
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../">Metadata Documentation</a>
-          
-            <label for="__nav_3">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="Metadata Documentation" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Metadata Documentation
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
   
   
     
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../development/release/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Release
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Release
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Metadata Documentation
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Metadata Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
   
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Key Description
+          
+  
+  <span class="md-ellipsis">
+    Key Description
+  </span>
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Key Description
+        
+  
+  <span class="md-ellipsis">
+    Key Description
+  </span>
+  
+
       </a>
       
         
@@ -718,14 +942,18 @@
       
         <li class="md-nav__item">
   <a href="#json-format" class="md-nav__link">
-    JSON Format
+    <span class="md-ellipsis">
+      JSON Format
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#metadata-keys-with-a-description-and-example" class="md-nav__link">
-    Metadata keys with a description and example
+    <span class="md-ellipsis">
+      Metadata keys with a description and example
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Metadata keys with a description and example">
@@ -733,70 +961,90 @@
         
           <li class="md-nav__item">
   <a href="#collection-keys" class="md-nav__link">
-    Collection Keys
+    <span class="md-ellipsis">
+      Collection Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-linked-data-keys" class="md-nav__link">
-    Resource - Linked Data Keys
+    <span class="md-ellipsis">
+      Resource - Linked Data Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-general-keys" class="md-nav__link">
-    Resource - General Keys
+    <span class="md-ellipsis">
+      Resource - General Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-context-keys" class="md-nav__link">
-    Resource - Context Keys
+    <span class="md-ellipsis">
+      Resource - Context Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-spatial-keys" class="md-nav__link">
-    Resource - Spatial Keys
+    <span class="md-ellipsis">
+      Resource - Spatial Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-temporal-keys" class="md-nav__link">
-    Resource - Temporal Keys
+    <span class="md-ellipsis">
+      Resource - Temporal Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-sources-keys" class="md-nav__link">
-    Resource - Sources Keys
+    <span class="md-ellipsis">
+      Resource - Sources Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-licenses-keys" class="md-nav__link">
-    Resource - Licenses Keys
+    <span class="md-ellipsis">
+      Resource - Licenses Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-provenance-keys" class="md-nav__link">
-    Resource - Provenance Keys
+    <span class="md-ellipsis">
+      Resource - Provenance Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-type-keys" class="md-nav__link">
-    Resource - Type Keys
+    <span class="md-ellipsis">
+      Resource - Type Keys
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Resource - Type Keys">
@@ -804,14 +1052,18 @@
         
           <li class="md-nav__item">
   <a href="#resource-fields-keys" class="md-nav__link">
-    Resource - Fields Keys
+    <span class="md-ellipsis">
+      Resource - Fields Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-properties-keys" class="md-nav__link">
-    Resource - Properties Keys
+    <span class="md-ellipsis">
+      Resource - Properties Keys
+    </span>
   </a>
   
 </li>
@@ -823,14 +1075,18 @@
         
           <li class="md-nav__item">
   <a href="#resource-review-keys" class="md-nav__link">
-    Resource - Review Keys
+    <span class="md-ellipsis">
+      Resource - Review Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#metametadata-keys" class="md-nav__link">
-    MetaMetadata Keys
+    <span class="md-ellipsis">
+      MetaMetadata Keys
+    </span>
   </a>
   
 </li>
@@ -847,107 +1103,217 @@
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../metadata_mappings/" class="md-nav__link">
-        Metadata Mappings
+        
+  
+  <span class="md-ellipsis">
+    Metadata Mappings
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
+  
+  
+  
+  
+    
+    
       
-
-  
-  
-  
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
-      
-      
-      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Code Documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
-      
-      
-        <label class="md-nav__link" for="__nav_4">
-          Code Documentation
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Code Documentation" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          Code Documentation
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Code Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     
+    
+      
+        
+          
+        
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
-      
+    
       
       
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
           
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../code/install/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Install
+  </span>
+  
+
+            </a>
             
-          
+          </div>
         
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../code/install/">Install</a>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="Install" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_1">
-          <span class="md-nav__icon md-icon"></span>
-          Install
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Install
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
-          
-        </ul>
-      </nav>
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
+              
             
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
           
-        </ul>
-      </nav>
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tests
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tests
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code/test/index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    None
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -980,14 +1346,18 @@
       
         <li class="md-nav__item">
   <a href="#json-format" class="md-nav__link">
-    JSON Format
+    <span class="md-ellipsis">
+      JSON Format
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#metadata-keys-with-a-description-and-example" class="md-nav__link">
-    Metadata keys with a description and example
+    <span class="md-ellipsis">
+      Metadata keys with a description and example
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Metadata keys with a description and example">
@@ -995,70 +1365,90 @@
         
           <li class="md-nav__item">
   <a href="#collection-keys" class="md-nav__link">
-    Collection Keys
+    <span class="md-ellipsis">
+      Collection Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-linked-data-keys" class="md-nav__link">
-    Resource - Linked Data Keys
+    <span class="md-ellipsis">
+      Resource - Linked Data Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-general-keys" class="md-nav__link">
-    Resource - General Keys
+    <span class="md-ellipsis">
+      Resource - General Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-context-keys" class="md-nav__link">
-    Resource - Context Keys
+    <span class="md-ellipsis">
+      Resource - Context Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-spatial-keys" class="md-nav__link">
-    Resource - Spatial Keys
+    <span class="md-ellipsis">
+      Resource - Spatial Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-temporal-keys" class="md-nav__link">
-    Resource - Temporal Keys
+    <span class="md-ellipsis">
+      Resource - Temporal Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-sources-keys" class="md-nav__link">
-    Resource - Sources Keys
+    <span class="md-ellipsis">
+      Resource - Sources Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-licenses-keys" class="md-nav__link">
-    Resource - Licenses Keys
+    <span class="md-ellipsis">
+      Resource - Licenses Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-provenance-keys" class="md-nav__link">
-    Resource - Provenance Keys
+    <span class="md-ellipsis">
+      Resource - Provenance Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-type-keys" class="md-nav__link">
-    Resource - Type Keys
+    <span class="md-ellipsis">
+      Resource - Type Keys
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Resource - Type Keys">
@@ -1066,14 +1456,18 @@
         
           <li class="md-nav__item">
   <a href="#resource-fields-keys" class="md-nav__link">
-    Resource - Fields Keys
+    <span class="md-ellipsis">
+      Resource - Fields Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#resource-properties-keys" class="md-nav__link">
-    Resource - Properties Keys
+    <span class="md-ellipsis">
+      Resource - Properties Keys
+    </span>
   </a>
   
 </li>
@@ -1085,14 +1479,18 @@
         
           <li class="md-nav__item">
   <a href="#resource-review-keys" class="md-nav__link">
-    Resource - Review Keys
+    <span class="md-ellipsis">
+      Resource - Review Keys
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#metametadata-keys" class="md-nav__link">
-    MetaMetadata Keys
+    <span class="md-ellipsis">
+      MetaMetadata Keys
+    </span>
   </a>
   
 </li>
@@ -1120,32 +1518,34 @@
   
 
 
-
 <h1 id="oemetadata-key-description">OEMetadata - Key Description<a class="headerlink" href="#oemetadata-key-description" title="Permanent link">#</a></h1>
 <p>This pages describes the key of <strong>OEMetadata version 2.0 .</strong> <br>
-You can have a look at an empty <a href="https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/template.json">template</a> and a filled out <a href="https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/example.json">example</a> of the metadata string.</p>
+You can have a look at an empty <a href="https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/template.json">template</a> and a filled out <a href="https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/example.json">example</a> of the metadata string.<br>
+<a href="https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/schema.json"><code>schema.json</code></a> contains the complete schema.</p>
 <h2 id="json-format">JSON Format<a class="headerlink" href="#json-format" title="Permanent link">#</a></h2>
-<p>The JSON format offers different formats:
-* key-value pair: 
+<p>The JSON format offers different formats:</p>
+<ul>
+<li>key-value pair: 
     <code>JSON
-    {"key":"value"}</code>
-* array: 
+    {"key":"value"}</code></li>
+<li>array: 
     <code>JSON
     {"key":
-        ["value","value"]}</code>
-* object {nested key}:
+        ["value","value"]}</code></li>
+<li>object {nested key}:
     <code>JSON
     {"key": {
         "key_a":"value",
-        "key_b":"value"}}</code>
-* array of objects {nested array}:
+        "key_b":"value"}}</code></li>
+<li>array of objects {nested array}:
     <code>JSON
     {"key": [
         {"key_a":"value"},
-        {"key_a":"value"}]}</code></p>
+        {"key_a":"value"}]}</code></li>
+</ul>
 <h2 id="metadata-keys-with-a-description-and-example">Metadata keys with a description and example<a class="headerlink" href="#metadata-keys-with-a-description-and-example" title="Permanent link">#</a></h2>
-<p>If a field is not applicable use: 'null'.
-If a value is not yet available, use: 'ToDo'.</p>
+<p>If a field is not applicable use: <code>null</code>.<br>
+If a value is not yet available, use: <code>ToDo</code>.</p>
 <h3 id="collection-keys">Collection Keys<a class="headerlink" href="#collection-keys" title="Permanent link">#</a></h3>
 <table>
 <thead>
@@ -1170,17 +1570,24 @@ If a value is not yet available, use: 'ToDo'.</p>
 <td>title</td>
 <td>A human readable collection name.</td>
 <td>OEP OEMetadata</td>
-<td>Silver</td>
+<td>Bronze</td>
 </tr>
 <tr>
 <td>3</td>
+<td>description</td>
+<td>A free text description of the collection.</td>
+<td>A collection of tables for the OEMetadata examples.</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>4</td>
 <td>id</td>
 <td>A unique identifier (UUID/DOI) for the collection.</td>
 <td>https://databus.openenergyplatform.org/oeplatform/reference</td>
 <td>Silver</td>
 </tr>
 <tr>
-<td>4</td>
+<td>5</td>
 <td>resources</td>
 <td>An array of objects of the resources. The collection can contain several (database) tables.</td>
 <td></td>
@@ -1288,7 +1695,7 @@ If a value is not yet available, use: 'ToDo'.</p>
 <td>7.2</td>
 <td>path</td>
 <td>A unique identifier (URI/IRI) of the ontology class.</td>
-<td>https://openenergy-platform.org/ontology/oeo/OEO_00000150</td>
+<td>https://openenergyplatform.org/ontology/oeo/OEO_00000150</td>
 <td>Platinum</td>
 </tr>
 <tr>
@@ -1384,37 +1791,44 @@ If a value is not yet available, use: 'ToDo'.</p>
 </tr>
 <tr>
 <td>1.5</td>
+<td>publisher</td>
+<td>The publishing agency of the data. This can be the OEP.</td>
+<td>Open Energy Platform (OEP)</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>1.6</td>
+<td>publisherLogo</td>
+<td>A URL to the logo of the publishing agency of data.</td>
+<td>https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>1.7</td>
 <td>contact</td>
 <td>A reference to the creator or maintainer of the data set. It can be an email address or a GitHub handle.</td>
 <td>info@nfdi4energy.org</td>
 <td>Gold</td>
 </tr>
 <tr>
-<td>1.6</td>
-<td>grantNo</td>
-<td>An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency.</td>
-<td>501865131</td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>1.7</td>
+<td>1.8</td>
 <td>fundingAgency</td>
 <td>A name of the entity providing the funding. This can be a government agency or a company.</td>
 <td>Deutsche Forschungsgemeinschaft (DFG)</td>
 <td>Gold</td>
 </tr>
 <tr>
-<td>1.8</td>
+<td>1.9</td>
 <td>fundingAgencyLogo</td>
 <td>A URL to the logo or image of the funding agency.</td>
 <td>https://upload.wikimedia.org/wikipedia/commons/8/86/DFG-logo-blau.svg</td>
 <td>Gold</td>
 </tr>
 <tr>
-<td>1.9</td>
-<td>publisherLogo</td>
-<td>A URL to the logo of the publishing agency of data.</td>
-<td>https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png</td>
+<td>1.10</td>
+<td>grantNo</td>
+<td>An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency.</td>
+<td>501865131</td>
 <td>Gold</td>
 </tr>
 </tbody>
@@ -1622,62 +2036,76 @@ If a value is not yet available, use: 'ToDo'.</p>
 </tr>
 <tr>
 <td>1.2</td>
+<td>authors</td>
+<td>An array of the full names of the authors of the source material.</td>
+<td>Hoesung Lee,José Romero, The Core Writing Team</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.3</td>
 <td>description</td>
 <td>A free text description of the source.</td>
 <td>A Report of the Intergovernmental Panel on Climate Change</td>
 <td>Bronze</td>
 </tr>
 <tr>
-<td>1.3</td>
+<td>1.4</td>
+<td>publicationYear</td>
+<td>Indicates the year when the work was published.</td>
+<td>2023</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.5</td>
 <td>path</td>
 <td>A URL to the original source.</td>
 <td>https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf</td>
 <td>Bronze</td>
 </tr>
 <tr>
-<td>1.4</td>
+<td>1.6</td>
 <td><strong>licenses</strong></td>
 <td>An array of objects of licenses under which the described source is provided. See https://openenergyplatform.github.io/academy/courses/08_licensing/ for further information.</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>1.4.1</td>
+<td>1.6.1</td>
 <td>name</td>
 <td>The <a href="https://spdx.org/licenses/">SPDX</a> identifier.</td>
 <td>ODbL-1.0</td>
 <td>Bronze</td>
 </tr>
 <tr>
-<td>1.4.2</td>
+<td>1.6.2</td>
 <td>title</td>
 <td>The official (human-readable) title of the license.</td>
 <td>Open Data Commons Open Database License 1.0</td>
 <td>Bronze</td>
 </tr>
 <tr>
-<td>1.4.3</td>
+<td>1.6.3</td>
 <td>path</td>
 <td>A link or path to the license text.</td>
 <td>https://opendatacommons.org/licenses/odbl/1-0/index.html</td>
 <td>Bronze</td>
 </tr>
 <tr>
-<td>1.4.4</td>
+<td>1.6.4</td>
 <td>instruction</td>
 <td>A short description of rights and obligations. The use of <a href="https://tldrlegal.com/">tl;drLegal</a> is recommended.</td>
 <td>You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-odbl for further information.</td>
 <td>Bronze</td>
 </tr>
 <tr>
-<td>1.4.5</td>
+<td>1.6.5</td>
 <td>attribution</td>
 <td>A copyright owner of the <strong>source</strong>. Must be provided if attribution licenses are used.</td>
 <td>© Intergovernmental Panel on Climate Change 2023</td>
 <td>Bronze</td>
 </tr>
 <tr>
-<td>1.4.6</td>
+<td>1.6.6</td>
 <td>copyrightStatement</td>
 <td>A link or path that proves that the source or data has the appropriate license. This can be a page number or website imprint.</td>
 <td>https://www.ipcc.ch/copyright/</td>
@@ -1737,6 +2165,13 @@ If a value is not yet available, use: 'ToDo'.</p>
 <td>attribution</td>
 <td>A copyright owner of the <strong>data</strong>. Must be provided if attribution licenses are used.</td>
 <td>© Reiner Lemoine Institut</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>1.6</td>
+<td>copyrightStatement</td>
+<td>A link or path that proves that the data has the appropriate license. This can be a page number or website imprint.</td>
+<td>https://www.ipcc.ch/copyright/</td>
 <td>Bronze</td>
 </tr>
 </tbody>
@@ -1925,7 +2360,7 @@ If a value is not yet available, use: 'ToDo'.</p>
 <td>1.1.6.2</td>
 <td>path</td>
 <td>The path of the ontology term (IRI).</td>
-<td>https://openenergy-platform.org/ontology/oeo/OEO_00000044</td>
+<td>https://openenergyplatform.org/ontology/oeo/OEO_00000044</td>
 <td>Platinum</td>
 </tr>
 <tr>
@@ -1953,7 +2388,7 @@ If a value is not yet available, use: 'ToDo'.</p>
 <td>1.1.7.3</td>
 <td>path</td>
 <td>The path of the ontology term (IRI) in the column.</td>
-<td>https://openenergy-platform.org/ontology/oeo/OEO_00000311</td>
+<td>https://openenergyplatform.org/ontology/oeo/OEO_00000311</td>
 <td>Platinum</td>
 </tr>
 </tbody>
@@ -2120,17 +2555,26 @@ If a value is not yet available, use: 'ToDo'.</p>
 
 
 
+
+
+
+
+
+
+
                 
               </article>
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
-          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-            Back to top
-          </a>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -2152,10 +2596,11 @@ If a value is not yet available, use: 'ToDo'.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.path", "navigation.tracking", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.path", "navigation.tracking", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.5cf534bf.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>
