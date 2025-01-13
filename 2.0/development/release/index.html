@@ -1068,6 +1068,8 @@
     
       
         
+          
+        
       
     
     
@@ -1084,16 +1086,19 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
         
           
-          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../code/tests/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Tests
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_2">
@@ -1102,25 +1107,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../code/test/index.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    None
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
           </ul>
@@ -1158,38 +1144,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#release-a-new-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      Release a new version
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Release a new version">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#make-pypi-release" class="md-nav__link">
-    <span class="md-ellipsis">
-      Make PyPI release:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1207,19 +1161,15 @@
 
 
 <h1 id="release">Release<a class="headerlink" href="#release" title="Permanent link">#</a></h1>
-<ul>
-<li>RELEASE_PROCEDURE.md</li>
-<li>VERSION</li>
-<li>MANIFEST.in</li>
-<li>.bumpversion.cfg</li>
-</ul>
-<h2 id="release-a-new-version">Release a new version<a class="headerlink" href="#release-a-new-version" title="Permanent link">#</a></h2>
-<p>See the complete instructions in the <a href="./RELEASE_PROCEDURE.md">RELEASE_PROCEDURE</a>.</p>
-<h3 id="make-pypi-release">Make PyPI release:<a class="headerlink" href="#make-pypi-release" title="Permanent link">#</a></h3>
-<p>First update version in setup.py, then:</p>
-<pre><code>python3 setup.py sdist bdist_wheel
-twine upload dist/*
-</code></pre>
+<p>The software release has four main goals:</p>
+<ol>
+<li>Merge the new features to the <code>production</code> branch</li>
+<li>Create a <a href="https://github.com/OpenEnergyPlatform/oemetadata/releases">GitHub Release</a></li>
+<li>Update the documentation</li>
+<li>Publish a new version of the package at PyPI</li>
+</ol>
+<p>The 📝 <a href="https://github.com/OpenEnergyPlatform/oemetadata/blob/production/RELEASE_PROCEDURE.md">RELEASE_PROCEDURE.md</a>
+contain detailed instructions to do a release.</p>
 
 
 
