@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
-# SPDX-FileCopyrightText: Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: 2019 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: 2019 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
 #
 # SPDX-License-Identifier: MIT
 

@@ -1,7 +1,7 @@
 <!--
-SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
-SPDX-FileCopyrightText: Jonas Huber <jh-RLI> © Reiner Lemoine Institut
-SPDX-FileCopyrightText: Christian Hofmann <christian-rli> © Reiner Lemoine Institut
+SPDX-FileCopyrightText: 2019 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+SPDX-FileCopyrightText: 2019 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+SPDX-FileCopyrightText: 2019 Christian Hofmann <christian-rli> © Reiner Lemoine Institut
 
 SPDX-License-Identifier: CC0-1.0
 
@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add REUSE Software compliance check [(#218)](https://github.com/OpenEnergyPlatform/oemetadata/pull/218)
 - Add example fields function [(#220)](https://github.com/OpenEnergyPlatform/oemetadata/pull/220)
+- Add year to copyright info [(#236)](https://github.com/OpenEnergyPlatform/oemetadata/pull/236)
 
 ### Changed
 - Update documentation and README [(#209)](https://github.com/OpenEnergyPlatform/oemetadata/pull/209)
