@@ -86,4 +86,4 @@ nav:
     - Install:
       - code/install/index.md
     - Tests:
-      - code/test/index.md
+      - code/tests/index.md
