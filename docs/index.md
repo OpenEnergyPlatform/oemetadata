@@ -11,11 +11,10 @@ hide:
 Open Energy Metadata (OEMetadata) is an energy metadata standard including a metadata schema, templates, and examples. <br>
 It is an extensive set of metadata based on the Frictionless [Data Package](https://datapackage.org/) specifications and the [FAIR Principles](https://www.go-fair.org/fair-principles/). <br>
 
-
-The documentation is separated into three main sections:
-- `Development` Collaborative development
-- `Metadata Documentation` Keys and mappings
-- `Code Documentation` Install, scripts, tests
+The documentation is structured in three main sections:
+- `Development` Collaborative Development
+- `Metadata Documentation` Keys and Mappings
+- `Code Documentation` Install, Scripts, Tests
 
 <img src="https://frictionlessdata.io/img/frictionless-color-full-logo.svg" alt="Frictionless" width="300"/>
 
