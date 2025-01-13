@@ -9,7 +9,7 @@ SPDX-License-Identifier: MIT
 
 This pages describes the key of **OEMetadata version 2.0 .** <br>
 You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/example.json) of the metadata string.<br>
-[`schema.json`](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/schema.json) contains the complete schema.
+The [`schema.json`](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/schema.json) contains the complete metadata schema.
 
 ## JSON Format
 
@@ -41,13 +41,16 @@ The JSON format offers different formats:
 ## Metadata Keys
 
 ### Cardinality
-
 The cardinality defines the number of times an element can occur. 
 
 * [1]  Mandatory
 * [0..1] Optional
 * [*] Multiple optional
 * [1..*] Mandatory and multiple optional
+
+### Badges
+Badges indicate the priority of metadata keys.<br>
+They are implemented as part of the [Open Peer Review Process](https://openenergyplatform.github.io/academy/courses/09_peer_review/).
 
 ### Additional information:<br>
 If a field is not applicable use: `null`.<br>
