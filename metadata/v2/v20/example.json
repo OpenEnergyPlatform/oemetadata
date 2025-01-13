@@ -73,8 +73,8 @@
                 "referenceDate": "2020-01-01",
                 "timeseries": [
                     {
-                        "start": "2020-01-01T00:00:00+00:00",
-                        "end": "2020-01-01T23:59:30+00:00",
+                        "start": "2020-01-01T00:00:00+01:00",
+                        "end": "2020-01-01T23:59:30+01:00",
                         "resolutionValue": "15",
                         "resolutionUnit": "min",
                         "alignment": "left",
@@ -134,9 +134,9 @@
                     "roles": [
                         "DataCurator"
                     ],
-                    "date": "2024-11-19",
-                    "object": "data",
-                    "comment": "Date of metadata data creation."
+                    "date": "2024-11-30",
+                    "object": "metadata",
+                    "comment": "Date of metadata creation."
                 }
             ],
             "type": "table",
