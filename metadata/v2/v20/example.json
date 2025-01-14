@@ -294,7 +294,7 @@
                 "decimalSeparator": "."
             },
             "review": {
-                "path": "https://www.example.com",
+                "path": "https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/",
                 "badge": "Platinum"
             }
         }
