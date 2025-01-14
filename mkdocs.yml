@@ -42,6 +42,7 @@ theme:
 # extensions 
 markdown_extensions:
   - admonition
+  - tables
   - toc:
       permalink: "#"
 

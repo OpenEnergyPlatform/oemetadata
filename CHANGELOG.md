@@ -2,10 +2,7 @@
 SPDX-FileCopyrightText: 2019 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
 SPDX-FileCopyrightText: 2019 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
 SPDX-FileCopyrightText: 2019 Christian Hofmann <christian-rli> © Reiner Lemoine Institut
-
-SPDX-License-Identifier: CC0-1.0
-
-Title: Changelog of released versions
+SPDX-License-Identifier: MIT
 -->
 
 # Changelog
@@ -38,13 +35,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update REUSE licenses for json [(#225)](https://github.com/OpenEnergyPlatform/oemetadata/pull/225)
 - Update example contributors and roles [(#225)](https://github.com/OpenEnergyPlatform/oemetadata/pull/225)
 - Update keyword titles [(#239)](https://github.com/OpenEnergyPlatform/oemetadata/pull/239)
+- Update documentation with logos and cardinality [(#242)](https://github.com/OpenEnergyPlatform/oemetadata/pull/242)
 - Update documentation with versioning [(#243)](https://github.com/OpenEnergyPlatform/oemetadata/pull/243)
 
 ### Removed
 - [(#)]()
 
 
-## [2.0.1] - Major Release - Refactor OEMetadata for NFDI
+## [2.0.1] - Patch Release - Fix naming
 
 ### Changed
 - HotFix naming errors in some files related to the renaming of master to production [#202](https://github.com/OpenEnergyPlatform/oemetadata/issues/202)
@@ -53,12 +51,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.0.0] - Major Release - Refactor OEMetadata for NFDI
 
 ### Added
-- Add OEMetadata version 2.0: [#144](https://github.com/OpenEnergyPlatform/oemetadata/issues/144)
-- Introduce a schema build system: [#105](https://github.com/OpenEnergyPlatform/oemetadata/pull/105)
+- Add OEMetadata version 2.0: [(#144)](https://github.com/OpenEnergyPlatform/oemetadata/issues/144)
+- Introduce a schema build system: [(#105)](https://github.com/OpenEnergyPlatform/oemetadata/pull/105)
   - The build files (schema & script) are maintained for each version (starting form v1.6.0) within the new directory called "metadata/(version)/build_source"  
   - The schema is rather long and complex. We split the long schema.json into modules. The modules are assembled in a json file that specifies the structure of the final schema.json, and it is called schema_structure.json.
   - It uses JSON schema $ref elements to reference the schema modules, and it provides code to resolve the reference´s and generate the complete schema.json.
-- Add code to generate an example.json based on the schema.json. We read the example values for each of the fields specified in the schema and generate the example. [#105](https://github.com/OpenEnergyPlatform/oemetadata/pull/105)
+- Add code to generate an example.json based on the schema.json [(#105)](https://github.com/OpenEnergyPlatform/oemetadata/pull/105)
 - Add updated context.json [(#154)](https://github.com/OpenEnergyPlatform/oemetadata/pull/154)
 - Add ``embargoPeriod`` section with keys ``start``, ``end``, ``isActive`` [(#155)](https://github.com/OpenEnergyPlatform/oemetadata/pull/155)
 - Add ``path`` to ``contributors`` [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
@@ -115,11 +113,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.5.2] - Release - Fix Repo and Package - 2022-11-18
 
 ### Added
-- Add GitHub actions to automate package build and upload process on test and production pypi index
+- Add WORKFLOWS to automate package build and upload process on test and production PyPI
 
 ### Changed
 - Fix missing json files in pypi oemetadata package
-- Update context.json in latest & v151 to ensure ontologically annotated metadata can be sparkled #99
+- Update context.json to ensure ontologically annotated metadata can be sparkled #99
 
 
 ## [1.5.1] - Release - Ontology-Ready - 2022-02-21
@@ -153,8 +151,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Make key 13.2 ``timeseries`` a list
 - Relocate development information from README.md to CONTRIBUTING.md 
 - Update all .json files to v1.5.0
-- Reintroduce automated tests (CI) by switching form travis-ci to GitHub actions [PR#63]
-- Updated schema.json for v1.5.0 now includes the new key ``title`` which describes the title of the current field [PR#56] adapted from [PR#43]
+- Reintroduce automated tests (CI) by switching form travis-ci to GitHub actions [#63]
+- Updated schema.json for v1.5.0 now includes the new key ``title`` which describes the title of the current field [#56] adapted from [PR#43]
 
 ### Removed
 - Delete future directory
