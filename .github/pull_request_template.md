@@ -7,7 +7,7 @@ Describe the findings of the discussion in the issue or meeting.
 ### Added
 - Add a new class [(#)](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
 
-### Updated
+### Changed
 - Update a definition [(#)](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
 
 ### Removed
@@ -17,14 +17,16 @@ Describe the findings of the discussion in the issue or meeting.
 ## Workflow checklist
 
 ### Automation
-Closes #
+Part of # / Closes #
 
 ### PR-Assignee
+
 - [ ] 🐙 Follow the workflow in [CONTRIBUTING.md](https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/CONTRIBUTING.md)
 - [ ] 📝 Update the [CHANGELOG.md](https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/CHANGELOG.md)
 - [ ] 📙 Update the documentation
 - [ ] 🐙 Assign a reviewer to the PR
 
 ### Reviewer
+
 - [ ] 🐙 Follow the [Reviewer Guidelines](https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/CONTRIBUTING.md#40-let-someone-else-review-your-pr)
 - [ ] 🐙 Provided feedback and show sufficient appreciation for the work done

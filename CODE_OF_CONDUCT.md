@@ -1,6 +1,5 @@
 <!--
-SPDX-FileCopyrightText: 2024 Coraline Ada Ehmke <https://where.coraline.codes/>
-
+SPDX-FileCopyrightText: © 2014 Coraline Ada Ehmke <https://where.coraline.codes/>
 SPDX-License-Identifier: CC-BY-4.0
  -->
 
