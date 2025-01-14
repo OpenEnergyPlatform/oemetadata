@@ -10,7 +10,7 @@
                 "path": {
                     "description": "A link or path to the documented open peer review.",
                     "type": ["string", "null"],
-                    "examples": ["https://www.example.com"],
+                    "examples": ["https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/"],
                     "badge": null,
                     "title": "Path",
                     "format": "uri"

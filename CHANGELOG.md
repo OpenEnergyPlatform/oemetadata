@@ -36,6 +36,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update example contributors and roles [(#225)](https://github.com/OpenEnergyPlatform/oemetadata/pull/225)
 - Update keyword titles [(#239)](https://github.com/OpenEnergyPlatform/oemetadata/pull/239)
 - Update documentation with logos and cardinality [(#242)](https://github.com/OpenEnergyPlatform/oemetadata/pull/242)
+- Update documentation with versioning [(#243)](https://github.com/OpenEnergyPlatform/oemetadata/pull/243)
 
 ### Removed
 - [(#)]()

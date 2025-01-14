@@ -4,8 +4,8 @@
 
 # Project
 site_name: Open Energy Metadata
-site_url: 
-site_description: Open Energy Metadata (OEMetadata) is an energy metadata standard including a template, examples and a metadata schema.
+site_url: https://openenergyplatform.github.io/oemetadata/
+site_description: Documentation of the Open Energy Metadata (OEMetadata) standard
 
 # Repository
 repo_name: OpenEnergyPlatform/oemetadata
@@ -48,14 +48,18 @@ markdown_extensions:
 
 plugins:
 - mkdocstrings:
+- search:
+    separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
 
 # Customization
 extra:
   generator: false
+  version:
+    provider: mike
   homepage: https://openenergyplatform.org/
 
 extra_css:
-  - css/extra.css
+  - extra.css
 
 # Navigation
 nav:
@@ -83,9 +87,4 @@ nav:
     - Install:
       - code/install/index.md
     - Tests:
-      - code/test/index.md
-#    - Code Style:
-#      - code/style/index.md
-#    - Functions:
-#      - code/index.md
-#      - code/code_example.md
+      - code/tests/index.md
