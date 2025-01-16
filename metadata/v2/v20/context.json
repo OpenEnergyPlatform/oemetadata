@@ -108,19 +108,19 @@
             "@type": "foaf:Agent"
         },
         "contact": {
-            "@id": "oeo:OEO_00140109",
+            "@id": "oeo:OEO_00000107",
             "@type": "xsd:string"
         },
         "fundingAgency": {
-            "@id": "oeo:OEO_00000238",
+            "@id": "sc:FundingAgency",
             "@type": "xsd:string"
         },
         "fundingAgencyLogo": {
-            "@id": "oeo:OEO_00000238",
+            "@id": "foaf:logo",
             "@type": "xsd:string"
         },
         "grantNo": {
-            "@id": "oeo:OEO_00140178",
+            "@id": "schemaGrant",
             "@type": "xsd:string"
         },
         "spatial": "@nest",
@@ -259,7 +259,7 @@
             "@id": "csvw:column"
         },
         "nullable": {
-            "@id": "schema:isNullable",
+            "@id": "sc:isNullable",
             "@type": "xsd:boolean"
         },
         "unit": {
