@@ -2,14 +2,17 @@
 # SPDX-FileCopyrightText: 2024 Jonas Huber <@jh-RLI> © Reiner Lemoine Institut
 # SPDX-License-Identifier: MIT
 
+argparse
 black
+build
 isort
 jsonschema
+mike
+mkdocs
+mkdocs-material
+mkdocstrings
 pytest
+referencing
 tox
 twine
 wheel
-build
-argparse
-jsonschema
-referencing
