@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: 2019 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
 #
 # SPDX-License-Identifier: CC0-1.0
 
@@ -54,6 +54,9 @@ coverage.xml
 *.cover
 .hypothesis/
 .pytest_cache/
+
+# Testing
+/scripts
 
 # Translations
 *.mo
