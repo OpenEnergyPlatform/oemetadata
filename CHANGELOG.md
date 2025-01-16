@@ -37,9 +37,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update keyword titles [(#239)](https://github.com/OpenEnergyPlatform/oemetadata/pull/239)
 - Update documentation with logos and cardinality [(#242)](https://github.com/OpenEnergyPlatform/oemetadata/pull/242)
 - Update documentation with versioning [(#243)](https://github.com/OpenEnergyPlatform/oemetadata/pull/243)
+- Move the `@context` to dataset level [(#246)](https://github.com/OpenEnergyPlatform/oemetadata/pull/246)
 
 ### Removed
-- [(#)]()
+- Remove LinkedData section [(#246)](https://github.com/OpenEnergyPlatform/oemetadata/pull/246)
 
 
 ## [2.0.1] - Patch Release - Fix naming
