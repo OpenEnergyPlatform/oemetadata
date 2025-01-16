@@ -1,4 +1,5 @@
 {
+    "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/context.json",
     "name": "oep_oemetadata",
     "title": "OEP OEMetadata",
     "description": "A dataset for the OEMetadata examples.",
@@ -6,7 +7,6 @@
     "resources": [
         {
             "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07",
-            "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/context.json",
             "name": "oep_oemetadata_table_example",
             "topics": [
                 "model_draft",
@@ -125,7 +125,7 @@
                     ],
                     "date": "2024-11-19",
                     "object": "data",
-                    "comment": "Date of data creation."
+                    "comment": "Date of data creation"
                 },
                 {
                     "title": "Ludwig Hülk",
@@ -136,7 +136,7 @@
                     ],
                     "date": "2024-11-30",
                     "object": "metadata",
-                    "comment": "Date of metadata creation."
+                    "comment": "Date of metadata creation"
                 }
             ],
             "type": "table",
