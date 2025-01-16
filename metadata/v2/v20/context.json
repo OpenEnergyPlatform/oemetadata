@@ -21,6 +21,7 @@
         "sc": "http://schema.org/",
         "prov": "http://www.w3.org/ns/prov#",
         "adms": "http://www.w3.org/ns/adms#",
+        "qudt": "http://qudt.org/vocab/unit/",
         "name": {
             "@id": "rdfs:label",
             "@type": "xsd:string"
@@ -61,7 +62,7 @@
         },
         "subject": {
             "@container": "@set",
-            "@id": "ex:subject"
+            "@id": "dct:subject"
         },
         "keywords": {
             "@id": "dcat:keyword",
@@ -140,18 +141,18 @@
             "@type": "xsd:decimal"
         },
         "extent": {
-            "@id": "ex:extend"
+            "@id": "dct:spatial"
         },
         "temporalResolutionValue": {
             "@id": "dcat:temporalResolution",
             "@type": "xsd:decimal"
         },
         "spatialResolutionValue": {
-            "@id": "ex:spatialResolutionValue",
+            "@id": "dcat:spatialResolutionInMeters",
             "@type": "xsd:decimal"
         },
         "resolutionUnit": {
-            "@id": "ex:resolutionUnit",
+            "@id": "qudt:Unit",
             "@type": "xsd:string"
         },
         "boundingBox": {
@@ -181,7 +182,7 @@
             "@type": "xsd:string"
         },
         "sources": {
-            "@id": "ex:sources",
+            "@id": "dct:source",
             "@container": "@set"
         },
         "authors": {
@@ -255,8 +256,7 @@
             "@container": "@set"
         },
         "schemaFields": {
-            "@id": "csvw:column",
-            "@type": "csvw:Column"
+            "@id": "csvw:column"
         },
         "nullable": {
             "@id": "schema:isNullable",
