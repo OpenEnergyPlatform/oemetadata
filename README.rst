@@ -77,7 +77,7 @@ License and Citation
     :target: https://api.reuse.software/info/github.com/OpenEnergyPlatform/oemetadata
     :alt: REUSE
 
-.. |badge_documentation| image:: https://img.shields.io/github/actions/workflow/status/OpenEnergyPlatform/oemetadata/gh-pages.yml?branch=release-v2.0.1
+.. |badge_documentation| image:: https://img.shields.io/github/actions/workflow/status/OpenEnergyPlatform/oemetadata/documentation.yml
     :target: https://openenergyplatform.github.io/oemetadata/
     :alt: Documentation
 
