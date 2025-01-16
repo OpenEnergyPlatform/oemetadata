@@ -17,9 +17,7 @@ The documentation is structured in three main sections:
 - `Code Documentation` Install, Scripts, Tests
 
 <img src="https://frictionlessdata.io/img/frictionless-color-full-logo.svg" alt="Frictionless" width="300"/>
-
 <img src="https://datapackage.org/_astro/logo-light.Cx_ZeysV.svg" alt="Data Package" width="300"/>
 <br>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/FAIR_data_principles.jpg/330px-FAIR_data_principles.jpg" alt="FAIR" width="300"/>
-
 <img src="https://5stardata.info/images/5-star-steps.png" alt="5* LOD" width="300"/>
