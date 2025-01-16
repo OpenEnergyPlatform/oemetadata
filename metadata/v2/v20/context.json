@@ -1,11 +1,12 @@
 {
     "@context": {
         "ex": "http://example.org/",
-        "bfo": "http://purl.obolibrary.org/obo/bfo.owl#",
         "csvw": "http://www.w3.org/ns/csvw#",
         "dbo": "http://dbpedia.org/ontology/",
         "dc": "http://purl.org/dc/elements/1.1/",
+        "dcat": "http://www.w3.org/ns/dcat#",
         "dct": "http://purl.org/dc/terms/",
+        "spdx": "http://spdx.org/rdf/terms#",
         "obda": "https://w3id.org/obda/vocabulary#",
         "oeo": "https://openenergyplatform.org/ontology/oeo/releases/oeo-full.owl",
         "owl": "http://www.w3.org/2002/07/owl#",
@@ -19,6 +20,7 @@
         "geo": "http://www.georss.org/georss/",
         "sc": "http://schema.org/",
         "prov": "http://www.w3.org/ns/prov#",
+        "adms": "http://www.w3.org/ns/adms#",
         "name": {
             "@id": "rdfs:label",
             "@type": "xsd:string"
@@ -37,7 +39,7 @@
         },
         "resources": {
             "@container": "@set",
-            "@id": "ex:resource"
+            "@id": "dcat:DatasetSeries"
         },
         "topics": {
             "@container": "@set",
@@ -62,7 +64,8 @@
             "@id": "ex:subject"
         },
         "keywords": {
-            "@id": "dc:subject",
+            "@id": "dcat:keyword",
+            "@container": "@set",
             "@type": "xsd:string"
         },
         "publicationDate": {
@@ -79,7 +82,7 @@
             "@type": "xsd:dateTime"
         },
         "isActive": {
-            "@id": "ex:isActive",
+            "@id": "adms:status",
             "@type": "xsd:boolean"
         },
         "context": "@nest",
@@ -119,13 +122,10 @@
             "@id": "oeo:OEO_00140178",
             "@type": "xsd:string"
         },
-        "spatial": {
-            "@id": "ex:spatial",
-            "@type": "@id"
-        },
+        "spatial": "@nest",
         "location": {
             "@id": "dc:location",
-            "@type": "@id"
+            "@container": "@graph"
         },
         "address": {
             "@id": "dc:location",
@@ -139,9 +139,15 @@
             "@id": "geo:long",
             "@type": "xsd:decimal"
         },
-        "extent": "@nest",
-        "resolutionValue": {
-            "@id": "ex:resolutionValue",
+        "extent": {
+            "@id": "ex:extend"
+        },
+        "temporalResolutionValue": {
+            "@id": "dcat:temporalResolution",
+            "@type": "xsd:decimal"
+        },
+        "spatialResolutionValue": {
+            "@id": "ex:spatialResolutionValue",
             "@type": "xsd:decimal"
         },
         "resolutionUnit": {
@@ -150,7 +156,7 @@
         },
         "boundingBox": {
             "@id": "dcat:bbox",
-            "@container": "@set",
+            "@container": "@list",
             "@type": "xsd:decimal"
         },
         "crs": {
@@ -163,7 +169,7 @@
             "@type": "xsd:date"
         },
         "timeseries": {
-            "@id": "ex:timeseries",
+            "@id": "dct:PeriodOfTime",
             "@container": "@set"
         },
         "alignment": {
@@ -187,7 +193,7 @@
             "@type": "xsd:date"
         },
         "sourceLicenses": {
-            "@id": "ex:sourceLicenses",
+            "@id": "dct:license",
             "@container": "@set"
         },
         "instruction": {
@@ -203,11 +209,11 @@
             "@type": "xsd:string"
         },
         "licenses": {
-            "@id": "ex:licenses",
+            "@id": "dct:license",
             "@container": "@set"
         },
         "contributors": {
-            "@id": "ex:contributors",
+            "@id": "foaf:Agent",
             "@container": "@set"
         },
         "organization": {
@@ -261,7 +267,7 @@
             "@type": "xsd:string"
         },
         "isAbout": {
-            "@id": "bfo:IAO_0000136",
+            "@id": "sc:about",
             "@container": "@set"
         },
         "valueReference": {
@@ -278,7 +284,7 @@
             "@type": "xsd:string"
         },
         "foreignKeys": {
-            "@id": "ex:foreignKeys",
+            "@id": "csvw:foreignKey",
             "@container": "@set"
         },
         "reference": "@nest",
