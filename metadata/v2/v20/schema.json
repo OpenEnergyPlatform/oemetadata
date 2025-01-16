@@ -7,6 +7,19 @@
     "resources"
   ],
   "properties": {
+    "@context": {
+      "description": "Explanation of metadata keys in ontology terms.",
+      "examples": [
+        "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/context.json"
+      ],
+      "type": [
+        "string",
+        "null"
+      ],
+      "badge": "Platinum",
+      "title": "@context",
+      "readOnly": true
+    },
     "name": {
       "description": "A filename or database conform dataset name.",
       "type": [
@@ -76,19 +89,6 @@
             "title": "@Id",
             "readOnly": true
           },
-          "@context": {
-            "description": "Explanation of metadata keys in ontology terms.",
-            "examples": [
-              "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/context.json"
-            ],
-            "type": [
-              "string",
-              "null"
-            ],
-            "badge": "Platinum",
-            "title": "@context",
-            "readOnly": true
-          },
           "name": {
             "description": "A filename or database conform table name.",
             "type": [
@@ -96,7 +96,7 @@
               "null"
             ],
             "examples": [
-              "oep_oemetadata_table_example"
+              "oemetadata_table_template"
             ],
             "badge": "Iron",
             "title": "Name"
@@ -111,8 +111,7 @@
                 "null"
               ],
               "examples": [
-                "model_draft",
-                "reference"
+                "model_draft"
               ],
               "badge": "Bronze",
               "title": "Topic"
@@ -127,7 +126,7 @@
               "null"
             ],
             "examples": [
-              "OEP OEMetadata Example Table"
+              "OEMetadata Table Template"
             ],
             "badge": "Silver",
             "title": "Title"
@@ -139,7 +138,7 @@
               "null"
             ],
             "examples": [
-              "http://openenergyplatform.org/dataedit/view/model_draft/oep_oemetadata_table_example"
+              "http://openenergyplatform.org/dataedit/view/model_draft/oemetadata_table_template"
             ],
             "badge": "Bronze",
             "title": "Path",
@@ -152,7 +151,7 @@
               "null"
             ],
             "examples": [
-              "Example table used to illustrate the OEMetadata structure and meaning."
+              "Example table used to illustrate the OEMetadata structure and features."
             ],
             "badge": "Silver",
             "title": "Description"
