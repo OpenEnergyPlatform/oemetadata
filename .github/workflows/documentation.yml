@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2024 Jonas Huber <@jh-RLI> © Reiner Lemoine Institut
 # SPDX-License-Identifier: MIT
 
-name: documentation (develop branch)
+name: Documentation (develop branch)
 on:
   push:
     branches:

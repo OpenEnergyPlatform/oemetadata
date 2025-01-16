@@ -41,7 +41,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 - Remove LinkedData section [(#246)](https://github.com/OpenEnergyPlatform/oemetadata/pull/246)
-
+- Remove requirements_docs.txt [(#247)](https://github.com/OpenEnergyPlatform/oemetadata/pull/247)
 
 ## [2.0.1] - Patch Release - Fix naming
 
