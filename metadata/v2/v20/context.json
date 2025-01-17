@@ -120,7 +120,7 @@
             "@type": "xsd:string"
         },
         "grantNo": {
-            "@id": "schemaGrant",
+            "@id": "schema:Grant",
             "@type": "xsd:string"
         },
         "spatial": "@nest",
