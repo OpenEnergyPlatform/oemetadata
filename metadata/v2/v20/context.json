@@ -40,7 +40,7 @@
         },
         "resources": {
             "@container": "@set",
-            "@id": "dcat:DatasetSeries"
+            "@id": "dcat:Dataset"
         },
         "topics": {
             "@container": "@set",
