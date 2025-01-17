@@ -7,8 +7,8 @@
         "unit": null,
         "isAbout": [
             {
-                "name": null,
-                "@id": null
+                "name": "identifier",
+                "@id": "http://purl.obolibrary.org/obo/IAO_0020000"
             }
         ],
         "valueReference": [
@@ -21,21 +21,21 @@
     },
     {
         "name": "name",
-        "description": "Example name",
+        "description": "Technology Name",
         "type": "text",
         "nullable": true,
         "unit": null,
         "isAbout": [
             {
-                "name": "written name",
-                "@id": "https://openenergyplatform.org/ontology/oeo/IAO_0000590/"
+                "name": "power generation technology",
+                "@id": "http://openenergy-platform.org/ontology/oeo/OEO_00010423"
             }
         ],
         "valueReference": [
             {
-                "value": null,
-                "name": null,
-                "@id": null
+                "value": "wind",
+                "name": "wind power technology",
+                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00010424"
             }
         ]
     },
@@ -87,7 +87,7 @@
     {
         "name": "value",
         "description": "Bruttoleistung",
-        "type": "double precision",
+        "type": "decimal",
         "nullable": true,
         "unit": "MW",
         "isAbout": [
@@ -105,15 +105,55 @@
         ]
     },
     {
-        "name": "geom",
-        "description": "Geometry",
-        "type": "geometry(Point, 4326)",
+        "name": "is_active",
+        "description": "Betriebsstaus",
+        "type": "boolean",
+        "nullable": false,
+        "unit": null,
+        "isAbout": [
+            {
+                "name": "Operating Mode Status",
+                "@id": "https://ontology.brickschema.org/brick/Operating_Mode_Status"
+            }
+        ],
+        "valueReference": [
+            {
+                "value": null,
+                "name": null,
+                "@id": null
+            }
+        ]
+    },
+    {
+        "name": "version",
+        "description": "Version",
+        "type": "integer",
         "nullable": true,
         "unit": null,
         "isAbout": [
             {
-                "name": "spatial region",
-                "@id": "https://openenergyplatform.org/ontology/oeo/BFO_000000/"
+                "name": "version number",
+                "@id": "http://purl.obolibrary.org/obo/IAO_0000129"
+            }
+        ],
+        "valueReference": [
+            {
+                "value": null,
+                "name": null,
+                "@id": null
+            }
+        ]
+    },
+    {
+        "name": "comment",
+        "description": "",
+        "type": "text",
+        "nullable": true,
+        "unit": null,
+        "isAbout": [
+            {
+                "name": "comment",
+                "@id": "http://semanticscience.org/resource/SIO_001167"
             }
         ],
         "valueReference": [

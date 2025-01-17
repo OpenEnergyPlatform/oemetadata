@@ -6,7 +6,7 @@
     "roles": ["DataCollector"],
     "date": "2024-11-19",
     "object": "data",
-    "comment": "Date of data creation."
+    "comment": "Date of data creation"
   },
   {
     "title": "Ludwig Hülk",
@@ -15,6 +15,6 @@
     "roles": ["DataCurator"],
     "date": "2024-11-30",
     "object": "metadata",
-    "comment": "Date of metadata creation."
+    "comment": "Date of metadata creation"
   }
 ]

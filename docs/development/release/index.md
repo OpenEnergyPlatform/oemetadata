@@ -1,19 +1,11 @@
 # Release
 
-- RELEASE_PROCEDURE.md
-- VERSION
-- MANIFEST.in
-- .bumpversion.cfg
+The software release has four main goals:
 
+1. Merge the new features to the `production` branch
+2. Create a [GitHub Release](https://github.com/OpenEnergyPlatform/oemetadata/releases)
+3. Update the documentation
+4. Publish a new version of the package at PyPI
 
-## Release a new version
-See the complete instructions in the [RELEASE_PROCEDURE](./RELEASE_PROCEDURE.md).
-
-### Make PyPI release:
-
-First update version in setup.py, then:
-
-```
-python3 setup.py sdist bdist_wheel
-twine upload dist/*
-```
+The 📝 [RELEASE_PROCEDURE.md](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/RELEASE_PROCEDURE.md)
+contain detailed instructions to do a release.

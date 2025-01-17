@@ -3,10 +3,18 @@
     "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/v20/v20/build_source/schemas/general.json",
     "type": "object",
     "properties": {
+        "@id": {
+            "description": "A Uniform Resource Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus).",
+            "type": ["string", "null"],
+            "examples": ["https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07"],
+            "badge": "Platinum",
+            "title": "@Id",
+            "readOnly": true
+        },
         "name": {
             "description": "A filename or database conform table name.",
             "type": ["string", "null"],
-            "examples": ["oep_oemetadata_table_example"],
+            "examples": ["oemetadata_table_template"],
             "badge": "Iron",
             "title": "Name"
         },
@@ -16,7 +24,7 @@
             "items": {
                 "description": "The topics are used to group the data in the database.",
                 "type": ["string", "null"],
-                "examples": ["model_draft","reference"],
+                "examples": ["model_draft"],
                 "badge": "Bronze",
                 "title": "Topic"
             },
@@ -26,14 +34,14 @@
         "title": {
             "description": "A human readable table name.",
             "type": ["string", "null"],
-            "examples": ["OEP OEMetadata Example Table"],
+            "examples": ["OEMetadata Table Template"],
             "badge": "Silver",
             "title": "Title"
         },
         "path": {
             "description": "A unique identifier (URI/UUID/DOI) for the table or file.",
             "type": ["string", "null"],
-            "examples": ["http://openenergyplatform.org/dataedit/view/model_draft/oep_oemetadata_table_example"],
+            "examples": ["http://openenergyplatform.org/dataedit/view/model_draft/oemetadata_table_template"],
             "badge": "Bronze",
             "title": "Path",
             "readOnly": true
@@ -41,7 +49,7 @@
         "description": {
             "description": "A description of the table. It should be usable as summary information for the table that is described by the metadata.",
             "type": ["string", "null"],
-            "examples": ["Example table used to illustrate the OEMetadata structure and meaning."],
+            "examples": ["Example table used to illustrate the OEMetadata structure and features."],
             "badge": "Silver",
             "title": "Description"
         },

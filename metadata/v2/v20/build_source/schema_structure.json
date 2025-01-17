@@ -12,7 +12,6 @@
             "items": {
                 "type": "object",
                 "properties": {
-                    "linkedData": {"$ref": "linked_data.json#"},
                     "general": {"$ref": "general.json#"},
                     "context": {"$ref": "context.json#"},
                     "spatial": {"$ref": "spatial.json#"},

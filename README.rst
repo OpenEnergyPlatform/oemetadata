@@ -77,7 +77,7 @@ License and Citation
     :target: https://api.reuse.software/info/github.com/OpenEnergyPlatform/oemetadata
     :alt: REUSE
 
-.. |badge_documentation| image:: https://img.shields.io/github/actions/workflow/status/OpenEnergyPlatform/oemetadata/gh-pages.yml?branch=release-v2.0.1
+.. |badge_documentation| image:: https://img.shields.io/github/actions/workflow/status/OpenEnergyPlatform/oemetadata/documentation.yml
     :target: https://openenergyplatform.github.io/oemetadata/
     :alt: Documentation
 
@@ -97,7 +97,7 @@ License and Citation
     :target: https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/CONTRIBUTING.md
     :alt: Contributions
 
-.. |badge_repo_counts| image:: http://hits.dwyl.com/OpenEnergyPlatform/oemetadata.svg
+.. |badge_repo_counts| image:: https://img.shields.io/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2FOpenEnergyPlatform%2Foemetadata.svg&color=green
     :alt: Counter
 
 .. |badge_contributors| image:: https://img.shields.io/github/contributors/OpenEnergyPlatform/oemetadata
