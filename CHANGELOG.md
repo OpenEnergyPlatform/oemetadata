@@ -38,6 +38,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update REUSE licenses for json [(#225)](https://github.com/OpenEnergyPlatform/oemetadata/pull/225)
 - Update example contributors and roles [(#225)](https://github.com/OpenEnergyPlatform/oemetadata/pull/225)
 - Update keyword titles [(#239)](https://github.com/OpenEnergyPlatform/oemetadata/pull/239)
+- Update the json-ld context to cover 100% of oemetadata´s properties and provide RDF, this PR also includes a new test that validates the `@context` together with the example.json as valid json ld [(#234)](https://github.com/OpenEnergyPlatform/oemetadata/pull/234)
 
 ### Removed
 - [(#)]()
