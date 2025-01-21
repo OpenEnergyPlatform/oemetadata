@@ -21,7 +21,7 @@
         "sc": "http://schema.org/",
         "prov": "http://www.w3.org/ns/prov#",
         "adms": "http://www.w3.org/ns/adms#",
-        "qudt": "http://qudt.org/vocab/unit/",
+        "qudt": "http://qudt.org/vocab/",
         "name": {
             "@id": "rdfs:label",
             "@type": "xsd:string"
