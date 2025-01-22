@@ -4,11 +4,11 @@
     "type": "object",
     "properties": {
         "temporal": {
-            "description": "An object with the time period covered in the data. Temporal information should contain either a \"referenceDate\" or the keys that describe a time series, in rare cases both.",
+            "description": "An object with the time period covered in the data. Temporal information should contain a \"referenceDate\" or the keys that describe a time series, or both.",
             "type": "object",
             "properties": {
                 "referenceDate": {
-                    "description": "A base year, month or day. The time for which the data is should be accurate. Date Format is ISO 8601.",
+                    "description": "A base year, month or day. The time for which the data should be accurate. Date Format is ISO 8601.",
                     "type": ["string", "null"],
                     "examples": ["2020-01-01"],
                     "badge": "Silver",
