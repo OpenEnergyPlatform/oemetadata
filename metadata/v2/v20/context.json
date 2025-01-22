@@ -261,7 +261,7 @@
             "@id": "csvw:column"
         },
         "nullable": {
-            "@id": "sc:isNullable",
+            "@id": "ncit:NCIT_C47840",
             "@type": "xsd:boolean"
         },
         "unit": {
