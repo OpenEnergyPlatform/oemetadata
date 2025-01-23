@@ -1,28 +1,21 @@
 {
     "@context": {
         "adms": "http://www.w3.org/ns/adms#",
-        "cco": "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-11-03/AllCoreOntology",
+        "cco": "https://terminology.tib.eu/ts/ontologies/cco",
         "csvw": "http://www.w3.org/ns/csvw#",
         "dbo": "http://dbpedia.org/ontology/",
         "dc": "http://purl.org/dc/elements/1.1/",
         "dcat": "http://www.w3.org/ns/dcat#",
         "dct": "http://purl.org/dc/terms/",
-        "ex": "http://example.org/",
         "foaf": "http://xmlns.com/foaf/0.1/",
-        "geo": "http://www.georss.org/georss/",
-        "ms": "http://purl.obolibrary.org/obo/ms/4.1.185/ms.owl",
-        "ncit": "http://purl.obolibrary.org/obo/ncit/releases/2024-05-07/ncit.owl",
-        "obda": "https://w3id.org/obda/vocabulary#",
+        "ncit": "http://purl.obolibrary.org/obo/ncit.owl",
         "oeo": "https://openenergyplatform.org/ontology/oeo/releases/oeo-full.owl",
         "owl": "http://www.w3.org/2002/07/owl#",
         "prov": "http://www.w3.org/ns/prov#",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "saref": "https://saref.etsi.org/core/",
         "sc": "http://schema.org/",
         "spdx": "http://spdx.org/rdf/terms#",
-        "time": "http://www.w3.org/2006/time#",
-        "xml": "http://www.w3.org/XML/1998/namespace",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "name": {
             "@id": "rdfs:label",
@@ -53,12 +46,8 @@
             "@id": "dcat:accessURL",
             "@type": "@id"
         },
-        "sourcePath": {
-            "@id": "dc:source",
-            "@type": "xsd:string"
-        },
         "language": {
-            "@id": "dc:language",
+            "@id": "dct:language",
             "@container": "@set",
             "@type": "xsd:string"
         },
@@ -159,7 +148,7 @@
             "@type": "xsd:decimal"
         },
         "crs": {
-            "@id": "cco:GeospatialCoordinateReferenceSystem",
+            "@id": "cco:ont00000469",
             "@type": "xsd:string"
         },
         "temporal": "@nest",
@@ -195,16 +184,20 @@
             "@id": "dct:issued",
             "@type": "xsd:date"
         },
+        "sourcePath": {
+            "@id": "dcat:accessURL",
+            "@type": "xsd:string"
+        },
         "sourceLicenses": {
             "@id": "dct:license",
             "@container": "@set"
         },
         "instruction": {
-            "@id": "dct:rights",
+            "@id": "rdfs:comment",
             "@type": "xsd:string"
         },
         "attribution": {
-            "@id": "ms:MS_1003198",
+            "@id": "spdx:attributionText",
             "@type": "xsd:string"
         },
         "copyrightStatement": {
@@ -254,7 +247,7 @@
         },
         "schema": "@nest",
         "nestedFields": {
-            "@id": "ex:nestedFields",
+            "@id": "csvw:column",
             "@container": "@set"
         },
         "schemaFields": {
