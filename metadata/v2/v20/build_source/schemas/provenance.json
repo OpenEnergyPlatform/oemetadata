@@ -44,7 +44,7 @@
                         "title": "Roles"
                     },
                     "date": {
-                        "description": "The date of the final contribution. Date Format is ISO 8601.",
+                        "description": "The date of the contribution. Date Format is ISO 8601.",
                         "type": ["string", "null"],
                         "examples": ["2024-10-21"],
                         "badge": "Bronze",

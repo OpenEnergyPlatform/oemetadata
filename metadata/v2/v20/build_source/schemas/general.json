@@ -32,7 +32,7 @@
             "title": "Topics"
         },
         "title": {
-            "description": "A human readable table name.",
+            "description": "A human readable resource or table name.",
             "type": ["string", "null"],
             "examples": ["OEMetadata Table Template"],
             "badge": "Silver",
