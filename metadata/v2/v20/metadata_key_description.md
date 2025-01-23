@@ -1,4 +1,6 @@
 <!--
+hide:
+  - navigation
 SPDX-FileCopyrightText: 2024 Ludwig Hülk <Ludee> © Reiner Lemoine Institut
 SPDX-FileCopyrightText: 2024 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
 
@@ -11,7 +13,9 @@ This pages describes the key of **OEMetadata version 2.0 .** <br>
 You can have a look at an empty [template](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/template.json) and a filled out [example](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/example.json) of the metadata string.<br>
 The [`schema.json`](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/schema.json) contains the complete metadata schema.
 
-## JSON Format
+## Introduction
+
+### JSON Format
 
 The JSON format offers different formats:
 
@@ -37,9 +41,6 @@ The JSON format offers different formats:
         {"key_a":"value"}]}
     ```
 
-
-## Metadata Keys
-
 ### Cardinality
 The cardinality defines the number of times an element can occur. 
 
@@ -55,6 +56,8 @@ They are implemented as part of the [Open Peer Review Process](https://openenerg
 ### Additional information:<br>
 If a field is not applicable use: `null`.<br>
 If a value is not yet available, use: `ToDo`.
+
+## Overview
 
 ### Collection Keys
 | <div style="width:1em">#</div> | <div style="width:6em">Key</div> | <div style="width:20em">Description</div>                                                | <div style="width:20em">Example</div>                                                                                   | <div style="width:20em">Ontology Class</div>               | <div style="width:4em">Badge</div> | <div style="width:3em">Card.</div> |
@@ -225,3 +228,71 @@ If a value is not yet available, use: `ToDo`.
 | 1.2.1                          | name                             | The [SPDX](https://spdx.org/licenses/) identifier.                                   | CC0-1.0                                                                                          | [rdfs:label](https://www.w3.org/2000/01/rdf-schema#/label)   | [1]                                |
 | 1.2.2                          | title                            | The official (human-readable) title of the license.                                  | Creative Commons Zero v1.0 Universal                                                             | [dct:title](http://purl.org/dc/terms/title)                  | [1]                                |
 | 1.2.3                          | path                             | A link or path to the license text.                                                  | [creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/) | [sc:url](https://schema.org/url)                             | [1]                                |
+
+
+## Metadata Keys
+
+### Collection: @context
+|                    |                                                                                                                         |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------|
+| **Key**            | @context                                                                                                                |
+| **Description**    | Explanation of metadata keys in ontology terms.                                                                         |
+| **Example**        | [context.json](https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/context.json) |
+| **Ontology Class** |                                                                                                                         |
+| **Badge**          | Platinum                                                                                                                |
+| **Card.**          | [0..1]                                                                                                                  |
+
+
+### Collection: name
+|                    |                                                            |
+|--------------------|------------------------------------------------------------|
+| **Key**            | name                                                       |
+| **Description**    | A filename or database conform dataset name.               |
+| **Example**        | oep_oemetadata                                             |
+| **Ontology Class** | [rdfs:label](https://www.w3.org/2000/01/rdf-schema#/label) |
+| **Badge**          | Iron                                                       |
+| **Card.**          | [1]                                                        |
+
+
+### Collection: title
+|                    |                                             |
+|--------------------|---------------------------------------------|
+| **Key**            | title                                       |
+| **Description**    | A human readable dataset name.              |
+| **Example**        | OEP OEMetadata                              |
+| **Ontology Class** | [dct:title](http://purl.org/dc/terms/title) |
+| **Badge**          | Bronze                                      |
+| **Card.**          | [0..1]                                      |
+
+
+### Collection: description
+|                    |                                                         |
+|--------------------|---------------------------------------------------------|
+| **Key**            | description                                             |
+| **Description**    | A free text description of the dataset.                 |
+| **Example**        | A collection of tables for the OEMetadata examples.     |
+| **Ontology Class** | [dct:description](http://purl.org/dc/terms/description) |
+| **Badge**          | Bronze                                                  |
+| **Card.**          | [0..1]                                                  |
+
+
+### Collection: id
+|                    |                                                                                                           |
+|--------------------|-----------------------------------------------------------------------------------------------------------|
+| **Key**            | id                                                                                                        |
+| **Description**    | A unique identifier (UUID/DOI) for the dataset.                                                           |
+| **Example**        | [databus.openenergyplatform.org/oeplatform](https://databus.openenergyplatform.org/oeplatform/reference/) |
+| **Ontology Class** | [dct:identifier](http://purl.org/dc/terms/identifier)                                                     |
+| **Badge**          | Silver                                                                                                    |
+| **Card.**          | [0..1]                                                                                                    |
+
+
+### Collection: resources
+|                    |                                                                                          |
+|--------------------|------------------------------------------------------------------------------------------|
+| **Key**            | resources                                                                                |
+| **Description**    | An array of objects of the resources. The dataset can contain several (database) tables. |
+| **Example**        |                                                                                          |
+| **Ontology Class** | [dcat:Dataset](https://www.w3.org/ns/dcat#dataset)                                       |
+| **Badge**          |                                                                                          |
+| **Card.**          | [*]                                                                                      |
