@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add REUSE Software compliance check [(#218)](https://github.com/OpenEnergyPlatform/oemetadata/pull/218)
 - Add example fields function [(#220)](https://github.com/OpenEnergyPlatform/oemetadata/pull/220)
 - Add year to copyright info [(#236)](https://github.com/OpenEnergyPlatform/oemetadata/pull/236)
+- Add test for `@context` with the example.json as valid JSON-LD [(#234)](https://github.com/OpenEnergyPlatform/oemetadata/pull/234)
 
 ### Changed
 - Update documentation and README [(#209)](https://github.com/OpenEnergyPlatform/oemetadata/pull/209)
@@ -39,6 +40,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update documentation with logos and cardinality [(#242)](https://github.com/OpenEnergyPlatform/oemetadata/pull/242)
 - Update documentation with versioning [(#243)](https://github.com/OpenEnergyPlatform/oemetadata/pull/243)
 - Move the `@context` to dataset level [(#246)](https://github.com/OpenEnergyPlatform/oemetadata/pull/246)
+- Update the context.json and add terms for all keys [(#234)](https://github.com/OpenEnergyPlatform/oemetadata/pull/234)
 
 ### Removed
 - Remove LinkedData section [(#246)](https://github.com/OpenEnergyPlatform/oemetadata/pull/246)
