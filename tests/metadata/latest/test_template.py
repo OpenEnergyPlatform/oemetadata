@@ -7,7 +7,7 @@ def test_oemetadata_template_should_load():
     try:
         from metadata.latest.template import OEMETADATA_LATEST_TEMPLATE
     except Warning:
-        print("Cannot open OEMetadata Template (latest)!")
+        print("Cannot open OEMetadata Template (Latest)!")
 
 
 def test_oemetadata_schema_should_validate_oemetadata_template():
@@ -17,6 +17,6 @@ def test_oemetadata_schema_should_validate_oemetadata_template():
 
     try:
         validate(OEMETADATA_LATEST_TEMPLATE, OEMETADATA_LATEST_SCHEMA)
-        print("OEMetadata Template is valid OEMetadata Schema (latest).")
+        print("OEMetadata Template is valid OEMetadata Schema (Latest).")
     except ValidationError as e:
-        print("Cannot validate OEMetadata Template with Schema (latest)!", e)
+        print("Cannot validate OEMetadata Template with Schema (Latest)!", e)

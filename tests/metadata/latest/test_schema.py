@@ -7,7 +7,7 @@ def test_oemetadata_schema_should_load():
     try:
         from metadata.latest.schema import OEMETADATA_LATEST_SCHEMA
     except Warning:
-        print("Cannot open OEMetadata Schema (latest)!")
+        print("Cannot open OEMetadata Schema (Latest)!")
 
 
 def test_jsonschema_should_validate_oemetadata_schema():
@@ -18,9 +18,9 @@ def test_jsonschema_should_validate_oemetadata_schema():
 
     try:
         validate(OEMETADATA_LATEST_SCHEMA, OEMETADATA_JSONSCHEMA_DRAFT202012_SCHEMA)
-        print("OEMetadata Schema (latest) is valid JSON Schema (Draft 2020-12).")
+        print("OEMetadata Schema (Latest) is valid JSON Schema (Draft 2020-12).")
     except ValidationError as e:
-        print("Cannot validate OEMetadata Schema with JSON Schema (latest)!", e)
+        print("Cannot validate OEMetadata Schema with JSON Schema (Latest)!", e)
 
 
 def test_oemetadata_schema_should_have_correct_path():
@@ -32,8 +32,8 @@ def test_oemetadata_schema_should_have_correct_path():
 
     assert get_string(OEMETADATA_LATEST_SCHEMA["$schema"]) == get_string(
         "https://json-schema.org/draft/2020-12/schema"
-    ), "Wrong schema path in OEMetadata Schema (latest)!"
+    ), "Wrong schema path in OEMetadata Schema (Latest)!"
 
     assert get_string(OEMETADATA_LATEST_SCHEMA["$id"]) == get_string(
         "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/schema.json"
-    ), "Wrong id path in OEMetadata Schema (latest)!"
+    ), "Wrong id path in OEMetadata Schema (Latest)!"

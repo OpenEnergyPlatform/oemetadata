@@ -7,8 +7,21 @@
     "resources"
   ],
   "properties": {
+    "@context": {
+      "description": "Explanation of metadata keys in ontology terms.",
+      "examples": [
+        "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/context.json"
+      ],
+      "type": [
+        "string",
+        "null"
+      ],
+      "badge": "Platinum",
+      "title": "@context",
+      "readOnly": true
+    },
     "name": {
-      "description": "A filename or database conform collection name.",
+      "description": "A filename or database conform dataset name.",
       "type": [
         "string",
         "null"
@@ -17,10 +30,10 @@
         "oep_oemetadata"
       ],
       "badge": "Iron",
-      "title": "Collection Name"
+      "title": "Dataset Name"
     },
     "title": {
-      "description": "A human readable collection name.",
+      "description": "A human readable dataset name.",
       "type": [
         "string",
         "null"
@@ -29,19 +42,19 @@
         "OEP OEMetadata"
       ],
       "badge": "Bronze",
-      "title": "Collection Title"
+      "title": "Dataset Title"
     },
     "description": {
-      "description": "A free text description of the collection.",
+      "description": "A free text description of the dataset.",
       "type": [
         "string",
         "null"
       ],
       "examples": [
-        "A collection of tables for the OEMetadata examples."
+        "A dataset for the OEMetadata examples."
       ],
       "badge": "Bronze",
-      "title": "Collection Description"
+      "title": "Dataset Description"
     },
     "id": {
       "description": "A unique identifier (UUID/DOI) for the collection.",
@@ -53,7 +66,7 @@
         "https://databus.openenergyplatform.org/oeplatform/reference"
       ],
       "badge": "Silver",
-      "title": "Collection Identifier",
+      "title": "Dataset Identifier",
       "format": "uri",
       "readOnly": true
     },
@@ -76,19 +89,6 @@
             "title": "@Id",
             "readOnly": true
           },
-          "@context": {
-            "description": "Explanation of metadata keys in ontology terms.",
-            "examples": [
-              "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/context.json"
-            ],
-            "type": [
-              "string",
-              "null"
-            ],
-            "badge": "Platinum",
-            "title": "@context",
-            "readOnly": true
-          },
           "name": {
             "description": "A filename or database conform table name.",
             "type": [
@@ -96,7 +96,7 @@
               "null"
             ],
             "examples": [
-              "oep_oemetadata_table_example"
+              "oemetadata_table_template"
             ],
             "badge": "Iron",
             "title": "Name"
@@ -111,14 +111,13 @@
                 "null"
               ],
               "examples": [
-                "model_draft",
-                "reference"
+                "model_draft"
               ],
               "badge": "Bronze",
-              "title": "Keyword"
+              "title": "Topic"
             },
             "badge": "Bronze",
-            "title": "Keywords"
+            "title": "Topics"
           },
           "title": {
             "description": "A human readable table name.",
@@ -127,7 +126,7 @@
               "null"
             ],
             "examples": [
-              "OEP OEMetadata Example Table"
+              "OEMetadata Table Template"
             ],
             "badge": "Silver",
             "title": "Title"
@@ -139,7 +138,7 @@
               "null"
             ],
             "examples": [
-              "http://openenergyplatform.org/dataedit/view/model_draft/oep_oemetadata_table_example"
+              "http://openenergyplatform.org/dataedit/view/model_draft/oemetadata_table_template"
             ],
             "badge": "Bronze",
             "title": "Path",
@@ -152,7 +151,7 @@
               "null"
             ],
             "examples": [
-              "Example table used to illustrate the OEMetadata structure and meaning."
+              "Example table used to illustrate the OEMetadata structure and features."
             ],
             "badge": "Silver",
             "title": "Description"
@@ -192,9 +191,9 @@
                     "energy"
                   ],
                   "badge": "Platinum",
-                  "title": "Name"
+                  "title": "Subject Name"
                 },
-                "path": {
+                "@id": {
                   "description": "A unique identifier (URI/IRI) of the ontology class.",
                   "type": [
                     "string",
@@ -204,7 +203,7 @@
                     "https://openenergyplatform.org/ontology/oeo/OEO_00000150"
                   ],
                   "badge": "Platinum",
-                  "title": "Path",
+                  "title": "Subject Identifier",
                   "format": "uri"
                 }
               },
@@ -355,7 +354,7 @@
                 "examples": [
                   "Open Energy Platform (OEP)"
                 ],
-                "badge": "Gold",
+                "badge": "Bronze",
                 "title": "Publisher"
               },
               "publisherLogo": {
@@ -455,7 +454,7 @@
                       "https://www.wikidata.org/wiki/Q77077223"
                     ],
                     "badge": "Platinum",
-                    "title": "Address"
+                    "title": "Address Identifier"
                   },
                   "latitude": {
                     "description": "The latitude (lat) information of the location. Specifies the north / south position of the geometry.",
@@ -483,7 +482,7 @@
                   }
                 },
                 "badge": "Silver",
-                "title": "Extent"
+                "title": "Location"
               },
               "extent": {
                 "description": "An object that describes a covered area or region.",
@@ -512,10 +511,10 @@
                     ],
                     "format": "uri",
                     "badge": "Platinum",
-                    "title": "Extent URI"
+                    "title": "Extent Identifier"
                   },
                   "resolutionValue": {
-                    "description": "The value of the resolution.",
+                    "description": "The value of the spatial resolution.",
                     "type": [
                       "string",
                       "null"
@@ -524,10 +523,10 @@
                       "100"
                     ],
                     "badge": "Silver",
-                    "title": "Resolution Value"
+                    "title": "Spatial Resolution Value"
                   },
                   "resolutionUnit": {
-                    "description": "The unit of the resolution.",
+                    "description": "The unit of the spatial resolution.",
                     "type": [
                       "string",
                       "null"
@@ -536,7 +535,7 @@
                       "m"
                     ],
                     "badge": "Silver",
-                    "title": "Resolution Unit"
+                    "title": "Spatial Resolution Unit"
                   },
                   "boundingBox": {
                     "description": "The covered area specified by the coordinates of a bounding box. The format is [minLon, minLat, maxLon, maxLat] or [W,S,E,N].",
@@ -605,7 +604,7 @@
                         "null"
                       ],
                       "examples": [
-                        "2020-01-01T00:00:00+00:00"
+                        "2020-01-01T00:00:00+01:00"
                       ],
                       "badge": "Silver",
                       "title": "Timeseries Start",
@@ -618,23 +617,35 @@
                         "null"
                       ],
                       "examples": [
-                        "2020-01-01T23:59:30+00:00"
+                        "2020-01-01T23:59:30+01:00"
                       ],
                       "badge": "Silver",
                       "title": "Timeseries End",
                       "format": "date-time"
                     },
-                    "resolution": {
-                      "description": "The time span between individual information points in a time series.",
+                    "resolutionValue": {
+                      "description": "The time span between individual information points in a time series. The value of the resolution.",
                       "type": [
                         "string",
                         "null"
                       ],
                       "examples": [
-                        "30 s"
+                        "15"
                       ],
                       "badge": "Silver",
-                      "title": "Timeseries Resolution"
+                      "title": "Timeseries Resolution Value"
+                    },
+                    "resolutionUnit": {
+                      "description": "The unit of the temporal resolution.",
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "examples": [
+                        "min"
+                      ],
+                      "badge": "Silver",
+                      "title": "Timeseries Resolution Unit"
                     },
                     "alignment": {
                       "description": "An indicator of whether timestamps in a time series are to the left, right or in the centre.",
@@ -704,10 +715,10 @@
                       "The Core Writing Team"
                     ],
                     "badge": "Bronze",
-                    "title": "Keyword"
+                    "title": "Author"
                   },
                   "badge": "Bronze",
-                  "title": "Keywords"
+                  "title": "Authors"
                 },
                 "description": {
                   "description": "A free text description of the source.",
@@ -734,7 +745,7 @@
                   "title": "Publication Year"
                 },
                 "path": {
-                  "description": "A URL to the original source.",
+                  "description": "A DOI or link to the original source.",
                   "type": [
                     "string",
                     "null"
@@ -743,10 +754,10 @@
                     "https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf"
                   ],
                   "badge": "Bronze",
-                  "title": "Path",
+                  "title": "DOI",
                   "format": "uri"
                 },
-                "licenses": {
+                "sourceLicenses": {
                   "type": "array",
                   "items": {
                     "description": "An array of objects of licenses under which the described source is provided. See https://openenergyplatform.github.io/academy/courses/08_licensing/ for further information.",
@@ -759,7 +770,7 @@
                           "null"
                         ],
                         "examples": [
-                          "ODbL-1.0"
+                          "CC-BY-4.0"
                         ],
                         "badge": "Bronze",
                         "title": "Name"
@@ -771,7 +782,7 @@
                           "null"
                         ],
                         "examples": [
-                          "Open Data Commons Open Database License 1.0"
+                          "Creative Commons Attribution 4.0 International"
                         ],
                         "badge": "Bronze",
                         "title": "Title"
@@ -783,10 +794,10 @@
                           "null"
                         ],
                         "examples": [
-                          "https://opendatacommons.org/licenses/odbl/1-0/index.html"
+                          "https://creativecommons.org/licenses/by/4.0/legalcode"
                         ],
                         "badge": "Bronze",
-                        "title": "Path",
+                        "title": "License Identifier",
                         "format": "uri"
                       },
                       "instruction": {
@@ -796,7 +807,7 @@
                           "null"
                         ],
                         "examples": [
-                          "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-odbl for further information."
+                          "You are free to share and change, but you must attribute. See https://tldrlegal.com/license/odc-open-database-license-odbl for further information."
                         ],
                         "badge": "Bronze",
                         "title": "Instruction"
@@ -851,7 +862,9 @@
                     "string",
                     "null"
                   ],
-                  "example": "ODbL-1.0",
+                  "examples": [
+                    "ODbL-1.0"
+                  ],
                   "badge": "Bronze",
                   "title": "Name"
                 },
@@ -861,7 +874,9 @@
                     "string",
                     "null"
                   ],
-                  "example": "Open Data Commons Open Database License 1.0",
+                  "examples": [
+                    "Open Data Commons Open Database License 1.0"
+                  ],
                   "badge": "Bronze",
                   "title": "Title"
                 },
@@ -871,7 +886,9 @@
                     "string",
                     "null"
                   ],
-                  "example": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
+                  "examples": [
+                    "https://opendatacommons.org/licenses/odbl/1-0/index.html"
+                  ],
                   "badge": "Bronze",
                   "title": "Path",
                   "format": "uri"
@@ -882,7 +899,9 @@
                     "string",
                     "null"
                   ],
-                  "example": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information.",
+                  "examples": [
+                    "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information."
+                  ],
                   "badge": "Bronze",
                   "title": "Instruction"
                 },
@@ -892,9 +911,23 @@
                     "string",
                     "null"
                   ],
-                  "example": "\u00a9 Reiner Lemoine Institut",
+                  "examples": [
+                    "\u00a9 Reiner Lemoine Institut"
+                  ],
                   "badge": "Bronze",
                   "title": "Attribution"
+                },
+                "copyrightStatement": {
+                  "description": "A link or path that proves that the source or data has the appropriate license. This can be a page number or website imprint.",
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "examples": [
+                    "https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/LICENSE.txt"
+                  ],
+                  "badge": "Bronze",
+                  "title": "Copyright Statement"
                 }
               },
               "badge": "Bronze",
@@ -949,14 +982,14 @@
                   "description": "An array describing the roles of the contributor.",
                   "type": "array",
                   "items": {
-                    "description": "A role is recommended to follow an established vocabulary, such as DataCite Metadata Schema\u2019s contributorRole or CreDIT. Useful roles to indicate are: creator, contact, and dataCurator.",
+                    "description": "A role is recommended to follow an established vocabulary: DataCite Metadata Schema\u2019s contributorRole. Useful roles to indicate are: DataCollector, ContactPerson, and DataCurator.",
                     "type": [
                       "string",
                       "null"
                     ],
                     "examples": [
-                      "creator",
-                      "dataCurator"
+                      "DataCollector",
+                      "DataCurator"
                     ],
                     "badge": "Bronze",
                     "title": "Role"
@@ -996,7 +1029,7 @@
                     "null"
                   ],
                   "examples": [
-                    "Add general context."
+                    "Add metadata example."
                   ],
                   "badge": "Bronze",
                   "title": "Comment"
@@ -1142,9 +1175,9 @@
                               "wind energy converting unit"
                             ],
                             "badge": "Platinum",
-                            "title": "Name"
+                            "title": "Is About Name"
                           },
-                          "path": {
+                          "@id": {
                             "description": "The path of the ontology term (IRI).",
                             "type": [
                               "string",
@@ -1154,7 +1187,7 @@
                               "https://openenergyplatform.org/ontology/oeo/OEO_00000044"
                             ],
                             "badge": "Platinum",
-                            "title": "Path",
+                            "title": "Is About Identifier",
                             "format": "uri"
                           }
                         },
@@ -1180,7 +1213,7 @@
                               "onshore"
                             ],
                             "badge": "Platinum",
-                            "title": "Value"
+                            "title": "Value Reference"
                           },
                           "name": {
                             "description": "The class label of the ontology term in the column.",
@@ -1192,9 +1225,9 @@
                               "onshore wind farm"
                             ],
                             "badge": "Platinum",
-                            "title": "Name"
+                            "title": "Value Reference Name"
                           },
-                          "path": {
+                          "@id": {
                             "description": "The path of the ontology term (IRI) in the column.",
                             "type": [
                               "string",
@@ -1204,7 +1237,7 @@
                               "https://openenergyplatform.org/ontology/oeo/OEO_00000311"
                             ],
                             "badge": "Platinum",
-                            "title": "Path",
+                            "title": "Value Reference Identifier",
                             "format": "uri"
                           }
                         },
@@ -1372,7 +1405,7 @@
                   "null"
                 ],
                 "examples": [
-                  "https://www.example.com"
+                  "https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/"
                 ],
                 "badge": null,
                 "title": "Path",
