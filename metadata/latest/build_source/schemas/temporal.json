@@ -4,11 +4,11 @@
     "type": "object",
     "properties": {
         "temporal": {
-            "description": "An object with the time period covered in the data. Temporal information should contain either a \"referenceDate\" or the keys that describe a time series, in rare cases both.",
+            "description": "An object with the time period covered in the data. Temporal information should contain a \"referenceDate\" or the keys that describe a time series, or both.",
             "type": "object",
             "properties": {
                 "referenceDate": {
-                    "description": "A base year, month or day. The time for which the data is should be accurate. Date Format is ISO 8601.",
+                    "description": "A base year, month or day. The time for which the data should be accurate. Date Format is ISO 8601.",
                     "type": ["string", "null"],
                     "examples": ["2020-01-01"],
                     "badge": "Silver",
@@ -24,7 +24,7 @@
                             "start": {
                                 "description": "The start time of a time series.",
                                 "type": ["string", "null"],
-                                "examples": ["2020-01-01T00:00:00+00:00"],
+                                "examples": ["2020-01-01T00:00:00+01:00"],
                                 "badge": "Silver",
                                 "title": "Timeseries Start",
                                 "format": "date-time"
@@ -32,17 +32,24 @@
                             "end": {
                                 "description": "The temporal end point of a time series.",
                                 "type": ["string", "null"],
-                                "examples": ["2020-01-01T23:59:30+00:00"],
+                                "examples": ["2020-01-01T23:59:30+01:00"],
                                 "badge": "Silver",
                                 "title": "Timeseries End",
                                 "format": "date-time"
                             },
-                            "resolution": {
-                                "description": "The time span between individual information points in a time series.",
+                            "resolutionValue": {
+                            "description": "The time span between individual information points in a time series. The value of the resolution.",
+                            "type": ["string", "null"],
+                            "examples": ["15"],
+                            "badge": "Silver",
+                            "title": "Timeseries Resolution Value"
+                            },
+                            "resolutionUnit": {
+                                "description": "The unit of the temporal resolution.",
                                 "type": ["string", "null"],
-                                "examples": ["30 s"],
+                                "examples": ["min"],
                                 "badge": "Silver",
-                                "title": "Timeseries Resolution"
+                                "title": "Timeseries Resolution Unit"
                             },
                             "alignment": {
                                 "description": "An indicator of whether timestamps in a time series are to the left, right or in the centre.",

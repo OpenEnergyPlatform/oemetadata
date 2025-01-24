@@ -3,6 +3,14 @@
     "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/build_source/schemas/collection.json",
     "type": "object",
     "properties": {
+        "@context": {
+            "description": "Explanation of metadata keys in ontology terms.",
+            "examples": ["https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/metadata/latest/context.json"],
+            "type": ["string", "null"],
+            "badge": "Platinum",
+            "title": "@context",
+            "readOnly": true
+        },
         "name": {
             "description": "A filename or database conform dataset name.",
             "type": ["string", "null"],
@@ -25,7 +33,7 @@
             "title": "Dataset Description"
         },
         "id": {
-            "description": "A unique identifier (UUID/DOI) for the dataset.",
+            "description": "A unique identifier (UUID/DOI) for the collection.",
             "type": ["string", "null"],
             "examples": ["https://databus.openenergyplatform.org/oeplatform/reference"],
             "badge": "Silver",

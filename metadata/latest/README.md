@@ -9,7 +9,7 @@ SPDX-License-Identifier: MIT
 <a href="https://openenergyplatform.org/"><img align="right" width="100" height="100" src="https://avatars2.githubusercontent.com/u/37101913?s=400&u=9b593cfdb6048a05ea6e72d333169a65e7c922be&v=4" alt="OpenEnergyPlatform"></a>
 
 
-# OEMetadata - Version 2.0 (Latest)
+# OEMetadata - Version 2.0
 
 This version of the OEMetadata represents the latest released version. 
 This release is fully integrated into the OEP.

@@ -120,7 +120,7 @@
                                                 "type": ["string", "null"],
                                                 "examples": ["onshore"],
                                                 "badge": "Platinum",
-                                                "title": "Value"
+                                                "title": "Value Reference"
                                             },
                                             "name": {
                                                 "description": "The class label of the ontology term in the column.",
