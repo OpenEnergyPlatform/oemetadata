@@ -1,0 +1,31 @@
+# SPDX-FileCopyrightText: 2024 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: 2024 Jonas Huber <@jh-RLI> © Reiner Lemoine Institut
+# SPDX-License-Identifier: MIT
+
+name: Documentation (develop branch)
+on:
+  push:
+    branches:
+      - develop
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - uses: actions/cache@v3
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+      - name: Setup git
+        run: |
+          git config --global user.name Documentation
+          git config --global user.email docs@example.com
+      - run: pip install --upgrade -r requirements.txt
+      - run: |
+          git fetch origin gh-pages --verbose
+          mike deploy --push --update-aliases develop

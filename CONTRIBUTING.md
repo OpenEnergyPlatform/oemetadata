@@ -1,11 +1,6 @@
 <!--
-SPDX-FileCopyrightText: 2023 Ludwig Hülk <@Ludee>
-SPDX-FileCopyrightText: © Reiner Lemoine Institut
+SPDX-FileCopyrightText: 2022 Ludwig Hülk <https://github.com/Ludee> © Reiner Lemoine Institut
 SPDX-License-Identifier: MIT
-
-Title: Contributing to Collaborative Development
-Version: super-repo v0.1.0
-ID: super-repo-contribute-v0.1.0
 -->
 
 # Contributing to Collaborative Development

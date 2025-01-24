@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: 2024 Ludwig Hülk (Ludee) © Reiner Lemoine Institut
+SPDX-License-Identifier: MIT
+-->
+
 # Release Procedure
 
 The release procedure is a process in which different parts of the repository are involved.<br>
@@ -60,6 +65,8 @@ For a **Patch Release** (Hotfix), start at [section 3](https://github.com/OpenEn
     * `**Complete changelog:** [CHANGELOG.md](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/CHANGELOG.md)`
 * Add a link to compare versions
     * `**Compare versions:** [0.1.0 - 0.2.0](https://github.com/OpenEnergyPlatform/oemetadata/compare/v0.1.0...v0.2.0)`
+* Add the main developers
+    * `**Main developers:** @Ludee @jh-RLI`
 * **Save draft**
 
 ### 5. 💠 Create a `release` branch

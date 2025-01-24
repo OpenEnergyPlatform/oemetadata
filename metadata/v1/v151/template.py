@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: 2022 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: 2022 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+#
+# SPDX-License-Identifier: MIT
+
+import json
+import os
+
+with open(os.path.join(os.path.dirname(__file__), "template.json"), "rb") as f:
+    OEMETADATA_V151_TEMPLATE = json.loads(f.read())

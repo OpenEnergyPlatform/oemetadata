@@ -1,3 +1,10 @@
+<!--
+SPDX-FileCopyrightText: 2019 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+SPDX-FileCopyrightText: 2019 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+SPDX-FileCopyrightText: 2019 Christian Hofmann <christian-rli> © Reiner Lemoine Institut
+SPDX-License-Identifier: MIT
+-->
+
 # Changelog
 
 All notable changes to this project will be documented in this file. <br>
@@ -6,20 +13,55 @@ For each version, important additions, changes and removals are listed here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.1] - Major Release - Refactor OEMetadata for NFDI
+
+## [2.0.2] - Patch Release - Add RDF terms
+
+### Added
+- Add REUSE Software compliance check [(#218)](https://github.com/OpenEnergyPlatform/oemetadata/pull/218)
+- Add example fields function [(#220)](https://github.com/OpenEnergyPlatform/oemetadata/pull/220)
+- Add year to copyright info [(#236)](https://github.com/OpenEnergyPlatform/oemetadata/pull/236)
+- Add test for `@context` with the example.json as valid JSON-LD [(#234)](https://github.com/OpenEnergyPlatform/oemetadata/pull/234)
+
+### Changed
+- Update documentation and README [(#209)](https://github.com/OpenEnergyPlatform/oemetadata/pull/209)
+- Move old metadata versions to folder [(#209)](https://github.com/OpenEnergyPlatform/oemetadata/pull/209)
+- Update JSON schema from (draft-07) to (Draft 2020-12) [(#212)](https://github.com/OpenEnergyPlatform/oemetadata/pull/212)
+- Update all tests [(#212)](https://github.com/OpenEnergyPlatform/oemetadata/pull/212)
+- Separate `timeseries - resolution` into `resolutionValue` and `resolutionUnit` [(#213)](https://github.com/OpenEnergyPlatform/oemetadata/pull/213)
+- Rename URI from `path` to `@id` [(#214)](https://github.com/OpenEnergyPlatform/oemetadata/pull/214)
+- Rename ``source``- ``licenses`` to ``sourceLicenses`` [(#215)](https://github.com/OpenEnergyPlatform/oemetadata/pull/215)
+- Update create template [(#217)](https://github.com/OpenEnergyPlatform/oemetadata/pull/217)
+- Update folder structure [(#221)](https://github.com/OpenEnergyPlatform/oemetadata/pull/221)
+- Update python version to 3.12 [(#223)](https://github.com/OpenEnergyPlatform/oemetadata/pull/223)
+- Update REUSE licenses for json [(#225)](https://github.com/OpenEnergyPlatform/oemetadata/pull/225)
+- Update example contributors and roles [(#225)](https://github.com/OpenEnergyPlatform/oemetadata/pull/225)
+- Update keyword titles [(#239)](https://github.com/OpenEnergyPlatform/oemetadata/pull/239)
+- Update the json-ld context to cover 100% of oemetadata´s properties and provide RDF, this PR also includes a new test that validates the `@context` together with the example.json as valid json ld [(#234)](https://github.com/OpenEnergyPlatform/oemetadata/pull/234)
+- Update documentation with logos and cardinality [(#242)](https://github.com/OpenEnergyPlatform/oemetadata/pull/242)
+- Update documentation with versioning [(#243)](https://github.com/OpenEnergyPlatform/oemetadata/pull/243)
+- Move the `@context` to dataset level [(#246)](https://github.com/OpenEnergyPlatform/oemetadata/pull/246)
+- Update the context.json and add terms for all keys [(#234)](https://github.com/OpenEnergyPlatform/oemetadata/pull/234)
+
+### Removed
+- Remove LinkedData section [(#246)](https://github.com/OpenEnergyPlatform/oemetadata/pull/246)
+- Remove requirements_docs.txt [(#247)](https://github.com/OpenEnergyPlatform/oemetadata/pull/247)
+
+
+## [2.0.1] - Patch Release - Fix naming
 
 ### Changed
 - HotFix naming errors in some files related to the renaming of master to production [#202](https://github.com/OpenEnergyPlatform/oemetadata/issues/202)
 
+
 ## [2.0.0] - Major Release - Refactor OEMetadata for NFDI
 
 ### Added
-- Add OEMetadata version 2.0: [#144](https://github.com/OpenEnergyPlatform/oemetadata/issues/144)
-- Introduce a schema build system: [#105](https://github.com/OpenEnergyPlatform/oemetadata/pull/105)
+- Add OEMetadata version 2.0: [(#144)](https://github.com/OpenEnergyPlatform/oemetadata/issues/144)
+- Introduce a schema build system: [(#105)](https://github.com/OpenEnergyPlatform/oemetadata/pull/105)
   - The build files (schema & script) are maintained for each version (starting form v1.6.0) within the new directory called "metadata/(version)/build_source"  
   - The schema is rather long and complex. We split the long schema.json into modules. The modules are assembled in a json file that specifies the structure of the final schema.json, and it is called schema_structure.json.
   - It uses JSON schema $ref elements to reference the schema modules, and it provides code to resolve the reference´s and generate the complete schema.json.
-- Add code to generate an example.json based on the schema.json. We read the example values for each of the fields specified in the schema and generate the example. [#105](https://github.com/OpenEnergyPlatform/oemetadata/pull/105)
+- Add code to generate an example.json based on the schema.json [(#105)](https://github.com/OpenEnergyPlatform/oemetadata/pull/105)
 - Add updated context.json [(#154)](https://github.com/OpenEnergyPlatform/oemetadata/pull/154)
 - Add ``embargoPeriod`` section with keys ``start``, ``end``, ``isActive`` [(#155)](https://github.com/OpenEnergyPlatform/oemetadata/pull/155)
 - Add ``path`` to ``contributors`` [(#157)](https://github.com/OpenEnergyPlatform/oemetadata/pull/157)
@@ -76,11 +118,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.5.2] - Release - Fix Repo and Package - 2022-11-18
 
 ### Added
-- Add GitHub actions to automate package build and upload process on test and production pypi index
+- Add WORKFLOWS to automate package build and upload process on test and production PyPI
 
 ### Changed
 - Fix missing json files in pypi oemetadata package
-- Update context.json in latest & v151 to ensure ontologically annotated metadata can be sparkled #99
+- Update context.json to ensure ontologically annotated metadata can be sparkled #99
 
 
 ## [1.5.1] - Release - Ontology-Ready - 2022-02-21
@@ -114,8 +156,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Make key 13.2 ``timeseries`` a list
 - Relocate development information from README.md to CONTRIBUTING.md 
 - Update all .json files to v1.5.0
-- Reintroduce automated tests (CI) by switching form travis-ci to GitHub actions [PR#63]
-- Updated schema.json for v1.5.0 now includes the new key ``title`` which describes the title of the current field [PR#56] adapted from [PR#43]
+- Reintroduce automated tests (CI) by switching form travis-ci to GitHub actions [#63]
+- Updated schema.json for v1.5.0 now includes the new key ``title`` which describes the title of the current field [#56] adapted from [PR#43]
 
 ### Removed
 - Delete future directory

@@ -1,3 +1,7 @@
+..
+  SPDX-FileCopyrightText: 2024 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+
+  SPDX-License-Identifier: CC0-1.0
 
 .. figure:: https://user-images.githubusercontent.com/14353512/245271998-794e9d73-e728-4993-9ecf-4d0d08d96827.png
     :align: left
@@ -14,11 +18,11 @@ Open Energy Metadata (OEMetadata)
    :widths: auto
 
    * - License
-     - |badge_license|
+     - |badge_license| |badge_reuse|
    * - Documentation
      - |badge_documentation|
    * - Publication
-     - |badge_pypi| |badge_pypi_downloads|
+     - |badge_pypi| |badge_python| |badge_pypi_downloads|
    * - Development
      - |badge_issue_open| |badge_issue_closes| |badge_pr_open| |badge_pr_closes|
    * - Community
@@ -37,9 +41,9 @@ Introduction
 
 You can find the latest version right here:
 
-- `template.json <./metadata/latest/template.json>`_ contains an empty metadata string
-- `metadata_key_description.md <./metadata/latest/metadata_key_description.md>`_ contains a description of each metadata key
-- `example.json <./metadata/latest/example.json>`_ contains a basic metadata example
+- `template.json <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/template.json>`_ contains an empty metadata string
+- `example.json <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/example.json>`_ contains a basic metadata example
+- `metadata_key_description.md <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/metadata_key_description.md>`_ contains a description of each metadata key
 
 Documentation
 =============
@@ -66,36 +70,52 @@ License and Citation
 
 
 .. |badge_license| image:: https://img.shields.io/github/license/OpenEnergyPlatform/oemetadata
-    :target: LICENSE.txt
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/blob/production/LICENSE.txt
     :alt: License
 
-.. |badge_documentation| image:: https://img.shields.io/github/actions/workflow/status/OpenEnergyPlatform/oemetadata/gh-pages.yml?branch=release-v2.0.1
+.. |badge_reuse| image:: https://api.reuse.software/badge/github.com/OpenEnergyPlatform/oemetadata
+    :target: https://api.reuse.software/info/github.com/OpenEnergyPlatform/oemetadata
+    :alt: REUSE
+
+.. |badge_documentation| image:: https://img.shields.io/github/actions/workflow/status/OpenEnergyPlatform/oemetadata/documentation.yml
     :target: https://openenergyplatform.github.io/oemetadata/
     :alt: Documentation
 
 .. |badge_pypi| image:: https://img.shields.io/pypi/v/oemetadata
-    :alt: PyPI
+    :target: https://pypi.org/project/oemetadata/
+    :alt: PyPI Version
+
+.. |badge_python| image:: https://img.shields.io/pypi/pyversions/oemetadata
+    :target: https://pypi.org/project/oemetadata/
+    :alt: PyPI Python Version
 
 .. |badge_pypi_downloads| image:: https://img.shields.io/pypi/dm/oemetadata
+    :target: https://openenergyplatform.github.io/oemetadata/
     :alt: PyPI Downloads
 
 .. |badge_contributing| image:: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/CONTRIBUTING.md
     :alt: Contributions
 
-.. |badge_repo_counts| image:: http://hits.dwyl.com/OpenEnergyPlatform/oemetadata.svg
+.. |badge_repo_counts| image:: https://img.shields.io/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2FOpenEnergyPlatform%2Foemetadata.svg&color=green
     :alt: Counter
 
 .. |badge_contributors| image:: https://img.shields.io/github/contributors/OpenEnergyPlatform/oemetadata
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/graphs/contributors
     :alt: Contributors
 
 .. |badge_issue_open| image:: https://img.shields.io/github/issues-raw/OpenEnergyPlatform/oemetadata
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/issues
     :alt: Open issues
 
 .. |badge_issue_closes| image:: https://img.shields.io/github/issues-closed-raw/OpenEnergyPlatform/oemetadata
-    :alt: Closes issues
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/issues?q=is%3Aissue+is%3Aclosed
+    :alt: Closed issues
 
 .. |badge_pr_open| image:: https://img.shields.io/github/issues-pr-raw/OpenEnergyPlatform/oemetadata
-    :alt: Closes issues
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/pulls
+    :alt: Open PR
 
 .. |badge_pr_closes| image:: https://img.shields.io/github/issues-pr-closed-raw/OpenEnergyPlatform/oemetadata
-    :alt: Closes issues
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/pulls?q=is%3Apr+is%3Aclosed
+    :alt: Closed PR
