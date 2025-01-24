@@ -11,7 +11,7 @@ import os
 @pytest.fixture
 def load_files():
     """Load the example.json and context.json files."""
-    base_path = "metadata/v2/v20/"
+    base_path = "metadata/latest/"
     example_file = os.path.join(base_path, "example.json")
     context_file = os.path.join(base_path, "context.json")
 
@@ -27,7 +27,7 @@ def load_files():
 
 
 def clean_context(context):
-    """Remove invalid entries from the context (placeholders or invalid @type)."""
+    """Remove invalid entries (placeholders or invalid @type)."""
     cleaned_context = {}
     for key, value in context.items():
         if isinstance(value, dict):
