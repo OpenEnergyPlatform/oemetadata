@@ -5,18 +5,18 @@
 
 def test_oemetadata_template_should_load():
     try:
-        from metadata.v2.v20.template import OEMETADATA_V20_TEMPLATE
+        from metadata.latest.template import OEMETADATA_LATEST_TEMPLATE
     except Warning:
-        print("Cannot open OEMetadata Template (v2.0)!")
+        print("Cannot open OEMetadata Template (Latest)!")
 
 
 def test_oemetadata_schema_should_validate_oemetadata_template():
     from jsonschema import validate, ValidationError
-    from metadata.v2.v20.template import OEMETADATA_V20_TEMPLATE
-    from metadata.v2.v20.schema import OEMETADATA_V20_SCHEMA
+    from metadata.latest.template import OEMETADATA_LATEST_TEMPLATE
+    from metadata.latest.schema import OEMETADATA_LATEST_SCHEMA
 
     try:
-        validate(OEMETADATA_V20_TEMPLATE, OEMETADATA_V20_SCHEMA)
-        print("OEMetadata Template is valid OEMetadata Schema (v2.0).")
+        validate(OEMETADATA_LATEST_TEMPLATE, OEMETADATA_LATEST_SCHEMA)
+        print("OEMetadata Template is valid OEMetadata Schema (Latest).")
     except ValidationError as e:
-        print("Cannot validate OEMetadata Template with Schema (v2.0)!", e)
+        print("Cannot validate OEMetadata Template with Schema (Latest)!", e)

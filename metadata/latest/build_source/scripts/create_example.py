@@ -211,10 +211,10 @@ def save_json(data: Dict[str, Any], filename: Path) -> None:
 
 def test_oemetadata_schema_should_validate_oemetadata_example(example):
     from jsonschema import validate, ValidationError
-    from metadata.v2.v20.schema import OEMETADATA_V20_SCHEMA
+    from metadata.v2.v20.schema import OEMETADATA_LATEST_SCHEMA
 
     try:
-        validate(example, OEMETADATA_V20_SCHEMA)
+        validate(example, OEMETADATA_LATEST_SCHEMA)
         logger.info("OEMetadata Example is valid OEMetadata Schema (v2.0).")
     except ValidationError as e:
         logger.info("Cannot validate OEMetadata Example with Schema (v2.0)!", e)
