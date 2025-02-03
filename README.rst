@@ -90,7 +90,7 @@ License and Citation
     :target: https://openenergyplatform.github.io/oemetadata/
     :alt: Documentation
 
-.. |badge_mkdocs| image:: https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white
+.. |badge_mkdocs| image:: https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=flat&logo=MaterialForMkDocs&logoColor=white&color=grey
     :target: https://squidfunk.github.io/mkdocs-material/
     :alt: MkDocs
 
