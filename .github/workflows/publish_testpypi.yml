@@ -2,13 +2,15 @@
 # SPDX-FileCopyrightText: 2024 Jonas Huber <@jh-RLI> © Reiner Lemoine Institut
 # SPDX-License-Identifier: MIT
 
-name: Build and publish on Test PyPI
+name: 📦 Build and publish on Test PyPI
 
 on:
   push:
     branches:
       - deployment-test
-      - 'release/*'
+  pull_request:
+    branches:
+      - 'release-*'
 
 jobs:
   build-n-publish:

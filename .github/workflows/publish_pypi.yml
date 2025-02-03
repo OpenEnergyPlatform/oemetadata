@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2024 Jonas Huber <@jh-RLI> © Reiner Lemoine Institut
 # SPDX-License-Identifier: MIT
 
-name: Build and publish on PyPI
+name: 📦 Build and publish on PyPI
 
 on:
   release:

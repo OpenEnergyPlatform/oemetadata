@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2024 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
 # SPDX-License-Identifier: MIT
 
-name: REUSE Compliance Check
+name: 📝 REUSE Compliance Check
 
 on: [push, pull_request]
 
