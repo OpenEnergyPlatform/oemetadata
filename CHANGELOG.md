@@ -17,14 +17,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- [(#)]()
+- Add pyproject.toml [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
+- Add SECURITY.md [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
+- Add .pre-commit-config.yaml [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
+- Add .bumpversion.toml [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
 
 ### Changed
-- [(#)]()
+- Update procedures and documentation [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
+- Rename tests folder to test [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
+- Update workflows [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
 
 ### Removed
-- [(#)]()
-
+- Delete setup.py [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
+- Delete unused configs [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
 
 ## [2.0.2] - Patch Release - Add RDF terms
 
