@@ -65,26 +65,26 @@ extra_css:
 nav:
   - Home: index.md
   - Development:
+    - Documentation:
+        - development/documentation/index.md
     - Collaboration:
       - development/collaboration/index.md
-      - License: development/collaboration/license.md
-      - Citation: development/collaboration/citation.md
-      - Contributing: development/collaboration/contributing.md
+      - License and Citation: development/collaboration/license_and_citation.md
+      - Git: development/collaboration/git.md
       - Users: development/collaboration/users.md
+      - Chat: development/collaboration/chat.md
+      - Meetings: development/collaboration/meeting.md
       - Code of Conduct: development/collaboration/code_of_conduct.md
-    - Git:
-      - development/git/index.md
-      - Gitignore: development/git/gitignore.md
-    - Documentation:
-      - development/documentation/index.md
     - Release:
       - development/release/index.md
   - Metadata Documentation:
       - metadata/index.md
-      - Key Description: metadata/metadata_key_description.md
-      - Metadata Mappings: metadata/metadata_mappings.md
-  - Code Documentation:
+      - Metadata Key Description: metadata/metadata_key_description.md
+      - Crosswalks and Mappings: metadata/metadata_mappings.md
+  - User Documentation:
     - Install:
-      - code/install/index.md
+      - user_documentation/install/index.md
+    - Functions:
+        - user_documentation/functions/index.md
     - Tests:
-      - code/tests/index.md
+      - user_documentation/test/index.md
