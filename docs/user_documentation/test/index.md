@@ -50,3 +50,11 @@ Solutions:
 Solutions:
 - Check if path is correct
 - Check if test path is correct
+
+## Unit Tests
+
+!!! note "About the example"
+    Below you see the rendered version of the example test
+    `test/metadata/latest`
+
+::: test.metadata.latest
