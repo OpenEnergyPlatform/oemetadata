@@ -1,0 +1,76 @@
+# SPDX-FileCopyrightText: 2024 Ludwig Hülk <https://github.com/Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: super-repo v0.5.0 <https://github.com/rl-institut/super-repo>
+# SPDX-License-Identifier: MIT
+
+# exclude webdevelopement build artefacts
+exclude: ^.*(.min.js|.min.css)$
+
+repos:
+  # Pre-commit-hooks - Out-of-the-box hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-yaml
+      - id: check-json
+      - id: check-toml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+      - id: pretty-format-json
+        args:
+          [
+            "--autofix", # Autofix JSONs
+            "--no-ensure-ascii", # Preserve unicode characters
+            "--no-sort-keys" # Retain the original key ordering
+          ]
+      - id: check-added-large-files
+        args: [ "--maxkb=1500" ]
+#      - id: check-docstring-first
+      - id: detect-private-key
+
+  - repo: https://github.com/google/pre-commit-tool-hooks
+    rev: v1.2.5
+    hooks:
+#      - id: check-google-doc-style
+      - id: check-links
+
+  # Ruff - Fast Python linter, written in Rust
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: 'v0.8.1'
+    hooks:
+    - id: ruff
+      args: [--fix, --exit-non-zero-on-fix, --show-fixes]
+    - id: ruff-format
+
+  # mypy mirror - Added static types to Python (Python is dynamically typed)
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: 'v1.13.0'
+    hooks:
+    - id: mypy
+      additional_dependencies:
+        - 'sqlalchemy'
+        - 'types-requests'
+
+#  # Numpy's Sphinx extensions
+#  - repo: https://github.com/numpy/numpydoc
+#    rev: v1.8.0
+#    hooks:
+#      - id: numpydoc-validation
+#        exclude: (test|docs)/.*
+
+  # REUSE Software - Make licensing easy for humans and machines alike
+  - repo: https://github.com/fsfe/reuse-tool
+    rev: v5.0.2
+    hooks:
+    - id: reuse
+
+  # Linter for JavaScript
+  # - repo: https://github.com/pre-commit/mirrors-eslint
+  #   rev: v8.38.0
+  #   hooks:
+  #     - id: eslint
+  #       additional_dependencies:
+  #       - eslint@8.14.0
+  #       - eslint-config-google@0.14.0
+  #       - eslint-plugin-jsdoc@39.2.9
+  #       args: ["--fix"]
