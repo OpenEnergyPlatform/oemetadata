@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- [(#)]()
+- Add missing init files [(#254)](https://github.com/OpenEnergyPlatform/oemetadata/pull/254)
 
 ### Changed
 - [(#)]()
