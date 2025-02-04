@@ -51,26 +51,8 @@ repos:
         - 'sqlalchemy'
         - 'types-requests'
 
-#  # Numpy's Sphinx extensions
-#  - repo: https://github.com/numpy/numpydoc
-#    rev: v1.8.0
-#    hooks:
-#      - id: numpydoc-validation
-#        exclude: (test|docs)/.*
-
   # REUSE Software - Make licensing easy for humans and machines alike
   - repo: https://github.com/fsfe/reuse-tool
     rev: v5.0.2
     hooks:
     - id: reuse
-
-  # Linter for JavaScript
-  # - repo: https://github.com/pre-commit/mirrors-eslint
-  #   rev: v8.38.0
-  #   hooks:
-  #     - id: eslint
-  #       additional_dependencies:
-  #       - eslint@8.14.0
-  #       - eslint-config-google@0.14.0
-  #       - eslint-plugin-jsdoc@39.2.9
-  #       args: ["--fix"]
