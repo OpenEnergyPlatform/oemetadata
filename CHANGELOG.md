@@ -31,7 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Delete setup.py [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
 - Delete unused configs [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
 
-## [2.0.2] - Patch Release - Add RDF terms
+## [2.0.2] - Patch Release - Add RDF terms - 2025-01-22
 
 ### Added
 - Add REUSE Software compliance check [(#218)](https://github.com/OpenEnergyPlatform/oemetadata/pull/218)
@@ -64,13 +64,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Remove requirements_docs.txt [(#247)](https://github.com/OpenEnergyPlatform/oemetadata/pull/247)
 
 
-## [2.0.1] - Patch Release - Fix naming
+## [2.0.1] - Patch Release - Fix Branches - 2024-10-31
 
 ### Changed
 - HotFix naming errors in some files related to the renaming of master to production [#202](https://github.com/OpenEnergyPlatform/oemetadata/issues/202)
 
 
-## [2.0.0] - Major Release - Refactor OEMetadata for NFDI
+## [2.0.0] - Major Release - Refactor OEMetadata for NFDI - 2024-10-31
 
 ### Added
 - Add OEMetadata version 2.0: [(#144)](https://github.com/OpenEnergyPlatform/oemetadata/issues/144)
