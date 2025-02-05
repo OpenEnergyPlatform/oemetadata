@@ -2,6 +2,7 @@
 SPDX-FileCopyrightText: 2019 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
 SPDX-FileCopyrightText: 2019 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
 SPDX-FileCopyrightText: 2019 Christian Hofmann <christian-rli> © Reiner Lemoine Institut
+SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
 SPDX-License-Identifier: MIT
 -->
 
@@ -216,10 +217,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.1] Initial Release - Hello OEMetadata - 2019-11-07
 
 ### Added
-
 - OEMetadata version v1.3.0 metadata schema, example, template
 - OEMetadata version v1.4.0 metadata schema, example, template
 - Python implementation and tests for schema, example, template of v1.3.0
 - Python implementation and tests for schema, example, template of v1.4.0
 - Implementation of metaschema (draft07) and test of metaschema
-
