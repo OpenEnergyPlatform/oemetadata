@@ -2,8 +2,8 @@
 SPDX-FileCopyrightText: 2023 Ludwig Hülk <Ludee> © Reiner Lemoine Institut
 SPDX-FileCopyrightText: 2023 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
 SPDX-FileCopyrightText: 2023 Christian Hofmann <christian-rli> © Reiner Lemoine Institut
-
-SPDX-License-Identifier: CC0-1.0
+SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
+SPDX-License-Identifier: MIT
 -->
 
 <a href="https://github.com/OpenEnergyPlatform/oemetadata/"><img align="right" width="100" height="100" src="https://raw.githubusercontent.com/OpenEnergyPlatform/organisation/production/logo/OpenEnergyFamily_Logo_OEMetadata.png" alt="OpenEnergyMetadata"></a>

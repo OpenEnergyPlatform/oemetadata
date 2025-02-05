@@ -1,7 +1,8 @@
 # SPDX-FileCopyrightText: 2023 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
 # SPDX-FileCopyrightText: 2023 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
-#
+# SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
 # SPDX-License-Identifier: MIT
+
 def test_oemetadata_schema_should_load():
     try:
         from metadata.v1.v160.schema import OEMETADATA_V160_SCHEMA

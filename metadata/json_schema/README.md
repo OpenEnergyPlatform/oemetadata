@@ -1,6 +1,6 @@
 <!--
 SPDX-FileCopyrightText: 2024 Ludwig Hülk <Ludee> © Reiner Lemoine Institut
-
+SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
 SPDX-License-Identifier: CC0-1.0
 -->
 

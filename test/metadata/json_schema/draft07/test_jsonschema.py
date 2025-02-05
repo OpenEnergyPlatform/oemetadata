@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2024 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
 # SPDX-FileCopyrightText: 2024 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
-#
-# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
+# SPDX-License-Identifier: MIT
 
 def test_jsonschema_should_load():
     try:

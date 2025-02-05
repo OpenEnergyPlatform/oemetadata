@@ -1,5 +1,5 @@
 # SPDX-FileCopyrightText: Jonas Huber <jh-RLI> © Reiner Lemoine Institut
-#
+# SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
 # SPDX-License-Identifier: MIT
 
 import pytest
