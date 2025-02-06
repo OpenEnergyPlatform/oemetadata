@@ -4,9 +4,9 @@ hide:
   - toc
 ---
 
-# Welcome to the Documentation of the Open Energy Metadata 
+# Welcome to the Documentation of the Open Energy Metadata
 
-## Open Energy Metadata 
+## Open Energy Metadata
 
 Open Energy Metadata (OEMetadata) is an energy metadata standard including a metadata schema, templates, and examples. <br>
 It is an extensive set of metadata based on the Frictionless [Data Package](https://datapackage.org/) specifications and the [FAIR Principles](https://www.go-fair.org/fair-principles/). <br>

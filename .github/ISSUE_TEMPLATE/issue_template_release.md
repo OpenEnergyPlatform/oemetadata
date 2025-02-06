@@ -2,7 +2,7 @@
 name: Release Issue
 about: For a new release
 title: Release - Minor Version - 2.1.0
-labels: 
+labels:
   [
     "priority: critical :fire:",
     "status: active :construction:",

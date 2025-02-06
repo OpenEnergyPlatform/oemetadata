@@ -7,7 +7,7 @@ SPDX-License-Identifier: MIT
 
 # OEMetadata Build Source
 
-The OEMetadata uses the [JSON Schema](https://json-schema.org/) specification 
+The OEMetadata uses the [JSON Schema](https://json-schema.org/) specification
 to define the structure of the metadata. <br>
 It offers the possibility to make the `schema.json` more modular. <br>
 For better maintenance the file is split into separate files. <br>
@@ -34,7 +34,7 @@ They are separated by category and follow the logic of OEMetadata structure.
 Create a python3 environment
 
     cd ../oemetadata/
-    python3 -m venv env 
+    python3 -m venv env
 
 Install the requirements
 
@@ -47,6 +47,6 @@ Create the OEMetadata json schema from schemas
     python metadata/v2/v20/build_source/scripts/create_schema.py
 
 Create the OEMetadata template and example from json schema
-    
+
     python metadata/v2/v20/build_source/scripts/create_example_from_schema.py
     python metadata/v2/v20/build_source/scripts/create_template_from_schema.py

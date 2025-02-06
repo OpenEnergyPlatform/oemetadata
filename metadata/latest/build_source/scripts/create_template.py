@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 # SPDX-FileCopyrightText: 2024 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
 # SPDX-FileCopyrightText: 2024 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
@@ -20,7 +19,8 @@ Version: 1.0.0
 import json
 import logging
 
-from settings import RESOLVED_SCHEMA_FILE_NAME, TEMPLATE_PATH, LOG_FORMAT
+from settings import LOG_FORMAT, RESOLVED_SCHEMA_FILE_NAME, TEMPLATE_PATH
+
 
 # Configuration
 
@@ -81,7 +81,7 @@ def generate_template(schema):
 def main():
     schema_file_path = RESOLVED_SCHEMA_FILE_NAME
 
-    with open(schema_file_path, "r", encoding="utf-8") as schema_file:
+    with open(schema_file_path, encoding="utf-8") as schema_file:
         schema = json.load(schema_file)
 
     template = generate_template(schema)
@@ -94,16 +94,19 @@ def main():
 
     # WARNING: The metaMetadata is missing and the boundingBox is wrong!
 
+
 def test_oemetadata_schema_should_validate_oemetadata_template():
-    from jsonschema import validate, ValidationError
-    from metadata.v2.v20.template import OEMETADATA_LATEST_TEMPLATE
+    from jsonschema import ValidationError, validate
+
     from metadata.v2.v20.schema import OEMETADATA_LATEST_SCHEMA
+    from metadata.v2.v20.template import OEMETADATA_LATEST_TEMPLATE
 
     try:
         validate(OEMETADATA_LATEST_TEMPLATE, OEMETADATA_LATEST_SCHEMA)
         print("OEMetadata Template is valid OEMetadata Schema (v2.0).")
     except ValidationError as e:
         print("Cannot validate OEMetadata Template with Schema (v2.0)!", e)
+
 
 def find_and_replace_key(data, target_key, new_value):
     if isinstance(data, dict):
@@ -120,15 +123,16 @@ def find_and_replace_key(data, target_key, new_value):
                 return True
     return False  # Return False if key not found
 
+
 def replace_key_in_json(file_path, target_key, new_value):
     # Open and read the JSON file
-    with open(file_path, 'r') as file:
+    with open(file_path) as file:
         data = json.load(file)
 
     # Perform the key replacement
     if find_and_replace_key(data, target_key, new_value):
         # Save the updated JSON data back to the file
-        with open(file_path, 'w') as file:
+        with open(file_path, "w") as file:
             json.dump(data, file, indent=4)
         print(f"Updated '{target_key}' to '{new_value}' in {file_path}")
     else:
@@ -138,12 +142,16 @@ def replace_key_in_json(file_path, target_key, new_value):
 if __name__ == "__main__":
     logger.info("Generation started.")
     main()
-    replace_key_in_json(TEMPLATE_PATH, 'boundingBox', [0, 0, 0, 0])
-    replace_key_in_json(TEMPLATE_PATH, 'metadataVersion', 'OEMetadata-2.0.1')
-    replace_key_in_json(TEMPLATE_PATH, 'metadataLicense', {
+    replace_key_in_json(TEMPLATE_PATH, "boundingBox", [0, 0, 0, 0])
+    replace_key_in_json(TEMPLATE_PATH, "metadataVersion", "OEMetadata-2.0.1")
+    replace_key_in_json(
+        TEMPLATE_PATH,
+        "metadataLicense",
+        {
             "name": "CC0-1.0",
             "title": "Creative Commons Zero v1.0 Universal",
-            "path": "https://creativecommons.org/publicdomain/zero/1.0"
-        })
+            "path": "https://creativecommons.org/publicdomain/zero/1.0",
+        },
+    )
     test_oemetadata_schema_should_validate_oemetadata_template()
     logger.info("Generation ended.")

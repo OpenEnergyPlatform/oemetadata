@@ -5,6 +5,7 @@
 
 from pathlib import Path
 
+
 LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 
 BASE_PATH = Path("metadata/v2/")

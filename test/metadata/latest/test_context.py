@@ -2,10 +2,11 @@
 # SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
 # SPDX-License-Identifier: MIT
 
-import pytest
-from pyld import jsonld
 import json
 import os
+
+import pytest
+from pyld import jsonld
 
 
 @pytest.fixture
@@ -16,11 +17,11 @@ def load_files():
     context_file = os.path.join(base_path, "context.json")
 
     # Load example.json
-    with open(example_file, "r") as ef:
+    with open(example_file) as ef:
         example_data = json.load(ef)
 
     # Load context.json
-    with open(context_file, "r") as cf:
+    with open(context_file) as cf:
         context_data = json.load(cf)
 
     return example_data, context_data

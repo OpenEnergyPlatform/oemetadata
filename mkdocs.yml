@@ -40,7 +40,7 @@ theme:
     - navigation.top
     - toc.follow
 
-# extensions 
+# extensions
 markdown_extensions:
   - admonition
   - tables

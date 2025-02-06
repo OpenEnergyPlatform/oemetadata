@@ -12,7 +12,7 @@ SPDX-License-Identifier: MIT
 
 # Open Energy Metadata (OEMetadata) <br> - Version 1.6.0 (deprecated)
 
-This is OEMetadata version 1.6.0 . This release has been integrated in the OEP. 
+This is OEMetadata version 1.6.0 . This release has been integrated in the OEP.
 The version has been updated and is marked as deprecated. See the [latest version](https://github.com/OpenEnergyPlatform/oemetadata/tree/production/metadata/latest).
 
 The OEMetadata contains the following files:

@@ -12,7 +12,7 @@ SPDX-License-Identifier: CC0-1.0
 
 # Open Energy Metadata (OEMetadata) <br> - Version 1.5.1 (deprecated)
 
-This is OEMetadata version 1.5.1 . This release has been integrated in the OEP. 
+This is OEMetadata version 1.5.1 . This release has been integrated in the OEP.
 The version has been updated and is marked as deprecated. See the [latest version](https://github.com/OpenEnergyPlatform/oemetadata/tree/production/metadata/latest).
 
 The OEMetadata contains the following files:

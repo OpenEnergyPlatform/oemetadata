@@ -2,7 +2,7 @@
 name: User Kudos Issue
 about: User Community - Give kudos to the project
 title: Add new user to USERS.cff
-labels: 
+labels:
   [
     "other: good first issue :seedling:",
     "priority: low :sloth:",

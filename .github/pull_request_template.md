@@ -20,7 +20,7 @@ Describe the findings of the discussion in the issue or meeting.
 
 ### Automation
 
-Closes # / Part of # 
+Closes # / Part of #
 
 ### PR-Assignee
 

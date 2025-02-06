@@ -3,18 +3,19 @@
 # SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
 # SPDX-License-Identifier: MIT
 
+
 def test_oemetadata_schema_should_load():
     try:
-        from metadata.v1.v160.schema import OEMETADATA_V160_SCHEMA
+        pass
     except Warning:
         print("Cannot open OEMetadata Schema (v1.6.0)!")
 
 
 def test_jsonschema_should_validate_oemetadata_schema():
-    from jsonschema import validate, ValidationError
+    from jsonschema import ValidationError, validate
+
+    from metadata.json_schema.draft07.schema import OEMETADATA_JSONSCHEMA_DRAFT07_SCHEMA
     from metadata.v1.v160.schema import OEMETADATA_V160_SCHEMA
-    from metadata.json_schema.draft07.schema \
-        import OEMETADATA_JSONSCHEMA_DRAFT07_SCHEMA
 
     try:
         validate(OEMETADATA_V160_SCHEMA, OEMETADATA_JSONSCHEMA_DRAFT07_SCHEMA)
@@ -24,8 +25,9 @@ def test_jsonschema_should_validate_oemetadata_schema():
 
 
 def test_oemetadata_schema_should_have_correct_path():
-    from metadata.v1.v160.schema import OEMETADATA_V160_SCHEMA
     import string
+
+    from metadata.v1.v160.schema import OEMETADATA_V160_SCHEMA
 
     def get_string(s):
         return string.printable + s + string.printable

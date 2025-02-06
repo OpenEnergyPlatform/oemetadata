@@ -3,15 +3,17 @@
 # SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
 # SPDX-License-Identifier: MIT
 
+
 def test_oemetadata_example_should_load():
     try:
-        from metadata.latest.example import OEMETADATA_LATEST_EXAMPLE
+        pass
     except Warning:
         print("Cannot open OEMetadata Example (Latest)!")
 
 
 def test_oemetadata_schema_should_validate_oemetadata_example():
-    from jsonschema import validate, ValidationError
+    from jsonschema import ValidationError, validate
+
     from metadata.latest.example import OEMETADATA_LATEST_EXAMPLE
     from metadata.latest.schema import OEMETADATA_LATEST_SCHEMA
 

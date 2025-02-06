@@ -14,11 +14,11 @@ You can have a look at an empty [template](https://github.com/OpenEnergyPlatform
 
 ## JSON Format
 The JSON format offers different formats:
-* key-value pair: 
+* key-value pair:
     ```JSON
     {"key":"value"}
     ```
-* array: 
+* array:
     ```JSON
     {"key":
         ["value","value"]}
@@ -58,14 +58,14 @@ The JSON format offers different formats:
 | #   | Key               | Description                                                                                                                                                                   | Example                                                                                   |
 |-----|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | 9   | **context**       | An object that describes the general setting, environment, or project leading to the creation or maintenance of this dataset. In science this is can be the research project. |                                                                                           |
-| 9.1 | homepage          | A URL of the project.                                                                                                                                                         | https://openenergyplatform.org/                                                          | 
-| 9.2 | documentation     | A URL of the project documentation.                                                                                                                                           | https://openenergyplatform.org/about/                                                    | 
-| 9.3 | sourceCode        | A URL of the projects source code.                                                                                                                                            | https://github.com/OpenEnergyPlatform                                                     | 
-| 9.4 | contact           | A reference to the creator or maintainer of the data set. It can be an email address or a GitHub handle.                                                                      | contact@example.com                                                                       | 
-| 9.5 | grantNo           | An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency.                                                             | 01AB2345                                                                                  | 
-| 9.6 | fundingAgency     | A name of the entity providing the funding. This can be a government agency or a company.                                                                                     | Bundesministerium für Wirtschaft und Klimaschutz                                          | 
-| 9.7 | fundingAgencyLogo | A URL to the logo or image of the funding agency.                                                                                                                             | https://commons.wikimedia.org/wiki/File:BMWi_Logo_2021.svg#/media/File:BMWi_Logo_2021.svg | 
-| 9.8 | publisherLogo     | A URL to the logo of the publishing agency of data.                                                                                                                           | https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png                | 
+| 9.1 | homepage          | A URL of the project.                                                                                                                                                         | https://openenergyplatform.org/                                                          |
+| 9.2 | documentation     | A URL of the project documentation.                                                                                                                                           | https://openenergyplatform.org/about/                                                    |
+| 9.3 | sourceCode        | A URL of the projects source code.                                                                                                                                            | https://github.com/OpenEnergyPlatform                                                     |
+| 9.4 | contact           | A reference to the creator or maintainer of the data set. It can be an email address or a GitHub handle.                                                                      | contact@example.com                                                                       |
+| 9.5 | grantNo           | An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency.                                                             | 01AB2345                                                                                  |
+| 9.6 | fundingAgency     | A name of the entity providing the funding. This can be a government agency or a company.                                                                                     | Bundesministerium für Wirtschaft und Klimaschutz                                          |
+| 9.7 | fundingAgencyLogo | A URL to the logo or image of the funding agency.                                                                                                                             | https://commons.wikimedia.org/wiki/File:BMWi_Logo_2021.svg#/media/File:BMWi_Logo_2021.svg |
+| 9.8 | publisherLogo     | A URL to the logo of the publishing agency of data.                                                                                                                           | https://reiner-lemoine-institut.de//wp-content/uploads/2015/09/rlilogo.png                |
 
 ### Spatial and Temporal Keys
 | #      | Key             | Description                                                                                                                                                                       | Example                   |
@@ -136,7 +136,7 @@ The JSON format offers different formats:
 | 15.6.1.2   | description        | A text describing the field.                                                                                                                                                           | Reference year for which the data were collected.         |
 | 15.6.1.3   | type               | The data type of the field. In case of a geom column in a database, also indicate the shape and CRS.                                                                                   | geometry(Point, 4326)                                     |
 | 15.6.1.4   | unit               | The unit, preferably SI-unit, that values in this field are mapped to. If 'unit' doesn't apply to a field, use 'null'. If the unit is given in a separate field, reference this field. | MW                                                        |
-| 15.6.1.5   | **isAbout**        | An array of objects with describe the field in [OEO](https://openenergyplatform.org/ontology/oeo/) terms.                                                                             | 
+| 15.6.1.5   | **isAbout**        | An array of objects with describe the field in [OEO](https://openenergyplatform.org/ontology/oeo/) terms.                                                                             |
 | 15.6.1.5.1 | name               | The class label of the OEO terms.                                                                                                                                                      | wind energy converting unit                               |
 | 15.6.1.5.2 | path               | The URI of the class.                                                                                                                                                                  | https://openenergyplatform.org/ontology/oeo/OEO_00000044 |
 | 15.6.1.6   | **valueReference** | An array of objects for an extended description of the values in the column in [OEO](https://openenergyplatform.org/ontology/oeo/) terms.                                             |                                                           |

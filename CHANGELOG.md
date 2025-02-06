@@ -168,13 +168,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Add keys for linked data compatibility: ``@context``, ``@id``, ``subject``, ``is_about``, ``value_reference``
-- Add context.json file 
+- Add context.json file
 - Add licence information to README.md
 
 ### Changed
 - Clarify instructions for dealing with non-applicable keys (null) and missing values ("todo")
 - Make key 13.2 ``timeseries`` a list
-- Relocate development information from README.md to CONTRIBUTING.md 
+- Relocate development information from README.md to CONTRIBUTING.md
 - Update all .json files to v1.5.0
 - Reintroduce automated tests (CI) by switching form travis-ci to GitHub actions [#63]
 - Updated schema.json for v1.5.0 now includes the new key ``title`` which describes the title of the current field [#56] adapted from [PR#43]

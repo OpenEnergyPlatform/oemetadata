@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 # SPDX-FileCopyrightText: 2024 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
 # SPDX-FileCopyrightText: 2024 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
@@ -19,10 +18,17 @@ Version: 1.0.0
 import json
 import logging
 import os
-
-from typing import Any, Dict, Union, List
 from pathlib import Path
-from settings import RESOLVED_SCHEMA_FILE_NAME, EXAMPLE_PATH, LOG_FORMAT, SCHEMA_EXAMPLE_FIELDS, SCHEMA_EXAMPLE_PROV
+from typing import Any, Dict, List, Union
+
+from settings import (
+    EXAMPLE_PATH,
+    LOG_FORMAT,
+    RESOLVED_SCHEMA_FILE_NAME,
+    SCHEMA_EXAMPLE_FIELDS,
+    SCHEMA_EXAMPLE_PROV,
+)
+
 
 # Configuration
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
@@ -39,7 +45,7 @@ def read_schema(filepath: str) -> Dict[str, Any]:
         Dict[str, Any]: The JSON schema as a dictionary.
     """
 
-    with open(filepath, "r", encoding="utf-8") as file:
+    with open(filepath, encoding="utf-8") as file:
         schema = json.load(file)
     logger.info(f"Processing schema: {schema}")
     return schema
@@ -59,7 +65,7 @@ def read_metadata_schema(filepath: str) -> Dict[str, Any]:
         return {}
 
     try:
-        with open(filepath, "r", encoding="utf-8") as file:
+        with open(filepath, encoding="utf-8") as file:
             schema = json.load(file)
 
         # Basic validation of schema structure
@@ -73,10 +79,12 @@ def read_metadata_schema(filepath: str) -> Dict[str, Any]:
         # Additional debugging info: Check expected keys
         if "$schema" not in schema or "type" not in schema:
             logger.info(
-                "Warning: Schema may be missing key fields like '$schema' or 'type'.")
+                "Warning: Schema may be missing key fields like '$schema' or 'type'."
+            )
 
         logger.info(
-            f"Full schema content (trimmed for large files): {str(schema)[:500]}...")
+            f"Full schema content (trimmed for large files): {str(schema)[:500]}..."
+        )
 
         return schema
 
@@ -136,8 +144,9 @@ def read_metadata_schema(filepath: str) -> Dict[str, Any]:
 #     return None
 
 
-def extract_examples_from_schema(schema: Dict[str, Any]) -> Union[
-    Dict[str, Any], List[Any], str, None]:
+def extract_examples_from_schema(
+    schema: Dict[str, Any],
+) -> Union[Dict[str, Any], List[Any], str, None]:
     """Generate a valid example from the schema using the provided example values."""
 
     # If the schema has an "examples" field, handle it appropriately
@@ -210,7 +219,8 @@ def save_json(data: Dict[str, Any], filename: Path) -> None:
 
 
 def test_oemetadata_schema_should_validate_oemetadata_example(example):
-    from jsonschema import validate, ValidationError
+    from jsonschema import ValidationError, validate
+
     from metadata.v2.v20.schema import OEMETADATA_LATEST_SCHEMA
 
     try:
@@ -238,13 +248,13 @@ def find_and_replace_key(data, target_key, new_value):
 
 def replace_key_in_json(file_path, target_key, new_value):
     # Open and read the JSON file
-    with open(file_path, 'r') as file:
+    with open(file_path) as file:
         data = json.load(file)
 
     # Perform the key replacement
     if find_and_replace_key(data, target_key, new_value):
         # Save the updated JSON data back to the file
-        with open(file_path, 'w', encoding="utf-8") as file:
+        with open(file_path, "w", encoding="utf-8") as file:
             json.dump(data, file, ensure_ascii=False, indent=4)
         logger.info(f"Updated '{target_key}' to '{new_value}' in {file_path}")
     else:
@@ -258,7 +268,7 @@ if __name__ == "__main__":
     save_json(json_data, EXAMPLE_PATH)
     logger.info("OEMetadata Example created!")
     example_fields = read_schema(SCHEMA_EXAMPLE_FIELDS)
-    replace_key_in_json(EXAMPLE_PATH, 'fields', example_fields)
+    replace_key_in_json(EXAMPLE_PATH, "fields", example_fields)
     example_contributors = read_schema(SCHEMA_EXAMPLE_PROV)
-    replace_key_in_json(EXAMPLE_PATH, 'contributors', example_contributors)
+    replace_key_in_json(EXAMPLE_PATH, "contributors", example_contributors)
     test_oemetadata_schema_should_validate_oemetadata_example(json_data)
