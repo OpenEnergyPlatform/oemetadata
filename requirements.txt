@@ -13,6 +13,7 @@ mkdocs-material
 mkdocstrings
 mkdocstrings-python-legacy
 pre-commit
+pyld
 pytest
 pytest-cov
 referencing
@@ -20,4 +21,4 @@ ruff
 tox
 twine
 wheel
-pyld
+
