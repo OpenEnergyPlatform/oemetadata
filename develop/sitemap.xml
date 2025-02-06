@@ -5,27 +5,11 @@
          <lastmod>2025-02-06</lastmod>
     </url>
     <url>
-         <loc>https://openenergyplatform.github.io/oemetadata/develop/code/</loc>
-         <lastmod>2025-02-06</lastmod>
-    </url>
-    <url>
-         <loc>https://openenergyplatform.github.io/oemetadata/develop/code/install/</loc>
-         <lastmod>2025-02-06</lastmod>
-    </url>
-    <url>
-         <loc>https://openenergyplatform.github.io/oemetadata/develop/code/style/</loc>
-         <lastmod>2025-02-06</lastmod>
-    </url>
-    <url>
-         <loc>https://openenergyplatform.github.io/oemetadata/develop/code/tests/</loc>
-         <lastmod>2025-02-06</lastmod>
-    </url>
-    <url>
          <loc>https://openenergyplatform.github.io/oemetadata/develop/development/collaboration/</loc>
          <lastmod>2025-02-06</lastmod>
     </url>
     <url>
-         <loc>https://openenergyplatform.github.io/oemetadata/develop/development/collaboration/citation/</loc>
+         <loc>https://openenergyplatform.github.io/oemetadata/develop/development/collaboration/chat/</loc>
          <lastmod>2025-02-06</lastmod>
     </url>
     <url>
@@ -33,11 +17,15 @@
          <lastmod>2025-02-06</lastmod>
     </url>
     <url>
-         <loc>https://openenergyplatform.github.io/oemetadata/develop/development/collaboration/contributing/</loc>
+         <loc>https://openenergyplatform.github.io/oemetadata/develop/development/collaboration/git/</loc>
          <lastmod>2025-02-06</lastmod>
     </url>
     <url>
-         <loc>https://openenergyplatform.github.io/oemetadata/develop/development/collaboration/license/</loc>
+         <loc>https://openenergyplatform.github.io/oemetadata/develop/development/collaboration/license_and_citation/</loc>
+         <lastmod>2025-02-06</lastmod>
+    </url>
+    <url>
+         <loc>https://openenergyplatform.github.io/oemetadata/develop/development/collaboration/meeting/</loc>
          <lastmod>2025-02-06</lastmod>
     </url>
     <url>
@@ -74,6 +62,18 @@
     </url>
     <url>
          <loc>https://openenergyplatform.github.io/oemetadata/develop/metadata/metadata_mappings/</loc>
+         <lastmod>2025-02-06</lastmod>
+    </url>
+    <url>
+         <loc>https://openenergyplatform.github.io/oemetadata/develop/user_documentation/functions/</loc>
+         <lastmod>2025-02-06</lastmod>
+    </url>
+    <url>
+         <loc>https://openenergyplatform.github.io/oemetadata/develop/user_documentation/install/</loc>
+         <lastmod>2025-02-06</lastmod>
+    </url>
+    <url>
+         <loc>https://openenergyplatform.github.io/oemetadata/develop/user_documentation/test/</loc>
          <lastmod>2025-02-06</lastmod>
     </url>
 </urlset>
