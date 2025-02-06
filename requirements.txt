@@ -20,5 +20,6 @@ referencing
 ruff
 tox
 twine
+uv
 wheel
 
