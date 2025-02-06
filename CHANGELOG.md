@@ -15,7 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [Unreleased]
+## [2.0.3] - Patch Release - Patchy Install and Repo - 2025-02-06
 
 ### Added
 - Add missing init files [(#254)](https://github.com/OpenEnergyPlatform/oemetadata/pull/254)
@@ -33,6 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Delete setup.py [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
 - Delete unused configs [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
+
 
 ## [2.0.2] - Patch Release - Add RDF terms - 2025-01-22
 
