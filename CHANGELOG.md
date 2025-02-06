@@ -18,6 +18,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Add missing init files [(#254)](https://github.com/OpenEnergyPlatform/oemetadata/pull/254)
+- Add new user [(#255)](https://github.com/OpenEnergyPlatform/oemetadata/pull/255)
 - Add pyproject.toml [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
 - Add SECURITY.md [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
 - Add .pre-commit-config.yaml [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
