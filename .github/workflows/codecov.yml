@@ -1,0 +1,35 @@
+# SPDX-FileCopyrightText: 2024 Ludwig Hülk <https://github.com/Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: super-repo v0.5.0 <https://github.com/rl-institut/super-repo>
+# SPDX-License-Identifier: MIT
+
+name: 🐍 Coverage tests with codecov
+
+on:
+  push:
+    branches:
+      - production
+      - develop
+
+jobs:
+  test:
+    name: Run coverage test and create codecov
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+
+      - name: Install dependencies
+        run: pip install pytest pytest-cov
+
+      - name: Run coverage test
+        run: pytest --cov --cov-report=xml
+
+      - name: Upload results to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}

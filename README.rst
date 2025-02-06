@@ -1,7 +1,7 @@
 ..
-  SPDX-FileCopyrightText: 2024 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
-
-  SPDX-License-Identifier: CC0-1.0
+  SPDX-FileCopyrightText: 2024 Ludwig Hülk <https://github.com/Ludee> © Reiner Lemoine Institut
+  SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata>
+  SPDX-License-Identifier: MIT
 
 .. figure:: https://user-images.githubusercontent.com/14353512/245271998-794e9d73-e728-4993-9ecf-4d0d08d96827.png
     :align: left
@@ -20,13 +20,15 @@ Open Energy Metadata (OEMetadata)
    * - License
      - |badge_license| |badge_reuse|
    * - Documentation
-     - |badge_documentation|
+     - |badge_documentation| |badge_mkdocs|
+   * - Tests
+     - |badge_tox| |badge_codecov|
    * - Publication
      - |badge_pypi| |badge_python| |badge_pypi_downloads|
    * - Development
      - |badge_issue_open| |badge_issue_closes| |badge_pr_open| |badge_pr_closes|
    * - Community
-     - |badge_contributing| |badge_contributors| |badge_repo_counts|
+     - |badge_contributions| |badge_contributors| |badge_repo_counts|
 
 .. contents::
     :depth: 2
@@ -59,6 +61,13 @@ Collaboration
 | Development work that aims to extend the oemetadata specification is added to the build_source/schemas/ directory for each release.
 | To generate the schema, template & example JSON files see your script based `tooling <.metadata/latest/build_source/>`_ 
 
+Contributors:
+
+.. figure:: https://contrib.rocks/image?repo=OpenEnergyPlatform/oemetadata
+    :align: left
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/graphs/contributors
+    :alt: [contrib.rocks](https://contrib.rocks)
+
 License and Citation
 ====================
 | The code of this repository is licensed under the **MIT License** (MIT).
@@ -77,40 +86,41 @@ License and Citation
     :target: https://api.reuse.software/info/github.com/OpenEnergyPlatform/oemetadata
     :alt: REUSE
 
-.. |badge_documentation| image:: https://img.shields.io/github/actions/workflow/status/OpenEnergyPlatform/oemetadata/documentation.yml
+.. |badge_documentation| image:: https://img.shields.io/github/actions/workflow/status/OpenEnergyPlatform/oemetadata/documentation.yml?branch=develop&label=documentation
     :target: https://openenergyplatform.github.io/oemetadata/
     :alt: Documentation
+
+.. |badge_mkdocs| image:: https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=flat&logo=MaterialForMkDocs&logoColor=white&color=grey
+    :target: https://squidfunk.github.io/mkdocs-material/
+    :alt: MkDocs
+
+.. |badge_tox| image:: https://img.shields.io/github/actions/workflow/status/OpenEnergyPlatform/oemetadata/tox.yml?label=tox
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/actions/workflows/tox.yml
+    :alt: Tox Tests
+
+.. |badge_codecov| image:: https://codecov.io/gh/OpenEnergyPlatform/oemetadata/graph/badge.svg?token=HY4TZGSG4N
+    :target: https://codecov.io/gh/OpenEnergyPlatform/oemetadata
+    :alt: Codecov
 
 .. |badge_pypi| image:: https://img.shields.io/pypi/v/oemetadata
     :target: https://pypi.org/project/oemetadata/
     :alt: PyPI Version
 
 .. |badge_python| image:: https://img.shields.io/pypi/pyversions/oemetadata
-    :target: https://pypi.org/project/oemetadata/
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/pyproject.toml
     :alt: PyPI Python Version
 
 .. |badge_pypi_downloads| image:: https://img.shields.io/pypi/dm/oemetadata
-    :target: https://openenergyplatform.github.io/oemetadata/
+    :target: https://pypi.org/project/oemetadata/
     :alt: PyPI Downloads
-
-.. |badge_contributing| image:: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat
-    :target: https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/CONTRIBUTING.md
-    :alt: Contributions
-
-.. |badge_repo_counts| image:: https://img.shields.io/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2FOpenEnergyPlatform%2Foemetadata.svg&color=green
-    :alt: Counter
-
-.. |badge_contributors| image:: https://img.shields.io/github/contributors/OpenEnergyPlatform/oemetadata
-    :target: https://github.com/OpenEnergyPlatform/oemetadata/graphs/contributors
-    :alt: Contributors
 
 .. |badge_issue_open| image:: https://img.shields.io/github/issues-raw/OpenEnergyPlatform/oemetadata
     :target: https://github.com/OpenEnergyPlatform/oemetadata/issues
-    :alt: Open issues
+    :alt: Open Issues
 
 .. |badge_issue_closes| image:: https://img.shields.io/github/issues-closed-raw/OpenEnergyPlatform/oemetadata
     :target: https://github.com/OpenEnergyPlatform/oemetadata/issues?q=is%3Aissue+is%3Aclosed
-    :alt: Closed issues
+    :alt: Closed Issues
 
 .. |badge_pr_open| image:: https://img.shields.io/github/issues-pr-raw/OpenEnergyPlatform/oemetadata
     :target: https://github.com/OpenEnergyPlatform/oemetadata/pulls
@@ -119,3 +129,15 @@ License and Citation
 .. |badge_pr_closes| image:: https://img.shields.io/github/issues-pr-closed-raw/OpenEnergyPlatform/oemetadata
     :target: https://github.com/OpenEnergyPlatform/oemetadata/pulls?q=is%3Apr+is%3Aclosed
     :alt: Closed PR
+
+.. |badge_contributions| image:: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/blob/production/CONTRIBUTING.md
+    :alt: Contributions
+
+.. |badge_contributors| image:: https://img.shields.io/github/contributors/OpenEnergyPlatform/oemetadata
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/graphs/contributors
+    :alt: Contributors
+
+.. |badge_repo_counts| image:: https://hits.sh/github.com/OpenEnergyPlatform/oemetadata.svg
+    :target: https://hits.sh/github.com/OpenEnergyPlatform/oemetadata/
+    :alt: Hits

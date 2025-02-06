@@ -2,6 +2,7 @@
 SPDX-FileCopyrightText: 2019 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
 SPDX-FileCopyrightText: 2019 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
 SPDX-FileCopyrightText: 2019 Christian Hofmann <christian-rli> © Reiner Lemoine Institut
+SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
 SPDX-License-Identifier: MIT
 -->
 
@@ -19,15 +20,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add missing init files [(#254)](https://github.com/OpenEnergyPlatform/oemetadata/pull/254)
 - Add new user [(#255)](https://github.com/OpenEnergyPlatform/oemetadata/pull/255)
+- Add pyproject.toml [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
+- Add SECURITY.md [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
+- Add .pre-commit-config.yaml [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
+- Add .bumpversion.toml [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
 
 ### Changed
-- [(#)]()
+- Update procedures and documentation [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
+- Rename tests folder to test [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
+- Update workflows [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
 
 ### Removed
-- [(#)]()
+- Delete setup.py [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
+- Delete unused configs [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
 
-
-## [2.0.2] - Patch Release - Add RDF terms
+## [2.0.2] - Patch Release - Add RDF terms - 2025-01-22
 
 ### Added
 - Add REUSE Software compliance check [(#218)](https://github.com/OpenEnergyPlatform/oemetadata/pull/218)
@@ -60,13 +67,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Remove requirements_docs.txt [(#247)](https://github.com/OpenEnergyPlatform/oemetadata/pull/247)
 
 
-## [2.0.1] - Patch Release - Fix naming
+## [2.0.1] - Patch Release - Fix Branches - 2024-10-31
 
 ### Changed
 - HotFix naming errors in some files related to the renaming of master to production [#202](https://github.com/OpenEnergyPlatform/oemetadata/issues/202)
 
 
-## [2.0.0] - Major Release - Refactor OEMetadata for NFDI
+## [2.0.0] - Major Release - Refactor OEMetadata for NFDI - 2024-10-31
 
 ### Added
 - Add OEMetadata version 2.0: [(#144)](https://github.com/OpenEnergyPlatform/oemetadata/issues/144)
@@ -212,10 +219,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.1] Initial Release - Hello OEMetadata - 2019-11-07
 
 ### Added
-
 - OEMetadata version v1.3.0 metadata schema, example, template
 - OEMetadata version v1.4.0 metadata schema, example, template
 - Python implementation and tests for schema, example, template of v1.3.0
 - Python implementation and tests for schema, example, template of v1.4.0
 - Implementation of metaschema (draft07) and test of metaschema
-
