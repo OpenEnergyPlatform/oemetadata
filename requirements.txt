@@ -6,7 +6,6 @@
 argparse
 build
 bump-my-version
-json
 jsonschema
 mike
 mkdocs
