@@ -117,66 +117,66 @@
     "spatial": {
       "@id": "dct:spatial",
       "@context": {
-    "location": {
+        "location": {
           "@id": "dct:location"
-    },
-    "address": {
-      "@id": "sc:address",
-      "@type": "xsd:string"
-    },
-    "latitude": {
-      "@id": "sc:latitude",
-      "@type": "xsd:decimal"
-    },
-    "longitude": {
-      "@id": "sc:longitude",
-      "@type": "xsd:decimal"
-    },
-    "extent": {
-      "@id": "oeo:BFO_0000006"
-    },
+        },
+        "address": {
+          "@id": "sc:address",
+          "@type": "xsd:string"
+        },
+        "latitude": {
+          "@id": "sc:latitude",
+          "@type": "xsd:decimal"
+        },
+        "longitude": {
+          "@id": "sc:longitude",
+          "@type": "xsd:decimal"
+        },
+        "extent": {
+          "@id": "oeo:BFO_0000006"
+        },
         "resolutionValue": "dcat:spatialResolutionInMeters",
-    "resolutionUnit": {
-      "@id": "oeo:unit",
-      "@type": "xsd:string"
-    },
-    "boundingBox": {
-      "@id": "dcat:bbox",
-      "@container": "@list",
-      "@type": "xsd:decimal"
-    },
-    "crs": {
-      "@id": "cco:ont00000469",
-      "@type": "xsd:string"
+        "resolutionUnit": {
+          "@id": "oeo:unit",
+          "@type": "xsd:string"
+        },
+        "boundingBox": {
+          "@id": "dcat:bbox",
+          "@container": "@list",
+          "@type": "xsd:decimal"
+        },
+        "crs": {
+          "@id": "cco:ont00000469",
+          "@type": "xsd:string"
         }
       }
     },
     "temporal": {
       "@id": "dct:temporal",
       "@context": {
-    "referenceDate": {
-      "@id": "dct:date",
-      "@type": "xsd:date"
-    },
-    "timeseries": {
-      "@id": "dct:PeriodOfTime",
-      "@container": "@set"
-    },
+        "referenceDate": {
+          "@id": "dct:date",
+          "@type": "xsd:date"
+        },
+        "timeseries": {
+          "@id": "dct:PeriodOfTime",
+          "@container": "@set"
+        },
         "resolutionValue": {
-      "@id": "dcat:temporalResolution",
-      "@type": "xsd:decimal"
-    },
+          "@id": "dcat:temporalResolution",
+          "@type": "xsd:decimal"
+        },
         "resolutionUnit": {
           "@id": "oeo:unit",
           "@type": "xsd:string"
         },
-    "alignment": {
-      "@id": "oeo:OEO_00140044",
-      "@type": "xsd:string"
-    },
-    "aggregationType": {
-      "@id": "oeo:OEO_00140068",
-      "@type": "xsd:string"
+        "alignment": {
+          "@id": "oeo:OEO_00140044",
+          "@type": "xsd:string"
+        },
+        "aggregationType": {
+          "@id": "oeo:OEO_00140068",
+          "@type": "xsd:string"
         }
       }
     },
@@ -291,6 +291,10 @@
       "@container": "@set"
     },
     "reference": "@nest",
+    "resource": {
+      "@id": "dcat:Distribution",
+      "@type": "xsd:string"
+    },
     "fields": {
       "@id": "csvw:column",
       "@container": "@set",
