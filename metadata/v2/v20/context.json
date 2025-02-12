@@ -114,10 +114,11 @@
       "@id": "sc:Grant",
       "@type": "xsd:string"
     },
-    "spatial": "@nest",
+    "spatial": {
+      "@id": "dct:spatial",
+      "@context": {
     "location": {
-      "@id": "dct:location",
-      "@container": "@graph"
+          "@id": "dct:location"
     },
     "address": {
       "@id": "sc:address",
@@ -134,10 +135,7 @@
     "extent": {
       "@id": "oeo:BFO_0000006"
     },
-    "spatialResolutionValue": {
-      "@id": "dcat:spatialResolutionInMeters",
-      "@type": "xsd:decimal"
-    },
+        "resolutionValue": "dcat:spatialResolutionInMeters",
     "resolutionUnit": {
       "@id": "oeo:unit",
       "@type": "xsd:string"
@@ -150,8 +148,12 @@
     "crs": {
       "@id": "cco:ont00000469",
       "@type": "xsd:string"
+        }
+      }
     },
-    "temporal": "@nest",
+    "temporal": {
+      "@id": "dct:temporal",
+      "@context": {
     "referenceDate": {
       "@id": "dct:date",
       "@type": "xsd:date"
@@ -160,10 +162,14 @@
       "@id": "dct:PeriodOfTime",
       "@container": "@set"
     },
-    "temporalResolutionValue": {
+        "resolutionValue": {
       "@id": "dcat:temporalResolution",
       "@type": "xsd:decimal"
     },
+        "resolutionUnit": {
+          "@id": "oeo:unit",
+          "@type": "xsd:string"
+        },
     "alignment": {
       "@id": "oeo:OEO_00140044",
       "@type": "xsd:string"
@@ -171,6 +177,8 @@
     "aggregationType": {
       "@id": "oeo:OEO_00140068",
       "@type": "xsd:string"
+        }
+      }
     },
     "sources": {
       "@id": "dct:source",
