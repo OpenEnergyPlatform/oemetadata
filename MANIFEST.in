@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: 2024 Ludwig Hülk <https://github.com/Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: super-repo v0.5.0 <https://github.com/rl-institut/super-repo>
+# SPDX-License-Identifier: MIT
+
+exclude .gitignore
+exclude .pre-commit-config.yaml
+exclude tox.ini
+
+prune .github
+prune tests

@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 # SPDX-FileCopyrightText: 2024 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
 # SPDX-FileCopyrightText: 2024 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
-#
+# SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
 # SPDX-License-Identifier: MIT
 
 """
@@ -22,24 +21,24 @@ Usage: Script with additional arguments --debug for more detailed output.
 
 # Standard Library Imports
 # import os
-import sys
+import argparse
 import json
 import logging
+import sys
 
 # from datetime import datetime
 from urllib.parse import urljoin
-import argparse
 
+from jsonschema import Draft202012Validator
 from referencing import Registry, Resource
-from jsonschema import Draft7Validator, Draft202012Validator
-
 from settings import (
-    MAIN_SCHEMA_PATH,
-    SCHEMA_REFS,
-    RESOLVED_SCHEMA_FILE_NAME,
     EXPECTED_SCHEMA_PATH,
     LOG_FORMAT,
+    MAIN_SCHEMA_PATH,
+    RESOLVED_SCHEMA_FILE_NAME,
+    SCHEMA_REFS,
 )
+
 
 # Configuration
 
@@ -57,7 +56,7 @@ def setup():
 
 # Load the main schema
 def load_schema(schema_path):
-    with open(schema_path, "r", encoding="utf-8") as file:
+    with open(schema_path, encoding="utf-8") as file:
         return json.load(file)
 
 
@@ -87,7 +86,7 @@ def resolve_and_merge(schema_path, debug):
 
     for schema_file in SCHEMA_REFS.glob("*.json"):
         try:
-            with open(schema_file, "r", encoding="utf-8") as file:
+            with open(schema_file, encoding="utf-8") as file:
                 ref_schema = json.load(file)
                 ref_schema = ensure_schema_field(ref_schema)
                 schema_uri = urljoin(base_uri, schema_file.name)
@@ -177,7 +176,7 @@ def validate_schema(resolved_schema, expected_schema):
 
 # Load expected schema (without refs) for validation
 def load_expected_schema(expected_schema_path):
-    with open(expected_schema_path, "r", encoding="utf-8") as file:
+    with open(expected_schema_path, encoding="utf-8") as file:
         return json.load(file)
 
 

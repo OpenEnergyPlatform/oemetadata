@@ -1,7 +1,7 @@
 <!--
 SPDX-FileCopyrightText: 2024 Ludwig Hülk <Ludee> © Reiner Lemoine Institut
 SPDX-FileCopyrightText: 2024 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
-
+SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
 SPDX-License-Identifier: MIT
 -->
 
@@ -11,7 +11,7 @@ SPDX-License-Identifier: MIT
 
 # OEMetadata - Version 2.0
 
-This version of the OEMetadata represents the latest released version. 
+This version of the OEMetadata represents the latest released version.
 This release is fully integrated into the OEP.
 
 The OEMetadata contains the following files:

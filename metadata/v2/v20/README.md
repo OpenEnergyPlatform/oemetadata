@@ -11,7 +11,7 @@ SPDX-License-Identifier: MIT
 
 # OEMetadata - Version 2.0
 
-This version of the OEMetadata represents the latest released version. 
+This version of the OEMetadata represents the latest released version.
 This release is fully integrated into the OEP.
 
 The OEMetadata contains the following files:

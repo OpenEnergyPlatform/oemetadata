@@ -2,8 +2,8 @@
 SPDX-FileCopyrightText: 2022 Ludwig Hülk <Ludee> © Reiner Lemoine Institut
 SPDX-FileCopyrightText: 2022 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
 SPDX-FileCopyrightText: 2022 Christian Hofmann <christian-rli> © Reiner Lemoine Institut
-
-SPDX-License-Identifier: CC0-1.0
+SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
+SPDX-License-Identifier: MIT
 -->
 
 <a href="https://github.com/OpenEnergyPlatform/oemetadata/"><img align="right" width="100" height="100" src="https://raw.githubusercontent.com/OpenEnergyPlatform/organisation/production/logo/OpenEnergyFamily_Logo_OEMetadata.png" alt="OpenEnergyMetadata"></a>
@@ -12,7 +12,7 @@ SPDX-License-Identifier: CC0-1.0
 
 # Open Energy Metadata (OEMetadata) <br> - Version 1.5.2 (deprecated)
 
-This is OEMetadata version 1.5.2 . This release has been integrated in the OEP. 
+This is OEMetadata version 1.5.2 . This release has been integrated in the OEP.
 The version has been updated and is marked as deprecated. See the [latest version](https://github.com/OpenEnergyPlatform/oemetadata/tree/production/metadata/latest).
 
 The OEMetadata contains the following files:
