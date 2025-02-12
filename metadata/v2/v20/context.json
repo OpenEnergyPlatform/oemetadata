@@ -46,7 +46,7 @@
       "@id": "dcat:accessURL",
       "@type": "@id"
     },
-    "language": {
+    "languages": {
       "@id": "dct:language",
       "@container": "@set",
       "@type": "xsd:string"
