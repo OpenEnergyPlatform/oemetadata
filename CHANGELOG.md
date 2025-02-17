@@ -29,6 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update procedures and documentation [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
 - Rename tests folder to test [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
 - Update workflows [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
+- Rename metadata folder to oemetadata [(#261)](https://github.com/OpenEnergyPlatform/oemetadata/pull/261)
 
 ### Removed
 - Delete setup.py [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
