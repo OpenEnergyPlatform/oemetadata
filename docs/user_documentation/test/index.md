@@ -55,6 +55,6 @@ Solutions:
 
 !!! note "About the example"
     Below you see the rendered version of the example test
-    `test/metadata/latest`
+    `test/oemetadata/latest`
 
-::: test.metadata.latest
+::: test.oemetadata.latest

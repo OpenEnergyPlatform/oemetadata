@@ -64,7 +64,7 @@ It can be used for the release procedure, research projects, and complex develop
 
 GitHub Labels are used to organize Issues and PR. <br>
 Colours and emoticons improve presentation, see: <br>
-    📝 [github-labels.json](https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/docs/development/git/github-labels.json)
+    📝 [github-labels.json](https://github.com/OpenEnergyPlatform/oemetadata/blob/production/docs/development/git/github-labels.json)
 
 ## GitHub Workflows (Actions)
 
