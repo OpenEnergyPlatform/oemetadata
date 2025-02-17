@@ -43,9 +43,9 @@ Introduction
 
 You can find the latest version right here:
 
-- `template.json <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/template.json>`_ contains an empty metadata string
-- `example.json <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/example.json>`_ contains a basic metadata example
-- `metadata_key_description.md <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/metadata/latest/metadata_key_description.md>`_ contains a description of each metadata key
+- `template.json <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/oemetadata/latest/template.json>`_ contains an empty metadata string
+- `example.json <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/oemetadata/latest/example.json>`_ contains a basic metadata example
+- `metadata_key_description.md <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/oemetadata/latest/metadata_key_description.md>`_ contains a description of each metadata key
 
 Documentation
 =============
@@ -107,7 +107,7 @@ License and Citation
     :alt: PyPI Version
 
 .. |badge_python| image:: https://img.shields.io/pypi/pyversions/oemetadata
-    :target: https://github.com/OpenEnergyPlatform/oemetadata/blob/develop/pyproject.toml
+    :target: https://github.com/OpenEnergyPlatform/oemetadata/blob/production/pyproject.toml
     :alt: PyPI Python Version
 
 .. |badge_pypi_downloads| image:: https://img.shields.io/pypi/dm/oemetadata

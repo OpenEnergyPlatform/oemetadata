@@ -1,0 +1,24 @@
+# SPDX-FileCopyrightText: 2024 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: 2024 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
+# SPDX-License-Identifier: MIT
+
+
+def test_oemetadata_example_should_load():
+    try:
+        pass
+    except Warning:
+        print("Cannot open OEMetadata Example (Latest)!")
+
+
+def test_oemetadata_schema_should_validate_oemetadata_example():
+    from jsonschema import ValidationError, validate
+
+    from oemetadata.latest.example import OEMETADATA_LATEST_EXAMPLE
+    from oemetadata.latest.schema import OEMETADATA_LATEST_SCHEMA
+
+    try:
+        validate(OEMETADATA_LATEST_EXAMPLE, OEMETADATA_LATEST_SCHEMA)
+        print("OEMetadata Example is valid OEMetadata Schema (Latest).")
+    except ValidationError as e:
+        print("Cannot validate OEMetadata Example with Schema (Latest)!", e)
