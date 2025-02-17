@@ -20,7 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Fix bug in JSON-LD context related to properties: resource, languages, resolutionValue & introduce scoped context for spatial and temporal objects to properly annotate resolutionValue in both objects [(#260)](https://github.com/OpenEnergyPlatform/oemetadata/pull/260)
 
-## [2.0.3] - Patch Release - Patchy Install and Repo - 2025-02-06
+## [2.0.3] - Patch Release - Patch Install and Repo - 2025-02-17
 
 ### Added
 - Add missing init files [(#254)](https://github.com/OpenEnergyPlatform/oemetadata/pull/254)
@@ -34,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update procedures and documentation [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
 - Rename tests folder to test [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
 - Update workflows [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
+- Rename metadata folder to oemetadata [(#261)](https://github.com/OpenEnergyPlatform/oemetadata/pull/261)
 
 ### Removed
 - Delete setup.py [(#256)](https://github.com/OpenEnergyPlatform/oemetadata/pull/256)
