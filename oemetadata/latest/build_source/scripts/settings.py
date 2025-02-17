@@ -8,8 +8,8 @@ from pathlib import Path
 
 LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 
-BASE_PATH = Path("oemetadata/v2/")
-VERSION = "v20"
+BASE_PATH = Path("oemetadata/")
+VERSION = "latest"
 VERSION_PATH = BASE_PATH / VERSION
 SCHEMA_BUILD_PATH = VERSION_PATH / "build_source"
 MAIN_SCHEMA_PATH = SCHEMA_BUILD_PATH / "schema_structure.json"

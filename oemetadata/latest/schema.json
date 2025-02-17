@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/v2/v20/schema.json",
+  "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/latest/schema.json",
   "description": "Open Energy Metadata (OEMetadata) - metadata schema",
   "type": "object",
   "required": [
@@ -120,7 +120,7 @@
             "title": "Topics"
           },
           "title": {
-            "description": "A human readable table name.",
+            "description": "A human readable resource or table name.",
             "type": [
               "string",
               "null"
@@ -575,11 +575,11 @@
             "title": "Spatial"
           },
           "temporal": {
-            "description": "An object with the time period covered in the data. Temporal information should contain either a \"referenceDate\" or the keys that describe a time series, in rare cases both.",
+            "description": "An object with the time period covered in the data. Temporal information should contain a \"referenceDate\" or the keys that describe a time series, or both.",
             "type": "object",
             "properties": {
               "referenceDate": {
-                "description": "A base year, month or day. The time for which the data is should be accurate. Date Format is ISO 8601.",
+                "description": "A base year, month or day. The time for which the data should be accurate. Date Format is ISO 8601.",
                 "type": [
                   "string",
                   "null"
@@ -998,7 +998,7 @@
                   "title": "Roles"
                 },
                 "date": {
-                  "description": "The date of the final contribution. Date Format is ISO 8601.",
+                  "description": "The date of the contribution. Date Format is ISO 8601.",
                   "type": [
                     "string",
                     "null"
