@@ -711,7 +711,7 @@
                     ],
                     "examples": [
                       "Hoesung Lee",
-                      "José Romero",
+                      "Jos\u00e9 Romero",
                       "The Core Writing Team"
                     ],
                     "badge": "Bronze",
@@ -819,7 +819,7 @@
                           "null"
                         ],
                         "examples": [
-                          "© Intergovernmental Panel on Climate Change 2023"
+                          "\u00a9 Intergovernmental Panel on Climate Change 2023"
                         ],
                         "badge": "Bronze",
                         "title": "Attribution"
@@ -912,7 +912,7 @@
                     "null"
                   ],
                   "examples": [
-                    "© Reiner Lemoine Institut"
+                    "\u00a9 Reiner Lemoine Institut"
                   ],
                   "badge": "Bronze",
                   "title": "Attribution"
@@ -949,7 +949,7 @@
                     "null"
                   ],
                   "examples": [
-                    "Ludwig Hülk"
+                    "Ludwig H\u00fclk"
                   ],
                   "badge": "Bronze",
                   "title": "Contributor Title"
@@ -982,7 +982,7 @@
                   "description": "An array describing the roles of the contributor.",
                   "type": "array",
                   "items": {
-                    "description": "A role is recommended to follow an established vocabulary: DataCite Metadata Schema’s contributorRole. Useful roles to indicate are: DataCollector, ContactPerson, and DataCurator.",
+                    "description": "A role is recommended to follow an established vocabulary: DataCite Metadata Schema\u2019s contributorRole. Useful roles to indicate are: DataCollector, ContactPerson, and DataCurator.",
                     "type": [
                       "string",
                       "null"
@@ -1261,7 +1261,7 @@
                 "description": "An array of fields that uniquely identifies each row in the table.",
                 "type": "array",
                 "items": {
-                  "description": "The default value is the “id” column.",
+                  "description": "The default value is the \u201cid\u201d column.",
                   "type": [
                     "string",
                     "null"
@@ -1440,7 +1440,7 @@
         "metadataVersion": {
           "description": "Type and version number of the metadata.",
           "examples": [
-            "OEMetadata-2.0.1"
+            "OEMetadata-2.0.3"
           ],
           "type": [
             "string",

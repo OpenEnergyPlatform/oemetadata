@@ -35,3 +35,6 @@ filename = "uv.lock"
 
 [[tool.bumpversion.files]]
 filename = "oemetadata/v2/v20/buil_source/schemas/meta.json"
+
+[[tool.bumpversion.files]]
+filename = "oemetadata/v2/v20/buil_source/scripts/create_template.py"

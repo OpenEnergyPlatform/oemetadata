@@ -14,11 +14,17 @@ For each version, important additions, changes and removals are listed here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.4] - Current
+## [Unreleased]
+
+### Added
+- Introduce scoped context for spatial and temporal objects [(#260)](https://github.com/OpenEnergyPlatform/oemetadata/pull/260)
+- Add script to create latest folder [(#264)](https://github.com/OpenEnergyPlatform/oemetadata/pull/264)
 
 ### Changed
+- Fix bugs in JSON-LD context [(#260)](https://github.com/OpenEnergyPlatform/oemetadata/pull/260)
 
-- Fix bug in JSON-LD context related to properties: resource, languages, resolutionValue & introduce scoped context for spatial and temporal objects to properly annotate resolutionValue in both objects [(#260)](https://github.com/OpenEnergyPlatform/oemetadata/pull/260)
+### Removed
+
 
 ## [2.0.3] - Patch Release - Patch Install and Repo - 2025-02-17
 

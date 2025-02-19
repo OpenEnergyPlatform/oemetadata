@@ -15,7 +15,6 @@ import logging
 import os
 import re
 import shutil
-from typing import Set
 
 from settings import LOG_FORMAT, VERSION_PATH, LATEST_PATH
 
@@ -65,9 +64,9 @@ def replace_in_files(pattern, replacement):
 if __name__ == "__main__":
     logger.info("Create OEMetadata latest version.")
     clear_latest_folder()
-    files = {"example.json", "example.py", "metadata_key_description.md",
+    files = {"context.json", "example.json", "example.py", "metadata_key_description.md",
              "README.md", "schema.json", 'schema.py', "template.json",
-             "template.py"}
+             "template.py", "__init__.py"}
     copy_current_version(files)
     replace_in_files("v2/v20", "latest")
     replace_in_files("V20", "LATEST")
