@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix bugs in JSON-LD context [(#260)](https://github.com/OpenEnergyPlatform/oemetadata/pull/260)
 
 ### Removed
+- Remove build_source folder from latest [(#264)](https://github.com/OpenEnergyPlatform/oemetadata/pull/264)
 
 
 ## [2.0.3] - Patch Release - Patch Install and Repo - 2025-02-17
