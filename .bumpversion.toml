@@ -32,3 +32,6 @@ filename = "CITATION.cff"
 
 [[tool.bumpversion.files]]
 filename = "uv.lock"
+
+[[tool.bumpversion.files]]
+filename = "oemetadata/v2/v20/buil_source/schemas/meta.json"
