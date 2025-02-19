@@ -18,10 +18,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Introduce scoped context for spatial and temporal objects [(#260)](https://github.com/OpenEnergyPlatform/oemetadata/pull/260)
-- Add script to create latest folder [(#264)](https://github.com/OpenEnergyPlatform/oemetadata/pull/264)
+- Add script to manage latest folder [(#264)](https://github.com/OpenEnergyPlatform/oemetadata/pull/264)
 
 ### Changed
 - Fix bugs in JSON-LD context [(#260)](https://github.com/OpenEnergyPlatform/oemetadata/pull/260)
+- Fix version number in bumpversion [(#264)](https://github.com/OpenEnergyPlatform/oemetadata/pull/264)
 
 ### Removed
 - Remove build_source folder from latest [(#264)](https://github.com/OpenEnergyPlatform/oemetadata/pull/264)
