@@ -16,12 +16,13 @@ import os
 import re
 import shutil
 
-from settings import LOG_FORMAT, VERSION_PATH, LATEST_PATH
+from settings import LATEST_PATH, LOG_FORMAT, VERSION_PATH
 
 
 # Configuration
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
 logger = logging.getLogger(__name__)
+
 
 def clear_latest_folder():
     """Delete latest folder and recreate latest folder."""
@@ -44,7 +45,7 @@ def copy_current_version(source_files):
         shutil.copy(VERSION_PATH / "schema.py", LATEST_PATH)
         shutil.copy(VERSION_PATH / "template.json", LATEST_PATH)
         shutil.copy(VERSION_PATH / "template.py", LATEST_PATH)
-    logger.info(f"Copy files to latest folder.")
+    logger.info("Copy files to latest folder.")
 
 
 def replace_in_files(pattern, replacement):
@@ -53,10 +54,10 @@ def replace_in_files(pattern, replacement):
     for filename in os.listdir(folder):
         file_path = os.path.join(folder, filename)
         if os.path.isfile(file_path):
-            with open(file_path, 'r', encoding='utf-8') as f:
+            with open(file_path, encoding="utf-8") as f:
                 content = f.read()
             content = re.sub(pattern, replacement, content)
-            with open(file_path, 'w', encoding='utf-8') as f:
+            with open(file_path, "w", encoding="utf-8") as f:
                 f.write(content)
     logger.info(f"Replace {pattern} with {replacement}.")
 
@@ -64,9 +65,18 @@ def replace_in_files(pattern, replacement):
 if __name__ == "__main__":
     logger.info("Create OEMetadata latest version.")
     clear_latest_folder()
-    files = {"context.json", "example.json", "example.py", "metadata_key_description.md",
-             "README.md", "schema.json", 'schema.py', "template.json",
-             "template.py", "__init__.py"}
+    files = {
+        "context.json",
+        "example.json",
+        "example.py",
+        "metadata_key_description.md",
+        "README.md",
+        "schema.json",
+        "schema.py",
+        "template.json",
+        "template.py",
+        "__init__.py",
+    }
     copy_current_version(files)
     replace_in_files("v2/v20", "latest")
     replace_in_files("V20", "LATEST")
