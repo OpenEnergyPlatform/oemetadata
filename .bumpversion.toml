@@ -32,3 +32,9 @@ filename = "CITATION.cff"
 
 [[tool.bumpversion.files]]
 filename = "uv.lock"
+
+[[tool.bumpversion.files]]
+filename = "oemetadata/v2/v20/build_source/schemas/meta.json"
+
+[[tool.bumpversion.files]]
+filename = "oemetadata/v2/v20/build_source/scripts/create_template.py"

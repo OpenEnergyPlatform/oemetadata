@@ -20,5 +20,5 @@ RESOLVED_SCHEMA_FILE_NAME = VERSION_PATH / "schema.json"
 EXPECTED_SCHEMA_PATH = VERSION_PATH / "schema.json"
 
 EXAMPLE_PATH = VERSION_PATH / "example.json"
-
 TEMPLATE_PATH = VERSION_PATH / "template.json"
+LATEST_PATH = Path("oemetadata/latest/")
