@@ -58,14 +58,14 @@ If a value is not yet available, use: `ToDo`.
 ## Overview
 
 ### Collection Keys
-| <div style="width:1em">#</div> | <div style="width:6em">Key</div> | <div style="width:20em">Description</div>                                                | <div style="width:20em">Example</div>                                                                                     | <div style="width:20em">Ontology Class</div>               | <div style="width:4em">Badge</div> | <div style="width:3em">Card.</div> |
-|--------------------------------|----------------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|------------------------------------|------------------------------------|
-| 1                              | @context                         | Explanation of metadata keys in ontology terms.                                          | [context.json](https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/latest/context.json) |                                                            | Platinum                           | [0..1]                             |
-| 2                              | name                             | A filename or database conform dataset name.                                             | oep_oemetadata                                                                                                            | [rdfs:label](https://www.w3.org/2000/01/rdf-schema#/label) | Iron                               | [1]                                |
-| 3                              | title                            | A human readable dataset name.                                                           | OEP OEMetadata                                                                                                            | [dct:title](http://purl.org/dc/terms/title)                | Bronze                             | [0..1]                             |
-| 4                              | description                      | A free text description of the dataset.                                                  | A collection of tables for the OEMetadata examples.                                                                       | [dct:description](http://purl.org/dc/terms/description)    | Bronze                             | [0..1]                             |
-| 5                              | id                               | A unique identifier (UUID/DOI) for the dataset.                                          | [databus.openenergyplatform.org/oeplatform](https://databus.openenergyplatform.org/oeplatform/reference/)                 | [dct:identifier](http://purl.org/dc/terms/identifier)      | Silver                             | [0..1]                             |
-| 6                              | **resources**                    | An array of objects of the resources. The dataset can contain several (database) tables. |                                                                                                                           | [dcat:Dataset](https://www.w3.org/ns/dcat#dataset)         |                                    | [*]                                |
+| <div style="width:1em">#</div> | <div style="width:6em">Key</div> | <div style="width:20em">Description</div>                                                | <div style="width:20em">Example</div>                                                                                                                                          | <div style="width:20em">Ontology Class</div>               | <div style="width:4em">Badge</div> | <div style="width:3em">Card.</div> |
+|--------------------------------|----------------------------------|------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|------------------------------------|------------------------------------|
+| 1                              | @context                         | Explanation of metadata keys in ontology terms.                                          | [context.json](https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/latest/context.json)                                                      |                                                            | Platinum                           | [0..1]                             |
+| 2                              | name                             | A filename or database conform dataset name.                                             | oep_oemetadata                                                                                                                                                                 | [rdfs:label](https://www.w3.org/2000/01/rdf-schema#/label) | Iron                               | [1]                                |
+| 3                              | title                            | A human readable dataset name.                                                           | OEP OEMetadata                                                                                                                                                                 | [dct:title](http://purl.org/dc/terms/title)                | Bronze                             | [0..1]                             |
+| 4                              | description                      | A free text description of the dataset.                                                  | A collection of tables for the OEMetadata examples.                                                                                                                            | [dct:description](http://purl.org/dc/terms/description)    | Bronze                             | [0..1]                             |
+| 5                              | @id                              | A unique identifier (UUID/DOI) for the dataset. This is the Databus Artifact.            | [databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/](https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/) | [dct:identifier](http://purl.org/dc/terms/identifier)      | Platinum                           | [0..1]                             |
+| 6                              | **resources**                    | An array of objects of the resources. The dataset can contain several (database) tables. |                                                                                                                                                                                | [dcat:Dataset](https://www.w3.org/ns/dcat#dataset)         |                                    | [*]                                |
 
 ### Resource - General Keys
 | <div style="width:1em">#</div> | <div style="width:6em">Key</div> | <div style="width:20em">Description</div>                                                                                                                                        | <div style="width:20em">Example</ div>                                                                                                 | <div style="width:20em">Ontology Class</div>                    | <div style="width:4em">Badge</div> | <div style="width:3em">Card.</div> |
@@ -230,7 +230,7 @@ If a value is not yet available, use: `ToDo`.
 
 ## Metadata Keys
 
-### Collection: @context
+### Dataset - @context
 |                    |                                                                                                                           |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------|
 | **Key**            | @context                                                                                                                  |
@@ -241,7 +241,7 @@ If a value is not yet available, use: `ToDo`.
 | **Card.**          | [0..1]                                                                                                                    |
 
 
-### Collection: name
+### Dataset - name
 |                    |                                                            |
 |--------------------|------------------------------------------------------------|
 | **Key**            | name                                                       |
@@ -252,7 +252,7 @@ If a value is not yet available, use: `ToDo`.
 | **Card.**          | [1]                                                        |
 
 
-### Collection: title
+### Dataset - title
 |                    |                                             |
 |--------------------|---------------------------------------------|
 | **Key**            | title                                       |
@@ -263,7 +263,7 @@ If a value is not yet available, use: `ToDo`.
 | **Card.**          | [0..1]                                      |
 
 
-### Collection: description
+### Dataset - description
 |                    |                                                         |
 |--------------------|---------------------------------------------------------|
 | **Key**            | description                                             |
@@ -274,18 +274,18 @@ If a value is not yet available, use: `ToDo`.
 | **Card.**          | [0..1]                                                  |
 
 
-### Collection: id
-|                    |                                                                                                           |
-|--------------------|-----------------------------------------------------------------------------------------------------------|
-| **Key**            | id                                                                                                        |
-| **Description**    | A unique identifier (UUID/DOI) for the dataset.                                                           |
-| **Example**        | [databus.openenergyplatform.org/oeplatform](https://databus.openenergyplatform.org/oeplatform/reference/) |
-| **Ontology Class** | [dct:identifier](http://purl.org/dc/terms/identifier)                                                     |
-| **Badge**          | Silver                                                                                                    |
-| **Card.**          | [0..1]                                                                                                    |
+### Dataset - @id
+|                    |                                                                                                                                                                                |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Key**            | @id                                                                                                                                                                            |
+| **Description**    | A unique identifier (UUID/DOI) for the dataset. This is the Databus Artifact.                                                                                                  |
+| **Example**        | [databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/](https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/) |
+| **Ontology Class** | [dct:identifier](http://purl.org/dc/terms/identifier)                                                                                                                          |
+| **Badge**          | Platinum                                                                                                                                                                       |
+| **Card.**          | [0..1]                                                                                                                                                                         |
 
 
-### Collection: resources
+### Dataset - resources
 |                    |                                                                                          |
 |--------------------|------------------------------------------------------------------------------------------|
 | **Key**            | resources                                                                                |
@@ -296,14 +296,14 @@ If a value is not yet available, use: `ToDo`.
 | **Card.**          | [*]                                                                                      |
 
 ### Resource - @id
-|                |                                                                                                                                        |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Key            | @id                                                                                                                                    |
-| Description    | A Uniform Resource Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus).                               |
-| Example        | [wri_global_power_plant_database](https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07) |
-| Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)                                                                                  |
-| Badge          | Platinum                                                                                                                               |
-| Card.          | [0..1]                                                                                                                                 |
+|                |                                                                                                                                                                                         |
+|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Key            | @id                                                                                                                                                                                     |
+| Description    | A Uniform Resource Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus).                                                                                |
+| Example        | [wri_global_power_plant_database](https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv) |
+| Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)                                                                                                                                   |
+| Badge          | Platinum                                                                                                                                                                                |
+| Card.          | [0..1]                                                                                                                                                                                  |
 
 
 ### Resource - name
