@@ -52,14 +52,14 @@
       "badge": "Bronze",
       "title": "Dataset Description"
     },
-    "id": {
+    "@id": {
       "description": "A unique identifier (UUID/DOI) for the collection.",
       "type": [
         "string",
         "null"
       ],
       "examples": [
-        "https://databus.openenergyplatform.org/oeplatform/reference"
+        "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/"
       ],
       "badge": "Silver",
       "title": "Dataset Identifier",
