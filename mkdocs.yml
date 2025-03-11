@@ -49,6 +49,7 @@ markdown_extensions:
 
 plugins:
 - mkdocstrings:
+    default_handler: python
 - search:
     separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
 
