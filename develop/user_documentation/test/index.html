@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -1221,69 +1221,9 @@
         <li class="md-nav__item">
   <a href="#test.oemetadata.latest" class="md-nav__link">
     <span class="md-ellipsis">
-      test.oemetadata.latest
+      latest
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#test.oemetadata.latest.test_context" class="md-nav__link">
-    <span class="md-ellipsis">
-      test_context
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="test_context">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#test.oemetadata.latest.test_context.clean_context" class="md-nav__link">
-    <span class="md-ellipsis">
-      clean_context()
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#test.oemetadata.latest.test_context.clean_null_ids" class="md-nav__link">
-    <span class="md-ellipsis">
-      clean_null_ids()
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#test.oemetadata.latest.test_context.is_valid_type" class="md-nav__link">
-    <span class="md-ellipsis">
-      is_valid_type()
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#test.oemetadata.latest.test_context.load_files" class="md-nav__link">
-    <span class="md-ellipsis">
-      load_files()
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#test.oemetadata.latest.test_context.test_jsonld_combination" class="md-nav__link">
-    <span class="md-ellipsis">
-      test_jsonld_combination()
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1353,7 +1293,9 @@
 </div>
 
 
-  <div class="doc doc-object doc-module">
+<div class="doc doc-object doc-module">
+
+
 
 <a id="test.oemetadata.latest"></a>
     <div class="doc doc-contents first">
@@ -1361,29 +1303,7 @@
 
 
 
-  <div class="doc doc-children">
 
-
-
-
-
-
-
-
-
-
-  <div class="doc doc-object doc-module">
-
-
-
-<h2 id="test.oemetadata.latest.test_context" class="doc doc-heading">
-        <code>test_context</code>
-
-
-
-<a href="#test.oemetadata.latest.test_context" class="headerlink" title="Permanent link">#</a></h2>
-
-    <div class="doc doc-contents ">
 
 
 
@@ -1397,199 +1317,6 @@
 
 
 
-  <div class="doc doc-object doc-function">
-
-
-
-<h3 id="test.oemetadata.latest.test_context.clean_context" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">clean_context</span><span class="p">(</span><span class="n">context</span><span class="p">)</span></code>
-
-
-<a href="#test.oemetadata.latest.test_context.clean_context" class="headerlink" title="Permanent link">#</a></h3>
-
-    <div class="doc doc-contents ">
-
-      <p>Remove invalid entries (placeholders or invalid @type).</p>
-
-        <details class="quote">
-          <summary>Source code in <code>test/oemetadata/latest/test_context.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">clean_context</span><span class="p">(</span><span class="n">context</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Remove invalid entries (placeholders or invalid @type).&quot;&quot;&quot;</span>
-    <span class="n">cleaned_context</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">context</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
-            <span class="c1"># Remove entries with invalid @id or @type</span>
-            <span class="k">if</span> <span class="n">value</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;@id&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;xx&quot;</span> <span class="ow">or</span> <span class="n">value</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;@type&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;xx&quot;</span><span class="p">:</span>
-                <span class="k">continue</span>
-            <span class="c1"># Keep only valid entries</span>
-            <span class="n">cleaned_context</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">k</span><span class="p">:</span> <span class="n">v</span>
-                <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
-                <span class="k">if</span> <span class="n">v</span> <span class="o">!=</span> <span class="s2">&quot;xx&quot;</span> <span class="ow">and</span> <span class="p">(</span><span class="n">k</span> <span class="o">!=</span> <span class="s2">&quot;@type&quot;</span> <span class="ow">or</span> <span class="n">is_valid_type</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
-            <span class="p">}</span>
-        <span class="k">elif</span> <span class="n">value</span> <span class="o">!=</span> <span class="s2">&quot;xx&quot;</span><span class="p">:</span>
-            <span class="n">cleaned_context</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
-    <span class="k">return</span> <span class="n">cleaned_context</span>
-</code></pre></div>
-        </details>
-    </div>
-
-  </div>
-
-
-
-  <div class="doc doc-object doc-function">
-
-
-
-<h3 id="test.oemetadata.latest.test_context.clean_null_ids" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">clean_null_ids</span><span class="p">(</span><span class="n">data</span><span class="p">)</span></code>
-
-
-<a href="#test.oemetadata.latest.test_context.clean_null_ids" class="headerlink" title="Permanent link">#</a></h3>
-
-    <div class="doc doc-contents ">
-
-      <p>Recursively remove @id entries with null values.</p>
-
-        <details class="quote">
-          <summary>Source code in <code>test/oemetadata/latest/test_context.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">clean_null_ids</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Recursively remove @id entries with null values.&quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
-        <span class="k">return</span> <span class="p">{</span>
-            <span class="n">key</span><span class="p">:</span> <span class="n">clean_null_ids</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-            <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
-            <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">key</span> <span class="o">==</span> <span class="s2">&quot;@id&quot;</span> <span class="ow">and</span> <span class="n">value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">)</span>
-        <span class="p">}</span>
-    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
-        <span class="k">return</span> <span class="p">[</span><span class="n">clean_null_ids</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">data</span>
-</code></pre></div>
-        </details>
-    </div>
-
-  </div>
-
-
-
-  <div class="doc doc-object doc-function">
-
-
-
-<h3 id="test.oemetadata.latest.test_context.is_valid_type" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">is_valid_type</span><span class="p">(</span><span class="n">value</span><span class="p">)</span></code>
-
-
-<a href="#test.oemetadata.latest.test_context.is_valid_type" class="headerlink" title="Permanent link">#</a></h3>
-
-    <div class="doc doc-contents ">
-
-      <p>Check if @type value is a valid absolute or compact IRI.</p>
-
-        <details class="quote">
-          <summary>Source code in <code>test/oemetadata/latest/test_context.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">is_valid_type</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Check if @type value is a valid absolute or compact IRI.&quot;&quot;&quot;</span>
-    <span class="c1"># Valid if it&#39;s a known compact IRI (e.g., xsd:string)</span>
-    <span class="k">if</span> <span class="s2">&quot;:&quot;</span> <span class="ow">in</span> <span class="n">value</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">value</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;@&quot;</span><span class="p">):</span>
-        <span class="k">return</span> <span class="kc">True</span>
-    <span class="c1"># Invalid if it contains spaces or invalid characters</span>
-    <span class="k">return</span> <span class="kc">False</span>
-</code></pre></div>
-        </details>
-    </div>
-
-  </div>
-
-
-
-  <div class="doc doc-object doc-function">
-
-
-
-<h3 id="test.oemetadata.latest.test_context.load_files" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">load_files</span><span class="p">()</span></code>
-
-
-<a href="#test.oemetadata.latest.test_context.load_files" class="headerlink" title="Permanent link">#</a></h3>
-
-    <div class="doc doc-contents ">
-
-      <p>Load the example.json and context.json files.</p>
-
-        <details class="quote">
-          <summary>Source code in <code>test/oemetadata/latest/test_context.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">load_files</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Load the example.json and context.json files.&quot;&quot;&quot;</span>
-    <span class="n">base_path</span> <span class="o">=</span> <span class="s2">&quot;oemetadata/latest/&quot;</span>
-    <span class="n">example_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">base_path</span><span class="p">,</span> <span class="s2">&quot;example.json&quot;</span><span class="p">)</span>
-    <span class="n">context_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">base_path</span><span class="p">,</span> <span class="s2">&quot;context.json&quot;</span><span class="p">)</span>
-
-    <span class="c1"># Load example.json</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">example_file</span><span class="p">)</span> <span class="k">as</span> <span class="n">ef</span><span class="p">:</span>
-        <span class="n">example_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">ef</span><span class="p">)</span>
-
-    <span class="c1"># Load context.json</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">context_file</span><span class="p">)</span> <span class="k">as</span> <span class="n">cf</span><span class="p">:</span>
-        <span class="n">context_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">cf</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">example_data</span><span class="p">,</span> <span class="n">context_data</span>
-</code></pre></div>
-        </details>
-    </div>
-
-  </div>
-
-
-
-  <div class="doc doc-object doc-function">
-
-
-
-<h3 id="test.oemetadata.latest.test_context.test_jsonld_combination" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">test_jsonld_combination</span><span class="p">(</span><span class="n">load_files</span><span class="p">)</span></code>
-
-
-<a href="#test.oemetadata.latest.test_context.test_jsonld_combination" class="headerlink" title="Permanent link">#</a></h3>
-
-    <div class="doc doc-contents ">
-
-      <p>Test combining example.json with context.json and validating JSON-LD.</p>
-
-        <details class="quote">
-          <summary>Source code in <code>test/oemetadata/latest/test_context.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_jsonld_combination</span><span class="p">(</span><span class="n">load_files</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Test combining example.json with context.json and validating JSON-LD.&quot;&quot;&quot;</span>
-    <span class="c1"># try:</span>
-    <span class="c1"># Get the example and context data</span>
-    <span class="n">example_data</span><span class="p">,</span> <span class="n">context_data</span> <span class="o">=</span> <span class="n">load_files</span>
-
-    <span class="c1"># Clean the @context from placeholders and invalid entries</span>
-    <span class="n">cleaned_context</span> <span class="o">=</span> <span class="n">clean_context</span><span class="p">(</span><span class="n">context_data</span><span class="p">[</span><span class="s2">&quot;@context&quot;</span><span class="p">])</span>
-
-    <span class="c1"># Update the @context for each resource in the resources array</span>
-    <span class="k">for</span> <span class="n">resource</span> <span class="ow">in</span> <span class="n">example_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;resources&quot;</span><span class="p">,</span> <span class="p">[]):</span>
-        <span class="n">resource</span><span class="p">[</span><span class="s2">&quot;@context&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cleaned_context</span>
-
-    <span class="c1"># Remove @id with null values from resources</span>
-    <span class="n">cleaned_example_data</span> <span class="o">=</span> <span class="n">clean_null_ids</span><span class="p">(</span><span class="n">example_data</span><span class="p">)</span>
-
-    <span class="c1"># Validate each resource as JSON-LD</span>
-    <span class="k">for</span> <span class="n">resource</span> <span class="ow">in</span> <span class="n">cleaned_example_data</span><span class="p">[</span><span class="s2">&quot;resources&quot;</span><span class="p">]:</span>
-        <span class="n">expanded</span> <span class="o">=</span> <span class="n">jsonld</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">resource</span><span class="p">)</span>
-        <span class="k">assert</span> <span class="p">(</span>
-            <span class="n">expanded</span>
-        <span class="p">),</span> <span class="sa">f</span><span class="s2">&quot;Validation failed for resource: </span><span class="si">{</span><span class="n">resource</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;@id&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;unknown&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
-</code></pre></div>
-        </details>
-    </div>
-
-  </div>
-
-
-
 
 
 
@@ -1597,19 +1324,7 @@
 
     </div>
 
-  </div>
-
-
-
-
-
-
-
-  </div>
-
-    </div>
-
-  </div>
+</div>
 
 
 
@@ -1660,7 +1375,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.path", "navigation.tracking", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
