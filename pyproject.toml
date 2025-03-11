@@ -9,7 +9,7 @@ requires = ["flit_core >=3.8.0,<4"]
 
 [project]
 name = "oemetadata"
-version = "2.0.3"
+version = "2.0.4"
 authors = [
     {name = "Ludwig Hülk", email = "datenzentrum@rl-institut.de"}]
 description = "Open Energy Metadata (OEMetadata) - The energy metadata standard"
