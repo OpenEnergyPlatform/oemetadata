@@ -11,6 +11,7 @@ mike
 mkdocs
 mkdocs-material
 mkdocstrings
+mkdocstrings-python
 mkdocstrings-python-legacy
 pre-commit
 pyld
