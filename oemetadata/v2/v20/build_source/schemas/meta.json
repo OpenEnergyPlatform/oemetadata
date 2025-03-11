@@ -10,7 +10,7 @@
         "metadataVersion": {
           "description": "Type and version number of the metadata.",
           "examples": [
-            "OEMetadata-2.0.1"
+            "OEMetadata-2.0.4"
           ],
           "type": [
             "string",

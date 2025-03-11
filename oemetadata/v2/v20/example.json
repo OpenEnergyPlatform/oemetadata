@@ -3,10 +3,10 @@
   "name": "oep_oemetadata",
   "title": "OEP OEMetadata",
   "description": "A dataset for the OEMetadata examples.",
-  "id": "https://databus.openenergyplatform.org/oeplatform/reference",
+  "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/",
   "resources": [
     {
-      "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07",
+      "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv",
       "name": "oemetadata_table_template",
       "topics": [
         "model_draft"
@@ -250,7 +250,7 @@
           },
           {
             "name": "is_active",
-            "description": "Betriebsstaus",
+            "description": "Betriebsstatus",
             "type": "boolean",
             "nullable": false,
             "unit": null,
@@ -339,7 +339,7 @@
     }
   ],
   "metaMetadata": {
-    "metadataVersion": "OEMetadata-2.0.1",
+    "metadataVersion": "OEMetadata-2.0.4",
     "metadataLicense": {
       "name": "CC0-1.0",
       "title": "Creative Commons Zero v1.0 Universal",

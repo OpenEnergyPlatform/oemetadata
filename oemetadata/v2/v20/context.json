@@ -9,7 +9,7 @@
     "dct": "http://purl.org/dc/terms/",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "ncit": "http://purl.obolibrary.org/obo/ncit.owl",
-    "oeo": "https://openenergyplatform.org/ontology/oeo/releases/oeo-full.owl",
+    "oeo": "https://openenergyplatform.org/ontology/oeo/",
     "owl": "http://www.w3.org/2002/07/owl#",
     "prov": "http://www.w3.org/ns/prov#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -46,7 +46,7 @@
       "@id": "dcat:accessURL",
       "@type": "@id"
     },
-    "language": {
+    "languages": {
       "@id": "dct:language",
       "@container": "@set",
       "@type": "xsd:string"
@@ -114,63 +114,71 @@
       "@id": "sc:Grant",
       "@type": "xsd:string"
     },
-    "spatial": "@nest",
-    "location": {
-      "@id": "dct:location",
-      "@container": "@graph"
+    "spatial": {
+      "@id": "dct:spatial",
+      "@context": {
+        "location": {
+          "@id": "dct:location"
+        },
+        "address": {
+          "@id": "sc:address",
+          "@type": "xsd:string"
+        },
+        "latitude": {
+          "@id": "sc:latitude",
+          "@type": "xsd:decimal"
+        },
+        "longitude": {
+          "@id": "sc:longitude",
+          "@type": "xsd:decimal"
+        },
+        "extent": {
+          "@id": "oeo:BFO_0000006"
+        },
+        "resolutionValue": "dcat:spatialResolutionInMeters",
+        "resolutionUnit": {
+          "@id": "oeo:unit",
+          "@type": "xsd:string"
+        },
+        "boundingBox": {
+          "@id": "dcat:bbox",
+          "@container": "@list",
+          "@type": "xsd:decimal"
+        },
+        "crs": {
+          "@id": "cco:ont00000469",
+          "@type": "xsd:string"
+        }
+      }
     },
-    "address": {
-      "@id": "sc:address",
-      "@type": "xsd:string"
-    },
-    "latitude": {
-      "@id": "sc:latitude",
-      "@type": "xsd:decimal"
-    },
-    "longitude": {
-      "@id": "sc:longitude",
-      "@type": "xsd:decimal"
-    },
-    "extent": {
-      "@id": "oeo:BFO_0000006"
-    },
-    "spatialResolutionValue": {
-      "@id": "dcat:spatialResolutionInMeters",
-      "@type": "xsd:decimal"
-    },
-    "resolutionUnit": {
-      "@id": "oeo:unit",
-      "@type": "xsd:string"
-    },
-    "boundingBox": {
-      "@id": "dcat:bbox",
-      "@container": "@list",
-      "@type": "xsd:decimal"
-    },
-    "crs": {
-      "@id": "cco:ont00000469",
-      "@type": "xsd:string"
-    },
-    "temporal": "@nest",
-    "referenceDate": {
-      "@id": "dct:date",
-      "@type": "xsd:date"
-    },
-    "timeseries": {
-      "@id": "dct:PeriodOfTime",
-      "@container": "@set"
-    },
-    "temporalResolutionValue": {
-      "@id": "dcat:temporalResolution",
-      "@type": "xsd:decimal"
-    },
-    "alignment": {
-      "@id": "oeo:OEO_00140044",
-      "@type": "xsd:string"
-    },
-    "aggregationType": {
-      "@id": "oeo:OEO_00140068",
-      "@type": "xsd:string"
+    "temporal": {
+      "@id": "dct:temporal",
+      "@context": {
+        "referenceDate": {
+          "@id": "dct:date",
+          "@type": "xsd:date"
+        },
+        "timeseries": {
+          "@id": "dct:PeriodOfTime",
+          "@container": "@set"
+        },
+        "resolutionValue": {
+          "@id": "dcat:temporalResolution",
+          "@type": "xsd:decimal"
+        },
+        "resolutionUnit": {
+          "@id": "oeo:unit",
+          "@type": "xsd:string"
+        },
+        "alignment": {
+          "@id": "oeo:OEO_00140044",
+          "@type": "xsd:string"
+        },
+        "aggregationType": {
+          "@id": "oeo:OEO_00140068",
+          "@type": "xsd:string"
+        }
+      }
     },
     "sources": {
       "@id": "dct:source",
@@ -283,6 +291,10 @@
       "@container": "@set"
     },
     "reference": "@nest",
+    "resource": {
+      "@id": "dcat:Distribution",
+      "@type": "xsd:string"
+    },
     "fields": {
       "@id": "csvw:column",
       "@container": "@set",

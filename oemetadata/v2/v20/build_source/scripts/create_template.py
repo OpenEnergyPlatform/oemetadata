@@ -143,7 +143,7 @@ if __name__ == "__main__":
     logger.info("Generation started.")
     main()
     replace_key_in_json(TEMPLATE_PATH, "boundingBox", [0, 0, 0, 0])
-    replace_key_in_json(TEMPLATE_PATH, "metadataVersion", "OEMetadata-2.0.1")
+    replace_key_in_json(TEMPLATE_PATH, "metadataVersion", "OEMetadata-2.0.4")
     replace_key_in_json(
         TEMPLATE_PATH,
         "metadataLicense",

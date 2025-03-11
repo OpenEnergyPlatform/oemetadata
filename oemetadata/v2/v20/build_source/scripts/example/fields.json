@@ -106,7 +106,7 @@
   },
   {
     "name": "is_active",
-    "description": "Betriebsstaus",
+    "description": "Betriebsstatus",
     "type": "boolean",
     "nullable": false,
     "unit": null,
