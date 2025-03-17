@@ -24,7 +24,7 @@ Open Energy Metadata (OEMetadata)
    * - Tests
      - |badge_tox| |badge_codecov|
    * - Publication
-     - |badge_pypi| |badge_python| |badge_pypi_downloads|
+     - |badge_pypi| |badge_python| |badge_pypi_downloads| |badge_zenodo|
    * - Development
      - |badge_issue_open| |badge_issue_closes| |badge_pr_open| |badge_pr_closes|
    * - Community
@@ -38,14 +38,16 @@ Open Energy Metadata (OEMetadata)
 Introduction
 ============
 | Open Energy Metadata (OEMetadata) is a metadata standard for the energy domain.
-| It is an extensive set of metadata based on the tabular data package specifications and the FAIR principles.
+| It is an extensive set of metadata based on the Frictionless `Data Package <https://datapackage.org/>`_ specifications and the `FAIR Principles <https://www.go-fair.org/fair-principles/>`_.
 | The metadata contains multiple fields (keys) in a nested JSON structure.
 
 You can find the latest version right here:
 
-- `template.json <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/oemetadata/latest/template.json>`_ contains an empty metadata string
-- `example.json <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/oemetadata/latest/example.json>`_ contains a basic metadata example
-- `metadata_key_description.md <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/oemetadata/latest/metadata_key_description.md>`_ contains a description of each metadata key
+- `schema.json <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/oemetadata/latest/schema.json>`_ contains the json schema for the metadata standard.
+- `context.json <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/oemetadata/latest/context.json>`_ contains the references of metadata keys in ontology terms.
+- `template.json <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/oemetadata/latest/template.json>`_ contains an empty metadata string with all fields.
+- `example.json <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/oemetadata/latest/example.json>`_ contains a basic metadata example.
+- `metadata_key_description.md <https://github.com/OpenEnergyPlatform/oemetadata/blob/production/oemetadata/latest/metadata_key_description.md>`_ contains a detailed description of each metadata key.
 
 Documentation
 =============
@@ -113,6 +115,10 @@ License and Citation
 .. |badge_pypi_downloads| image:: https://img.shields.io/pypi/dm/oemetadata
     :target: https://pypi.org/project/oemetadata/
     :alt: PyPI Downloads
+
+.. |badge_zenodo| image:: https://zenodo.org/badge/DOI/10.5281/zenodo.15019562.svg
+    :target: https://doi.org/10.5281/zenodo.15019562
+    :alt: Zenodo
 
 .. |badge_issue_open| image:: https://img.shields.io/github/issues-raw/OpenEnergyPlatform/oemetadata
     :target: https://github.com/OpenEnergyPlatform/oemetadata/issues
