@@ -25,6 +25,8 @@ Open Energy Metadata (OEMetadata)
      - |badge_tox| |badge_codecov|
    * - Publication
      - |badge_pypi| |badge_python| |badge_pypi_downloads| |badge_zenodo|
+   * - Standard Catalogs
+     - |badge_fairsharing| |badge_rda|
    * - Development
      - |badge_issue_open| |badge_issue_closes| |badge_pr_open| |badge_pr_closes|
    * - Community
@@ -119,6 +121,14 @@ License and Citation
 .. |badge_zenodo| image:: https://zenodo.org/badge/DOI/10.5281/zenodo.15019562.svg
     :target: https://doi.org/10.5281/zenodo.15019562
     :alt: Zenodo
+
+.. |badge_fairsharing| image:: https://img.shields.io/badge/DOI-10.25504%2FFAIRsharing.777897-blue?style=flat
+    :target: https://doi.org/10.25504/FAIRsharing.777897
+    :alt: FAIRsharing
+
+.. |badge_rda| image:: https://img.shields.io/badge/RDA%20MSC-msc%3Am128-blue?style=flat
+    :target: https://rdamsc.bath.ac.uk/msc/m128
+    :alt: RDA MSC
 
 .. |badge_issue_open| image:: https://img.shields.io/github/issues-raw/OpenEnergyPlatform/oemetadata
     :target: https://github.com/OpenEnergyPlatform/oemetadata/issues
