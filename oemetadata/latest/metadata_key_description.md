@@ -57,7 +57,7 @@ If a value is not yet available, use: `ToDo`.
 
 ## Overview
 
-### Collection Keys
+### Dataset Keys
 | <div style="width:1em">#</div> | <div style="width:6em">Key</div> | <div style="width:20em">Description</div>                                                | <div style="width:20em">Example</div>                                                                                                                                          | <div style="width:20em">Ontology Class</div>               | <div style="width:4em">Badge</div> | <div style="width:3em">Card.</div> |
 |--------------------------------|----------------------------------|------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|------------------------------------|------------------------------------|
 | 1                              | @context                         | Explanation of metadata keys in ontology terms.                                          | [context.json](https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/latest/context.json)                                                      |                                                            | Platinum                           | [0..1]                             |
