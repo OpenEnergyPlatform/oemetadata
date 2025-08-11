@@ -193,7 +193,8 @@ def main(debug):
 
         # Save the resolved schema to a new file
         with open(RESOLVED_SCHEMA_FILE_NAME, "w", encoding="utf-8") as output_file:
-            json.dump(resolved_schema, output_file, indent=2)
+            json.dump(resolved_schema, output_file, ensure_ascii=False, indent=2)
+            output_file.write("\n")
 
         # Load the expected schema and validate
         expected_schema = load_expected_schema(EXPECTED_SCHEMA_PATH)

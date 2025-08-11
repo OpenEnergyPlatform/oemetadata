@@ -61,8 +61,7 @@ def read_metadata_schema(filepath: str) -> Dict[str, Any]:
         Dict[str, Any]: The JSON schema as a dictionary.
     """
     if not os.path.exists(filepath):
-        logger.info(f"Error: File '{filepath}' does not exist.")
-        return {}
+        raise FileNotFoundError(f"Error: File '{filepath}' does not exist.")
 
     try:
         with open(filepath, encoding="utf-8") as file:
@@ -78,8 +77,8 @@ def read_metadata_schema(filepath: str) -> Dict[str, Any]:
 
         # Additional debugging info: Check expected keys
         if "$schema" not in schema or "type" not in schema:
-            logger.info(
-                "Warning: Schema may be missing key fields like '$schema' or 'type'."
+            logger.warning(
+                "Schema may be missing key fields like '$schema' or 'type'."
             )
 
         logger.info(
@@ -89,11 +88,9 @@ def read_metadata_schema(filepath: str) -> Dict[str, Any]:
         return schema
 
     except json.JSONDecodeError as e:
-        logger.info(f"Error reading JSON: {e}")
-        return {}
+        raise Exception(f"Error reading JSON: {e}")
     except Exception as e:
-        logger.info(f"An unexpected error occurred while reading the schema: {e}")
-        return {}
+        raise Exception(f"An unexpected error occurred while reading the schema: {e}")
 
 
 # def generate_example_old(
@@ -220,7 +217,8 @@ def save_json(data: Dict[str, Any], filename: Path) -> None:
         filename (str): The filename where the JSON data will be saved.
     """
     with open(filename, "w", encoding="utf-8") as file:
-        json.dump(data, file, ensure_ascii=False, indent=4)
+        json.dump(data, file, indent=2)
+        file.write("\n")
 
     logger.info(f"example JSON generated and saved to {filename}")
 
@@ -262,7 +260,8 @@ def replace_key_in_json(file_path, target_key, new_value):
     if find_and_replace_key(data, target_key, new_value):
         # Save the updated JSON data back to the file
         with open(file_path, "w", encoding="utf-8") as file:
-            json.dump(data, file, ensure_ascii=False, indent=4)
+            json.dump(data, file, ensure_ascii=False, indent=2)
+            file.write("\n")
         logger.info(f"Updated '{target_key}' to '{new_value}' in {file_path}")
     else:
         logger.info(f"Key '{target_key}' not found in JSON file.")

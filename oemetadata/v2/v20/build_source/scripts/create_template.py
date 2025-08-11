@@ -133,7 +133,8 @@ def replace_key_in_json(file_path, target_key, new_value):
     if find_and_replace_key(data, target_key, new_value):
         # Save the updated JSON data back to the file
         with open(file_path, "w") as file:
-            json.dump(data, file, indent=4)
+            json.dump(data, file, indent=2)
+            file.write("\n")
         print(f"Updated '{target_key}' to '{new_value}' in {file_path}")
     else:
         print(f"Key '{target_key}' not found in JSON file.")
