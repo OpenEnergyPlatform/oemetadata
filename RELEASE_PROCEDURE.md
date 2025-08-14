@@ -153,7 +153,7 @@ If you messed up, remove tags and start again
 
 - Change to `production` branch: 💠`git checkout production`
 - Update with online version: 💠`git pull`
-- Activate environment and enter repository: 💻`activate py310`
+- Activate environment and enter repository: 💻`activate oemetadata`
 - Test version: 💻`mike serve`
 - Publish new version: 💻`mike deploy --push --update-aliases 0.1 latest`
 

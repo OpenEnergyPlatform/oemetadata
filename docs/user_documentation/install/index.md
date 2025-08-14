@@ -5,15 +5,15 @@
 With conda, you can create, export, list, remove, and update environments
 that have different versions of Python and/or packages installed in them. <br>
 Switching or moving between environments is called activating the environment.
-You can also share an environment file and import from 📝 `requirements.txt`.
-
+You can also share an environment file and import from 📝 `requirements.txt`.<br>
+<br>
     💻 `conda env create -f environment.yaml` Create conda environment <br>
-    💻 `conda activate py310` Activate environment <br>
+    💻 `conda activate oemetadata` Activate environment <br>
     💻 `python --version` Check python version
 
 Delete existing environment: <br>
     💻 `conda deactivate` <br>
-    💻 `conda remove --name py310 --all`
+    💻 `conda remove --name oemetadata --all`
 
 ## Requirements
 
