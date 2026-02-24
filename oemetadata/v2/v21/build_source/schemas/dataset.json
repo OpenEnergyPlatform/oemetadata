@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/v2/v20/build_source/schemas/collection.json",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "Explanation of metadata keys in ontology terms.",
+      "examples": [
+        "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/latest/context.json"
+      ],
+      "type": [
+        "string",
+        "null"
+      ],
+      "badge": "Platinum",
+      "title": "@context",
+      "readOnly": true
+    },
+    "name": {
+      "description": "A filename or database conform dataset name.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "examples": [
+        "oep_oemetadata"
+      ],
+      "badge": "Iron",
+      "title": "Dataset Name"
+    },
+    "title": {
+      "description": "A human readable dataset name.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "examples": [
+        "OEP OEMetadata"
+      ],
+      "badge": "Bronze",
+      "title": "Dataset Title"
+    },
+    "description": {
+      "description": "A free text description of the dataset.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "examples": [
+        "A dataset for the OEMetadata examples."
+      ],
+      "badge": "Bronze",
+      "title": "Dataset Description"
+    },
+    "@id": {
+      "description": "A unique identifier (UUID/DOI) for the collection.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "examples": [
+        "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/"
+      ],
+      "badge": "Platinum",
+      "title": "Dataset Identifier",
+      "format": "uri",
+      "readOnly": true
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

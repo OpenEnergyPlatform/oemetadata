@@ -1,0 +1,167 @@
+[
+  {
+    "name": "id",
+    "description": "Unique identifier",
+    "type": "serial",
+    "nullable": false,
+    "unit": null,
+    "isAbout": [
+      {
+        "name": "identifier",
+        "@id": "http://purl.obolibrary.org/obo/IAO_0020000"
+      }
+    ],
+    "valueReference": [
+      {
+        "value": null,
+        "name": null,
+        "@id": null
+      }
+    ]
+  },
+  {
+    "name": "name",
+    "description": "Technology Name",
+    "type": "text",
+    "nullable": true,
+    "unit": null,
+    "isAbout": [
+      {
+        "name": "power generation technology",
+        "@id": "http://openenergy-platform.org/ontology/oeo/OEO_00010423"
+      }
+    ],
+    "valueReference": [
+      {
+        "value": "wind",
+        "name": "wind power technology",
+        "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00010424"
+      }
+    ]
+  },
+  {
+    "name": "type",
+    "description": "Type of wind farm",
+    "type": "text",
+    "nullable": true,
+    "unit": null,
+    "isAbout": [
+      {
+        "name": "wind farm",
+        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000447/"
+      }
+    ],
+    "valueReference": [
+      {
+        "value": "onshore",
+        "name": "onshore wind farm",
+        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000311/"
+      },
+      {
+        "value": "offshore",
+        "name": "offshore wind farm",
+        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000308/"
+      }
+    ]
+  },
+  {
+    "name": "year",
+    "description": "Reference year",
+    "type": "integer",
+    "nullable": true,
+    "unit": null,
+    "isAbout": [
+      {
+        "name": "year",
+        "@id": "https://openenergyplatform.org/ontology/oeo/UO_0000036/"
+      }
+    ],
+    "valueReference": [
+      {
+        "value": null,
+        "name": null,
+        "@id": null
+      }
+    ]
+  },
+  {
+    "name": "value",
+    "description": "Bruttoleistung",
+    "type": "decimal",
+    "nullable": true,
+    "unit": "MW",
+    "isAbout": [
+      {
+        "name": "nameplate capacity",
+        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00230003/"
+      }
+    ],
+    "valueReference": [
+      {
+        "value": null,
+        "name": null,
+        "@id": null
+      }
+    ]
+  },
+  {
+    "name": "is_active",
+    "description": "Betriebsstatus",
+    "type": "boolean",
+    "nullable": false,
+    "unit": null,
+    "isAbout": [
+      {
+        "name": "Operating Mode Status",
+        "@id": "https://ontology.brickschema.org/brick/Operating_Mode_Status"
+      }
+    ],
+    "valueReference": [
+      {
+        "value": null,
+        "name": null,
+        "@id": null
+      }
+    ]
+  },
+  {
+    "name": "version",
+    "description": "Version",
+    "type": "integer",
+    "nullable": true,
+    "unit": null,
+    "isAbout": [
+      {
+        "name": "version number",
+        "@id": "http://purl.obolibrary.org/obo/IAO_0000129"
+      }
+    ],
+    "valueReference": [
+      {
+        "value": null,
+        "name": null,
+        "@id": null
+      }
+    ]
+  },
+  {
+    "name": "comment",
+    "description": "",
+    "type": "text",
+    "nullable": true,
+    "unit": null,
+    "isAbout": [
+      {
+        "name": "comment",
+        "@id": "http://semanticscience.org/resource/SIO_001167"
+      }
+    ],
+    "valueReference": [
+      {
+        "value": null,
+        "name": null,
+        "@id": null
+      }
+    ]
+  }
+]
