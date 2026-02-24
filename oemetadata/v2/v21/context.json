@@ -1,0 +1,324 @@
+{
+  "@context": {
+    "adms": "http://www.w3.org/ns/adms#",
+    "cco": "https://terminology.tib.eu/ts/ontologies/cco",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dbo": "http://dbpedia.org/ontology/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "ncit": "http://purl.obolibrary.org/obo/ncit.owl",
+    "oeo": "https://openenergyplatform.org/ontology/oeo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "name": {
+      "@id": "rdfs:label",
+      "@type": "xsd:string"
+    },
+    "title": {
+      "@id": "dct:title",
+      "@type": "xsd:string"
+    },
+    "description": {
+      "@id": "dct:description",
+      "@type": "xsd:string"
+    },
+    "id": {
+      "@id": "dct:identifier",
+      "@type": "xsd:anyURI"
+    },
+    "resources": {
+      "@container": "@set",
+      "@id": "dcat:Dataset"
+    },
+    "topics": {
+      "@container": "@set",
+      "@id": "foaf:topic",
+      "@type": "xsd:string"
+    },
+    "path": {
+      "@id": "dcat:accessURL",
+      "@type": "@id"
+    },
+    "languages": {
+      "@id": "dct:language",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "subject": {
+      "@container": "@set",
+      "@id": "dct:subject"
+    },
+    "keywords": {
+      "@id": "dcat:keyword",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "publicationDate": {
+      "@id": "dct:issued",
+      "@type": "xsd:date"
+    },
+    "embargoPeriod": "@nest",
+    "start": {
+      "@id": "dbo:startDateTime",
+      "@type": "xsd:dateTime"
+    },
+    "end": {
+      "@id": "dbo:endDateTime",
+      "@type": "xsd:dateTime"
+    },
+    "isActive": {
+      "@id": "adms:status",
+      "@type": "xsd:boolean"
+    },
+    "context": "@nest",
+    "homepage": {
+      "@id": "foaf:homepage",
+      "@type": "xsd:anyURI"
+    },
+    "documentation": {
+      "@id": "ncit:NCIT_C165054",
+      "@type": "xsd:anyURI"
+    },
+    "sourceCode": {
+      "@id": "oeo:OEO_00000091",
+      "@type": "xsd:anyURI"
+    },
+    "publisher": {
+      "@id": "dct:publisher",
+      "@type": "foaf:Agent"
+    },
+    "publisherLogo": {
+      "@id": "foaf:logo",
+      "@type": "xsd:anyURI"
+    },
+    "contact": {
+      "@id": "oeo:OEO_00000107",
+      "@type": "xsd:string"
+    },
+    "fundingAgency": {
+      "@id": "sc:FundingAgency",
+      "@type": "xsd:string"
+    },
+    "fundingAgencyLogo": {
+      "@id": "foaf:logo",
+      "@type": "xsd:anyURI"
+    },
+    "grantNo": {
+      "@id": "sc:Grant",
+      "@type": "xsd:string"
+    },
+    "spatial": {
+      "@id": "dct:spatial",
+      "@context": {
+        "location": {
+          "@id": "dct:location"
+        },
+        "address": {
+          "@id": "sc:address",
+          "@type": "xsd:string"
+        },
+        "latitude": {
+          "@id": "sc:latitude",
+          "@type": "xsd:decimal"
+        },
+        "longitude": {
+          "@id": "sc:longitude",
+          "@type": "xsd:decimal"
+        },
+        "extent": {
+          "@id": "oeo:BFO_0000006"
+        },
+        "resolutionValue": "dcat:spatialResolutionInMeters",
+        "resolutionUnit": {
+          "@id": "oeo:unit",
+          "@type": "xsd:string"
+        },
+        "boundingBox": {
+          "@id": "dcat:bbox",
+          "@container": "@list",
+          "@type": "xsd:decimal"
+        },
+        "crs": {
+          "@id": "cco:ont00000469",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "temporal": {
+      "@id": "dct:temporal",
+      "@context": {
+        "referenceDate": {
+          "@id": "dct:date",
+          "@type": "xsd:date"
+        },
+        "timeseries": {
+          "@id": "dct:PeriodOfTime",
+          "@container": "@set"
+        },
+        "resolutionValue": {
+          "@id": "dcat:temporalResolution",
+          "@type": "xsd:decimal"
+        },
+        "resolutionUnit": {
+          "@id": "oeo:unit",
+          "@type": "xsd:string"
+        },
+        "alignment": {
+          "@id": "oeo:OEO_00140044",
+          "@type": "xsd:string"
+        },
+        "aggregationType": {
+          "@id": "oeo:OEO_00140068",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "sources": {
+      "@id": "dct:source",
+      "@container": "@set"
+    },
+    "authors": {
+      "@id": "oeo:OEO_00000064",
+      "@type": "xsd:string"
+    },
+    "publicationYear": {
+      "@id": "dct:issued",
+      "@type": "xsd:date"
+    },
+    "sourcePath": {
+      "@id": "dcat:accessURL",
+      "@type": "xsd:string"
+    },
+    "sourceLicenses": {
+      "@id": "dct:license",
+      "@container": "@set"
+    },
+    "instruction": {
+      "@id": "rdfs:comment",
+      "@type": "xsd:string"
+    },
+    "attribution": {
+      "@id": "spdx:attributionText",
+      "@type": "xsd:string"
+    },
+    "copyrightStatement": {
+      "@id": "dct:rights",
+      "@type": "xsd:string"
+    },
+    "licenses": {
+      "@id": "dct:license",
+      "@container": "@set"
+    },
+    "contributors": {
+      "@id": "foaf:Agent",
+      "@container": "@set"
+    },
+    "organization": {
+      "@id": "oeo:OEO_00030022",
+      "@type": "xsd:string"
+    },
+    "roles": {
+      "@id": "oeo:BFO_0000023",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "date": {
+      "@id": "dct:issued",
+      "@type": "xsd:date"
+    },
+    "object": {
+      "@id": "dct:type",
+      "@type": "xsd:string"
+    },
+    "comment": {
+      "@id": "rdfs:comment",
+      "@type": "xsd:string"
+    },
+    "type": {
+      "@id": "csvw:datatype",
+      "@type": "xsd:string"
+    },
+    "format": {
+      "@id": "dct:format",
+      "@type": "xsd:string"
+    },
+    "encoding": {
+      "@id": "csvw:encoding",
+      "@type": "xsd:string"
+    },
+    "schema": "@nest",
+    "nestedFields": {
+      "@id": "csvw:column",
+      "@container": "@set"
+    },
+    "schemaFields": {
+      "@id": "csvw:column"
+    },
+    "nullable": {
+      "@id": "ncit:NCIT_C47840",
+      "@type": "xsd:boolean"
+    },
+    "unit": {
+      "@id": "oeo:OEO_00040010",
+      "@type": "xsd:string"
+    },
+    "isAbout": {
+      "@id": "sc:about",
+      "@container": "@set"
+    },
+    "valueReference": {
+      "@id": "prov:value",
+      "@container": "@set"
+    },
+    "value": {
+      "@id": "rdf:value",
+      "@type": "xsd:string"
+    },
+    "primaryKey": {
+      "@id": "csvw:primaryKey",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "foreignKeys": {
+      "@id": "csvw:foreignKey",
+      "@container": "@set"
+    },
+    "reference": "@nest",
+    "resource": {
+      "@id": "dcat:Distribution",
+      "@type": "xsd:string"
+    },
+    "fields": {
+      "@id": "csvw:column",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "dialect": "@nest",
+    "delimiter": {
+      "@id": "csvw:delimiter",
+      "@type": "xsd:string"
+    },
+    "decimalSeparator": {
+      "@id": "csvw:decimalChar",
+      "@type": "xsd:string"
+    },
+    "review": "@nest",
+    "badge": {
+      "@id": "oeo:OEO_00140098",
+      "@type": "xsd:string"
+    },
+    "metaMetadata": "@nest",
+    "metadataVersion": {
+      "@id": "owl:versionInfo",
+      "@type": "xsd:string"
+    },
+    "metadataLicense": "@nest"
+  }
+}

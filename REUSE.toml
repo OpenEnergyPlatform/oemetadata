@@ -111,6 +111,22 @@ SPDX-FileCopyrightText = ["2024 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
 SPDX-License-Identifier = "MIT"
 
 [[annotations]]
+path = "oemetadata/v2/v21/*.json"
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut",
+    "2026 Jonas Huber <@jh-RLI> © Reiner Lemoine Institut",
+    "oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>"]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "oemetadata/v2/v21/build_source/schemas/*.json"
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut",
+    "2026 Jonas Huber <@jh-RLI> © Reiner Lemoine Institut",
+    "oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>"]
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
 path = "oemetadata/latest/*.json"
 precedence = "override"
 SPDX-FileCopyrightText = ["2024 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut",
