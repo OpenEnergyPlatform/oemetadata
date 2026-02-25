@@ -66,6 +66,25 @@
       "badge": "Bronze",
       "title": "Dataset Description"
     },
+    "languages": {
+      "description": "An array of languages used within the described data structures (e.g. titles, descriptions) or metadata.",
+      "type": "array",
+      "items": {
+        "description": "The language keys must follow the Standard IETF (BCP47) and can be repeated if more languages are used.",
+        "type": [
+          "string",
+          "null"
+        ],
+        "examples": [
+          "en-GB",
+          "de-DE"
+        ],
+        "badge": "Gold",
+        "title": "Language"
+      },
+      "badge": "Gold",
+      "title": "Languages"
+    },
     "version": {
       "description": "A version string identifying the version of the package.",
       "type": [
