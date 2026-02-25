@@ -230,7 +230,7 @@
       "@type": "xsd:string"
     },
     "date": {
-      "@id": "dct:issued",
+      "@id": "dct:modified",
       "@type": "xsd:date"
     },
     "object": {
