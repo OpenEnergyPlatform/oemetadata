@@ -77,6 +77,18 @@
       ],
       "badge": "Silver",
       "title": "Dataset Version"
+    },
+    "image": {
+      "description": "An image to use for this data package",
+      "type": [
+        "string",
+        "null"
+      ],
+      "examples": [
+        "https://openenergyplatform.org/static/img/about/OpenEnergyFamily_GroupPhoto2.png"
+      ],
+      "badge": "Gold",
+      "title": "Image"
     }
   },
   "required": [
