@@ -16,6 +16,20 @@
       "title": "@context",
       "readOnly": true
     },
+    "@id": {
+      "description": "A unique identifier (UUID/DOI) for the collection.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "examples": [
+        "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/"
+      ],
+      "badge": "Platinum",
+      "title": "Dataset Identifier",
+      "format": "uri",
+      "readOnly": true
+    },
     "name": {
       "description": "A filename or database conform dataset name.",
       "type": [
@@ -52,19 +66,17 @@
       "badge": "Bronze",
       "title": "Dataset Description"
     },
-    "@id": {
-      "description": "A unique identifier (UUID/DOI) for the collection.",
+    "version": {
+      "description": "A version string identifying the version of the package.",
       "type": [
         "string",
         "null"
       ],
       "examples": [
-        "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/"
+        "0.1.0"
       ],
-      "badge": "Platinum",
-      "title": "Dataset Identifier",
-      "format": "uri",
-      "readOnly": true
+      "badge": "Silver",
+      "title": "Dataset Version"
     }
   },
   "required": [
