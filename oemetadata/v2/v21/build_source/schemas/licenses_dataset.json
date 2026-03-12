@@ -1,9 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/v2/v20/build_source/schemas/licenses.json",
+  "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/v2/v21/build_source/schemas/licenses.json",
   "type": "object",
   "properties": {
-    "licenses": {
+    "datasetLicenses": {
       "description": "An array of objects of licenses under which the described data is provided.",
       "type": "array",
       "items": {

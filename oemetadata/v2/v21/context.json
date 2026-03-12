@@ -5,8 +5,8 @@
     "csvw": "http://www.w3.org/ns/csvw#",
     "dbo": "http://dbpedia.org/ontology/",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "dcat": "http://www.w3.org/ns/dcat#",
-    "dct": "http://purl.org/dc/terms/",
+    "dcat": "https://www.w3.org/ns/dcat#",
+    "dct": "https://purl.org/dc/terms/",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "ncit": "http://purl.obolibrary.org/obo/ncit.owl",
     "oeo": "https://openenergyplatform.org/ontology/oeo/",
@@ -33,6 +33,28 @@
       "@id": "dct:identifier",
       "@type": "xsd:anyURI"
     },
+    "languages": {
+      "@id": "dct:language",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "version": {
+      "@id": "dcat:version",
+      "@type": "xsd:string"
+    },
+    "image": {
+      "@id": "sc:image",
+      "@type": "xsd:anyURI"
+    },
+    "subject": {
+      "@container": "@set",
+      "@id": "dct:subject"
+    },
+    "keywords": {
+      "@id": "dcat:keyword",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
     "resources": {
       "@container": "@set",
       "@id": "dcat:Dataset"
@@ -45,20 +67,6 @@
     "path": {
       "@id": "dcat:accessURL",
       "@type": "@id"
-    },
-    "languages": {
-      "@id": "dct:language",
-      "@container": "@set",
-      "@type": "xsd:string"
-    },
-    "subject": {
-      "@container": "@set",
-      "@id": "dct:subject"
-    },
-    "keywords": {
-      "@id": "dcat:keyword",
-      "@container": "@set",
-      "@type": "xsd:string"
     },
     "publicationDate": {
       "@id": "dct:issued",

@@ -11,7 +11,7 @@ Description: Resolve "$ref" elements in schema.json
 Author: jh-RLI, Ludee
 Email: jonas.huber@rl-institut.de
 Date: 2024-05-30
-Version: 1.0.0
+Version: 1.1.0
 
 requires: "pip install jsonschema referencing"
 
