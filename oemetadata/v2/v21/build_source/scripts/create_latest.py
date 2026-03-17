@@ -40,6 +40,7 @@ def copy_current_version(source_files):
         shutil.copy(VERSION_PATH / "example.json", LATEST_PATH)
         shutil.copy(VERSION_PATH / "example.py", LATEST_PATH)
         shutil.copy(VERSION_PATH / "metadata_key_description.md", LATEST_PATH)
+        shutil.copy(VERSION_PATH / "metadata_key_details.md", LATEST_PATH)
         shutil.copy(VERSION_PATH / "README.md", LATEST_PATH)
         shutil.copy(VERSION_PATH / "schema.json", LATEST_PATH)
         shutil.copy(VERSION_PATH / "schema.py", LATEST_PATH)
@@ -70,6 +71,7 @@ if __name__ == "__main__":
         "example.json",
         "example.py",
         "metadata_key_description.md",
+        "metadata_key_details.md",
         "README.md",
         "schema.json",
         "schema.py",
