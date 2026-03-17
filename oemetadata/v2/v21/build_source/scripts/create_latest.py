@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-# SPDX-FileCopyrightText: 2025 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
-# SPDX-FileCopyrightText: 2025 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: 2026 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: 2026 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
 # SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
 # SPDX-License-Identifier: MIT
 
@@ -78,6 +78,6 @@ if __name__ == "__main__":
         "__init__.py",
     }
     copy_current_version(files)
-    replace_in_files("v2/v20", "latest")
-    replace_in_files("V20", "LATEST")
+    replace_in_files("v2/v21", "latest")
+    replace_in_files("V21", "LATEST")
     logger.info("OEMetadata latest version created!")
