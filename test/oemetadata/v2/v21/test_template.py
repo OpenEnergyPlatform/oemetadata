@@ -22,3 +22,12 @@ def test_oemetadata_schema_should_validate_oemetadata_template():
         print("OEMetadata Template is valid OEMetadata Schema (v2.1).")
     except ValidationError as e:
         print("Cannot validate OEMetadata Template with Schema (v2.1)!", e)
+
+
+def test_oemetadata_template_is_datapackage():
+    from frictionless import validate
+
+    from oemetadata.v2.v21.template import OEMETADATA_V21_TEMPLATE
+
+    report = validate(OEMETADATA_V21_TEMPLATE)
+    assert report.valid, report.flatten(["message"])
