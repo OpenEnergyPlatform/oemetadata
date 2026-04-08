@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Ludwig Hülk",
+    "path": "https://github.com/Ludee",
+    "organization": "Reiner Lemoine Institut",
+    "roles": [
+      "DataCollector"
+    ],
+    "date": "2024-11-19",
+    "object": "data",
+    "comment": "Date of data creation"
+  },
+  {
+    "title": "Ludwig Hülk",
+    "path": "https://github.com/Ludee",
+    "organization": "Reiner Lemoine Institut",
+    "roles": [
+      "DataCurator"
+    ],
+    "date": "2024-11-30",
+    "object": "metadata",
+    "comment": "Date of metadata creation"
+  }
+]
