@@ -18,6 +18,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Add badges for Zenodo publication, FAIRsharing DOI and RDA MSC [(#273)](https://github.com/OpenEnergyPlatform/oemetadata/pull/273)
+- Add `mappingRelation` to `isAbout` [(#307)](https://github.com/OpenEnergyPlatform/oemetadata/pull/307)
+- Add `mappingRelation` to `valueReference` [(#307)](https://github.com/OpenEnergyPlatform/oemetadata/pull/307)
 
 ### Changed
 - Update TLDR URL in example sourceLicenses [(#275)](https://github.com/OpenEnergyPlatform/oemetadata/pull/275)
