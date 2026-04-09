@@ -1033,7 +1033,10 @@
                   ],
                   "badge": "Bronze",
                   "title": "Comment"
-                }
+                },
+                "required": [
+                  "title"
+                ]
               },
               "badge": "Bronze",
               "title": "Contributor"
