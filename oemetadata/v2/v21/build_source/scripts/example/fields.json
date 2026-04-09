@@ -2,7 +2,7 @@
   {
     "name": "id",
     "description": "Unique identifier",
-    "type": "serial",
+    "type": "integer",
     "nullable": false,
     "unit": null,
     "isAbout": [
