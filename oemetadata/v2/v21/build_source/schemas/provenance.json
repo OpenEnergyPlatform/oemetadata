@@ -100,19 +100,14 @@
             ],
             "badge": "Bronze",
             "title": "Comment"
-          },
-          "required": [
-            "title"
-          ]
+          }
         },
+        "required": [
+          "title"
+        ],
         "badge": "Bronze",
         "title": "Contributor"
-      },
-      "badge": "Bronze",
-      "title": "Contributors"
+      }
     }
-  },
-  "required": [
-    "contributors"
-  ]
+  }
 }
