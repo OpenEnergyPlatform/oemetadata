@@ -2,7 +2,7 @@
   "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/latest/context.json",
   "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/",
   "name": "oep_oemetadata",
-  "title": "OEP OEMetadata",
+  "title": "OEP OEMetadata Dataset",
   "description": "A dataset for the OEMetadata examples.",
   "topics": [
     "model_draft"
@@ -37,6 +37,17 @@
     "grantNo": "501865131"
   },
   "contributors": [
+    {
+      "title": "Ludwig Hülk",
+      "path": "https://github.com/Ludee",
+      "organization": "Reiner Lemoine Institut",
+      "roles": [
+        "Creator"
+      ],
+      "date": "2026-04-09",
+      "object": "dataset",
+      "comment": "Date of dataset creation"
+    },
     {
       "title": "Ludwig Hülk",
       "path": "https://github.com/Ludee",

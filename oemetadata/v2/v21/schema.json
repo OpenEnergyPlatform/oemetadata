@@ -53,7 +53,7 @@
         "null"
       ],
       "examples": [
-        "OEP OEMetadata"
+        "OEP OEMetadata Dataset"
       ],
       "badge": "Bronze",
       "title": "Dataset Title"
@@ -402,7 +402,7 @@
               "null"
             ],
             "examples": [
-              "data and metadata"
+              "dataset, data, metadata"
             ],
             "badge": "Bronze",
             "title": "Object"
