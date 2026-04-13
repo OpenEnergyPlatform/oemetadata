@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Start new version 2.1. [(#)](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
 - Add badges for Zenodo publication, FAIRsharing DOI and RDA MSC [(#273)](https://github.com/OpenEnergyPlatform/oemetadata/pull/273)
 
 ### Changed
