@@ -1,22 +1,73 @@
 {
   "@context": "",
+  "@id": "",
   "name": "",
   "title": "",
   "description": "",
-  "@id": "",
+  "topics": [
+    ""
+  ],
+  "languages": [
+    ""
+  ],
+  "version": "",
+  "image": "",
+  "subject": [
+    {
+      "name": "",
+      "@id": ""
+    }
+  ],
+  "keywords": [
+    ""
+  ],
+  "projectContext": {
+    "title": "",
+    "homepage": "",
+    "documentation": "",
+    "sourceCode": "",
+    "publisher": "",
+    "publisherLogo": "",
+    "contact": "",
+    "fundingAgency": "",
+    "fundingAgencyLogo": "",
+    "grantNo": ""
+  },
+  "contributors": [
+    {
+      "title": "",
+      "path": "",
+      "organization": "",
+      "roles": [
+        ""
+      ],
+      "date": "",
+      "object": "",
+      "comment": ""
+    }
+  ],
+  "datasetLicenses": [
+    {
+      "name": "",
+      "title": "",
+      "path": "",
+      "instruction": "",
+      "attribution": "",
+      "copyrightStatement": ""
+    }
+  ],
+  "review": {
+    "path": "",
+    "badge": ""
+  },
   "resources": [
     {
       "@id": "",
-      "name": "",
-      "topics": [
-        ""
-      ],
-      "title": "",
       "path": "",
+      "name": "",
+      "title": "",
       "description": "",
-      "languages": [
-        ""
-      ],
+      "publicationDate": "",
       "subject": [
         {
           "name": "",
@@ -26,23 +77,10 @@
       "keywords": [
         ""
       ],
-      "publicationDate": "",
       "embargoPeriod": {
         "start": "",
         "end": "",
         "isActive": false
-      },
-      "context": {
-        "title": "",
-        "homepage": "",
-        "documentation": "",
-        "sourceCode": "",
-        "publisher": "",
-        "publisherLogo": "",
-        "contact": "",
-        "fundingAgency": "",
-        "fundingAgencyLogo": "",
-        "grantNo": ""
       },
       "spatial": {
         "location": {
@@ -99,7 +137,7 @@
           ]
         }
       ],
-      "licenses": [
+      "resourceLicenses": [
         {
           "name": "",
           "title": "",
@@ -107,19 +145,6 @@
           "instruction": "",
           "attribution": "",
           "copyrightStatement": ""
-        }
-      ],
-      "contributors": [
-        {
-          "title": "",
-          "path": "",
-          "organization": "",
-          "roles": [
-            ""
-          ],
-          "date": "",
-          "object": "",
-          "comment": ""
         }
       ],
       "type": "",
@@ -176,7 +201,7 @@
     }
   ],
   "metaMetadata": {
-    "metadataVersion": "OEMetadata-2.0.4",
+    "metadataVersion": "OEMetadata-2.1.0",
     "metadataLicense": {
       "name": "CC0-1.0",
       "title": "Creative Commons Zero v1.0 Universal",

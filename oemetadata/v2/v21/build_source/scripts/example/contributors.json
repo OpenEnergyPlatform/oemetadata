@@ -4,6 +4,17 @@
     "path": "https://github.com/Ludee",
     "organization": "Reiner Lemoine Institut",
     "roles": [
+      "Creator"
+    ],
+    "date": "2026-04-09",
+    "object": "dataset",
+    "comment": "Date of dataset creation"
+  },
+  {
+    "title": "Ludwig Hülk",
+    "path": "https://github.com/Ludee",
+    "organization": "Reiner Lemoine Institut",
+    "roles": [
       "DataCollector"
     ],
     "date": "2024-11-19",

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-# SPDX-FileCopyrightText: 2025 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
-# SPDX-FileCopyrightText: 2025 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: 2026 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: 2026 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
 # SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
 # SPDX-License-Identifier: MIT
 
@@ -40,6 +40,7 @@ def copy_current_version(source_files):
         shutil.copy(VERSION_PATH / "example.json", LATEST_PATH)
         shutil.copy(VERSION_PATH / "example.py", LATEST_PATH)
         shutil.copy(VERSION_PATH / "metadata_key_description.md", LATEST_PATH)
+        shutil.copy(VERSION_PATH / "metadata_key_details.md", LATEST_PATH)
         shutil.copy(VERSION_PATH / "README.md", LATEST_PATH)
         shutil.copy(VERSION_PATH / "schema.json", LATEST_PATH)
         shutil.copy(VERSION_PATH / "schema.py", LATEST_PATH)
@@ -70,6 +71,7 @@ if __name__ == "__main__":
         "example.json",
         "example.py",
         "metadata_key_description.md",
+        "metadata_key_details.md",
         "README.md",
         "schema.json",
         "schema.py",
@@ -78,6 +80,6 @@ if __name__ == "__main__":
         "__init__.py",
     }
     copy_current_version(files)
-    replace_in_files("v2/v20", "latest")
-    replace_in_files("V20", "LATEST")
+    replace_in_files("v2/v21", "latest")
+    replace_in_files("V21", "LATEST")
     logger.info("OEMetadata latest version created!")

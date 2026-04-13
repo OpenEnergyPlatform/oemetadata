@@ -84,7 +84,7 @@
               "null"
             ],
             "examples": [
-              "data and metadata"
+              "dataset, data, metadata"
             ],
             "badge": "Bronze",
             "title": "Object"
@@ -108,5 +108,8 @@
       "badge": "Bronze",
       "title": "Contributors"
     }
-  }
+  },
+  "required": [
+    "contributors"
+  ]
 }

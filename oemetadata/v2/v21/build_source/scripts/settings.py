@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 2024 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
-# SPDX-FileCopyrightText: 2024 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: 2026 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: 2026 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
 # SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
 # SPDX-License-Identifier: MIT
 
@@ -9,7 +9,7 @@ from pathlib import Path
 LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 
 BASE_PATH = Path("oemetadata/v2/")
-VERSION = "v20"
+VERSION = "v21"
 VERSION_PATH = BASE_PATH / VERSION
 SCHEMA_BUILD_PATH = VERSION_PATH / "build_source"
 MAIN_SCHEMA_PATH = SCHEMA_BUILD_PATH / "schema_structure.json"
