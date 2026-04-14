@@ -151,6 +151,18 @@
                       "badge": "Platinum",
                       "title": "Is About Identifier",
                       "format": "uri"
+                    },
+                    "mappingRelation": {
+                      "description": "Using SKOS mapping properties to state mapping (alignment).",
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "examples": [
+                        "skos:closeMatch"
+                      ],
+                      "badge": "Platinum",
+                      "title": "Is About SKOS Mapping Relation"
                     }
                   },
                   "badge": "Platinum",
@@ -201,6 +213,18 @@
                       "badge": "Platinum",
                       "title": "Value Reference Identifier",
                       "format": "uri"
+                    },
+                    "mappingRelation": {
+                      "description": "Using SKOS mapping properties to state mapping (alignment).",
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "examples": [
+                        "skos:exactMatch"
+                      ],
+                      "badge": "Platinum",
+                      "title": "Value Reference SKOS Mapping Relation"
                     }
                   },
                   "badge": "Platinum",
