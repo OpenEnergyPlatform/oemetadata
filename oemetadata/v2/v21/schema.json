@@ -20,6 +20,20 @@
       "title": "@context",
       "readOnly": true
     },
+    "@id": {
+      "description": "A unique identifier (UUID/DOI) for the collection.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "examples": [
+        "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/"
+      ],
+      "badge": "Platinum",
+      "title": "Dataset Identifier",
+      "format": "uri",
+      "readOnly": true
+    },
     "name": {
       "description": "A filename or database conform dataset name.",
       "type": [
@@ -39,7 +53,7 @@
         "null"
       ],
       "examples": [
-        "OEP OEMetadata"
+        "OEP OEMetadata Dataset"
       ],
       "badge": "Bronze",
       "title": "Dataset Title"
@@ -56,19 +70,482 @@
       "badge": "Bronze",
       "title": "Dataset Description"
     },
-    "@id": {
-      "description": "A unique identifier (UUID/DOI) for the collection.",
+    "topics": {
+      "description": "An array of predefined topics that correspond to the database schemas of the OEP.",
+      "type": "array",
+      "items": {
+        "description": "The topics are used to group the data in the database.",
+        "type": [
+          "string",
+          "null"
+        ],
+        "examples": [
+          "model_draft"
+        ],
+        "badge": "Bronze",
+        "title": "Topic"
+      },
+      "badge": "Bronze",
+      "title": "Topics"
+    },
+    "languages": {
+      "description": "An array of languages used within the described data structures (e.g. titles, descriptions) or metadata.",
+      "type": "array",
+      "items": {
+        "description": "The language keys must follow the Standard IETF (BCP47) and can be repeated if more languages are used.",
+        "type": [
+          "string",
+          "null"
+        ],
+        "examples": [
+          "en-GB",
+          "de-DE"
+        ],
+        "badge": "Gold",
+        "title": "Language"
+      },
+      "badge": "Gold",
+      "title": "Languages"
+    },
+    "version": {
+      "description": "A version string identifying the version of the package.",
       "type": [
         "string",
         "null"
       ],
       "examples": [
-        "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/"
+        "0.1.0"
       ],
+      "badge": "Silver",
+      "title": "Dataset Version"
+    },
+    "image": {
+      "description": "An image to use for this data package",
+      "type": [
+        "string",
+        "null"
+      ],
+      "examples": [
+        "https://openenergyplatform.org/static/img/about/OpenEnergyFamily_GroupPhoto2.png"
+      ],
+      "badge": "Gold",
+      "title": "Image"
+    },
+    "subject": {
+      "description": "An array of objects that references to the subjects of the resource in ontology terms.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "A class label of the ontology term.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "energy"
+            ],
+            "badge": "Platinum",
+            "title": "Subject Name"
+          },
+          "@id": {
+            "description": "A unique identifier (URI/IRI) of the ontology class.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "https://openenergyplatform.org/ontology/oeo/OEO_00000150"
+            ],
+            "badge": "Platinum",
+            "title": "Subject Identifier",
+            "format": "uri"
+          }
+        },
+        "badge": "Platinum",
+        "title": "Subject"
+      },
       "badge": "Platinum",
-      "title": "Dataset Identifier",
-      "format": "uri",
-      "readOnly": true
+      "title": "Subject"
+    },
+    "keywords": {
+      "description": "An array of freely selectable keywords that help with searching and structuring.",
+      "type": "array",
+      "items": {
+        "description": "The keyword are used and managed in the OEP as table tags.",
+        "type": [
+          "string",
+          "null"
+        ],
+        "examples": [
+          "example",
+          "ODbL-1.0",
+          "NFDI4Energy"
+        ],
+        "badge": "Silver",
+        "title": "Keyword"
+      },
+      "badge": "Silver",
+      "title": "Keywords"
+    },
+    "projectContext": {
+      "description": "An Object that describes the general setting, environment or project leading to the creation or maintenance of this dataset. In science this can be the research project.",
+      "type": "object",
+      "properties": {
+        "title": {
+          "description": "A title of the associated project.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "examples": [
+            "NFDI4Energy"
+          ],
+          "badge": "Gold",
+          "title": "Context Title"
+        },
+        "homepage": {
+          "description": "A URL of the project.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "examples": [
+            "https://nfdi4energy.uol.de/"
+          ],
+          "badge": "Gold",
+          "title": "Homepage",
+          "format": "uri"
+        },
+        "documentation": {
+          "description": "A URL of the project documentation.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "examples": [
+            "https://nfdi4energy.uol.de/sites/about_us/"
+          ],
+          "badge": "Gold",
+          "title": "Documentation"
+        },
+        "sourceCode": {
+          "description": "A URL of the source code of the project.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "examples": [
+            "https://github.com/NFDI4Energy"
+          ],
+          "badge": "Gold",
+          "title": "Source Code"
+        },
+        "publisher": {
+          "description": "The publishing agency of the data. This can be the OEP.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "examples": [
+            "Open Energy Platform (OEP)"
+          ],
+          "badge": "Bronze",
+          "title": "Publisher"
+        },
+        "publisherLogo": {
+          "description": "A URL to the logo of the publishing agency of data.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "examples": [
+            "https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg"
+          ],
+          "badge": "Gold",
+          "title": "Publisher Logo",
+          "format": "uri"
+        },
+        "contact": {
+          "description": "A reference to the creator or maintainer of the data set. This can be an email address or a GitHub handle.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "examples": [
+            "contact@example.com"
+          ],
+          "badge": "Gold",
+          "title": "E-Mail Contact",
+          "format": "email"
+        },
+        "fundingAgency": {
+          "description": "A name of the entity providing the funding. This can be a government agency or a company.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "examples": [
+            " Deutsche Forschungsgemeinschaft (DFG)"
+          ],
+          "badge": "Gold",
+          "title": "Funding Agency"
+        },
+        "fundingAgencyLogo": {
+          "description": "A URL to the logo or image of the funding agency.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "examples": [
+            "https://upload.wikimedia.org/wikipedia/commons/8/86/DFG-logo-blau.svg"
+          ],
+          "badge": "Gold",
+          "title": "Funding Agency Logo",
+          "format": "uri"
+        },
+        "grantNo": {
+          "description": "An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "examples": [
+            "501865131"
+          ],
+          "badge": "Gold",
+          "title": "Grant Number"
+        }
+      },
+      "badge": "Gold",
+      "title": "Context"
+    },
+    "contributors": {
+      "description": "An array of objects of contributors and contributions to the data or metadata.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "description": "A full name of the contributor.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "Ludwig Hülk"
+            ],
+            "badge": "Bronze",
+            "title": "Contributor Title"
+          },
+          "path": {
+            "description": "A qualified link or path pointing to a relevant location online for the contributor. This can be the GitHub page or ORCID.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "https://github.com/Ludee"
+            ],
+            "badge": "Bronze",
+            "title": "Path"
+          },
+          "organization": {
+            "description": "A string describing the organization this contributor is affiliated to. This can be relevant for the copyright.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "Reiner Lemoine Institut"
+            ],
+            "badge": "Bronze",
+            "title": "Organization"
+          },
+          "roles": {
+            "description": "An array describing the roles of the contributor.",
+            "type": "array",
+            "items": {
+              "description": "A role is recommended to follow an established vocabulary: DataCite Metadata Schema’s contributorRole. Useful roles to indicate are: DataCollector, ContactPerson, and DataCurator.",
+              "type": [
+                "string",
+                "null"
+              ],
+              "examples": [
+                "DataCollector",
+                "DataCurator"
+              ],
+              "badge": "Bronze",
+              "title": "Role"
+            },
+            "badge": "Bronze",
+            "title": "Roles"
+          },
+          "date": {
+            "description": "The date of the contribution. Date Format is ISO 8601.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "2024-10-21"
+            ],
+            "badge": "Bronze",
+            "title": "Date",
+            "format": "date"
+          },
+          "object": {
+            "description": "The object of the contribution. Which part of the package was supplied or changed.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "dataset, data, metadata"
+            ],
+            "badge": "Bronze",
+            "title": "Object"
+          },
+          "comment": {
+            "description": "A free-text commentary on what has been done.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "Add metadata example."
+            ],
+            "badge": "Bronze",
+            "title": "Comment"
+          }
+        },
+        "badge": "Bronze",
+        "title": "Contributor"
+      },
+      "badge": "Bronze",
+      "title": "Contributors"
+    },
+    "datasetLicenses": {
+      "description": "An array of objects of licenses under which the described data is provided.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "The SPDX identifier.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "ODbL-1.0"
+            ],
+            "badge": "Bronze",
+            "title": "Name"
+          },
+          "title": {
+            "description": "The official (human readable) title of the license.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "Open Data Commons Open Database License 1.0"
+            ],
+            "badge": "Bronze",
+            "title": "Title"
+          },
+          "path": {
+            "description": "A link or path to the license text.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "https://opendatacommons.org/licenses/odbl/1-0/index.html"
+            ],
+            "badge": "Bronze",
+            "title": "Path",
+            "format": "uri"
+          },
+          "instruction": {
+            "description": "A short description of rights and obligations. The use of tl;drLegal is recommended.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information."
+            ],
+            "badge": "Bronze",
+            "title": "Instruction"
+          },
+          "attribution": {
+            "description": "A copyright holder of the data. Must be provided if attribution licenses are used.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "© Reiner Lemoine Institut"
+            ],
+            "badge": "Bronze",
+            "title": "Attribution"
+          },
+          "copyrightStatement": {
+            "description": "A link or path that proves that the source or data has the appropriate license. This can be a page number or website imprint.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "https://github.com/OpenEnergyPlatform/oemetadata/blob/production/LICENSE.txt"
+            ],
+            "badge": "Bronze",
+            "title": "Copyright Statement"
+          }
+        },
+        "badge": "Bronze",
+        "title": "License"
+      },
+      "badge": "Bronze",
+      "title": "Licenses"
+    },
+    "review": {
+      "description": "The metadata on the OEP can go through an open peer review process. See the Academy course [Open Peer Review](https://openenergyplatform.github.io/academy/courses/09_peer_review/) for further information.",
+      "type": "object",
+      "properties": {
+        "path": {
+          "description": "A link or path to the documented open peer review.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "examples": [
+            "https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/"
+          ],
+          "badge": null,
+          "title": "Path",
+          "format": "uri"
+        },
+        "badge": {
+          "description": "A badge of either Iron, Bronze, Silver, Gold or Platinum is used to label the quality of the metadata.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "examples": [
+            "Platinum"
+          ],
+          "badge": null,
+          "title": "Badge"
+        }
+      },
+      "title": "Review",
+      "options": {
+        "hidden": true
+      }
     },
     "resources": {
       "description": "A collection of related resources.",
@@ -89,48 +566,6 @@
             "title": "@Id",
             "readOnly": true
           },
-          "name": {
-            "description": "A filename or database conform table name.",
-            "type": [
-              "string",
-              "null"
-            ],
-            "examples": [
-              "oemetadata_table_template"
-            ],
-            "badge": "Iron",
-            "title": "Name"
-          },
-          "topics": {
-            "description": "An array of predefined topics that correspond to the database schemas of the OEP.",
-            "type": "array",
-            "items": {
-              "description": "The topics are used to group the data in the database.",
-              "type": [
-                "string",
-                "null"
-              ],
-              "examples": [
-                "model_draft"
-              ],
-              "badge": "Bronze",
-              "title": "Topic"
-            },
-            "badge": "Bronze",
-            "title": "Topics"
-          },
-          "title": {
-            "description": "A human readable resource or table name.",
-            "type": [
-              "string",
-              "null"
-            ],
-            "examples": [
-              "OEMetadata Table Template"
-            ],
-            "badge": "Silver",
-            "title": "Title"
-          },
           "path": {
             "description": "A unique identifier (URI/UUID/DOI) for the table or file.",
             "type": [
@@ -144,6 +579,30 @@
             "title": "Path",
             "readOnly": true
           },
+          "name": {
+            "description": "A filename or database conform table name.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "oemetadata_table_template"
+            ],
+            "badge": "Iron",
+            "title": "Name"
+          },
+          "title": {
+            "description": "A human readable resource or table name.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "OEMetadata Table Template"
+            ],
+            "badge": "Silver",
+            "title": "Title"
+          },
           "description": {
             "description": "A description of the table. It should be usable as summary information for the table that is described by the metadata.",
             "type": [
@@ -156,24 +615,18 @@
             "badge": "Silver",
             "title": "Description"
           },
-          "languages": {
-            "description": "An array of languages used within the described data structures (e.g. titles, descriptions) or metadata.",
-            "type": "array",
-            "items": {
-              "description": "The language keys must follow the Standard IETF (BCP47) and can be repeated if more languages are used.",
-              "type": [
-                "string",
-                "null"
-              ],
-              "examples": [
-                "en-GB",
-                "de-DE"
-              ],
-              "badge": "Gold",
-              "title": "Language"
-            },
-            "badge": "Gold",
-            "title": "Languages"
+          "publicationDate": {
+            "description": "A date of publication of the data or metadata. The date format is ISO 8601 (YYYY-MM-DD).",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "2024-10-15"
+            ],
+            "badge": "Bronze",
+            "title": "Publication Date",
+            "format": "date"
           },
           "subject": {
             "description": "An array of objects that references to the subjects of the resource in ontology terms.",
@@ -232,19 +685,6 @@
             },
             "badge": "Silver",
             "title": "Keywords"
-          },
-          "publicationDate": {
-            "description": "A date of publication of the data or metadata. The date format is ISO 8601 (YYYY-MM-DD).",
-            "type": [
-              "string",
-              "null"
-            ],
-            "examples": [
-              "2024-10-15"
-            ],
-            "badge": "Bronze",
-            "title": "Publication Date",
-            "format": "date"
           },
           "embargoPeriod": {
             "description": "An object that describes the embargo period during which public access to the data is not allowed.",
@@ -850,7 +1290,7 @@
             "badge": "Bronze",
             "title": "Sources"
           },
-          "licenses": {
+          "resourceLicenses": {
             "description": "An array of objects of licenses under which the described data is provided.",
             "type": "array",
             "items": {
@@ -1033,10 +1473,7 @@
                   ],
                   "badge": "Bronze",
                   "title": "Comment"
-                },
-                "required": [
-                  "title"
-                ]
+                }
               },
               "badge": "Bronze",
               "title": "Contributor"

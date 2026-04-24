@@ -17,8 +17,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Start new version 2.1. [(#)](https://github.com/OpenEnergyPlatform/oemetadata/pull/)
 - Add badges for Zenodo publication, FAIRsharing DOI and RDA MSC [(#273)](https://github.com/OpenEnergyPlatform/oemetadata/pull/273)
 - Dataset creator to contributors [(#304)](https://github.com/OpenEnergyPlatform/oemetadata/pull/304)
+- Add `mappingRelation` to `isAbout` [(#307)](https://github.com/OpenEnergyPlatform/oemetadata/pull/307)
+- Add `mappingRelation` to `valueReference` [(#307)](https://github.com/OpenEnergyPlatform/oemetadata/pull/307)
+- Tests for example and template to be valid frictionless datapackage [(#305)](https://github.com/OpenEnergyPlatform/oemetadata/pull/305)
 
 ### Changed
 - Update TLDR URL in example sourceLicenses [(#275)](https://github.com/OpenEnergyPlatform/oemetadata/pull/275)
@@ -33,7 +37,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Introduce scoped context for spatial and temporal objects [(#260)](https://github.com/OpenEnergyPlatform/oemetadata/pull/260)
 - Add script to manage latest folder [(#264)](https://github.com/OpenEnergyPlatform/oemetadata/pull/264)
-- Tests for example and template to be valid frictionless datapackage [(#305)](https://github.com/OpenEnergyPlatform/oemetadata/pull/305)
 
 ### Changed
 - Fix bugs in JSON-LD context [(#260)](https://github.com/OpenEnergyPlatform/oemetadata/pull/260)

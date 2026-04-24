@@ -1,14 +1,29 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/v2/v20/schema.json",
+  "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/v2/v21/schema.json",
   "description": "Open Energy Metadata (OEMetadata) - metadata schema",
   "type": "object",
   "required": [
     "resources"
   ],
   "properties": {
-    "collection": {
+    "dataset": {
       "$ref": "dataset.json#"
+    },
+    "subject": {
+      "$ref": "subject.json#"
+    },
+    "projectContext": {
+      "$ref": "projectcontext.json#"
+    },
+    "provenance": {
+      "$ref": "provenance.json#"
+    },
+    "datasetLicenses": {
+      "$ref": "licenses_dataset.json#"
+    },
+    "review": {
+      "$ref": "review.json#"
     },
     "resources": {
       "description": "A collection of related resources.",
@@ -19,8 +34,11 @@
           "general": {
             "$ref": "general.json#"
           },
-          "context": {
-            "$ref": "context.json#"
+          "subject": {
+            "$ref": "subject.json#"
+          },
+          "embargo": {
+            "$ref": "embargo.json#"
           },
           "spatial": {
             "$ref": "spatial.json#"
@@ -31,11 +49,8 @@
           "sources": {
             "$ref": "sources.json#"
           },
-          "licenses": {
-            "$ref": "licenses.json#"
-          },
-          "provenance": {
-            "$ref": "provenance.json#"
+          "resourceLicenses": {
+            "$ref": "licenses_resource.json#"
           },
           "resource": {
             "$ref": "fields.json#"

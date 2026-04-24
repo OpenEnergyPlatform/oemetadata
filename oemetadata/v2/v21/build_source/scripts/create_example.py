@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-# SPDX-FileCopyrightText: 2024 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
-# SPDX-FileCopyrightText: 2024 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: 2026 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
+# SPDX-FileCopyrightText: 2026 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
 # SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
 # SPDX-License-Identifier: MIT
 
@@ -224,13 +224,13 @@ def save_json(data: Dict[str, Any], filename: Path) -> None:
 def test_oemetadata_schema_should_validate_oemetadata_example(example):
     from jsonschema import ValidationError, validate
 
-    from oemetadata.v2.v20.schema import OEMETADATA_V20_SCHEMA
+    from oemetadata.v2.v21.schema import OEMETADATA_V21_SCHEMA
 
     try:
-        validate(example, OEMETADATA_V20_SCHEMA)
-        logger.info("OEMetadata Example is valid OEMetadata Schema (v2.0).")
+        validate(example, OEMETADATA_V21_SCHEMA)
+        logger.info("OEMetadata Example is valid OEMetadata Schema (v2.1).")
     except ValidationError as e:
-        logger.info("Cannot validate OEMetadata Example with Schema (v2.0)!", e)
+        logger.info("Cannot validate OEMetadata Example with Schema (v2.1)!", e)
 
 
 def find_and_replace_key(data, target_key, new_value):

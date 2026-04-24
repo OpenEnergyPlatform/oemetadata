@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/v2/v21/build_source/schemas/subject.json",
+  "type": "object",
+  "properties": {
+    "subject": {
+      "description": "An array of objects that references to the subjects of the resource in ontology terms.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "A class label of the ontology term.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "energy"
+            ],
+            "badge": "Platinum",
+            "title": "Subject Name"
+          },
+          "@id": {
+            "description": "A unique identifier (URI/IRI) of the ontology class.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "https://openenergyplatform.org/ontology/oeo/OEO_00000150"
+            ],
+            "badge": "Platinum",
+            "title": "Subject Identifier",
+            "format": "uri"
+          }
+        },
+        "badge": "Platinum",
+        "title": "Subject"
+      },
+      "badge": "Platinum",
+      "title": "Subject"
+    },
+    "keywords": {
+      "description": "An array of freely selectable keywords that help with searching and structuring.",
+      "type": "array",
+      "items": {
+        "description": "The keyword are used and managed in the OEP as table tags.",
+        "type": [
+          "string",
+          "null"
+        ],
+        "examples": [
+          "example",
+          "ODbL-1.0",
+          "NFDI4Energy"
+        ],
+        "badge": "Silver",
+        "title": "Keyword"
+      },
+      "badge": "Silver",
+      "title": "Keywords"
+    }
+  }
+}

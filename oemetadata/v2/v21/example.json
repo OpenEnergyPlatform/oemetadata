@@ -1,23 +1,98 @@
 {
   "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/latest/context.json",
-  "name": "oep_oemetadata",
-  "title": "OEP OEMetadata",
-  "description": "A dataset for the OEMetadata examples.",
   "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/",
+  "name": "oep_oemetadata",
+  "title": "OEP OEMetadata Dataset",
+  "description": "A dataset for the OEMetadata examples.",
+  "topics": [
+    "model_draft"
+  ],
+  "languages": [
+    "en-GB",
+    "de-DE"
+  ],
+  "version": "0.1.0",
+  "image": "https://openenergyplatform.org/static/img/about/OpenEnergyFamily_GroupPhoto2.png",
+  "subject": [
+    {
+      "name": "energy",
+      "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000150"
+    }
+  ],
+  "keywords": [
+    "example",
+    "ODbL-1.0",
+    "NFDI4Energy"
+  ],
+  "projectContext": {
+    "title": "NFDI4Energy",
+    "homepage": "https://nfdi4energy.uol.de/",
+    "documentation": "https://nfdi4energy.uol.de/sites/about_us/",
+    "sourceCode": "https://github.com/NFDI4Energy",
+    "publisher": "Open Energy Platform (OEP)",
+    "publisherLogo": "https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg",
+    "contact": "contact@example.com",
+    "fundingAgency": " Deutsche Forschungsgemeinschaft (DFG)",
+    "fundingAgencyLogo": "https://upload.wikimedia.org/wikipedia/commons/8/86/DFG-logo-blau.svg",
+    "grantNo": "501865131"
+  },
+  "contributors": [
+    {
+      "title": "Ludwig Hülk",
+      "path": "https://github.com/Ludee",
+      "organization": "Reiner Lemoine Institut",
+      "roles": [
+        "Creator"
+      ],
+      "date": "2026-04-09",
+      "object": "dataset",
+      "comment": "Date of dataset creation"
+    },
+    {
+      "title": "Ludwig Hülk",
+      "path": "https://github.com/Ludee",
+      "organization": "Reiner Lemoine Institut",
+      "roles": [
+        "DataCollector"
+      ],
+      "date": "2024-11-19",
+      "object": "data",
+      "comment": "Date of data creation"
+    },
+    {
+      "title": "Ludwig Hülk",
+      "path": "https://github.com/Ludee",
+      "organization": "Reiner Lemoine Institut",
+      "roles": [
+        "DataCurator"
+      ],
+      "date": "2024-11-30",
+      "object": "metadata",
+      "comment": "Date of metadata creation"
+    }
+  ],
+  "datasetLicenses": [
+    {
+      "name": "ODbL-1.0",
+      "title": "Open Data Commons Open Database License 1.0",
+      "path": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
+      "instruction": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information.",
+      "attribution": "© Reiner Lemoine Institut",
+      "copyrightStatement": "https://github.com/OpenEnergyPlatform/oemetadata/blob/production/LICENSE.txt"
+    }
+  ],
+  "review": {
+    "path": "https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/",
+    "badge": "Platinum"
+  },
   "resources": [
     {
       "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv",
-      "name": "oemetadata_table_template",
-      "topics": [
-        "model_draft"
-      ],
-      "title": "OEMetadata Table Template",
       "path": "http://openenergyplatform.org/dataedit/view/model_draft/oemetadata_table_template",
+      "name": "oemetadata_table_template",
+      "title": "OEMetadata Table Template",
       "description": "Example table used to illustrate the OEMetadata structure and features.",
-      "languages": [
-        "en-GB",
-        "de-DE"
-      ],
+      "publicationDate": "2024-10-15",
       "subject": [
         {
           "name": "energy",
@@ -29,23 +104,10 @@
         "ODbL-1.0",
         "NFDI4Energy"
       ],
-      "publicationDate": "2024-10-15",
       "embargoPeriod": {
         "start": "2024-10-11",
         "end": "2025-01-01",
         "isActive": true
-      },
-      "context": {
-        "title": "NFDI4Energy",
-        "homepage": "https://nfdi4energy.uol.de/",
-        "documentation": "https://nfdi4energy.uol.de/sites/about_us/",
-        "sourceCode": "https://github.com/NFDI4Energy",
-        "publisher": "Open Energy Platform (OEP)",
-        "publisherLogo": "https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg",
-        "contact": "contact@example.com",
-        "fundingAgency": " Deutsche Forschungsgemeinschaft (DFG)",
-        "fundingAgencyLogo": "https://upload.wikimedia.org/wikipedia/commons/8/86/DFG-logo-blau.svg",
-        "grantNo": "501865131"
       },
       "spatial": {
         "location": {
@@ -104,7 +166,7 @@
           ]
         }
       ],
-      "licenses": [
+      "resourceLicenses": [
         {
           "name": "ODbL-1.0",
           "title": "Open Data Commons Open Database License 1.0",
@@ -112,30 +174,6 @@
           "instruction": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information.",
           "attribution": "© Reiner Lemoine Institut",
           "copyrightStatement": "https://github.com/OpenEnergyPlatform/oemetadata/blob/production/LICENSE.txt"
-        }
-      ],
-      "contributors": [
-        {
-          "title": "Ludwig Hülk",
-          "path": "https://github.com/Ludee",
-          "organization": "Reiner Lemoine Institut",
-          "roles": [
-            "DataCollector"
-          ],
-          "date": "2024-11-19",
-          "object": "data",
-          "comment": "Date of data creation"
-        },
-        {
-          "title": "Ludwig Hülk",
-          "path": "https://github.com/Ludee",
-          "organization": "Reiner Lemoine Institut",
-          "roles": [
-            "DataCurator"
-          ],
-          "date": "2024-11-30",
-          "object": "metadata",
-          "comment": "Date of metadata creation"
         }
       ],
       "type": "table",
@@ -339,7 +377,7 @@
     }
   ],
   "metaMetadata": {
-    "metadataVersion": "OEMetadata-2.0.4",
+    "metadataVersion": "OEMetadata-2.1.0",
     "metadataLicense": {
       "name": "CC0-1.0",
       "title": "Creative Commons Zero v1.0 Universal",

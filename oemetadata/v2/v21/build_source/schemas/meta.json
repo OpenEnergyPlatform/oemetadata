@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/v2/v20/build_source/schemas/meta.json",
+  "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/v2/v21/build_source/schemas/meta.json",
   "type": "object",
   "properties": {
     "metaMetadata": {
@@ -10,7 +10,7 @@
         "metadataVersion": {
           "description": "Type and version number of the metadata.",
           "examples": [
-            "OEMetadata-2.0.4"
+            "OEMetadata-2.1.0"
           ],
           "type": [
             "string",

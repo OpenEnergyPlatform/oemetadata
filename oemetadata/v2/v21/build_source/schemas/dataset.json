@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/v2/v20/build_source/schemas/collection.json",
+  "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/v2/v21/build_source/schemas/collection.json",
   "type": "object",
   "properties": {
     "@context": {
@@ -14,6 +14,20 @@
       ],
       "badge": "Platinum",
       "title": "@context",
+      "readOnly": true
+    },
+    "@id": {
+      "description": "A unique identifier (UUID/DOI) for the collection.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "examples": [
+        "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/"
+      ],
+      "badge": "Platinum",
+      "title": "Dataset Identifier",
+      "format": "uri",
       "readOnly": true
     },
     "name": {
@@ -35,7 +49,7 @@
         "null"
       ],
       "examples": [
-        "OEP OEMetadata"
+        "OEP OEMetadata Dataset"
       ],
       "badge": "Bronze",
       "title": "Dataset Title"
@@ -52,19 +66,66 @@
       "badge": "Bronze",
       "title": "Dataset Description"
     },
-    "@id": {
-      "description": "A unique identifier (UUID/DOI) for the collection.",
+    "topics": {
+      "description": "An array of predefined topics that correspond to the database schemas of the OEP.",
+      "type": "array",
+      "items": {
+        "description": "The topics are used to group the data in the database.",
+        "type": [
+          "string",
+          "null"
+        ],
+        "examples": [
+          "model_draft"
+        ],
+        "badge": "Bronze",
+        "title": "Topic"
+      },
+      "badge": "Bronze",
+      "title": "Topics"
+    },
+    "languages": {
+      "description": "An array of languages used within the described data structures (e.g. titles, descriptions) or metadata.",
+      "type": "array",
+      "items": {
+        "description": "The language keys must follow the Standard IETF (BCP47) and can be repeated if more languages are used.",
+        "type": [
+          "string",
+          "null"
+        ],
+        "examples": [
+          "en-GB",
+          "de-DE"
+        ],
+        "badge": "Gold",
+        "title": "Language"
+      },
+      "badge": "Gold",
+      "title": "Languages"
+    },
+    "version": {
+      "description": "A version string identifying the version of the package.",
       "type": [
         "string",
         "null"
       ],
       "examples": [
-        "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/"
+        "0.1.0"
       ],
-      "badge": "Platinum",
-      "title": "Dataset Identifier",
-      "format": "uri",
-      "readOnly": true
+      "badge": "Silver",
+      "title": "Dataset Version"
+    },
+    "image": {
+      "description": "An image to use for this data package",
+      "type": [
+        "string",
+        "null"
+      ],
+      "examples": [
+        "https://openenergyplatform.org/static/img/about/OpenEnergyFamily_GroupPhoto2.png"
+      ],
+      "badge": "Gold",
+      "title": "Image"
     }
   },
   "required": [
