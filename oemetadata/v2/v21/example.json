@@ -177,7 +177,7 @@
         }
       ],
       "type": "table",
-      "format": "CSV",
+      "format": "csv",
       "encoding": "UTF-8",
       "schema": {
         "fields": [
