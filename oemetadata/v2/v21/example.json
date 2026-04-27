@@ -278,7 +278,7 @@
           {
             "name": "value",
             "description": "Bruttoleistung",
-            "type": "decimal",
+            "type": "float",
             "nullable": true,
             "unit": "MW",
             "isAbout": [
