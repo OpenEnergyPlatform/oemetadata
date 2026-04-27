@@ -367,7 +367,19 @@
         "primaryKey": [
           "id"
         ],
-        "foreignKeys": []
+        "foreignKeys": [
+          {
+            "fields": [
+              "version"
+            ],
+            "reference": {
+              "resource": "example_version.csv",
+              "fields": [
+                "version"
+              ]
+            }
+          }
+        ]
       },
       "dialect": {
         "delimiter": ";",

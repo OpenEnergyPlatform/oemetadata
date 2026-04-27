@@ -1520,7 +1520,6 @@
                           "null"
                         ],
                         "examples": [
-                          "id",
                           "version"
                         ],
                         "badge": "Iron",
@@ -1540,7 +1539,7 @@
                             "null"
                           ],
                           "examples": [
-                            "oemetadata_table_example_version"
+                            "example_version.csv"
                           ],
                           "badge": "Iron",
                           "title": "Foreign Resource"
@@ -1555,7 +1554,6 @@
                               "null"
                             ],
                             "examples": [
-                              "id",
                               "version"
                             ],
                             "badge": "Iron",
