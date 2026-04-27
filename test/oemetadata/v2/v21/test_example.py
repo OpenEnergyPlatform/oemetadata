@@ -25,9 +25,13 @@ def test_oemetadata_schema_should_validate_oemetadata_example():
 
 
 def test_oemetadata_example_is_datapackage():
+    import pathlib
+
     from frictionless import validate
 
     from oemetadata.v2.v21.example import OEMETADATA_V21_EXAMPLE
 
-    report = validate(OEMETADATA_V21_EXAMPLE)
+    basepath = pathlib.Path(__file__).parent
+
+    report = validate(OEMETADATA_V21_EXAMPLE, basepath=basepath)
     assert report.valid, report.flatten(["message"])
