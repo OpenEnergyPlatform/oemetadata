@@ -36,7 +36,7 @@
         "null"
       ],
       "examples": [
-        "oemetadata_table_example"
+        "example.csv"
       ],
       "badge": "Iron",
       "title": "Name"
@@ -48,7 +48,7 @@
         "null"
       ],
       "examples": [
-        "OEMetadata Table Template"
+        "OEMetadata Table Example"
       ],
       "badge": "Silver",
       "title": "Title"
@@ -60,7 +60,7 @@
         "null"
       ],
       "examples": [
-        "Example table used to illustrate the OEMetadata structure and features."
+        "Example metadata and table used to illustrate the OEMetadata structure and features."
       ],
       "badge": "Silver",
       "title": "Description"
