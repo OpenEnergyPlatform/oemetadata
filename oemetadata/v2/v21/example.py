@@ -6,6 +6,12 @@
 import json
 import os
 
+from frictionless import Package
 
-with open(os.path.join(os.path.dirname(__file__), "example.json"), "rb") as f:
-    OEMETADATA_V21_EXAMPLE = json.loads(f.read())
+
+BASE_PATH = os.path.dirname(__file__)
+
+with open(os.path.join(BASE_PATH, "example.json"), encoding="utf-8") as f:
+    descriptor = json.load(f)
+
+OEMETADATA_V21_EXAMPLE = Package(descriptor, basepath=BASE_PATH)
