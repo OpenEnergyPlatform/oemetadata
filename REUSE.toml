@@ -119,14 +119,6 @@ SPDX-FileCopyrightText = ["2026 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
 SPDX-License-Identifier = "MIT"
 
 [[annotations]]
-path = "oemetadata/v2/v21/*.csv"
-precedence = "override"
-SPDX-FileCopyrightText = ["2026 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut",
-    "2026 Jonas Huber <@jh-RLI> © Reiner Lemoine Institut",
-    "oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>"]
-SPDX-License-Identifier = "CC0-1.0"
-
-[[annotations]]
 path = "oemetadata/v2/v21/build_source/schemas/*.json"
 precedence = "override"
 SPDX-FileCopyrightText = ["2026 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut",
@@ -149,3 +141,19 @@ SPDX-FileCopyrightText = ["2024 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
     "2024 Jonas Huber <@jh-RLI> © Reiner Lemoine Institut",
     "oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>"]
 SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "test/oemetadata/v2/v21/example/*.csv"
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut",
+    "2026 Jonas Huber <@jh-RLI> © Reiner Lemoine Institut",
+    "oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "test/oemetadata/v2/v21/example/*.json"
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut",
+    "2024 Jonas Huber <@jh-RLI> © Reiner Lemoine Institut",
+    "oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>"]
+SPDX-License-Identifier = "CC0-1.0"

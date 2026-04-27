@@ -367,21 +367,7 @@
         "primaryKey": [
           "id"
         ],
-        "foreignKeys": [
-          {
-            "fields": [
-              "id",
-              "version"
-            ],
-            "reference": {
-              "resource": "oemetadata_table_example_version",
-              "fields": [
-                "id",
-                "version"
-              ]
-            }
-          }
-        ]
+        "foreignKeys": []
       },
       "dialect": {
         "delimiter": ";",

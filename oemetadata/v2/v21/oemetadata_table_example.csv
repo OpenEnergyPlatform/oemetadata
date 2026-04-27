@@ -1,5 +1,0 @@
-"id","name","type","year","value","is_active","version","comment"
-1,"wind","onshore",2021,55.93,true,"0.1.0",""
-2,"wind","offshore",2021,7.79,true,"0.1.0",""
-3,"wind","onshore",2022,58.05,true,"0.1.1",""
-4,"wind","offshore",2022,8.13,true,"0.1.1",""
