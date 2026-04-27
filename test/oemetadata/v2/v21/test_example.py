@@ -27,5 +27,5 @@ def test_oemetadata_schema_should_validate_oemetadata_example():
 def test_oemetadata_example_is_datapackage():
     from oemetadata.v2.v21.example import OEMETADATA_V21_EXAMPLE
 
-    report = OEMETADATA_V21_EXAMPLE.metadata_valid
-    assert report, OEMETADATA_V21_EXAMPLE.metadata_errors
+    errors = OEMETADATA_V21_EXAMPLE.metadata_validate()
+    assert not errors, [str(e) for e in errors]
