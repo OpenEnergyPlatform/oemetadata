@@ -31,7 +31,7 @@ def test_oemetadata_example_is_datapackage():
 
     from oemetadata.v2.v21.example import OEMETADATA_V21_EXAMPLE
 
-    basepath = pathlib.Path(__file__).parent
+    base = pathlib.Path(__file__).parent.resolve()
 
-    report = validate(OEMETADATA_V21_EXAMPLE, basepath=basepath)
+    report = validate(OEMETADATA_V21_EXAMPLE, basepath=str(base))
     assert report.valid, report.flatten(["message"])
