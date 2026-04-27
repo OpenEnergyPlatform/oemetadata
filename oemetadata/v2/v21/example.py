@@ -13,8 +13,4 @@ BASE_PATH = Path(__file__).parent
 
 descriptor = json.loads((BASE_PATH / "example.json").read_text(encoding="utf-8"))
 
-for resource in descriptor.get("resources", []):
-    if "path" in resource:
-        resource["path"] = str(BASE_PATH / resource["path"])
-
-OEMETADATA_V21_EXAMPLE = Package(descriptor)
+OEMETADATA_V21_EXAMPLE = Package(descriptor, basepath=str(BASE_PATH))
