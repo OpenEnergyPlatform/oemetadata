@@ -4,14 +4,17 @@
 # SPDX-License-Identifier: MIT
 
 import json
-import os
+from pathlib import Path
 
 from frictionless import Package
 
 
-BASE_PATH = os.path.dirname(__file__)
+BASE_PATH = Path(__file__).parent
 
-with open(os.path.join(BASE_PATH, "example.json"), encoding="utf-8") as f:
-    descriptor = json.load(f)
+descriptor = json.loads((BASE_PATH / "example.json").read_text(encoding="utf-8"))
 
-OEMETADATA_V21_EXAMPLE = Package(descriptor, basepath=BASE_PATH)
+for resource in descriptor.get("resources", []):
+    if "path" in resource:
+        resource["path"] = str(BASE_PATH / resource["path"])
+
+OEMETADATA_V21_EXAMPLE = Package(descriptor)
