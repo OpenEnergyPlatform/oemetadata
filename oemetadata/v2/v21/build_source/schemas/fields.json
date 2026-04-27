@@ -298,7 +298,7 @@
                       "null"
                     ],
                     "examples": [
-                      "model_draft.oep_oemetadata_table_example_version"
+                      "oemetadata_table_example_version"
                     ],
                     "badge": "Iron",
                     "title": "Foreign Resource"
