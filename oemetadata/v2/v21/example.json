@@ -88,7 +88,7 @@
   "resources": [
     {
       "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv",
-      "path": "http://openenergyplatform.org/dataedit/view/model_draft/oemetadata_table_template",
+      "path": "example.csv",
       "name": "example.csv",
       "title": "OEMetadata Table Example",
       "description": "Example metadata and table used to illustrate the OEMetadata structure and features.",

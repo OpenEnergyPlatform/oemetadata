@@ -23,7 +23,7 @@
         "null"
       ],
       "examples": [
-        "http://openenergyplatform.org/dataedit/view/model_draft/oemetadata_table_template"
+        "example.csv"
       ],
       "badge": "Bronze",
       "title": "Path",
