@@ -25,9 +25,7 @@ def test_oemetadata_schema_should_validate_oemetadata_example():
 
 
 def test_oemetadata_example_is_datapackage():
-    from frictionless import validate
-
     from oemetadata.v2.v21.example import OEMETADATA_V21_EXAMPLE
 
-    report = validate(OEMETADATA_V21_EXAMPLE)
-    assert report.valid, report.flatten(["message"])
+    report = OEMETADATA_V21_EXAMPLE.metadata_valid
+    assert report, OEMETADATA_V21_EXAMPLE.metadata_errors
