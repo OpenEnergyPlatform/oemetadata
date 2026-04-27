@@ -88,9 +88,9 @@
   "resources": [
     {
       "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv",
-      "path": "http://openenergyplatform.org/dataedit/view/model_draft/oemetadata_table_template",
-      "name": "oemetadata_table_example",
-      "title": "OEMetadata Table Template",
+      "path": "http://openenergyplatform.org/dataedit/view/model_draft/oemetadata_table_example_version",
+      "name": "oemetadata_table_example_version",
+      "title": "OEMetadata Table Example Version",
       "description": "Example table used to illustrate the OEMetadata structure and features.",
       "publicationDate": "2024-10-15",
       "subject": [
@@ -191,122 +191,6 @@
               {
                 "name": "identifier",
                 "@id": "http://purl.obolibrary.org/obo/IAO_0020000",
-                "mappingRelation": "skos:exactMatch"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": null,
-                "name": null,
-                "@id": null,
-                "mappingRelation": null
-              }
-            ]
-          },
-          {
-            "name": "name",
-            "description": "Technology Name",
-            "type": "string",
-            "nullable": true,
-            "unit": null,
-            "isAbout": [
-              {
-                "name": "power generation technology",
-                "@id": "http://openenergy-platform.org/ontology/oeo/OEO_00010423",
-                "mappingRelation": "skos:exactMatch"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "wind",
-                "name": "wind power technology",
-                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00010424",
-                "mappingRelation": "skos:exactMatch"
-              }
-            ]
-          },
-          {
-            "name": "type",
-            "description": "Type of wind farm",
-            "type": "string",
-            "nullable": true,
-            "unit": null,
-            "isAbout": [
-              {
-                "name": "wind farm",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000447/",
-                "mappingRelation": "skos:exactMatch"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "onshore",
-                "name": "onshore wind farm",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000311/",
-                "mappingRelation": "skos:exactMatch"
-              },
-              {
-                "value": "offshore",
-                "name": "offshore wind farm",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000308/",
-                "mappingRelation": "skos:exactMatch"
-              }
-            ]
-          },
-          {
-            "name": "year",
-            "description": "Reference year",
-            "type": "integer",
-            "nullable": true,
-            "unit": null,
-            "isAbout": [
-              {
-                "name": "year",
-                "@id": "https://openenergyplatform.org/ontology/oeo/UO_0000036/",
-                "mappingRelation": "skos:exactMatch"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": null,
-                "name": null,
-                "@id": null,
-                "mappingRelation": null
-              }
-            ]
-          },
-          {
-            "name": "value",
-            "description": "Bruttoleistung",
-            "type": "number",
-            "nullable": true,
-            "unit": "MW",
-            "isAbout": [
-              {
-                "name": "nameplate capacity",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00230003/",
-                "mappingRelation": "skos:exactMatch"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": null,
-                "name": null,
-                "@id": null,
-                "mappingRelation": null
-              }
-            ]
-          },
-          {
-            "name": "is_active",
-            "description": "Betriebsstatus",
-            "type": "boolean",
-            "nullable": false,
-            "unit": null,
-            "isAbout": [
-              {
-                "name": "Operating Mode Status",
-                "@id": "https://ontology.brickschema.org/brick/Operating_Mode_Status",
                 "mappingRelation": "skos:exactMatch"
               }
             ],
