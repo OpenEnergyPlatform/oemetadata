@@ -82,6 +82,7 @@ nav:
   - Metadata Documentation:
       - oemetadata/index.md
       - Metadata Key Description: oemetadata/metadata_key_description.md
+      - Metadata Key Details: oemetadata/metadata_key_details.md
       - Crosswalks and Mappings: oemetadata/metadata_mappings.md
   - User Documentation:
     - Install:
