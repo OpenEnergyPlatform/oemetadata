@@ -161,14 +161,16 @@
             "isAbout": [
               {
                 "name": "",
-                "@id": ""
+                "@id": "",
+                "mappingRelation": ""
               }
             ],
             "valueReference": [
               {
                 "value": "",
                 "name": "",
-                "@id": ""
+                "@id": "",
+                "mappingRelation": ""
               }
             ]
           }

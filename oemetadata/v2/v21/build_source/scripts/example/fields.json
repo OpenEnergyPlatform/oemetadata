@@ -2,65 +2,72 @@
   {
     "name": "id",
     "description": "Unique identifier",
-    "type": "serial",
+    "type": "integer",
     "nullable": false,
     "unit": null,
     "isAbout": [
       {
         "name": "identifier",
-        "@id": "http://purl.obolibrary.org/obo/IAO_0020000"
+        "@id": "http://purl.obolibrary.org/obo/IAO_0020000",
+        "mappingRelation": "skos:exactMatch"
       }
     ],
     "valueReference": [
       {
         "value": null,
         "name": null,
-        "@id": null
+        "@id": null,
+        "mappingRelation": null
       }
     ]
   },
   {
     "name": "name",
     "description": "Technology Name",
-    "type": "text",
+    "type": "string",
     "nullable": true,
     "unit": null,
     "isAbout": [
       {
         "name": "power generation technology",
-        "@id": "http://openenergy-platform.org/ontology/oeo/OEO_00010423"
+        "@id": "http://openenergy-platform.org/ontology/oeo/OEO_00010423",
+        "mappingRelation": "skos:exactMatch"
       }
     ],
     "valueReference": [
       {
         "value": "wind",
         "name": "wind power technology",
-        "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00010424"
+        "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00010424",
+        "mappingRelation": "skos:exactMatch"
       }
     ]
   },
   {
     "name": "type",
     "description": "Type of wind farm",
-    "type": "text",
+    "type": "string",
     "nullable": true,
     "unit": null,
     "isAbout": [
       {
         "name": "wind farm",
-        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000447/"
+        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000447/",
+        "mappingRelation": "skos:exactMatch"
       }
     ],
     "valueReference": [
       {
         "value": "onshore",
         "name": "onshore wind farm",
-        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000311/"
+        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000311/",
+        "mappingRelation": "skos:exactMatch"
       },
       {
         "value": "offshore",
         "name": "offshore wind farm",
-        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000308/"
+        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000308/",
+        "mappingRelation": "skos:exactMatch"
       }
     ]
   },
@@ -73,34 +80,38 @@
     "isAbout": [
       {
         "name": "year",
-        "@id": "https://openenergyplatform.org/ontology/oeo/UO_0000036/"
+        "@id": "https://openenergyplatform.org/ontology/oeo/UO_0000036/",
+        "mappingRelation": "skos:exactMatch"
       }
     ],
     "valueReference": [
       {
         "value": null,
         "name": null,
-        "@id": null
+        "@id": null,
+        "mappingRelation": null
       }
     ]
   },
   {
     "name": "value",
     "description": "Bruttoleistung",
-    "type": "decimal",
+    "type": "number",
     "nullable": true,
     "unit": "MW",
     "isAbout": [
       {
         "name": "nameplate capacity",
-        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00230003/"
+        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00230003/",
+        "mappingRelation": "skos:exactMatch"
       }
     ],
     "valueReference": [
       {
         "value": null,
         "name": null,
-        "@id": null
+        "@id": null,
+        "mappingRelation": null
       }
     ]
   },
@@ -113,54 +124,60 @@
     "isAbout": [
       {
         "name": "Operating Mode Status",
-        "@id": "https://ontology.brickschema.org/brick/Operating_Mode_Status"
+        "@id": "https://ontology.brickschema.org/brick/Operating_Mode_Status",
+        "mappingRelation": "skos:exactMatch"
       }
     ],
     "valueReference": [
       {
         "value": null,
         "name": null,
-        "@id": null
+        "@id": null,
+        "mappingRelation": null
       }
     ]
   },
   {
     "name": "version",
     "description": "Version",
-    "type": "integer",
+    "type": "string",
     "nullable": true,
     "unit": null,
     "isAbout": [
       {
         "name": "version number",
-        "@id": "http://purl.obolibrary.org/obo/IAO_0000129"
+        "@id": "http://purl.obolibrary.org/obo/IAO_0000129",
+        "mappingRelation": "skos:exactMatch"
       }
     ],
     "valueReference": [
       {
         "value": null,
         "name": null,
-        "@id": null
+        "@id": null,
+        "mappingRelation": null
       }
     ]
   },
   {
     "name": "comment",
     "description": "",
-    "type": "text",
+    "type": "string",
     "nullable": true,
     "unit": null,
     "isAbout": [
       {
         "name": "comment",
-        "@id": "http://semanticscience.org/resource/SIO_001167"
+        "@id": "http://semanticscience.org/resource/SIO_001167",
+        "mappingRelation": "skos:exactMatch"
       }
     ],
     "valueReference": [
       {
         "value": null,
         "name": null,
-        "@id": null
+        "@id": null,
+        "mappingRelation": null
       }
     ]
   }

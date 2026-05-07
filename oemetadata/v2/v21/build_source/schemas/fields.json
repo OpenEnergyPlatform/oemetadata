@@ -25,7 +25,7 @@
         "null"
       ],
       "examples": [
-        "CSV"
+        "csv"
       ],
       "badge": "Gold",
       "title": "Format",
@@ -278,7 +278,6 @@
                     "null"
                   ],
                   "examples": [
-                    "id",
                     "version"
                   ],
                   "badge": "Iron",
@@ -298,7 +297,7 @@
                       "null"
                     ],
                     "examples": [
-                      "model_draft.oep_oemetadata_table_example_version"
+                      "example_version.csv"
                     ],
                     "badge": "Iron",
                     "title": "Foreign Resource"
@@ -313,7 +312,6 @@
                         "null"
                       ],
                       "examples": [
-                        "id",
                         "version"
                       ],
                       "badge": "Iron",

@@ -22,3 +22,13 @@ def test_oemetadata_schema_should_validate_oemetadata_example():
         print("OEMetadata Example is valid OEMetadata Schema (v2.1).")
     except ValidationError as e:
         print("Cannot validate OEMetadata Example with Schema (v2.1)!", e)
+
+
+def test_oemetadata_example_is_datapackage():
+    from frictionless import Package
+
+    from oemetadata.v2.v21.example import OEMETADATA_V21_EXAMPLE
+
+    descriptor = OEMETADATA_V21_EXAMPLE.to_descriptor()
+    errors = list(Package.metadata_validate(descriptor))
+    assert not errors, [str(e) for e in errors]
