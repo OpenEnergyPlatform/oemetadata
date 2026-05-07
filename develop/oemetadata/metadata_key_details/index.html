@@ -1,0 +1,9448 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation of the Open Energy Metadata (OEMetadata) standard">
+      
+      
+      
+        <link rel="canonical" href="https://openenergyplatform.github.io/oemetadata/develop/oemetadata/metadata_key_details/">
+      
+      
+        <link rel="prev" href="../metadata_key_description/">
+      
+      
+        <link rel="next" href="../metadata_mappings/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Metadata Key Details - Open Energy Metadata</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#oemetadata-key-description-details" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://openenergyplatform.org/" title="Open Energy Metadata" class="md-header__button md-logo" aria-label="Open Energy Metadata" data-md-component="logo">
+      
+  <img src="../../img/OpenEnergyFamily_Logo_OEMetadata_white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Open Energy Metadata
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Metadata Key Details
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/OpenEnergyPlatform/oemetadata" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    OpenEnergyPlatform/oemetadata
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../development/documentation/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Development
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Metadata Documentation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../user_documentation/install/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  User Documentation
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://openenergyplatform.org/" title="Open Energy Metadata" class="md-nav__button md-logo" aria-label="Open Energy Metadata" data-md-component="logo">
+      
+  <img src="../../img/OpenEnergyFamily_Logo_OEMetadata_white.png" alt="logo">
+
+    </a>
+    Open Energy Metadata
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/OpenEnergyPlatform/oemetadata" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    OpenEnergyPlatform/oemetadata
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Development
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../development/documentation/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../development/collaboration/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collaboration
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Collaboration
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/collaboration/license_and_citation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    License and Citation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/collaboration/git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/collaboration/users/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Users
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/collaboration/chat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/collaboration/meeting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meetings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/collaboration/code_of_conduct/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code of Conduct
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../development/release/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Release
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metadata Documentation
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metadata Documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata_key_description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metadata Key Description
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metadata Key Details
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metadata Key Details
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON Format
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cardinality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cardinality
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#badges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Badges
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional information:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metadata-keys-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metadata Keys - Dataset
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metadata Keys - Dataset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - @context
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - @id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - title
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - description
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - languages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - version
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - image
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-subject" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - subject
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-subject-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - subject (name)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-subject-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - subject (@id)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-keywords" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - keywords
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataset-context_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataset - context">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (title)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-homepage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (homepage)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (documentation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-sourcecode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (sourceCode)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-publisher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (publisher)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-publisherlogo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (publisherLogo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (contact)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-fundingagency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (fundingAgency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-fundingagencylogo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (fundingAgencyLogo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-grantno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (grantNo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataset-provenance-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Provenance Keys
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataset - Provenance Keys">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-provenance-keys_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Provenance Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-provenance-keys-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Provenance Keys (title)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-provenance-keys-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Provenance Keys (path)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-provenance-keys-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Provenance Keys (organization)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-provenance-keys-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Provenance Keys (roles)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-provenance-keys-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Provenance Keys (date)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-provenance-keys-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Provenance Keys (object)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-provenance-keys-comment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Provenance Keys (comment)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataset-dataset-licenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Dataset Licenses
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataset - Dataset Licenses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-datasetlicenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - datasetLicenses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-datasetlicenses-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - datasetLicenses (name)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-datasetlicenses-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - datasetLicenses (title)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-datasetlicenses-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - datasetLicenses (path)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-datasetlicenses-instruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - datasetLicenses (instruction)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-datasetlicenses-attribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - datasetLicenses (attribution)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-datasetlicenses-copyrightstatement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - datasetLicenses (copyrightStatement)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-review-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Review Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-review-keys-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Review Keys - path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-review-keys-badge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Review Keys - badge
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - resources
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - @id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - title
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - description
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-publicationdate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - publicationDate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-subject" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - subject
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-subject-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - subject (name)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-subject-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - subject (@id)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-keywords" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - keywords
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-embargoperiod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - embargoPeriod
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-embargoperiod-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - embargoPeriod (start)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-embargoperiod-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - embargoPeriod (end)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-embargoperiod-isactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - embargoPeriod (isActive)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (location)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-location-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (location - address)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-location-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (location - @id)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-location-latitude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (location - latitude)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-location-longitude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (location - longitude)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-extent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (extent)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-extent-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (extent - name)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-extent-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (extent - @id)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-extent-resolutionvalue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (extent - resolutionValue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-extent-resolutionunit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (extent - resolutionUnit)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-extent-boundingbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (extent - boundingBox)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-extent-crs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (extent - crs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-temporal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - temporal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-temporal-referencedate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - temporal (referenceDate)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-temporal-timeseries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - temporal (timeseries)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-temporal-timeseries-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - temporal (timeseries - start)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-temporal-timeseries-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - temporal (timeseries - end)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-temporal-timeseries-resolutionvalue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - temporal (timeseries - resolutionValue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-temporal-timeseries-resolutionunit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - temporal (timeseries - resolutionUnit)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-temporal-timeseries-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - temporal (timeseries - alignment)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-temporal-timeseries-aggregationtype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - temporal (timeseries - aggregationType)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Sources
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resources - Sources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resources-sources_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sources
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sources-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sources (title)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sources-authors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sources (authors)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sources-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sources (description)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sources-publicationyear" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sources (publicationYear)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sources-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sources (path)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sourcelicenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sourceLicenses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sourcelicenses-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sourceLicenses (name)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sourcelicenses-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sourceLicenses (title)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sourcelicenses-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sourceLicenses (path)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sourcelicenses-instruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sourceLicenses (instruction)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sourcelicenses-attribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sourceLicenses (attribution)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sourcelicenses-copyrightstatement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sourceLicenses (copyrightStatement)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-resourcelicenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - resourceLicenses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-resourcelicenses-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - resourceLicenses (name)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-resourcelicenses-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - resourceLicenses (title)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-resourcelicenses-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - resourceLicenses (path)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-resourcelicenses-instruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - resourceLicenses (instruction)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-resourcelicenses-attribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - resourceLicenses (attribution)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-resourcelicenses-copyrightstatement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - resourceLicenses (copyrightStatement)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Type
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resources - Type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resources-type_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Format
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Encoding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - description
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-nullable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - nullable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - unit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-isabout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - isAbout
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-name-isabout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - name (isAbout)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-id-isabout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - @id (isAbout)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-valuereference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - valueReference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-name-valuereference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - name (valueReference)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-id-valuereference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - @id (valueReference)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-properties-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Properties Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-properties-keys-foreignkeys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Properties Keys - foreignKeys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-properties-keys-fields-foreignkeys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Properties Keys - fields (foreignKeys)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-properties-keys-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Properties Keys - reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-properties-keys-resource-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Properties Keys - resource (reference)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-properties-keys-fields-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Properties Keys - fields (reference)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-properties-keys-dialect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Properties Keys - dialect
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-properties-keys-delimiter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Properties Keys - delimiter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-properties-keys-decimalseparator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Properties Keys - decimalSeparator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-review-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Review Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-review-keys-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Review Keys - path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-review-keys-badge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Review Keys - badge
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metametadata-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MetaMetadata Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metametadata-keys-metadataversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MetaMetadata Keys - metadataVersion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metametadata-keys-metadatalicense" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MetaMetadata Keys - metadataLicense
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metametadata-keys-metadatalicense-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MetaMetadata Keys - metadataLicense - name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metametadata-keys-metadatalicense-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MetaMetadata Keys - metadataLicense - title
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metametadata-keys-metadatalicense-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MetaMetadata Keys - metadataLicense - path
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata_mappings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Crosswalks and Mappings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Documentation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    User Documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../user_documentation/install/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Install
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Install
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../user_documentation/functions/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Functions
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Functions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../user_documentation/test/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tests
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tests
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON Format
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cardinality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cardinality
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#badges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Badges
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional information:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metadata-keys-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metadata Keys - Dataset
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metadata Keys - Dataset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - @context
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - @id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - title
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - description
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - languages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - version
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - image
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-subject" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - subject
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-subject-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - subject (name)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-subject-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - subject (@id)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-keywords" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - keywords
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataset-context_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataset - context">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (title)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-homepage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (homepage)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (documentation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-sourcecode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (sourceCode)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-publisher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (publisher)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-publisherlogo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (publisherLogo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (contact)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-fundingagency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (fundingAgency)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-fundingagencylogo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (fundingAgencyLogo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-context-grantno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - context (grantNo)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataset-provenance-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Provenance Keys
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataset - Provenance Keys">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-provenance-keys_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Provenance Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-provenance-keys-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Provenance Keys (title)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-provenance-keys-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Provenance Keys (path)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-provenance-keys-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Provenance Keys (organization)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-provenance-keys-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Provenance Keys (roles)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-provenance-keys-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Provenance Keys (date)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-provenance-keys-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Provenance Keys (object)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-provenance-keys-comment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Provenance Keys (comment)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataset-dataset-licenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Dataset Licenses
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataset - Dataset Licenses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-datasetlicenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - datasetLicenses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-datasetlicenses-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - datasetLicenses (name)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-datasetlicenses-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - datasetLicenses (title)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-datasetlicenses-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - datasetLicenses (path)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-datasetlicenses-instruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - datasetLicenses (instruction)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-datasetlicenses-attribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - datasetLicenses (attribution)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-datasetlicenses-copyrightstatement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - datasetLicenses (copyrightStatement)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-review-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Review Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-review-keys-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Review Keys - path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-review-keys-badge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - Review Keys - badge
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset - resources
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - @id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - title
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - description
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-publicationdate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - publicationDate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-subject" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - subject
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-subject-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - subject (name)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-subject-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - subject (@id)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-keywords" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - keywords
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-embargoperiod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - embargoPeriod
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-embargoperiod-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - embargoPeriod (start)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-embargoperiod-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - embargoPeriod (end)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-embargoperiod-isactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - embargoPeriod (isActive)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (location)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-location-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (location - address)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-location-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (location - @id)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-location-latitude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (location - latitude)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-location-longitude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (location - longitude)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-extent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (extent)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-extent-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (extent - name)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-extent-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (extent - @id)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-extent-resolutionvalue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (extent - resolutionValue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-extent-resolutionunit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (extent - resolutionUnit)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-extent-boundingbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (extent - boundingBox)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-spatial-extent-crs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - spatial (extent - crs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-temporal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - temporal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-temporal-referencedate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - temporal (referenceDate)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-temporal-timeseries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - temporal (timeseries)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-temporal-timeseries-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - temporal (timeseries - start)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-temporal-timeseries-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - temporal (timeseries - end)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-temporal-timeseries-resolutionvalue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - temporal (timeseries - resolutionValue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-temporal-timeseries-resolutionunit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - temporal (timeseries - resolutionUnit)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-temporal-timeseries-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - temporal (timeseries - alignment)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-temporal-timeseries-aggregationtype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - temporal (timeseries - aggregationType)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Sources
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resources - Sources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resources-sources_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sources
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sources-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sources (title)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sources-authors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sources (authors)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sources-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sources (description)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sources-publicationyear" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sources (publicationYear)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sources-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sources (path)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sourcelicenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sourceLicenses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sourcelicenses-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sourceLicenses (name)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sourcelicenses-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sourceLicenses (title)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sourcelicenses-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sourceLicenses (path)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sourcelicenses-instruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sourceLicenses (instruction)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sourcelicenses-attribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sourceLicenses (attribution)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-sourcelicenses-copyrightstatement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - sourceLicenses (copyrightStatement)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-resourcelicenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - resourceLicenses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-resourcelicenses-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - resourceLicenses (name)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-resourcelicenses-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - resourceLicenses (title)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-resourcelicenses-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - resourceLicenses (path)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-resourcelicenses-instruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - resourceLicenses (instruction)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-resourcelicenses-attribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - resourceLicenses (attribution)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-resourcelicenses-copyrightstatement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - resourceLicenses (copyrightStatement)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Type
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resources - Type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resources-type_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Format
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Encoding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - description
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-nullable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - nullable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - unit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-isabout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - isAbout
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-name-isabout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - name (isAbout)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-id-isabout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - @id (isAbout)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-valuereference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - valueReference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-name-valuereference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - name (valueReference)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-fields-keys-id-valuereference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Fields Keys - @id (valueReference)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-properties-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Properties Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-properties-keys-foreignkeys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Properties Keys - foreignKeys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-properties-keys-fields-foreignkeys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Properties Keys - fields (foreignKeys)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-properties-keys-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Properties Keys - reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-properties-keys-resource-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Properties Keys - resource (reference)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-properties-keys-fields-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Properties Keys - fields (reference)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-properties-keys-dialect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Properties Keys - dialect
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-properties-keys-delimiter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Properties Keys - delimiter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-properties-keys-decimalseparator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Properties Keys - decimalSeparator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-review-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Review Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-review-keys-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Review Keys - path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources-review-keys-badge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources - Review Keys - badge
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metametadata-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MetaMetadata Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metametadata-keys-metadataversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MetaMetadata Keys - metadataVersion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metametadata-keys-metadatalicense" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MetaMetadata Keys - metadataLicense
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metametadata-keys-metadatalicense-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MetaMetadata Keys - metadataLicense - name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metametadata-keys-metadatalicense-title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MetaMetadata Keys - metadataLicense - title
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metametadata-keys-metadatalicense-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MetaMetadata Keys - metadataLicense - path
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Metadata Documentation
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<!--
+SPDX-FileCopyrightText: 2026 Ludwig Hülk <Ludee> © Reiner Lemoine Institut
+SPDX-FileCopyrightText: 2026 Jonas Huber <jh-RLI> © Reiner Lemoine Institut
+
+SPDX-License-Identifier: MIT
+-->
+
+<h1 id="oemetadata-key-description-details">OEMetadata - Key Description Details<a class="headerlink" href="#oemetadata-key-description-details" title="Permanent link">#</a></h1>
+<p>This pages describes the key of <strong>OEMetadata version 2.1 .</strong> <br>
+You can have a look at an empty <a href="https://github.com/OpenEnergyPlatform/oemetadata/blob/production/oemetadata/latest/template.json">template</a> and a filled out <a href="https://github.com/OpenEnergyPlatform/oemetadata/blob/production/oemetadata/latest/example.json">example</a> of the metadata string.<br>
+The <a href="https://github.com/OpenEnergyPlatform/oemetadata/blob/production/oemetadata/latest/schema.json"><code>schema.json</code></a> contains the complete metadata schema.</p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">#</a></h2>
+<h3 id="json-format">JSON Format<a class="headerlink" href="#json-format" title="Permanent link">#</a></h3>
+<p>The JSON format offers different formats:</p>
+<ul>
+<li>key-value pair:
+    <code>JSON
+    {"key":"value"}</code></li>
+<li>array:
+    <code>JSON
+    {"key":
+        ["value","value"]}</code></li>
+<li>object {nested key}:
+    <code>JSON
+    {"key": {
+        "key_a":"value",
+        "key_b":"value"}}</code></li>
+<li>array of objects {nested array}:
+    <code>JSON
+    {"key": [
+        {"key_a":"value"},
+        {"key_a":"value"}]}</code></li>
+</ul>
+<h3 id="cardinality">Cardinality<a class="headerlink" href="#cardinality" title="Permanent link">#</a></h3>
+<p>The cardinality defines the number of times an element can occur.</p>
+<ul>
+<li>[1]  Mandatory</li>
+<li>[0..1] Optional</li>
+<li>[*] Multiple optional</li>
+<li>[1..*] Mandatory and multiple optional</li>
+</ul>
+<h3 id="badges">Badges<a class="headerlink" href="#badges" title="Permanent link">#</a></h3>
+<p>Badges indicate the priority of metadata keys.<br>
+They are implemented as part of the <a href="https://openenergyplatform.github.io/academy/courses/09_peer_review/">Open Peer Review Process</a>.</p>
+<h3 id="additional-information">Additional information:<br><a class="headerlink" href="#additional-information" title="Permanent link">#</a></h3>
+<p>If a field is not applicable use: <code>null</code>.<br>
+If a value is not yet available, use: <code>ToDo</code>.</p>
+<h2 id="metadata-keys-dataset">Metadata Keys - Dataset<a class="headerlink" href="#metadata-keys-dataset" title="Permanent link">#</a></h2>
+<h3 id="dataset-context">Dataset - @context<a class="headerlink" href="#dataset-context" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Key</strong></td>
+<td>@context</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>Explanation of metadata keys in ontology terms.</td>
+</tr>
+<tr>
+<td><strong>Example</strong></td>
+<td><a href="https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/latest/context.json">context.json</a></td>
+</tr>
+<tr>
+<td><strong>Ontology Class</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Badge</strong></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td><strong>Card.</strong></td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-id">Dataset - @id<a class="headerlink" href="#dataset-id" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Key</strong></td>
+<td>@id</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>A unique identifier (UUID/DOI) for the dataset. This is the Databus Artifact.</td>
+</tr>
+<tr>
+<td><strong>Example</strong></td>
+<td><a href="https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/">databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/</a></td>
+</tr>
+<tr>
+<td><strong>Ontology Class</strong></td>
+<td><a href="http://purl.org/dc/terms/identifier">dct:identifier</a></td>
+</tr>
+<tr>
+<td><strong>Badge</strong></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td><strong>Card.</strong></td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-name">Dataset - name<a class="headerlink" href="#dataset-name" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Key</strong></td>
+<td>name</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>A filename or database conform dataset name.</td>
+</tr>
+<tr>
+<td><strong>Example</strong></td>
+<td>oep_oemetadata</td>
+</tr>
+<tr>
+<td><strong>Ontology Class</strong></td>
+<td><a href="https://www.w3.org/2000/01/rdf-schema#/label">rdfs:label</a></td>
+</tr>
+<tr>
+<td><strong>Badge</strong></td>
+<td>Iron</td>
+</tr>
+<tr>
+<td><strong>Card.</strong></td>
+<td>[1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-title">Dataset - title<a class="headerlink" href="#dataset-title" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Key</strong></td>
+<td>title</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>A human readable dataset name.</td>
+</tr>
+<tr>
+<td><strong>Example</strong></td>
+<td>OEP OEMetadata</td>
+</tr>
+<tr>
+<td><strong>Ontology Class</strong></td>
+<td><a href="http://purl.org/dc/terms/title">dct:title</a></td>
+</tr>
+<tr>
+<td><strong>Badge</strong></td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td><strong>Card.</strong></td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-description">Dataset - description<a class="headerlink" href="#dataset-description" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Key</strong></td>
+<td>description</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>A free text description of the dataset.</td>
+</tr>
+<tr>
+<td><strong>Example</strong></td>
+<td>A collection of tables for the OEMetadata examples.</td>
+</tr>
+<tr>
+<td><strong>Ontology Class</strong></td>
+<td><a href="http://purl.org/dc/terms/description">dct:description</a></td>
+</tr>
+<tr>
+<td><strong>Badge</strong></td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td><strong>Card.</strong></td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-languages">Dataset - languages<a class="headerlink" href="#dataset-languages" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>languages</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array of languages used within the described data structures (e.g. titles, descriptions). The language key can be repeated if more languages are used. Standard: IETF (BCP47).</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>en-GB, de-DE</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/language">dct:language</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-version">Dataset - version<a class="headerlink" href="#dataset-version" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>version</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A version string identifying the version of the package.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>0.1.0</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/ns/dcat#version">dcat:version</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-image">Dataset - image<a class="headerlink" href="#dataset-image" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>image</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An image to use for this data package.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>https://openenergyplatform.org/static/img/about/OpenEnergyFamily_GroupPhoto2.png</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://schema.org/image">schema.org:image</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-subject">Dataset - subject<a class="headerlink" href="#dataset-subject" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>subject</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array of objects that references the subjects of the resource in ontology terms.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-subject-name">Dataset - subject (name)<a class="headerlink" href="#dataset-subject-name" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>name</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A class label of the ontology term.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>energy</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/2000/01/rdf-schema#/label">rdfs:label</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-subject-id">Dataset - subject (@id)<a class="headerlink" href="#dataset-subject-id" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>@id</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A unique identifier (URI/IRI) of the ontology class.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://openenergyplatform.org/ontology/oeo/OEO_00000150">openenergyplatform.org/ontology/oeo/OEO_00000150</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/subject">dct:subject</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-keywords">Dataset - keywords<a class="headerlink" href="#dataset-keywords" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>keywords</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array of freely selectable keywords that help with searching and structuring.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>example, ODbL-1.0, NFDI4Energy</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://www.w3.org/ns/dcat#keyword">dcat:keyword</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dataset-context_1">Dataset - context<a class="headerlink" href="#dataset-context_1" title="Permanent link">#</a></h2>
+<h3 id="dataset-context_2">Dataset - context<a class="headerlink" href="#dataset-context_2" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>context</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An object that describes the general setting, environment, or project leading to the creation or maintenance of this dataset. In science, this can be the research project.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-context-title">Dataset - context (title)<a class="headerlink" href="#dataset-context-title" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>title</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A title of the associated project.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>NFDI4Energy</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/title">dct:title</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-context-homepage">Dataset - context (homepage)<a class="headerlink" href="#dataset-context-homepage" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>homepage</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A URL of the project.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://nfdi4energy.uol.de/">nfdi4energy.uol.de</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://xmlns.com/foaf/0.1/homepage">foaf:homepage</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-context-documentation">Dataset - context (documentation)<a class="headerlink" href="#dataset-context-documentation" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>documentation</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A URL of the project documentation.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://nfdi4energy.uol.de/sites/about_us/">nfdi4energy.uol.de/sites/about_us</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.obolibrary.org/obo/NCIT_C165054">ncit:Project Description</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-context-sourcecode">Dataset - context (sourceCode)<a class="headerlink" href="#dataset-context-sourcecode" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>sourceCode</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A URL of the source code of the project.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://github.com/NFDI4Energy">github.com/NFDI4Energy</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://openenergyplatform.org/ontology/oeo/OEO_00000091/">oeo:code source</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-context-publisher">Dataset - context (publisher)<a class="headerlink" href="#dataset-context-publisher" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>publisher</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The publishing agency of the data. This can be the OEP.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Open Energy Platform (OEP)</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/publisher">dct:publisher</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-context-publisherlogo">Dataset - context (publisherLogo)<a class="headerlink" href="#dataset-context-publisherlogo" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>publisherLogo</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A URL to the logo of the publishing agency of data.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg">OpenEnergyFamily_Logo_OpenEnergyPlatform.svg</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://xmlns.com/foaf/0.1/logo">foaf:logo</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-context-contact">Dataset - context (contact)<a class="headerlink" href="#dataset-context-contact" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>contact</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A reference to the creator or maintainer of the data set. It can be an email address or a GitHub handle.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>info@nfdi4energy.org</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://openenergyplatform.org/ontology/oeo/OEO_00000107/">oeo:contact person</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-context-fundingagency">Dataset - context (fundingAgency)<a class="headerlink" href="#dataset-context-fundingagency" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>fundingAgency</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A name of the entity providing the funding. This can be a government agency or a company.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Deutsche Forschungsgemeinschaft (DFG)</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://schema.org/fundingAgency">sc:FundingAgency</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-context-fundingagencylogo">Dataset - context (fundingAgencyLogo)<a class="headerlink" href="#dataset-context-fundingagencylogo" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>fundingAgencyLogo</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A URL to the logo or image of the funding agency.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/8/86/DFG-logo-blau.svg">DFG-logo-blau.svg</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://xmlns.com/foaf/0.1/logo">foaf:logo</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-context-grantno">Dataset - context (grantNo)<a class="headerlink" href="#dataset-context-grantno" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>grantNo</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An identifying grant number. In case of a publicly funded project, this number is assigned by the funding agency.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>501865131</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://schema.org/">sc:Grant</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dataset-provenance-keys">Dataset - Provenance Keys<a class="headerlink" href="#dataset-provenance-keys" title="Permanent link">#</a></h2>
+<h3 id="dataset-provenance-keys_1">Dataset - Provenance Keys<a class="headerlink" href="#dataset-provenance-keys_1" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>contributors</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array of objects of the people or organizations who contributed to the data or metadata. Should have "Date of data creation" and "Date of metadata creation"</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://xmlns.com/foaf/0.1/Agent">foaf:Agent</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-provenance-keys-title">Dataset - Provenance Keys (title)<a class="headerlink" href="#dataset-provenance-keys-title" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>title</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A full name of the contributor.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Ludwig Hülk</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/title">dct:title</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-provenance-keys-path">Dataset - Provenance Keys (path)<a class="headerlink" href="#dataset-provenance-keys-path" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>path</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A qualified link or path pointing to a relevant location online for the contributor. This can be the GitHub page or ORCID.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>https://github.com/Ludee</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://schema.org/url">sc:url</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-provenance-keys-organization">Dataset - Provenance Keys (organization)<a class="headerlink" href="#dataset-provenance-keys-organization" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>organization</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A string describing the organization this contributor is affiliated to. This can be relevant for the copyright.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Reiner Lemoine Institut</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://openenergyplatform.org/ontology/oeo/OEO_00030022/">oeo:organisation</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-provenance-keys-roles">Dataset - Provenance Keys (roles)<a class="headerlink" href="#dataset-provenance-keys-roles" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>roles</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array describing the roles of the contributor. A role is recommended to follow the established vocabulary: <a href="https://support.datacite.org/docs/datacite-metadata-schema-v44-recommended-and-optional-properties#7a-contributortype">DataCite Metadata Schema’s contributorRole</a>.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>DataCollector, DataCurator</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://openenergyplatform.org/ontology/oeo/BFO_0000023/">oeo:role</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-provenance-keys-date">Dataset - Provenance Keys (date)<a class="headerlink" href="#dataset-provenance-keys-date" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>date</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The date of the contribution. Date Format is ISO 8601.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>2024-10-21</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/issued">dct:issued</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-provenance-keys-object">Dataset - Provenance Keys (object)<a class="headerlink" href="#dataset-provenance-keys-object" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>object</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The target of the contribution. This can be the data, the metadata or both (data and metadata).</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>data and metadata</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/type">dct:type</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-provenance-keys-comment">Dataset - Provenance Keys (comment)<a class="headerlink" href="#dataset-provenance-keys-comment" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>comment</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A free-text commentary on what has been done.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Add general context.</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dataset-dataset-licenses">Dataset - Dataset Licenses<a class="headerlink" href="#dataset-dataset-licenses" title="Permanent link">#</a></h2>
+<h3 id="dataset-datasetlicenses">Dataset - datasetLicenses<a class="headerlink" href="#dataset-datasetlicenses" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>datasetLicenses</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array of objects of licenses under which the described dataset is provided.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/license">dct:license</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-datasetlicenses-name">Resources - datasetLicenses (name)<a class="headerlink" href="#resources-datasetlicenses-name" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>name</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The <a href="https://spdx.org/licenses/">SPDX</a> identifier.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>ODbL-1.0</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/2000/01/rdf-schema#/label">rdfs:label</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-datasetlicenses-title">Dataset - datasetLicenses (title)<a class="headerlink" href="#dataset-datasetlicenses-title" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>title</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The official (human-readable) title of the license.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Open Data Commons Open Database License 1.0</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/title">dct:title</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-datasetlicenses-path">Dataset - datasetLicenses (path)<a class="headerlink" href="#dataset-datasetlicenses-path" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>path</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A link or path to the license text.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://opendatacommons.org/licenses/odbl/1-0/index.html">opendatacommons.org/licenses/odbl/1-0/index.html</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/ns/dcat#accessURL">dcat:accessURL</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-datasetlicenses-instruction">Dataset - datasetLicenses (instruction)<a class="headerlink" href="#dataset-datasetlicenses-instruction" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>instruction</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A short description of rights and obligations. The use of <a href="https://tldrlegal.com/">tl;drLegal</a> is recommended.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>You are free to share and change, but you must attribute, and share derivations under the same license. See <a href="https://tldrlegal.com/license/odc-open-database-license-odbl">tldrlegal.com</a> for further information.</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/elements/1.1/rights">dc:rights</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-datasetlicenses-attribution">Dataset - datasetLicenses (attribution)<a class="headerlink" href="#dataset-datasetlicenses-attribution" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>attribution</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A copyright owner of the <strong>dataset</strong>. Must be provided if attribution licenses are used.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>© Reiner Lemoine Institut</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://spdx.org/rdf/terms#attributionText">spdx:attributionText</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-datasetlicenses-copyrightstatement">Dataset - datasetLicenses (copyrightStatement)<a class="headerlink" href="#dataset-datasetlicenses-copyrightstatement" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>copyrightStatement</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A link or path that proves that the dataset has the appropriate license. This can be a page number or website imprint.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://www.ipcc.ch/copyright/">www.ipcc.ch/copyright/</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/rights">dct:rights</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-review-keys">Dataset - Review Keys<a class="headerlink" href="#dataset-review-keys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>review</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The metadata on the OEP can go through an open peer review process. See the Academy course <a href="https://openenergyplatform.github.io/academy/courses/09_peer_review/">Open Peer Review</a> for further information.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-review-keys-path">Dataset - Review Keys - path<a class="headerlink" href="#dataset-review-keys-path" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>path</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A link or path to the documented open peer review (under development).</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/9/">open_peer_review/9</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://schema.org/url">sc:url</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-review-keys-badge">Dataset - Review Keys - badge<a class="headerlink" href="#dataset-review-keys-badge" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>badge</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A badge of either Iron, Bronze, Silver, Gold or Platinum is used to label the quality of the metadata.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://openenergyplatform.org/ontology/oeo/OEO_00140098/">oeo:quality control flag</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">#</a></h2>
+<h3 id="dataset-resources">Dataset - resources<a class="headerlink" href="#dataset-resources" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Key</strong></td>
+<td>resources</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>An array of objects of the resources. The dataset can contain several (database) tables.</td>
+</tr>
+<tr>
+<td><strong>Example</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Ontology Class</strong></td>
+<td><a href="https://www.w3.org/ns/dcat#dataset">dcat:Dataset</a></td>
+</tr>
+<tr>
+<td><strong>Badge</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Card.</strong></td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-id">Resources - @id<a class="headerlink" href="#resources-id" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>@id</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A Uniform Resources Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus).</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv">wri_global_power_plant_database</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/identifier">dct:identifier</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-path">Resources - path<a class="headerlink" href="#resources-path" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>path</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A unique identifier (URI/UUID/DOI) for the table or file.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="http://openenergyplatform.org/dataedit/view/model_draft/oemetadata_table_template">model_draft/oemetadata_table_template</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/ns/dcat#accessURL">dcat:accessURL</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-name">Resources - name<a class="headerlink" href="#resources-name" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>name</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A filename or database conform table name.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>oemetadata_table_template</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/2000/01/rdf-schema#/label">rdfs:label</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-title">Resources - title<a class="headerlink" href="#resources-title" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>title</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A human readable resource or table name.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>OEMetadata Table</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/title">dct:title</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-description">Resources - description<a class="headerlink" href="#resources-description" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>description</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A description of the table. It should be usable as summary information for the table that is described by the metadata.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Example table used to illustrate the OEMetadata structure and features.</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/description">dct:description</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-publicationdate">Resources - publicationDate<a class="headerlink" href="#resources-publicationdate" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>publicationDate</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A date of publication of the data or metadata. The date format is ISO 8601 (YYYY-MM-DD).</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>2024-10-15</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/issued">dct:issued</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-subject">Resources - subject<a class="headerlink" href="#resources-subject" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>subject</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array of objects that references the subjects of the resource in ontology terms.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-subject-name">Resources - subject (name)<a class="headerlink" href="#resources-subject-name" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>name</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A class label of the ontology term.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>energy</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/2000/01/rdf-schema#/label">rdfs:label</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-subject-id">Resources - subject (@id)<a class="headerlink" href="#resources-subject-id" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>@id</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A unique identifier (URI/IRI) of the ontology class.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://openenergyplatform.org/ontology/oeo/OEO_00000150">openenergyplatform.org/ontology/oeo/OEO_00000150</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/subject">dct:subject</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-keywords">Resources - keywords<a class="headerlink" href="#resources-keywords" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>keywords</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array of freely selectable keywords that help with searching and structuring.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>example, ODbL-1.0, NFDI4Energy</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://www.w3.org/ns/dcat#keyword">dcat:keyword</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-embargoperiod">Resources - embargoPeriod<a class="headerlink" href="#resources-embargoperiod" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>embargoPeriod</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An object that describes the embargo period during which public access to the data is not allowed.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-embargoperiod-start">Resources - embargoPeriod (start)<a class="headerlink" href="#resources-embargoperiod-start" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>start</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The start date of the embargo period. The date of the data (metadata) upload.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>2024-10-11</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://dbpedia.org/ontology/startDateTime">dbo:startDateTime</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-embargoperiod-end">Resources - embargoPeriod (end)<a class="headerlink" href="#resources-embargoperiod-end" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>end</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The end date of the embargo period. This is the envisioned publication date.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>2025-01-01</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://dbpedia.org/ontology/endDateTime">dbo:endDateTime</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-embargoperiod-isactive">Resources - embargoPeriod (isActive)<a class="headerlink" href="#resources-embargoperiod-isactive" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>isActive</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A boolean key that indicates if the embargo period is currently active. Must be changed to False on the embargo period end date.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>True</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://www.w3.org/ns/adms#status">adms:status</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-spatial">Resources - spatial<a class="headerlink" href="#resources-spatial" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>spatial</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An object that describes the spatial context of the data.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-spatial-location">Resources - spatial (location)<a class="headerlink" href="#resources-spatial-location" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>location</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An object that describes a specific location.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/Location">dct:location</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-spatial-location-address">Resources - spatial (location - address)<a class="headerlink" href="#resources-spatial-location-address" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>address</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An address of the location of the data. May be specified with street name, house number, zip code, and city name.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Rudower Chaussee 12, 12489 Berlin</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://schema.org/address">schema:address</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-spatial-location-id">Resources - spatial (location - @id)<a class="headerlink" href="#resources-spatial-location-id" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>@id</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A path or URI to a specific location. It can use Wikidata or OpenStreetMap.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://www.wikidata.org/wiki/Q77077223">www.wikidata.org/wiki/Q77077223</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/identifier">dct:identifier</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-spatial-location-latitude">Resources - spatial (location - latitude)<a class="headerlink" href="#resources-spatial-location-latitude" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>latitude</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The latitude (lat) information of the location.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>52.432822</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://schema.org/latitude">schema:latitude</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-spatial-location-longitude">Resources - spatial (location - longitude)<a class="headerlink" href="#resources-spatial-location-longitude" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>longitude</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The longitude (lon) information of the location.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>13.5351004</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://schema.org/longitude">schema:longitude</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-spatial-extent">Resources - spatial (extent)<a class="headerlink" href="#resources-spatial-extent" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>extent</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An object that describes a covered area or region.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.obolibrary.org/obo/BFO_0000006">oeo:spatial region</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-spatial-extent-name">Resources - spatial (extent - name)<a class="headerlink" href="#resources-spatial-extent-name" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>name</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The name of the region.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Berlin</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/2000/01/rdf-schema#/label">rdfs:label</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-spatial-extent-id">Resources - spatial (extent - @id)<a class="headerlink" href="#resources-spatial-extent-id" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>@id</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A URI reference for the region.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://www.wikidata.org/wiki/Q64">www.wikidata.org/wiki/Q64</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/identifier">dct:identifier</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-spatial-extent-resolutionvalue">Resources - spatial (extent - resolutionValue)<a class="headerlink" href="#resources-spatial-extent-resolutionvalue" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>resolutionValue</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The value of the spatial resolution.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters">dcat:spatialResolutionInMeters</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-spatial-extent-resolutionunit">Resources - spatial (extent - resolutionUnit)<a class="headerlink" href="#resources-spatial-extent-resolutionunit" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>resolutionUnit</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The unit of the spatial resolution.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>m</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://openenergyplatform.org/ontology/oeo/OEO_00010489">oeo:unit</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-spatial-extent-boundingbox">Resources - spatial (extent - boundingBox)<a class="headerlink" href="#resources-spatial-extent-boundingbox" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>boundingBox</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The covered area specified by the coordinates of a bounding box. The format is [minLon, minLat, maxLon, maxLat] or [W,S,E,N].</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>[13.08825, 52.33859, 13.76104, 52.6754]</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://www.w3.org/ns/dcat#bbox">dcat:bbox</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-spatial-extent-crs">Resources - spatial (extent - crs)<a class="headerlink" href="#resources-spatial-extent-crs" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>crs</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The Coordinate Reference System, specified as an EPSG code.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>EPSG:4326</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://www.ontologyrepository.com/CommonCoreOntologies/GeospatialCoordinateReferenceSystem">cco:Geospatial Coordinate Reference System</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-temporal">Resources - temporal<a class="headerlink" href="#resources-temporal" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>temporal</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An object with the time period covered in the data. Temporal information should contain a "referenceDate" or the keys that describe a time series, or both.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://schema.org/temporalCoverage">schema:temporalCoverage</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-temporal-referencedate">Resources - temporal (referenceDate)<a class="headerlink" href="#resources-temporal-referencedate" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>referenceDate</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A base year, month or day. The time for which the data should be accurate. Date Format is ISO 8601.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>2020-01-01</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/date">dct:date</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-temporal-timeseries">Resources - temporal (timeseries)<a class="headerlink" href="#resources-temporal-timeseries" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>timeseries</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array that describes the timeseries.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/PeriodOfTime">dct:PeriodOfTime</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-temporal-timeseries-start">Resources - temporal (timeseries - start)<a class="headerlink" href="#resources-temporal-timeseries-start" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>start</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The start time of a time series.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>2020-01-01T00:00:00+00:00</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://dbpedia.org/ontology/startDateTime">dbo:startDateTime</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-temporal-timeseries-end">Resources - temporal (timeseries - end)<a class="headerlink" href="#resources-temporal-timeseries-end" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>end</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The temporal end point of a time series.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>2020-01-01T23:59:30+00:00</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://dbpedia.org/ontology/endDateTime">dbo:endDateTime</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-temporal-timeseries-resolutionvalue">Resources - temporal (timeseries - resolutionValue)<a class="headerlink" href="#resources-temporal-timeseries-resolutionvalue" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>resolutionValue</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The time span between individual information points in a time series. The value of the resolution.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>30 s</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters">dcat:spatialResolutionInMeters</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-temporal-timeseries-resolutionunit">Resources - temporal (timeseries - resolutionUnit)<a class="headerlink" href="#resources-temporal-timeseries-resolutionunit" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>resolutionUnit</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The unit of the temporal resolution.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>30 s</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://openenergyplatform.org/ontology/oeo/OEO_00010489">oeo:unit</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-temporal-timeseries-alignment">Resources - temporal (timeseries - alignment)<a class="headerlink" href="#resources-temporal-timeseries-alignment" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>alignment</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An indicator of whether timestamps in a time series are to the left, right or in the centre.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>left</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://openenergyplatform.org/ontology/oeo/OEO_00140044">oeo:time stamp alignment</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-temporal-timeseries-aggregationtype">Resources - temporal (timeseries - aggregationType)<a class="headerlink" href="#resources-temporal-timeseries-aggregationtype" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>aggregationType</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An indicator of whether the values are a sum, an average or a current value.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>current</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://openenergyplatform.org/ontology/oeo/OEO_00140068/">oeo:aggregation type</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="resources-sources">Resources - Sources<a class="headerlink" href="#resources-sources" title="Permanent link">#</a></h2>
+<h3 id="resources-sources_1">Resources - sources<a class="headerlink" href="#resources-sources_1" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>sources</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array of objects with the used and underlying sources of the data and metadata.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/source">dct:source</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-sources-title">Resources - sources (title)<a class="headerlink" href="#resources-sources-title" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>title</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A human readable title of the source, a document title or organisation name.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>IPCC Sixth Assessment Report (AR6) - Climate Change 2023 - Synthesis Report</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/title">dct:title</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-sources-authors">Resources - sources (authors)<a class="headerlink" href="#resources-sources-authors" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>authors</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array of the full names of the authors of the source material.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Hoesung Lee, José Romero, The Core Writing Team</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://openenergyplatform.org/ontology/oeo/OEO_00000064/">oeo:author</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-sources-description">Resources - sources (description)<a class="headerlink" href="#resources-sources-description" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>description</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A free text description of the source.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>A Report of the Intergovernmental Panel on Climate Change</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/description">dct:description</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-sources-publicationyear">Resources - sources (publicationYear)<a class="headerlink" href="#resources-sources-publicationyear" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>publicationYear</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Indicates the year when the work was published.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>2023</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/issued">dct:issued</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-sources-path">Resources - sources (path)<a class="headerlink" href="#resources-sources-path" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>path</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A DOI or link to the original source.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf">IPCC_AR6_SYR_FullVolume.pdf</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://schema.org/url">sc:url</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-sourcelicenses">Resources - sourceLicenses<a class="headerlink" href="#resources-sourcelicenses" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>sourceLicenses</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array of objects of licenses under which the described source is provided. See <a href="https://openenergyplatform.github.io/academy/courses/08_licensing/">academy/courses/08_licensing</a> for further information.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/license">dct:license</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-sourcelicenses-name">Resources - sourceLicenses (name)<a class="headerlink" href="#resources-sourcelicenses-name" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>name</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The <a href="https://spdx.org/licenses/">SPDX</a> identifier.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>ODbL-1.0</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/2000/01/rdf-schema#/label">rdfs:label</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-sourcelicenses-title">Resources - sourceLicenses (title)<a class="headerlink" href="#resources-sourcelicenses-title" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>title</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The official (human-readable) title of the license.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Open Data Commons Open Database License 1.0</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/title">dct:title</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-sourcelicenses-path">Resources - sourceLicenses (path)<a class="headerlink" href="#resources-sourcelicenses-path" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>path</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A link or path to the license text.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://opendatacommons.org/licenses/odbl/1-0/index.html">opendatacommons.org/licenses/odbl/1-0/index.html</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://schema.org/url">sc:url</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-sourcelicenses-instruction">Resources - sourceLicenses (instruction)<a class="headerlink" href="#resources-sourcelicenses-instruction" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>instruction</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A short description of rights and obligations. The use of <a href="https://tldrlegal.com/">tl;drLegal</a> is recommended.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>You are free to share and change, but you must attribute, and share derivations under the same license. See <a href="https://tldrlegal.com/license/odc-open-database-license-odbl">tldrlegal.com</a> for further information.</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-sourcelicenses-attribution">Resources - sourceLicenses (attribution)<a class="headerlink" href="#resources-sourcelicenses-attribution" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>attribution</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A copyright owner of the <strong>source</strong>. Must be provided if attribution licenses are used.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>© Intergovernmental Panel on Climate Change 2023</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.obolibrary.org/obo/MS_1003198">ms:copyright notice</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-sourcelicenses-copyrightstatement">Resources - sourceLicenses (copyrightStatement)<a class="headerlink" href="#resources-sourcelicenses-copyrightstatement" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>copyrightStatement</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A link or path that proves that the source or data has the appropriate license. This can be a page number or website imprint.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://www.ipcc.ch/copyright/">www.ipcc.ch/copyright</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/rights">dct:rights</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-resourcelicenses">Resources - resourceLicenses<a class="headerlink" href="#resources-resourcelicenses" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>resourceLicenses</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array of objects of licenses under which the described resource (table) is provided.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/license">dct:license</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-resourcelicenses-name">Resources - resourceLicenses (name)<a class="headerlink" href="#resources-resourcelicenses-name" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>name</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The <a href="https://spdx.org/licenses/">SPDX</a> identifier.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>ODbL-1.0</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/2000/01/rdf-schema#/label">rdfs:label</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-resourcelicenses-title">Resources - resourceLicenses (title)<a class="headerlink" href="#resources-resourcelicenses-title" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>title</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The official (human-readable) title of the license.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Open Data Commons Open Database License 1.0</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/title">dct:title</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-resourcelicenses-path">Resources - resourceLicenses (path)<a class="headerlink" href="#resources-resourcelicenses-path" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>path</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A link or path to the license text.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://opendatacommons.org/licenses/odbl/1-0/index.html">opendatacommons.org/licenses/odbl/1-0/index.html</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/ns/dcat#accessURL">dcat:accessURL</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-resourcelicenses-instruction">Resources - resourceLicenses (instruction)<a class="headerlink" href="#resources-resourcelicenses-instruction" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>instruction</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A short description of rights and obligations. The use of <a href="https://tldrlegal.com/">tl;drLegal</a> is recommended.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>You are free to share and change, but you must attribute, and share derivations under the same license. See <a href="https://tldrlegal.com/license/odc-open-database-license-odbl">tldrlegal.com</a> for further information.</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/elements/1.1/rights">dc:rights</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-resourcelicenses-attribution">Resources - resourceLicenses (attribution)<a class="headerlink" href="#resources-resourcelicenses-attribution" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>attribution</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A copyright owner of the <strong>data</strong>. Must be provided if attribution licenses are used.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>© Reiner Lemoine Institut</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://spdx.org/rdf/terms#attributionText">spdx:attributionText</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-resourcelicenses-copyrightstatement">Resources - resourceLicenses (copyrightStatement)<a class="headerlink" href="#resources-resourcelicenses-copyrightstatement" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>copyrightStatement</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A link or path that proves that the data has the appropriate license. This can be a page number or website imprint.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://www.ipcc.ch/copyright/">www.ipcc.ch/copyright/</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/rights">dct:rights</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Bronze</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="resources-type">Resources - Type<a class="headerlink" href="#resources-type" title="Permanent link">#</a></h2>
+<h3 id="resources-type_1">Resources - Type<a class="headerlink" href="#resources-type_1" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>The 'table' type indicates that the resource is tabular as per 'Frictionless Tabular Data' definition.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>table</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/ns/csvw#datatype">csvw:datatype</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-format">Resources - Format<a class="headerlink" href="#resources-format" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>A file extension format. Possible options are 'csv', 'xlsx', 'json', 'PostgreSQL', 'SQLite' and other standard file extensions.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>PostgreSQL</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/format">dct:format</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-encoding">Resources - Encoding<a class="headerlink" href="#resources-encoding" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>encoding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description</td>
+<td>Specifies the character encoding of the resource's data file. The default is 'UTF-8'. The values should be one of the 'Preferred MIME Names'.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>UTF-8</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://www.w3.org/ns/csvw#encoding">csvw:encoding</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-fields-keys">Resources - Fields Keys<a class="headerlink" href="#resources-fields-keys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>schema</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An object that describes the structure of a table. It contains all fields (columns of the table), the primary key and optional foreign keys.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://schema.org/Table">schema:table</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-fields-keys-fields">Resources - Fields Keys - fields<a class="headerlink" href="#resources-fields-keys-fields" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>fields</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array of objects that describes a field (column) and its detailed information.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://www.w3.org/ns/csvw#column">csvw:column</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-fields-keys-name">Resources - Fields Keys - name<a class="headerlink" href="#resources-fields-keys-name" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>name</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The name of the field. The name may only consist of lowercase alphanumeric characters or underscores. It must not begin with a number or an underscore.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>year</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/2000/01/rdf-schema#/label">rdfs:label</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-fields-keys-description">Resources - Fields Keys - description<a class="headerlink" href="#resources-fields-keys-description" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>description</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A text describing the field.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Reference year for which the data were collected.</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/description">dct:description</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-fields-keys-type">Resources - Fields Keys - type<a class="headerlink" href="#resources-fields-keys-type" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>type</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The data type of the field. In case of a geom column in a database, also indicate the shape and CRS.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>geometry(Point, 4326)</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/ns/csvw#datatype">csvw:datatype</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-fields-keys-nullable">Resources - Fields Keys - nullable<a class="headerlink" href="#resources-fields-keys-nullable" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>nullable</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A boolean key to specify that a column can be nullable. True is the default value.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>True</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.obolibrary.org/obo/NCIT_C47840">ncit:null</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-fields-keys-unit">Resources - Fields Keys - unit<a class="headerlink" href="#resources-fields-keys-unit" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>unit</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The unit of a field. If it does not apply, use 'null'. If the unit is given in a separate field, reference this field (e.g. 'unit'). Use a space between numbers and units (100 m).</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>MW</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://openenergyplatform.org/ontology/oeo/OEO_00040010/">oeo:has unit</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-fields-keys-isabout">Resources - Fields Keys - isAbout<a class="headerlink" href="#resources-fields-keys-isabout" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>isAbout</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array of objects that describes the field in ontology terms.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://schema.org/about">sc:about</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-fields-keys-name-isabout">Resources - Fields Keys - name (isAbout)<a class="headerlink" href="#resources-fields-keys-name-isabout" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>name</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The class label of the ontology term.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>wind energy converting unit</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/2000/01/rdf-schema#/label">rdfs:label</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-fields-keys-id-isabout">Resources - Fields Keys - @id (isAbout)<a class="headerlink" href="#resources-fields-keys-id-isabout" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>@id</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The path of the ontology term (IRI).</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://openenergyplatform.org/ontology/oeo/OEO_00000044">OEO_00000044</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/identifier">dct:identifier</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-fields-keys-valuereference">Resources - Fields Keys - valueReference<a class="headerlink" href="#resources-fields-keys-valuereference" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>valueReference</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array of objects for an extended description of the values in the column in ontology terms.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/ns/prov#value">prov:value</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-fields-keys-value">Resources - Fields Keys - value<a class="headerlink" href="#resources-fields-keys-value" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>value</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The name of the value in the column.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>onshore</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/1999/02/22-rdf-syntax-ns#value">rdf:value</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-fields-keys-name-valuereference">Resources - Fields Keys - name (valueReference)<a class="headerlink" href="#resources-fields-keys-name-valuereference" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>name</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The class label of the ontology term in the column.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>onshore wind farm</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/2000/01/rdf-schema#/label">rdfs:label</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-fields-keys-id-valuereference">Resources - Fields Keys - @id (valueReference)<a class="headerlink" href="#resources-fields-keys-id-valuereference" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>@id</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The path of the ontology term (IRI) in the column.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://openenergyplatform.org/ontology/oeo/OEO_00000311">OEO_00000311</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/identifier">dct:identifier</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-properties-keys">Resources - Properties Keys<a class="headerlink" href="#resources-properties-keys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>primaryKey</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array of fields that uniquely identifies each row in the table. The default value is the “id” column.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>id</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/ns/csvw#primaryKey">csvw:primaryKey</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[1..*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-properties-keys-foreignkeys">Resources - Properties Keys - foreignKeys<a class="headerlink" href="#resources-properties-keys-foreignkeys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>foreignKeys</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array of objects with foreign keys that describe a field that relates to a field in another table.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/ns/csvw#foreignKey">csvw:foreignKey</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-properties-keys-fields-foreignkeys">Resources - Properties Keys - fields (foreignKeys)<a class="headerlink" href="#resources-properties-keys-fields-foreignkeys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>fields</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An array of fields in the table that is constrained by the foreign key.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>id, version</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://example.org/nestedFields">ex:nestedFields</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-properties-keys-reference">Resources - Properties Keys - reference<a class="headerlink" href="#resources-properties-keys-reference" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>reference</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The reference to the foreign table.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-properties-keys-resource-reference">Resources - Properties Keys - resource (reference)<a class="headerlink" href="#resources-properties-keys-resource-reference" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>resource</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The referenced foreign table.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>model_draft.oep_oemetadata_table_example_version</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/ns/dcat#dataset">dcat:Dataset</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-properties-keys-fields-reference">Resources - Properties Keys - fields (reference)<a class="headerlink" href="#resources-properties-keys-fields-reference" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>fields</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The foreign resource column.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>id, version</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://www.w3.org/ns/csvw#column">csvw:column</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[*]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-properties-keys-dialect">Resources - Properties Keys - dialect<a class="headerlink" href="#resources-properties-keys-dialect" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>dialect</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The Dialect defines a simple format for describing the various dialects of CSV files in a language-independent manner. In a database, the values in the fields are 'null'.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-properties-keys-delimiter">Resources - Properties Keys - delimiter<a class="headerlink" href="#resources-properties-keys-delimiter" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>delimiter</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The delimiter specifies the character sequence which should separate fields (columns). Common characters are ',' (comma), ';' (semicolon), '.' (point) and '\t' (tab).</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>,</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://www.w3.org/ns/csvw#delimiter">csvw:delimiter</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-properties-keys-decimalseparator">Resources - Properties Keys - decimalSeparator<a class="headerlink" href="#resources-properties-keys-decimalseparator" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>decimalSeparator</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The symbol used to separate the integer part from the fractional part of a number written in decimal form. Depending on language and region this symbol can be '.' or ','.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>.</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://www.w3.org/ns/csvw#decimalChar">csvw:decimalChar</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>Iron</td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-review-keys">Resources - Review Keys<a class="headerlink" href="#resources-review-keys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>review</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The metadata on the OEP can go through an open peer review process. See the Academy course <a href="https://openenergyplatform.github.io/academy/courses/09_peer_review/">Open Peer Review</a> for further information.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-review-keys-path">Resources - Review Keys - path<a class="headerlink" href="#resources-review-keys-path" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>path</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A link or path to the documented open peer review.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/9/">open_peer_review/9</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://schema.org/url">sc:url</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources-review-keys-badge">Resources - Review Keys - badge<a class="headerlink" href="#resources-review-keys-badge" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>badge</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A badge of either Iron, Bronze, Silver, Gold or Platinum is used to label the quality of the metadata.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://openenergyplatform.org/ontology/oeo/OEO_00140098/">oeo:quality control flag</a></td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>[0..1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metametadata-keys">MetaMetadata Keys<a class="headerlink" href="#metametadata-keys" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>metaMetadata</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>An object that describes the metadata themselves, their format, version and license.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metametadata-keys-metadataversion">MetaMetadata Keys - metadataVersion<a class="headerlink" href="#metametadata-keys-metadataversion" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>metadataVersion</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Type and version number of the metadata.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>OEMetadata-2.0</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://www.w3.org/2002/07/owl#versionInfo">owl:versionInfo</a></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metametadata-keys-metadatalicense">MetaMetadata Keys - metadataLicense<a class="headerlink" href="#metametadata-keys-metadatalicense" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>metadataLicense</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The license of the provided metadata.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/license">dct:license</a></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metametadata-keys-metadatalicense-name">MetaMetadata Keys - metadataLicense - name<a class="headerlink" href="#metametadata-keys-metadatalicense-name" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>name</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The <a href="https://spdx.org/licenses/">SPDX</a> identifier.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>CC0-1.0</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://www.w3.org/2000/01/rdf-schema#/label">rdfs:label</a></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metametadata-keys-metadatalicense-title">MetaMetadata Keys - metadataLicense - title<a class="headerlink" href="#metametadata-keys-metadatalicense-title" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>title</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>The official (human-readable) title of the license.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Creative Commons Zero v1.0 Universal</td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="http://purl.org/dc/terms/title">dct:title</a></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metametadata-keys-metadatalicense-path">MetaMetadata Keys - metadataLicense - path<a class="headerlink" href="#metametadata-keys-metadatalicense-path" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td><strong>path</strong></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A link or path to the license text.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><a href="https://creativecommons.org/publicdomain/zero/1.0/">creativecommons.org/publicdomain/zero/1.0/</a></td>
+</tr>
+<tr>
+<td>Ontology Class</td>
+<td><a href="https://schema.org/url">sc:url</a></td>
+</tr>
+<tr>
+<td>Card.</td>
+<td>[1]</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.path", "navigation.tracking", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
