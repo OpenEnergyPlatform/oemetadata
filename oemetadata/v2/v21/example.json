@@ -84,7 +84,7 @@
     }
   ],
   "review": {
-    "path": "https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/",
+    "path": "https://openenergyplatform.org/database/",
     "badge": "Platinum"
   },
   "resources": [
@@ -388,7 +388,7 @@
         "decimalSeparator": "."
       },
       "review": {
-        "path": "https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/",
+        "path": "https://openenergyplatform.org/database/",
         "badge": "Platinum"
       }
     }

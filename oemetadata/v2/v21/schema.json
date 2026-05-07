@@ -550,7 +550,7 @@
             "null"
           ],
           "examples": [
-            "https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/"
+            "https://openenergyplatform.org/database/"
           ],
           "badge": null,
           "title": "Path",
@@ -1657,7 +1657,7 @@
                   "null"
                 ],
                 "examples": [
-                  "https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/"
+                  "https://openenergyplatform.org/database/"
                 ],
                 "badge": null,
                 "title": "Path",
