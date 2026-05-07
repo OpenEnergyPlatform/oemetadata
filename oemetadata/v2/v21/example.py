@@ -11,7 +11,7 @@ from frictionless import Package
 
 BASE_PATH = Path(__file__).parent
 
-with open(BASE_PATH / "example.json", encoding="utf-8") as f:
+with open(BASE_PATH / "example.json", "rb") as f:
     descriptor = json.load(f)
 
 OEMETADATA_V21_EXAMPLE = Package(descriptor, basepath=str(BASE_PATH))
