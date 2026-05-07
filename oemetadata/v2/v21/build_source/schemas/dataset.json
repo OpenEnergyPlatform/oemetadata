@@ -97,6 +97,19 @@
         }
       }
     },
+    "referenceDate": {
+      "description": "A base year, month or day. The time for which the dataset should be accurate. Date Format is ISO 8601.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "examples": [
+        "2020-01-01"
+      ],
+      "badge": "Silver",
+      "title": "Dataset Reference Date",
+      "format": "date"
+    },
     "languages": {
       "description": "An array of languages used within the described data structures (e.g. titles, descriptions) or metadata.",
       "type": "array",
