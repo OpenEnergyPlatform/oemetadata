@@ -66,6 +66,37 @@
       "badge": "Bronze",
       "title": "Dataset Description"
     },
+    "extent": {
+      "description": "An object that describes a covered area or region of the dataset.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the spatial region of the dataset.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "examples": [
+            "Europe"
+          ],
+          "badge": "Silver",
+          "title": "Dataset Extent Name"
+        },
+        "@id": {
+          "description": "A URI reference for the region of the dataset.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "examples": [
+            "https://www.wikidata.org/wiki/Q458"
+          ],
+          "format": "uri",
+          "badge": "Platinum",
+          "title": "Dataset Extent Identifier"
+        }
+      }
+    },
     "topics": {
       "description": "An array of predefined topics that correspond to the database schemas of the OEP.",
       "type": "array",
