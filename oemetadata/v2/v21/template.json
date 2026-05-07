@@ -4,6 +4,10 @@
   "name": "",
   "title": "",
   "description": "",
+  "extent": {
+    "name": "",
+    "@id": ""
+  },
   "topics": [
     ""
   ],

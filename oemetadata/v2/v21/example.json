@@ -4,6 +4,10 @@
   "name": "oep_oemetadata",
   "title": "OEP OEMetadata Dataset",
   "description": "A dataset for the OEMetadata examples.",
+  "extent": {
+    "name": "Europe",
+    "@id": "https://www.wikidata.org/wiki/Q458"
+  },
   "topics": [
     "model_draft"
   ],
