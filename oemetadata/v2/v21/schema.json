@@ -630,6 +630,24 @@
             "badge": "Silver",
             "title": "Title"
           },
+          "topics": {
+            "description": "An array of predefined topics that correspond to the database schemas of the OEP.",
+            "type": "array",
+            "items": {
+              "description": "The topics are used to group the data in the database.",
+              "type": [
+                "string",
+                "null"
+              ],
+              "examples": [
+                "model_draft"
+              ],
+              "badge": "Bronze",
+              "title": "Topic"
+            },
+            "badge": "Bronze",
+            "title": "Topics"
+          },
           "description": {
             "description": "A description of the table. It should be usable as summary information for the table that is described by the metadata.",
             "type": [

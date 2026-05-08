@@ -32,7 +32,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update python env instructions to latest version [(#284)](https://github.com/OpenEnergyPlatform/oemetadata/pull/284)
 
 ### Removed
-- Remove topics from dataset [(#310)](https://github.com/OpenEnergyPlatform/oemetadata/pull/310)
 
 
 ## [2.0.4] - Patch Release - Patch Dataset Id - 2025-03-11

@@ -93,6 +93,9 @@
       "path": "example.csv",
       "name": "example.csv",
       "title": "OEMetadata Table Example",
+      "topics": [
+        "model_draft"
+      ],
       "description": "Example metadata and table used to illustrate the OEMetadata structure and features.",
       "publicationDate": "2024-10-15",
       "subject": [
