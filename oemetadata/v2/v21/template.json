@@ -4,9 +4,11 @@
   "name": "",
   "title": "",
   "description": "",
-  "topics": [
-    ""
-  ],
+  "extent": {
+    "name": "",
+    "@id": ""
+  },
+  "referenceDate": "",
   "languages": [
     ""
   ],
@@ -99,6 +101,9 @@
       "path": "",
       "name": "",
       "title": "",
+      "topics": [
+        ""
+      ],
       "description": "",
       "publicationDate": "",
       "subject": [

@@ -4,9 +4,11 @@
   "name": "oep_oemetadata",
   "title": "OEP OEMetadata Dataset",
   "description": "A dataset for the OEMetadata examples.",
-  "topics": [
-    "model_draft"
-  ],
+  "extent": {
+    "name": "Europe",
+    "@id": "https://www.wikidata.org/wiki/Q458"
+  },
+  "referenceDate": "2020-01-01",
   "languages": [
     "en-GB",
     "de-DE"
@@ -82,7 +84,7 @@
     }
   ],
   "review": {
-    "path": "https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/",
+    "path": "https://openenergyplatform.org/database/",
     "badge": "Platinum"
   },
   "resources": [
@@ -91,6 +93,9 @@
       "path": "example.csv",
       "name": "example.csv",
       "title": "OEMetadata Table Example",
+      "topics": [
+        "model_draft"
+      ],
       "description": "Example metadata and table used to illustrate the OEMetadata structure and features.",
       "publicationDate": "2024-10-15",
       "subject": [
@@ -386,7 +391,7 @@
         "decimalSeparator": "."
       },
       "review": {
-        "path": "https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/",
+        "path": "https://openenergyplatform.org/database/",
         "badge": "Platinum"
       }
     }

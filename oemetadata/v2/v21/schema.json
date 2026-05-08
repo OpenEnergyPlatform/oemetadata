@@ -70,23 +70,49 @@
       "badge": "Bronze",
       "title": "Dataset Description"
     },
-    "topics": {
-      "description": "An array of predefined topics that correspond to the database schemas of the OEP.",
-      "type": "array",
-      "items": {
-        "description": "The topics are used to group the data in the database.",
-        "type": [
-          "string",
-          "null"
-        ],
-        "examples": [
-          "model_draft"
-        ],
-        "badge": "Bronze",
-        "title": "Topic"
-      },
-      "badge": "Bronze",
-      "title": "Topics"
+    "extent": {
+      "description": "An object that describes a covered area or region of the dataset.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the spatial region of the dataset.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "examples": [
+            "Europe"
+          ],
+          "badge": "Silver",
+          "title": "Dataset Extent Name"
+        },
+        "@id": {
+          "description": "A URI reference for the region of the dataset.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "examples": [
+            "https://www.wikidata.org/wiki/Q458"
+          ],
+          "format": "uri",
+          "badge": "Platinum",
+          "title": "Dataset Extent Identifier"
+        }
+      }
+    },
+    "referenceDate": {
+      "description": "A base year, month or day. The time for which the dataset should be accurate. Date Format is ISO 8601.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "examples": [
+        "2020-01-01"
+      ],
+      "badge": "Silver",
+      "title": "Dataset Reference Date",
+      "format": "date"
     },
     "languages": {
       "description": "An array of languages used within the described data structures (e.g. titles, descriptions) or metadata.",
@@ -734,7 +760,7 @@
             "null"
           ],
           "examples": [
-            "https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/"
+            "https://openenergyplatform.org/database/"
           ],
           "badge": null,
           "title": "Path",
@@ -813,6 +839,24 @@
             ],
             "badge": "Silver",
             "title": "Title"
+          },
+          "topics": {
+            "description": "An array of predefined topics that correspond to the database schemas of the OEP.",
+            "type": "array",
+            "items": {
+              "description": "The topics are used to group the data in the database.",
+              "type": [
+                "string",
+                "null"
+              ],
+              "examples": [
+                "model_draft"
+              ],
+              "badge": "Bronze",
+              "title": "Topic"
+            },
+            "badge": "Bronze",
+            "title": "Topics"
           },
           "description": {
             "description": "A description of the table. It should be usable as summary information for the table that is described by the metadata.",
@@ -1841,7 +1885,7 @@
                   "null"
                 ],
                 "examples": [
-                  "https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/"
+                  "https://openenergyplatform.org/database/"
                 ],
                 "badge": null,
                 "title": "Path",
