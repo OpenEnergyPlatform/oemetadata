@@ -81,6 +81,16 @@
     ],
     "moduleDescription": ""
   },
+  "moduleMeasurementData": [
+    {
+      "instrumentIdentifier": "",
+      "instrumentPath": "",
+      "instrumentName": "",
+      "instrumentOwner": "",
+      "manufacturerName": "",
+      "moduleDescription": ""
+    }
+  ],
   "datasetLicenses": [
     {
       "name": "",
@@ -101,11 +111,11 @@
       "path": "",
       "name": "",
       "title": "",
+      "description": "",
+      "publicationDate": "",
       "topics": [
         ""
       ],
-      "description": "",
-      "publicationDate": "",
       "subject": [
         {
           "name": "",

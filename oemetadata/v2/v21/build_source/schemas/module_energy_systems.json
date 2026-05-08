@@ -8,7 +8,7 @@
       "type": "object",
       "properties": {
         "supplyTechnologies": {
-          "description": "A supply technology describes how specific technical components and processes are combined to generate or provide energy",
+          "description": "A supply technology describes how specific technical components and processes are combined to generate or provide energy.",
           "type": "array",
           "items": {
             "type": "object",
@@ -22,8 +22,8 @@
                 "examples": [
                   "energy transformation"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Name"
+                "badge": "Module",
+                "title": "Supply Technologies Subject Name"
               },
               "@id": {
                 "description": "A unique identifier (URI/IRI) of the ontology class.",
@@ -34,16 +34,16 @@
                 "examples": [
                   "https://openenergyplatform.org/ontology/oeo/OEO_00020003"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Identifier",
+                "badge": "Module",
+                "title": "Supply Technologies Subject Identifier",
                 "format": "uri"
               }
             },
-            "badge": "Platinum",
-            "title": "Subject"
+            "badge": "Module",
+            "title": "Supply Technologies Subject"
           },
-          "badge": "Platinum",
-          "title": "Subject"
+          "badge": "Module",
+          "title": "Supply Technologies"
         },
         "storageTechnologies": {
           "description": "An energy storage technology describes how energy storage components and energy carriers are combined to charge, store, and discharge energy for temporary use.",
@@ -60,8 +60,8 @@
                 "examples": [
                   "energy storage technology"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Name"
+                "badge": "Module",
+                "title": "Storage Technologies Subject Name"
               },
               "@id": {
                 "description": "A unique identifier (URI/IRI) of the ontology class.",
@@ -72,16 +72,16 @@
                 "examples": [
                   "https://openenergyplatform.org/ontology/oeo/OEO_00020366"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Identifier",
+                "badge": "Module",
+                "title": "Storage Technologies Subject Identifier",
                 "format": "uri"
               }
             },
-            "badge": "Platinum",
-            "title": "Subject"
+            "badge": "Module",
+            "title": "Storage Technologies Subject"
           },
-          "badge": "Platinum",
-          "title": "Subject"
+          "badge": "Module",
+          "title": "Storage Technologies"
         },
         "supplyGrid": {
           "description": "A supply grid is a system of interconnected technical components that together enable the distribution and delivery of energy.",
@@ -98,8 +98,8 @@
                 "examples": [
                   "supply grid"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Name"
+                "badge": "Module",
+                "title": "Supply Grid Subject Name"
               },
               "@id": {
                 "description": "A unique identifier (URI/IRI) of the ontology class.",
@@ -110,16 +110,16 @@
                 "examples": [
                   "https://openenergyplatform.org/ontology/oeo/OEO_00000200"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Identifier",
+                "badge": "Module",
+                "title": "Supply Grid Subject Identifier",
                 "format": "uri"
               }
             },
-            "badge": "Platinum",
-            "title": "Subject"
+            "badge": "Module",
+            "title": "Supply Grid Subject"
           },
-          "badge": "Platinum",
-          "title": "Subject"
+          "badge": "Module",
+          "title": "Supply Grid"
         },
         "finalEnergyCarrier": {
           "description": "A final energy carrier is an energy carrier that is delivered to and directly used by end users without further transformation.",
@@ -136,8 +136,8 @@
                 "examples": [
                   "final energy carrier"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Name"
+                "badge": "Module",
+                "title": "Final Energy Carrier Subject Name"
               },
               "@id": {
                 "description": "A unique identifier (URI/IRI) of the ontology class.",
@@ -148,16 +148,16 @@
                 "examples": [
                   "https://openenergyplatform.org/ontology/oeo/OEO_00140080"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Identifier",
+                "badge": "Module",
+                "title": "Final Energy Carrier Subject Identifier",
                 "format": "uri"
               }
             },
-            "badge": "Platinum",
-            "title": "Subject"
+            "badge": "Module",
+            "title": "Final Energy Carrier Subject"
           },
-          "badge": "Platinum",
-          "title": "Subject"
+          "badge": "Module",
+          "title": "Final Energy Carrier"
         },
         "demandSectors": {
           "description": "An energy demand sector is a sector of the energy system that groups together energy consumers with similar usage characteristics.",
@@ -174,8 +174,8 @@
                 "examples": [
                   "energy demand sector"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Name"
+                "badge": "Module",
+                "title": "Demand Sectors Subject Name"
               },
               "@id": {
                 "description": "A unique identifier (URI/IRI) of the ontology class.",
@@ -186,16 +186,16 @@
                 "examples": [
                   "https://openenergyplatform.org/ontology/oeo/OEO_00000128"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Identifier",
+                "badge": "Module",
+                "title": "Demand Sectors Subject Identifier",
                 "format": "uri"
               }
             },
-            "badge": "Platinum",
-            "title": "Subject"
+            "badge": "Module",
+            "title": "Demand Sectors Subject"
           },
-          "badge": "Platinum",
-          "title": "Subject"
+          "badge": "Module",
+          "title": "Demand Sectors"
         },
         "moduleDescription": {
           "description": "A description of the module. It should be usable as summary information for the module that is described by the metadata.",
@@ -206,12 +206,12 @@
           "examples": [
             "Example module for an energy system dataset"
           ],
-          "badge": "Gold",
-          "title": "Context Title"
+          "badge": "Module",
+          "title": "Energy Systems Module Description"
         }
       },
-      "badge": "Gold",
-      "title": "Context"
+      "badge": "Module",
+      "title": "Energy Systems Module"
     }
   }
 }

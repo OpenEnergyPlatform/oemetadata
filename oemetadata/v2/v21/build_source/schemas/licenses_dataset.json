@@ -84,10 +84,10 @@
           }
         },
         "badge": "Bronze",
-        "title": "License"
+        "title": "Dataset License"
       },
       "badge": "Bronze",
-      "title": "Licenses"
+      "title": "Dataset Licenses"
     }
   }
 }

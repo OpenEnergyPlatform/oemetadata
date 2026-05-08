@@ -458,7 +458,7 @@
       "type": "object",
       "properties": {
         "supplyTechnologies": {
-          "description": "A supply technology describes how specific technical components and processes are combined to generate or provide energy",
+          "description": "A supply technology describes how specific technical components and processes are combined to generate or provide energy.",
           "type": "array",
           "items": {
             "type": "object",
@@ -472,8 +472,8 @@
                 "examples": [
                   "energy transformation"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Name"
+                "badge": "Module",
+                "title": "Supply Technologies Subject Name"
               },
               "@id": {
                 "description": "A unique identifier (URI/IRI) of the ontology class.",
@@ -484,16 +484,16 @@
                 "examples": [
                   "https://openenergyplatform.org/ontology/oeo/OEO_00020003"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Identifier",
+                "badge": "Module",
+                "title": "Supply Technologies Subject Identifier",
                 "format": "uri"
               }
             },
-            "badge": "Platinum",
-            "title": "Subject"
+            "badge": "Module",
+            "title": "Supply Technologies Subject"
           },
-          "badge": "Platinum",
-          "title": "Subject"
+          "badge": "Module",
+          "title": "Supply Technologies"
         },
         "storageTechnologies": {
           "description": "An energy storage technology describes how energy storage components and energy carriers are combined to charge, store, and discharge energy for temporary use.",
@@ -510,8 +510,8 @@
                 "examples": [
                   "energy storage technology"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Name"
+                "badge": "Module",
+                "title": "Storage Technologies Subject Name"
               },
               "@id": {
                 "description": "A unique identifier (URI/IRI) of the ontology class.",
@@ -522,16 +522,16 @@
                 "examples": [
                   "https://openenergyplatform.org/ontology/oeo/OEO_00020366"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Identifier",
+                "badge": "Module",
+                "title": "Storage Technologies Subject Identifier",
                 "format": "uri"
               }
             },
-            "badge": "Platinum",
-            "title": "Subject"
+            "badge": "Module",
+            "title": "Storage Technologies Subject"
           },
-          "badge": "Platinum",
-          "title": "Subject"
+          "badge": "Module",
+          "title": "Storage Technologies"
         },
         "supplyGrid": {
           "description": "A supply grid is a system of interconnected technical components that together enable the distribution and delivery of energy.",
@@ -548,8 +548,8 @@
                 "examples": [
                   "supply grid"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Name"
+                "badge": "Module",
+                "title": "Supply Grid Subject Name"
               },
               "@id": {
                 "description": "A unique identifier (URI/IRI) of the ontology class.",
@@ -560,16 +560,16 @@
                 "examples": [
                   "https://openenergyplatform.org/ontology/oeo/OEO_00000200"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Identifier",
+                "badge": "Module",
+                "title": "Supply Grid Subject Identifier",
                 "format": "uri"
               }
             },
-            "badge": "Platinum",
-            "title": "Subject"
+            "badge": "Module",
+            "title": "Supply Grid Subject"
           },
-          "badge": "Platinum",
-          "title": "Subject"
+          "badge": "Module",
+          "title": "Supply Grid"
         },
         "finalEnergyCarrier": {
           "description": "A final energy carrier is an energy carrier that is delivered to and directly used by end users without further transformation.",
@@ -586,8 +586,8 @@
                 "examples": [
                   "final energy carrier"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Name"
+                "badge": "Module",
+                "title": "Final Energy Carrier Subject Name"
               },
               "@id": {
                 "description": "A unique identifier (URI/IRI) of the ontology class.",
@@ -598,16 +598,16 @@
                 "examples": [
                   "https://openenergyplatform.org/ontology/oeo/OEO_00140080"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Identifier",
+                "badge": "Module",
+                "title": "Final Energy Carrier Subject Identifier",
                 "format": "uri"
               }
             },
-            "badge": "Platinum",
-            "title": "Subject"
+            "badge": "Module",
+            "title": "Final Energy Carrier Subject"
           },
-          "badge": "Platinum",
-          "title": "Subject"
+          "badge": "Module",
+          "title": "Final Energy Carrier"
         },
         "demandSectors": {
           "description": "An energy demand sector is a sector of the energy system that groups together energy consumers with similar usage characteristics.",
@@ -624,8 +624,8 @@
                 "examples": [
                   "energy demand sector"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Name"
+                "badge": "Module",
+                "title": "Demand Sectors Subject Name"
               },
               "@id": {
                 "description": "A unique identifier (URI/IRI) of the ontology class.",
@@ -636,16 +636,16 @@
                 "examples": [
                   "https://openenergyplatform.org/ontology/oeo/OEO_00000128"
                 ],
-                "badge": "Platinum",
-                "title": "Subject Identifier",
+                "badge": "Module",
+                "title": "Demand Sectors Subject Identifier",
                 "format": "uri"
               }
             },
-            "badge": "Platinum",
-            "title": "Subject"
+            "badge": "Module",
+            "title": "Demand Sectors Subject"
           },
-          "badge": "Platinum",
-          "title": "Subject"
+          "badge": "Module",
+          "title": "Demand Sectors"
         },
         "moduleDescription": {
           "description": "A description of the module. It should be usable as summary information for the module that is described by the metadata.",
@@ -656,12 +656,98 @@
           "examples": [
             "Example module for an energy system dataset"
           ],
-          "badge": "Gold",
-          "title": "Context Title"
+          "badge": "Module",
+          "title": "Energy Systems Module Description"
         }
       },
-      "badge": "Gold",
-      "title": "Context"
+      "badge": "Module",
+      "title": "Energy Systems Module"
+    },
+    "moduleMeasurementData": {
+      "description": "An Object that describes the instruments used in the measurement.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "instrumentIdentifier": {
+            "description": "Unique string that identifies the instrument instance.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "http://hdl.handle.net/21.11157/a9250866-bbec-4542-86b3-a5f78c0c6922"
+            ],
+            "badge": "Module",
+            "title": "Instrument Identifier"
+          },
+          "instrumentPath": {
+            "description": "A landing page that the identifier resolves to.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "https://sms.atmohub.kit.edu/devices/961"
+            ],
+            "badge": "Module",
+            "title": "Instrument Path",
+            "format": "uri"
+          },
+          "instrumentName": {
+            "description": "Name by which the instrument instance is known.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "MFC_001000_02 - Merck KGaA - FC-2926V - DH9806004"
+            ],
+            "badge": "Module",
+            "title": "Instrument Name"
+          },
+          "instrumentOwner": {
+            "description": "Institution(s) responsible for the management of the instrument. This may include the legal owner, the operator, or an institute providing access to the instrument.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "Karlsruhe Institute of Technology (KIT)"
+            ],
+            "badge": "Module",
+            "title": "Instrument Owner"
+          },
+          "manufacturerName": {
+            "description": "Full name of the manufacturer.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "Merck KGaA"
+            ],
+            "badge": "Module",
+            "title": "Manufacturer Name"
+          },
+          "moduleDescription": {
+            "description": "A description of the module. It should be usable as summary information for the module that is described by the metadata.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "Example instrument of PIDINST schema."
+            ],
+            "badge": "Module",
+            "title": "Module Description"
+          }
+        },
+        "badge": "Module",
+        "title": "Instrument"
+      },
+      "badge": "Module",
+      "title": "Measurement Data Module"
     },
     "datasetLicenses": {
       "description": "An array of objects of licenses under which the described data is provided.",
@@ -744,10 +830,10 @@
           }
         },
         "badge": "Bronze",
-        "title": "License"
+        "title": "Dataset License"
       },
       "badge": "Bronze",
-      "title": "Licenses"
+      "title": "Dataset Licenses"
     },
     "review": {
       "description": "The metadata on the OEP can go through an open peer review process. See the Academy course [Open Peer Review](https://openenergyplatform.github.io/academy/courses/09_peer_review/) for further information.",
@@ -823,7 +909,7 @@
               "null"
             ],
             "examples": [
-              "example.csv"
+              "oemetadata_table_example"
             ],
             "badge": "Iron",
             "title": "Name"
@@ -839,24 +925,6 @@
             ],
             "badge": "Silver",
             "title": "Title"
-          },
-          "topics": {
-            "description": "An array of predefined topics that correspond to the database schemas of the OEP.",
-            "type": "array",
-            "items": {
-              "description": "The topics are used to group the data in the database.",
-              "type": [
-                "string",
-                "null"
-              ],
-              "examples": [
-                "model_draft"
-              ],
-              "badge": "Bronze",
-              "title": "Topic"
-            },
-            "badge": "Bronze",
-            "title": "Topics"
           },
           "description": {
             "description": "A description of the table. It should be usable as summary information for the table that is described by the metadata.",
@@ -882,6 +950,24 @@
             "badge": "Bronze",
             "title": "Publication Date",
             "format": "date"
+          },
+          "topics": {
+            "description": "An array of predefined topics that correspond to the database schemas of the OEP.",
+            "type": "array",
+            "items": {
+              "description": "The topics are used to group the data in the database.",
+              "type": [
+                "string",
+                "null"
+              ],
+              "examples": [
+                "model_draft"
+              ],
+              "badge": "Bronze",
+              "title": "Topic"
+            },
+            "badge": "Bronze",
+            "title": "Topics"
           },
           "subject": {
             "description": "An array of objects that references to the subjects of the resource in ontology terms.",
