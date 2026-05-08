@@ -23,12 +23,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `mappingRelation` to `isAbout` [(#307)](https://github.com/OpenEnergyPlatform/oemetadata/pull/307)
 - Add `mappingRelation` to `valueReference` [(#307)](https://github.com/OpenEnergyPlatform/oemetadata/pull/307)
 - Tests for example and template to be valid frictionless datapackage [(#305)](https://github.com/OpenEnergyPlatform/oemetadata/pull/305)
+- Add a module `Energy Systems` for dataset [(#312)](https://github.com/OpenEnergyPlatform/oemetadata/pull/312)
 
 ### Changed
 - Update TLDR URL in example sourceLicenses [(#275)](https://github.com/OpenEnergyPlatform/oemetadata/pull/275)
 - Scripts in build_source produce same json as provided in repo [(#284)](https://github.com/OpenEnergyPlatform/oemetadata/pull/284)
 - Update python env instructions to latest version [(#284)](https://github.com/OpenEnergyPlatform/oemetadata/pull/284)
 - Update datapackage logo link [(#311)](https://github.com/OpenEnergyPlatform/oemetadata/pull/311)
+- Update `create_example.py` and add `example_modules.json` [(#312)](https://github.com/OpenEnergyPlatform/oemetadata/pull/312)
 
 ### Removed
 
