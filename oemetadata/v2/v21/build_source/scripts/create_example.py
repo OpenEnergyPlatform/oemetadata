@@ -22,6 +22,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Union
 
 from settings import (
+    EXAMPLE_MODULES_PATH,
     EXAMPLE_PATH,
     LOG_FORMAT,
     RESOLVED_SCHEMA_FILE_NAME,
@@ -265,6 +266,66 @@ def replace_key_in_json(file_path, target_key, new_value):
         logger.info(f"Key '{target_key}' not found in JSON file.")
 
 
+def remove_keys_from_json(data, keys_to_remove: list):
+    """
+    Recursively removes all occurrences of the given keys from a JSON structure.
+
+    Args:
+        data: The JSON data (dict or list)
+        keys_to_remove: List of keys to remove
+    """
+    if isinstance(data, dict):
+        for key in keys_to_remove:
+            if key in data:
+                del data[key]
+                logger.info(f"Removed keys: '{key}'")
+        for value in data.values():
+            remove_keys_from_json(value, keys_to_remove)
+    elif isinstance(data, list):
+        for item in data:
+            remove_keys_from_json(item, keys_to_remove)
+
+
+def copy_example_with_modules(source_path, target_path):
+    """
+    Copies a JSON example file and removes specified module/section keys from the copy.
+
+    Args:
+        source_path: Path to the source example.json
+        target_path: Path for the output example_module.json
+        module_keys: List of top-level (or nested) keys to remove from the copy
+    """
+    with open(source_path, encoding="utf-8") as file:
+        data = json.load(file)
+
+    with open(target_path, "w", encoding="utf-8") as file:
+        json.dump(data, file, ensure_ascii=False, indent=2)
+        file.write("\n")
+
+    logger.info(f"Copied '{source_path}' to '{target_path}'")
+
+
+def remove_modules_from_example(module_keys: list):
+    """
+    Copies a JSON example file and removes specified module/section keys from the copy.
+
+    Args:
+        source_path: Path to the source example.json
+        target_path: Path for the output example_module.json
+        module_keys: List of top-level (or nested) keys to remove from the copy
+    """
+    with open(EXAMPLE_PATH, encoding="utf-8") as file:
+        data = json.load(file)
+
+    remove_keys_from_json(data, module_keys)
+
+    with open(EXAMPLE_PATH, "w", encoding="utf-8") as file:
+        json.dump(data, file, ensure_ascii=False, indent=2)
+        file.write("\n")
+
+    logger.info(f"Removed modules: {module_keys}")
+
+
 if __name__ == "__main__":
     logger.info("Create OEMetadata Example from Schema.")
     schema_filename = RESOLVED_SCHEMA_FILE_NAME
@@ -276,3 +337,7 @@ if __name__ == "__main__":
     example_contributors = read_schema(SCHEMA_EXAMPLE_PROV)
     replace_key_in_json(EXAMPLE_PATH, "contributors", example_contributors)
     test_oemetadata_schema_should_validate_oemetadata_example(json_data)
+
+    copy_example_with_modules(EXAMPLE_PATH, EXAMPLE_MODULES_PATH)
+
+    remove_modules_from_example(module_keys=["moduleEnergySystems"])
