@@ -23,6 +23,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `mappingRelation` to `isAbout` [(#307)](https://github.com/OpenEnergyPlatform/oemetadata/pull/307)
 - Add `mappingRelation` to `valueReference` [(#307)](https://github.com/OpenEnergyPlatform/oemetadata/pull/307)
 - Tests for example and template to be valid frictionless datapackage [(#305)](https://github.com/OpenEnergyPlatform/oemetadata/pull/305)
+- Add spatial information to dataset [(#310)](https://github.com/OpenEnergyPlatform/oemetadata/pull/310)
+- Add temporal information to dataset [(#310)](https://github.com/OpenEnergyPlatform/oemetadata/pull/310)
 
 ### Changed
 - Update TLDR URL in example sourceLicenses [(#275)](https://github.com/OpenEnergyPlatform/oemetadata/pull/275)

@@ -484,7 +484,7 @@ If a value is not yet available, use: `ToDo`.
 | **Badge**          |                                                                                          |
 | **Card.**          | [*]                                                                                      |
 
-### Resources - @id
+### Resources - General - @id
 |                |                                                                                                                                                                                         |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Key            | @id                                                                                                                                                                                     |
@@ -494,7 +494,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Platinum                                                                                                                                                                                |
 | Card.          | [0..1]                                                                                                                                                                                  |
 
-### Resources - path
+### Resources - General - path
 |                |                                                                                                                            |
 |----------------|----------------------------------------------------------------------------------------------------------------------------|
 | Key            | path                                                                                                                       |
@@ -504,7 +504,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Bronze                                                                                                                     |
 | Card.          | [0..1]                                                                                                                     |
 
-### Resources - name
+### Resources - General - name
 |                |                                                            |
 |----------------|------------------------------------------------------------|
 | Key            | name                                                       |
@@ -514,7 +514,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Iron                                                       |
 | Card.          | [1]                                                        |
 
-### Resources - title
+### Resources - General - title
 |                |                                             |
 |----------------|---------------------------------------------|
 | Key            | title                                       |
@@ -524,7 +524,17 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                      |
 | Card.          | [0..1]                                      |
 
-### Resources - description
+### Resource - General - topics
+|                |                                                                                   |
+|----------------|-----------------------------------------------------------------------------------|
+| Key            | topics                                                                            |
+| Description    | An array of predefined topics that correspond to the database schemas of the OEP. |
+| Example        | model_draft                                                                       |
+| Ontology Class | [foaf:topic](http://xmlns.com/foaf/spec/#term_topic)                              |
+| Badge          | Bronze                                                                            |
+| Card.          | [*]                                                                               |
+
+### Resources - General - description
 |                |                                                                                                                         |
 |----------------|-------------------------------------------------------------------------------------------------------------------------|
 | Key            | description                                                                                                             |
@@ -534,7 +544,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                                                                                                  |
 | Card.          | [0..1]                                                                                                                  |
 
-### Resources - publicationDate
+### Resources - General - publicationDate
 |                |                                                                                          |
 |----------------|------------------------------------------------------------------------------------------|
 | Key            | publicationDate                                                                          |
@@ -544,7 +554,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Bronze                                                                                   |
 | Card.          | [0..1]                                                                                   |
 
-### Resources - subject
+### Resources - General - subject
 |                |                                                                                     |
 |----------------|-------------------------------------------------------------------------------------|
 | Key            | subject                                                                             |
@@ -554,7 +564,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          |                                                                                     |
 | Card.          | [*]                                                                                 |
 
-### Resources - subject (name)
+### Resources - General - subject (name)
 |                |                                                            |
 |----------------|------------------------------------------------------------|
 | Key            | name                                                       |
@@ -564,7 +574,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Platinum                                                   |
 | Card.          | [0..1]                                                     |
 
-### Resources - subject (@id)
+### Resources - General - subject (@id)
 |                |                                                                                                              |
 |----------------|--------------------------------------------------------------------------------------------------------------|
 | Key            | @id                                                                                                          |
@@ -574,7 +584,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Platinum                                                                                                     |
 | Card.          | [0..1]                                                                                                       |
 
-### Resources - keywords
+### Resources - General - keywords
 |                |                                                                                  |
 |----------------|----------------------------------------------------------------------------------|
 | Key            | keywords                                                                         |
@@ -584,7 +594,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                                                           |
 | Card.          | [*]                                                                              |
 
-### Resources - embargoPeriod
+### Resources - General - embargoPeriod
 |                |                                                                                                    |
 |----------------|----------------------------------------------------------------------------------------------------|
 | Key            | embargoPeriod                                                                                      |
@@ -594,7 +604,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          |                                                                                                    |
 | Card.          | [0..1]                                                                                             |
 
-### Resources - embargoPeriod (start)
+### Resources - General - embargoPeriod (start)
 |                |                                                                               |
 |----------------|-------------------------------------------------------------------------------|
 | Key            | start                                                                         |
@@ -604,7 +614,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Bronze                                                                        |
 | Card.          | [0..1]                                                                        |
 
-### Resources - embargoPeriod (end)
+### Resources - General - embargoPeriod (end)
 |                |                                                                              |
 |----------------|------------------------------------------------------------------------------|
 | Key            | end                                                                          |
@@ -614,7 +624,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Bronze                                                                       |
 | Card.          | [0..1]                                                                       |
 
-### Resources - embargoPeriod (isActive)
+### Resources - General - embargoPeriod (isActive)
 |                |                                                                                                                                  |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------|
 | Key            | isActive                                                                                                                         |
@@ -624,7 +634,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Bronze                                                                                                                           |
 | Card.          | [0..1]                                                                                                                           |
 
-### Resources - spatial
+### Resources - Spatial
 |                |                                                           |
 |----------------|-----------------------------------------------------------|
 | Key            | spatial                                                   |
@@ -634,7 +644,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          |                                                           |
 | Card.          | [0..1]                                                    |
 
-### Resources - spatial (location)
+### Resources - Spatial - location
 |                |                                                   |
 |----------------|---------------------------------------------------|
 | Key            | location                                          |
@@ -644,7 +654,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          |                                                   |
 | Card.          | [0..1]                                            |
 
-### Resources - spatial (location - address)
+### Resources - Spatial - location (address)
 |                |                                                                                                                   |
 |----------------|-------------------------------------------------------------------------------------------------------------------|
 | Key            | address                                                                                                           |
@@ -654,7 +664,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                                                                                            |
 | Card.          | [0..1]                                                                                                            |
 
-### Resources - spatial (location - @id)
+### Resources - Spatial - location (@id)
 |                |                                                                             |
 |----------------|-----------------------------------------------------------------------------|
 | Key            | @id                                                                         |
@@ -664,7 +674,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Platinum                                                                    |
 | Card.          | [0..1]                                                                      |
 
-### Resources - spatial (location - latitude)
+### Resources - Spatial - location (latitude)
 |                |                                                 |
 |----------------|-------------------------------------------------|
 | Key            | latitude                                        |
@@ -674,7 +684,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Gold                                            |
 | Card.          | [0..1]                                          |
 
-### Resources - spatial (location - longitude)
+### Resources - Spatial - location (longitude)
 |                |                                                  |
 |----------------|--------------------------------------------------|
 | Key            | longitude                                        |
@@ -684,7 +694,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Gold                                             |
 | Card.          | [0..1]                                           |
 
-### Resources - spatial (extent)
+### Resources - Spatial - extent
 |                |                                                                  |
 |----------------|------------------------------------------------------------------|
 | Key            | extent                                                           |
@@ -694,7 +704,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          |                                                                  |
 | Card.          | [0..1]                                                           |
 
-### Resources - spatial (extent - name)
+### Resources - Spatial - extent (name)
 |                |                                                            |
 |----------------|------------------------------------------------------------|
 | Key            | name                                                       |
@@ -704,7 +714,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                                     |
 | Card.          | [0..1]                                                     |
 
-### Resources - spatial (extent - @id)
+### Resources - Spatial - extent (@id)
 |                |                                                                |
 |----------------|----------------------------------------------------------------|
 | Key            | @id                                                            |
@@ -714,7 +724,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Platinum                                                       |
 | Card.          | [0..1]                                                         |
 
-### Resources - spatial (extent - resolutionValue)
+### Resources - Spatial - extent (resolutionValue)
 |                |                                                                                       |
 |----------------|---------------------------------------------------------------------------------------|
 | Key            | resolutionValue                                                                       |
@@ -724,7 +734,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                                                                |
 | Card.          | [0..1]                                                                                |
 
-### Resources - spatial (extent - resolutionUnit)
+### Resources - Spatial - extent (resolutionUnit)
 |                |                                                                     |
 |----------------|---------------------------------------------------------------------|
 | Key            | resolutionUnit                                                      |
@@ -734,7 +744,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                                              |
 | Card.          | [0..1]                                                              |
 
-### Resources - spatial (extent - boundingBox)
+### Resources - Spatial - extent (boundingBox)
 |                |                                                                                                                               |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Key            | boundingBox                                                                                                                   |
@@ -744,7 +754,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Gold                                                                                                                          |
 | Card.          | [*]                                                                                                                           |
 
-### Resources - spatial (extent - crs)
+### Resources - Spatial - extent (crs)
 |                |                                                                                                                                          |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | Key            | crs                                                                                                                                      |
@@ -754,7 +764,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Gold                                                                                                                                     |
 | Card.          | [0..1]                                                                                                                                   |
 
-### Resources - temporal
+### Resources - Temporal
 |                |                                                                                                                                                             |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Key            | temporal                                                                                                                                                    |
@@ -764,7 +774,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          |                                                                                                                                                             |
 | Card.          | [0..1]                                                                                                                                                      |
 
-### Resources - temporal (referenceDate)
+### Resources - Temporal - referenceDate
 |                |                                                                                                     |
 |----------------|-----------------------------------------------------------------------------------------------------|
 | Key            | referenceDate                                                                                       |
@@ -774,7 +784,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                                                                              |
 | Card.          | [0..1]                                                                                              |
 
-### Resources - temporal (timeseries)
+### Resources - Temporal - timeseries
 |                |                                                           |
 |----------------|-----------------------------------------------------------|
 | Key            | timeseries                                                |
@@ -784,7 +794,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          |                                                           |
 | Card.          | [*]                                                       |
 
-### Resources - temporal (timeseries - start)
+### Resources - Temporal - timeseries (start)
 |                |                                                                 |
 |----------------|-----------------------------------------------------------------|
 | Key            | start                                                           |
@@ -794,7 +804,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                                          |
 | Card.          | [0..1]                                                          |
 
-### Resources - temporal (timeseries - end)
+### Resources - Temporal - timeseries (end)
 |                |                                                             |
 |----------------|-------------------------------------------------------------|
 | Key            | end                                                         |
@@ -804,7 +814,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                                      |
 | Card.          | [0..1]                                                      |
 
-### Resources - temporal (timeseries - resolutionValue)
+### Resources - Temporal - timeseries (resolutionValue)
 |                |                                                                                                    |
 |----------------|----------------------------------------------------------------------------------------------------|
 | Key            | resolutionValue                                                                                    |
@@ -814,7 +824,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                                                                             |
 | Card.          | [0..1]                                                                                             |
 
-### Resources - temporal (timeseries - resolutionUnit)
+### Resources - Temporal - timeseries (resolutionUnit)
 |                |                                                                     |
 |----------------|---------------------------------------------------------------------|
 | Key            | resolutionUnit                                                      |
@@ -824,7 +834,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                                              |
 | Card.          | [0..1]                                                              |
 
-### Resources - temporal (timeseries - alignment)
+### Resources - Temporal - timeseries (alignment)
 |                |                                                                                              |
 |----------------|----------------------------------------------------------------------------------------------|
 | Key            | alignment                                                                                    |
@@ -834,7 +844,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                                                                       |
 | Card.          | [0..1]                                                                                       |
 
-### Resources - temporal (timeseries - aggregationType)
+### Resources - Temporal - timeseries (aggregationType)
 |                |                                                                                   |
 |----------------|-----------------------------------------------------------------------------------|
 | Key            | aggregationType                                                                   |
@@ -856,7 +866,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          |                                                                                    |
 | Card.          | [*]                                                                                |
 
-### Resources - sources (title)
+### Resources - sources - title
 |                |                                                                              |
 |----------------|------------------------------------------------------------------------------|
 | Key            | title                                                                        |
@@ -866,7 +876,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Bronze                                                                       |
 | Card.          | [0..1]                                                                       |
 
-### Resources - sources (authors)
+### Resources - sources - authors
 |                |                                                                         |
 |----------------|-------------------------------------------------------------------------|
 | Key            | authors                                                                 |
@@ -876,7 +886,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Bronze                                                                  |
 | Card.          | [*]                                                                     |
 
-### Resources - sources (description)
+### Resources - sources - description
 |                |                                                           |
 |----------------|-----------------------------------------------------------|
 | Key            | description                                               |
@@ -886,7 +896,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Bronze                                                    |
 | Card.          | [0..1]                                                    |
 
-### Resources - sources (publicationYear)
+### Resources - sources - publicationYear
 |                |                                                 |
 |----------------|-------------------------------------------------|
 | Key            | publicationYear                                 |
@@ -896,7 +906,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Bronze                                          |
 | Card.          | [0..1]                                          |
 
-### Resources - sources (path)
+### Resources - sources - path
 |                |                                                                                                                |
 |----------------|----------------------------------------------------------------------------------------------------------------|
 | Key            | path                                                                                                           |
@@ -986,7 +996,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          |                                                                                         |
 | Card.          | [*]                                                                                     |
 
-### Resources - resourceLicenses (name)
+### Resources - resourceLicenses - name
 |                |                                                            |
 |----------------|------------------------------------------------------------|
 | Key            | name                                                       |
@@ -996,7 +1006,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Bronze                                                     |
 | Card.          | [0..1]                                                     |
 
-### Resources - resourceLicenses (title)
+### Resources - resourceLicenses - title
 |                |                                                     |
 |----------------|-----------------------------------------------------|
 | Key            | title                                               |
@@ -1006,7 +1016,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Bronze                                              |
 | Card.          | [0..1]                                              |
 
-### Resources - resourceLicenses (path)
+### Resources - resourceLicenses - path
 |                |                                                                                                              |
 |----------------|--------------------------------------------------------------------------------------------------------------|
 | Key            | path                                                                                                         |
@@ -1016,7 +1026,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Bronze                                                                                                       |
 | Card.          | [0..1]                                                                                                       |
 
-### Resources - resourceLicenses (instruction)
+### Resources - resourceLicenses - instruction
 |                |                                                                                                                                                                                                                    |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Key            | instruction                                                                                                                                                                                                        |
@@ -1026,7 +1036,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Bronze                                                                                                                                                                                                             |
 | Card.          | [0..1]                                                                                                                                                                                                             |
 
-### Resources - resourceLicenses (attribution)
+### Resources - resourceLicenses - attribution
 |                |                                                                                       |
 |----------------|---------------------------------------------------------------------------------------|
 | Key            | attribution                                                                           |
@@ -1036,7 +1046,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Bronze                                                                                |
 | Card.          | [0..1]                                                                                |
 
-### Resources - resourceLicenses (copyrightStatement)
+### Resources - resourceLicenses - copyrightStatement
 |                |                                                                                                                     |
 |----------------|---------------------------------------------------------------------------------------------------------------------|
 | Key            | copyrightStatement                                                                                                  |
