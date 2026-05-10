@@ -161,7 +161,7 @@
   },
   {
     "name": "comment",
-    "description": "",
+    "description": "Comment",
     "type": "string",
     "nullable": true,
     "unit": null,
