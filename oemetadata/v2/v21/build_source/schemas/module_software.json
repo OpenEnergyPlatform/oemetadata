@@ -33,6 +33,18 @@
             "badge": "Module",
             "title": "Software Path"
           },
+          "softwareVersion": {
+            "description": "The version of the software instance.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "0.17.1"
+            ],
+            "badge": "Module",
+            "title": "Software Version"
+          },
           "moduleDescription": {
             "description": "A description of the module. It should be usable as summary information for the module that is described by the metadata.",
             "type": [
