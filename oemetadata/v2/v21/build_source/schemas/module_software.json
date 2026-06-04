@@ -21,6 +21,18 @@
             "badge": "Module",
             "title": "Software Name"
           },
+          "softwarePath": {
+            "description": "A link or identifier to download or access the software.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "https://github.com/OpenEnergyPlatform/open-MaStR"
+            ],
+            "badge": "Module",
+            "title": "Software Path"
+          },
           "moduleDescription": {
             "description": "A description of the module. It should be usable as summary information for the module that is described by the metadata.",
             "type": [
