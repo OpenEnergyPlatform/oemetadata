@@ -48,6 +48,39 @@
       "comment": ""
     }
   ],
+  "moduleEnergySystems": {
+    "supplyTechnologies": [
+      {
+        "name": "",
+        "@id": ""
+      }
+    ],
+    "storageTechnologies": [
+      {
+        "name": "",
+        "@id": ""
+      }
+    ],
+    "supplyGrid": [
+      {
+        "name": "",
+        "@id": ""
+      }
+    ],
+    "finalEnergyCarrier": [
+      {
+        "name": "",
+        "@id": ""
+      }
+    ],
+    "demandSectors": [
+      {
+        "name": "",
+        "@id": ""
+      }
+    ],
+    "moduleDescription": ""
+  },
   "datasetLicenses": [
     {
       "name": "",

@@ -1342,6 +1342,73 @@ If a value is not yet available, use: `ToDo`.
 | Ontology Class | [oeo:quality control flag](https://openenergyplatform.org/ontology/oeo/OEO_00140098/)                  |
 | Badge          | [0..1]                                                                                                 |
 
+
+## Dataset - Modules
+
+### Dataset - Module - Energy Systems
+|                |                                                                  |
+|----------------|------------------------------------------------------------------|
+| Key            | **moduleEnergySystems**                                          |
+| Description    | An Object that describes the main concepts of an energy system.  |
+| Example        |                                                                  |
+| Ontology Class |                                                                  |
+| Badge          | [0..1]                                                           |
+
+### Dataset - Module - Energy Systems - supplyTechnologies
+|                |                                                                                                                            |
+|----------------|----------------------------------------------------------------------------------------------------------------------------|
+| Key            | **supplyTechnologies**                                                                                                     |
+| Description    | A supply technology describes how specific technical components and processes are combined to generate or provide energy.  |
+| Example        |                                                                                                                            |
+| Ontology Class |                                                                                                                            |
+| Badge          | [0..1]                                                                                                                     |
+
+### Dataset - Module - Energy Systems - storageTechnologies
+|                |                                                                                                                                                                 |
+|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Key            | **storageTechnologies**                                                                                                                                         |
+| Description    | An energy storage technology describes how energy storage components and energy carriers are combined to charge, store, and discharge energy for temporary use. |
+| Example        |                                                                                                                                                                 |
+| Ontology Class |                                                                                                                                                                 |
+| Badge          | [0..1]                                                                                                                                                          |
+
+### Dataset - Module - Energy Systems - supplyGrid
+|                |                                                                                                                                 |
+|----------------|---------------------------------------------------------------------------------------------------------------------------------|
+| Key            | **supplyGrid**                                                                                                                  |
+| Description    | A supply grid is a system of interconnected technical components that together enable the distribution and delivery of energy.  |
+| Example        |                                                                                                                                 |
+| Ontology Class |                                                                                                                                 |
+| Badge          | [0..1]                                                                                                                          |
+
+### Dataset - Module - Energy Systems - finalEnergyCarrier
+|                |                                                                                                                                                                 |
+|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Key            | **finalEnergyCarrier**                                                                                                                                         |
+| Description    | An energy storage technology describes how energy storage components and energy carriers are combined to charge, store, and discharge energy for temporary use. |
+| Example        |                                                                                                                                                                 |
+| Ontology Class |                                                                                                                                                                 |
+| Badge          | [0..1]                                                                                                                                                          |
+
+### Dataset - Module - Energy Systems - demandSectors
+|                |                                                                                                                                     |
+|----------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Key            | **demandSectors**                                                                                                                   |
+| Description    | An energy demand sector is a sector of the energy system that groups together energy consumers with similar usage characteristics.  |
+| Example        |                                                                                                                                     |
+| Ontology Class |                                                                                                                                     |
+| Badge          | [0..1]                                                                                                                              |
+
+### Dataset - Module - Energy Systems - moduleDescription
+|                |                                                                                                                            |
+|----------------|----------------------------------------------------------------------------------------------------------------------------|
+| Key            | **moduleDescription**                                                                                                      |
+| Description    | A description of the module. It should be usable as summary information for the module that is described by the metadata.  |
+| Example        |                                                                                                                            |
+| Ontology Class |                                                                                                                            |
+| Badge          | [0..1]                                                                                                                     |
+
+
 ### MetaMetadata Keys
 |                |                                                                                      |
 |----------------|--------------------------------------------------------------------------------------|

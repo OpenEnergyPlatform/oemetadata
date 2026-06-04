@@ -19,6 +19,9 @@
     "provenance": {
       "$ref": "provenance.json#"
     },
+    "moduleEnergySystems": {
+      "$ref": "module_energy_systems.json#"
+    },
     "datasetLicenses": {
       "$ref": "licenses_dataset.json#"
     },

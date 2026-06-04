@@ -1,0 +1,435 @@
+{
+  "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/latest/context.json",
+  "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/",
+  "name": "oep_oemetadata",
+  "title": "OEP OEMetadata Dataset",
+  "description": "A dataset for the OEMetadata examples.",
+  "topics": [
+    "model_draft"
+  ],
+  "languages": [
+    "en-GB",
+    "de-DE"
+  ],
+  "version": "0.1.0",
+  "image": "https://openenergyplatform.org/static/img/about/OpenEnergyFamily_GroupPhoto2.png",
+  "subject": [
+    {
+      "name": "energy",
+      "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000150"
+    }
+  ],
+  "keywords": [
+    "example",
+    "ODbL-1.0",
+    "NFDI4Energy"
+  ],
+  "projectContext": {
+    "title": "NFDI4Energy",
+    "homepage": "https://nfdi4energy.uol.de/",
+    "documentation": "https://nfdi4energy.uol.de/sites/about_us/",
+    "sourceCode": "https://github.com/NFDI4Energy",
+    "publisher": "Open Energy Platform (OEP)",
+    "publisherLogo": "https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg",
+    "contact": "contact@example.com",
+    "fundingAgency": " Deutsche Forschungsgemeinschaft (DFG)",
+    "fundingAgencyLogo": "https://upload.wikimedia.org/wikipedia/commons/8/86/DFG-logo-blau.svg",
+    "grantNo": "501865131"
+  },
+  "contributors": [
+    {
+      "title": "Ludwig Hülk",
+      "path": "https://github.com/Ludee",
+      "organization": "Reiner Lemoine Institut",
+      "roles": [
+        "Creator"
+      ],
+      "date": "2026-04-09",
+      "object": "dataset",
+      "comment": "Date of dataset creation"
+    },
+    {
+      "title": "Ludwig Hülk",
+      "path": "https://github.com/Ludee",
+      "organization": "Reiner Lemoine Institut",
+      "roles": [
+        "DataCollector"
+      ],
+      "date": "2024-11-19",
+      "object": "data",
+      "comment": "Date of data creation"
+    },
+    {
+      "title": "Ludwig Hülk",
+      "path": "https://github.com/Ludee",
+      "organization": "Reiner Lemoine Institut",
+      "roles": [
+        "DataCurator"
+      ],
+      "date": "2024-11-30",
+      "object": "metadata",
+      "comment": "Date of metadata creation"
+    }
+  ],
+  "moduleEnergySystems": {
+    "supplyTechnologies": [
+      {
+        "name": "energy transformation",
+        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020003"
+      }
+    ],
+    "storageTechnologies": [
+      {
+        "name": "energy storage technology",
+        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020366"
+      }
+    ],
+    "supplyGrid": [
+      {
+        "name": "supply grid",
+        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000200"
+      }
+    ],
+    "finalEnergyCarrier": [
+      {
+        "name": "final energy carrier",
+        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140080"
+      }
+    ],
+    "demandSectors": [
+      {
+        "name": "energy demand sector",
+        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000128"
+      }
+    ],
+    "moduleDescription": "Example module for an energy system dataset"
+  },
+  "datasetLicenses": [
+    {
+      "name": "ODbL-1.0",
+      "title": "Open Data Commons Open Database License 1.0",
+      "path": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
+      "instruction": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information.",
+      "attribution": "© Reiner Lemoine Institut",
+      "copyrightStatement": "https://github.com/OpenEnergyPlatform/oemetadata/blob/production/LICENSE.txt"
+    }
+  ],
+  "review": {
+    "path": "https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/",
+    "badge": "Platinum"
+  },
+  "resources": [
+    {
+      "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv",
+      "path": "example.csv",
+      "name": "example.csv",
+      "title": "OEMetadata Table Example",
+      "description": "Example metadata and table used to illustrate the OEMetadata structure and features.",
+      "publicationDate": "2024-10-15",
+      "subject": [
+        {
+          "name": "energy",
+          "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000150"
+        }
+      ],
+      "keywords": [
+        "example",
+        "ODbL-1.0",
+        "NFDI4Energy"
+      ],
+      "embargoPeriod": {
+        "start": "2024-10-11",
+        "end": "2025-01-01",
+        "isActive": true
+      },
+      "spatial": {
+        "location": {
+          "address": "Rudower Chaussee 12, 12489 Berlin",
+          "@id": "https://www.wikidata.org/wiki/Q77077223",
+          "latitude": "52.432822",
+          "longitude": "13.5351004"
+        },
+        "extent": {
+          "name": "Berlin",
+          "@id": "https://www.wikidata.org/wiki/Q64",
+          "resolutionValue": "100",
+          "resolutionUnit": "m",
+          "boundingBox": [
+            13.08825,
+            52.33859,
+            13.76104,
+            52.6754
+          ],
+          "crs": "EPSG:4326"
+        }
+      },
+      "temporal": {
+        "referenceDate": "2020-01-01",
+        "timeseries": [
+          {
+            "start": "2020-01-01T00:00:00+01:00",
+            "end": "2020-01-01T23:59:30+01:00",
+            "resolutionValue": "15",
+            "resolutionUnit": "min",
+            "alignment": "left",
+            "aggregationType": "current"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "IPCC Sixth Assessment Report (AR6) - Climate Change 2023 - Synthesis Report",
+          "authors": [
+            "Hoesung Lee",
+            "José Romero",
+            "The Core Writing Team"
+          ],
+          "description": "A Report of the Intergovernmental Panel on Climate Change.",
+          "publicationYear": "2023",
+          "path": "https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf",
+          "sourceLicenses": [
+            {
+              "name": "CC-BY-4.0",
+              "title": "Creative Commons Attribution 4.0 International",
+              "path": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "instruction": "You are free to share and change, but you must attribute. See https://www.tldrlegal.com/license/creative-commons-attribution-4-0-international-cc-by-4 for further information.",
+              "attribution": "© Intergovernmental Panel on Climate Change 2023",
+              "copyrightStatement": "https://www.ipcc.ch/copyright/"
+            }
+          ]
+        }
+      ],
+      "resourceLicenses": [
+        {
+          "name": "ODbL-1.0",
+          "title": "Open Data Commons Open Database License 1.0",
+          "path": "https://opendatacommons.org/licenses/odbl/1-0/index.html",
+          "instruction": "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information.",
+          "attribution": "© Reiner Lemoine Institut",
+          "copyrightStatement": "https://github.com/OpenEnergyPlatform/oemetadata/blob/production/LICENSE.txt"
+        }
+      ],
+      "type": "table",
+      "format": "csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "description": "Unique identifier",
+            "type": "integer",
+            "nullable": false,
+            "unit": null,
+            "isAbout": [
+              {
+                "name": "identifier",
+                "@id": "http://purl.obolibrary.org/obo/IAO_0020000",
+                "mappingRelation": "skos:exactMatch"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": null,
+                "name": null,
+                "@id": null,
+                "mappingRelation": null
+              }
+            ]
+          },
+          {
+            "name": "name",
+            "description": "Technology Name",
+            "type": "string",
+            "nullable": true,
+            "unit": null,
+            "isAbout": [
+              {
+                "name": "power generation technology",
+                "@id": "http://openenergy-platform.org/ontology/oeo/OEO_00010423",
+                "mappingRelation": "skos:exactMatch"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "wind",
+                "name": "wind power technology",
+                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00010424",
+                "mappingRelation": "skos:exactMatch"
+              }
+            ]
+          },
+          {
+            "name": "type",
+            "description": "Type of wind farm",
+            "type": "string",
+            "nullable": true,
+            "unit": null,
+            "isAbout": [
+              {
+                "name": "wind farm",
+                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000447/",
+                "mappingRelation": "skos:exactMatch"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "onshore",
+                "name": "onshore wind farm",
+                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000311/",
+                "mappingRelation": "skos:exactMatch"
+              },
+              {
+                "value": "offshore",
+                "name": "offshore wind farm",
+                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000308/",
+                "mappingRelation": "skos:exactMatch"
+              }
+            ]
+          },
+          {
+            "name": "year",
+            "description": "Reference year",
+            "type": "integer",
+            "nullable": true,
+            "unit": null,
+            "isAbout": [
+              {
+                "name": "year",
+                "@id": "https://openenergyplatform.org/ontology/oeo/UO_0000036/",
+                "mappingRelation": "skos:exactMatch"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": null,
+                "name": null,
+                "@id": null,
+                "mappingRelation": null
+              }
+            ]
+          },
+          {
+            "name": "value",
+            "description": "Bruttoleistung",
+            "type": "number",
+            "nullable": true,
+            "unit": "MW",
+            "isAbout": [
+              {
+                "name": "nameplate capacity",
+                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00230003/",
+                "mappingRelation": "skos:exactMatch"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": null,
+                "name": null,
+                "@id": null,
+                "mappingRelation": null
+              }
+            ]
+          },
+          {
+            "name": "is_active",
+            "description": "Betriebsstatus",
+            "type": "boolean",
+            "nullable": false,
+            "unit": null,
+            "isAbout": [
+              {
+                "name": "Operating Mode Status",
+                "@id": "https://ontology.brickschema.org/brick/Operating_Mode_Status",
+                "mappingRelation": "skos:exactMatch"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": null,
+                "name": null,
+                "@id": null,
+                "mappingRelation": null
+              }
+            ]
+          },
+          {
+            "name": "version",
+            "description": "Version",
+            "type": "string",
+            "nullable": true,
+            "unit": null,
+            "isAbout": [
+              {
+                "name": "version number",
+                "@id": "http://purl.obolibrary.org/obo/IAO_0000129",
+                "mappingRelation": "skos:exactMatch"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": null,
+                "name": null,
+                "@id": null,
+                "mappingRelation": null
+              }
+            ]
+          },
+          {
+            "name": "comment",
+            "description": "",
+            "type": "string",
+            "nullable": true,
+            "unit": null,
+            "isAbout": [
+              {
+                "name": "comment",
+                "@id": "http://semanticscience.org/resource/SIO_001167",
+                "mappingRelation": "skos:exactMatch"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": null,
+                "name": null,
+                "@id": null,
+                "mappingRelation": null
+              }
+            ]
+          }
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "version"
+            ],
+            "reference": {
+              "resource": "example_version.csv",
+              "fields": [
+                "version"
+              ]
+            }
+          }
+        ]
+      },
+      "dialect": {
+        "delimiter": ";",
+        "decimalSeparator": "."
+      },
+      "review": {
+        "path": "https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/",
+        "badge": "Platinum"
+      }
+    }
+  ],
+  "metaMetadata": {
+    "metadataVersion": "OEMetadata-2.1.0",
+    "metadataLicense": {
+      "name": "CC0-1.0",
+      "title": "Creative Commons Zero v1.0 Universal",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0"
+    }
+  }
+}
