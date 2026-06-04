@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/v2/v21/build_source/schemas/module_software.json",
+  "type": "object",
+  "properties": {
+    "moduleDataTransformationSoftware": {
+      "description": "An Object that describes the instruments used in the measurement.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "softwareName": {
+            "description": "Name of the software.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "open-mastr"
+            ],
+            "badge": "Module",
+            "title": "Software Name"
+          },
+          "moduleDescription": {
+            "description": "A description of the module. It should be usable as summary information for the module that is described by the metadata.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "Example data transformation software."
+            ],
+            "badge": "Module",
+            "title": "Module Description"
+          }
+        },
+        "badge": "Module",
+        "title": "Software"
+      },
+      "badge": "Module",
+      "title": "Data Transformation Software Module"
+    }
+  }
+}
