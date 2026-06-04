@@ -45,6 +45,18 @@
             "badge": "Module",
             "title": "Software Version"
           },
+          "softwareType": {
+            "description": "Type of software application.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "Library"
+            ],
+            "badge": "Module",
+            "title": "Software Type (ERSmeta)"
+          },
           "moduleDescription": {
             "description": "A description of the module. It should be usable as summary information for the module that is described by the metadata.",
             "type": [
