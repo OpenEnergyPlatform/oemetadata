@@ -91,6 +91,16 @@
       "moduleDescription": ""
     }
   ],
+  "moduleDataTransformationSoftware": [
+    {
+      "softwareName": "",
+      "softwarePath": "",
+      "softwareVersion": "",
+      "softwareType": "",
+      "programmingLanguage": "",
+      "moduleDescription": ""
+    }
+  ],
   "datasetLicenses": [
     {
       "name": "",

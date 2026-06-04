@@ -25,6 +25,9 @@
     "moduleMeasurementData": {
       "$ref": "module_measurement_data.json#"
     },
+    "moduleDataTransformationSoftware": {
+      "$ref": "module_software.json#"
+    },
     "datasetLicenses": {
       "$ref": "licenses_dataset.json#"
     },

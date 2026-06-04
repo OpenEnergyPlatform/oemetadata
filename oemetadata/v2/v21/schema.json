@@ -749,6 +749,91 @@
       "badge": "Module",
       "title": "Measurement Data Module"
     },
+    "moduleDataTransformationSoftware": {
+      "description": "An Object that describes the instruments used in the measurement.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "softwareName": {
+            "description": "Name of the software.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "open-mastr"
+            ],
+            "badge": "Module",
+            "title": "Software Name"
+          },
+          "softwarePath": {
+            "description": "A link or identifier to download or access the software.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "https://github.com/OpenEnergyPlatform/open-MaStR"
+            ],
+            "badge": "Module",
+            "title": "Software Path"
+          },
+          "softwareVersion": {
+            "description": "The version of the software instance.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "0.17.1"
+            ],
+            "badge": "Module",
+            "title": "Software Version"
+          },
+          "softwareType": {
+            "description": "Type of software application.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "Library"
+            ],
+            "badge": "Module",
+            "title": "Software Type (ERSmeta)"
+          },
+          "programmingLanguage": {
+            "description": "Type of software application.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "Python"
+            ],
+            "badge": "Module",
+            "title": "Software Type (ERSmeta)"
+          },
+          "moduleDescription": {
+            "description": "A description of the module. It should be usable as summary information for the module that is described by the metadata.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "examples": [
+              "Example data transformation software."
+            ],
+            "badge": "Module",
+            "title": "Module Description"
+          }
+        },
+        "badge": "Module",
+        "title": "Software"
+      },
+      "badge": "Module",
+      "title": "Data Transformation Software Module"
+    },
     "datasetLicenses": {
       "description": "An array of objects of licenses under which the described data is provided.",
       "type": "array",

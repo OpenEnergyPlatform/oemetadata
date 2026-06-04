@@ -73,6 +73,16 @@
       "comment": "Date of metadata creation"
     }
   ],
+  "moduleDataTransformationSoftware": [
+    {
+      "softwareName": "open-mastr",
+      "softwarePath": "https://github.com/OpenEnergyPlatform/open-MaStR",
+      "softwareVersion": "0.17.1",
+      "softwareType": "Library",
+      "programmingLanguage": "Python",
+      "moduleDescription": "Example data transformation software."
+    }
+  ],
   "datasetLicenses": [
     {
       "name": "ODbL-1.0",
@@ -348,7 +358,7 @@
           },
           {
             "name": "comment",
-            "description": "",
+            "description": "Comment",
             "type": "string",
             "nullable": true,
             "unit": null,
