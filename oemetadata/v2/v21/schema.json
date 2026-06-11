@@ -671,7 +671,10 @@
         "properties": {
           "instrumentIdentifier": {
             "description": "Unique string that identifies the instrument instance.",
-            "type": "string",
+            "type": [
+              "string",
+              "null"
+            ],
             "examples": [
               "http://hdl.handle.net/21.11157/a9250866-bbec-4542-86b3-a5f78c0c6922"
             ],
@@ -727,18 +730,6 @@
             "badge": "Module",
             "title": "Manufacturer Name"
           },
-          "instrumentConfiguration": {
-            "description": "URL to a configuration of the instrument used for the experiment",
-            "type": [
-              "string",
-              "null"
-            ],
-            "examples": [
-              "https://example.com/my/experiment/instrument/config.yaml"
-            ],
-            "badge": "Module",
-            "title": "Instrument Configuration"
-          },
           "moduleDescription": {
             "description": "A description of the module. It should be usable as summary information for the module that is described by the metadata.",
             "type": "string",
@@ -750,11 +741,7 @@
           }
         },
         "badge": "Module",
-        "title": "Instrument",
-        "required": [
-          "instrumentIdentifier",
-          "moduleDescription"
-        ]
+        "title": "Instrument"
       },
       "badge": "Module",
       "title": "Measurement Data Module"

@@ -113,7 +113,6 @@
       "instrumentName": "MFC_001000_02 - Merck KGaA - FC-2926V - DH9806004",
       "instrumentOwner": "Karlsruhe Institute of Technology (KIT)",
       "manufacturerName": "Merck KGaA",
-      "instrumentConfiguration": "https://example.com/my/experiment/instrument/config.yaml",
       "moduleDescription": "Example instrument of PIDINST schema."
     }
   ],
