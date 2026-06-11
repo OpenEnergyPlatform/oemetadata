@@ -8,7 +8,6 @@
     "dcat": "https://www.w3.org/ns/dcat#",
     "dct": "https://purl.org/dc/terms/",
     "foaf": "http://xmlns.com/foaf/0.1/",
-    "m4i": "https://w3id.org/nfdi4ing/metadata4ing#",
     "ncit": "http://purl.obolibrary.org/obo/ncit.owl",
     "oeo": "https://openenergyplatform.org/ontology/oeo/",
     "owl": "http://www.w3.org/2002/07/owl#",
@@ -323,13 +322,10 @@
       "@id": "oeo:OEO_00140098",
       "@type": "xsd:string"
     },
-    "metaMetadata": "@nest",
-    "metadataVersion": {
-      "@id": "owl:versionInfo",
-      "@type": "xsd:string"
+    "moduleMeasurementData": {
+      "@container": "@set",
+      "@id": "dcat:hasPart"
     },
-    "metadataLicense": "@nest",
-    "moduleMeasurementData": {"@container": "@set", "@id": "dcat:hasPart"},
     "instrumentIdentifier": {
       "@id": "dct:identifier",
       "@type": "@id"
@@ -346,13 +342,15 @@
       "@id": "sc:owner",
       "@type": "xsd:string"
     },
-    "instrumentConfiguration": {
-      "@id": "m4i:hasParameterSet",
-      "@type": "xsd:AnyUrl"
-    },
     "manufacturerName": {
       "@id": "sc:manufacturer",
       "@type": "xsd:string"
-    }
+    },
+    "metaMetadata": "@nest",
+    "metadataVersion": {
+      "@id": "owl:versionInfo",
+      "@type": "xsd:string"
+    },
+    "metadataLicense": "@nest"
   }
 }
