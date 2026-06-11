@@ -67,18 +67,6 @@
             "badge": "Module",
             "title": "Manufacturer Name"
           },
-          "instrumentConfiguration": {
-            "description": "URL to a configuration of the instrument used for the experiment",
-            "type": [
-              "string",
-              "null"
-            ],
-            "examples": [
-              "https://example.com/my/experiment/instrument/config.yaml"
-            ],
-            "badge": "Module",
-            "title": "Instrument Configuration"
-          },
           "moduleDescription": {
             "description": "A description of the module. It should be usable as summary information for the module that is described by the metadata.",
             "type": "string",
