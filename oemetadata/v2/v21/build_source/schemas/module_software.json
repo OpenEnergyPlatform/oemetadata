@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "moduleDataTransformationSoftware": {
-      "description": "An Object that describes the instruments used in the measurement.",
+      "description": "An Object that describes a software used for data transformations.",
       "type": "array",
       "items": {
         "type": "object",
