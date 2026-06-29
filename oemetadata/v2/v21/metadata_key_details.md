@@ -1384,7 +1384,7 @@ If a value is not yet available, use: `ToDo`.
 ### Dataset - Module - Energy Systems - finalEnergyCarrier
 |                |                                                                                                                                                                 |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Key            | **finalEnergyCarrier**                                                                                                                                         |
+| Key            | **finalEnergyCarrier**                                                                                                                                          |
 | Description    | An energy storage technology describes how energy storage components and energy carriers are combined to charge, store, and discharge energy for temporary use. |
 | Example        |                                                                                                                                                                 |
 | Ontology Class |                                                                                                                                                                 |
@@ -1424,7 +1424,7 @@ If a value is not yet available, use: `ToDo`.
 | Key            | **instrumentIdentifier**                                            |
 | Description    | Unique string that identifies the instrument instance.              |
 | Example        | http://hdl.handle.net/21.11157/a9250866-bbec-4542-86b3-a5f78c0c6922 |
-| Ontology Class |                                                                     |
+| Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)               |
 | Card.          | [0..1]                                                              |
 
 ### Dataset - Module - Measurement Data - instrumentPath
@@ -1433,17 +1433,17 @@ If a value is not yet available, use: `ToDo`.
 | Key            | **instrumentPath**                              |
 | Description    | A landing page that the identifier resolves to. |
 | Example        | https://sms.atmohub.kit.edu/devices/961         |
-| Ontology Class |                                                 |
+| Ontology Class | [dct:url](http://purl.org/dc/terms/url)         |
 | Card.          | [0..1]                                          |
 
 ### Dataset - Module - Measurement Data - instrumentName
-|                |                                                    |
-|----------------|----------------------------------------------------|
-| Key            | **instrumentName**                                 |
-| Description    | Name by which the instrument instance is known.    |
-| Example        | MFC_001000_02 - Merck KGaA - FC-2926V - DH9806004  |
-| Ontology Class |                                                    |
-| Card.          | [0..1]                                             |
+|                |                                                   |
+|----------------|---------------------------------------------------|
+| Key            | **instrumentName**                                |
+| Description    | Name by which the instrument instance is known.   |
+| Example        | MFC_001000_02 - Merck KGaA - FC-2926V - DH9806004 |
+| Ontology Class | [dct:name](http://purl.org/dc/terms/name)         |
+| Card.          | [0..1]                                            |
 
 ### Dataset - Module - Measurement Data - instrumentOwner
 |                |                                                                                                                                                                      |
@@ -1451,26 +1451,26 @@ If a value is not yet available, use: `ToDo`.
 | Key            | **instrumentOwner**                                                                                                                                                  |
 | Description    | Institution(s) responsible for the management of the instrument. This may include the legal owner, the operator, or an institute providing access to the instrument. |
 | Example        | Karlsruhe Institute of Technology (KIT)                                                                                                                              |
-| Ontology Class |                                                                                                                                                                      |
+| Ontology Class | [sc:owner](https://schema.org/owner)                                                                                                                                 |
 | Card.          | [0..1]                                                                                                                                                               |
 
 ### Dataset - Module - Measurement Data - manufacturerName
-|                |                                |
-|----------------|--------------------------------|
-| Key            | **manufacturerName**           |
-| Description    | Full name of the manufacturer. |
-| Example        | Merck KGaA                     |
-| Ontology Class |                                |
-| Card.          | [0..1]                         |
+|                |                                                     |
+|----------------|-----------------------------------------------------|
+| Key            | **manufacturerName**                                |
+| Description    | Full name of the manufacturer.                      |
+| Example        | Merck KGaA                                          |
+| Ontology Class | [sc:manufacturer](https://schema.org/manufacturer)  |
+| Card.          | [0..1]                                              |
 
 ### Dataset - Module - Measurement Data - moduleDescription
-|                |                                                                                                                            |
-|----------------|----------------------------------------------------------------------------------------------------------------------------|
-| Key            | **moduleDescription**                                                                                                      |
-| Description    | A description of the module. It should be usable as summary information for the module that is described by the metadata.  |
-| Example        |                                                                                                                            |
-| Ontology Class |                                                                                                                            |
-| Card.          | [0..1]                                                                                                                     |
+|                |                                                                                                                           |
+|----------------|---------------------------------------------------------------------------------------------------------------------------|
+| Key            | **moduleDescription**                                                                                                     |
+| Description    | A description of the module. It should be usable as summary information for the module that is described by the metadata. |
+| Example        | Example instrument of PIDINST schema.                                                                                     |
+| Ontology Class | [dct:description](http://purl.org/dc/terms/description)                                                                   |
+| Card.          | [0..1]                                                                                                                    |
 
 
 ### MetaMetadata Keys
@@ -1480,7 +1480,7 @@ If a value is not yet available, use: `ToDo`.
 | Description    | An object that describes the metadata themselves, their format, version and license. |
 | Example        |                                                                                      |
 | Ontology Class |                                                                                      |
-| Card.          | [1]                                                                                  |
+| Card.          | [0..1]                                                                                  |
 
 ### MetaMetadata Keys - metadataVersion
 |                |                                                              |
