@@ -81,6 +81,26 @@
     ],
     "moduleDescription": ""
   },
+  "moduleMeasurementData": [
+    {
+      "instrumentIdentifier": "",
+      "instrumentPath": "",
+      "instrumentName": "",
+      "instrumentOwner": "",
+      "manufacturerName": "",
+      "moduleDescription": ""
+    }
+  ],
+  "moduleDataTransformationSoftware": [
+    {
+      "softwareName": "",
+      "softwarePath": "",
+      "softwareVersion": "",
+      "softwareType": "",
+      "programmingLanguage": "",
+      "moduleDescription": ""
+    }
+  ],
   "datasetLicenses": [
     {
       "name": "",
@@ -101,11 +121,11 @@
       "path": "",
       "name": "",
       "title": "",
+      "description": "",
+      "publicationDate": "",
       "topics": [
         ""
       ],
-      "description": "",
-      "publicationDate": "",
       "subject": [
         {
           "name": "",

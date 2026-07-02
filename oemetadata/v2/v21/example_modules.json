@@ -4,9 +4,11 @@
   "name": "oep_oemetadata",
   "title": "OEP OEMetadata Dataset",
   "description": "A dataset for the OEMetadata examples.",
-  "topics": [
-    "model_draft"
-  ],
+  "extent": {
+    "name": "Europe",
+    "@id": "https://www.wikidata.org/wiki/Q458"
+  },
+  "referenceDate": "2020-01-01",
   "languages": [
     "en-GB",
     "de-DE"
@@ -104,6 +106,26 @@
     ],
     "moduleDescription": "Example module for an energy system dataset"
   },
+  "moduleMeasurementData": [
+    {
+      "instrumentIdentifier": "http://hdl.handle.net/21.11157/a9250866-bbec-4542-86b3-a5f78c0c6922",
+      "instrumentPath": "https://sms.atmohub.kit.edu/devices/961",
+      "instrumentName": "MFC_001000_02 - Merck KGaA - FC-2926V - DH9806004",
+      "instrumentOwner": "Karlsruhe Institute of Technology (KIT)",
+      "manufacturerName": "Merck KGaA",
+      "moduleDescription": "Example instrument of PIDINST schema."
+    }
+  ],
+  "moduleDataTransformationSoftware": [
+    {
+      "softwareName": "open-mastr",
+      "softwarePath": "https://github.com/OpenEnergyPlatform/open-MaStR",
+      "softwareVersion": "0.17.1",
+      "softwareType": "Library",
+      "programmingLanguage": "Python",
+      "moduleDescription": "Example data transformation software."
+    }
+  ],
   "datasetLicenses": [
     {
       "name": "ODbL-1.0",
@@ -115,17 +137,20 @@
     }
   ],
   "review": {
-    "path": "https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/",
+    "path": "https://openenergyplatform.org/database/",
     "badge": "Platinum"
   },
   "resources": [
     {
       "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv",
       "path": "example.csv",
-      "name": "example.csv",
+      "name": "oemetadata_table_example",
       "title": "OEMetadata Table Example",
       "description": "Example metadata and table used to illustrate the OEMetadata structure and features.",
       "publicationDate": "2024-10-15",
+      "topics": [
+        "model_draft"
+      ],
       "subject": [
         {
           "name": "energy",
@@ -376,7 +401,7 @@
           },
           {
             "name": "comment",
-            "description": "",
+            "description": "Comment",
             "type": "string",
             "nullable": true,
             "unit": null,
@@ -419,7 +444,7 @@
         "decimalSeparator": "."
       },
       "review": {
-        "path": "https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/",
+        "path": "https://openenergyplatform.org/database/",
         "badge": "Platinum"
       }
     }

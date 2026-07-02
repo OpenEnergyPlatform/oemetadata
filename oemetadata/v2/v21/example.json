@@ -73,6 +73,16 @@
       "comment": "Date of metadata creation"
     }
   ],
+  "moduleDataTransformationSoftware": [
+    {
+      "softwareName": "open-mastr",
+      "softwarePath": "https://github.com/OpenEnergyPlatform/open-MaStR",
+      "softwareVersion": "0.17.1",
+      "softwareType": "Library",
+      "programmingLanguage": "Python",
+      "moduleDescription": "Example data transformation software."
+    }
+  ],
   "datasetLicenses": [
     {
       "name": "ODbL-1.0",
@@ -91,13 +101,13 @@
     {
       "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv",
       "path": "example.csv",
-      "name": "example.csv",
+      "name": "oemetadata_table_example",
       "title": "OEMetadata Table Example",
+      "description": "Example metadata and table used to illustrate the OEMetadata structure and features.",
+      "publicationDate": "2024-10-15",
       "topics": [
         "model_draft"
       ],
-      "description": "Example metadata and table used to illustrate the OEMetadata structure and features.",
-      "publicationDate": "2024-10-15",
       "subject": [
         {
           "name": "energy",
@@ -348,7 +358,7 @@
           },
           {
             "name": "comment",
-            "description": "",
+            "description": "Comment",
             "type": "string",
             "nullable": true,
             "unit": null,

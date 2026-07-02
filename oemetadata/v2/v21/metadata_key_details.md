@@ -1322,7 +1322,7 @@ If a value is not yet available, use: `ToDo`.
 | Description    | The metadata on the OEP can go through an open peer review process. See the Academy course [Open Peer Review](https://openenergyplatform.github.io/academy/courses/09_peer_review/) for further information. |
 | Example        |                                                                                                                                                                                                              |
 | Ontology Class |                                                                                                                                                                                                              |
-| Badge          | [0..1]                                                                                                                                                                                                       |
+| Card.          | [0..1]                                                                                                                                                                                                       |
 
 ### Resources - Review Keys - path
 |                |                                                                                                                      |
@@ -1331,7 +1331,7 @@ If a value is not yet available, use: `ToDo`.
 | Description    | A link or path to the documented open peer review.                                                                   |
 | Example        | [open_peer_review/9](https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/9/) |
 | Ontology Class | [sc:url](https://schema.org/url)                                                                                     |
-| Badge          | [0..1]                                                                                                               |
+| Card.          | [0..1]                                                                                                               |
 
 ### Resources - Review Keys - badge
 |                |                                                                                                        |
@@ -1340,7 +1340,7 @@ If a value is not yet available, use: `ToDo`.
 | Description    | A badge of either Iron, Bronze, Silver, Gold or Platinum is used to label the quality of the metadata. |
 | Example        | Platinum                                                                                               |
 | Ontology Class | [oeo:quality control flag](https://openenergyplatform.org/ontology/oeo/OEO_00140098/)                  |
-| Badge          | [0..1]                                                                                                 |
+| Card.          | [0..1]                                                                                                 |
 
 
 ## Dataset - Modules
@@ -1352,7 +1352,7 @@ If a value is not yet available, use: `ToDo`.
 | Description    | An Object that describes the main concepts of an energy system.  |
 | Example        |                                                                  |
 | Ontology Class |                                                                  |
-| Badge          | [0..1]                                                           |
+| Card.          | [0..1]                                                           |
 
 ### Dataset - Module - Energy Systems - supplyTechnologies
 |                |                                                                                                                            |
@@ -1361,7 +1361,7 @@ If a value is not yet available, use: `ToDo`.
 | Description    | A supply technology describes how specific technical components and processes are combined to generate or provide energy.  |
 | Example        |                                                                                                                            |
 | Ontology Class |                                                                                                                            |
-| Badge          | [0..1]                                                                                                                     |
+| Card.          | [0..1]                                                                                                                     |
 
 ### Dataset - Module - Energy Systems - storageTechnologies
 |                |                                                                                                                                                                 |
@@ -1370,7 +1370,7 @@ If a value is not yet available, use: `ToDo`.
 | Description    | An energy storage technology describes how energy storage components and energy carriers are combined to charge, store, and discharge energy for temporary use. |
 | Example        |                                                                                                                                                                 |
 | Ontology Class |                                                                                                                                                                 |
-| Badge          | [0..1]                                                                                                                                                          |
+| Card.          | [0..1]                                                                                                                                                          |
 
 ### Dataset - Module - Energy Systems - supplyGrid
 |                |                                                                                                                                 |
@@ -1379,7 +1379,7 @@ If a value is not yet available, use: `ToDo`.
 | Description    | A supply grid is a system of interconnected technical components that together enable the distribution and delivery of energy.  |
 | Example        |                                                                                                                                 |
 | Ontology Class |                                                                                                                                 |
-| Badge          | [0..1]                                                                                                                          |
+| Card.          | [0..1]                                                                                                                          |
 
 ### Dataset - Module - Energy Systems - finalEnergyCarrier
 |                |                                                                                                                                                                 |
@@ -1388,7 +1388,7 @@ If a value is not yet available, use: `ToDo`.
 | Description    | An energy storage technology describes how energy storage components and energy carriers are combined to charge, store, and discharge energy for temporary use. |
 | Example        |                                                                                                                                                                 |
 | Ontology Class |                                                                                                                                                                 |
-| Badge          | [0..1]                                                                                                                                                          |
+| Card.          | [0..1]                                                                                                                                                          |
 
 ### Dataset - Module - Energy Systems - demandSectors
 |                |                                                                                                                                     |
@@ -1397,7 +1397,7 @@ If a value is not yet available, use: `ToDo`.
 | Description    | An energy demand sector is a sector of the energy system that groups together energy consumers with similar usage characteristics.  |
 | Example        |                                                                                                                                     |
 | Ontology Class |                                                                                                                                     |
-| Badge          | [0..1]                                                                                                                              |
+| Card.          | [0..1]                                                                                                                              |
 
 ### Dataset - Module - Energy Systems - moduleDescription
 |                |                                                                                                                            |
@@ -1406,7 +1406,71 @@ If a value is not yet available, use: `ToDo`.
 | Description    | A description of the module. It should be usable as summary information for the module that is described by the metadata.  |
 | Example        |                                                                                                                            |
 | Ontology Class |                                                                                                                            |
-| Badge          | [0..1]                                                                                                                     |
+| Card.          | [0..1]                                                                                                                     |
+
+
+### Dataset - Module - Measurement Data
+|                |                                                                   |
+|----------------|-------------------------------------------------------------------|
+| Key            | **moduleMeasurementData**                                         |
+| Description    | An Object that describes the instruments used in the measurement. |
+| Example        |                                                                   |
+| Ontology Class |                                                                   |
+| Card.          | [0..1]                                                            |
+
+### Dataset - Module - Measurement Data - instrumentIdentifier
+|                |                                                                     |
+|----------------|---------------------------------------------------------------------|
+| Key            | **instrumentIdentifier**                                            |
+| Description    | Unique string that identifies the instrument instance.              |
+| Example        | http://hdl.handle.net/21.11157/a9250866-bbec-4542-86b3-a5f78c0c6922 |
+| Ontology Class |                                                                     |
+| Card.          | [0..1]                                                              |
+
+### Dataset - Module - Measurement Data - instrumentPath
+|                |                                                 |
+|----------------|-------------------------------------------------|
+| Key            | **instrumentPath**                              |
+| Description    | A landing page that the identifier resolves to. |
+| Example        | https://sms.atmohub.kit.edu/devices/961         |
+| Ontology Class |                                                 |
+| Card.          | [0..1]                                          |
+
+### Dataset - Module - Measurement Data - instrumentName
+|                |                                                    |
+|----------------|----------------------------------------------------|
+| Key            | **instrumentName**                                 |
+| Description    | Name by which the instrument instance is known.    |
+| Example        | MFC_001000_02 - Merck KGaA - FC-2926V - DH9806004  |
+| Ontology Class |                                                    |
+| Card.          | [0..1]                                             |
+
+### Dataset - Module - Measurement Data - instrumentOwner
+|                |                                                                                                                                                                      |
+|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Key            | **instrumentOwner**                                                                                                                                                  |
+| Description    | Institution(s) responsible for the management of the instrument. This may include the legal owner, the operator, or an institute providing access to the instrument. |
+| Example        | Karlsruhe Institute of Technology (KIT)                                                                                                                              |
+| Ontology Class |                                                                                                                                                                      |
+| Card.          | [0..1]                                                                                                                                                               |
+
+### Dataset - Module - Measurement Data - manufacturerName
+|                |                                |
+|----------------|--------------------------------|
+| Key            | **manufacturerName**           |
+| Description    | Full name of the manufacturer. |
+| Example        | Merck KGaA                     |
+| Ontology Class |                                |
+| Card.          | [0..1]                         |
+
+### Dataset - Module - Measurement Data - moduleDescription
+|                |                                                                                                                            |
+|----------------|----------------------------------------------------------------------------------------------------------------------------|
+| Key            | **moduleDescription**                                                                                                      |
+| Description    | A description of the module. It should be usable as summary information for the module that is described by the metadata.  |
+| Example        |                                                                                                                            |
+| Ontology Class |                                                                                                                            |
+| Card.          | [0..1]                                                                                                                     |
 
 
 ### MetaMetadata Keys

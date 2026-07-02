@@ -336,4 +336,6 @@ if __name__ == "__main__":
     test_oemetadata_schema_should_validate_oemetadata_example(json_data)
 
     copy_example_with_modules(EXAMPLE_PATH, EXAMPLE_MODULES_PATH)
-    remove_modules_from_example(module_keys=["moduleEnergySystems"])
+    remove_modules_from_example(
+        module_keys=["moduleEnergySystems", "moduleMeasurementData"]
+    )
