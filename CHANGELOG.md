@@ -27,6 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add temporal information to dataset [(#310)](https://github.com/OpenEnergyPlatform/oemetadata/pull/310)
 - Add a module `Energy Systems` for dataset [(#312)](https://github.com/OpenEnergyPlatform/oemetadata/pull/312)
 - Add a module `Measurement Data` for dataset [(#313)](https://github.com/OpenEnergyPlatform/oemetadata/pull/313)
+- Add a module `Data Transformation Software` for dataset [(#314)](https://github.com/OpenEnergyPlatform/oemetadata/pull/314)
 
 ### Changed
 - Update TLDR URL in example sourceLicenses [(#275)](https://github.com/OpenEnergyPlatform/oemetadata/pull/275)

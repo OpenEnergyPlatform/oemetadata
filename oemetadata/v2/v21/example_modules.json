@@ -116,6 +116,16 @@
       "moduleDescription": "Example instrument of PIDINST schema."
     }
   ],
+  "moduleDataTransformationSoftware": [
+    {
+      "softwareName": "open-mastr",
+      "softwarePath": "https://github.com/OpenEnergyPlatform/open-MaStR",
+      "softwareVersion": "0.17.1",
+      "softwareType": "Library",
+      "programmingLanguage": "Python",
+      "moduleDescription": "Example data transformation software."
+    }
+  ],
   "datasetLicenses": [
     {
       "name": "ODbL-1.0",
