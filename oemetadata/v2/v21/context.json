@@ -244,10 +244,6 @@
       "@id": "foaf:homepage",
       "@type": "xsd:anyURI"
     },
-    "documentation": {
-      "@id": "ncit:NCIT_C165054",
-      "@type": "xsd:anyURI"
-    },
     "sourceCode": {
       "@id": "oeo:OEO_00000091",
       "@type": "xsd:anyURI"
@@ -256,10 +252,6 @@
       "@id": "dct:publisher",
       "@type": "foaf:Agent"
     },
-    "publisherLogo": {
-      "@id": "foaf:logo",
-      "@type": "xsd:anyURI"
-    },
     "contact": {
       "@id": "oeo:OEO_00000107",
       "@type": "xsd:string"
@@ -267,10 +259,6 @@
     "fundingAgency": {
       "@id": "sc:FundingAgency",
       "@type": "xsd:string"
-    },
-    "fundingAgencyLogo": {
-      "@id": "foaf:logo",
-      "@type": "xsd:anyURI"
     },
     "grantNo": {
       "@id": "sc:Grant",
@@ -430,9 +418,6 @@
       "@id": "csvw:decimalChar",
       "@type": "xsd:string"
     },
-    "badge": {
-      "@id": "oeo:OEO_00140098",
-      "@type": "xsd:string"
     },
     "metaMetadata": "@nest",
     "metadataVersion": {
