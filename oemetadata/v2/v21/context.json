@@ -22,6 +22,90 @@
       "@id": "rdfs:label",
       "@type": "xsd:string"
     },
+    "extent": {
+      "@id": "dct:coverage",
+      "@type": "dct:Location"
+    },
+    "referenceDate": {
+      "@id": "dct:date",
+      "@type": "xsd:date"
+    },
+    "projectContext": {
+      "@id": "prov:wasGeneratedBy",
+      "@type": "prov:Activity",
+      "@context": {
+        "title": {
+          "@type": "xsd:string",
+          "@id": "dct:title"
+        },
+        "homepage": {
+          "@nest": "title",
+          "@id": "foaf:homepage"
+        },
+        "documentation": {
+          "@id": "rdfs:seeAlso",
+          "@type": "xsd:anyURI"
+        },
+        "publisherLogo": {
+          "@id": "foaf:logo",
+          "@type": "xsd:anyURI"
+        },
+        "fundingAgencyLogo": {
+          "@id": "sc:logo",
+          "@type": "xsd:anyURI"
+        },
+        "sourceCode": {
+          "@id": "sc:codeRepository",
+          "@type": "xsd:anyURI"
+        },
+        "contact": {
+          "@id": "sc:contactPoint",
+          "@type": "xsd:string"
+        },
+        "grantNo": {
+          "@id": "sc:funding",
+          "@type": "xsd:string"
+        },
+        "fundingAgency": {
+          "@type": "xsd:string",
+          "@id": "foaf:fundedBy"
+        }
+      }
+    },
+    "moduleDataTransformationSoftware": {
+       "@id": "oeo:ont00001917",
+       "@container": "@set",
+       "@context": {
+        "softwareName": {
+          "@id": "dct:title",
+          "@type": "xsd:string"
+        },
+        "softwarePath": {
+          "@id": "dcat:accessURL",
+          "@type": "xsd:anyURI"
+        },
+        "softwareVersion": {
+          "@id": "dcat:version",
+          "@type": "xsd:string"
+        },
+        "softwareType": {
+          "@id": "ers:softwareType",
+          "@type": "xsd:string"
+        },
+        "programmingLanguage": {
+          "@id": "sc:programmingLanguage",
+          "@type": "xsd:string"
+        },
+        "moduleDescription": {
+          "@id": "dct:description",
+          "@type": "xsd:string"
+        }
+       }
+    },
+    "datasetLicenses": {
+      "@id": "dct:license",
+      "@container": "@set"
+    },
     "title": {
       "@id": "dct:title",
       "@type": "xsd:string"
