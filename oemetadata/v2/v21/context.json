@@ -386,8 +386,8 @@
     "schemaFields": {
       "@id": "csvw:column"
     },
-    "nullable": {
-      "@id": "ncit:NCIT_C47840",
+    "required": {
+      "@id": "csvw:required",
       "@type": "xsd:boolean"
     },
     "unit": {
