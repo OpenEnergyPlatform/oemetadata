@@ -446,12 +446,17 @@
       "@id": "csvw:decimalChar",
       "@type": "xsd:string"
     },
+    "metaMetadata": {
+      "@id": "dct:conformsTo",
+      "@type": "dct:Standard"
     },
-    "metaMetadata": "@nest",
     "metadataVersion": {
       "@id": "owl:versionInfo",
       "@type": "xsd:string"
     },
-    "metadataLicense": "@nest"
+    "metadataLicense": {
+      "@id": "dct:license",
+      "@type": "dct:LicenseDocument"
+    }
   }
 }
