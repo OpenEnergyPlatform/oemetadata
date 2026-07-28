@@ -157,7 +157,26 @@
     },
     "resources": {
       "@container": "@set",
-      "@id": "dcat:Dataset"
+      "@id": "dcat:dataset",
+      "@context": {
+        "path": {
+          "@id": "dct:identifier",
+          "@type": "xsd:string"
+        },
+        "embargoPeriod": {
+          "@id": "dct:accessRights",
+          "@context": {
+            "end": {
+              "@id": "dct:available",
+              "@type": "xsd:date"
+            },
+            "start": {
+              "@id": "dct:issued",
+              "@type": "xsd:date"
+            }
+          }
+        }
+      }
     },
     "topics": {
       "@container": "@set",
@@ -172,7 +191,6 @@
       "@id": "dct:issued",
       "@type": "xsd:date"
     },
-    "embargoPeriod": "@nest",
     "start": {
       "@id": "dbo:startDateTime",
       "@type": "xsd:dateTime"
