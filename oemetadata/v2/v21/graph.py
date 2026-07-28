@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2026 Philipp Schmurr <@CPPrentice> © Karlsruher Institut für Technologie
+# SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
+# SPDX-License-Identifier: MIT
+
 import pathlib
 
 from rdflib import Graph
