@@ -359,7 +359,7 @@
       "@type": "xsd:string"
     },
     "type": {
-      "@id": "csvw:datatype",
+      "@id": "dct:type",
       "@type": "xsd:string"
     },
     "format": {
@@ -370,7 +370,15 @@
       "@id": "csvw:encoding",
       "@type": "xsd:string"
     },
-    "schema": "@nest",
+    "schema": {
+      "@id": "csvw:tableSchema",
+      "@context": {
+        "type": {
+          "@id": "csvw:datatype",
+          "@type": "xsd:string"
+        }
+      }
+    },
     "nestedFields": {
       "@id": "csvw:column",
       "@container": "@set"
@@ -407,14 +415,16 @@
       "@id": "csvw:foreignKey",
       "@container": "@set"
     },
-    "reference": "@nest",
+    "reference": {
+      "@id": "csvw:reference"
+    },
     "resource": {
-      "@id": "dcat:Distribution",
+      "@id": "csvw:resource",
       "@type": "xsd:string"
     },
     "fields": {
       "@id": "csvw:column",
-      "@container": "@set",
+      "@container": "@list",
       "@type": "xsd:string"
     },
     "dialect": "@nest",
