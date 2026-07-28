@@ -302,12 +302,12 @@
       }
     },
     "authors": {
-      "@id": "oeo:OEO_00000064",
+      "@id": "sc:author",
       "@type": "xsd:string"
     },
     "publicationYear": {
       "@id": "dct:issued",
-      "@type": "xsd:date"
+      "@type": "xsd:gYear"
     },
     "sourceLicenses": {
       "@id": "dct:license",
@@ -332,17 +332,19 @@
       "@container": "@set"
     },
     "contributors": {
-      "@id": "foaf:Agent",
-      "@container": "@set"
-    },
-    "organization": {
-      "@id": "oeo:OEO_00030022",
-      "@type": "xsd:string"
-    },
-    "roles": {
-      "@id": "oeo:BFO_0000023",
+      "@id": "dct:contributor",
       "@container": "@set",
-      "@type": "xsd:string"
+      "@context": {
+        "organization": {
+          "@id": "sc:memberOf",
+          "@type": "xsd:string"
+        },
+        "roles": {
+          "@container": "@set",
+          "@id": "oeo:RO_0000087",
+          "@type": "xsd:string"
+        }
+      }
     },
     "date": {
       "@id": "dct:modified",
