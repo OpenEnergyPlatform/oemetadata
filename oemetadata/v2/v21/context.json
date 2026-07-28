@@ -293,7 +293,13 @@
     },
     "sources": {
       "@id": "dct:source",
-      "@container": "@set"
+      "@container": "@set",
+      "@context": {
+        "path": {
+          "@id": "dcat:accessURL",
+          "@type": "xsd:anyURI"
+        }
+      }
     },
     "authors": {
       "@id": "oeo:OEO_00000064",
@@ -303,13 +309,15 @@
       "@id": "dct:issued",
       "@type": "xsd:date"
     },
-    "sourcePath": {
-      "@id": "dcat:accessURL",
-      "@type": "xsd:string"
-    },
     "sourceLicenses": {
       "@id": "dct:license",
-      "@container": "@set"
+      "@container": "@set",
+      "@context": {
+        "path": {
+          "@id": "dcat:accessURL",
+          "@type": "xsd:anyURI"
+        }
+      }
     },
     "instruction": {
       "@id": "rdfs:comment",
