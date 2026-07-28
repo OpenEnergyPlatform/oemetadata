@@ -15,8 +15,9 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "sc": "http://schema.org/",
-    "spdx": "http://spdx.org/rdf/terms#",
+    "spdx": "https://spdx.org/rdf/3.0.1/terms/Software/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ers": "https://raw.githubusercontent.com/NFDI4Energy/ERSmeta/refs/tags/V0.9/schema/ERSmeta.ttl#",
     "name": {
       "@id": "rdfs:label",
       "@type": "xsd:string"
