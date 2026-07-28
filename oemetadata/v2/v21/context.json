@@ -271,24 +271,22 @@
           "@id": "dct:date",
           "@type": "xsd:date"
         },
-        "timeseries": {
-          "@id": "dct:PeriodOfTime",
-          "@container": "@set"
-        },
+        
+        "timeseries": "@nest",
         "resolutionValue": {
           "@id": "dcat:temporalResolution",
           "@type": "xsd:decimal"
         },
         "resolutionUnit": {
-          "@id": "oeo:unit",
+          "@id": "oeo:OEO_00040010",
           "@type": "xsd:string"
         },
         "alignment": {
-          "@id": "oeo:OEO_00140044",
+          "@id": "dct:format",
           "@type": "xsd:string"
         },
         "aggregationType": {
-          "@id": "oeo:OEO_00140068",
+          "@id": "oeo:OEO_00020190",
           "@type": "xsd:string"
         }
       }
