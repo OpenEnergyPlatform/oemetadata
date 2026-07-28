@@ -422,6 +422,16 @@
       "@id": "csvw:resource",
       "@type": "xsd:string"
     },
+    "resourceLicenses": {
+      "@container": "@set",
+      "@id": "dct:license",
+      "@context": {
+        "path": {
+          "@id": "dcat:accessURL",
+          "@type": "xsd:anyURI"
+        }
+      }
+    },
     "fields": {
       "@id": "csvw:column",
       "@container": "@list",
