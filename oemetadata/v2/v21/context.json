@@ -106,6 +106,10 @@
       "@id": "dct:license",
       "@container": "@set"
     },
+    "attribution": {
+      "@id": "dct:rightsHolder",
+      "@type": "xsd:string"
+    },
     "review": {
       "@container": "@set",
       "@id": "sc:review",
@@ -306,10 +310,6 @@
     },
     "instruction": {
       "@id": "rdfs:comment",
-      "@type": "xsd:string"
-    },
-    "attribution": {
-      "@id": "spdx:attributionText",
       "@type": "xsd:string"
     },
     "copyrightStatement": {
