@@ -175,6 +175,42 @@
               "@type": "xsd:date"
             }
           }
+        },
+        "spatial": "@nest",
+        "extent": {
+          "@id": "dct:coverage"
+        },
+        "location": {
+          "@id": "dct:spatial"
+        },
+        "address": {
+          "@id": "sc:address",
+          "@type": "xsd:string"
+        },
+        "latitude": {
+          "@id": "sc:latitude",
+          "@type": "xsd:decimal"
+        },
+        "longitude": {
+          "@id": "sc:longitude",
+          "@type": "xsd:decimal"
+        },
+        "resolutionValue": {
+          "@id": "dcat:spatialResolutionInMeters",
+          "@type": "xsd:decimal"
+        },
+        "resolutionUnit": {
+          "@id": "oeo:OEO_00040010",
+          "@type": "xsd:string"
+        },
+        "boundingBox": {
+          "@id": "dcat:bbox",
+          "@container": "@list",
+          "@type": "xsd:decimal"
+        },
+        "crs": {
+          "@id": "rdfs:comment",
+          "@type": "xsd:string"
         }
       }
     },
@@ -239,43 +275,6 @@
     "grantNo": {
       "@id": "sc:Grant",
       "@type": "xsd:string"
-    },
-    "spatial": {
-      "@id": "dct:spatial",
-      "@context": {
-        "location": {
-          "@id": "dct:location"
-        },
-        "address": {
-          "@id": "sc:address",
-          "@type": "xsd:string"
-        },
-        "latitude": {
-          "@id": "sc:latitude",
-          "@type": "xsd:decimal"
-        },
-        "longitude": {
-          "@id": "sc:longitude",
-          "@type": "xsd:decimal"
-        },
-        "extent": {
-          "@id": "oeo:BFO_0000006"
-        },
-        "resolutionValue": "dcat:spatialResolutionInMeters",
-        "resolutionUnit": {
-          "@id": "oeo:unit",
-          "@type": "xsd:string"
-        },
-        "boundingBox": {
-          "@id": "dcat:bbox",
-          "@container": "@list",
-          "@type": "xsd:decimal"
-        },
-        "crs": {
-          "@id": "cco:ont00000469",
-          "@type": "xsd:string"
-        }
-      }
     },
     "temporal": {
       "@id": "dct:temporal",
