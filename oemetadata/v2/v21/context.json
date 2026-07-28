@@ -106,6 +106,17 @@
       "@id": "dct:license",
       "@container": "@set"
     },
+    "review": {
+      "@container": "@set",
+      "@id": "sc:review",
+      "@context": {
+        "path": "@id",
+        "badge": {
+          "@id": "sc:ratingValue",
+          "@type": "xsd:string"
+        }
+      }
+    },
     "title": {
       "@id": "dct:title",
       "@type": "xsd:string"
@@ -402,7 +413,6 @@
       "@id": "csvw:decimalChar",
       "@type": "xsd:string"
     },
-    "review": "@nest",
     "badge": {
       "@id": "oeo:OEO_00140098",
       "@type": "xsd:string"
