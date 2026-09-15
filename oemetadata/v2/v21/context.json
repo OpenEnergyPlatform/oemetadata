@@ -7,6 +7,7 @@
     "dc": "http://purl.org/dc/elements/1.1/",
     "dcat": "https://www.w3.org/ns/dcat#",
     "dct": "https://purl.org/dc/terms/",
+    "fabio": "http://purl.org/spar/fabio/",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "ncit": "http://purl.obolibrary.org/obo/ncit.owl",
     "oeo": "https://openenergyplatform.org/ontology/oeo/",
@@ -197,8 +198,8 @@
       "@type": "xsd:string"
     },
     "publicationYear": {
-      "@id": "dct:issued",
-      "@type": "xsd:date"
+      "@id": "fabio:hasPublicationYear",
+      "@type": "xsd:gYear"
     },
     "sourcePath": {
       "@id": "dcat:accessURL",
