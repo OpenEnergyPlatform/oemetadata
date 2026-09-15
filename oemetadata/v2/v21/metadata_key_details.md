@@ -897,14 +897,14 @@ If a value is not yet available, use: `ToDo`.
 | Card.          | [0..1]                                                    |
 
 ### Resources - sources - publicationYear
-|                |                                                 |
-|----------------|-------------------------------------------------|
-| Key            | publicationYear                                 |
-| Description    | Indicates the year when the work was published. |
-| Example        | 2023                                            |
-| Ontology Class | [dct:issued](http://purl.org/dc/terms/issued)   |
-| Badge          | Bronze                                          |
-| Card.          | [0..1]                                          |
+|                |                                                                            |
+|----------------|----------------------------------------------------------------------------|
+| Key            | publicationYear                                                            |
+| Description    | Indicates the year when the work was published.                            |
+| Example        | 2023                                                                       |
+| Ontology Class | [fabio:hasPublicationYear](http://purl.org/spar/fabio/hasPublicationYear)  |
+| Badge          | Bronze                                                                     |
+| Card.          | [0..1]                                                                     |
 
 ### Resources - sources - path
 |                |                                                                                                                |
