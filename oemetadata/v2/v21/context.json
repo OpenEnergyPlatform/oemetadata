@@ -322,6 +322,30 @@
       "@id": "oeo:OEO_00140098",
       "@type": "xsd:string"
     },
+    "moduleMeasurementData": {
+      "@container": "@set",
+      "@id": "dcat:hasPart"
+    },
+    "instrumentIdentifier": {
+      "@id": "dct:identifier",
+      "@type": "@id"
+    },
+    "instrumentPath": {
+      "@id": "dct:url",
+      "@type": "xsd:string"
+    },
+    "instrumentName": {
+      "@id": "dct:name",
+      "@type": "xsd:string"
+    },
+    "instrumentOwner": {
+      "@id": "sc:owner",
+      "@type": "xsd:string"
+    },
+    "manufacturerName": {
+      "@id": "sc:manufacturer",
+      "@type": "xsd:string"
+    },
     "metaMetadata": "@nest",
     "metadataVersion": {
       "@id": "owl:versionInfo",
