@@ -17,7 +17,7 @@
       "readOnly": true
     },
     "@id": {
-      "description": "A unique identifier (UUID/DOI) for the collection.",
+      "description": "A unique identifier (UUID/DOI) for the dataset. This is the Databus Artifact.",
       "type": [
         "string",
         "null"
@@ -29,6 +29,18 @@
       "title": "Dataset Identifier",
       "format": "uri",
       "readOnly": true
+    },
+    "path": {
+      "description": "A unique identifier for the dataset.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "examples": [
+        "https://openenergyplatform.org/database/tables/oemetadata_table_template"
+      ],
+      "badge": "Bronze",
+      "title": "Dataset Name"
     },
     "name": {
       "description": "A filename or database conform dataset name.",
@@ -82,7 +94,7 @@
           "badge": "Silver",
           "title": "Dataset Extent Name"
         },
-        "@id": {
+        "id": {
           "description": "A URI reference for the region of the dataset.",
           "type": [
             "string",

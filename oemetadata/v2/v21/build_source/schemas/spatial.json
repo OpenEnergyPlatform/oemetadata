@@ -23,7 +23,7 @@
               "badge": "Silver",
               "title": "Address"
             },
-            "@id": {
+            "id": {
               "description": "A path or URI to a specific location. It can use Wikidata or OpenStreetMap.",
               "type": [
                 "string",
@@ -79,7 +79,7 @@
               "badge": "Silver",
               "title": "Extent Name"
             },
-            "@id": {
+            "id": {
               "description": "A URI reference for the region.",
               "type": [
                 "string",

@@ -78,6 +78,16 @@ If a value is not yet available, use: `ToDo`.
 | **Badge**          | Platinum                                                                                                                                                                       |
 | **Card.**          | [0..1]                                                                                                                                                                         |
 
+### Dataset - path
+|                    |                                                                          |
+|--------------------|--------------------------------------------------------------------------|
+| **Key**            | path                                                                     |
+| **Description**    | A unique identifier for the dataset.                                     |
+| **Example**        | https://openenergyplatform.org/database/tables/oemetadata_table_template |
+| **Ontology Class** | [dcat:accessURL](https://www.w3.org/ns/dcat#accessURL)                   |
+| **Badge**          | Bronze                                                                   |
+| **Card.**          | [0..1]                                                                   |
+
 ### Dataset - name
 |                    |                                                            |
 |--------------------|------------------------------------------------------------|
@@ -107,6 +117,26 @@ If a value is not yet available, use: `ToDo`.
 | **Ontology Class** | [dct:description](http://purl.org/dc/terms/description) |
 | **Badge**          | Bronze                                                  |
 | **Card.**          | [0..1]                                                  |
+
+### Dataset - extent (name)
+|                    |                                                             |
+|--------------------|-------------------------------------------------------------|
+| **Key**            | name                                                        |
+| **Description**    | The name of the spatial region of the dataset.              |
+| **Example**        | Berlin                                                      |
+| **Ontology Class** | [rdfs:label](https://www.w3.org/2000/01/rdf-schema#/label)  |
+| **Badge**          | Silver                                                      |
+| **Card.**          | [0..1]                                                      |
+
+### Dataset - extent (id)
+|                    |                                                                |
+|--------------------|----------------------------------------------------------------|
+| **Key**            | id                                                             |
+| **Description**    | A URI reference for the region of the dataset.                 |
+| **Example**        | [www.wikidata.org/wiki/Q64](https://www.wikidata.org/wiki/Q64) |
+| **Ontology Class** | [dct:identifier](http://purl.org/dc/terms/identifier)          |
+| **Badge**          | Platinum                                                       |
+| **Card.**          | [0..1]                                                         |
 
 ### Dataset - languages
 |                |                                                                                                                                                                                   |
@@ -158,10 +188,10 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Platinum                                                   |
 | Card.          | [0..1]                                                     |
 
-### Dataset - subject (@id)
+### Dataset - subject (id)
 |                |                                                                                                              |
 |----------------|--------------------------------------------------------------------------------------------------------------|
-| Key            | @id                                                                                                          |
+| Key            | id                                                                                                           |
 | Description    | A unique identifier (URI/IRI) of the ontology class.                                                         |
 | Example        | [openenergyplatform.org/ontology/oeo/OEO_00000150](https://openenergyplatform.org/ontology/oeo/OEO_00000150) |
 | Ontology Class | [dct:subject](http://purl.org/dc/terms/subject)                                                              |
@@ -484,10 +514,10 @@ If a value is not yet available, use: `ToDo`.
 | **Badge**          |                                                                                          |
 | **Card.**          | [*]                                                                                      |
 
-### Resources - General - @id
+### Resources - General - id
 |                |                                                                                                                                                                                         |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Key            | @id                                                                                                                                                                                     |
+| Key            | id                                                                                                                                                                                      |
 | Description    | A Uniform Resources Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus).                                                                               |
 | Example        | [wri_global_power_plant_database](https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv) |
 | Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)                                                                                                                                   |
@@ -574,10 +604,10 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Platinum                                                   |
 | Card.          | [0..1]                                                     |
 
-### Resources - General - subject (@id)
+### Resources - General - subject (id)
 |                |                                                                                                              |
 |----------------|--------------------------------------------------------------------------------------------------------------|
-| Key            | @id                                                                                                          |
+| Key            | id                                                                                                           |
 | Description    | A unique identifier (URI/IRI) of the ontology class.                                                         |
 | Example        | [openenergyplatform.org/ontology/oeo/OEO_00000150](https://openenergyplatform.org/ontology/oeo/OEO_00000150) |
 | Ontology Class | [dct:subject](http://purl.org/dc/terms/subject)                                                              |
@@ -664,10 +694,10 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                                                                                            |
 | Card.          | [0..1]                                                                                                            |
 
-### Resources - Spatial - location (@id)
+### Resources - Spatial - location (id)
 |                |                                                                             |
 |----------------|-----------------------------------------------------------------------------|
-| Key            | @id                                                                         |
+| Key            | id                                                                          |
 | Description    | A path or URI to a specific location. It can use Wikidata or OpenStreetMap. |
 | Example        | [www.wikidata.org/wiki/Q77077223](https://www.wikidata.org/wiki/Q77077223)  |
 | Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)                       |
@@ -714,10 +744,10 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                                     |
 | Card.          | [0..1]                                                     |
 
-### Resources - Spatial - extent (@id)
+### Resources - Spatial - extent (id)
 |                |                                                                |
 |----------------|----------------------------------------------------------------|
-| Key            | @id                                                            |
+| Key            | id                                                             |
 | Description    | A URI reference for the region.                                |
 | Example        | [www.wikidata.org/wiki/Q64](https://www.wikidata.org/wiki/Q64) |
 | Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)          |
@@ -1175,15 +1205,15 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Platinum                                                   |
 | Card.          | [0..1]                                                     |
 
-### Resources - Fields Keys - @id (isAbout)
-|                |                                                                          |
-|----------------|--------------------------------------------------------------------------|
-| Key            | **@id**                                                                  |
-| Description    | The path of the ontology term (IRI).                                     |
+### Resources - Fields Keys - id (isAbout)
+|                |                                                                         |
+|----------------|-------------------------------------------------------------------------|
+| Key            | **id**                                                                  |
+| Description    | The path of the ontology term (IRI).                                    |
 | Example        | [OEO_00000044](https://openenergyplatform.org/ontology/oeo/OEO_00000044) |
-| Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)                    |
-| Badge          | Platinum                                                                 |
-| Card.          | [0..1]                                                                   |
+| Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)                   |
+| Badge          | Platinum                                                                |
+| Card.          | [0..1]                                                                  |
 
 ### Resources - Fields Keys - valueReference
 |                |                                                                                                |
@@ -1215,10 +1245,10 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Platinum                                                   |
 | Card.          | [0..1]                                                     |
 
-### Resources - Fields Keys - @id (valueReference)
+### Resources - Fields Keys - id (valueReference)
 |                |                                                                          |
 |----------------|--------------------------------------------------------------------------|
-| Key            | **@id**                                                                  |
+| Key            | **id**                                                                   |
 | Description    | The path of the ontology term (IRI) in the column.                       |
 | Example        | [OEO_00000311](https://openenergyplatform.org/ontology/oeo/OEO_00000311) |
 | Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)                    |
