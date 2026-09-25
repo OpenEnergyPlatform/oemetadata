@@ -17,7 +17,6 @@
     "sc": "http://schema.org/",
     "spdx": "https://spdx.org/rdf/3.0.1/terms/Software/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "ers": "https://raw.githubusercontent.com/NFDI4Energy/ERSmeta/refs/tags/V0.9/schema/ERSmeta.ttl#",
     "name": {
       "@id": "rdfs:label",
       "@type": "xsd:string"
@@ -73,9 +72,9 @@
       }
     },
     "moduleDataTransformationSoftware": {
-       "@id": "oeo:ont00001917",
-       "@container": "@set",
-       "@context": {
+      "@id": "oeo:ont00001917",
+      "@container": "@set",
+      "@context": {
         "softwareName": {
           "@id": "dct:title",
           "@type": "xsd:string"
@@ -89,7 +88,7 @@
           "@type": "xsd:string"
         },
         "softwareType": {
-          "@id": "ers:softwareType",
+          "@id": "oeo:IAO_0000010",
           "@type": "xsd:string"
         },
         "programmingLanguage": {
@@ -100,7 +99,7 @@
           "@id": "dct:description",
           "@type": "xsd:string"
         }
-       }
+      }
     },
     "datasetLicenses": {
       "@id": "dct:license",
@@ -271,7 +270,6 @@
           "@id": "dct:date",
           "@type": "xsd:date"
         },
-        
         "timeseries": "@nest",
         "resolutionValue": {
           "@id": "dcat:temporalResolution",
@@ -286,7 +284,7 @@
           "@type": "xsd:string"
         },
         "aggregationType": {
-          "@id": "oeo:OEO_00020190",
+          "@id": "oeo:OEO_00140068",
           "@type": "xsd:string"
         }
       }
@@ -419,7 +417,7 @@
       "@id": "csvw:reference"
     },
     "resource": {
-      "@id": "csvw:resource",
+      "@id": "dcat:Distribution",
       "@type": "xsd:string"
     },
     "resourceLicenses": {
