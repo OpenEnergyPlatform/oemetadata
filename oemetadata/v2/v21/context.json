@@ -15,11 +15,110 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "sc": "http://schema.org/",
-    "spdx": "http://spdx.org/rdf/terms#",
+    "spdx": "https://spdx.org/rdf/3.0.1/terms/Software/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "name": {
       "@id": "rdfs:label",
       "@type": "xsd:string"
+    },
+    "extent": {
+      "@id": "dct:coverage",
+      "@type": "dct:Location"
+    },
+    "referenceDate": {
+      "@id": "dct:date",
+      "@type": "xsd:date"
+    },
+    "projectContext": {
+      "@id": "prov:wasGeneratedBy",
+      "@type": "prov:Activity",
+      "@context": {
+        "title": {
+          "@type": "xsd:string",
+          "@id": "dct:title"
+        },
+        "homepage": {
+          "@nest": "title",
+          "@id": "foaf:homepage"
+        },
+        "documentation": {
+          "@id": "rdfs:seeAlso",
+          "@type": "xsd:anyURI"
+        },
+        "publisherLogo": {
+          "@id": "foaf:logo",
+          "@type": "xsd:anyURI"
+        },
+        "fundingAgencyLogo": {
+          "@id": "sc:logo",
+          "@type": "xsd:anyURI"
+        },
+        "sourceCode": {
+          "@id": "sc:codeRepository",
+          "@type": "xsd:anyURI"
+        },
+        "contact": {
+          "@id": "sc:contactPoint",
+          "@type": "xsd:string"
+        },
+        "grantNo": {
+          "@id": "sc:funding",
+          "@type": "xsd:string"
+        },
+        "fundingAgency": {
+          "@type": "xsd:string",
+          "@id": "foaf:fundedBy"
+        }
+      }
+    },
+    "moduleDataTransformationSoftware": {
+      "@id": "oeo:ont00001917",
+      "@container": "@set",
+      "@context": {
+        "softwareName": {
+          "@id": "dct:title",
+          "@type": "xsd:string"
+        },
+        "softwarePath": {
+          "@id": "dcat:accessURL",
+          "@type": "xsd:anyURI"
+        },
+        "softwareVersion": {
+          "@id": "dcat:version",
+          "@type": "xsd:string"
+        },
+        "softwareType": {
+          "@id": "oeo:IAO_0000010",
+          "@type": "xsd:string"
+        },
+        "programmingLanguage": {
+          "@id": "sc:programmingLanguage",
+          "@type": "xsd:string"
+        },
+        "moduleDescription": {
+          "@id": "dct:description",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "datasetLicenses": {
+      "@id": "dct:license",
+      "@container": "@set"
+    },
+    "attribution": {
+      "@id": "dct:rightsHolder",
+      "@type": "xsd:string"
+    },
+    "review": {
+      "@container": "@set",
+      "@id": "sc:review",
+      "@context": {
+        "path": "@id",
+        "badge": {
+          "@id": "sc:ratingValue",
+          "@type": "xsd:string"
+        }
+      }
     },
     "title": {
       "@id": "dct:title",
@@ -57,7 +156,62 @@
     },
     "resources": {
       "@container": "@set",
-      "@id": "dcat:Dataset"
+      "@id": "dcat:dataset",
+      "@context": {
+        "path": {
+          "@id": "dct:identifier",
+          "@type": "xsd:string"
+        },
+        "embargoPeriod": {
+          "@id": "dct:accessRights",
+          "@context": {
+            "end": {
+              "@id": "dct:available",
+              "@type": "xsd:date"
+            },
+            "start": {
+              "@id": "dct:issued",
+              "@type": "xsd:date"
+            }
+          }
+        },
+        "spatial": "@nest",
+        "extent": {
+          "@id": "dct:coverage"
+        },
+        "location": {
+          "@id": "dct:spatial"
+        },
+        "address": {
+          "@id": "sc:address",
+          "@type": "xsd:string"
+        },
+        "latitude": {
+          "@id": "sc:latitude",
+          "@type": "xsd:decimal"
+        },
+        "longitude": {
+          "@id": "sc:longitude",
+          "@type": "xsd:decimal"
+        },
+        "resolutionValue": {
+          "@id": "dcat:spatialResolutionInMeters",
+          "@type": "xsd:decimal"
+        },
+        "resolutionUnit": {
+          "@id": "oeo:OEO_00040010",
+          "@type": "xsd:string"
+        },
+        "boundingBox": {
+          "@id": "dcat:bbox",
+          "@container": "@list",
+          "@type": "xsd:decimal"
+        },
+        "crs": {
+          "@id": "rdfs:comment",
+          "@type": "xsd:string"
+        }
+      }
     },
     "topics": {
       "@container": "@set",
@@ -72,7 +226,6 @@
       "@id": "dct:issued",
       "@type": "xsd:date"
     },
-    "embargoPeriod": "@nest",
     "start": {
       "@id": "dbo:startDateTime",
       "@type": "xsd:dateTime"
@@ -90,10 +243,6 @@
       "@id": "foaf:homepage",
       "@type": "xsd:anyURI"
     },
-    "documentation": {
-      "@id": "ncit:NCIT_C165054",
-      "@type": "xsd:anyURI"
-    },
     "sourceCode": {
       "@id": "oeo:OEO_00000091",
       "@type": "xsd:anyURI"
@@ -102,10 +251,6 @@
       "@id": "dct:publisher",
       "@type": "foaf:Agent"
     },
-    "publisherLogo": {
-      "@id": "foaf:logo",
-      "@type": "xsd:anyURI"
-    },
     "contact": {
       "@id": "oeo:OEO_00000107",
       "@type": "xsd:string"
@@ -113,10 +258,6 @@
     "fundingAgency": {
       "@id": "sc:FundingAgency",
       "@type": "xsd:string"
-    },
-    "fundingAgencyLogo": {
-      "@id": "foaf:logo",
-      "@type": "xsd:anyURI"
     },
     "grantNo": {
       "@id": "sc:Grant",
@@ -166,20 +307,17 @@
           "@id": "dct:date",
           "@type": "xsd:date"
         },
-        "timeseries": {
-          "@id": "dct:PeriodOfTime",
-          "@container": "@set"
-        },
+        "timeseries": "@nest",
         "resolutionValue": {
           "@id": "dcat:temporalResolution",
           "@type": "xsd:decimal"
         },
         "resolutionUnit": {
-          "@id": "oeo:unit",
+          "@id": "oeo:OEO_00040010",
           "@type": "xsd:string"
         },
         "alignment": {
-          "@id": "oeo:OEO_00140044",
+          "@id": "dct:format",
           "@type": "xsd:string"
         },
         "aggregationType": {
@@ -190,30 +328,34 @@
     },
     "sources": {
       "@id": "dct:source",
-      "@container": "@set"
+      "@container": "@set",
+      "@context": {
+        "path": {
+          "@id": "dcat:accessURL",
+          "@type": "xsd:anyURI"
+        }
+      }
     },
     "authors": {
-      "@id": "oeo:OEO_00000064",
+      "@id": "sc:author",
       "@type": "xsd:string"
     },
     "publicationYear": {
       "@id": "dct:issued",
-      "@type": "xsd:date"
-    },
-    "sourcePath": {
-      "@id": "dcat:accessURL",
-      "@type": "xsd:string"
+      "@type": "xsd:gYear"
     },
     "sourceLicenses": {
       "@id": "dct:license",
-      "@container": "@set"
+      "@container": "@set",
+      "@context": {
+        "path": {
+          "@id": "dcat:accessURL",
+          "@type": "xsd:anyURI"
+        }
+      }
     },
     "instruction": {
       "@id": "rdfs:comment",
-      "@type": "xsd:string"
-    },
-    "attribution": {
-      "@id": "spdx:attributionText",
       "@type": "xsd:string"
     },
     "copyrightStatement": {
@@ -225,17 +367,19 @@
       "@container": "@set"
     },
     "contributors": {
-      "@id": "foaf:Agent",
-      "@container": "@set"
-    },
-    "organization": {
-      "@id": "oeo:OEO_00030022",
-      "@type": "xsd:string"
-    },
-    "roles": {
-      "@id": "oeo:BFO_0000023",
+      "@id": "dct:contributor",
       "@container": "@set",
-      "@type": "xsd:string"
+      "@context": {
+        "organization": {
+          "@id": "sc:memberOf",
+          "@type": "xsd:string"
+        },
+        "roles": {
+          "@container": "@set",
+          "@id": "oeo:RO_0000087",
+          "@type": "xsd:string"
+        }
+      }
     },
     "date": {
       "@id": "dct:modified",
@@ -250,7 +394,7 @@
       "@type": "xsd:string"
     },
     "type": {
-      "@id": "csvw:datatype",
+      "@id": "dct:type",
       "@type": "xsd:string"
     },
     "format": {
@@ -261,7 +405,15 @@
       "@id": "csvw:encoding",
       "@type": "xsd:string"
     },
-    "schema": "@nest",
+    "schema": {
+      "@id": "csvw:tableSchema",
+      "@context": {
+        "type": {
+          "@id": "csvw:datatype",
+          "@type": "xsd:string"
+        }
+      }
+    },
     "nestedFields": {
       "@id": "csvw:column",
       "@container": "@set"
@@ -269,8 +421,8 @@
     "schemaFields": {
       "@id": "csvw:column"
     },
-    "nullable": {
-      "@id": "ncit:NCIT_C47840",
+    "required": {
+      "@id": "csvw:required",
       "@type": "xsd:boolean"
     },
     "unit": {
@@ -298,14 +450,26 @@
       "@id": "csvw:foreignKey",
       "@container": "@set"
     },
-    "reference": "@nest",
+    "reference": {
+      "@id": "csvw:reference"
+    },
     "resource": {
       "@id": "dcat:Distribution",
       "@type": "xsd:string"
     },
+    "resourceLicenses": {
+      "@container": "@set",
+      "@id": "dct:license",
+      "@context": {
+        "path": {
+          "@id": "dcat:accessURL",
+          "@type": "xsd:anyURI"
+        }
+      }
+    },
     "fields": {
       "@id": "csvw:column",
-      "@container": "@set",
+      "@container": "@list",
       "@type": "xsd:string"
     },
     "dialect": "@nest",
@@ -317,10 +481,9 @@
       "@id": "csvw:decimalChar",
       "@type": "xsd:string"
     },
-    "review": "@nest",
-    "badge": {
-      "@id": "oeo:OEO_00140098",
-      "@type": "xsd:string"
+    "metaMetadata": {
+      "@id": "dct:conformsTo",
+      "@type": "dct:Standard"
     },
     "moduleMeasurementData": {
       "@container": "@set",
@@ -351,6 +514,9 @@
       "@id": "owl:versionInfo",
       "@type": "xsd:string"
     },
-    "metadataLicense": "@nest"
+    "metadataLicense": {
+      "@id": "dct:license",
+      "@type": "dct:LicenseDocument"
+    }
   }
 }
