@@ -694,10 +694,10 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                                                                                            |
 | Card.          | [0..1]                                                                                                            |
 
-### Resources - Spatial - location (@id)
+### Resources - Spatial - location (id)
 |                |                                                                             |
 |----------------|-----------------------------------------------------------------------------|
-| Key            | @id                                                                         |
+| Key            | id                                                                          |
 | Description    | A path or URI to a specific location. It can use Wikidata or OpenStreetMap. |
 | Example        | [www.wikidata.org/wiki/Q77077223](https://www.wikidata.org/wiki/Q77077223)  |
 | Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)                       |
@@ -744,10 +744,10 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                                     |
 | Card.          | [0..1]                                                     |
 
-### Resources - Spatial - extent (@id)
+### Resources - Spatial - extent (id)
 |                |                                                                |
 |----------------|----------------------------------------------------------------|
-| Key            | @id                                                            |
+| Key            | id                                                             |
 | Description    | A URI reference for the region.                                |
 | Example        | [www.wikidata.org/wiki/Q64](https://www.wikidata.org/wiki/Q64) |
 | Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)          |
