@@ -1205,15 +1205,15 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Platinum                                                   |
 | Card.          | [0..1]                                                     |
 
-### Resources - Fields Keys - @id (isAbout)
-|                |                                                                          |
-|----------------|--------------------------------------------------------------------------|
-| Key            | **@id**                                                                  |
-| Description    | The path of the ontology term (IRI).                                     |
+### Resources - Fields Keys - id (isAbout)
+|                |                                                                         |
+|----------------|-------------------------------------------------------------------------|
+| Key            | **id**                                                                  |
+| Description    | The path of the ontology term (IRI).                                    |
 | Example        | [OEO_00000044](https://openenergyplatform.org/ontology/oeo/OEO_00000044) |
-| Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)                    |
-| Badge          | Platinum                                                                 |
-| Card.          | [0..1]                                                                   |
+| Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)                   |
+| Badge          | Platinum                                                                |
+| Card.          | [0..1]                                                                  |
 
 ### Resources - Fields Keys - valueReference
 |                |                                                                                                |
@@ -1245,10 +1245,10 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Platinum                                                   |
 | Card.          | [0..1]                                                     |
 
-### Resources - Fields Keys - @id (valueReference)
+### Resources - Fields Keys - id (valueReference)
 |                |                                                                          |
 |----------------|--------------------------------------------------------------------------|
-| Key            | **@id**                                                                  |
+| Key            | **id**                                                                   |
 | Description    | The path of the ontology term (IRI) in the column.                       |
 | Example        | [OEO_00000311](https://openenergyplatform.org/ontology/oeo/OEO_00000311) |
 | Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)                    |
