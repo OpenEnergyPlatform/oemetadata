@@ -1,12 +1,12 @@
 {
   "@context": {
     "adms": "http://www.w3.org/ns/adms#",
-    "cco": "https://terminology.tib.eu/ts/ontologies/cco",
     "csvw": "http://www.w3.org/ns/csvw#",
     "dbo": "http://dbpedia.org/ontology/",
     "dc": "http://purl.org/dc/elements/1.1/",
     "dcat": "https://www.w3.org/ns/dcat#",
     "dct": "https://purl.org/dc/terms/",
+    "EPSG": "http://www.opengis.net/def/crs/EPSG/0/",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "ncit": "http://purl.obolibrary.org/obo/ncit.owl",
     "oeo": "https://openenergyplatform.org/ontology/oeo/",
@@ -154,7 +154,7 @@
           "@type": "xsd:decimal"
         },
         "crs": {
-          "@id": "cco:ont00000469",
+          "@id": "dct:conformsTo",
           "@type": "xsd:string"
         }
       }

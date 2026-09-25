@@ -117,13 +117,18 @@
               "title": "Spatial Resolution Unit"
             },
             "boundingBox": {
-              "description": "The covered area specified by the coordinates of a bounding box. The format is [minLon, minLat, maxLon, maxLat] or [W,S,E,N].",
-              "type": "array",
+              "description": "The covered area, specified by the coordinates of a bounding box. Format: [minLon, minLat, maxLon, maxLat] or [W,S,E,N].",
+              "type": [
+                "array",
+                "null"
+              ],
               "examples": [
-                13.08825,
-                52.33859,
-                13.76104,
-                52.6754
+                [
+                  13.08825,
+                  52.33859,
+                  13.76104,
+                  52.6754
+                ]
               ],
               "items": {
                 "type": "number"
@@ -139,11 +144,12 @@
                 "string",
                 "null"
               ],
+              "pattern": "^EPSG:[0-9]{4,6}$",
               "examples": [
                 "EPSG:4326"
               ],
               "badge": "Gold",
-              "title": " Coordinate Reference System (CRS)"
+              "title": "Coordinate Reference System (CRS)"
             }
           },
           "badge": "Silver",
