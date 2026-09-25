@@ -118,6 +118,26 @@ If a value is not yet available, use: `ToDo`.
 | **Badge**          | Bronze                                                  |
 | **Card.**          | [0..1]                                                  |
 
+### Dataset - extent (name)
+|                    |                                                             |
+|--------------------|-------------------------------------------------------------|
+| **Key**            | name                                                        |
+| **Description**    | The name of the spatial region of the dataset.              |
+| **Example**        | Berlin                                                      |
+| **Ontology Class** | [rdfs:label](https://www.w3.org/2000/01/rdf-schema#/label)  |
+| **Badge**          | Silver                                                      |
+| **Card.**          | [0..1]                                                      |
+
+### Dataset - extent (id)
+|                    |                                                                |
+|--------------------|----------------------------------------------------------------|
+| **Key**            | id                                                             |
+| **Description**    | A URI reference for the region of the dataset.                 |
+| **Example**        | [www.wikidata.org/wiki/Q64](https://www.wikidata.org/wiki/Q64) |
+| **Ontology Class** | [dct:identifier](http://purl.org/dc/terms/identifier)          |
+| **Badge**          | Platinum                                                       |
+| **Card.**          | [0..1]                                                         |
+
 ### Dataset - languages
 |                |                                                                                                                                                                                   |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

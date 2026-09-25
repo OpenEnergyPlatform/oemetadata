@@ -94,7 +94,7 @@
           "badge": "Silver",
           "title": "Dataset Extent Name"
         },
-        "@id": {
+        "id": {
           "description": "A URI reference for the region of the dataset.",
           "type": [
             "string",
