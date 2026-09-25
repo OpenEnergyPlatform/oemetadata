@@ -78,6 +78,16 @@ If a value is not yet available, use: `ToDo`.
 | **Badge**          | Platinum                                                                                                                                                                       |
 | **Card.**          | [0..1]                                                                                                                                                                         |
 
+### Dataset - path
+|                    |                                                                          |
+|--------------------|--------------------------------------------------------------------------|
+| **Key**            | path                                                                     |
+| **Description**    | A unique identifier for the dataset.                                     |
+| **Example**        | https://openenergyplatform.org/database/tables/oemetadata_table_template |
+| **Ontology Class** | [dcat:accessURL](https://www.w3.org/ns/dcat#accessURL)                   |
+| **Badge**          | Bronze                                                                   |
+| **Card.**          | [0..1]                                                                   |
+
 ### Dataset - name
 |                    |                                                            |
 |--------------------|------------------------------------------------------------|

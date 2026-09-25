@@ -26,7 +26,7 @@
         "example.csv"
       ],
       "badge": "Bronze",
-      "title": "Path",
+      "title": "Dataset Path",
       "readOnly": true
     },
     "name": {
