@@ -1,12 +1,12 @@
 {
   "@context": {
     "adms": "http://www.w3.org/ns/adms#",
-    "cco": "https://terminology.tib.eu/ts/ontologies/cco",
     "csvw": "http://www.w3.org/ns/csvw#",
     "dbo": "http://dbpedia.org/ontology/",
     "dc": "http://purl.org/dc/elements/1.1/",
     "dcat": "https://www.w3.org/ns/dcat#",
     "dct": "https://purl.org/dc/terms/",
+    "EPSG": "http://www.opengis.net/def/crs/EPSG/0/",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "ncit": "http://purl.obolibrary.org/obo/ncit.owl",
     "oeo": "https://openenergyplatform.org/ontology/oeo/",
@@ -262,6 +262,43 @@
     "grantNo": {
       "@id": "sc:Grant",
       "@type": "xsd:string"
+    },
+    "spatial": {
+      "@id": "dct:spatial",
+      "@context": {
+        "location": {
+          "@id": "dct:location"
+        },
+        "address": {
+          "@id": "sc:address",
+          "@type": "xsd:string"
+        },
+        "latitude": {
+          "@id": "sc:latitude",
+          "@type": "xsd:decimal"
+        },
+        "longitude": {
+          "@id": "sc:longitude",
+          "@type": "xsd:decimal"
+        },
+        "extent": {
+          "@id": "oeo:BFO_0000006"
+        },
+        "resolutionValue": "dcat:spatialResolutionInMeters",
+        "resolutionUnit": {
+          "@id": "oeo:unit",
+          "@type": "xsd:string"
+        },
+        "boundingBox": {
+          "@id": "dcat:bbox",
+          "@container": "@list",
+          "@type": "xsd:decimal"
+        },
+        "crs": {
+          "@id": "dct:conformsTo",
+          "@type": "xsd:string"
+        }
+      }
     },
     "temporal": {
       "@id": "dct:temporal",
