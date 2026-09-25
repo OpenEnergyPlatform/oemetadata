@@ -21,7 +21,7 @@
             "badge": "Platinum",
             "title": "Subject Name"
           },
-          "@id": {
+          "id": {
             "description": "A unique identifier (URI/IRI) of the ontology class.",
             "type": [
               "string",

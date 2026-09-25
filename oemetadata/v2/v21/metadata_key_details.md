@@ -188,10 +188,10 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Platinum                                                   |
 | Card.          | [0..1]                                                     |
 
-### Dataset - subject (@id)
+### Dataset - subject (id)
 |                |                                                                                                              |
 |----------------|--------------------------------------------------------------------------------------------------------------|
-| Key            | @id                                                                                                          |
+| Key            | id                                                                                                           |
 | Description    | A unique identifier (URI/IRI) of the ontology class.                                                         |
 | Example        | [openenergyplatform.org/ontology/oeo/OEO_00000150](https://openenergyplatform.org/ontology/oeo/OEO_00000150) |
 | Ontology Class | [dct:subject](http://purl.org/dc/terms/subject)                                                              |
