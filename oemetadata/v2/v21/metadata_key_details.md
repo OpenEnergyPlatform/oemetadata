@@ -514,10 +514,10 @@ If a value is not yet available, use: `ToDo`.
 | **Badge**          |                                                                                          |
 | **Card.**          | [*]                                                                                      |
 
-### Resources - General - @id
+### Resources - General - id
 |                |                                                                                                                                                                                         |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Key            | @id                                                                                                                                                                                     |
+| Key            | id                                                                                                                                                                                      |
 | Description    | A Uniform Resources Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus).                                                                               |
 | Example        | [wri_global_power_plant_database](https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv) |
 | Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)                                                                                                                                   |

@@ -3,7 +3,7 @@
   "$id": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/v2/v21/build_source/schemas/general.json",
   "type": "object",
   "properties": {
-    "@id": {
+    "id": {
       "description": "A Uniform Resource Identifier (URI) that links the resource via the OpenEnergyDatabus (DBpedia Databus).",
       "type": [
         "string",
@@ -13,7 +13,7 @@
         "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv"
       ],
       "badge": "Platinum",
-      "title": "@Id",
+      "title": "Id",
       "readOnly": true
     },
     "path": {
