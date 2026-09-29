@@ -22,9 +22,13 @@ jobs:
 
       - name: Set up Python
         uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
 
       - name: Install dependencies
-        run: pip install pytest pytest-cov pyld
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
       - name: Run coverage test
         run: pytest --cov --cov-report=xml
