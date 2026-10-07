@@ -732,10 +732,7 @@
           },
           "moduleDescription": {
             "description": "A description of the module. It should be usable as summary information for the module that is described by the metadata.",
-            "type": [
-              "string",
-              "null"
-            ],
+            "type": "string",
             "examples": [
               "Example instrument of PIDINST schema."
             ],

@@ -127,6 +127,13 @@ SPDX-FileCopyrightText = ["2026 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
 SPDX-License-Identifier = "CC0-1.0"
 
 [[annotations]]
+path = "oemetadata/v2/v21/*.ttl"
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Philipp Schmurr <@CPPrentice> © Karlsruher Institut für Technologie",
+    "oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
 path = "oemetadata/v2/v21/build_source/schemas/*.json"
 precedence = "override"
 SPDX-FileCopyrightText = ["2026 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut",
