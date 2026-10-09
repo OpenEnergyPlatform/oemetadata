@@ -472,7 +472,6 @@
       "@id": "sc:manufacturer",
       "@type": "xsd:string"
     },
-    "metaMetadata": "@nest",
     "metadataVersion": {
       "@id": "owl:versionInfo",
       "@type": "xsd:string"
