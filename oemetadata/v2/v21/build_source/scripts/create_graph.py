@@ -30,7 +30,7 @@ if __name__ == '__main__':
     context = json.loads(CONTEXT_PATH.read_text())
 
     # Inject local context
-    jsonld['@context'] = context
+    jsonld.update(context)
     
     graph.parse(data=jsonld, format='json-ld')
     graph.serialize(destination=GRAPH_PATH, format='longturtle')
