@@ -14,7 +14,26 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/>
     rdfs:label "oep_oemetadata"^^xsd:string ;
+    dct:conformsTo
+        [
+            dct:license
+                [
+                    rdfs:label "CC0-1.0"^^xsd:string ;
+                    dct:title "Creative Commons Zero v1.0 Universal"^^xsd:string ;
+                    dcat:accessURL <https://creativecommons.org/publicdomain/zero/1.0> ;
+                ] ;
+            owl:versionInfo "OEMetadata-2.1.0"^^xsd:string ;
+        ] ;
     dct:contributor 
+        [
+            dct:modified "2024-11-19"^^xsd:date ;
+            dct:title "Ludwig Hülk"^^xsd:string ;
+            dct:type "data"^^xsd:string ;
+            sc:memberOf "Reiner Lemoine Institut"^^xsd:string ;
+            rdfs:comment "Date of data creation"^^xsd:string ;
+            dcat:accessURL <https://github.com/Ludee> ;
+            oeo:RO_0000087 "DataCollector"^^xsd:string ;
+        ] ,
         [
             dct:modified "2024-11-30"^^xsd:date ;
             dct:title "Ludwig Hülk"^^xsd:string ;
@@ -32,15 +51,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             rdfs:comment "Date of dataset creation"^^xsd:string ;
             dcat:accessURL <https://github.com/Ludee> ;
             oeo:RO_0000087 "Creator"^^xsd:string ;
-        ] ,
-        [
-            dct:modified "2024-11-19"^^xsd:date ;
-            dct:title "Ludwig Hülk"^^xsd:string ;
-            dct:type "data"^^xsd:string ;
-            sc:memberOf "Reiner Lemoine Institut"^^xsd:string ;
-            rdfs:comment "Date of data creation"^^xsd:string ;
-            dcat:accessURL <https://github.com/Ludee> ;
-            oeo:RO_0000087 "DataCollector"^^xsd:string ;
         ] ;
     dct:coverage <https://www.wikidata.org/wiki/Q458> ;
     dct:date "2020-01-01"^^xsd:date ;
@@ -48,7 +58,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dct:language
         "de-DE"^^xsd:string ,
         "en-GB"^^xsd:string ;
-    dct:license 
+    dct:license
         [
             rdfs:label "ODbL-1.0"^^xsd:string ;
             dct:rights "https://github.com/OpenEnergyPlatform/oemetadata/blob/production/LICENSE.txt"^^xsd:string ;
@@ -56,17 +66,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             dct:title "Open Data Commons Open Database License 1.0"^^xsd:string ;
             rdfs:comment "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information."^^xsd:string ;
             dcat:accessURL <https://opendatacommons.org/licenses/odbl/1-0/index.html> ;
-        ] ,
-        [
-            rdfs:label "CC0-1.0"^^xsd:string ;
-            dct:title "Creative Commons Zero v1.0 Universal"^^xsd:string ;
-            dcat:accessURL <https://creativecommons.org/publicdomain/zero/1.0> ;
         ] ;
     dct:subject oeo:OEO_00000150 ;
     dct:title "OEP OEMetadata Dataset"^^xsd:string ;
     sc:image "https://openenergyplatform.org/static/img/about/OpenEnergyFamily_GroupPhoto2.png"^^xsd:anyURI ;
     sc:review <https://openenergyplatform.org/database/> ;
-    owl:versionInfo "OEMetadata-2.1.0"^^xsd:string ;
     dcat:dataset <https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv> ;
     dcat:keyword
         "NFDI4Energy"^^xsd:string ,

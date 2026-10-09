@@ -331,7 +331,7 @@
     },
     "contributors": {
       "@id": "dct:contributor",
-      "@container": "@set",
+      "@container": "@list",
       "@context": {
         "organization": {
           "@id": "sc:memberOf",

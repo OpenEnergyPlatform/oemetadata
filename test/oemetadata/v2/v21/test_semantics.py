@@ -25,7 +25,7 @@ def json_example_local_context() -> dict:
     jsonld = {**OEMETADATA_V21_EXAMPLE}
 
     # Inject local context
-    jsonld['@context'] = OEMETADATA_V21_CONTEXT
+    jsonld.update(OEMETADATA_V21_CONTEXT)
     return jsonld
 
 
