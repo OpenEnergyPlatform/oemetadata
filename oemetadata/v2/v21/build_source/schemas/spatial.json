@@ -8,11 +8,11 @@
       "type": "object",
       "properties": {
         "location": {
-          "description": "An object that describes a covered area or region.",
+          "description": "An object that describes the area, region or site covered by the data, either by a postal address, by a reference to an entity in an external knowledge base, or both.",
           "type": "object",
           "properties": {
             "address": {
-              "description": "An address of the location of the data. May be specified with street name, house number, zip code, and city name.",
+              "description": "A postal address of the location of the data. May be specified with street name, house number, zip code, and city name.",
               "type": [
                 "string",
                 "null"
@@ -24,16 +24,17 @@
               "title": "Address"
             },
             "id": {
-              "description": "A path or URI to a specific location. It can use Wikidata or OpenStreetMap.",
+              "description": "An absolute IRI identifying the location in an external knowledge base. Wikidata concept IRI is preferred. OpenStreetMap elements may be used where no Wikidata item exists.",
               "type": [
                 "string",
                 "null"
               ],
               "examples": [
-                "https://www.wikidata.org/wiki/Q77077223"
+                "http://www.wikidata.org/entity/Q77077223"
               ],
+              "format": "uri",
               "badge": "Platinum",
-              "title": "Address Identifier"
+              "title": "Location Identifier"
             },
             "latitude": {
               "description": "The latitude (lat) information of the location. Specifies the north / south position of the geometry.",
