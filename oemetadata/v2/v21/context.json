@@ -17,6 +17,10 @@
     "sc": "http://schema.org/",
     "spdx": "https://spdx.org/rdf/3.0.1/terms/Software/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "databusId": {
+      "@id": "oem:databusIdentifier",
+      "@type": "@id"
+    },
     "name": {
       "@id": "rdfs:label",
       "@type": "xsd:string"
@@ -444,10 +448,7 @@
       "@id": "csvw:decimalChar",
       "@type": "xsd:string"
     },
-    "metaMetadata": {
-      "@id": "dct:conformsTo",
-      "@type": "dct:Standard"
-    },
+    "metaMetadata": "@nest",
     "moduleMeasurementData": {
       "@container": "@set",
       "@id": "dcat:hasPart"
@@ -472,7 +473,6 @@
       "@id": "sc:manufacturer",
       "@type": "xsd:string"
     },
-    "metaMetadata": "@nest",
     "metadataVersion": {
       "@id": "owl:versionInfo",
       "@type": "xsd:string"
