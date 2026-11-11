@@ -1,14 +1,15 @@
 {
   "@context": {
     "adms": "http://www.w3.org/ns/adms#",
-    "cco": "https://terminology.tib.eu/ts/ontologies/cco",
     "csvw": "http://www.w3.org/ns/csvw#",
+    "databus": "https://dataid.dbpedia.org/databus#",
     "dbo": "http://dbpedia.org/ontology/",
     "dc": "http://purl.org/dc/elements/1.1/",
-    "dcat": "https://www.w3.org/ns/dcat#",
-    "dct": "https://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
     "foaf": "http://xmlns.com/foaf/0.1/",
-    "ncit": "http://purl.obolibrary.org/obo/ncit.owl",
+    "ncit": "http://purl.obolibrary.org/obo/",
+    "obo": "http://purl.obolibrary.org/obo/",
     "oeo": "https://openenergyplatform.org/ontology/oeo/",
     "owl": "http://www.w3.org/2002/07/owl#",
     "prov": "http://www.w3.org/ns/prov#",
@@ -18,7 +19,7 @@
     "spdx": "https://spdx.org/rdf/3.0.1/terms/Software/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "databusId": {
-      "@id": "oem:databusIdentifier",
+      "@id": "databus:artifact",
       "@type": "@id"
     },
     "name": {
@@ -92,7 +93,7 @@
           "@type": "xsd:string"
         },
         "softwareType": {
-          "@id": "oeo:IAO_0000010",
+          "@id": "obo:IAO_0000010",
           "@type": "xsd:string"
         },
         "programmingLanguage": {
@@ -343,7 +344,7 @@
         },
         "roles": {
           "@container": "@set",
-          "@id": "oeo:RO_0000087",
+          "@id": "obo:RO_0000087",
           "@type": "xsd:string"
         }
       }

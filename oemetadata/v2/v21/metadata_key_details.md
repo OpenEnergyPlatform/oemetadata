@@ -64,17 +64,17 @@ If a value is not yet available, use: `ToDo`.
 | **Key**            | @context                                                                                                                  |
 | **Description**    | Explanation of metadata keys in ontology terms.                                                                           |
 | **Example**        | [context.json](https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/latest/context.json) |
-| **Ontology Class** |                                                                                                                           |
+| **Ontology Term**  |                                                                                                                           |
 | **Badge**          | Platinum                                                                                                                  |
 | **Card.**          | [0..1]                                                                                                                    |
 
-### Dataset - @id
+### Dataset - databusId
 |                    |                                                                                                                                                                                |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Key**            | @id                                                                                                                                                                            |
-| **Description**    | A unique identifier (UUID/DOI) for the dataset. This is the Databus Artifact.                                                                                                  |
-| **Example**        | [databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/](https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/) |
-| **Ontology Class** | [dct:identifier](http://purl.org/dc/terms/identifier)                                                                                                                          |
+| **Key**            | databusId                                                                                                                                                                      |
+| **Description**    | The identifier of this dataset on the Open Energy Databus, an instance of the DBpedia Databus. The value is the Databus Artifact URI. Assigned by the platform on publication. |
+| **Example**        | [databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database](https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database)   |
+| **Ontology Term**  | [databus:artifact](https://dataid.dbpedia.org/databus#artifact)                                                                                                                |
 | **Badge**          | Platinum                                                                                                                                                                       |
 | **Card.**          | [0..1]                                                                                                                                                                         |
 
@@ -84,7 +84,7 @@ If a value is not yet available, use: `ToDo`.
 | **Key**            | path                                                                     |
 | **Description**    | A unique identifier for the dataset.                                     |
 | **Example**        | https://openenergyplatform.org/database/tables/oemetadata_table_template |
-| **Ontology Class** | [dcat:accessURL](https://www.w3.org/ns/dcat#accessURL)                   |
+| **Ontology Term**  | [dcat:accessURL](https://www.w3.org/ns/dcat#accessURL)                   |
 | **Badge**          | Bronze                                                                   |
 | **Card.**          | [0..1]                                                                   |
 
@@ -94,7 +94,7 @@ If a value is not yet available, use: `ToDo`.
 | **Key**            | name                                                       |
 | **Description**    | A filename or database conform dataset name.               |
 | **Example**        | oep_oemetadata                                             |
-| **Ontology Class** | [rdfs:label](https://www.w3.org/2000/01/rdf-schema#/label) |
+| **Ontology Term**  | [rdfs:label](https://www.w3.org/2000/01/rdf-schema#/label) |
 | **Badge**          | Iron                                                       |
 | **Card.**          | [1]                                                        |
 
@@ -104,7 +104,7 @@ If a value is not yet available, use: `ToDo`.
 | **Key**            | title                                       |
 | **Description**    | A human readable dataset name.              |
 | **Example**        | OEP OEMetadata                              |
-| **Ontology Class** | [dct:title](http://purl.org/dc/terms/title) |
+| **Ontology Term**  | [dct:title](http://purl.org/dc/terms/title) |
 | **Badge**          | Bronze                                      |
 | **Card.**          | [0..1]                                      |
 
@@ -114,7 +114,7 @@ If a value is not yet available, use: `ToDo`.
 | **Key**            | description                                             |
 | **Description**    | A free text description of the dataset.                 |
 | **Example**        | A collection of tables for the OEMetadata examples.     |
-| **Ontology Class** | [dct:description](http://purl.org/dc/terms/description) |
+| **Ontology Term**  | [dct:description](http://purl.org/dc/terms/description) |
 | **Badge**          | Bronze                                                  |
 | **Card.**          | [0..1]                                                  |
 
@@ -124,7 +124,7 @@ If a value is not yet available, use: `ToDo`.
 | **Key**            | name                                                        |
 | **Description**    | The name of the spatial region of the dataset.              |
 | **Example**        | Berlin                                                      |
-| **Ontology Class** | [rdfs:label](https://www.w3.org/2000/01/rdf-schema#/label)  |
+| **Ontology Term**  | [rdfs:label](https://www.w3.org/2000/01/rdf-schema#/label)  |
 | **Badge**          | Silver                                                      |
 | **Card.**          | [0..1]                                                      |
 
@@ -134,7 +134,7 @@ If a value is not yet available, use: `ToDo`.
 | **Key**            | id                                                             |
 | **Description**    | A URI reference for the region of the dataset.                 |
 | **Example**        | [www.wikidata.org/wiki/Q64](https://www.wikidata.org/wiki/Q64) |
-| **Ontology Class** | [dct:identifier](http://purl.org/dc/terms/identifier)          |
+| **Ontology Term**  | [dct:identifier](http://purl.org/dc/terms/identifier)          |
 | **Badge**          | Platinum                                                       |
 | **Card.**          | [0..1]                                                         |
 
@@ -510,7 +510,7 @@ If a value is not yet available, use: `ToDo`.
 | **Key**            | resources                                                                                |
 | **Description**    | An array of objects of the resources. The dataset can contain several (database) tables. |
 | **Example**        |                                                                                          |
-| **Ontology Class** | [dcat:Dataset](https://www.w3.org/ns/dcat#dataset)                                       |
+| **Ontology Term**  | [dcat:Dataset](https://www.w3.org/ns/dcat#dataset)                                       |
 | **Badge**          |                                                                                          |
 | **Card.**          | [*]                                                                                      |
 
