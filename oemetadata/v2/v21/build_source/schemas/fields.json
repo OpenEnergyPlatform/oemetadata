@@ -139,7 +139,7 @@
                       "badge": "Platinum",
                       "title": "Is About Name"
                     },
-                    "@id": {
+                    "iri": {
                       "description": "The path of the ontology term (IRI).",
                       "type": [
                         "string",
@@ -157,6 +157,14 @@
                       "type": [
                         "string",
                         "null"
+                      ],
+                      "enum": [
+                        "skos:exactMatch",
+                        "skos:narrowMatch",
+                        "skos:broadMatch",
+                        "skos:closeMatch",
+                        "skos:relatedMatch",
+                        null
                       ],
                       "examples": [
                         "skos:closeMatch"
