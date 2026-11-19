@@ -219,8 +219,8 @@
             "isAbout": [
               {
                 "name": "",
-                "@id": "",
-                "mappingRelation": ""
+                "iri": "",
+                "mappingRelation": null
               }
             ],
             "valueReference": [
