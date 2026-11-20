@@ -15,7 +15,9 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "sc": "http://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
     "spdx": "https://spdx.org/rdf/3.0.1/terms/Software/",
+    "sssom": "http://w3id.org/sssom/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "name": {
       "@id": "rdfs:label",
@@ -393,8 +395,22 @@
       "@type": "xsd:string"
     },
     "isAbout": {
-      "@id": "sc:about",
-      "@container": "@set"
+      "@reverse": "rdf:subject",
+      "@container": "@set",
+      "@context": {
+        "name": {
+          "@id": "sssom:object_label",
+          "@type": "xsd:string"
+        },
+        "iri": {
+          "@id": "rdf:object",
+          "@type": "@id"
+        },
+        "mappingRelation": {
+          "@id": "rdf:predicate",
+          "@type": "@id"
+        }
+      }
     },
     "valueReference": {
       "@id": "prov:value",

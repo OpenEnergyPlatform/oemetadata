@@ -11,6 +11,8 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sc: <http://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sssom: <http://w3id.org/sssom/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/>
@@ -102,25 +104,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcat1:version "0.1.0"^^xsd:string ;
 .
 
-<http://openenergy-platform.org/ontology/oeo/OEO_00010423>
-    rdfs:label "power generation technology"^^xsd:string ;
-.
-
 <http://openenergyplatform.org/ontology/oeo/OEO_00010424>
     rdfs:label "wind power technology"^^xsd:string ;
     rdf:value "wind"^^xsd:string ;
-.
-
-<http://purl.obolibrary.org/obo/IAO_0000129>
-    rdfs:label "version number"^^xsd:string ;
-.
-
-<http://purl.obolibrary.org/obo/IAO_0020000>
-    rdfs:label "identifier"^^xsd:string ;
-.
-
-<http://semanticscience.org/resource/SIO_001167>
-    rdfs:label "comment"^^xsd:string ;
 .
 
 <https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv>
@@ -132,91 +118,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     csvw:tableSchema
         [
             csvw:column (
-                
-                [
-                    rdfs:label "id"^^xsd:string ;
-                    sc:about <http://purl.obolibrary.org/obo/IAO_0020000> ;
-                    csvw:datatype "integer"^^xsd:string ;
-                    prov:value
-                        [
-
-                        ] ;
-                    dct:description "Unique identifier"^^xsd:string ;
-                ]
-                
-                [
-                    rdfs:label "name"^^xsd:string ;
-                    sc:about <http://openenergy-platform.org/ontology/oeo/OEO_00010423> ;
-                    csvw:datatype "string"^^xsd:string ;
-                    prov:value <http://openenergyplatform.org/ontology/oeo/OEO_00010424> ;
-                    dct:description "Technology Name"^^xsd:string ;
-                ]
-                
-                [
-                    rdfs:label "type"^^xsd:string ;
-                    sc:about <https://openenergyplatform.org/ontology/oeo/OEO_00000447/> ;
-                    csvw:datatype "string"^^xsd:string ;
-                    prov:value
-                        <https://openenergyplatform.org/ontology/oeo/OEO_00000308/> ,
-                        <https://openenergyplatform.org/ontology/oeo/OEO_00000311/> ;
-                    dct:description "Type of wind farm"^^xsd:string ;
-                ]
-                
-                [
-                    rdfs:label "year"^^xsd:string ;
-                    sc:about <https://openenergyplatform.org/ontology/oeo/UO_0000036/> ;
-                    csvw:datatype "integer"^^xsd:string ;
-                    prov:value
-                        [
-
-                        ] ;
-                    dct:description "Reference year"^^xsd:string ;
-                ]
-                
-                [
-                    rdfs:label "value"^^xsd:string ;
-                    sc:about <https://openenergyplatform.org/ontology/oeo/OEO_00230003/> ;
-                    csvw:datatype "number"^^xsd:string ;
-                    prov:value
-                        [
-
-                        ] ;
-                    oeo:OEO_00040010 "MW"^^xsd:string ;
-                    dct:description "Bruttoleistung"^^xsd:string ;
-                ]
-                
-                [
-                    rdfs:label "is_active"^^xsd:string ;
-                    sc:about <https://ontology.brickschema.org/brick/Operating_Mode_Status> ;
-                    csvw:datatype "boolean"^^xsd:string ;
-                    prov:value
-                        [
-
-                        ] ;
-                    dct:description "Betriebsstatus"^^xsd:string ;
-                ]
-                
-                [
-                    rdfs:label "version"^^xsd:string ;
-                    sc:about <http://purl.obolibrary.org/obo/IAO_0000129> ;
-                    csvw:datatype "string"^^xsd:string ;
-                    prov:value
-                        [
-
-                        ] ;
-                    dct:description "Version"^^xsd:string ;
-                ]
-                
-                [
-                    rdfs:label "comment"^^xsd:string ;
-                    sc:about <http://semanticscience.org/resource/SIO_001167> ;
-                    csvw:datatype "string"^^xsd:string ;
-                    prov:value
-                        [
-
-                        ] ;
-                    dct:description "Comment"^^xsd:string ;
-                ]
+                _:N3c3dc776ecbd4e91b5cad5cdefda0685
+                _:N17531b05ca954db1ba00f37d8d931df2
+                _:Nc48c6d7510b247f5b5dd59a1a02e0f52
+                _:N2729e1d1853a41e8b623ee574cc3633b
+                _:Nbe6307bd423f4a46a1fb328f5ca83207
+                _:N23f3ad148d3f438db2e15efaa80b0d15
+                _:Na8f564365b3a47b19e172976e2ef55d1
+                _:N43f848635f44403fb7f5e05e485af357
             ) ;
             csvw:foreignKey
                 [
@@ -294,10 +203,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "example"^^xsd:string ;
 .
 
-<https://ontology.brickschema.org/brick/Operating_Mode_Status>
-    rdfs:label "Operating Mode Status"^^xsd:string ;
-.
-
 <https://openenergyplatform.org/ontology/oeo/OEO_00000308/>
     rdfs:label "offshore wind farm"^^xsd:string ;
     rdf:value "offshore"^^xsd:string ;
@@ -306,18 +211,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <https://openenergyplatform.org/ontology/oeo/OEO_00000311/>
     rdfs:label "onshore wind farm"^^xsd:string ;
     rdf:value "onshore"^^xsd:string ;
-.
-
-<https://openenergyplatform.org/ontology/oeo/OEO_00000447/>
-    rdfs:label "wind farm"^^xsd:string ;
-.
-
-<https://openenergyplatform.org/ontology/oeo/OEO_00230003/>
-    rdfs:label "nameplate capacity"^^xsd:string ;
-.
-
-<https://openenergyplatform.org/ontology/oeo/UO_0000036/>
-    rdfs:label "year"^^xsd:string ;
 .
 
 <https://www.wikidata.org/wiki/Q458>
@@ -349,4 +242,129 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 oeo:OEO_00000150
     rdfs:label "energy"^^xsd:string ;
+.
+
+[]    sssom:object_label "comment"^^xsd:string ;
+    rdf:object <http://semanticscience.org/resource/SIO_001167> ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject _:N43f848635f44403fb7f5e05e485af357 ;
+.
+
+[]    sssom:object_label "identifier"^^xsd:string ;
+    rdf:object <http://purl.obolibrary.org/obo/IAO_0020000> ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject _:N3c3dc776ecbd4e91b5cad5cdefda0685 ;
+.
+
+[]    sssom:object_label "version number"^^xsd:string ;
+    rdf:object <http://purl.obolibrary.org/obo/IAO_0000129> ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject _:Na8f564365b3a47b19e172976e2ef55d1 ;
+.
+
+[]    sssom:object_label "nameplate capacity"^^xsd:string ;
+    rdf:object <https://openenergyplatform.org/ontology/oeo/OEO_00230003/> ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject _:Nbe6307bd423f4a46a1fb328f5ca83207 ;
+.
+
+[]    sssom:object_label "Operating Mode Status"^^xsd:string ;
+    rdf:object <https://ontology.brickschema.org/brick/Operating_Mode_Status> ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject _:N23f3ad148d3f438db2e15efaa80b0d15 ;
+.
+
+[]    sssom:object_label "wind farm"^^xsd:string ;
+    rdf:object <https://openenergyplatform.org/ontology/oeo/OEO_00000447/> ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject _:Nc48c6d7510b247f5b5dd59a1a02e0f52 ;
+.
+
+[]    sssom:object_label "year"^^xsd:string ;
+    rdf:object <https://openenergyplatform.org/ontology/oeo/UO_0000036/> ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject _:N2729e1d1853a41e8b623ee574cc3633b ;
+.
+
+[]    sssom:object_label "power generation technology"^^xsd:string ;
+    rdf:object <http://openenergy-platform.org/ontology/oeo/OEO_00010423> ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject _:N17531b05ca954db1ba00f37d8d931df2 ;
+.
+
+_:N17531b05ca954db1ba00f37d8d931df2
+    rdfs:label "name"^^xsd:string ;
+    csvw:datatype "string"^^xsd:string ;
+    prov:value <http://openenergyplatform.org/ontology/oeo/OEO_00010424> ;
+    dct:description "Technology Name"^^xsd:string ;
+.
+
+_:N23f3ad148d3f438db2e15efaa80b0d15
+    rdfs:label "is_active"^^xsd:string ;
+    csvw:datatype "boolean"^^xsd:string ;
+    prov:value
+        [
+
+        ] ;
+    dct:description "Betriebsstatus"^^xsd:string ;
+.
+
+_:N2729e1d1853a41e8b623ee574cc3633b
+    rdfs:label "year"^^xsd:string ;
+    csvw:datatype "integer"^^xsd:string ;
+    prov:value
+        [
+
+        ] ;
+    dct:description "Reference year"^^xsd:string ;
+.
+
+_:N3c3dc776ecbd4e91b5cad5cdefda0685
+    rdfs:label "id"^^xsd:string ;
+    csvw:datatype "integer"^^xsd:string ;
+    prov:value
+        [
+
+        ] ;
+    dct:description "Unique identifier"^^xsd:string ;
+.
+
+_:N43f848635f44403fb7f5e05e485af357
+    rdfs:label "comment"^^xsd:string ;
+    csvw:datatype "string"^^xsd:string ;
+    prov:value
+        [
+
+        ] ;
+    dct:description "Comment"^^xsd:string ;
+.
+
+_:Na8f564365b3a47b19e172976e2ef55d1
+    rdfs:label "version"^^xsd:string ;
+    csvw:datatype "string"^^xsd:string ;
+    prov:value
+        [
+
+        ] ;
+    dct:description "Version"^^xsd:string ;
+.
+
+_:Nbe6307bd423f4a46a1fb328f5ca83207
+    rdfs:label "value"^^xsd:string ;
+    csvw:datatype "number"^^xsd:string ;
+    prov:value
+        [
+
+        ] ;
+    oeo:OEO_00040010 "MW"^^xsd:string ;
+    dct:description "Bruttoleistung"^^xsd:string ;
+.
+
+_:Nc48c6d7510b247f5b5dd59a1a02e0f52
+    rdfs:label "type"^^xsd:string ;
+    csvw:datatype "string"^^xsd:string ;
+    prov:value
+        <https://openenergyplatform.org/ontology/oeo/OEO_00000308/> ,
+        <https://openenergyplatform.org/ontology/oeo/OEO_00000311/> ;
+    dct:description "Type of wind farm"^^xsd:string ;
 .

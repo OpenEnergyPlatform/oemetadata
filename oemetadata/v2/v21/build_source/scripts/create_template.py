@@ -154,5 +154,6 @@ if __name__ == "__main__":
             "path": "https://creativecommons.org/publicdomain/zero/1.0",
         },
     )
+    replace_key_in_json(TEMPLATE_PATH, "mappingRelation", None)
     test_oemetadata_schema_should_validate_oemetadata_template()
     logger.info("Generation ended.")
