@@ -296,7 +296,7 @@
         },
         "crs": {
           "@id": "dct:conformsTo",
-          "@type": "xsd:string"
+          "@type": "@id"
         }
       }
     },
@@ -481,10 +481,7 @@
       "@id": "csvw:decimalChar",
       "@type": "xsd:string"
     },
-    "metaMetadata": {
-      "@id": "dct:conformsTo",
-      "@type": "dct:Standard"
-    },
+    "metaMetadata": "@nest",
     "moduleMeasurementData": {
       "@container": "@set",
       "@id": "dcat:hasPart"
@@ -509,7 +506,6 @@
       "@id": "sc:manufacturer",
       "@type": "xsd:string"
     },
-    "metaMetadata": "@nest",
     "metadataVersion": {
       "@id": "owl:versionInfo",
       "@type": "xsd:string"
