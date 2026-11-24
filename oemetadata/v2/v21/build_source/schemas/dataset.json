@@ -66,12 +66,12 @@
       "badge": "Bronze",
       "title": "Dataset Description"
     },
-    "extent": {
+    "spatialCoverage": {
       "description": "An object that describes a covered area or region of the dataset.",
       "type": "object",
       "properties": {
         "name": {
-          "description": "The name of the spatial region of the dataset.",
+          "description": "The name of the spatial coverage of the dataset.",
           "type": [
             "string",
             "null"

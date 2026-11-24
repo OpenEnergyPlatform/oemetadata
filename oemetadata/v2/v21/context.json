@@ -21,8 +21,8 @@
       "@id": "rdfs:label",
       "@type": "xsd:string"
     },
-    "extent": {
-      "@id": "dct:coverage",
+    "spatialCoverage": {
+      "@id": "dct:spatial",
       "@type": "dct:Location"
     },
     "referenceDate": {
