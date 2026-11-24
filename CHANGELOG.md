@@ -36,6 +36,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update python env instructions to latest version [(#284)](https://github.com/OpenEnergyPlatform/oemetadata/pull/284)
 - Update datapackage logo link [(#311)](https://github.com/OpenEnergyPlatform/oemetadata/pull/311)
 - Update `create_example.py` and add `example_modules.json` [(#312)](https://github.com/OpenEnergyPlatform/oemetadata/pull/312)
+- Update spatial context keys [(#321)](https://github.com/OpenEnergyPlatform/oemetadata/pull/321)
+- Update `@id` fields to `id` [(#322)](https://github.com/OpenEnergyPlatform/oemetadata/pull/322)
+- Update requirements and versions in the codecov workflow [(#324)](https://github.com/OpenEnergyPlatform/oemetadata/pull/324)
 
 ### Removed
 
