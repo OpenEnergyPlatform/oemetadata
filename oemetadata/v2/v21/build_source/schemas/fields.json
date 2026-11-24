@@ -139,7 +139,7 @@
                       "badge": "Platinum",
                       "title": "Is About Name"
                     },
-                    "@id": {
+                    "id": {
                       "description": "The path of the ontology term (IRI).",
                       "type": [
                         "string",
@@ -201,7 +201,7 @@
                       "badge": "Platinum",
                       "title": "Value Reference Name"
                     },
-                    "@id": {
+                    "id": {
                       "description": "The path of the ontology term (IRI) in the column.",
                       "type": [
                         "string",
