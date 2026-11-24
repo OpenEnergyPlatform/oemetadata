@@ -177,10 +177,10 @@
         },
         "spatial": "@nest",
         "extent": {
-          "@id": "dct:coverage"
+          "@id": "dct:spatial"
         },
         "location": {
-          "@id": "dct:spatial"
+          "@id": "sc:location"
         },
         "address": {
           "@id": "sc:address",
