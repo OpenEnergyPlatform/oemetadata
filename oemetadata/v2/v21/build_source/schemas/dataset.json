@@ -16,8 +16,8 @@
       "title": "@context",
       "readOnly": true
     },
-    "@id": {
-      "description": "A unique identifier (UUID/DOI) for the collection.",
+    "databusId": {
+      "description": "The identifier of this dataset on the Open Energy Databus, an instance of the DBpedia Databus. The value is the Databus Artifact URI. Assigned by the platform on publication.",
       "type": [
         "string",
         "null"
@@ -26,9 +26,22 @@
         "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/"
       ],
       "badge": "Platinum",
-      "title": "Dataset Identifier",
+      "title": "Databus Identifier (Dataset)",
       "format": "uri",
+      "pattern": "^https://databus\\.openenergyplatform\\.org/[^/]+/[^/]+/[^/]+$",
       "readOnly": true
+    },
+    "path": {
+      "description": "A unique identifier for the dataset.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "examples": [
+        "https://openenergyplatform.org/database/tables/oemetadata_table_template"
+      ],
+      "badge": "Bronze",
+      "title": "Dataset Name"
     },
     "name": {
       "description": "A filename or database conform dataset name.",
@@ -82,7 +95,7 @@
           "badge": "Silver",
           "title": "Dataset Extent Name"
         },
-        "@id": {
+        "id": {
           "description": "A URI reference for the region of the dataset.",
           "type": [
             "string",
