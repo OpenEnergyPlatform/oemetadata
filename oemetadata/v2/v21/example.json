@@ -1,11 +1,11 @@
 {
   "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/latest/context.json",
-  "databusId": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/",
+  "databusId": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database",
   "path": "https://openenergyplatform.org/database/tables/oemetadata_table_template",
   "name": "oep_oemetadata",
   "title": "OEP OEMetadata Dataset",
   "description": "A dataset for the OEMetadata examples.",
-  "extent": {
+  "spatialCoverage": {
     "name": "Europe",
     "id": "https://www.wikidata.org/wiki/Q458"
   },
@@ -210,14 +210,7 @@
                 "mappingRelation": "skos:exactMatch"
               }
             ],
-            "valueReference": [
-              {
-                "value": null,
-                "name": null,
-                "@id": null,
-                "mappingRelation": null
-              }
-            ]
+            "valueReference": []
           },
           {
             "name": "name",
@@ -282,14 +275,7 @@
                 "mappingRelation": "skos:exactMatch"
               }
             ],
-            "valueReference": [
-              {
-                "value": null,
-                "name": null,
-                "@id": null,
-                "mappingRelation": null
-              }
-            ]
+            "valueReference": []
           },
           {
             "name": "value",
@@ -304,14 +290,7 @@
                 "mappingRelation": "skos:exactMatch"
               }
             ],
-            "valueReference": [
-              {
-                "value": null,
-                "name": null,
-                "@id": null,
-                "mappingRelation": null
-              }
-            ]
+            "valueReference": []
           },
           {
             "name": "is_active",
@@ -326,14 +305,7 @@
                 "mappingRelation": "skos:exactMatch"
               }
             ],
-            "valueReference": [
-              {
-                "value": null,
-                "name": null,
-                "@id": null,
-                "mappingRelation": null
-              }
-            ]
+            "valueReference": []
           },
           {
             "name": "version",
@@ -348,14 +320,7 @@
                 "mappingRelation": "skos:exactMatch"
               }
             ],
-            "valueReference": [
-              {
-                "value": null,
-                "name": null,
-                "@id": null,
-                "mappingRelation": null
-              }
-            ]
+            "valueReference": []
           },
           {
             "name": "comment",
@@ -370,14 +335,7 @@
                 "mappingRelation": "skos:exactMatch"
               }
             ],
-            "valueReference": [
-              {
-                "value": null,
-                "name": null,
-                "@id": null,
-                "mappingRelation": null
-              }
-            ]
+            "valueReference": []
           }
         ],
         "primaryKey": [

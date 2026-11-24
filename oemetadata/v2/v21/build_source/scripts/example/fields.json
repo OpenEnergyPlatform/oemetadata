@@ -12,14 +12,7 @@
         "mappingRelation": "skos:exactMatch"
       }
     ],
-    "valueReference": [
-      {
-        "value": null,
-        "name": null,
-        "@id": null,
-        "mappingRelation": null
-      }
-    ]
+    "valueReference": []
   },
   {
     "name": "name",
@@ -84,14 +77,7 @@
         "mappingRelation": "skos:exactMatch"
       }
     ],
-    "valueReference": [
-      {
-        "value": null,
-        "name": null,
-        "@id": null,
-        "mappingRelation": null
-      }
-    ]
+    "valueReference": []
   },
   {
     "name": "value",
@@ -106,14 +92,7 @@
         "mappingRelation": "skos:exactMatch"
       }
     ],
-    "valueReference": [
-      {
-        "value": null,
-        "name": null,
-        "@id": null,
-        "mappingRelation": null
-      }
-    ]
+    "valueReference": []
   },
   {
     "name": "is_active",
@@ -128,14 +107,7 @@
         "mappingRelation": "skos:exactMatch"
       }
     ],
-    "valueReference": [
-      {
-        "value": null,
-        "name": null,
-        "@id": null,
-        "mappingRelation": null
-      }
-    ]
+    "valueReference": []
   },
   {
     "name": "version",
@@ -150,14 +122,7 @@
         "mappingRelation": "skos:exactMatch"
       }
     ],
-    "valueReference": [
-      {
-        "value": null,
-        "name": null,
-        "@id": null,
-        "mappingRelation": null
-      }
-    ]
+    "valueReference": []
   },
   {
     "name": "comment",
@@ -172,13 +137,6 @@
         "mappingRelation": "skos:exactMatch"
       }
     ],
-    "valueReference": [
-      {
-        "value": null,
-        "name": null,
-        "@id": null,
-        "mappingRelation": null
-      }
-    ]
+    "valueReference": []
   }
 ]
