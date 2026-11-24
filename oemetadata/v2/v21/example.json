@@ -1,12 +1,13 @@
 {
   "@context": "https://raw.githubusercontent.com/OpenEnergyPlatform/oemetadata/production/oemetadata/latest/context.json",
-  "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/",
+  "databusId": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/",
+  "path": "https://openenergyplatform.org/database/tables/oemetadata_table_template",
   "name": "oep_oemetadata",
   "title": "OEP OEMetadata Dataset",
   "description": "A dataset for the OEMetadata examples.",
   "extent": {
     "name": "Europe",
-    "@id": "https://www.wikidata.org/wiki/Q458"
+    "id": "https://www.wikidata.org/wiki/Q458"
   },
   "referenceDate": "2020-01-01",
   "languages": [
@@ -18,7 +19,7 @@
   "subject": [
     {
       "name": "energy",
-      "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000150"
+      "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000150"
     }
   ],
   "keywords": [
@@ -99,7 +100,7 @@
   },
   "resources": [
     {
-      "@id": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv",
+      "databusId": "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv",
       "path": "example.csv",
       "name": "oemetadata_table_example",
       "title": "OEMetadata Table Example",
@@ -111,7 +112,7 @@
       "subject": [
         {
           "name": "energy",
-          "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000150"
+          "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000150"
         }
       ],
       "keywords": [
@@ -127,13 +128,13 @@
       "spatial": {
         "location": {
           "address": "Rudower Chaussee 12, 12489 Berlin",
-          "@id": "https://www.wikidata.org/wiki/Q77077223",
+          "id": "http://www.wikidata.org/entity/Q77077223",
           "latitude": "52.432822",
           "longitude": "13.5351004"
         },
         "extent": {
           "name": "Berlin",
-          "@id": "https://www.wikidata.org/wiki/Q64",
+          "id": "https://www.wikidata.org/wiki/Q64",
           "resolutionValue": "100",
           "resolutionUnit": "m",
           "boundingBox": [
