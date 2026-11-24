@@ -29,6 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add a module `Measurement Data` for dataset [(#313)](https://github.com/OpenEnergyPlatform/oemetadata/pull/313)
 - Add a module `Data Transformation Software` for dataset [(#314)](https://github.com/OpenEnergyPlatform/oemetadata/pull/314)
 - Add script to generate graph in ttl [(#319)](https://github.com/OpenEnergyPlatform/oemetadata/pull/319)
+- Add tests for datapackage [(#326)](https://github.com/OpenEnergyPlatform/oemetadata/pull/326)
 
 ### Changed
 - Update TLDR URL in example sourceLicenses [(#275)](https://github.com/OpenEnergyPlatform/oemetadata/pull/275)
@@ -36,6 +37,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update python env instructions to latest version [(#284)](https://github.com/OpenEnergyPlatform/oemetadata/pull/284)
 - Update datapackage logo link [(#311)](https://github.com/OpenEnergyPlatform/oemetadata/pull/311)
 - Update `create_example.py` and add `example_modules.json` [(#312)](https://github.com/OpenEnergyPlatform/oemetadata/pull/312)
+- Update existing test cases [(#326)](https://github.com/OpenEnergyPlatform/oemetadata/pull/326
 
 ### Removed
 
