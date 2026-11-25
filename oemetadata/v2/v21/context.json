@@ -511,22 +511,22 @@
     "metaMetadata": "@nest",
     "moduleMeasurementData": {
       "@container": "@set",
-      "@id": "dcat:hasPart"
+      "@id": "dct:hasPart"
     },
     "instrumentIdentifier": {
       "@id": "dct:identifier",
       "@type": "@id"
     },
     "instrumentPath": {
-      "@id": "dct:url",
+      "@id": "sc:url",
       "@type": "xsd:string"
     },
     "instrumentName": {
-      "@id": "dct:name",
+      "@id": "sc:name",
       "@type": "xsd:string"
     },
     "instrumentOwner": {
-      "@id": "sc:owner",
+      "@id": "sc:provider",
       "@type": "xsd:string"
     },
     "manufacturerName": {
