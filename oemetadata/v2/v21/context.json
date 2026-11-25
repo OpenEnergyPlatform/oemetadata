@@ -110,6 +110,30 @@
         }
       }
     },
+    "moduleMeasurementData": {
+      "@container": "@set",
+      "@id": "dct:hasPart"
+    },
+    "instrumentIdentifier": {
+      "@id": "dct:identifier",
+      "@type": "@id"
+    },
+    "instrumentPath": {
+      "@id": "sc:url",
+      "@type": "xsd:string"
+    },
+    "instrumentName": {
+      "@id": "sc:name",
+      "@type": "xsd:string"
+    },
+    "instrumentOwner": {
+      "@id": "sc:provider",
+      "@type": "xsd:string"
+    },
+    "manufacturerName": {
+      "@id": "sc:manufacturer",
+      "@type": "xsd:string"
+    },
     "datasetLicenses": {
       "@id": "dct:license",
       "@container": "@set"
@@ -508,38 +532,20 @@
       "@id": "csvw:decimalChar",
       "@type": "xsd:string"
     },
-    "metaMetadata": "@nest",
-    "moduleMeasurementData": {
-      "@container": "@set",
-      "@id": "dct:hasPart"
-    },
-    "instrumentIdentifier": {
-      "@id": "dct:identifier",
-      "@type": "@id"
-    },
-    "instrumentPath": {
-      "@id": "sc:url",
-      "@type": "xsd:string"
-    },
-    "instrumentName": {
-      "@id": "sc:name",
-      "@type": "xsd:string"
-    },
-    "instrumentOwner": {
-      "@id": "sc:provider",
-      "@type": "xsd:string"
-    },
-    "manufacturerName": {
-      "@id": "sc:manufacturer",
-      "@type": "xsd:string"
-    },
-    "metadataVersion": {
-      "@id": "owl:versionInfo",
-      "@type": "xsd:string"
-    },
-    "metadataLicense": {
-      "@id": "dct:license",
-      "@type": "dct:LicenseDocument"
+    "metaMetadata": {
+      "@reverse": "foaf:primaryTopic",
+      "@context": {
+        "path": "@id",
+        "metadataVersion": {
+          "@id": "dct:conformsTo",
+          "@type": "@vocab"
+        },
+        "metadataLicense": {
+          "@id": "dct:license"
+        },
+        "OEMetadata-2.0.4": "https://github.com/OpenEnergyPlatform/oemetadata/releases/tag/v2.0.4",
+        "OEMetadata-2.1.0": "https://github.com/OpenEnergyPlatform/oemetadata/releases/tag/v2.1.0"
+      }
     }
   }
 }
