@@ -14,7 +14,7 @@
       ],
       "badge": "Platinum",
       "title": "Databus Identifier (Resource)",
-      "pattern": "^https://databus\\.openenergyplatform\\.org/[^/]+/[^/]+/[^/]+/[^/]+/[^/]+$",
+      "pattern": "^(https://databus\\.openenergyplatform\\.org/[^/]+/[^/]+/[^/]+/[^/]+/[^/]+)?$",
       "readOnly": true
     },
     "path": {

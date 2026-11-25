@@ -27,12 +27,12 @@
         "null"
       ],
       "examples": [
-        "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/"
+        "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database"
       ],
       "badge": "Platinum",
       "title": "Databus Identifier (Dataset)",
       "format": "uri",
-      "pattern": "^https://databus\\.openenergyplatform\\.org/[^/]+/[^/]+/[^/]+$",
+      "pattern": "^(https://databus\\.openenergyplatform\\.org/[^/]+/[^/]+/[^/]+)?$",
       "readOnly": true
     },
     "path": {
@@ -83,12 +83,12 @@
       "badge": "Bronze",
       "title": "Dataset Description"
     },
-    "extent": {
+    "spatialCoverage": {
       "description": "An object that describes a covered area or region of the dataset.",
       "type": "object",
       "properties": {
         "name": {
-          "description": "The name of the spatial region of the dataset.",
+          "description": "The name of the spatial coverage of the dataset.",
           "type": [
             "string",
             "null"
@@ -982,7 +982,7 @@
             ],
             "badge": "Platinum",
             "title": "Databus Identifier (Resource)",
-            "pattern": "^https://databus\\.openenergyplatform\\.org/[^/]+/[^/]+/[^/]+/[^/]+/[^/]+$",
+            "pattern": "^(https://databus\\.openenergyplatform\\.org/[^/]+/[^/]+/[^/]+/[^/]+/[^/]+)?$",
             "readOnly": true
           },
           "path": {
@@ -1284,13 +1284,18 @@
                     "title": "Spatial Resolution Unit"
                   },
                   "boundingBox": {
-                    "description": "The covered area specified by the coordinates of a bounding box. The format is [minLon, minLat, maxLon, maxLat] or [W,S,E,N].",
-                    "type": "array",
+                    "description": "The covered area, specified by the coordinates of a bounding box. Format: [minLon, minLat, maxLon, maxLat] or [W,S,E,N].",
+                    "type": [
+                      "array",
+                      "null"
+                    ],
                     "examples": [
-                      13.08825,
-                      52.33859,
-                      13.76104,
-                      52.6754
+                      [
+                        13.08825,
+                        52.33859,
+                        13.76104,
+                        52.6754
+                      ]
                     ],
                     "items": {
                       "type": "number"
@@ -1306,11 +1311,12 @@
                       "string",
                       "null"
                     ],
+                    "pattern": "^(EPSG:[0-9]{4,6})?$",
                     "examples": [
                       "EPSG:4326"
                     ],
                     "badge": "Gold",
-                    "title": " Coordinate Reference System (CRS)"
+                    "title": "Coordinate Reference System (CRS)"
                   }
                 },
                 "badge": "Silver",
