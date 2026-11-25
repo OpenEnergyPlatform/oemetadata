@@ -2,63 +2,66 @@
 # SPDX-FileCopyrightText: 2026 Ludwig Hülk <@Ludee> © Reiner Lemoine Institut
 # SPDX-FileCopyrightText: oemetadata <https://github.com/OpenEnergyPlatform/oemetadata/>
 # SPDX-License-Identifier: MIT
+import pytest
+from test.oemetadata.v2.v21.metadata_validation import validate_metadata, ValidationError
 
 
-def test_oemetadata_example_should_load():
+version_string = "OEMetadata-2.1.0"
+
+
+@pytest.fixture
+def example():
     try:
-        pass
-    except Warning:
-        print("Cannot open OEMetadata Example (v2.1)!")
+        from oemetadata.v2.v21.example import OEMETADATA_V21_EXAMPLE as EXAMPLE
+        return EXAMPLE
+    except Exception as e:
+        pytest.fail(f'Cannot open OEMetadata example ({version_string})! {e}')
 
 
-def test_oemetadata_example_modules_should_load():
+@pytest.fixture
+def example_modules():
     try:
-        pass
-    except Warning:
-        print("Cannot open OEMetadata Example Modules (v2.1)!")
+        from oemetadata.v2.v21.example_modules import OEMETADATA_V21_EXAMPLE_MODULES as EXAMPLE_MODULES
+        return EXAMPLE_MODULES
+    except Exception as e:
+        pytest.fail(f'Cannot open OEMetadata example with modules ({version_string})! {e}')
 
 
-def test_oemetadata_schema_should_validate_oemetadata_example():
-    from jsonschema import ValidationError, validate
+def test_oemetadata_example_should_load(example):
+    pass
 
-    from oemetadata.v2.v21.example import OEMETADATA_V21_EXAMPLE
-    from oemetadata.v2.v21.schema import OEMETADATA_V21_SCHEMA
 
+def test_oemetadata_example_modules_should_load(example_modules):
+    pass
+
+
+def test_oemetadata_schema_should_validate_oemetadata_example(example):
     try:
-        validate(OEMETADATA_V21_EXAMPLE, OEMETADATA_V21_SCHEMA)
-        print("OEMetadata Example is valid OEMetadata Schema (v2.1).")
+        validate_metadata(example, False, False, version_string)
+        print(f"OEMetadata Example is valid OEMetadata Schema ({version_string}).")
     except ValidationError as e:
-        print("Cannot validate OEMetadata Example with Schema (v2.1)!", e)
+        pytest.fail(f"Cannot validate OEMetadata Example with Schema ({version_string})! {e}")
 
 
-def test_oemetadata_schema_should_validate_oemetadata_example_modules():
-    from jsonschema import ValidationError, validate
-
-    from oemetadata.v2.v21.example_modules import OEMETADATA_V21_EXAMPLE_MODULES
-    from oemetadata.v2.v21.schema import OEMETADATA_V21_SCHEMA
-
+def test_oemetadata_schema_should_validate_oemetadata_example_modules(example_modules):
     try:
-        validate(OEMETADATA_V21_EXAMPLE_MODULES, OEMETADATA_V21_SCHEMA)
-        print("OEMetadata Example Modules is valid OEMetadata Schema (v2.1).")
+        validate_metadata(example_modules, False, False, version_string)
+        print(f"OEMetadata Example Modules is valid OEMetadata Schema ({version_string}).")
     except ValidationError as e:
-        print("Cannot validate OEMetadata Example Modules with Schema (v2.1)!", e)
+        pytest.fail(f"Cannot validate OEMetadata Example Modules with Schema ({version_string})! {e}")
 
 
-def test_oemetadata_example_is_datapackage():
-    from frictionless import Package
-
-    from oemetadata.v2.v21.example import OEMETADATA_V21_EXAMPLE
-
-    descriptor = OEMETADATA_V21_EXAMPLE.to_descriptor()
-    errors = list(Package.metadata_validate(descriptor))
-    assert not errors, [str(e) for e in errors]
+def test_oemetadata_example_is_datapackage(example):
+    try:
+        validate_metadata(example, False, True, version_string)
+        print(f"OEMetadata Example is a valid Frictionless DataPackage ({version_string}).")
+    except ValidationError as e:
+        pytest.fail(f"OEMetadata Example is not a valid Frictionless DataPackage ({version_string})! {e}")
 
 
-def test_oemetadata_example_modules_is_datapackage():
-    from frictionless import Package
-
-    from oemetadata.v2.v21.example_modules import OEMETADATA_V21_EXAMPLE_MODULES
-
-    descriptor = OEMETADATA_V21_EXAMPLE_MODULES.to_descriptor()
-    errors = list(Package.metadata_validate(descriptor))
-    assert not errors, [str(e) for e in errors]
+def test_oemetadata_example_modules_is_datapackage(example_modules):
+    try:
+        validate_metadata(example_modules, False, True, version_string)
+        print(f"OEMetadata Example with Modules is a valid Frictionless DataPackage ({version_string}).")
+    except ValidationError as e:
+        pytest.fail(f"OEMetadata Example with Modules is not a valid Frictionless DataPackage ({version_string})! {e}")

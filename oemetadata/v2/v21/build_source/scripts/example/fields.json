@@ -8,18 +8,11 @@
     "isAbout": [
       {
         "name": "identifier",
-        "@id": "http://purl.obolibrary.org/obo/IAO_0020000",
+        "iri": "http://purl.obolibrary.org/obo/IAO_0020000",
         "mappingRelation": "skos:exactMatch"
       }
     ],
-    "valueReference": [
-      {
-        "value": null,
-        "name": null,
-        "@id": null,
-        "mappingRelation": null
-      }
-    ]
+    "valueReference": []
   },
   {
     "name": "name",
@@ -30,7 +23,7 @@
     "isAbout": [
       {
         "name": "power generation technology",
-        "@id": "http://openenergy-platform.org/ontology/oeo/OEO_00010423",
+        "iri": "http://openenergy-platform.org/ontology/oeo/OEO_00010423",
         "mappingRelation": "skos:exactMatch"
       }
     ],
@@ -52,7 +45,7 @@
     "isAbout": [
       {
         "name": "wind farm",
-        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000447/",
+        "iri": "https://openenergyplatform.org/ontology/oeo/OEO_00000447/",
         "mappingRelation": "skos:exactMatch"
       }
     ],
@@ -80,18 +73,11 @@
     "isAbout": [
       {
         "name": "year",
-        "@id": "https://openenergyplatform.org/ontology/oeo/UO_0000036/",
+        "iri": "https://openenergyplatform.org/ontology/oeo/UO_0000036/",
         "mappingRelation": "skos:exactMatch"
       }
     ],
-    "valueReference": [
-      {
-        "value": null,
-        "name": null,
-        "@id": null,
-        "mappingRelation": null
-      }
-    ]
+    "valueReference": []
   },
   {
     "name": "value",
@@ -102,18 +88,11 @@
     "isAbout": [
       {
         "name": "nameplate capacity",
-        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00230003/",
+        "iri": "https://openenergyplatform.org/ontology/oeo/OEO_00230003/",
         "mappingRelation": "skos:exactMatch"
       }
     ],
-    "valueReference": [
-      {
-        "value": null,
-        "name": null,
-        "@id": null,
-        "mappingRelation": null
-      }
-    ]
+    "valueReference": []
   },
   {
     "name": "is_active",
@@ -124,18 +103,11 @@
     "isAbout": [
       {
         "name": "Operating Mode Status",
-        "@id": "https://ontology.brickschema.org/brick/Operating_Mode_Status",
+        "iri": "https://ontology.brickschema.org/brick/Operating_Mode_Status",
         "mappingRelation": "skos:exactMatch"
       }
     ],
-    "valueReference": [
-      {
-        "value": null,
-        "name": null,
-        "@id": null,
-        "mappingRelation": null
-      }
-    ]
+    "valueReference": []
   },
   {
     "name": "version",
@@ -146,18 +118,11 @@
     "isAbout": [
       {
         "name": "version number",
-        "@id": "http://purl.obolibrary.org/obo/IAO_0000129",
+        "iri": "http://purl.obolibrary.org/obo/IAO_0000129",
         "mappingRelation": "skos:exactMatch"
       }
     ],
-    "valueReference": [
-      {
-        "value": null,
-        "name": null,
-        "@id": null,
-        "mappingRelation": null
-      }
-    ]
+    "valueReference": []
   },
   {
     "name": "comment",
@@ -168,17 +133,10 @@
     "isAbout": [
       {
         "name": "comment",
-        "@id": "http://semanticscience.org/resource/SIO_001167",
+        "iri": "http://semanticscience.org/resource/SIO_001167",
         "mappingRelation": "skos:exactMatch"
       }
     ],
-    "valueReference": [
-      {
-        "value": null,
-        "name": null,
-        "@id": null,
-        "mappingRelation": null
-      }
-    ]
+    "valueReference": []
   }
 ]

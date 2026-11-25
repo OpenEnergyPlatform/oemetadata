@@ -1,12 +1,13 @@
 {
   "@context": "",
-  "@id": "",
+  "databusId": "",
+  "path": "",
   "name": "",
   "title": "",
   "description": "",
-  "extent": {
+  "spatialCoverage": {
     "name": "",
-    "@id": ""
+    "id": ""
   },
   "referenceDate": "",
   "languages": [
@@ -17,7 +18,7 @@
   "subject": [
     {
       "name": "",
-      "@id": ""
+      "id": ""
     }
   ],
   "keywords": [
@@ -117,7 +118,7 @@
   },
   "resources": [
     {
-      "@id": "",
+      "databusId": "",
       "path": "",
       "name": "",
       "title": "",
@@ -129,7 +130,7 @@
       "subject": [
         {
           "name": "",
-          "@id": ""
+          "id": ""
         }
       ],
       "keywords": [
@@ -143,13 +144,13 @@
       "spatial": {
         "location": {
           "address": "",
-          "@id": "",
+          "id": "",
           "latitude": "",
           "longitude": ""
         },
         "extent": {
           "name": "",
-          "@id": "",
+          "id": "",
           "resolutionValue": "",
           "resolutionUnit": "",
           "boundingBox": [
@@ -219,15 +220,15 @@
             "isAbout": [
               {
                 "name": "",
-                "@id": "",
-                "mappingRelation": ""
+                "iri": "",
+                "mappingRelation": null
               }
             ],
             "valueReference": [
               {
                 "value": "",
                 "name": "",
-                "@id": "",
+                "iri": "",
                 "mappingRelation": ""
               }
             ]
