@@ -216,8 +216,8 @@
           "@type": "xsd:decimal"
         },
         "crs": {
-          "@id": "rdfs:comment",
-          "@type": "xsd:string"
+          "@id": "dct:conformsTo",
+          "@type": "@id"
         }
       }
     },
