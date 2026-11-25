@@ -27,12 +27,12 @@
         "null"
       ],
       "examples": [
-        "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/"
+        "https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database"
       ],
       "badge": "Platinum",
       "title": "Databus Identifier (Dataset)",
       "format": "uri",
-      "pattern": "^https://databus\\.openenergyplatform\\.org/[^/]+/[^/]+/[^/]+$",
+      "pattern": "^(https://databus\\.openenergyplatform\\.org/[^/]+/[^/]+/[^/]+)?$",
       "readOnly": true
     },
     "path": {
@@ -982,7 +982,7 @@
             ],
             "badge": "Platinum",
             "title": "Databus Identifier (Resource)",
-            "pattern": "^https://databus\\.openenergyplatform\\.org/[^/]+/[^/]+/[^/]+/[^/]+/[^/]+$",
+            "pattern": "^(https://databus\\.openenergyplatform\\.org/[^/]+/[^/]+/[^/]+/[^/]+/[^/]+)?$",
             "readOnly": true
           },
           "path": {
@@ -1311,7 +1311,7 @@
                       "string",
                       "null"
                     ],
-                    "pattern": "^EPSG:[0-9]{4,6}$",
+                    "pattern": "^(EPSG:[0-9]{4,6})?$",
                     "examples": [
                       "EPSG:4326"
                     ],

@@ -18,6 +18,7 @@ pre-commit
 pyld
 pytest
 pytest-cov
+rdflib
 referencing
 ruff
 tox
