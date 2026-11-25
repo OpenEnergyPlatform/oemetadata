@@ -5,7 +5,7 @@
   "name": "oep_oemetadata",
   "title": "OEP OEMetadata Dataset",
   "description": "A dataset for the OEMetadata examples.",
-  "extent": {
+  "spatialCoverage": {
     "name": "Europe",
     "id": "https://www.wikidata.org/wiki/Q458"
   },
