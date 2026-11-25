@@ -275,7 +275,7 @@
       "@id": "dct:spatial",
       "@context": {
         "location": {
-          "@id": "dct:location"
+          "@id": "dct:Location"
         },
         "address": {
           "@id": "sc:address",
@@ -294,7 +294,7 @@
         },
         "resolutionValue": "dcat:spatialResolutionInMeters",
         "resolutionUnit": {
-          "@id": "oeo:unit",
+          "@id": "oeo:OEO_00040010",
           "@type": "xsd:string"
         },
         "boundingBox": {
