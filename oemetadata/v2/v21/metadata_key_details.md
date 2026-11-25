@@ -1191,7 +1191,7 @@ If a value is not yet available, use: `ToDo`.
 | Key            | **isAbout**                                                     |
 | Description    | An array of objects that describes the field in ontology terms. |
 | Example        |                                                                 |
-| Ontology Class | [sc:about](https://schema.org/about)                            |
+| Ontology Class | No term - uses `@reverse` instead                               |
 | Badge          |                                                                 |
 | Card.          | [*]                                                             |
 
@@ -1205,15 +1205,25 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Platinum                                                   |
 | Card.          | [0..1]                                                     |
 
-### Resources - Fields Keys - id (isAbout)
-|                |                                                                         |
-|----------------|-------------------------------------------------------------------------|
-| Key            | **id**                                                                  |
-| Description    | The path of the ontology term (IRI).                                    |
-| Example        | [OEO_00000044](https://openenergyplatform.org/ontology/oeo/OEO_00000044) |
-| Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)                   |
-| Badge          | Platinum                                                                |
-| Card.          | [0..1]                                                                  |
+### Resources - Fields Keys - iri (isAbout)
+|                |                                                                               |
+|----------------|-------------------------------------------------------------------------------|
+| Key            | **iri**                                                                       |
+| Description    | The path of the ontology term (IRI).                                          |
+| Example        | [OEO_00000044](https://openenergyplatform.org/ontology/oeo/OEO_00000044)      |
+| Ontology Class | [rdf:object](http://www.w3.org/1999/02/22-rdf-syntax-ns#object) (reification) |
+| Badge          | Platinum                                                                      |
+| Card.          | [0..1]                                                                        |
+
+### Resources - Fields Keys - mappingRelation (isAbout)
+|                |                                                                                                              |
+|----------------|--------------------------------------------------------------------------------------------------------------|
+| Key            | **mappingRelation**                                                                                          |
+| Description    | Using [SKOS](https://www.w3.org/TR/skos-reference/#mapping) mapping properties to state mapping (alignment). |
+| Example        | [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch)                                            |
+| Ontology Class | [rdf:predicate](http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate) (reification)                          |
+| Badge          | Platinum                                                                                                     |
+| Card.          | [0..1]                                                                                                       |
 
 ### Resources - Fields Keys - valueReference
 |                |                                                                                                |
@@ -1245,10 +1255,10 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Platinum                                                   |
 | Card.          | [0..1]                                                     |
 
-### Resources - Fields Keys - id (valueReference)
+### Resources - Fields Keys - iri (valueReference)
 |                |                                                                          |
 |----------------|--------------------------------------------------------------------------|
-| Key            | **id**                                                                   |
+| Key            | **iri**                                                                  |
 | Description    | The path of the ontology term (IRI) in the column.                       |
 | Example        | [OEO_00000311](https://openenergyplatform.org/ontology/oeo/OEO_00000311) |
 | Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)                    |

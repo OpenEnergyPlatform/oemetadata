@@ -220,15 +220,15 @@
             "isAbout": [
               {
                 "name": "",
-                "id": "",
-                "mappingRelation": ""
+                "iri": "",
+                "mappingRelation": null
               }
             ],
             "valueReference": [
               {
                 "value": "",
                 "name": "",
-                "id": "",
+                "iri": "",
                 "mappingRelation": ""
               }
             ]
