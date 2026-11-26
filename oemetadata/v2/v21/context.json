@@ -372,10 +372,6 @@
       "@id": "fabio:hasPublicationYear",
       "@type": "xsd:gYear"
     },
-    "sourcePath": {
-      "@id": "dcat:accessURL",
-      "@type": "xsd:string"
-    },
     "sourceLicenses": {
       "@id": "dct:license",
       "@container": "@set",
