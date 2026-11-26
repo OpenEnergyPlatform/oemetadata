@@ -31,8 +31,7 @@
       "@type": "xsd:string"
     },
     "spatialCoverage": {
-      "@id": "dct:spatial",
-      "@type": "dct:Location"
+      "@id": "dct:spatial"
     },
     "referenceDate": {
       "@id": "dct:date",
@@ -40,31 +39,30 @@
     },
     "projectContext": {
       "@id": "prov:wasGeneratedBy",
-      "@type": "prov:Activity",
       "@context": {
         "title": {
           "@type": "xsd:string",
           "@id": "dct:title"
         },
         "homepage": {
-          "@nest": "title",
-          "@id": "foaf:homepage"
+          "@id": "foaf:homepage",
+          "@type": "@id"
         },
         "documentation": {
           "@id": "rdfs:seeAlso",
-          "@type": "xsd:anyURI"
+          "@type": "@id"
         },
         "publisherLogo": {
           "@id": "foaf:logo",
-          "@type": "xsd:anyURI"
+          "@type": "@id"
         },
         "fundingAgencyLogo": {
           "@id": "sc:logo",
-          "@type": "xsd:anyURI"
+          "@type": "@id"
         },
         "sourceCode": {
           "@id": "sc:codeRepository",
-          "@type": "xsd:anyURI"
+          "@type": "@id"
         },
         "contact": {
           "@id": "sc:contactPoint",
@@ -90,7 +88,7 @@
         },
         "softwarePath": {
           "@id": "dcat:accessURL",
-          "@type": "xsd:anyURI"
+          "@type": "@id"
         },
         "softwareVersion": {
           "@id": "dcat:version",
@@ -163,7 +161,7 @@
     },
     "id": {
       "@id": "dct:identifier",
-      "@type": "xsd:anyURI"
+      "@type": "@id"
     },
     "languages": {
       "@id": "dct:language",
@@ -176,7 +174,7 @@
     },
     "image": {
       "@id": "sc:image",
-      "@type": "xsd:anyURI"
+      "@type": "@id"
     },
     "subject": {
       "@container": "@set",
@@ -213,7 +211,7 @@
           "@id": "dct:spatial"
         },
         "location": {
-          "@id": "sc:location"
+          "@id": "sc:Place"
         },
         "address": {
           "@id": "sc:address",
@@ -274,15 +272,15 @@
     "context": "@nest",
     "homepage": {
       "@id": "foaf:homepage",
-      "@type": "xsd:anyURI"
+      "@type": "@id"
     },
     "sourceCode": {
       "@id": "oeo:OEO_00000091",
-      "@type": "xsd:anyURI"
+      "@type": "@id"
     },
     "publisher": {
       "@id": "dct:publisher",
-      "@type": "foaf:Agent"
+      "@type": "xsd:string"
     },
     "contact": {
       "@id": "oeo:OEO_00000107",
@@ -365,7 +363,7 @@
       "@context": {
         "path": {
           "@id": "dcat:accessURL",
-          "@type": "xsd:anyURI"
+          "@type": "@id"
         }
       }
     },
@@ -387,7 +385,7 @@
       "@context": {
         "path": {
           "@id": "dcat:accessURL",
-          "@type": "xsd:anyURI"
+          "@type": "@id"
         }
       }
     },
@@ -514,7 +512,7 @@
       "@context": {
         "path": {
           "@id": "dcat:accessURL",
-          "@type": "xsd:anyURI"
+          "@type": "@id"
         }
       }
     },
