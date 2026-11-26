@@ -281,14 +281,14 @@ If a value is not yet available, use: `ToDo`.
 | Card.          | [0..1]                                                                                                                                                               |
 
 ### Dataset - context (contact)
-|                |                                                                                                          |
-|----------------|----------------------------------------------------------------------------------------------------------|
-| Key            | contact                                                                                                  |
-| Description    | A reference to the creator or maintainer of the data set. It can be an email address or a GitHub handle. |
-| Example        | info@nfdi4energy.org                                                                                     |
-| Ontology Class | [oeo:contact person](https://openenergyplatform.org/ontology/oeo/OEO_00000107/)                          |
-| Badge          | Gold                                                                                                     |
-| Card.          | [0..1]                                                                                                   |
+|                |                                                                                          |
+|----------------|------------------------------------------------------------------------------------------|
+| Key            | contact                                                                                  |
+| Description    | A reference to the creator or maintainer of the data set. It should be an email address. |
+| Example        | info@nfdi4energy.org                                                                     |
+| Ontology Class | [sc:email](https://schema.org/email)                                                     |
+| Badge          | Gold                                                                                     |
+| Card.          | [0..1]                                                                                   |
 
 ### Dataset - context (fundingAgency)
 |                |                                                                                           |

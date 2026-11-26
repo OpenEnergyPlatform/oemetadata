@@ -121,7 +121,7 @@
           "@type": "xsd:anyURI"
         },
         "contact": {
-          "@id": "sc:contactPoint",
+          "@id": "sc:email",
           "@type": "xsd:string"
         },
         "fundingAgency": {
@@ -214,141 +214,255 @@
         }
       }
     },
-    "moduleDataTransformationSoftware": {
-      "@id": "oeo:ont00001917",
-      "@container": "@set",
-      "@context": {
-        "softwareName": {
-          "@id": "dct:title",
-          "@type": "xsd:string"
-        },
-        "softwarePath": {
-          "@id": "dcat:accessURL",
-          "@type": "@id"
-        },
-        "softwareVersion": {
-          "@id": "dcat:version",
-          "@type": "xsd:string"
-        },
-        "softwareType": {
-          "@id": "obo:IAO_0000010",
-          "@type": "xsd:string"
-        },
-        "programmingLanguage": {
-          "@id": "sc:programmingLanguage",
-          "@type": "xsd:string"
-        },
-        "moduleDescription": {
-          "@id": "dct:description",
-          "@type": "xsd:string"
-        }
-      }
-    },
-    "moduleMeasurementData": {
-      "@container": "@set",
-      "@id": "dct:hasPart"
-    },
-    "instrumentIdentifier": {
-      "@id": "dct:identifier",
-      "@type": "xsd:string"
-    },
-    "instrumentPath": {
-      "@id": "sc:url",
-      "@type": "xsd:string"
-    },
-    "instrumentName": {
-      "@id": "sc:name",
-      "@type": "xsd:string"
-    },
-    "instrumentOwner": {
-      "@id": "sc:provider",
-      "@type": "xsd:string"
-    },
-    "manufacturerName": {
-      "@id": "sc:manufacturer",
-      "@type": "xsd:string"
-    },
-    "id": "@id",
     "resources": {
       "@container": "@set",
       "@id": "dcat:dataset",
       "@context": {
+        "databusId": {
+          "@id": "databus:artifact",
+          "@type": "@id"
+        },
         "path": {
           "@id": "dct:identifier",
           "@type": "xsd:string"
         },
-        "embargoPeriod": {
-          "@id": "dct:accessRights",
+        "name": {
+          "@id": "rdfs:label",
+          "@type": "xsd:string"
+        },
+        "title": {
+          "@id": "dct:title",
+          "@type": "xsd:string"
+        },
+        "description": {
+          "@id": "dct:description",
+          "@type": "xsd:string"
+        },
+        "publicationDate": {
+          "@id": "dct:issued",
+          "@type": "xsd:date"
+        },
+        "topics": {
+          "@container": "@set",
+          "@id": "foaf:topic",
+          "@type": "xsd:string"
+        },
+        "subject": {
+          "@container": "@set",
+          "@id": "dct:subject",
           "@context": {
-            "end": {
-              "@id": "dct:available",
-              "@type": "xsd:date"
+            "name": {
+              "@id": "rdfs:label",
+              "@type": "xsd:string"
             },
-            "start": {
-              "@id": "dct:issued",
-              "@type": "xsd:date"
+            "id": {
+              "@id": "dct:identifier",
+              "@type": "xsd:anyURI"
             }
           }
         },
+        "keywords": {
+          "@id": "dcat:keyword",
+          "@container": "@set",
+          "@type": "xsd:string"
+        },
+        "embargoPeriod": "@nest",
+        "start": {
+          "@id": "dct:dateSubmitted",
+          "@type": "xsd:date"
+        },
+        "end": {
+          "@id": "fabio:hasEmbargoDate",
+          "@type": "xsd:date"
+        },
+        "isActive": null,
         "spatial": "@nest",
-        "extent": {
-          "@id": "dct:spatial"
-        },
         "location": {
-          "@id": "sc:Place"
+          "@id": "sc:Place",
+          "@context": {
+            "address": {
+              "@id": "sc:address",
+              "@type": "xsd:string"
+            },
+            "id": {
+              "@id": "dct:identifier",
+              "@type": "xsd:anyURI"
+            },
+            "latitude": {
+              "@id": "sc:latitude",
+              "@type": "xsd:decimal"
+            },
+            "longitude": {
+              "@id": "sc:longitude",
+              "@type": "xsd:decimal"
+            }
+          }
         },
-        "address": {
-          "@id": "sc:address",
-          "@type": "xsd:string"
+        "extent": {
+          "@id": "dct:spatial",
+          "@context": {
+            "name": {
+              "@id": "rdfs:label",
+              "@type": "xsd:string"
+            },
+            "id": {
+              "@id": "dct:identifier",
+              "@type": "xsd:anyURI"
+            },
+            "resolutionValue": {
+              "@id": "dcat:spatialResolutionInMeters",
+              "@type": "xsd:decimal"
+            },
+            "resolutionUnit": {
+              "@id": "oeo:OEO_00040010",
+              "@type": "xsd:string"
+            },
+            "boundingBox": {
+              "@id": "dcat:bbox",
+              "@container": "@list",
+              "@type": "xsd:decimal"
+            },
+            "crs": {
+              "@id": "dct:conformsTo",
+              "@type": "@id"
+            }
+          }
         },
-        "latitude": {
-          "@id": "sc:latitude",
-          "@type": "xsd:decimal"
+        "temporal": {
+          "@id": "dct:temporal",
+          "@context": {
+            "referenceDate": {
+              "@id": "dct:date",
+              "@type": "xsd:date"
+            },
+            "timeseries": "@nest",
+            "start": {
+              "@id": "dbo:startDateTime",
+              "@type": "xsd:dateTime"
+            },
+            "end": {
+              "@id": "dbo:endDateTime",
+              "@type": "xsd:dateTime"
+            },
+            "resolutionValue": {
+              "@id": "dcat:temporalResolution",
+              "@type": "xsd:decimal"
+            },
+            "resolutionUnit": {
+              "@id": "oeo:OEO_00040010",
+              "@type": "xsd:string"
+            },
+            "alignment": {
+              "@id": "dct:format",
+              "@type": "xsd:string"
+            },
+            "aggregationType": {
+              "@id": "oeo:OEO_00140068",
+              "@type": "xsd:string"
+            }
+          }
         },
-        "longitude": {
-          "@id": "sc:longitude",
-          "@type": "xsd:decimal"
+        "sources": {
+          "@id": "dct:source",
+          "@container": "@set",
+          "@context": {
+            "title": {
+              "@id": "dct:title",
+              "@type": "xsd:string"
+            },
+            "authors": {
+              "@id": "sc:author",
+              "@type": "xsd:string"
+            },
+            "description": {
+              "@id": "dct:description",
+              "@type": "xsd:string"
+            },
+            "publicationYear": {
+              "@id": "fabio:hasPublicationYear",
+              "@type": "xsd:gYear"
+            },
+            "path": {
+              "@id": "dcat:accessURL",
+              "@type": "xsd:anyURI"
+            },
+            "sourceLicenses": {
+              "@id": "dct:license",
+              "@container": "@set",
+              "@context": {
+                "name": {
+                  "@id": "rdfs:label",
+                  "@type": "xsd:string"
+                },
+                "title": {
+                  "@id": "dct:title",
+                  "@type": "xsd:string"
+                },
+                "path": {
+                  "@id": "dcat:accessURL",
+                  "@type": "xsd:anyURI"
+                },
+                "instruction": {
+                  "@id": "rdfs:comment",
+                  "@type": "xsd:string"
+                },
+                "attribution": {
+                  "@id": "dct:rightsHolder",
+                  "@type": "xsd:string"
+                },
+                "copyrightStatement": {
+                  "@id": "dct:rights",
+                  "@type": "xsd:string"
+                }
+              }
+            }
+          }
         },
-        "resolutionValue": {
-          "@id": "dcat:spatialResolutionInMeters",
-          "@type": "xsd:decimal"
-        },
-        "resolutionUnit": {
-          "@id": "oeo:OEO_00040010",
-          "@type": "xsd:string"
-        },
-        "boundingBox": {
-          "@id": "dcat:bbox",
-          "@container": "@list",
-          "@type": "xsd:decimal"
-        },
-        "crs": {
-          "@id": "dct:conformsTo",
-          "@type": "@id"
+        "resourceLicenses": {
+          "@container": "@set",
+          "@id": "dct:license",
+          "@context": {
+            "name": {
+              "@id": "rdfs:label",
+              "@type": "xsd:string"
+            },
+            "title": {
+              "@id": "dct:title",
+              "@type": "xsd:string"
+            },
+            "path": {
+              "@id": "dcat:accessURL",
+              "@type": "xsd:anyURI"
+            },
+            "instruction": {
+              "@id": "rdfs:comment",
+              "@type": "xsd:string"
+            },
+            "attribution": {
+              "@id": "dct:rightsHolder",
+              "@type": "xsd:string"
+            },
+            "copyrightStatement": {
+              "@id": "dct:rights",
+              "@type": "xsd:string"
+            }
+          }
         }
+      },
+      "type": {
+        "@id": "dct:type",
+        "@type": "xsd:string"
+      },
+      "format": {
+        "@id": "dct:format",
+        "@type": "xsd:string"
+      },
+      "encoding": {
+        "@id": "csvw:encoding",
+        "@type": "xsd:string"
       }
     },
-    "topics": {
-      "@container": "@set",
-      "@id": "foaf:topic",
-      "@type": "xsd:string"
-    },
-    "publicationDate": {
-      "@id": "dct:issued",
-      "@type": "xsd:date"
-    },
-    "start": {
-      "@id": "dbo:startDateTime",
-      "@type": "xsd:dateTime"
-    },
-    "end": {
-      "@id": "dbo:endDateTime",
-      "@type": "xsd:dateTime"
-    },
-    "isActive": {
-      "@id": "adms:status",
-      "@type": "xsd:boolean"
-    },
+    "id": "@id",
     "context": "@nest",
     "homepage": {
       "@id": "foaf:homepage",
@@ -358,123 +472,12 @@
       "@id": "oeo:OEO_00000091",
       "@type": "@id"
     },
-    "contact": {
-      "@id": "oeo:OEO_00000107",
-      "@type": "xsd:string"
-    },
     "fundingAgency": {
       "@id": "sc:FundingAgency",
       "@type": "xsd:string"
     },
     "grantNo": {
       "@id": "sc:Grant",
-      "@type": "xsd:string"
-    },
-    "spatial": {
-      "@id": "dct:spatial",
-      "@context": {
-        "location": {
-          "@id": "dct:Location"
-        },
-        "address": {
-          "@id": "sc:address",
-          "@type": "xsd:string"
-        },
-        "latitude": {
-          "@id": "sc:latitude",
-          "@type": "xsd:decimal"
-        },
-        "longitude": {
-          "@id": "sc:longitude",
-          "@type": "xsd:decimal"
-        },
-        "extent": {
-          "@id": "oeo:BFO_0000006"
-        },
-        "resolutionValue": "dcat:spatialResolutionInMeters",
-        "resolutionUnit": {
-          "@id": "oeo:OEO_00040010",
-          "@type": "xsd:string"
-        },
-        "boundingBox": {
-          "@id": "dcat:bbox",
-          "@container": "@list",
-          "@type": "xsd:decimal"
-        },
-        "crs": {
-          "@id": "dct:conformsTo",
-          "@type": "@id"
-        }
-      }
-    },
-    "temporal": {
-      "@id": "dct:temporal",
-      "@context": {
-        "referenceDate": {
-          "@id": "dct:date",
-          "@type": "xsd:date"
-        },
-        "timeseries": "@nest",
-        "resolutionValue": {
-          "@id": "dcat:temporalResolution",
-          "@type": "xsd:decimal"
-        },
-        "resolutionUnit": {
-          "@id": "oeo:OEO_00040010",
-          "@type": "xsd:string"
-        },
-        "alignment": {
-          "@id": "dct:format",
-          "@type": "xsd:string"
-        },
-        "aggregationType": {
-          "@id": "oeo:OEO_00140068",
-          "@type": "xsd:string"
-        }
-      }
-    },
-    "sources": {
-      "@id": "dct:source",
-      "@container": "@set",
-      "@context": {
-        "path": {
-          "@id": "dcat:accessURL",
-          "@type": "@id"
-        }
-      }
-    },
-    "authors": {
-      "@id": "sc:author",
-      "@type": "xsd:string"
-    },
-    "publicationYear": {
-      "@id": "fabio:hasPublicationYear",
-      "@type": "xsd:gYear"
-    },
-    "sourceLicenses": {
-      "@id": "dct:license",
-      "@container": "@set",
-      "@context": {
-        "path": {
-          "@id": "dcat:accessURL",
-          "@type": "@id"
-        }
-      }
-    },
-    "licenses": {
-      "@id": "dct:license",
-      "@container": "@set"
-    },
-    "type": {
-      "@id": "dct:type",
-      "@type": "xsd:string"
-    },
-    "format": {
-      "@id": "dct:format",
-      "@type": "xsd:string"
-    },
-    "encoding": {
-      "@id": "csvw:encoding",
       "@type": "xsd:string"
     },
     "schema": {
@@ -564,6 +567,60 @@
     },
     "decimalSeparator": {
       "@id": "csvw:decimalChar",
+      "@type": "xsd:string"
+    },
+    "moduleDataTransformationSoftware": {
+      "@id": "oeo:ont00001917",
+      "@container": "@set",
+      "@context": {
+        "softwareName": {
+          "@id": "dct:title",
+          "@type": "xsd:string"
+        },
+        "softwarePath": {
+          "@id": "dcat:accessURL",
+          "@type": "@id"
+        },
+        "softwareVersion": {
+          "@id": "dcat:version",
+          "@type": "xsd:string"
+        },
+        "softwareType": {
+          "@id": "obo:IAO_0000010",
+          "@type": "xsd:string"
+        },
+        "programmingLanguage": {
+          "@id": "sc:programmingLanguage",
+          "@type": "xsd:string"
+        },
+        "moduleDescription": {
+          "@id": "dct:description",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "moduleMeasurementData": {
+      "@container": "@set",
+      "@id": "dct:hasPart"
+    },
+    "instrumentIdentifier": {
+      "@id": "dct:identifier",
+      "@type": "xsd:string"
+    },
+    "instrumentPath": {
+      "@id": "sc:url",
+      "@type": "xsd:string"
+    },
+    "instrumentName": {
+      "@id": "sc:name",
+      "@type": "xsd:string"
+    },
+    "instrumentOwner": {
+      "@id": "sc:provider",
+      "@type": "xsd:string"
+    },
+    "manufacturerName": {
+      "@id": "sc:manufacturer",
       "@type": "xsd:string"
     },
     "metaMetadata": {
