@@ -138,6 +138,41 @@
         }
       }
     },
+    "contributors": {
+      "@id": "dct:contributor",
+      "@container": "@list",
+      "@context": {
+        "title": {
+          "@id": "dct:title",
+          "@type": "xsd:string"
+        },
+        "path": {
+          "@id": "dcat:accessURL",
+          "@type": "@id"
+        },
+        "organization": {
+          "@id": "sc:memberOf",
+          "@type": "xsd:string"
+        },
+        "roles": {
+          "@container": "@set",
+          "@id": "obo:RO_0000087",
+          "@type": "xsd:string"
+        },
+        "date": {
+          "@id": "dct:modified",
+          "@type": "xsd:date"
+        },
+        "object": {
+          "@id": "dct:type",
+          "@type": "xsd:string"
+        },
+        "comment": {
+          "@id": "rdfs:comment",
+          "@type": "xsd:string"
+        }
+      }
+    },
     "moduleDataTransformationSoftware": {
       "@id": "oeo:ont00001917",
       "@container": "@set",
@@ -415,33 +450,6 @@
     "licenses": {
       "@id": "dct:license",
       "@container": "@set"
-    },
-    "contributors": {
-      "@id": "dct:contributor",
-      "@container": "@list",
-      "@context": {
-        "organization": {
-          "@id": "sc:memberOf",
-          "@type": "xsd:string"
-        },
-        "roles": {
-          "@container": "@set",
-          "@id": "obo:RO_0000087",
-          "@type": "xsd:string"
-        }
-      }
-    },
-    "date": {
-      "@id": "dct:modified",
-      "@type": "xsd:date"
-    },
-    "object": {
-      "@id": "dct:type",
-      "@type": "xsd:string"
-    },
-    "comment": {
-      "@id": "rdfs:comment",
-      "@type": "xsd:string"
     },
     "type": {
       "@id": "dct:type",
