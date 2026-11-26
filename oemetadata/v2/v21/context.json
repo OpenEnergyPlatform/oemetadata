@@ -393,7 +393,7 @@
         "isActive": null,
         "spatial": "@nest",
         "location": {
-          "@id": "sc:Place",
+          "@id": "sc:location",
           "@context": {
             "address": {
               "@id": "sc:address",
@@ -562,130 +562,130 @@
               "@type": "xsd:string"
             }
           }
-        }
-      },
-      "type": {
-        "@id": "dct:type",
-        "@type": "xsd:string"
-      },
-      "format": {
-        "@id": "dct:format",
-        "@type": "xsd:string"
-      },
-      "encoding": {
-        "@id": "csvw:encoding",
-        "@type": "xsd:string"
-      },
-      "schema": {
-        "@id": "csvw:tableSchema",
-        "@context": {
-          "fields": {
-            "@id": "csvw:column",
-            "@container": "@list",
-            "@type": "xsd:string",
-            "@context": {
-              "name": {
-                "@id": "rdfs:label",
-                "@type": "xsd:string"
-              },
-              "description": {
-                "@id": "dct:description",
-                "@type": "xsd:string"
-              },
-              "type": {
-                "@id": "csvw:datatype",
-                "@type": "xsd:string"
-              },
-              "nullable": null,
-              "unit": {
-                "@id": "oeo:OEO_00040010",
-                "@type": "xsd:string"
-              },
-              "isAbout": {
-                "@reverse": "rdf:subject",
-                "@container": "@set",
-                "@context": {
-                  "name": {
-                    "@id": "sssom:object_label",
-                    "@type": "xsd:string"
-                  },
-                  "iri": {
-                    "@id": "rdf:object",
-                    "@type": "@id"
-                  },
-                  "mappingRelation": {
-                    "@id": "rdf:predicate",
-                    "@type": "@id"
+        },
+        "type": {
+          "@id": "dct:type",
+          "@type": "xsd:string"
+        },
+        "format": {
+          "@id": "dct:format",
+          "@type": "xsd:string"
+        },
+        "encoding": {
+          "@id": "csvw:encoding",
+          "@type": "xsd:string"
+        },
+        "schema": {
+          "@id": "csvw:tableSchema",
+          "@context": {
+            "fields": {
+              "@id": "csvw:column",
+              "@container": "@list",
+              "@type": "xsd:string",
+              "@context": {
+                "name": {
+                  "@id": "rdfs:label",
+                  "@type": "xsd:string"
+                },
+                "description": {
+                  "@id": "dct:description",
+                  "@type": "xsd:string"
+                },
+                "type": {
+                  "@id": "csvw:datatype",
+                  "@type": "xsd:string"
+                },
+                "nullable": null,
+                "unit": {
+                  "@id": "oeo:OEO_00040010",
+                  "@type": "xsd:string"
+                },
+                "isAbout": {
+                  "@reverse": "rdf:subject",
+                  "@container": "@set",
+                  "@context": {
+                    "name": {
+                      "@id": "sssom:object_label",
+                      "@type": "xsd:string"
+                    },
+                    "iri": {
+                      "@id": "rdf:object",
+                      "@type": "@id"
+                    },
+                    "mappingRelation": {
+                      "@id": "rdf:predicate",
+                      "@type": "@id"
+                    }
+                  }
+                },
+                "valueReference": {
+                  "@id": "prov:value",
+                  "@container": "@set",
+                  "@context": {
+                    "value": {
+                      "@id": "rdf:value",
+                      "@type": "xsd:string"
+                    },
+                    "name": {
+                      "@id": "rdfs:label",
+                      "@type": "xsd:string"
+                    },
+                    "iri": null,
+                    "mappingRelation": null
                   }
                 }
-              },
-              "valueReference": {
-                "@id": "prov:value",
-                "@container": "@set",
-                "@context": {
-                  "value": {
-                    "@id": "rdf:value",
-                    "@type": "xsd:string"
-                  },
-                  "name": {
-                    "@id": "rdfs:label",
-                    "@type": "xsd:string"
-                  },
-                  "iri": null,
-                  "mappingRelation": null
-                }
               }
-            }
-          },
-          "primaryKey": {
-            "@id": "csvw:primaryKey",
-            "@container": "@set",
-            "@type": "xsd:string"
-          },
-          "foreignKeys": {
-            "@id": "csvw:foreignKey",
-            "@container": "@set",
-            "@context": {
-              "fields": {
-                "@id": "csvw:column",
-                "@container": "@list",
-                "@type": "xsd:string"
-              },
-              "reference": {
-                "@id": "csvw:reference",
-                "@context": {
-                  "resource": {
-                    "@id": "csvw:resource",
-                    "@type": "xsd:string"
-                  },
-                  "fields": {
-                    "@id": "csvw:column",
-                    "@container": "@list",
-                    "@type": "xsd:string"
+            },
+            "primaryKey": {
+              "@id": "csvw:primaryKey",
+              "@container": "@set",
+              "@type": "xsd:string"
+            },
+            "foreignKeys": {
+              "@id": "csvw:foreignKey",
+              "@container": "@set",
+              "@context": {
+                "fields": {
+                  "@id": "csvw:column",
+                  "@container": "@list",
+                  "@type": "xsd:string"
+                },
+                "reference": {
+                  "@id": "csvw:reference",
+                  "@context": {
+                    "resource": {
+                      "@id": "csvw:resource",
+                      "@type": "xsd:string"
+                    },
+                    "fields": {
+                      "@id": "csvw:column",
+                      "@container": "@list",
+                      "@type": "xsd:string"
+                    }
                   }
                 }
               }
             }
           }
-        }
-      },
-      "dialect": "@nest",
-      "delimiter": {
-        "@id": "csvw:delimiter",
-        "@type": "xsd:string"
-      },
-      "decimalSeparator": {
-        "@id": "csvw:decimalChar",
-        "@type": "xsd:string"
-      },
-      "review": {
-        "@container": "@set",
-        "@id": "sc:review",
-        "@context": {
-          "path": "@id",
-          "badge": {
-            "@id": "sc:ratingValue",
-            "@type": "xsd:string"
+        },
+        "dialect": "@nest",
+        "delimiter": {
+          "@id": "csvw:delimiter",
+          "@type": "xsd:string"
+        },
+        "decimalSeparator": {
+          "@id": "csvw:decimalChar",
+          "@type": "xsd:string"
+        },
+        "review": {
+          "@container": "@set",
+          "@id": "sc:review",
+          "@context": {
+            "path": "@id",
+            "badge": {
+              "@id": "sc:ratingValue",
+              "@type": "xsd:string"
+            }
           }
         }
       }
