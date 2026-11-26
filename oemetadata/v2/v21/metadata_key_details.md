@@ -414,7 +414,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          |                                                                                |
 | Card.          | [*]                                                                            |
 
-### Resources - datasetLicenses (name)
+### Dataset - datasetLicenses (name)
 |                |                                                            |
 |----------------|------------------------------------------------------------|
 | Key            | name                                                       |

@@ -173,6 +173,47 @@
         }
       }
     },
+    "datasetLicenses": {
+      "@id": "dct:license",
+      "@container": "@set",
+      "@context": {
+        "name": {
+          "@id": "rdfs:label",
+          "@type": "xsd:string"
+        },
+        "title": {
+          "@id": "dct:title",
+          "@type": "xsd:string"
+        },
+        "path": {
+          "@id": "dcat:accessURL",
+          "@type": "@id"
+        },
+        "instruction": {
+          "@id": "rdfs:comment",
+          "@type": "xsd:string"
+        },
+        "attribution": {
+          "@id": "dct:rightsHolder",
+          "@type": "xsd:string"
+        },
+        "copyrightStatement": {
+          "@id": "dct:rights",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "review": {
+      "@container": "@set",
+      "@id": "sc:review",
+      "@context": {
+        "path": "@id",
+        "badge": {
+          "@id": "sc:ratingValue",
+          "@type": "xsd:string"
+        }
+      }
+    },
     "moduleDataTransformationSoftware": {
       "@id": "oeo:ont00001917",
       "@container": "@set",
@@ -226,25 +267,6 @@
     "manufacturerName": {
       "@id": "sc:manufacturer",
       "@type": "xsd:string"
-    },
-    "datasetLicenses": {
-      "@id": "dct:license",
-      "@container": "@set"
-    },
-    "attribution": {
-      "@id": "dct:rightsHolder",
-      "@type": "xsd:string"
-    },
-    "review": {
-      "@container": "@set",
-      "@id": "sc:review",
-      "@context": {
-        "path": "@id",
-        "badge": {
-          "@id": "sc:ratingValue",
-          "@type": "xsd:string"
-        }
-      }
     },
     "id": "@id",
     "resources": {
@@ -438,14 +460,6 @@
           "@type": "@id"
         }
       }
-    },
-    "instruction": {
-      "@id": "rdfs:comment",
-      "@type": "xsd:string"
-    },
-    "copyrightStatement": {
-      "@id": "dct:rights",
-      "@type": "xsd:string"
     },
     "licenses": {
       "@id": "dct:license",
