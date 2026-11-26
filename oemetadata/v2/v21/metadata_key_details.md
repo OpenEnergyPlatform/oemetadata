@@ -118,7 +118,7 @@ If a value is not yet available, use: `ToDo`.
 | **Badge**          | Bronze                                                  |
 | **Card.**          | [0..1]                                                  |
 
-### Dataset - extent (name)
+### Dataset - spatialCoverage (name)
 |                    |                                                             |
 |--------------------|-------------------------------------------------------------|
 | **Key**            | name                                                        |
@@ -128,7 +128,7 @@ If a value is not yet available, use: `ToDo`.
 | **Badge**          | Silver                                                      |
 | **Card.**          | [0..1]                                                      |
 
-### Dataset - extent (id)
+### Dataset - spatialCoverage (id)
 |                    |                                                                |
 |--------------------|----------------------------------------------------------------|
 | **Key**            | id                                                             |

@@ -27,12 +27,35 @@
       "@id": "databus:artifact",
       "@type": "@id"
     },
+    "path": {
+      "@id": "dcat:accessURL",
+      "@type": "@id"
+    },
     "name": {
       "@id": "rdfs:label",
       "@type": "xsd:string"
     },
+    "title": {
+      "@id": "dct:title",
+      "@type": "xsd:string"
+    },
+    "description": {
+      "@id": "dct:description",
+      "@type": "xsd:string"
+    },
     "spatialCoverage": {
-      "@id": "dct:spatial"
+      "@id": "dct:spatial",
+      "@type": "dct:Location",
+      "@context": {
+        "name": {
+          "@id": "rdfs:label",
+          "@type": "xsd:string"
+        },
+        "id": {
+          "@id": "dct:identifier",
+          "@type": "xsd:anyURI"
+        }
+      }
     },
     "referenceDate": {
       "@id": "dct:date",
@@ -152,14 +175,6 @@
         }
       }
     },
-    "title": {
-      "@id": "dct:title",
-      "@type": "xsd:string"
-    },
-    "description": {
-      "@id": "dct:description",
-      "@type": "xsd:string"
-    },
     "id": "@id",
     "languages": {
       "@id": "dct:language",
@@ -246,10 +261,6 @@
       "@container": "@set",
       "@id": "foaf:topic",
       "@type": "xsd:string"
-    },
-    "path": {
-      "@id": "dcat:accessURL",
-      "@type": "@id"
     },
     "publicationDate": {
       "@id": "dct:issued",
