@@ -88,6 +88,11 @@
         }
       }
     },
+    "keywords": {
+      "@id": "dcat:keyword",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
     "projectContext": {
       "@id": "prov:wasGeneratedBy",
       "@context": {
@@ -101,31 +106,35 @@
         },
         "documentation": {
           "@id": "rdfs:seeAlso",
-          "@type": "@id"
-        },
-        "publisherLogo": {
-          "@id": "foaf:logo",
-          "@type": "@id"
-        },
-        "fundingAgencyLogo": {
-          "@id": "sc:logo",
-          "@type": "@id"
+          "@type": "xsd:anyURI"
         },
         "sourceCode": {
           "@id": "sc:codeRepository",
-          "@type": "@id"
+          "@type": "xsd:anyURI"
+        },
+        "publisher": {
+          "@id": "dct:publisher",
+          "@type": "xsd:string"
+        },
+        "publisherLogo": {
+          "@id": "foaf:logo",
+          "@type": "xsd:anyURI"
         },
         "contact": {
           "@id": "sc:contactPoint",
           "@type": "xsd:string"
         },
-        "grantNo": {
-          "@id": "sc:funding",
-          "@type": "xsd:string"
-        },
         "fundingAgency": {
           "@type": "xsd:string",
           "@id": "foaf:fundedBy"
+        },
+        "fundingAgencyLogo": {
+          "@id": "sc:logo",
+          "@type": "@id"
+        },
+        "grantNo": {
+          "@id": "sc:funding",
+          "@type": "xsd:string"
         }
       }
     },
@@ -203,11 +212,6 @@
       }
     },
     "id": "@id",
-    "keywords": {
-      "@id": "dcat:keyword",
-      "@container": "@set",
-      "@type": "xsd:string"
-    },
     "resources": {
       "@container": "@set",
       "@id": "dcat:dataset",
@@ -296,10 +300,6 @@
     "sourceCode": {
       "@id": "oeo:OEO_00000091",
       "@type": "@id"
-    },
-    "publisher": {
-      "@id": "dct:publisher",
-      "@type": "xsd:string"
     },
     "contact": {
       "@id": "oeo:OEO_00000107",
