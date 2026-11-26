@@ -114,7 +114,7 @@
     },
     "instrumentIdentifier": {
       "@id": "dct:identifier",
-      "@type": "@id"
+      "@type": "xsd:string"
     },
     "instrumentPath": {
       "@id": "sc:url",
@@ -159,10 +159,7 @@
       "@id": "dct:description",
       "@type": "xsd:string"
     },
-    "id": {
-      "@id": "dct:identifier",
-      "@type": "@id"
-    },
+    "id": "@id",
     "languages": {
       "@id": "dct:language",
       "@container": "@set",
@@ -503,7 +500,7 @@
       "@id": "csvw:reference"
     },
     "resource": {
-      "@id": "dcat:Distribution",
+      "@id": "csvw:resource",
       "@type": "xsd:string"
     },
     "resourceLicenses": {
@@ -518,8 +515,7 @@
     },
     "fields": {
       "@id": "csvw:column",
-      "@container": "@list",
-      "@type": "xsd:string"
+      "@container": "@list"
     },
     "dialect": "@nest",
     "delimiter": {
