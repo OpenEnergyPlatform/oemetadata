@@ -253,7 +253,7 @@
           "@type": "xsd:string"
         },
         "moduleDescription": {
-          "@id": "dct:description",
+          "@id": "rdfs:comment",
           "@type": "xsd:string"
         }
       }
@@ -283,7 +283,7 @@
           "@type": "xsd:string"
         },
         "moduleDescription": {
-          "@id": "dct:description",
+          "@id": "rdfs:comment",
           "@type": "xsd:string"
         }
       }
