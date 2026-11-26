@@ -1311,7 +1311,7 @@
                       "string",
                       "null"
                     ],
-                    "pattern": "^EPSG:[0-9]+$",
+                    "pattern": "^(EPSG:[0-9]{4,6})?$",
                     "examples": [
                       "EPSG:4326"
                     ],
