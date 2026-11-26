@@ -71,7 +71,7 @@
             "title": "Manufacturer Name"
           },
           "moduleDescription": {
-            "description": "A description of the module. It should be usable as summary information for the module that is described by the metadata.",
+            "description": "A short human-readable comment on the module.",
             "type": "string",
             "examples": [
               "Example instrument of PIDINST schema."

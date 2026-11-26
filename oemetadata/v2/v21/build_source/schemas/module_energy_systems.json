@@ -198,13 +198,13 @@
           "title": "Demand Sectors"
         },
         "moduleDescription": {
-          "description": "A description of the module. It should be usable as summary information for the module that is described by the metadata.",
+          "description": "A short human-readable comment on the module.",
           "type": [
             "string",
             "null"
           ],
           "examples": [
-            "Example module for an energy system dataset"
+            "Example module for an energy system dataset."
           ],
           "badge": "Module",
           "title": "Energy Systems Module Description"
