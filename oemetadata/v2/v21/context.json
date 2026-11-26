@@ -487,6 +487,7 @@
             },
             "authors": {
               "@id": "sc:author",
+              "@container": "@set",
               "@type": "xsd:string"
             },
             "description": {
