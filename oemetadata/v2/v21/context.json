@@ -61,6 +61,19 @@
       "@id": "dct:date",
       "@type": "xsd:date"
     },
+    "languages": {
+      "@id": "dct:language",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "version": {
+      "@id": "dcat:version",
+      "@type": "xsd:string"
+    },
+    "image": {
+      "@id": "sc:image",
+      "@type": "xsd:anyURI"
+    },
     "projectContext": {
       "@id": "prov:wasGeneratedBy",
       "@context": {
@@ -176,19 +189,6 @@
       }
     },
     "id": "@id",
-    "languages": {
-      "@id": "dct:language",
-      "@container": "@set",
-      "@type": "xsd:string"
-    },
-    "version": {
-      "@id": "dcat:version",
-      "@type": "xsd:string"
-    },
-    "image": {
-      "@id": "sc:image",
-      "@type": "@id"
-    },
     "subject": {
       "@container": "@set",
       "@id": "dct:subject"
