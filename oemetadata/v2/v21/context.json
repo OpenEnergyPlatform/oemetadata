@@ -74,6 +74,20 @@
       "@id": "sc:image",
       "@type": "xsd:anyURI"
     },
+    "subject": {
+      "@container": "@set",
+      "@id": "dct:subject",
+      "@context": {
+        "name": {
+          "@id": "rdfs:label",
+          "@type": "xsd:string"
+        },
+        "id": {
+          "@id": "dct:identifier",
+          "@type": "xsd:anyURI"
+        }
+      }
+    },
     "projectContext": {
       "@id": "prov:wasGeneratedBy",
       "@context": {
@@ -189,10 +203,6 @@
       }
     },
     "id": "@id",
-    "subject": {
-      "@container": "@set",
-      "@id": "dct:subject"
-    },
     "keywords": {
       "@id": "dcat:keyword",
       "@container": "@set",
