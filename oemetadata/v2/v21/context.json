@@ -106,11 +106,11 @@
         },
         "documentation": {
           "@id": "rdfs:seeAlso",
-          "@type": "xsd:anyURI"
+          "@type": "@id"
         },
         "sourceCode": {
           "@id": "sc:codeRepository",
-          "@type": "xsd:anyURI"
+          "@type": "@id"
         },
         "publisher": {
           "@id": "dct:publisher",
@@ -118,7 +118,7 @@
         },
         "publisherLogo": {
           "@id": "foaf:logo",
-          "@type": "xsd:anyURI"
+          "@type": "@id"
         },
         "contact": {
           "@id": "sc:email",
@@ -466,10 +466,6 @@
     "context": "@nest",
     "homepage": {
       "@id": "foaf:homepage",
-      "@type": "@id"
-    },
-    "sourceCode": {
-      "@id": "oeo:OEO_00000091",
       "@type": "@id"
     },
     "fundingAgency": {
