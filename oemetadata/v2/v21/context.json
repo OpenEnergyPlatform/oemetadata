@@ -125,8 +125,8 @@
           "@type": "xsd:string"
         },
         "fundingAgency": {
-          "@type": "xsd:string",
-          "@id": "foaf:fundedBy"
+          "@id": "sc:funder",
+          "@type": "xsd:string"
         },
         "fundingAgencyLogo": {
           "@id": "sc:logo",
@@ -169,6 +169,121 @@
         },
         "comment": {
           "@id": "rdfs:comment",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "moduleEnergySystems": "@nest",
+    "supplyTechnologies": {
+      "@id": "oeo:OEO_00370003",
+      "@container": "@set",
+      "@context": {
+        "name": {
+          "@id": "rdfs:label",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "storageTechnologies": {
+      "@id": "oeo:OEO_00370003",
+      "@container": "@set",
+      "@context": {
+        "name": {
+          "@id": "rdfs:label",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "supplyGrid": {
+      "@id": "oeo:OEO_00370000",
+      "@container": "@set",
+      "@context": {
+        "name": {
+          "@id": "rdfs:label",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "finalEnergyCarrier": {
+      "@id": "oeo:OEO_00370001",
+      "@container": "@set",
+      "@context": {
+        "name": {
+          "@id": "rdfs:label",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "demandSectors": {
+      "@id": "oeo:OEO_00020519",
+      "@container": "@set",
+      "@context": {
+        "name": {
+          "@id": "rdfs:label",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "moduleDescription": {
+      "@id": "rdfs:comment",
+      "@type": "xsd:string"
+    },
+    "moduleMeasurementData": {
+      "@id": "prov:wasInfluencedBy",
+      "@container": "@set",
+      "@context": {
+        "instrumentIdentifier": {
+          "@id": "dct:identifier",
+          "@type": "xsd:string"
+        },
+        "instrumentPath": {
+          "@id": "sc:url",
+          "@type": "@id"
+        },
+        "instrumentName": {
+          "@id": "sc:name",
+          "@type": "xsd:string"
+        },
+        "instrumentOwner": {
+          "@id": "sc:provider",
+          "@type": "xsd:string"
+        },
+        "manufacturerName": {
+          "@id": "sc:manufacturer",
+          "@type": "xsd:string"
+        },
+        "moduleDescription": {
+          "@id": "dct:description",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "moduleDataTransformationSoftware": {
+      "@id": "prov:wasInfluencedBy",
+      "@container": "@set",
+      "@context": {
+        "softwareName": {
+          "@id": "sc:name",
+          "@type": "xsd:string"
+        },
+        "softwarePath": {
+          "@id": "sc:url",
+          "@type": "@id"
+        },
+        "softwareVersion": {
+          "@id": "sc:softwareVersion",
+          "@type": "xsd:string"
+        },
+        "softwareType": {
+          "@id": "sc:applicationCategory",
+          "@type": "xsd:string"
+        },
+        "programmingLanguage": {
+          "@id": "sc:programmingLanguage",
+          "@type": "xsd:string"
+        },
+        "moduleDescription": {
+          "@id": "dct:description",
           "@type": "xsd:string"
         }
       }
@@ -460,164 +575,120 @@
       "encoding": {
         "@id": "csvw:encoding",
         "@type": "xsd:string"
-      }
-    },
-    "id": "@id",
-    "context": "@nest",
-    "homepage": {
-      "@id": "foaf:homepage",
-      "@type": "@id"
-    },
-    "fundingAgency": {
-      "@id": "sc:FundingAgency",
-      "@type": "xsd:string"
-    },
-    "grantNo": {
-      "@id": "sc:Grant",
-      "@type": "xsd:string"
-    },
-    "schema": {
-      "@id": "csvw:tableSchema",
-      "@context": {
-        "type": {
-          "@id": "csvw:datatype",
-          "@type": "xsd:string"
+      },
+      "schema": {
+        "@id": "csvw:tableSchema",
+        "@context": {
+          "fields": {
+            "@id": "csvw:column",
+            "@container": "@list",
+            "@type": "xsd:string",
+            "@context": {
+              "name": {
+                "@id": "rdfs:label",
+                "@type": "xsd:string"
+              },
+              "description": {
+                "@id": "dct:description",
+                "@type": "xsd:string"
+              },
+              "type": {
+                "@id": "csvw:datatype",
+                "@type": "xsd:string"
+              },
+              "nullable": null,
+              "unit": {
+                "@id": "oeo:OEO_00040010",
+                "@type": "xsd:string"
+              },
+              "isAbout": {
+                "@reverse": "rdf:subject",
+                "@container": "@set",
+                "@context": {
+                  "name": {
+                    "@id": "sssom:object_label",
+                    "@type": "xsd:string"
+                  },
+                  "iri": {
+                    "@id": "rdf:object",
+                    "@type": "@id"
+                  },
+                  "mappingRelation": {
+                    "@id": "rdf:predicate",
+                    "@type": "@id"
+                  }
+                }
+              },
+              "valueReference": {
+                "@id": "prov:value",
+                "@container": "@set",
+                "@context": {
+                  "value": {
+                    "@id": "rdf:value",
+                    "@type": "xsd:string"
+                  },
+                  "name": {
+                    "@id": "rdfs:label",
+                    "@type": "xsd:string"
+                  },
+                  "iri": null,
+                  "mappingRelation": null
+                }
+              }
+            }
+          },
+          "primaryKey": {
+            "@id": "csvw:primaryKey",
+            "@container": "@set",
+            "@type": "xsd:string"
+          },
+          "foreignKeys": {
+            "@id": "csvw:foreignKey",
+            "@container": "@set",
+            "@context": {
+              "fields": {
+                "@id": "csvw:column",
+                "@container": "@list",
+                "@type": "xsd:string"
+              },
+              "reference": {
+                "@id": "csvw:reference",
+                "@context": {
+                  "resource": {
+                    "@id": "csvw:resource",
+                    "@type": "xsd:string"
+                  },
+                  "fields": {
+                    "@id": "csvw:column",
+                    "@container": "@list",
+                    "@type": "xsd:string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "dialect": "@nest",
+      "delimiter": {
+        "@id": "csvw:delimiter",
+        "@type": "xsd:string"
+      },
+      "decimalSeparator": {
+        "@id": "csvw:decimalChar",
+        "@type": "xsd:string"
+      },
+      "review": {
+        "@container": "@set",
+        "@id": "sc:review",
+        "@context": {
+          "path": "@id",
+          "badge": {
+            "@id": "sc:ratingValue",
+            "@type": "xsd:string"
+          }
         }
       }
-    },
-    "nestedFields": {
-      "@id": "csvw:column",
-      "@container": "@set"
-    },
-    "schemaFields": {
-      "@id": "csvw:column"
-    },
-    "required": {
-      "@id": "csvw:required",
-      "@type": "xsd:boolean"
-    },
-    "unit": {
-      "@id": "oeo:OEO_00040010",
-      "@type": "xsd:string"
-    },
-    "isAbout": {
-      "@reverse": "rdf:subject",
-      "@container": "@set",
-      "@context": {
-        "name": {
-          "@id": "sssom:object_label",
-          "@type": "xsd:string"
-        },
-        "iri": {
-          "@id": "rdf:object",
-          "@type": "@id"
-        },
-        "mappingRelation": {
-          "@id": "rdf:predicate",
-          "@type": "@id"
-        }
-      }
-    },
-    "valueReference": {
-      "@id": "prov:value",
-      "@container": "@set"
-    },
-    "value": {
-      "@id": "rdf:value",
-      "@type": "xsd:string"
-    },
-    "primaryKey": {
-      "@id": "csvw:primaryKey",
-      "@container": "@set",
-      "@type": "xsd:string"
-    },
-    "foreignKeys": {
-      "@id": "csvw:foreignKey",
-      "@container": "@set"
-    },
-    "reference": {
-      "@id": "csvw:reference"
-    },
-    "resource": {
-      "@id": "csvw:resource",
-      "@type": "xsd:string"
-    },
-    "resourceLicenses": {
-      "@container": "@set",
-      "@id": "dct:license",
-      "@context": {
-        "path": {
-          "@id": "dcat:accessURL",
-          "@type": "@id"
-        }
-      }
-    },
-    "fields": {
-      "@id": "csvw:column",
-      "@container": "@list"
-    },
-    "dialect": "@nest",
-    "delimiter": {
-      "@id": "csvw:delimiter",
-      "@type": "xsd:string"
-    },
-    "decimalSeparator": {
-      "@id": "csvw:decimalChar",
-      "@type": "xsd:string"
-    },
-    "moduleDataTransformationSoftware": {
-      "@id": "oeo:ont00001917",
-      "@container": "@set",
-      "@context": {
-        "softwareName": {
-          "@id": "dct:title",
-          "@type": "xsd:string"
-        },
-        "softwarePath": {
-          "@id": "dcat:accessURL",
-          "@type": "@id"
-        },
-        "softwareVersion": {
-          "@id": "dcat:version",
-          "@type": "xsd:string"
-        },
-        "softwareType": {
-          "@id": "obo:IAO_0000010",
-          "@type": "xsd:string"
-        },
-        "programmingLanguage": {
-          "@id": "sc:programmingLanguage",
-          "@type": "xsd:string"
-        },
-        "moduleDescription": {
-          "@id": "dct:description",
-          "@type": "xsd:string"
-        }
-      }
-    },
-    "moduleMeasurementData": {
-      "@container": "@set",
-      "@id": "dct:hasPart"
-    },
-    "instrumentIdentifier": {
-      "@id": "dct:identifier",
-      "@type": "xsd:string"
-    },
-    "instrumentPath": {
-      "@id": "sc:url",
-      "@type": "xsd:string"
-    },
-    "instrumentName": {
-      "@id": "sc:name",
-      "@type": "xsd:string"
-    },
-    "instrumentOwner": {
-      "@id": "sc:provider",
-      "@type": "xsd:string"
-    },
-    "manufacturerName": {
-      "@id": "sc:manufacturer",
-      "@type": "xsd:string"
     },
     "metaMetadata": {
       "@reverse": "foaf:primaryTopic",
@@ -628,7 +699,18 @@
           "@type": "@vocab"
         },
         "metadataLicense": {
-          "@id": "dct:license"
+          "@id": "dct:license",
+          "@context": {
+            "name": {
+              "@id": "rdfs:label",
+              "@type": "xsd:string"
+            },
+            "title": {
+              "@id": "dct:title",
+              "@type": "xsd:string"
+            },
+            "path": "@id"
+          }
         },
         "OEMetadata-2.0.4": "https://github.com/OpenEnergyPlatform/oemetadata/releases/tag/v2.0.4",
         "OEMetadata-2.1.0": "https://github.com/OpenEnergyPlatform/oemetadata/releases/tag/v2.1.0"
