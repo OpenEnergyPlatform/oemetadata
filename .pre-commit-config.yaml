@@ -8,7 +8,7 @@ exclude: ^.*(.min.js|.min.css)$
 repos:
   # Pre-commit-hooks - Out-of-the-box hooks
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: check-yaml
       - id: check-json
@@ -36,7 +36,7 @@ repos:
 
   # Ruff - Fast Python linter, written in Rust
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: 'v0.8.1'
+    rev: 'v0.17.6'
     hooks:
     - id: ruff
       args: [--fix, --exit-non-zero-on-fix, --show-fixes]
@@ -53,6 +53,16 @@ repos:
 
   # REUSE Software - Make licensing easy for humans and machines alike
   - repo: https://github.com/fsfe/reuse-tool
-    rev: v5.0.2
+    rev: v6.3.0
     hooks:
     - id: reuse
+
+  # Pytest - Run the test suite before each commit
+  - repo: local
+    hooks:
+    - id: pytest
+      name: pytest
+      entry: python -m pytest -q
+      language: system
+      pass_filenames: false
+      always_run: true

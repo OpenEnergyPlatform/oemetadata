@@ -35,12 +35,12 @@ VERSION_PATH = Path("oemetadata/v2/v21")
 CASES = {
     "example": (
         OEMETADATA_V21_EXAMPLE,
-        VERSION_PATH / "example_graph.jsonld",
+        VERSION_PATH / "graph" / "example_graph.jsonld",
         OEMETADATA_V21_EXAMPLE_GRAPH_TTL,
     ),
     "example_modules": (
         OEMETADATA_V21_EXAMPLE_MODULES,
-        VERSION_PATH / "example_graph_module.jsonld",
+        VERSION_PATH / "graph" / "example_graph_module.jsonld",
         OEMETADATA_V21_EXAMPLE_GRAPH_MODULE_TTL,
     ),
 }
@@ -98,18 +98,18 @@ def set_predicates(context: dict) -> set:
 def test_jsonld_is_up_to_date(case):
     example, jsonld_path, _ = CASES[case]
     stored = json.loads(jsonld_path.read_text(encoding="utf-8"))
-    assert stored == combine(
-        example
-    ), f"{jsonld_path.name} is outdated, run create_graph.py"
+    assert stored == combine(example), (
+        f"{jsonld_path.name} is outdated, run create_graph.py"
+    )
 
 
 @pytest.mark.parametrize("case", CASES)
 def test_graph_is_up_to_date(case):
     example, _, stored = CASES[case]
     fresh = Graph().parse(data=json.dumps(combine(example)), format="json-ld")
-    assert isomorphic(
-        via_turtle(fresh), stored
-    ), "Turtle graph is outdated, run create_graph.py"
+    assert isomorphic(via_turtle(fresh), stored), (
+        "Turtle graph is outdated, run create_graph.py"
+    )
 
 
 @pytest.mark.parametrize("case", CASES)
