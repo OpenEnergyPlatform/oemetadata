@@ -7,7 +7,7 @@
   "description": "A dataset for the OEMetadata examples.",
   "spatialCoverage": {
     "name": "Europe",
-    "id": "https://www.wikidata.org/wiki/Q458"
+    "id": "http://www.wikidata.org/entity/Q458"
   },
   "referenceDate": "2020-01-01",
   "languages": [

@@ -2,10 +2,10 @@ PREFIX csvw: <http://www.w3.org/ns/csvw#>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-PREFIX ns1: <https://dataid.dbpedia.org/databus#>
-PREFIX ns2: <http://schema.org/>
-PREFIX ns3: <http://purl.obolibrary.org/obo/>
-PREFIX ns4: <http://dbpedia.org/ontology/>
+PREFIX ns1: <http://schema.org/>
+PREFIX ns2: <http://purl.obolibrary.org/obo/>
+PREFIX ns3: <http://dbpedia.org/ontology/>
+PREFIX ns4: <https://dataid.dbpedia.org/databus#>
 PREFIX ns5: <https://openenergyplatform.org/ontology/oeo/>
 PREFIX ns6: <http://w3id.org/sssom/>
 PREFIX ns7: <http://purl.org/spar/fabio/>
@@ -17,6 +17,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://openenergyplatform.org/ontology/oeo/OEO_00010424>
     rdfs:label "wind power technology"^^xsd:string ;
+    rdf:predicate skos:exactMatch ;
     rdf:value "wind"^^xsd:string ;
 .
 
@@ -27,16 +28,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://openenergyplatform.org/ontology/oeo/OEO_00000308/>
     rdfs:label "offshore wind farm"^^xsd:string ;
+    rdf:predicate skos:exactMatch ;
     rdf:value "offshore"^^xsd:string ;
 .
 
 <https://openenergyplatform.org/ontology/oeo/OEO_00000311/>
     rdfs:label "onshore wind farm"^^xsd:string ;
+    rdf:predicate skos:exactMatch ;
     rdf:value "onshore"^^xsd:string ;
 .
 
 <https://openenergyplatform.org/database/>
-    ns2:ratingValue "Platinum"^^xsd:string ;
+    ns1:ratingValue "Platinum"^^xsd:string ;
 .
 
 []    ns6:object_label "wind farm"^^xsd:string ;
@@ -46,13 +49,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 .
 
 []    ns6:object_label "identifier"^^xsd:string ;
-    rdf:object ns3:IAO_0020000 ;
+    rdf:object ns2:IAO_0020000 ;
     rdf:predicate skos:exactMatch ;
     rdf:subject _:cb1ac3a701e375e7ed4962917242083aeeab9b82b2666615991b89b89c26ab3257c ;
 .
 
 []    ns6:object_label "version number"^^xsd:string ;
-    rdf:object ns3:IAO_0000129 ;
+    rdf:object ns2:IAO_0000129 ;
     rdf:predicate skos:exactMatch ;
     rdf:subject _:cb193fcdfe98f4fc0d5120aea1622c722dcf5f7b6ddfff09c37766f39c39a39c599 ;
 .
@@ -89,31 +92,31 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             dcterms:contributor (
 
                 [
-                    ns3:RO_0000087 "Creator"^^xsd:string ;
+                    ns2:RO_0000087 "Creator"^^xsd:string ;
                     dcterms:modified "2026-04-09"^^xsd:date ;
                     dcterms:title "Ludwig Hülk"^^xsd:string ;
                     dcterms:type "dataset"^^xsd:string ;
-                    ns2:memberOf "Reiner Lemoine Institut"^^xsd:string ;
+                    ns1:memberOf "Reiner Lemoine Institut"^^xsd:string ;
                     rdfs:comment "Date of dataset creation"^^xsd:string ;
                     dcat:accessURL <https://github.com/Ludee> ;
                 ]
 
                 [
-                    ns3:RO_0000087 "DataCollector"^^xsd:string ;
+                    ns2:RO_0000087 "DataCollector"^^xsd:string ;
                     dcterms:modified "2024-11-19"^^xsd:date ;
                     dcterms:title "Ludwig Hülk"^^xsd:string ;
                     dcterms:type "data"^^xsd:string ;
-                    ns2:memberOf "Reiner Lemoine Institut"^^xsd:string ;
+                    ns1:memberOf "Reiner Lemoine Institut"^^xsd:string ;
                     rdfs:comment "Date of data creation"^^xsd:string ;
                     dcat:accessURL <https://github.com/Ludee> ;
                 ]
 
                 [
-                    ns3:RO_0000087 "DataCurator"^^xsd:string ;
+                    ns2:RO_0000087 "DataCurator"^^xsd:string ;
                     dcterms:modified "2024-11-30"^^xsd:date ;
                     dcterms:title "Ludwig Hülk"^^xsd:string ;
                     dcterms:type "metadata"^^xsd:string ;
-                    ns2:memberOf "Reiner Lemoine Institut"^^xsd:string ;
+                    ns1:memberOf "Reiner Lemoine Institut"^^xsd:string ;
                     rdfs:comment "Date of metadata creation"^^xsd:string ;
                     dcat:accessURL <https://github.com/Ludee> ;
                 ]
@@ -135,7 +138,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             dcterms:spatial
                 [
                     rdfs:label "Europe"^^xsd:string ;
-                    dcterms:identifier "https://www.wikidata.org/wiki/Q458"^^xsd:anyURI ;
+                    dcterms:identifier "http://www.wikidata.org/entity/Q458"^^xsd:anyURI ;
                 ] ;
             dcterms:subject
                 [
@@ -143,8 +146,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
                     dcterms:identifier "https://openenergyplatform.org/ontology/oeo/OEO_00000150"^^xsd:anyURI ;
                 ] ;
             dcterms:title "OEP OEMetadata Dataset"^^xsd:string ;
-            ns2:image "https://openenergyplatform.org/static/img/about/OpenEnergyFamily_GroupPhoto2.png"^^xsd:anyURI ;
-            ns2:review <https://openenergyplatform.org/database/> ;
+            ns1:image "https://openenergyplatform.org/static/img/about/OpenEnergyFamily_GroupPhoto2.png"^^xsd:anyURI ;
+            ns1:review <https://openenergyplatform.org/database/> ;
             dcat:accessURL <https://openenergyplatform.org/database/tables/oemetadata_table_template> ;
             dcat:dataset
                 [
@@ -161,7 +164,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
                             dcterms:rightsHolder "© Reiner Lemoine Institut"^^xsd:string ;
                             dcterms:title "Open Data Commons Open Database License 1.0"^^xsd:string ;
                             rdfs:comment "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information."^^xsd:string ;
-                            dcat:accessURL "https://opendatacommons.org/licenses/odbl/1-0/index.html"^^xsd:anyURI ;
+                            dcat:accessURL <https://opendatacommons.org/licenses/odbl/1-0/index.html> ;
                         ] ;
                     dcterms:source
                         [
@@ -173,11 +176,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
                                     dcterms:rightsHolder "© Intergovernmental Panel on Climate Change 2023"^^xsd:string ;
                                     dcterms:title "Creative Commons Attribution 4.0 International"^^xsd:string ;
                                     rdfs:comment "You are free to share and change, but you must attribute. See https://www.tldrlegal.com/license/creative-commons-attribution-4-0-international-cc-by-4 for further information."^^xsd:string ;
-                                    dcat:accessURL "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:anyURI ;
+                                    dcat:accessURL <https://creativecommons.org/licenses/by/4.0/legalcode> ;
                                 ] ;
                             dcterms:title "IPCC Sixth Assessment Report (AR6) - Climate Change 2023 - Synthesis Report"^^xsd:string ;
                             ns7:hasPublicationYear "2023"^^xsd:gYear ;
-                            ns2:author
+                            ns1:author
                                 "Hoesung Lee"^^xsd:string ,
                                 "José Romero"^^xsd:string ,
                                 "The Core Writing Team"^^xsd:string ;
@@ -187,7 +190,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
                         [
                             rdfs:label "Berlin"^^xsd:string ;
                             dcterms:conformsTo <http://www.opengis.net/def/crs/EPSG/0/4326> ;
-                            dcterms:identifier "https://www.wikidata.org/wiki/Q64"^^xsd:anyURI ;
                             dcat:bbox (
                                 13.08825
                                 52.33859
@@ -204,8 +206,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
                         ] ;
                     dcterms:temporal
                         [
-                            ns4:endDateTime "2020-01-01T23:59:30+01:00"^^xsd:dateTime ;
-                            ns4:startDateTime "2020-01-01T00:00:00+01:00"^^xsd:dateTime ;
+                            ns3:endDateTime "2020-01-01T23:59:30+01:00"^^xsd:dateTime ;
+                            ns3:startDateTime "2020-01-01T00:00:00+01:00"^^xsd:dateTime ;
                             dcterms:date "2020-01-01"^^xsd:date ;
                             dcterms:format "left"^^xsd:string ;
                             dcat:temporalResolution 15.0 ;
@@ -215,14 +217,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
                     dcterms:title "OEMetadata Table Example"^^xsd:string ;
                     dcterms:type "table"^^xsd:string ;
                     ns7:hasEmbargoDate "2025-01-01"^^xsd:date ;
-                    ns2:location
+                    ns1:location
                         [
                             dcterms:identifier "http://www.wikidata.org/entity/Q77077223"^^xsd:anyURI ;
-                            ns2:address "Rudower Chaussee 12, 12489 Berlin"^^xsd:string ;
-                            ns2:latitude 52.432822 ;
-                            ns2:longitude 13.5351004 ;
+                            ns1:address "Rudower Chaussee 12, 12489 Berlin"^^xsd:string ;
+                            ns1:latitude 52.432822 ;
+                            ns1:longitude 13.5351004 ;
                         ] ;
-                    ns2:review <https://openenergyplatform.org/database/> ;
+                    ns1:review <https://openenergyplatform.org/database/> ;
                     csvw:decimalChar "."^^xsd:string ;
                     csvw:delimiter ";"^^xsd:string ;
                     csvw:encoding "UTF-8"^^xsd:string ;
@@ -258,7 +260,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
                         "ODbL-1.0"^^xsd:string ,
                         "example"^^xsd:string ;
                     foaf:topic "model_draft"^^xsd:string ;
-                    ns1:artifact <https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv> ;
+                    ns4:artifact <https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv> ;
                 ] ;
             dcat:keyword
                 "NFDI4Energy"^^xsd:string ,
@@ -269,25 +271,25 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
                 [
                     dcterms:publisher "Open Energy Platform (OEP)"^^xsd:string ;
                     dcterms:title "NFDI4Energy"^^xsd:string ;
-                    ns2:codeRepository <https://github.com/NFDI4Energy> ;
-                    ns2:email "contact@example.com"^^xsd:string ;
-                    ns2:funder "Deutsche Forschungsgemeinschaft (DFG)"^^xsd:string ;
-                    ns2:funding "501865131"^^xsd:string ;
-                    ns2:logo <https://upload.wikimedia.org/wikipedia/commons/8/86/DFG-logo-blau.svg> ;
+                    ns1:codeRepository <https://github.com/NFDI4Energy> ;
+                    ns1:email "contact@example.com"^^xsd:string ;
+                    ns1:funder "Deutsche Forschungsgemeinschaft (DFG)"^^xsd:string ;
+                    ns1:funding "501865131"^^xsd:string ;
+                    ns1:logo <https://upload.wikimedia.org/wikipedia/commons/8/86/DFG-logo-blau.svg> ;
                     rdfs:seeAlso <https://nfdi4energy.uol.de/sites/about_us/> ;
                     foaf:homepage <https://nfdi4energy.uol.de/> ;
                     foaf:logo <https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg> ;
                 ] ;
             prov:wasInfluencedBy
                 [
-                    ns2:applicationCategory "Library"^^xsd:string ;
-                    ns2:name "open-mastr"^^xsd:string ;
-                    ns2:programmingLanguage "Python"^^xsd:string ;
-                    ns2:softwareVersion "0.17.1"^^xsd:string ;
-                    ns2:url <https://github.com/OpenEnergyPlatform/open-MaStR> ;
+                    ns1:applicationCategory "Library"^^xsd:string ;
+                    ns1:name "open-mastr"^^xsd:string ;
+                    ns1:programmingLanguage "Python"^^xsd:string ;
+                    ns1:softwareVersion "0.17.1"^^xsd:string ;
+                    ns1:url <https://github.com/OpenEnergyPlatform/open-MaStR> ;
                     rdfs:comment "Example data transformation software."^^xsd:string ;
                 ] ;
-            ns1:artifact <https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database> ;
+            ns4:artifact <https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database> ;
         ] ;
 .
 

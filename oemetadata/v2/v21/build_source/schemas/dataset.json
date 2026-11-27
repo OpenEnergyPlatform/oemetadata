@@ -102,7 +102,7 @@
             "null"
           ],
           "examples": [
-            "https://www.wikidata.org/wiki/Q458"
+            "http://www.wikidata.org/entity/Q458"
           ],
           "format": "uri",
           "badge": "Platinum",
