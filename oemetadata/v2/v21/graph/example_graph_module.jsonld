@@ -181,7 +181,8 @@
         "name": {
           "@id": "rdfs:label",
           "@type": "xsd:string"
-        }
+        },
+        "iri": "@id"
       }
     },
     "storageTechnologies": {
@@ -191,7 +192,8 @@
         "name": {
           "@id": "rdfs:label",
           "@type": "xsd:string"
-        }
+        },
+        "iri": "@id"
       }
     },
     "supplyGrid": {
@@ -201,7 +203,8 @@
         "name": {
           "@id": "rdfs:label",
           "@type": "xsd:string"
-        }
+        },
+        "iri": "@id"
       }
     },
     "finalEnergyCarrier": {
@@ -211,7 +214,8 @@
         "name": {
           "@id": "rdfs:label",
           "@type": "xsd:string"
-        }
+        },
+        "iri": "@id"
       }
     },
     "demandSectors": {
@@ -221,7 +225,8 @@
         "name": {
           "@id": "rdfs:label",
           "@type": "xsd:string"
-        }
+        },
+        "iri": "@id"
       }
     },
     "moduleDescription": {
@@ -796,31 +801,31 @@
     "supplyTechnologies": [
       {
         "name": "energy transformation",
-        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020003"
+        "iri": "https://openenergyplatform.org/ontology/oeo/OEO_00020003"
       }
     ],
     "storageTechnologies": [
       {
         "name": "energy storage technology",
-        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020366"
+        "iri": "https://openenergyplatform.org/ontology/oeo/OEO_00020366"
       }
     ],
     "supplyGrid": [
       {
         "name": "supply grid",
-        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000200"
+        "iri": "https://openenergyplatform.org/ontology/oeo/OEO_00000200"
       }
     ],
     "finalEnergyCarrier": [
       {
         "name": "final energy carrier",
-        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140080"
+        "iri": "https://openenergyplatform.org/ontology/oeo/OEO_00140080"
       }
     ],
     "demandSectors": [
       {
         "name": "energy demand sector",
-        "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000128"
+        "iri": "https://openenergyplatform.org/ontology/oeo/OEO_00000128"
       }
     ],
     "moduleDescription": "Example module for an energy system dataset."

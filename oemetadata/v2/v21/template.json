@@ -53,31 +53,31 @@
     "supplyTechnologies": [
       {
         "name": "",
-        "@id": ""
+        "iri": ""
       }
     ],
     "storageTechnologies": [
       {
         "name": "",
-        "@id": ""
+        "iri": ""
       }
     ],
     "supplyGrid": [
       {
         "name": "",
-        "@id": ""
+        "iri": ""
       }
     ],
     "finalEnergyCarrier": [
       {
         "name": "",
-        "@id": ""
+        "iri": ""
       }
     ],
     "demandSectors": [
       {
         "name": "",
-        "@id": ""
+        "iri": ""
       }
     ],
     "moduleDescription": ""

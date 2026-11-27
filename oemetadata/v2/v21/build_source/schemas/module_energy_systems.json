@@ -25,7 +25,7 @@
                 "badge": "Module",
                 "title": "Supply Technologies Subject Name"
               },
-              "@id": {
+              "iri": {
                 "description": "A unique identifier (URI/IRI) of the ontology class.",
                 "type": [
                   "string",
@@ -63,7 +63,7 @@
                 "badge": "Module",
                 "title": "Storage Technologies Subject Name"
               },
-              "@id": {
+              "iri": {
                 "description": "A unique identifier (URI/IRI) of the ontology class.",
                 "type": [
                   "string",
@@ -101,7 +101,7 @@
                 "badge": "Module",
                 "title": "Supply Grid Subject Name"
               },
-              "@id": {
+              "iri": {
                 "description": "A unique identifier (URI/IRI) of the ontology class.",
                 "type": [
                   "string",
@@ -139,7 +139,7 @@
                 "badge": "Module",
                 "title": "Final Energy Carrier Subject Name"
               },
-              "@id": {
+              "iri": {
                 "description": "A unique identifier (URI/IRI) of the ontology class.",
                 "type": [
                   "string",
@@ -177,7 +177,7 @@
                 "badge": "Module",
                 "title": "Demand Sectors Subject Name"
               },
-              "@id": {
+              "iri": {
                 "description": "A unique identifier (URI/IRI) of the ontology class.",
                 "type": [
                   "string",
