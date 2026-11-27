@@ -118,25 +118,25 @@ If a value is not yet available, use: `ToDo`.
 | **Badge**          | Bronze                                                  |
 | **Card.**          | [0..1]                                                  |
 
-### Dataset - extent (name)
-|                    |                                                             |
-|--------------------|-------------------------------------------------------------|
-| **Key**            | name                                                        |
-| **Description**    | The name of the spatial region of the dataset.              |
-| **Example**        | Berlin                                                      |
-| **Ontology Term**  | [rdfs:label](https://www.w3.org/2000/01/rdf-schema#/label)  |
-| **Badge**          | Silver                                                      |
-| **Card.**          | [0..1]                                                      |
+### Dataset - spatialCoverage (name)
+|                    |                                                            |
+|--------------------|------------------------------------------------------------|
+| **Key**            | name                                                       |
+| **Description**    | The label of the term, as given by the source of the IRI.  |
+| **Example**        | European Union                                             |
+| **Ontology Term**  | [rdfs:label](https://www.w3.org/2000/01/rdf-schema#/label) |
+| **Badge**          | Silver                                                     |
+| **Card.**          | [0..1]                                                     |
 
-### Dataset - extent (id)
-|                    |                                                                |
-|--------------------|----------------------------------------------------------------|
-| **Key**            | id                                                             |
-| **Description**    | A URI reference for the region of the dataset.                 |
-| **Example**        | [www.wikidata.org/wiki/Q64](https://www.wikidata.org/wiki/Q64) |
-| **Ontology Term**  | [dct:identifier](http://purl.org/dc/terms/identifier)          |
-| **Badge**          | Platinum                                                       |
-| **Card.**          | [0..1]                                                         |
+### Dataset - spatialCoverage (iri)
+|                    |                                                                                   |
+|--------------------|-----------------------------------------------------------------------------------|
+| **Key**            | iri                                                                               |
+| **Description**    | The IRI of the region covered by the dataset. A Wikidata entity IRI is preferred. |
+| **Example**        | [http://www.wikidata.org/entity/Q458](http://www.wikidata.org/entity/Q458)        |
+| **Ontology Term**  | [dct:identifier](http://purl.org/dc/terms/identifier)                             |
+| **Badge**          | Platinum                                                                          |
+| **Card.**          | [0..1]                                                                            |
 
 ### Dataset - languages
 |                |                                                                                                                                                                                   |
@@ -188,11 +188,11 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Platinum                                                   |
 | Card.          | [0..1]                                                     |
 
-### Dataset - subject (id)
+### Dataset - subject (iri)
 |                |                                                                                                              |
 |----------------|--------------------------------------------------------------------------------------------------------------|
-| Key            | id                                                                                                           |
-| Description    | A unique identifier (URI/IRI) of the ontology class.                                                         |
+| Key            | iri                                                                                                          |
+| Description    | The IRI of the ontology class that describes the subject. An OEO class is preferred.                         |
 | Example        | [openenergyplatform.org/ontology/oeo/OEO_00000150](https://openenergyplatform.org/ontology/oeo/OEO_00000150) |
 | Ontology Class | [dct:subject](http://purl.org/dc/terms/subject)                                                              |
 | Badge          | Platinum                                                                                                     |
@@ -251,14 +251,14 @@ If a value is not yet available, use: `ToDo`.
 | Card.          | [0..1]                                                                          |
 
 ### Dataset - context (sourceCode)
-|                |                                                                              |
-|----------------|------------------------------------------------------------------------------|
-| Key            | sourceCode                                                                   |
-| Description    | A URL of the source code of the project.                                     |
-| Example        | [github.com/NFDI4Energy](https://github.com/NFDI4Energy)                     |
-| Ontology Class | [oeo:code source](https://openenergyplatform.org/ontology/oeo/OEO_00000091/) |
-| Badge          | Gold                                                                         |
-| Card.          | [0..1]                                                                       |
+|                |                                                                             |
+|----------------|-----------------------------------------------------------------------------|
+| Key            | sourceCode                                                                  |
+| Description    | A URL of the source code of the project.                                    |
+| Example        | [github.com/NFDI4Energy](https://github.com/NFDI4Energy)                    |
+| Ontology Class | [oeo:code source](https://openenergyplatform.org/ontology/oeo/OEO_00000091) |
+| Badge          | Gold                                                                        |
+| Card.          | [0..1]                                                                      |
 
 ### Dataset - context (publisher)
 |                |                                                         |
@@ -281,14 +281,14 @@ If a value is not yet available, use: `ToDo`.
 | Card.          | [0..1]                                                                                                                                                               |
 
 ### Dataset - context (contact)
-|                |                                                                                                          |
-|----------------|----------------------------------------------------------------------------------------------------------|
-| Key            | contact                                                                                                  |
-| Description    | A reference to the creator or maintainer of the data set. It can be an email address or a GitHub handle. |
-| Example        | info@nfdi4energy.org                                                                                     |
-| Ontology Class | [oeo:contact person](https://openenergyplatform.org/ontology/oeo/OEO_00000107/)                          |
-| Badge          | Gold                                                                                                     |
-| Card.          | [0..1]                                                                                                   |
+|                |                                                                                          |
+|----------------|------------------------------------------------------------------------------------------|
+| Key            | contact                                                                                  |
+| Description    | A reference to the creator or maintainer of the data set. It should be an email address. |
+| Example        | info@nfdi4energy.org                                                                     |
+| Ontology Class | [sc:email](https://schema.org/email)                                                     |
+| Badge          | Gold                                                                                     |
+| Card.          | [0..1]                                                                                   |
 
 ### Dataset - context (fundingAgency)
 |                |                                                                                           |
@@ -358,7 +358,7 @@ If a value is not yet available, use: `ToDo`.
 | Key            | organization                                                                                                    |
 | Description    | A string describing the organization this contributor is affiliated to. This can be relevant for the copyright. |
 | Example        | Reiner Lemoine Institut                                                                                         |
-| Ontology Class | [oeo:organisation](https://openenergyplatform.org/ontology/oeo/OEO_00030022/)                                   |
+| Ontology Class | [oeo:organisation](https://openenergyplatform.org/ontology/oeo/OEO_00030022)                                    |
 | Badge          | Bronze                                                                                                          |
 | Card.          | [0..1]                                                                                                          |
 
@@ -368,7 +368,7 @@ If a value is not yet available, use: `ToDo`.
 | Key            | roles                                                                                                                                                                                                                                                                              |
 | Description    | An array describing the roles of the contributor. A role is recommended to follow the established vocabulary: [DataCite Metadata Schema’s contributorRole](https://support.datacite.org/docs/datacite-metadata-schema-v44-recommended-and-optional-properties#7a-contributortype). |
 | Example        | DataCollector, DataCurator                                                                                                                                                                                                                                                         |
-| Ontology Class | [oeo:role](https://openenergyplatform.org/ontology/oeo/BFO_0000023/)                                                                                                                                                                                                               |
+| Ontology Class | [oeo:role](https://openenergyplatform.org/ontology/oeo/BFO_0000023)                                                                                                                                                                                                                |
 | Badge          | Bronze                                                                                                                                                                                                                                                                             |
 | Card.          | [*]                                                                                                                                                                                                                                                                                |
 
@@ -414,7 +414,7 @@ If a value is not yet available, use: `ToDo`.
 | Badge          |                                                                                |
 | Card.          | [*]                                                                            |
 
-### Resources - datasetLicenses (name)
+### Dataset - datasetLicenses (name)
 |                |                                                            |
 |----------------|------------------------------------------------------------|
 | Key            | name                                                       |
@@ -484,13 +484,13 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | [0..1]                                                                                                                                                                                                       |
 
 ### Dataset - Review Keys - path
-|                |                                                                                                                      |
-|----------------|----------------------------------------------------------------------------------------------------------------------|
-| Key            | **path**                                                                                                             |
-| Description    | A link or path to the documented open peer review (under development).                                               |
-| Example        | [open_peer_review/9](https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/9/) |
-| Ontology Class | [sc:url](https://schema.org/url)                                                                                     |
-| Badge          | [0..1]                                                                                                               |
+|                |                                                                                                                     |
+|----------------|---------------------------------------------------------------------------------------------------------------------|
+| Key            | **path**                                                                                                            |
+| Description    | A link or path to the documented open peer review (under development).                                              |
+| Example        | [open_peer_review/9](https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/9) |
+| Ontology Class | [sc:url](https://schema.org/url)                                                                                    |
+| Badge          | [0..1]                                                                                                              |
 
 ### Dataset - Review Keys - badge
 |                |                                                                                                        |
@@ -498,7 +498,7 @@ If a value is not yet available, use: `ToDo`.
 | Key            | **badge**                                                                                              |
 | Description    | A badge of either Iron, Bronze, Silver, Gold or Platinum is used to label the quality of the metadata. |
 | Example        | Platinum                                                                                               |
-| Ontology Class | [oeo:quality control flag](https://openenergyplatform.org/ontology/oeo/OEO_00140098/)                  |
+| Ontology Class | [oeo:quality control flag](https://openenergyplatform.org/ontology/oeo/OEO_00140098)                   |
 | Badge          | [0..1]                                                                                                 |
 
 
@@ -525,14 +525,14 @@ If a value is not yet available, use: `ToDo`.
 | Card.          | [0..1]                                                                                                                                                                                  |
 
 ### Resources - General - path
-|                |                                                                                                                            |
-|----------------|----------------------------------------------------------------------------------------------------------------------------|
-| Key            | path                                                                                                                       |
-| Description    | A unique identifier (URI/UUID/DOI) for the table or file.                                                                  |
-| Example        | [model_draft/oemetadata_table_template](http://openenergyplatform.org/dataedit/view/model_draft/oemetadata_table_template) |
-| Ontology Class | [dcat:accessURL](https://www.w3.org/ns/dcat#accessURL)                                                                     |
-| Badge          | Bronze                                                                                                                     |
-| Card.          | [0..1]                                                                                                                     |
+|                |                                                                                                                             |
+|----------------|-----------------------------------------------------------------------------------------------------------------------------|
+| Key            | path                                                                                                                        |
+| Description    | A unique identifier (URI/UUID/DOI) for the table or file.                                                                   |
+| Example        | [model_draft/oemetadata_table_template](https://openenergyplatform.org/dataedit/view/model_draft/oemetadata_table_template) |
+| Ontology Class | [dcat:accessURL](https://www.w3.org/ns/dcat#accessURL)                                                                      |
+| Badge          | Bronze                                                                                                                      |
+| Card.          | [0..1]                                                                                                                      |
 
 ### Resources - General - name
 |                |                                                            |
@@ -694,15 +694,15 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                                                                                            |
 | Card.          | [0..1]                                                                                                            |
 
-### Resources - Spatial - location (id)
-|                |                                                                             |
-|----------------|-----------------------------------------------------------------------------|
-| Key            | id                                                                          |
-| Description    | A path or URI to a specific location. It can use Wikidata or OpenStreetMap. |
-| Example        | [www.wikidata.org/wiki/Q77077223](https://www.wikidata.org/wiki/Q77077223)  |
-| Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)                       |
-| Badge          | Platinum                                                                    |
-| Card.          | [0..1]                                                                      |
+### Resources - Spatial - location (iri)
+|                |                                                                                                                                                             |
+|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Key            | iri                                                                                                                                                         |
+| Description    | The IRI of the location in an external knowledge base. A Wikidata entity IRI is preferred; an OpenStreetMap element may be used if no Wikidata item exists. |
+| Example        | [http://www.wikidata.org/entity/Q77077223](http://www.wikidata.org/entity/Q77077223)                                                                        |
+| Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)                                                                                                       |
+| Badge          | Platinum                                                                                                                                                    |
+| Card.          | [0..1]                                                                                                                                                      |
 
 ### Resources - Spatial - location (latitude)
 |                |                                                 |
@@ -744,15 +744,15 @@ If a value is not yet available, use: `ToDo`.
 | Badge          | Silver                                                     |
 | Card.          | [0..1]                                                     |
 
-### Resources - Spatial - extent (id)
-|                |                                                                |
-|----------------|----------------------------------------------------------------|
-| Key            | id                                                             |
-| Description    | A URI reference for the region.                                |
-| Example        | [www.wikidata.org/wiki/Q64](https://www.wikidata.org/wiki/Q64) |
-| Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)          |
-| Badge          | Platinum                                                       |
-| Card.          | [0..1]                                                         |
+### Resources - Spatial - extent (iri)
+|                |                                                                                    |
+|----------------|------------------------------------------------------------------------------------|
+| Key            | iri                                                                                |
+| Description    | The IRI of the region covered by the resource. A Wikidata entity IRI is preferred. |
+| Example        | [http://www.wikidata.org/entity/Q64](http://www.wikidata.org/entity/Q64)           |
+| Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)                              |
+| Badge          | Platinum                                                                           |
+| Card.          | [0..1]                                                                             |
 
 ### Resources - Spatial - extent (resolutionValue)
 |                |                                                                                       |
@@ -765,14 +765,14 @@ If a value is not yet available, use: `ToDo`.
 | Card.          | [0..1]                                                                                |
 
 ### Resources - Spatial - extent (resolutionUnit)
-|                |                                                                     |
-|----------------|---------------------------------------------------------------------|
-| Key            | resolutionUnit                                                      |
-| Description    | The unit of the spatial resolution.                                 |
-| Example        | m                                                                   |
-| Ontology Class | [oeo:unit](http://openenergyplatform.org/ontology/oeo/OEO_00010489) |
-| Badge          | Silver                                                              |
-| Card.          | [0..1]                                                              |
+|                |                                                                      |
+|----------------|----------------------------------------------------------------------|
+| Key            | resolutionUnit                                                       |
+| Description    | The unit of the spatial resolution.                                  |
+| Example        | m                                                                    |
+| Ontology Class | [oeo:unit](https://openenergyplatform.org/ontology/oeo/OEO_00010489) |
+| Badge          | Silver                                                               |
+| Card.          | [0..1]                                                               |
 
 ### Resources - Spatial - extent (boundingBox)
 |                |                                                                                                                               |
@@ -855,14 +855,14 @@ If a value is not yet available, use: `ToDo`.
 | Card.          | [0..1]                                                                                             |
 
 ### Resources - Temporal - timeseries (resolutionUnit)
-|                |                                                                     |
-|----------------|---------------------------------------------------------------------|
-| Key            | resolutionUnit                                                      |
-| Description    | The unit of the temporal resolution.                                |
-| Example        | 30 s                                                                |
-| Ontology Class | [oeo:unit](http://openenergyplatform.org/ontology/oeo/OEO_00010489) |
-| Badge          | Silver                                                              |
-| Card.          | [0..1]                                                              |
+|                |                                                                      |
+|----------------|----------------------------------------------------------------------|
+| Key            | resolutionUnit                                                       |
+| Description    | The unit of the temporal resolution.                                 |
+| Example        | 30 s                                                                 |
+| Ontology Class | [oeo:unit](https://openenergyplatform.org/ontology/oeo/OEO_00010489) |
+| Badge          | Silver                                                               |
+| Card.          | [0..1]                                                               |
 
 ### Resources - Temporal - timeseries (alignment)
 |                |                                                                                              |
@@ -870,19 +870,19 @@ If a value is not yet available, use: `ToDo`.
 | Key            | alignment                                                                                    |
 | Description    | An indicator of whether timestamps in a time series are to the left, right or in the centre. |
 | Example        | left                                                                                         |
-| Ontology Class | [oeo:time stamp alignment](http://openenergyplatform.org/ontology/oeo/OEO_00140044)          |
+| Ontology Class | [oeo:time stamp alignment](https://openenergyplatform.org/ontology/oeo/OEO_00140044)         |
 | Badge          | Silver                                                                                       |
 | Card.          | [0..1]                                                                                       |
 
 ### Resources - Temporal - timeseries (aggregationType)
-|                |                                                                                   |
-|----------------|-----------------------------------------------------------------------------------|
-| Key            | aggregationType                                                                   |
-| Description    | An indicator of whether the values are a sum, an average or a current value.      |
-| Example        | current                                                                           |
-| Ontology Class | [oeo:aggregation type](https://openenergyplatform.org/ontology/oeo/OEO_00140068/) |
-| Badge          | Silver                                                                            |
-| Card.          | [0..1]                                                                            |
+|                |                                                                                  |
+|----------------|----------------------------------------------------------------------------------|
+| Key            | aggregationType                                                                  |
+| Description    | An indicator of whether the values are a sum, an average or a current value.     |
+| Example        | current                                                                          |
+| Ontology Class | [oeo:aggregation type](https://openenergyplatform.org/ontology/oeo/OEO_00140068) |
+| Badge          | Silver                                                                           |
+| Card.          | [0..1]                                                                           |
 
 ## Resources - Sources
 
@@ -907,14 +907,14 @@ If a value is not yet available, use: `ToDo`.
 | Card.          | [0..1]                                                                       |
 
 ### Resources - sources - authors
-|                |                                                                         |
-|----------------|-------------------------------------------------------------------------|
-| Key            | authors                                                                 |
-| Description    | An array of the full names of the authors of the source material.       |
-| Example        | Hoesung Lee, José Romero, The Core Writing Team                         |
-| Ontology Class | [oeo:author](https://openenergyplatform.org/ontology/oeo/OEO_00000064/) |
-| Badge          | Bronze                                                                  |
-| Card.          | [*]                                                                     |
+|                |                                                                        |
+|----------------|------------------------------------------------------------------------|
+| Key            | authors                                                                |
+| Description    | An array of the full names of the authors of the source material.      |
+| Example        | Hoesung Lee, José Romero, The Core Writing Team                        |
+| Ontology Class | [oeo:author](https://openenergyplatform.org/ontology/oeo/OEO_00000064) |
+| Badge          | Bronze                                                                 |
+| Card.          | [*]                                                                    |
 
 ### Resources - sources - description
 |                |                                                           |
@@ -927,14 +927,14 @@ If a value is not yet available, use: `ToDo`.
 | Card.          | [0..1]                                                    |
 
 ### Resources - sources - publicationYear
-|                |                                                 |
-|----------------|-------------------------------------------------|
-| Key            | publicationYear                                 |
-| Description    | Indicates the year when the work was published. |
-| Example        | 2023                                            |
-| Ontology Class | [dct:issued](http://purl.org/dc/terms/issued)   |
-| Badge          | Bronze                                          |
-| Card.          | [0..1]                                          |
+|                |                                                                            |
+|----------------|----------------------------------------------------------------------------|
+| Key            | publicationYear                                                            |
+| Description    | Indicates the year when the work was published.                            |
+| Example        | 2023                                                                       |
+| Ontology Class | [fabio:hasPublicationYear](http://purl.org/spar/fabio/hasPublicationYear)  |
+| Badge          | Bronze                                                                     |
+| Card.          | [0..1]                                                                     |
 
 ### Resources - sources - path
 |                |                                                                                                                |
@@ -1181,7 +1181,7 @@ If a value is not yet available, use: `ToDo`.
 | Key            | **unit**                                                                                                                                                                            |
 | Description    | The unit of a field. If it does not apply, use 'null'. If the unit is given in a separate field, reference this field (e.g. 'unit'). Use a space between numbers and units (100 m). |
 | Example        | MW                                                                                                                                                                                  |
-| Ontology Class | [oeo:has unit](https://openenergyplatform.org/ontology/oeo/OEO_00040010/)                                                                                                           |
+| Ontology Class | [oeo:has unit](https://openenergyplatform.org/ontology/oeo/OEO_00040010)                                                                                                            |
 | Badge          | Silver                                                                                                                                                                              |
 | Card.          | [0..1]                                                                                                                                                                              |
 
@@ -1199,7 +1199,7 @@ If a value is not yet available, use: `ToDo`.
 |                |                                                            |
 |----------------|------------------------------------------------------------|
 | Key            | **name**                                                   |
-| Description    | The class label of the ontology term.                      |
+| Description    | The label of the term, as given by the source of the IRI.  |
 | Example        | wind energy converting unit                                |
 | Ontology Class | [rdfs:label](https://www.w3.org/2000/01/rdf-schema#/label) |
 | Badge          | Platinum                                                   |
@@ -1209,7 +1209,7 @@ If a value is not yet available, use: `ToDo`.
 |                |                                                                               |
 |----------------|-------------------------------------------------------------------------------|
 | Key            | **iri**                                                                       |
-| Description    | The path of the ontology term (IRI).                                          |
+| Description    | The IRI of the ontology term that describes the content of the column.        |
 | Example        | [OEO_00000044](https://openenergyplatform.org/ontology/oeo/OEO_00000044)      |
 | Ontology Class | [rdf:object](http://www.w3.org/1999/02/22-rdf-syntax-ns#object) (reification) |
 | Badge          | Platinum                                                                      |
@@ -1249,7 +1249,7 @@ If a value is not yet available, use: `ToDo`.
 |                |                                                            |
 |----------------|------------------------------------------------------------|
 | Key            | **name**                                                   |
-| Description    | The class label of the ontology term in the column.        |
+| Description    | The label of the term, as given by the source of the IRI.  |
 | Example        | onshore wind farm                                          |
 | Ontology Class | [rdfs:label](https://www.w3.org/2000/01/rdf-schema#/label) |
 | Badge          | Platinum                                                   |
@@ -1259,7 +1259,7 @@ If a value is not yet available, use: `ToDo`.
 |                |                                                                          |
 |----------------|--------------------------------------------------------------------------|
 | Key            | **iri**                                                                  |
-| Description    | The path of the ontology term (IRI) in the column.                       |
+| Description    | The IRI of the ontology term that describes the value in the column.     |
 | Example        | [OEO_00000311](https://openenergyplatform.org/ontology/oeo/OEO_00000311) |
 | Ontology Class | [dct:identifier](http://purl.org/dc/terms/identifier)                    |
 | Badge          | Platinum                                                                 |
@@ -1365,13 +1365,13 @@ If a value is not yet available, use: `ToDo`.
 | Card.          | [0..1]                                                                                                                                                                                                       |
 
 ### Resources - Review Keys - path
-|                |                                                                                                                      |
-|----------------|----------------------------------------------------------------------------------------------------------------------|
-| Key            | **path**                                                                                                             |
-| Description    | A link or path to the documented open peer review.                                                                   |
-| Example        | [open_peer_review/9](https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/9/) |
-| Ontology Class | [sc:url](https://schema.org/url)                                                                                     |
-| Card.          | [0..1]                                                                                                               |
+|                |                                                                                                                     |
+|----------------|---------------------------------------------------------------------------------------------------------------------|
+| Key            | **path**                                                                                                            |
+| Description    | A link or path to the documented open peer review.                                                                  |
+| Example        | [open_peer_review/9](https://openenergyplatform.org/dataedit/view/model_draft/oep_table_example/open_peer_review/9) |
+| Ontology Class | [sc:url](https://schema.org/url)                                                                                    |
+| Card.          | [0..1]                                                                                                              |
 
 ### Resources - Review Keys - badge
 |                |                                                                                                        |
@@ -1379,7 +1379,7 @@ If a value is not yet available, use: `ToDo`.
 | Key            | **badge**                                                                                              |
 | Description    | A badge of either Iron, Bronze, Silver, Gold or Platinum is used to label the quality of the metadata. |
 | Example        | Platinum                                                                                               |
-| Ontology Class | [oeo:quality control flag](https://openenergyplatform.org/ontology/oeo/OEO_00140098/)                  |
+| Ontology Class | [oeo:quality control flag](https://openenergyplatform.org/ontology/oeo/OEO_00140098)                   |
 | Card.          | [0..1]                                                                                                 |
 
 

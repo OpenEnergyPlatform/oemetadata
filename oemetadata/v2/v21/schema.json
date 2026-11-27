@@ -88,25 +88,25 @@
       "type": "object",
       "properties": {
         "name": {
-          "description": "The name of the spatial coverage of the dataset.",
+          "description": "The label of the term, as given by the source of the IRI.",
           "type": [
             "string",
             "null"
           ],
           "examples": [
-            "Europe"
+            "European Union"
           ],
           "badge": "Silver",
           "title": "Dataset Extent Name"
         },
-        "id": {
-          "description": "A URI reference for the region of the dataset.",
+        "iri": {
+          "description": "The IRI of the region covered by the dataset. A Wikidata entity IRI is preferred.",
           "type": [
             "string",
             "null"
           ],
           "examples": [
-            "https://www.wikidata.org/wiki/Q458"
+            "http://www.wikidata.org/entity/Q458"
           ],
           "format": "uri",
           "badge": "Platinum",
@@ -188,8 +188,8 @@
             "badge": "Platinum",
             "title": "Subject Name"
           },
-          "id": {
-            "description": "A unique identifier (URI/IRI) of the ontology class.",
+          "iri": {
+            "description": "The IRI of the ontology class that describes the subject. An OEO class is preferred.",
             "type": [
               "string",
               "null"
@@ -326,7 +326,7 @@
             "null"
           ],
           "examples": [
-            " Deutsche Forschungsgemeinschaft (DFG)"
+            "Deutsche Forschungsgemeinschaft (DFG)"
           ],
           "badge": "Gold",
           "title": "Funding Agency"
@@ -477,7 +477,7 @@
             "type": "object",
             "properties": {
               "name": {
-                "description": "A class label of the ontology term.",
+                "description": "The label of the term, as given by the source of the IRI.",
                 "type": [
                   "string",
                   "null"
@@ -488,8 +488,8 @@
                 "badge": "Module",
                 "title": "Supply Technologies Subject Name"
               },
-              "@id": {
-                "description": "A unique identifier (URI/IRI) of the ontology class.",
+              "iri": {
+                "description": "The IRI of the OEO class of the supply technology.",
                 "type": [
                   "string",
                   "null"
@@ -515,7 +515,7 @@
             "type": "object",
             "properties": {
               "name": {
-                "description": "A class label of the ontology term.",
+                "description": "The label of the term, as given by the source of the IRI.",
                 "type": [
                   "string",
                   "null"
@@ -526,8 +526,8 @@
                 "badge": "Module",
                 "title": "Storage Technologies Subject Name"
               },
-              "@id": {
-                "description": "A unique identifier (URI/IRI) of the ontology class.",
+              "iri": {
+                "description": "The IRI of the OEO class of the storage technology.",
                 "type": [
                   "string",
                   "null"
@@ -553,7 +553,7 @@
             "type": "object",
             "properties": {
               "name": {
-                "description": "A class label of the ontology term.",
+                "description": "The label of the term, as given by the source of the IRI.",
                 "type": [
                   "string",
                   "null"
@@ -564,8 +564,8 @@
                 "badge": "Module",
                 "title": "Supply Grid Subject Name"
               },
-              "@id": {
-                "description": "A unique identifier (URI/IRI) of the ontology class.",
+              "iri": {
+                "description": "The IRI of the OEO class of the supply grid.",
                 "type": [
                   "string",
                   "null"
@@ -591,7 +591,7 @@
             "type": "object",
             "properties": {
               "name": {
-                "description": "A class label of the ontology term.",
+                "description": "The label of the term, as given by the source of the IRI.",
                 "type": [
                   "string",
                   "null"
@@ -602,8 +602,8 @@
                 "badge": "Module",
                 "title": "Final Energy Carrier Subject Name"
               },
-              "@id": {
-                "description": "A unique identifier (URI/IRI) of the ontology class.",
+              "iri": {
+                "description": "The IRI of the OEO class of the final energy carrier.",
                 "type": [
                   "string",
                   "null"
@@ -629,7 +629,7 @@
             "type": "object",
             "properties": {
               "name": {
-                "description": "A class label of the ontology term.",
+                "description": "The label of the term, as given by the source of the IRI.",
                 "type": [
                   "string",
                   "null"
@@ -640,8 +640,8 @@
                 "badge": "Module",
                 "title": "Demand Sectors Subject Name"
               },
-              "@id": {
-                "description": "A unique identifier (URI/IRI) of the ontology class.",
+              "iri": {
+                "description": "The IRI of the OEO class of the demand sector.",
                 "type": [
                   "string",
                   "null"
@@ -661,13 +661,13 @@
           "title": "Demand Sectors"
         },
         "moduleDescription": {
-          "description": "A description of the module. It should be usable as summary information for the module that is described by the metadata.",
+          "description": "A short human-readable comment on the module.",
           "type": [
             "string",
             "null"
           ],
           "examples": [
-            "Example module for an energy system dataset"
+            "Example module for an energy system dataset."
           ],
           "badge": "Module",
           "title": "Energy Systems Module Description"
@@ -744,7 +744,7 @@
             "title": "Manufacturer Name"
           },
           "moduleDescription": {
-            "description": "A description of the module. It should be usable as summary information for the module that is described by the metadata.",
+            "description": "A short human-readable comment on the module.",
             "type": "string",
             "examples": [
               "Example instrument of PIDINST schema."
@@ -826,7 +826,7 @@
             "title": "Software Type (ERSmeta)"
           },
           "moduleDescription": {
-            "description": "A description of the module. It should be usable as summary information for the module that is described by the metadata.",
+            "description": "A short human-readable comment on the module.",
             "type": [
               "string",
               "null"

@@ -32,6 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add tests for datapackage [(#326)](https://github.com/OpenEnergyPlatform/oemetadata/pull/326)
 - Add context definition for isAbout [(#329)](https://github.com/OpenEnergyPlatform/oemetadata/pull/329)
 - Add documentation for mappingRelation property in the schema [(#329)](https://github.com/OpenEnergyPlatform/oemetadata/pull/329)
+- Script to create JSON-LD graphs and tests for the graphs [(#330)](https://github.com/OpenEnergyPlatform/oemetadata/pull/330)
 
 ### Changed
 - Update TLDR URL in example sourceLicenses [(#275)](https://github.com/OpenEnergyPlatform/oemetadata/pull/275)
@@ -44,6 +45,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update requirements and versions in the codecov workflow [(#324)](https://github.com/OpenEnergyPlatform/oemetadata/pull/324)
 - Update existing test cases [(#326)](https://github.com/OpenEnergyPlatform/oemetadata/pull/326)
 - Update semantics of isAbout using RDF reification [(#329)](https://github.com/OpenEnergyPlatform/oemetadata/pull/329)
+- Update, improve and sort `context.json` [(#330)](https://github.com/OpenEnergyPlatform/oemetadata/pull/330)
 
 ### Removed
 

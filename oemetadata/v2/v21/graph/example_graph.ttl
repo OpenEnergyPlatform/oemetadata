@@ -1,0 +1,355 @@
+PREFIX EPSG: <http://www.opengis.net/def/crs/EPSG/0/>
+PREFIX csvw: <http://www.w3.org/ns/csvw#>
+PREFIX databus: <https://dataid.dbpedia.org/databus#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX oeo: <https://openenergyplatform.org/ontology/oeo/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sc: <http://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sssom: <http://w3id.org/sssom/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<http://openenergyplatform.org/ontology/oeo/OEO_00010424>
+    rdfs:label "wind power technology"^^xsd:string ;
+    rdf:predicate skos:exactMatch ;
+    rdf:value "wind"^^xsd:string ;
+.
+
+<https://creativecommons.org/publicdomain/zero/1.0>
+    rdfs:label "CC0-1.0"^^xsd:string ;
+    dct:title "Creative Commons Zero v1.0 Universal"^^xsd:string ;
+.
+
+<https://openenergyplatform.org/ontology/oeo/OEO_00000308/>
+    rdfs:label "offshore wind farm"^^xsd:string ;
+    rdf:predicate skos:exactMatch ;
+    rdf:value "offshore"^^xsd:string ;
+.
+
+<https://openenergyplatform.org/ontology/oeo/OEO_00000311/>
+    rdfs:label "onshore wind farm"^^xsd:string ;
+    rdf:predicate skos:exactMatch ;
+    rdf:value "onshore"^^xsd:string ;
+.
+
+<https://openenergyplatform.org/database/>
+    sc:ratingValue "Platinum"^^xsd:string ;
+.
+
+[]    sssom:object_label "wind farm"^^xsd:string ;
+    rdf:object <https://openenergyplatform.org/ontology/oeo/OEO_00000447/> ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject _:cb190eb92acca92123c587027f98e87321358e1ef09e4a55b2a6f4993fc9daee738 ;
+.
+
+[]    sssom:object_label "identifier"^^xsd:string ;
+    rdf:object obo:IAO_0020000 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject _:cb1ac3a701e375e7ed4962917242083aeeab9b82b2666615991b89b89c26ab3257c ;
+.
+
+[]    sssom:object_label "version number"^^xsd:string ;
+    rdf:object obo:IAO_0000129 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject _:cb193fcdfe98f4fc0d5120aea1622c722dcf5f7b6ddfff09c37766f39c39a39c599 ;
+.
+
+[]    sssom:object_label "Operating Mode Status"^^xsd:string ;
+    rdf:object <https://ontology.brickschema.org/brick/Operating_Mode_Status> ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject _:cb31b69fe007e86b3c7476bdf915b4f1cadef6edc8d5a12e0b2412db00c62752b97 ;
+.
+
+[]    sssom:object_label "year"^^xsd:string ;
+    rdf:object <https://openenergyplatform.org/ontology/oeo/UO_0000036/> ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject _:cb14608078563e69e181c26d1a85d63a416103f6d93bbab096aee1e7071a559e8c7 ;
+.
+
+[]    sssom:object_label "nameplate capacity"^^xsd:string ;
+    rdf:object <https://openenergyplatform.org/ontology/oeo/OEO_00230003/> ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject _:cb1c7895cb051a8bab02b90eb9e299c0209e73dbc9b1f5200f918ecfe71b971ade6 ;
+.
+
+[]    sssom:object_label "comment"^^xsd:string ;
+    rdf:object <http://semanticscience.org/resource/SIO_001167> ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject _:cb1701e941a0a26b7817d5970caba1544b0286f20955eb8a2fc0bc2a2d9a088b734 ;
+.
+
+[]    dct:conformsTo <https://github.com/OpenEnergyPlatform/oemetadata/releases/tag/v2.1.0> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0> ;
+    foaf:primaryTopic
+        [
+            rdfs:label "oep_oemetadata"^^xsd:string ;
+            dct:contributor (
+
+                [
+                    obo:RO_0000087 "Creator"^^xsd:string ;
+                    dct:modified "2026-04-09"^^xsd:date ;
+                    dct:title "Ludwig Hülk"^^xsd:string ;
+                    dct:type "dataset"^^xsd:string ;
+                    sc:memberOf "Reiner Lemoine Institut"^^xsd:string ;
+                    rdfs:comment "Date of dataset creation"^^xsd:string ;
+                    dcat:accessURL <https://github.com/Ludee> ;
+                ]
+
+                [
+                    obo:RO_0000087 "DataCollector"^^xsd:string ;
+                    dct:modified "2024-11-19"^^xsd:date ;
+                    dct:title "Ludwig Hülk"^^xsd:string ;
+                    dct:type "data"^^xsd:string ;
+                    sc:memberOf "Reiner Lemoine Institut"^^xsd:string ;
+                    rdfs:comment "Date of data creation"^^xsd:string ;
+                    dcat:accessURL <https://github.com/Ludee> ;
+                ]
+
+                [
+                    obo:RO_0000087 "DataCurator"^^xsd:string ;
+                    dct:modified "2024-11-30"^^xsd:date ;
+                    dct:title "Ludwig Hülk"^^xsd:string ;
+                    dct:type "metadata"^^xsd:string ;
+                    sc:memberOf "Reiner Lemoine Institut"^^xsd:string ;
+                    rdfs:comment "Date of metadata creation"^^xsd:string ;
+                    dcat:accessURL <https://github.com/Ludee> ;
+                ]
+            ) ;
+            dct:date "2020-01-01"^^xsd:date ;
+            dct:description "A dataset for the OEMetadata examples."^^xsd:string ;
+            dct:language
+                "de-DE"^^xsd:string ,
+                "en-GB"^^xsd:string ;
+            dct:license
+                [
+                    rdfs:label "ODbL-1.0"^^xsd:string ;
+                    dct:rights "https://github.com/OpenEnergyPlatform/oemetadata/blob/production/LICENSE.txt"^^xsd:string ;
+                    dct:rightsHolder "© Reiner Lemoine Institut"^^xsd:string ;
+                    dct:title "Open Data Commons Open Database License 1.0"^^xsd:string ;
+                    rdfs:comment "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information."^^xsd:string ;
+                    dcat:accessURL <https://opendatacommons.org/licenses/odbl/1-0/index.html> ;
+                ] ;
+            dct:spatial
+                [
+                    rdfs:label "European Union"^^xsd:string ;
+                    sc:sameAs <http://www.wikidata.org/entity/Q458> ;
+                ] ;
+            dct:subject
+                [
+                    rdfs:label "energy"^^xsd:string ;
+                    sc:sameAs oeo:OEO_00000150 ;
+                ] ;
+            dct:title "OEP OEMetadata Dataset"^^xsd:string ;
+            sc:image "https://openenergyplatform.org/static/img/about/OpenEnergyFamily_GroupPhoto2.png"^^xsd:anyURI ;
+            sc:review <https://openenergyplatform.org/database/> ;
+            dcat:accessURL <https://openenergyplatform.org/database/tables/oemetadata_table_template> ;
+            dcat:dataset
+                [
+                    rdfs:label "oemetadata_table_example"^^xsd:string ;
+                    dct:dateSubmitted "2024-10-11"^^xsd:date ;
+                    dct:description "Example metadata and table used to illustrate the OEMetadata structure and features."^^xsd:string ;
+                    dct:format "csv"^^xsd:string ;
+                    dct:identifier "example.csv"^^xsd:string ;
+                    dct:issued "2024-10-15"^^xsd:date ;
+                    dct:license
+                        [
+                            rdfs:label "ODbL-1.0"^^xsd:string ;
+                            dct:rights "https://github.com/OpenEnergyPlatform/oemetadata/blob/production/LICENSE.txt"^^xsd:string ;
+                            dct:rightsHolder "© Reiner Lemoine Institut"^^xsd:string ;
+                            dct:title "Open Data Commons Open Database License 1.0"^^xsd:string ;
+                            rdfs:comment "You are free to share and change, but you must attribute, and share derivations under the same license. See https://tldrlegal.com/license/odc-open-database-license-(odbl) for further information."^^xsd:string ;
+                            dcat:accessURL <https://opendatacommons.org/licenses/odbl/1-0/index.html> ;
+                        ] ;
+                    dct:source
+                        [
+                            dct:description "A Report of the Intergovernmental Panel on Climate Change."^^xsd:string ;
+                            dct:license
+                                [
+                                    rdfs:label "CC-BY-4.0"^^xsd:string ;
+                                    dct:rights "https://www.ipcc.ch/copyright/"^^xsd:string ;
+                                    dct:rightsHolder "© Intergovernmental Panel on Climate Change 2023"^^xsd:string ;
+                                    dct:title "Creative Commons Attribution 4.0 International"^^xsd:string ;
+                                    rdfs:comment "You are free to share and change, but you must attribute. See https://www.tldrlegal.com/license/creative-commons-attribution-4-0-international-cc-by-4 for further information."^^xsd:string ;
+                                    dcat:accessURL <https://creativecommons.org/licenses/by/4.0/legalcode> ;
+                                ] ;
+                            dct:title "IPCC Sixth Assessment Report (AR6) - Climate Change 2023 - Synthesis Report"^^xsd:string ;
+                            fabio:hasPublicationYear "2023"^^xsd:gYear ;
+                            sc:author
+                                "Hoesung Lee"^^xsd:string ,
+                                "José Romero"^^xsd:string ,
+                                "The Core Writing Team"^^xsd:string ;
+                            dcat:accessURL "https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf"^^xsd:anyURI ;
+                        ] ;
+                    dct:spatial
+                        [
+                            rdfs:label "Berlin"^^xsd:string ;
+                            dct:conformsTo EPSG:4326 ;
+                            sc:sameAs <http://www.wikidata.org/entity/Q64> ;
+                            dcat:bbox (
+                                13.08825
+                                52.33859
+                                13.76104
+                                52.6754
+                            ) ;
+                            dcat:spatialResolutionInMeters 100.0 ;
+                            oeo:OEO_00040010 "m"^^xsd:string ;
+                        ] ;
+                    dct:subject
+                        [
+                            rdfs:label "energy"^^xsd:string ;
+                            sc:sameAs oeo:OEO_00000150 ;
+                        ] ;
+                    dct:temporal
+                        [
+                            dbo:endDateTime "2020-01-01T23:59:30+01:00"^^xsd:dateTime ;
+                            dbo:startDateTime "2020-01-01T00:00:00+01:00"^^xsd:dateTime ;
+                            dct:date "2020-01-01"^^xsd:date ;
+                            dct:format "left"^^xsd:string ;
+                            dcat:temporalResolution 15.0 ;
+                            oeo:OEO_00040010 "min"^^xsd:string ;
+                            oeo:OEO_00140068 "current"^^xsd:string ;
+                        ] ;
+                    dct:title "OEMetadata Table Example"^^xsd:string ;
+                    dct:type "table"^^xsd:string ;
+                    fabio:hasEmbargoDate "2025-01-01"^^xsd:date ;
+                    sc:location
+                        [
+                            sc:address "Rudower Chaussee 12, 12489 Berlin"^^xsd:string ;
+                            sc:latitude 52.432822 ;
+                            sc:longitude 13.5351004 ;
+                            sc:sameAs <http://www.wikidata.org/entity/Q77077223> ;
+                        ] ;
+                    sc:review <https://openenergyplatform.org/database/> ;
+                    csvw:decimalChar "."^^xsd:string ;
+                    csvw:delimiter ";"^^xsd:string ;
+                    csvw:encoding "UTF-8"^^xsd:string ;
+                    csvw:tableSchema
+                        [
+                            csvw:column (
+                                _:cb1ac3a701e375e7ed4962917242083aeeab9b82b2666615991b89b89c26ab3257c
+                                _:cb1c3c0b5cfbe6072eac10f26ed14a9071ac01c5e242f966db953342697c3c9d0cf
+                                _:cb190eb92acca92123c587027f98e87321358e1ef09e4a55b2a6f4993fc9daee738
+                                _:cb14608078563e69e181c26d1a85d63a416103f6d93bbab096aee1e7071a559e8c7
+                                _:cb1c7895cb051a8bab02b90eb9e299c0209e73dbc9b1f5200f918ecfe71b971ade6
+                                _:cb31b69fe007e86b3c7476bdf915b4f1cadef6edc8d5a12e0b2412db00c62752b97
+                                _:cb193fcdfe98f4fc0d5120aea1622c722dcf5f7b6ddfff09c37766f39c39a39c599
+                                _:cb1701e941a0a26b7817d5970caba1544b0286f20955eb8a2fc0bc2a2d9a088b734
+                            ) ;
+                            csvw:foreignKey
+                                [
+                                    csvw:column (
+                                        "version"^^xsd:string
+                                    ) ;
+                                    csvw:reference
+                                        [
+                                            csvw:column (
+                                                "version"^^xsd:string
+                                            ) ;
+                                            csvw:resource "example_version.csv"^^xsd:string ;
+                                        ] ;
+                                ] ;
+                            csvw:primaryKey "id"^^xsd:string ;
+                        ] ;
+                    dcat:keyword
+                        "NFDI4Energy"^^xsd:string ,
+                        "ODbL-1.0"^^xsd:string ,
+                        "example"^^xsd:string ;
+                    foaf:topic "model_draft"^^xsd:string ;
+                    databus:artifact <https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database/2022-11-07/wri_global_power_plant_database_variant=data.csv> ;
+                ] ;
+            dcat:keyword
+                "NFDI4Energy"^^xsd:string ,
+                "ODbL-1.0"^^xsd:string ,
+                "example"^^xsd:string ;
+            dcat:version "0.1.0"^^xsd:string ;
+            prov:wasGeneratedBy
+                [
+                    dct:publisher "Open Energy Platform (OEP)"^^xsd:string ;
+                    dct:title "NFDI4Energy"^^xsd:string ;
+                    sc:codeRepository <https://github.com/NFDI4Energy> ;
+                    sc:email "contact@example.com"^^xsd:string ;
+                    sc:funder "Deutsche Forschungsgemeinschaft (DFG)"^^xsd:string ;
+                    sc:funding "501865131"^^xsd:string ;
+                    sc:logo <https://upload.wikimedia.org/wikipedia/commons/8/86/DFG-logo-blau.svg> ;
+                    rdfs:seeAlso <https://nfdi4energy.uol.de/sites/about_us/> ;
+                    foaf:homepage <https://nfdi4energy.uol.de/> ;
+                    foaf:logo <https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg> ;
+                ] ;
+            prov:wasInfluencedBy
+                [
+                    sc:applicationCategory "Library"^^xsd:string ;
+                    sc:name "open-mastr"^^xsd:string ;
+                    sc:programmingLanguage "Python"^^xsd:string ;
+                    sc:softwareVersion "0.17.1"^^xsd:string ;
+                    sc:url <https://github.com/OpenEnergyPlatform/open-MaStR> ;
+                    rdfs:comment "Example data transformation software."^^xsd:string ;
+                ] ;
+            databus:artifact <https://databus.openenergyplatform.org/oeplatform/supply/wri_global_power_plant_database> ;
+        ] ;
+.
+
+[]    sssom:object_label "power generation technology"^^xsd:string ;
+    rdf:object <http://openenergy-platform.org/ontology/oeo/OEO_00010423> ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject _:cb1c3c0b5cfbe6072eac10f26ed14a9071ac01c5e242f966db953342697c3c9d0cf ;
+.
+
+_:cb14608078563e69e181c26d1a85d63a416103f6d93bbab096aee1e7071a559e8c7
+    rdfs:label "year"^^xsd:string ;
+    dct:description "Reference year"^^xsd:string ;
+    csvw:datatype "integer"^^xsd:string ;
+.
+
+_:cb1701e941a0a26b7817d5970caba1544b0286f20955eb8a2fc0bc2a2d9a088b734
+    rdfs:label "comment"^^xsd:string ;
+    dct:description "Comment"^^xsd:string ;
+    csvw:datatype "string"^^xsd:string ;
+.
+
+_:cb190eb92acca92123c587027f98e87321358e1ef09e4a55b2a6f4993fc9daee738
+    rdfs:label "type"^^xsd:string ;
+    dct:description "Type of wind farm"^^xsd:string ;
+    csvw:datatype "string"^^xsd:string ;
+    prov:value
+        <https://openenergyplatform.org/ontology/oeo/OEO_00000308/> ,
+        <https://openenergyplatform.org/ontology/oeo/OEO_00000311/> ;
+.
+
+_:cb193fcdfe98f4fc0d5120aea1622c722dcf5f7b6ddfff09c37766f39c39a39c599
+    rdfs:label "version"^^xsd:string ;
+    dct:description "Version"^^xsd:string ;
+    csvw:datatype "string"^^xsd:string ;
+.
+
+_:cb1ac3a701e375e7ed4962917242083aeeab9b82b2666615991b89b89c26ab3257c
+    rdfs:label "id"^^xsd:string ;
+    dct:description "Unique identifier"^^xsd:string ;
+    csvw:datatype "integer"^^xsd:string ;
+.
+
+_:cb1c3c0b5cfbe6072eac10f26ed14a9071ac01c5e242f966db953342697c3c9d0cf
+    rdfs:label "name"^^xsd:string ;
+    dct:description "Technology Name"^^xsd:string ;
+    csvw:datatype "string"^^xsd:string ;
+    prov:value <http://openenergyplatform.org/ontology/oeo/OEO_00010424> ;
+.
+
+_:cb1c7895cb051a8bab02b90eb9e299c0209e73dbc9b1f5200f918ecfe71b971ade6
+    rdfs:label "value"^^xsd:string ;
+    dct:description "Bruttoleistung"^^xsd:string ;
+    csvw:datatype "number"^^xsd:string ;
+    oeo:OEO_00040010 "MW"^^xsd:string ;
+.
+
+_:cb31b69fe007e86b3c7476bdf915b4f1cadef6edc8d5a12e0b2412db00c62752b97
+    rdfs:label "is_active"^^xsd:string ;
+    dct:description "Betriebsstatus"^^xsd:string ;
+    csvw:datatype "boolean"^^xsd:string ;
+.

@@ -140,7 +140,7 @@
                       "title": "Is About Name"
                     },
                     "iri": {
-                      "description": "The path of the ontology term (IRI).",
+                      "description": "The IRI of the ontology term that describes the content of the column.",
                       "type": [
                         "string",
                         "null"
@@ -149,7 +149,7 @@
                         "https://openenergyplatform.org/ontology/oeo/OEO_00000044"
                       ],
                       "badge": "Platinum",
-                      "title": "Is About Identifier",
+                      "title": "Is About IRI",
                       "format": "uri"
                     },
                     "mappingRelation": {
@@ -210,7 +210,7 @@
                       "title": "Value Reference Name"
                     },
                     "iri": {
-                      "description": "The path of the ontology term (IRI) in the column.",
+                      "description": "The IRI of the ontology term that describes the value in the column.",
                       "type": [
                         "string",
                         "null"
@@ -219,7 +219,7 @@
                         "https://openenergyplatform.org/ontology/oeo/OEO_00000311"
                       ],
                       "badge": "Platinum",
-                      "title": "Value Reference Identifier",
+                      "title": "Value Reference IRI",
                       "format": "uri"
                     },
                     "mappingRelation": {

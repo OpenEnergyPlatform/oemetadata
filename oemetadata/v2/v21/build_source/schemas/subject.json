@@ -21,8 +21,8 @@
             "badge": "Platinum",
             "title": "Subject Name"
           },
-          "id": {
-            "description": "A unique identifier (URI/IRI) of the ontology class.",
+          "iri": {
+            "description": "The IRI of the ontology class that describes the subject. An OEO class is preferred.",
             "type": [
               "string",
               "null"

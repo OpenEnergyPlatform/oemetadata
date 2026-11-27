@@ -23,5 +23,10 @@ CONTEXT_PATH = VERSION_PATH / "context.json"
 EXAMPLE_PATH = VERSION_PATH / "example.json"
 EXAMPLE_MODULES_PATH = VERSION_PATH / "example_modules.json"
 TEMPLATE_PATH = VERSION_PATH / "template.json"
-GRAPH_PATH = VERSION_PATH / "graph.ttl"
+
+GRAPH_TTL_PATH = VERSION_PATH / "graph/example_graph.ttl"
+GRAPH_JSONLD_PATH = VERSION_PATH / "graph/example_graph.jsonld"
+GRAPH_MODULE_TTL_PATH = VERSION_PATH / "graph/example_graph_module.ttl"
+GRAPH_MODULE_JSONLD_PATH = VERSION_PATH / "graph/example_graph_module.jsonld"
+
 LATEST_PATH = Path("oemetadata/latest/")

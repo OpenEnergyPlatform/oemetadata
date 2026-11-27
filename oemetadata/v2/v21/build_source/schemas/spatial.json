@@ -23,8 +23,8 @@
               "badge": "Silver",
               "title": "Address"
             },
-            "id": {
-              "description": "An absolute IRI identifying the location in an external knowledge base. Wikidata concept IRI is preferred. OpenStreetMap elements may be used where no Wikidata item exists.",
+            "iri": {
+              "description": "The IRI of the location in an external knowledge base. A Wikidata entity IRI is preferred; an OpenStreetMap element may be used if no Wikidata item exists.",
               "type": [
                 "string",
                 "null"
@@ -80,14 +80,14 @@
               "badge": "Silver",
               "title": "Extent Name"
             },
-            "id": {
-              "description": "A URI reference for the region.",
+            "iri": {
+              "description": "The IRI of the region covered by the resource. A Wikidata entity IRI is preferred.",
               "type": [
                 "string",
                 "null"
               ],
               "examples": [
-                "https://www.wikidata.org/wiki/Q64"
+                "http://www.wikidata.org/entity/Q64"
               ],
               "format": "uri",
               "badge": "Platinum",
