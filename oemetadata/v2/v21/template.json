@@ -7,7 +7,7 @@
   "description": "",
   "spatialCoverage": {
     "name": "",
-    "id": ""
+    "iri": ""
   },
   "referenceDate": "",
   "languages": [
@@ -18,7 +18,7 @@
   "subject": [
     {
       "name": "",
-      "id": ""
+      "iri": ""
     }
   ],
   "keywords": [
@@ -53,31 +53,31 @@
     "supplyTechnologies": [
       {
         "name": "",
-        "@id": ""
+        "iri": ""
       }
     ],
     "storageTechnologies": [
       {
         "name": "",
-        "@id": ""
+        "iri": ""
       }
     ],
     "supplyGrid": [
       {
         "name": "",
-        "@id": ""
+        "iri": ""
       }
     ],
     "finalEnergyCarrier": [
       {
         "name": "",
-        "@id": ""
+        "iri": ""
       }
     ],
     "demandSectors": [
       {
         "name": "",
-        "@id": ""
+        "iri": ""
       }
     ],
     "moduleDescription": ""
@@ -130,7 +130,7 @@
       "subject": [
         {
           "name": "",
-          "id": ""
+          "iri": ""
         }
       ],
       "keywords": [
@@ -144,13 +144,13 @@
       "spatial": {
         "location": {
           "address": "",
-          "id": "",
+          "iri": "",
           "latitude": "",
           "longitude": ""
         },
         "extent": {
           "name": "",
-          "id": "",
+          "iri": "",
           "resolutionValue": "",
           "resolutionUnit": "",
           "boundingBox": [

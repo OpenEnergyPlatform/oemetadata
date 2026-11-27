@@ -88,19 +88,19 @@
       "type": "object",
       "properties": {
         "name": {
-          "description": "The name of the spatial coverage of the dataset.",
+          "description": "The label of the term, as given by the source of the IRI.",
           "type": [
             "string",
             "null"
           ],
           "examples": [
-            "Europe"
+            "European Union"
           ],
           "badge": "Silver",
           "title": "Dataset Extent Name"
         },
-        "id": {
-          "description": "A URI reference for the region of the dataset.",
+        "iri": {
+          "description": "The IRI of the region covered by the dataset. A Wikidata entity IRI is preferred.",
           "type": [
             "string",
             "null"
@@ -188,8 +188,8 @@
             "badge": "Platinum",
             "title": "Subject Name"
           },
-          "id": {
-            "description": "A unique identifier (URI/IRI) of the ontology class.",
+          "iri": {
+            "description": "The IRI of the ontology class that describes the subject. An OEO class is preferred.",
             "type": [
               "string",
               "null"
@@ -477,7 +477,7 @@
             "type": "object",
             "properties": {
               "name": {
-                "description": "A class label of the ontology term.",
+                "description": "The label of the term, as given by the source of the IRI.",
                 "type": [
                   "string",
                   "null"
@@ -488,8 +488,8 @@
                 "badge": "Module",
                 "title": "Supply Technologies Subject Name"
               },
-              "@id": {
-                "description": "A unique identifier (URI/IRI) of the ontology class.",
+              "iri": {
+                "description": "The IRI of the OEO class of the supply technology.",
                 "type": [
                   "string",
                   "null"
@@ -515,7 +515,7 @@
             "type": "object",
             "properties": {
               "name": {
-                "description": "A class label of the ontology term.",
+                "description": "The label of the term, as given by the source of the IRI.",
                 "type": [
                   "string",
                   "null"
@@ -526,8 +526,8 @@
                 "badge": "Module",
                 "title": "Storage Technologies Subject Name"
               },
-              "@id": {
-                "description": "A unique identifier (URI/IRI) of the ontology class.",
+              "iri": {
+                "description": "The IRI of the OEO class of the storage technology.",
                 "type": [
                   "string",
                   "null"
@@ -553,7 +553,7 @@
             "type": "object",
             "properties": {
               "name": {
-                "description": "A class label of the ontology term.",
+                "description": "The label of the term, as given by the source of the IRI.",
                 "type": [
                   "string",
                   "null"
@@ -564,8 +564,8 @@
                 "badge": "Module",
                 "title": "Supply Grid Subject Name"
               },
-              "@id": {
-                "description": "A unique identifier (URI/IRI) of the ontology class.",
+              "iri": {
+                "description": "The IRI of the OEO class of the supply grid.",
                 "type": [
                   "string",
                   "null"
@@ -591,7 +591,7 @@
             "type": "object",
             "properties": {
               "name": {
-                "description": "A class label of the ontology term.",
+                "description": "The label of the term, as given by the source of the IRI.",
                 "type": [
                   "string",
                   "null"
@@ -602,8 +602,8 @@
                 "badge": "Module",
                 "title": "Final Energy Carrier Subject Name"
               },
-              "@id": {
-                "description": "A unique identifier (URI/IRI) of the ontology class.",
+              "iri": {
+                "description": "The IRI of the OEO class of the final energy carrier.",
                 "type": [
                   "string",
                   "null"
@@ -629,7 +629,7 @@
             "type": "object",
             "properties": {
               "name": {
-                "description": "A class label of the ontology term.",
+                "description": "The label of the term, as given by the source of the IRI.",
                 "type": [
                   "string",
                   "null"
@@ -640,8 +640,8 @@
                 "badge": "Module",
                 "title": "Demand Sectors Subject Name"
               },
-              "@id": {
-                "description": "A unique identifier (URI/IRI) of the ontology class.",
+              "iri": {
+                "description": "The IRI of the OEO class of the demand sector.",
                 "type": [
                   "string",
                   "null"
@@ -1083,8 +1083,8 @@
                   "badge": "Platinum",
                   "title": "Subject Name"
                 },
-                "id": {
-                  "description": "A unique identifier (URI/IRI) of the ontology class.",
+                "iri": {
+                  "description": "The IRI of the ontology class that describes the subject. An OEO class is preferred.",
                   "type": [
                     "string",
                     "null"
@@ -1189,8 +1189,8 @@
                     "badge": "Silver",
                     "title": "Address"
                   },
-                  "id": {
-                    "description": "An absolute IRI identifying the location in an external knowledge base. Wikidata concept IRI is preferred. OpenStreetMap elements may be used where no Wikidata item exists.",
+                  "iri": {
+                    "description": "The IRI of the location in an external knowledge base. A Wikidata entity IRI is preferred; an OpenStreetMap element may be used if no Wikidata item exists.",
                     "type": [
                       "string",
                       "null"
@@ -1246,14 +1246,14 @@
                     "badge": "Silver",
                     "title": "Extent Name"
                   },
-                  "id": {
-                    "description": "A URI reference for the region.",
+                  "iri": {
+                    "description": "The IRI of the region covered by the resource. A Wikidata entity IRI is preferred.",
                     "type": [
                       "string",
                       "null"
                     ],
                     "examples": [
-                      "https://www.wikidata.org/wiki/Q64"
+                      "http://www.wikidata.org/entity/Q64"
                     ],
                     "format": "uri",
                     "badge": "Platinum",
@@ -1825,7 +1825,7 @@
                             "title": "Is About Name"
                           },
                           "iri": {
-                            "description": "The path of the ontology term (IRI).",
+                            "description": "The IRI of the ontology term that describes the content of the column.",
                             "type": [
                               "string",
                               "null"
@@ -1834,7 +1834,7 @@
                               "https://openenergyplatform.org/ontology/oeo/OEO_00000044"
                             ],
                             "badge": "Platinum",
-                            "title": "Is About Identifier",
+                            "title": "Is About IRI",
                             "format": "uri"
                           },
                           "mappingRelation": {
@@ -1895,7 +1895,7 @@
                             "title": "Value Reference Name"
                           },
                           "iri": {
-                            "description": "The path of the ontology term (IRI) in the column.",
+                            "description": "The IRI of the ontology term that describes the value in the column.",
                             "type": [
                               "string",
                               "null"
@@ -1904,7 +1904,7 @@
                               "https://openenergyplatform.org/ontology/oeo/OEO_00000311"
                             ],
                             "badge": "Platinum",
-                            "title": "Value Reference Identifier",
+                            "title": "Value Reference IRI",
                             "format": "uri"
                           },
                           "mappingRelation": {

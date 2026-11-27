@@ -84,19 +84,19 @@
       "type": "object",
       "properties": {
         "name": {
-          "description": "The name of the spatial coverage of the dataset.",
+          "description": "The label of the term, as given by the source of the IRI.",
           "type": [
             "string",
             "null"
           ],
           "examples": [
-            "Europe"
+            "European Union"
           ],
           "badge": "Silver",
           "title": "Dataset Extent Name"
         },
-        "id": {
-          "description": "A URI reference for the region of the dataset.",
+        "iri": {
+          "description": "The IRI of the region covered by the dataset. A Wikidata entity IRI is preferred.",
           "type": [
             "string",
             "null"

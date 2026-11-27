@@ -47,9 +47,9 @@
           "@id": "rdfs:label",
           "@type": "xsd:string"
         },
-        "id": {
-          "@id": "dct:identifier",
-          "@type": "xsd:anyURI"
+        "iri": {
+          "@id": "sc:sameAs",
+          "@type": "@id"
         }
       }
     },
@@ -78,9 +78,9 @@
           "@id": "rdfs:label",
           "@type": "xsd:string"
         },
-        "id": {
-          "@id": "dct:identifier",
-          "@type": "xsd:anyURI"
+        "iri": {
+          "@id": "sc:sameAs",
+          "@type": "@id"
         }
       }
     },
@@ -366,9 +366,9 @@
               "@id": "rdfs:label",
               "@type": "xsd:string"
             },
-            "id": {
-              "@id": "dct:identifier",
-              "@type": "xsd:anyURI"
+            "iri": {
+              "@id": "sc:sameAs",
+              "@type": "@id"
             }
           }
         },
@@ -395,9 +395,9 @@
               "@id": "sc:address",
               "@type": "xsd:string"
             },
-            "id": {
-              "@id": "dct:identifier",
-              "@type": "xsd:anyURI"
+            "iri": {
+              "@id": "sc:sameAs",
+              "@type": "@id"
             },
             "latitude": {
               "@id": "sc:latitude",

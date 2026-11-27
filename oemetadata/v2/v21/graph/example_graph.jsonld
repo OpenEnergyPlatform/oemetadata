@@ -47,9 +47,9 @@
           "@id": "rdfs:label",
           "@type": "xsd:string"
         },
-        "id": {
-          "@id": "dct:identifier",
-          "@type": "xsd:anyURI"
+        "iri": {
+          "@id": "sc:sameAs",
+          "@type": "@id"
         }
       }
     },
@@ -78,9 +78,9 @@
           "@id": "rdfs:label",
           "@type": "xsd:string"
         },
-        "id": {
-          "@id": "dct:identifier",
-          "@type": "xsd:anyURI"
+        "iri": {
+          "@id": "sc:sameAs",
+          "@type": "@id"
         }
       }
     },
@@ -366,9 +366,9 @@
               "@id": "rdfs:label",
               "@type": "xsd:string"
             },
-            "id": {
-              "@id": "dct:identifier",
-              "@type": "xsd:anyURI"
+            "iri": {
+              "@id": "sc:sameAs",
+              "@type": "@id"
             }
           }
         },
@@ -395,9 +395,9 @@
               "@id": "sc:address",
               "@type": "xsd:string"
             },
-            "id": {
-              "@id": "dct:identifier",
-              "@type": "xsd:anyURI"
+            "iri": {
+              "@id": "sc:sameAs",
+              "@type": "@id"
             },
             "latitude": {
               "@id": "sc:latitude",
@@ -726,8 +726,8 @@
   "title": "OEP OEMetadata Dataset",
   "description": "A dataset for the OEMetadata examples.",
   "spatialCoverage": {
-    "name": "Europe",
-    "id": "http://www.wikidata.org/entity/Q458"
+    "name": "European Union",
+    "iri": "http://www.wikidata.org/entity/Q458"
   },
   "referenceDate": "2020-01-01",
   "languages": [
@@ -739,7 +739,7 @@
   "subject": [
     {
       "name": "energy",
-      "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000150"
+      "iri": "https://openenergyplatform.org/ontology/oeo/OEO_00000150"
     }
   ],
   "keywords": [
@@ -832,7 +832,7 @@
       "subject": [
         {
           "name": "energy",
-          "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000150"
+          "iri": "https://openenergyplatform.org/ontology/oeo/OEO_00000150"
         }
       ],
       "keywords": [
@@ -848,13 +848,13 @@
       "spatial": {
         "location": {
           "address": "Rudower Chaussee 12, 12489 Berlin",
-          "id": "http://www.wikidata.org/entity/Q77077223",
+          "iri": "http://www.wikidata.org/entity/Q77077223",
           "latitude": "52.432822",
           "longitude": "13.5351004"
         },
         "extent": {
           "name": "Berlin",
-          "id": "https://www.wikidata.org/wiki/Q64",
+          "iri": "http://www.wikidata.org/entity/Q64",
           "resolutionValue": "100",
           "resolutionUnit": "m",
           "boundingBox": [

@@ -72,8 +72,21 @@ def create_graph(
     graph.parse(data=json.dumps(combined), format="json-ld")
     # Canonical blank node labels make the Turtle output reproducible,
     # so regenerating the files only produces a diff if the graph changed.
-    graph = to_canonical_graph(graph)
-    graph.serialize(destination=ttl_path, format="longturtle", encoding=ENCODING)
+    canonical = Graph()
+    for triple in to_canonical_graph(graph):
+        canonical.add(triple)
+    graph = canonical
+
+    # Use the prefixes of the context instead of generated ones (ns1, ns2, ...)
+    for prefix, namespace in context["@context"].items():
+        if isinstance(namespace, str) and namespace.startswith("http"):
+            graph.bind(prefix, namespace, override=True, replace=True)
+
+    # longturtle writes indentation-only lines inside RDF lists (@list).
+    # Strip trailing whitespace so the file passes the pre-commit hooks unchanged.
+    turtle = graph.serialize(format="longturtle")
+    turtle = "\n".join(line.rstrip() for line in turtle.splitlines()) + "\n"
+    ttl_path.write_text(turtle, encoding=ENCODING)
 
     logger.info(
         "%s: %d triples -> %s, %s",
