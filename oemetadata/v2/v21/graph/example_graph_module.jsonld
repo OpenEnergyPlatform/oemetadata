@@ -177,7 +177,8 @@
         "name": {
           "@id": "rdfs:label",
           "@type": "xsd:string"
-        }
+        },
+        "iri": "@id"
       }
     },
     "storageTechnologies": {
@@ -187,7 +188,8 @@
         "name": {
           "@id": "rdfs:label",
           "@type": "xsd:string"
-        }
+        },
+        "iri": "@id"
       }
     },
     "supplyGrid": {
@@ -197,7 +199,8 @@
         "name": {
           "@id": "rdfs:label",
           "@type": "xsd:string"
-        }
+        },
+        "iri": "@id"
       }
     },
     "finalEnergyCarrier": {
@@ -207,7 +210,8 @@
         "name": {
           "@id": "rdfs:label",
           "@type": "xsd:string"
-        }
+        },
+        "iri": "@id"
       }
     },
     "demandSectors": {
@@ -217,7 +221,8 @@
         "name": {
           "@id": "rdfs:label",
           "@type": "xsd:string"
-        }
+        },
+        "iri": "@id"
       }
     },
     "moduleDescription": {
